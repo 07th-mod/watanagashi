@@ -1,0 +1,91 @@
+﻿void main()
+{
+
+//８■スクラップ帳よりⅣ
+
+//*Sub_Tips_031
+//gosub *tip_s
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+	DisableWindow();
+	DrawScene( "black", 1000 );
+	PlayBGM( 1, "msys09", 128, 0 );
+	PlaySE( 3, "wa_021", 128, 64 );
+	DrawScene( "bg_181", 1000 );
+
+//locate 3,6
+	SetDrawingPointOfMessage( 0, 6 );
+	SetStyleOfMessageSwinging( 1 );
+
+//＜綿流しについて￥
+	OutputLine(NULL, "＜綿流しについて＞",
+		   NULL, "<Watanagashi>", Line_Normal);
+	ClearMessage();
+
+	SetStyleOfMessageSwinging( 0 );
+	PlaySE( 3, "wa_021", 128, 64 );
+
+//　綿流しの儀は今でこそ、毎年６月に行なわれる村祭りだが、その原点を紐解くと、実に血生臭い儀式にたどり着く￥
+	OutputLine(NULL, "　綿流しの儀は今でこそ、毎年６月に行なわれる村祭りだが、その原点を紐解くと、実に血生臭い儀式にたどり着く。",
+		   NULL, "The rite of Watanagashi is performed during a village festival every June even now, but reading back to its origin turns up a seriously sanguine ceremony.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 128, 64 );
+
+//　本来、綿流しは、一定周期に基づき、オヤシロさまの信託を得て「犠牲者」を選び出し＠それを村ぐるみで誘拐（鬼隠し）し、儀式めいた方法で解体して食す人食いの宴であった＠
+	OutputLine(NULL, "　本来、綿流しは、一定周期に基づき、オヤシロさまの信託を得て「犠牲者」を選び出し、",
+		   NULL, "Originally, Watanagashi would happen at fixed intervals, and after receiving Oyashiro-sama's trust, they chose a sacrifice.", Line_WaitForInput);
+	OutputLine(NULL, "それを村ぐるみで誘拐（鬼隠し）し、儀式めいた方法で解体して食す人食いの宴であった。",
+		   NULL, " Then, the entire village would kidnap (demon away) the person and ceremonially dissect and devour them in a feast.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+
+//（周期の法則には謎が多い＠儀式の間隔が非常に不定期だからだ＠天体を元にした吉凶によって決めているという説もあるが、説得力に乏しい。￥
+	OutputLine(NULL, "（周期の法則には謎が多い。",
+		   NULL, "(The rules that determined the intervals are shrouded in mystery.", Line_WaitForInput);
+	OutputLine(NULL, "儀式の間隔が非常に不定期だからだ。",
+		   NULL, " This is because the ceremonies occurred extremely irregularly.", Line_WaitForInput);
+	OutputLine(NULL, "天体を元にした吉凶によって決めているという説もあるが、説得力に乏しい。）",
+		   NULL, " There's a theory that it was determined based on astrological fortune-telling, but it isn't too convincing.)", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 128, 64 );
+
+//　古代の鬼ヶ淵村の住人たちは自分たちが半人半鬼の仙人で、人間よりも高貴な存在であると固く信じ、それを内外に認めさせていた＠
+	OutputLine(NULL, "　古代の鬼ヶ淵村の住人たちは自分たちが半人半鬼の仙人で、人間よりも高貴な存在であると固く信じ、それを内外に認めさせていた。",
+		   NULL, "The residents of ancient Onigafuchi Village firmly believed that they were half-man, half-demon transcendants, and that they were more valuable than humans were—and they forced people within and without to accept that.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　人間をさらい、それを食す行為は、食物連鎖における優位を示すために行なわれたのではないだろうか￥
+	OutputLine(NULL, "　人間をさらい、それを食す行為は、食物連鎖における優位を示すために行なわれたのではないだろうか。",
+		   NULL, "Perhaps the act of kidnapping and eating people was done to prove that they were higher up on the food chain.", Line_Normal);
+	ClearMessage();
+
+
+//　以下は仮説だが、綿流しの儀は、閉鎖環境である鬼ヶ淵村の内側に何らかの不満が募った場合のはけ口や、目を逸らすための目的で開かれた＠政治的なイベントとも考えられないだろうか＠
+	OutputLine(NULL, "　以下は仮説だが、綿流しの儀は、閉鎖環境である鬼ヶ淵村の内側に何らかの不満が募った場合のはけ口や、目を逸らすための目的で開かれた、",
+		   NULL, "This is just a hypothesis, but maybe the rite of Watanagashi was a political event for the purpose either being an outlet for (or outright diverting the attention of) the villagers of the isolated Onigafuchi Village,", Line_WaitForInput);
+	OutputLine(NULL, "政治的なイベントとも考えられないだろうか。",
+		   NULL, " in case any of their complaints or dissatisfactions grew serious.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　こうした目的で主に開催されていたとするならば、儀式の不定期性にも説明が付き易い￥
+	OutputLine(NULL, "　こうした目的で主に開催されていたとするならば、儀式の不定期性にも説明が付き易い。",
+		   NULL, "If that was the main reason these ceremonies were held, then it's easy to explain how erratic they were.", Line_Normal);
+	ClearMessage();
+
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	DisableWindow();
+	DrawScene( "black", 1000 );
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+//gosub *tip_e
+//return
+
+}

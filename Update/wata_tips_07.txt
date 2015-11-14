@@ -1,0 +1,90 @@
+﻿void main()
+{
+
+//７■スクラップ帳よりⅠ
+
+//*Sub_Tips_027
+//gosub *tip_s
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+	DisableWindow();
+	DrawScene( "black", 1000 );
+	PlaySE( 3, "wa_021", 128, 64 );
+	DrawScene( "bg_181", 400 );
+	PlayBGM( 1, "msys09", 128, 0 );
+
+//locate 4,6
+
+	SetDrawingPointOfMessage( 0, 6 );
+	SetStyleOfMessageSwinging( 1 );
+
+
+//＜オヤシロさまの祟りについて￥
+	OutputLine(NULL, "＜オヤシロさまの祟りについて＞",
+		   NULL, "<Oyashiro-sama's Curse>", Line_Normal);
+	ClearMessage();
+	SetStyleOfMessageSwinging( 0 );
+	PlaySE( 3, "wa_021", 128, 64 );
+
+//　古代鬼ヶ淵村では、オヤシロさまの怒り（祟り）は何よりも恐れられていた＠
+	OutputLine(NULL, "　古代鬼ヶ淵村では、オヤシロさまの怒り（祟り）は何よりも恐れられていた。",
+		   NULL, "In the ancient Onigafuchi Village, the anger of Oyashiro-sama (his curse) was feared above all.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//　だが、オヤシロさまが怒ると最終的にどのような神罰（祟り）が下されるのかは記述が少ない￥
+	OutputLine(NULL, "　だが、オヤシロさまが怒ると最終的にどのような神罰（祟り）が下されるのかは記述が少ない。",
+		   NULL, "However, it is seldom stated anywhere what eventually happens, and what sort of divine judgement (curse) befalls them when Oyashiro-sama is angry.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 128, 64 );
+
+//　伝聞から調べる限りでは＠「地獄の釜が開く＠「鬼が溢れ出す＠「地獄の瘴気が溢れ出し、村人たちことごとく逃れることも叶わず、息絶えるなり＠といった、村の全滅を想起させる物騒なものが目立つ＠
+	OutputLine(NULL, "　伝聞から調べる限りでは、",
+		   NULL, "From various reports...", Line_WaitForInput);
+	OutputLine(NULL, "「地獄の釜が開く」",
+		   NULL, " \"All hell will break loose\"", Line_WaitForInput);
+	OutputLine(NULL, "「鬼が溢れ出す」",
+		   NULL, " \"Demons will come flooding out\"", Line_WaitForInput);
+	OutputLine(NULL, "「地獄の瘴気が溢れ出し、村人たちことごとく逃れることも叶わず、息絶えるなり」",
+		   NULL, " \"The miasma from Hell will flood outward and kill every villager, letting not a single one escape\"", Line_WaitForInput);
+	OutputLine(NULL, "といった、村の全滅を想起させる物騒なものが目立つ。",
+		   NULL, " The ones evoking images of the village being annihilated stand out the most.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+
+//　これらの恐ろしい神罰は、その他多くの宗教の終末（地獄）表現とほぼ同じで、これを回避するために教義に従わせようとする方便だと容易に想像できる￥
+	OutputLine(NULL, "　これらの恐ろしい神罰は、その他多くの宗教の終末（地獄）表現とほぼ同じで、これを回避するために教義に従わせようとする方便だと容易に想像できる。",
+		   NULL, "These terrifying ideas of divine punishment are in alignment with many other religious beliefs regarding the apocalypse (Hell), and it's easy to imagine that they are just ways of convincing people to obey the teachings in order to prevent such an end.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 128, 64 );
+
+//　オヤシロさまの怒りに触れる条件が、イコール鬼ヶ淵村における禁忌（タブー）と言えるだろう＠
+	OutputLine(NULL, "　オヤシロさまの怒りに触れる条件が、イコール鬼ヶ淵村における禁忌（タブー）と言えるだろう。",
+		   NULL, "The conditions for inciting Oyashiro-sama's wrath are likely the same as the taboos in Onigafuchi Village.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　この禁忌を犯す行為が行なわれた時、オヤシロさまは「怒った」と称され＠その怒りを鎮めるために、前述の「生贄の儀式」が行なわれたと考えられる￥
+	OutputLine(NULL, "　この禁忌を犯す行為が行なわれた時、オヤシロさまは「怒った」と称され、",
+		   NULL, "I believe that when an act was performed that violates one of these taboos, Oyashiro-sama was termed 'angry,'", Line_WaitForInput);
+	OutputLine(NULL, "その怒りを鎮めるために、前述の「生贄の儀式」が行なわれたと考えられる。",
+		   NULL, " and in order to quell his anger, they would perform the aforementioned sacrificial ritual.", Line_Normal);
+	ClearMessage();
+
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	DisableWindow();
+	DrawScene( "black", 1000 );
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+//gosub *tip_e
+//return
+
+
+}
