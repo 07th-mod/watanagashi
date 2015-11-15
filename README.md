@@ -91,7 +91,9 @@ mklink /J ".\Higurashi 02 - Watanagashi\HigurashiEp02_Data\StreamingAssets\SE\s2
 Use the ln -s command on terminal
 ```
 ln -s /path/to/original /path/to/symlink
+
 ```
 Where /path/to/original is ./Higurashi When They Cry/HigurashiEp01_Data/StreamingAssets/SE/S19 and /path/to/symlink should be ./Higurashi 02 - Watanagashi/HigurashiEp02_Data/StreamingAssets/SE/s19
 ```
+
 Repeat the command for the s20 folder.
