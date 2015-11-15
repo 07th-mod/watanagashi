@@ -14,6 +14,7 @@
 	DrawBustshot( 2, "me_se_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「おい、魅音＠これ。＠
+	PlaySE(4, "S20/01/440100064", 128, 64);
 	OutputLine(NULL, "「おい、魅音。",
 		   NULL, "\"Hey, Mion.", Line_WaitForInput);
 	OutputLine(NULL, "これ。」",
@@ -38,6 +39,7 @@
 	ClearMessage();
 
 //「昨日、差し入れてもらった弁当箱だよ＠ごちそうさま＠うまかったぜ。＠
+	PlaySE(4, "S20/01/440100065", 128, 64);
 	OutputLine(NULL, "「昨日、差し入れてもらった弁当箱だよ。",
 		   NULL, "\"It had the food you gave me in it.", Line_WaitForInput);
 	OutputLine(NULL, "ごちそうさま。",
@@ -84,6 +86,7 @@
 	ClearMessage();
 
 //「あのな＠俺、昨日、腹を空かせてたらさ＠詩音がわざわざ家まで来て弁当を差し入れてくれたんだよ＠で、これはその弁当箱＠ちゃんと洗ってあるからな！＠
+	PlaySE(4, "S20/01/440100067", 128, 64);
 	OutputLine(NULL, "「あのな。",
 		   NULL, "\"Listen.", Line_WaitForInput);
 	OutputLine(NULL, "俺、昨日、腹を空かせてたらさ。",
@@ -104,6 +107,7 @@
 	DrawBustshot( 2, "me_se_bi_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「あ、......あはは、そ、そうなんだ＠　詩音は気が利くね～！＠
+	PlaySE(4, "S20/03/440300062", 128, 64);
 	OutputLine(NULL, "「あ、……あはは、そ、そうなんだ！",
 		   NULL, "\"Ah, ...ahaha, r-right!", Line_WaitForInput);
 	OutputLine(NULL, "　詩音は気が利くね〜！」",
@@ -141,6 +145,7 @@
 
 
 //「...魅音に瓜二つなヤツだと思うぞ＠だって双子なんだろ＠　似てて当然だよ。＠
+	PlaySE(4, "S20/01/440100071", 128, 64);
 	OutputLine(NULL, "「…魅音に瓜二つなヤツだと思うぞ。",
 		   NULL, "\"...You two are like peas in a pod.", Line_WaitForInput);
 	OutputLine(NULL, "だって双子なんだろ？",
@@ -175,6 +180,7 @@
 	ClearMessage();
 
 //「あぁ、もちろん＠　うまかったぜ。＠
+	PlaySE(4, "S20/01/440100073", 128, 64);
 	OutputLine(NULL, "「あぁ、もちろん！",
 		   NULL, "\"Oh, of course!", Line_WaitForInput);
 	OutputLine(NULL, "　うまかったぜ。」",
@@ -192,6 +198,7 @@
 
 
 //「俺は食い物の感想には嘘はつかないぞ＠俺がうまかったって言ったら、誰が食ったってうまい＠　万人にお薦めできる評価だと思っていいぞ＠詩音に実に美味しかったって伝えておいてくれ。＠
+	PlaySE(4, "S20/01/440100074", 128, 64);
 	OutputLine(NULL, "「俺は食い物の感想には嘘はつかないぞ。",
 		   NULL, "\"I never lie about liking food.", Line_WaitForInput);
 	OutputLine(NULL, "俺がうまかったって言ったら、誰が食ったってうまい！",
@@ -209,6 +216,7 @@
 	DrawBustshot( 2, "me_se_wa_b2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「あ、......う、うん＠　詩音にね＠　伝えておくよ＠　きっと喜ぶと思うよ...＠　あはははははは...！￥
+	PlaySE(4, "S20/03/440300066", 128, 64);
 	OutputLine(NULL, "「あ、……う、うん！",
 		   NULL, "\"Ah... o-okay!", Line_WaitForInput);
 	OutputLine(NULL, "　詩音にね！",
@@ -248,6 +256,7 @@
 	DrawBustshot( 2, "me_se_de_b2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「......圭ちゃん、何か入ってるよ＠　あれ＠/
+	PlaySE(4, "S20/03/440300070", 128, 64);
 	OutputLine(NULL, "「……圭ちゃん、何か入ってるよ？",
 		   NULL, "\"...Kei-chan, there's something inside.", Line_WaitForInput);
 	OutputLine(NULL, "　あれ？",
@@ -257,6 +266,7 @@
 	DrawBustshot( 2, "me_se_ha_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //　........................わぁ......。＠
+	PlaySE(4, "S20/03/440300071", 128, 64);
 	OutputLine(NULL, "　……………………わぁ……。」",
 		   NULL, " ............Wow...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -284,6 +294,7 @@
 
 
 //「えーと...えーとな＠　これはだな、うちのお袋がお礼に入れとけって言ったんだ＠　別に俺のセンスじゃないんだからな＠　誤解すんなよ！！＠
+	PlaySE(4, "S20/01/440100077", 128, 64);
 	OutputLine(NULL, "「えーと…えーとな！",
 		   NULL, "\"Umm... well!", Line_WaitForInput);
 	OutputLine(NULL, "　これはだな、うちのお袋がお礼に入れとけって言ったんだ！",
@@ -299,6 +310,7 @@
 
 
 //「......きれい...＠飴だ...。￥
+	PlaySE(4, "S20/03/440300072", 128, 64);
 	OutputLine(NULL, "「……きれい…。",
 		   NULL, "\"...It's so pretty...", Line_WaitForInput);
 	OutputLine(NULL, "飴だ…。」",
@@ -324,6 +336,7 @@
 	ClearMessage();
 
 //「......と、...いうわけなんだ＠...まぁその、...ぅぅ......。＠
+	PlaySE(4, "S20/01/440100080", 128, 64);
 	OutputLine(NULL, "「……と、…いうわけなんだ。",
 		   NULL, "\"...Well... that's what happened.", Line_WaitForInput);
 	OutputLine(NULL, "…まぁその、…ぅぅ……。」",
@@ -353,6 +366,7 @@
 
 
 //「お、俺に言うな＠入れたお袋に言ってくれ＠　そそ、それに魅音がお礼を言う必要なんかないんだぞ？＠　それは詩音にあげるものなんだからな？！＠
+	PlaySE(4, "S20/01/440100081", 128, 64);
 	OutputLine(NULL, "「お、俺に言うな。",
 		   NULL, "\"D-Don't thank me.", Line_WaitForInput);
 	OutputLine(NULL, "入れたお袋に言ってくれ！",
@@ -368,6 +382,7 @@
 
 
 //「............あ、...ぅん＠そうだよね...＠...うん＠詩音に伝えておくね＠　きっと詩音もうれしがると思うよ。＠
+	PlaySE(4, "S20/03/440300074", 128, 64);
 	OutputLine(NULL, "「…………あ、…ぅん。",
 		   NULL, "\"...Ah... right.", Line_WaitForInput);
 	OutputLine(NULL, "そうだよね…。",
@@ -406,6 +421,7 @@
 
 //!sd
 //「今日は何だか魅ぃちゃん、ほんわかな感じだね＠いい事でもあったのかな＠かな！＠
+	PlaySE(4, "S20/02/440200055", 128, 64);
 	OutputLine(NULL, "「今日は何だか魅ぃちゃん、ほんわかな感じだね。",
 		   NULL, "\"Mii-chan, you look sort of cozy today.", Line_WaitForInput);
 	OutputLine(NULL, "いい事でもあったのかな。",
@@ -420,6 +436,7 @@
 	DrawBustshotWithFiltering( 1, "sa_se_ak_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「...風邪でも引いたんではありませんの＠　お顔が赤いのはきっと微熱のせいでしてよ＠/
+	PlaySE(4, "S20/04/440400041", 128, 64);
 	OutputLine(NULL, "「…風邪でも引いたんではありませんの？",
 		   NULL, "\"...Perhaps she's caught a fever?", Line_WaitForInput);
 	OutputLine(NULL, "　お顔が赤いのはきっと微熱のせいでしてよ。",
@@ -429,6 +446,7 @@
 	DrawBustshot( 1, "sa_se_bi_b1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //.........って、梨花＠なんで私の頭をなでますの。＠
+	PlaySE(4, "S20/04/440400042", 128, 64);
 	OutputLine(NULL, "………って、梨花。",
 		   NULL, " ......Hey, Rika.", Line_WaitForInput);
 	OutputLine(NULL, "なんで私の頭をなでますの。」",
@@ -441,6 +459,7 @@
 	DrawBustshotWithFiltering( 3, "ri_se_wa_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「......沙都子もきっとその内、お風邪を引けるようになりますですよ。＠
+	PlaySE(4, "S20/05/440500024", 128, 64);
 	OutputLine(NULL, "「……沙都子もきっとその内、お風邪を引けるようになりますですよ。」",
 		   NULL, "\"......Satoko, I'm sure you'll be able to catch fevers soon enough.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
