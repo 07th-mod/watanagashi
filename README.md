@@ -33,10 +33,10 @@ Old collaborators welcome to join the repository, however it's still preferred t
 - [ ] wata_ep_01.txt
 - [ ] wata_ep_02.txt
 - [x] wata_tips_01.txt
-- [ ] **wata_tips_02.txt**
-- [ ] wata_tips_03.txt
-- [ ] wata_tips_04.txt
-- [ ] wata_tips_05.txt
+- [x] wata_tips_02.txt
+- [x] wata_tips_03.txt
+- [x] wata_tips_04.txt
+- [ ] **wata_tips_05.txt**
 - [ ] wata_tips_06.txt
 - [ ] wata_tips_07.txt
 - [ ] wata_tips_08.txt
