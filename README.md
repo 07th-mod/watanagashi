@@ -6,6 +6,13 @@ README's going to be updated as the patch is developed. Refer to [Onikakushi](ht
 
 Old collaborators welcome to join the repository, however it's still preferred to fork the repository and update through pull requests.
 
+
+# Prerequisites
+
+* [HigurashiPS3-Voices01.zip](https://mega.nz/#!vgdQkIrK!6Ral1MRTC266DVg4SM-P01s3Gnflo2StDdF0RrgigrY) + [HigurashiPS3-Voices02.zip](https://mega.nz/#!bQgCFK7S!Z_cFqU4WxFEo9RKONlh8dGGn7SkoEhKcodcP7uwmZqQ) [(or create a symlink using your EP1 files)](https://github.com/higurashi-mod/watanagashi#installation)
+* [Graphics mod](https://www.mediafire.com/folder/ggd83ppkclafg/Higurashi_EP2_-_Graphic_mods)
+* [Voice patch](https://github.com/higurashi-mod/watanagashi/archive/master.zip)
+
 # Scripts progress
 
 >Bold lines mean "in progress"
@@ -60,3 +67,31 @@ Old collaborators welcome to join the repository, however it's still preferred t
 # Known issues
 
 > In wata_tips_01.txt, [lines 474~526](https://github.com/higurashi-mod/watanagashi/blob/master/Update/wata_tips_01.txt#L474-L526) are clearly different from the PS3 version. Probably because of the whole red light talk. PS3 files for this scene are S20/05/440500017 and S20/04/440400025.
+
+# Installation
+
+> Use the previous detailed tutorial to install the patch. See [here](https://github.com/higurashi-mod/onikakushi#installation).
+
+In this patch we will only use the voice folders s02 (HigurashiPS3-Voices02.zip), s19 and s20 (HigurashiPS3-Voices01.zip). If you already have the first game with the patch installed, you don't need to download or copy the s19 and s20 folders. You can save your time creating a symbolic link.
+
+### Creating a symlink
+
+* On Windows:
+1. find your SteamLibrary common folder (usually \SteamLibrary\steamapps\common)
+2. hold shift and right click on an empty space
+3. click on "Open a command line window here" (or similar)
+4. run the following commands on the cmd:
+```
+mklink /J ".\Higurashi 02 - Watanagashi\HigurashiEp02_Data\StreamingAssets\SE\s19" ".\Higurashi When They Cry\HigurashiEp01_Data\StreamingAssets\SE\S19"
+
+mklink /J ".\Higurashi 02 - Watanagashi\HigurashiEp02_Data\StreamingAssets\SE\s20" ".\Higurashi When They Cry\HigurashiEp01_Data\StreamingAssets\SE\S20"
+```
+
+* On Linux/OSX:
+Use the ln -s command on terminal
+```
+ln -s /path/to/original /path/to/symlink
+```
+Where /path/to/original is ./Higurashi When They Cry/HigurashiEp01_Data/StreamingAssets/SE/S19 and /path/to/symlink should be ./Higurashi 02 - Watanagashi/HigurashiEp02_Data/StreamingAssets/SE/s19
+```
+Repeat the command for the s20 folder.
