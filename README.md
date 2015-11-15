@@ -59,4 +59,4 @@ Old collaborators welcome to join the repository, however it's still preferred t
 
 # Known issues
 
-> In wata_tips_01.txt, [lines 474~527](https://github.com/higurashi-mod/watanagashi/blob/master/Update/wata_tips_01.txt#L474-L527) are clearly different from the PS3 version. Probably because of the whole red light talk. PS3 files for this scene are S20/05/440500017 and S20/04/440400025.
+> In wata_tips_01.txt, [lines 474~526](https://github.com/higurashi-mod/watanagashi/blob/master/Update/wata_tips_01.txt#L474-L526) are clearly different from the PS3 version. Probably because of the whole red light talk. PS3 files for this scene are S20/05/440500017 and S20/04/440400025.
