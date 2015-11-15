@@ -76,7 +76,7 @@ In this patch we will only use the voice folders s02 (HigurashiPS3-Voices02.zip)
 
 ### Creating a symlink
 
-* On Windows:
+###### On Windows:
 1. find your SteamLibrary common folder (usually \SteamLibrary\steamapps\common)
 2. hold shift and right click on an empty space
 3. click on "Open a command line window here" (or similar)
@@ -87,10 +87,12 @@ mklink /J ".\Higurashi 02 - Watanagashi\HigurashiEp02_Data\StreamingAssets\SE\s1
 mklink /J ".\Higurashi 02 - Watanagashi\HigurashiEp02_Data\StreamingAssets\SE\s20" ".\Higurashi When They Cry\HigurashiEp01_Data\StreamingAssets\SE\S20"
 ```
 
-* On Linux/OSX:
+
+###### On Linux/OSX:
 Use the ln -s command on terminal
 ```
 ln -s /path/to/original /path/to/symlink
+```
 
 ```
 Where /path/to/original is ./Higurashi When They Cry/HigurashiEp01_Data/StreamingAssets/SE/S19 and /path/to/symlink should be ./Higurashi 02 - Watanagashi/HigurashiEp02_Data/StreamingAssets/SE/s19
