@@ -14,6 +14,7 @@
 	PlayBGM( 1, "msys02", 128, 0 );
 
 //「...だから初めましてじゃないですって＠　昨日まで毎日、お会いしてたじゃないですか。＠
+	PlaySE(4, "S20/06/440600001", 128, 64);
 	OutputLine(NULL, "「…だから初めましてじゃないですって！",
 		   NULL, "\"...Stop saying 'it's been a while'!", Line_WaitForInput);
 	OutputLine(NULL, "　昨日まで毎日、お会いしてたじゃないですか。」",
@@ -23,6 +24,7 @@
 
 
 //「......もういい＠お前がそうだって言うならそういうことでいい。￥
+	PlaySE(4, "S20/01/440100084", 128, 64);
 	OutputLine(NULL, "「……もういい。",
 		   NULL, "\"...Whatever.", Line_WaitForInput);
 	OutputLine(NULL, "お前がそうだって言うならそういうことでいい。」",
@@ -55,6 +57,7 @@
 	ClearMessage();
 
 //「しかし......そっくりだなぁ＠魅音みたいに髪を後ろで結んだら、やっぱり魅音そっくりになるのか？＠
+	PlaySE(4, "S20/01/440100085", 128, 64);
 	OutputLine(NULL, "「しかし……そっくりだなぁ。",
 		   NULL, "\"Still... you two look so alike.", Line_WaitForInput);
 	OutputLine(NULL, "魅音みたいに髪を後ろで結んだら、やっぱり魅音そっくりになるのか？」",
@@ -66,6 +69,7 @@
 	DrawBustshotWithFiltering( 3, "si_si_wi_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「さぁ＠試せばそうなるんじゃないですか＠　私たち、筋金入りの一卵性ですから＠昔は服を取替えっこしただけで、誰も見破れなかったものです＠お姉と一緒にことあるごとに入れ替わって、いろいろと騙したりしましたっけ。あははは！￥
+	PlaySE(4, "S20/06/440600002", 128, 64);
 	OutputLine(NULL, "「さぁ。",
 		   NULL, "\"Who knows?", Line_WaitForInput);
 	OutputLine(NULL, "試せばそうなるんじゃないですか？",
@@ -73,8 +77,10 @@
 	PlaySE(4, "S20/06/440600003", 128, 64);
 	OutputLine(NULL, "　私たち、筋金入りの一卵性ですから。",
 		   NULL, " We're identical twins, through and through.", Line_WaitForInput);
+	PlaySE(4, "S20/06/440600004", 128, 64);
 	OutputLine(NULL, "昔は服を取替えっこしただけで、誰も見破れなかったものです。",
 		   NULL, " In the past, we could just change our clothes and no one would be the wiser.", Line_WaitForInput);
+	PlaySE(4, "S20/06/440600005", 128, 64);
 	OutputLine(NULL, "お姉と一緒にことあるごとに入れ替わって、いろいろと騙したりしましたっけ。あははは！」",
 		   NULL, " I remember we'd swap places at every opportunity and fooled a whole lot of people. Ahahaha!\"", Line_Normal);
 	ClearMessage();
@@ -87,6 +93,7 @@
 	DrawBustshot( 3, "si_si_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「なぁに、葛西＠そのふかーいため息は。＠
+	PlaySE(4, "S20/06/440600006", 128, 64);
 	OutputLine(NULL, "「なぁに、葛西。",
 		   NULL, "\"What's wrong, Kasai?", Line_WaitForInput);
 	OutputLine(NULL, "そのふかーいため息は。」",
@@ -96,6 +103,7 @@
 
 
 //「失礼しました＠......昔から変わられないなぁと思っただけですよ。＠
+	PlaySE(4, "S20/15/441500001", 128, 64);
 	OutputLine(NULL, "「失礼しました。",
 		   NULL, "\"Excuse me.", Line_WaitForInput);
 	OutputLine(NULL, "……昔から変わられないなぁと思っただけですよ。」",
@@ -112,10 +120,12 @@
 	DrawBustshot( 3, "si_si_de_b1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「それより、圭ちゃんの家ってこっちでいいんですか＠　葛西は園崎本家への道以外は雛見沢をよく知らないから＠任せておくと谷河内辺りまで走ってっちゃいますよ。＠
+	PlaySE(4, "S20/06/440600007", 128, 64);
 	OutputLine(NULL, "「それより、圭ちゃんの家ってこっちでいいんですか？",
 		   NULL, "\"Anyway, Kei-chan, your house was around here, right?", Line_WaitForInput);
 	OutputLine(NULL, "　葛西は園崎本家への道以外は雛見沢をよく知らないから。",
 		   NULL, " Kasai doesn't know much about Hinamizawa aside from the road that goes to the Sonozaki main house.", Line_WaitForInput);
+	PlaySE(4, "S20/06/440600008", 128, 64);
 	OutputLine(NULL, "任せておくと谷河内辺りまで走ってっちゃいますよ。」",
 		   NULL, " If you leave it to him, he'll take you all the way to Yagouchi.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -123,6 +133,7 @@
 
 
 //「そ、そりゃ困る＠　...すみません、次の右に入る細い道のところで停めてください＠そこまでで結構です。￥
+	PlaySE(4, "S20/01/440100086", 128, 64);
 	OutputLine(NULL, "「そ、そりゃ困る！",
 		   NULL, "\"I-I don't want that!", Line_WaitForInput);
 	OutputLine(NULL, "　…すみません、次の右に入る細い道のところで停めてください。",
@@ -157,6 +168,7 @@
 
 
 //「圭一さんでしたか＠お名前。＠
+	PlaySE(4, "S20/15/441500002", 128, 64);
 	OutputLine(NULL, "「圭一さんでしたか、",
 		   NULL, "\"Was it Kei-san?", Line_WaitForInput);
 	OutputLine(NULL, "お名前。」",
@@ -216,6 +228,7 @@
 	DrawBustshot( 2, "si_si_wi_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「じゃあね圭ちゃん！　また会いましょうね＠姉にもよろしくお伝え下さい＠私も明日から雛見沢の学校に通おうかな。＠
+	PlaySE(4, "S20/06/440600009", 128, 64);
 	OutputLine(NULL, "「じゃあね圭ちゃん！　また会いましょうね。",
 		   NULL, "\"Bye, Kei-chan! We'll see each other again soon.", Line_WaitForInput);
 	OutputLine(NULL, "姉にもよろしくお伝え下さい。",
@@ -228,6 +241,7 @@
 
 
 //「絶対に来るな＠詩音が転校して来たら、俺が興宮の学校に転校するから。＠
+	PlaySE(4, "S20/01/440100091", 128, 64);
 	OutputLine(NULL, "「絶対に来るな。",
 		   NULL, "\"Don't you dare.", Line_WaitForInput);
 	OutputLine(NULL, "詩音が転校して来たら、俺が興宮の学校に転校するから。」",

@@ -43,15 +43,15 @@ Old collaborators welcome to join the repository, however it's still preferred t
 - [x] wata_tips_02.txt
 - [x] wata_tips_03.txt
 - [x] wata_tips_04.txt
-- [ ] **wata_tips_05.txt**
-- [ ] wata_tips_06.txt
-- [ ] wata_tips_07.txt
-- [ ] wata_tips_08.txt
-- [ ] wata_tips_09.txt
-- [ ] wata_tips_10.txt
-- [ ] wata_tips_11.txt
-- [ ] wata_tips_12.txt
-- [ ] wata_tips_13.txt
+- [x] wata_tips_05.txt
+- [x] wata_tips_06.txt
+- [x] wata_tips_07.txt
+- [x] wata_tips_08.txt
+- [x] wata_tips_09.txt
+- [x] wata_tips_10.txt
+- [x] wata_tips_11.txt
+- [x] wata_tips_12.txt
+- [ ] **wata_tips_13.txt**
 - [ ] wata_tips_14.txt
 - [ ] wata_tips_15.txt
 - [ ] wata_tips_16.txt
@@ -67,6 +67,8 @@ Old collaborators welcome to join the repository, however it's still preferred t
 # Known issues
 
 > In wata_tips_01.txt, [lines 474~526](https://github.com/higurashi-mod/watanagashi/blob/master/Update/wata_tips_01.txt#L474-L526) are clearly different from the PS3 version. Probably because of the whole red light talk. PS3 files for this scene are S20/05/440500017 and S20/04/440400025.
+
+> Some voiced lines might end early if you are a slow header or playing with auto mode. There are too many cases of split lines (PS3 and PC version share the same script, but the reading is different) to fix manually. Some extreme cases may be fixed if you take your time to open a Issue.
 
 # Installation
 
