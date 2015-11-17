@@ -33,6 +33,7 @@
 
 
 //「大石さん、こっちは検死入りました＠　じい様もさっき到着です！＠　俺もスタンバイＯＫしました！＠　このまま岐阜へ直行します！！＠
+	PlaySE(4, "S20/19/443100015", 128, 64);
 	OutputLine(NULL, "「大石さん、こっちは検死入りました！",
 		   NULL, "\"Ooishi-san, I've got the autopsy results!", Line_WaitForInput);
 	OutputLine(NULL, "　じい様もさっき到着です！！",
@@ -40,6 +41,7 @@
 	PlaySE(4, "S20/19/443100016", 128, 64);
 	OutputLine(NULL, "　俺もスタンバイＯＫしました！！",
 		   NULL, " I'm ready to go, sir!!", Line_WaitForInput);
+	PlaySE(4, "S20/19/443100017", 128, 64);
 	OutputLine(NULL, "　このまま岐阜へ直行します！！」",
 		   NULL, " I'll head straight for Gifu!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -50,6 +52,7 @@
 	DrawBustshotWithFiltering( 3, "oi_si_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「熊ちゃん、ちょっと話がややこしくなりました＠向こうは身元の判別が非常に困難な状態だそうです。￥
+	PlaySE(4, "S20/11/440700121", 128, 64);
 	OutputLine(NULL, "「熊ちゃん、ちょっと話がややこしくなりました。",
 		   NULL, "\"Kuma-chan, things have gotten a bit complicated.", Line_WaitForInput);
 	OutputLine(NULL, "向こうは身元の判別が非常に困難な状態だそうです。」",
@@ -58,6 +61,7 @@
 
 
 //「まさか、バラバラっすか...？！＠
+	PlaySE(4, "S20/19/443100018", 128, 64);
 	OutputLine(NULL, "「まさか、バラバラっすか…？！」",
 		   NULL, "\"Could they have been... dismembered...?!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -65,12 +69,14 @@
 
 
 //「いぃえぇ＠/
+	PlaySE(4, "S20/11/440700122", 128, 64);
 	OutputLine(NULL, "「いぃえぇ。",
 		   NULL, "\"Nope.", Line_WaitForInput);
 
 	PlaySE( 3, "wa_023", 128, 64 );
 
 //こんがりといい感じだそうで。＠
+	PlaySE(4, "S20/11/440700123", 128, 64);
 	OutputLine(NULL, "こんがりといい感じだそうで。」",
 		   NULL, " Cooked to a nice, light brown.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -98,6 +104,7 @@
 
 
 //「ばっちり黒焦げだそうで＠あぁ言う臭いってこもるんですよねぇ＠岐阜さん、可哀想だなぁ。＠
+	PlaySE(4, "S20/11/440700124", 128, 64);
 	OutputLine(NULL, "「ばっちり黒焦げだそうで。",
 		   NULL, "\"Completely blackened, it seems.", Line_WaitForInput);
 	OutputLine(NULL, "あぁ言う臭いってこもるんですよねぇ。",
@@ -131,6 +138,7 @@
 
 
 //「今、小宮山くんたちが興宮の歯科医を根こそぎ夜襲してます＠カルテで歯型照合するしかないでしょ＠...ごめん＠　誰かウルトラマイルド、２箱くらい買ってきてくれません？＠
+	PlaySE(4, "S20/11/440700125", 128, 64);
 	OutputLine(NULL, "「今、小宮山くんたちが興宮の歯科医を根こそぎ夜襲してます。",
 		   NULL, "\"Komiyama-kun and a few others are performing a thorough night raid on the dentist in Okinomiya.", Line_WaitForInput);
 	OutputLine(NULL, "カルテで歯型照合するしかないでしょ。",
@@ -138,6 +146,7 @@
 	PlaySE(4, "S20/11/440700126", 128, 64);
 	OutputLine(NULL, "…ごめん！",
 		   NULL, " ...Sorry!", Line_WaitForInput);
+	PlaySE(4, "S20/11/440700127", 128, 64);
 	OutputLine(NULL, "　誰かウルトラマイルド、２箱くらい買ってきてくれません？」",
 		   NULL, " Could someone go buy me two or so boxes of ultra-mild?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -152,6 +161,7 @@
 	DrawSceneWithMask( "bg_172", "right", 0, 0, 300 );
 
 //「......今年は見事、見つけましたね＠...ひょっとすると、過去の失踪者もこんな感じで県外でバラされてたんすかね。＠
+	PlaySE(4, "S20/19/443100020", 128, 64);
 	OutputLine(NULL, "「……今年は見事、見つけましたね。",
 		   NULL, "\"...We did an excellent job finding it this year.", Line_WaitForInput);
 	OutputLine(NULL, "…ひょっとすると、過去の失踪者もこんな感じで県外でバラされてたんすかね。」",
@@ -163,6 +173,7 @@
 	DrawBustshotWithFiltering( 1,"oi_si_de_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「なら埋めればいいじゃないですか＠重り付けて日本海でも琵琶湖でもいいですねぇ。＠
+	PlaySE(4, "S20/11/440700128", 128, 64);
 	OutputLine(NULL, "「なら埋めればいいじゃないですか。",
 		   NULL, "\"Then why not bury them,", Line_WaitForInput);
 	OutputLine(NULL, "重り付けて日本海でも琵琶湖でもいいですねぇ。」",
@@ -172,6 +183,7 @@
 
 
 //「...でもどうして＠...１人死んで１人消えるのがこれまでのパターンじゃないすか。￥
+	PlaySE(4, "S20/19/443100021", 128, 64);
 	OutputLine(NULL, "「…でもどうして。",
 		   NULL, "\"...Why, though?", Line_WaitForInput);
 	OutputLine(NULL, "…１人死んで１人消えるのがこれまでのパターンじゃないすか。」",
@@ -180,6 +192,7 @@
 
 
 //「熊ちゃん。仏は拘束なしでドラム缶の中でこんがりでしょ＠多分、シメられた後にわざわざ焼いたんじゃないかと思うんですよ＠見つかることを覚悟の上でです。＠
+	PlaySE(4, "S20/11/440700129", 128, 64);
 	OutputLine(NULL, "「熊ちゃん。仏は拘束なしでドラム缶の中でこんがりでしょ。",
 		   NULL, "\"Kuma-chan, the corpse was inside an oil drum, unrestrained, and cooked.", Line_WaitForInput);
 	OutputLine(NULL, "多分、シメられた後にわざわざ焼いたんじゃないかと思うんですよ。",
@@ -198,6 +211,7 @@
 	ClearMessage();
 
 //「消す気がないってよりは、これはそれとはまったく別のものでしょうねぇ＠消すどころか、主張しているようにすら感じられますよ。＠
+	PlaySE(4, "S20/11/440700131", 128, 64);
 	OutputLine(NULL, "「消す気がないってよりは、これはそれとはまったく別のものでしょうねぇ。",
 		   NULL, "\"Not so much that as they just aren't related.", Line_WaitForInput);
 	OutputLine(NULL, "消すどころか、主張しているようにすら感じられますよ。」",
@@ -223,12 +237,14 @@
 	StopSE( 3 );
 
 //「それを市内でやってくれりゃあ、その線もあるんですがねぇ＠
+	PlaySE(4, "S20/11/440700132", 128, 64);
 	OutputLine(NULL, "「それを市内でやってくれりゃあ、その線もあるんですがねぇ。",
 		   NULL, "\"That might have been the case had it happened in town.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //　...こんな遠くまで運んで焼いちゃったら、下手したらわかんないでしょ＠見せしめにするなら雛見沢の近くでやるべきなんですよ＠
+	PlaySE(4, "S20/11/440700133", 128, 64);
 	OutputLine(NULL, "　…こんな遠くまで運んで焼いちゃったら、下手したらわかんないでしょ。",
 		   NULL, "...If they'd messed up, taking the victim far away and burning them alive wouldn't have been noticed.", Line_WaitForInput);
 	OutputLine(NULL, "見せしめにするなら雛見沢の近くでやるべきなんですよ。",
@@ -237,6 +253,7 @@
 
 
 //......殺したことを主張したいのに、場所は演出効果の確実じゃない遠方＠主張したいのか隠したいのか＠.........今年はなぁに考えてるのかなぁ、オヤシロさまは～。￥
+	PlaySE(4, "S20/11/440700134", 128, 64);
 	OutputLine(NULL, "……殺したことを主張したいのに、場所は演出効果の確実じゃない遠方。",
 		   NULL, "...They wanted to emphasize the fact that they killed the victim, but instead of doing it somewhere for dramatic effect, they did it outside the prefecture.", Line_WaitForInput);
 	OutputLine(NULL, "主張したいのか隠したいのか。",
@@ -262,6 +279,7 @@
 	ClearMessage();
 
 //「大石さん＠　小宮山さんです！＠　出ました＠　興宮のデンタルクリニックで３年前に親知らずの治療をしてます！！＠
+	PlaySE(4, "S20/00/KeijiA44001", 128, 64);
 	OutputLine(NULL, "「大石さん！",
 		   NULL, "\"Ooishi-san!", Line_WaitForInput);
 	OutputLine(NULL, "　小宮山さんです！！",
@@ -296,6 +314,7 @@
 	DrawBustshot( 3, "oi_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「いやぁ...、こんな明け方前に歯医者さんには申し訳ないなぁ＠熊ちゃん、小宮山くんからカルテ受け取ったらすぐに出発して下さい。＠
+	PlaySE(4, "S20/11/440700137", 128, 64);
 	OutputLine(NULL, "「いやぁ…、こんな明け方前に歯医者さんには申し訳ないなぁ。",
 		   NULL, "\"Well... I feel bad for waking up the dentist before dawn.", Line_WaitForInput);
 	OutputLine(NULL, "熊ちゃん、小宮山くんからカルテ受け取ったらすぐに出発して下さい。」",
@@ -312,6 +331,7 @@
 
 
 //「あ、課長です！＠　夜分、お疲れさまです！＠
+	PlaySE(4, "S20/00/KeijiA44005", 128, 64);
 	OutputLine(NULL, "「あ、課長です！！",
 		   NULL, "\"Oh, it's the Chief!!", Line_WaitForInput);
 	OutputLine(NULL, "　夜分、お疲れさまです！」",
@@ -321,6 +341,7 @@
 
 
 //「大石さん、遅くなって申し訳ない＠状況は？！＠
+	PlaySE(4, "S20/00/442700019", 128, 64);
 	OutputLine(NULL, "「大石さん、遅くなって申し訳ない。",
 		   NULL, "\"Ooishi-san, my apologies for my lateness.", Line_WaitForInput);
 	OutputLine(NULL, "状況は？！」",
@@ -332,6 +353,7 @@
 	DrawBustshot( 3, "oi_si_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「う～ん、...やっと面白くなって来たってとこですかねぇ＠燃えてきたぞぅ＠　わぁ～お♪！！￥
+	PlaySE(4, "S20/11/440700138", 128, 64);
 	OutputLine(NULL, "「う〜ん、…やっと面白くなって来たってとこですかねぇ。",
 		   NULL, "\"Hmm... Well, it's just getting good, you see.", Line_WaitForInput);
 	OutputLine(NULL, "燃えてきたぞぅ！",

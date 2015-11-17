@@ -51,14 +51,14 @@ Old collaborators welcome to join the repository, however it's still preferred t
 - [x] wata_tips_10.txt
 - [x] wata_tips_11.txt
 - [x] wata_tips_12.txt
-- [ ] **wata_tips_13.txt**
-- [ ] wata_tips_14.txt
-- [ ] wata_tips_15.txt
-- [ ] wata_tips_16.txt
-- [ ] wata_tips_17.txt
-- [ ] wata_tips_18.txt
-- [ ] wata_tips_19.txt
-- [ ] wata_tips_20.txt
+- [x] wata_tips_13.txt
+- [x] wata_tips_14.txt
+- [x] wata_tips_15.txt
+- [x] wata_tips_16.txt
+- [x] wata_tips_17.txt
+- [x] wata_tips_18.txt
+- [x] wata_tips_19.txt
+- [x] wata_tips_20.txt
 - [ ] wata_tips_21.txt
 - [ ] wata_tips_22.txt
 - [ ] wata_tips_23.txt

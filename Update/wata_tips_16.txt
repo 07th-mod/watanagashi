@@ -17,6 +17,7 @@
 	FadeOutBGM( 2, 10, TRUE );
 
 //「夜分遅くに失礼いたします...＠公由と申しますが、ご主人でいらっしゃいますか＠　......はい＠　いえいえ、その節は本当にありがとうございます＠えぇ＠............それでですね＠...こんな時間に大変恐縮なのですが＠...ウチのお爺ちゃんがお邪魔してないかと思いまして＠.........ですよねぇ＠　はい＠　こんな時間に申し訳ありませんでした＠それでは失礼いたします＠ごめんください......。￥
+	PlaySE(4, "S20/00/kimiM44001", 128, 64);
 	OutputLine(NULL, "「夜分遅くに失礼いたします…。",
 		   NULL, "\"Excuse me for the late call...", Line_WaitForInput);
 	OutputLine(NULL, "公由と申しますが、ご主人でいらっしゃいますか？",
@@ -24,8 +25,10 @@
 	PlaySE(4, "S20/00/kimiM44002", 128, 64);
 	OutputLine(NULL, "　……はい！",
 		   NULL, " ......Yes!", Line_WaitForInput);
+	PlaySE(4, "S20/00/kimiM44003", 128, 64);
 	OutputLine(NULL, "　いえいえ、その節は本当にありがとうございます。",
 		   NULL, " No, not at all. Thank you very much for that.", Line_WaitForInput);
+	PlaySE(4, "S20/00/kimiM44004", 128, 64);
 	OutputLine(NULL, "えぇ。",
 		   NULL, " Yes.", Line_WaitForInput);
 	OutputLine(NULL, "…………それでですね、",
@@ -33,8 +36,10 @@
 	PlaySE(4, "S20/00/kimiM44005", 128, 64);
 	OutputLine(NULL, "…こんな時間に大変恐縮なのですが、",
 		   NULL, " ...I do apologize for calling at this hour,", Line_WaitForInput);
+	PlaySE(4, "S20/00/kimiM44006", 128, 64);
 	OutputLine(NULL, "…ウチのお爺ちゃんがお邪魔してないかと思いまして。",
 		   NULL, " but I was wondering if our old man was visiting you at the moment.", Line_WaitForInput);
+	PlaySE(4, "S20/00/kimiM44007", 128, 64);
 	OutputLine(NULL, "………ですよねぇ！",
 		   NULL, " ......You've got that right!", Line_WaitForInput);
 	OutputLine(NULL, "　はい！",
@@ -60,6 +65,7 @@
 
 
 //「どうだい＠　ダメ？＠
+	PlaySE(4, "S20/00/kimiF44001", 128, 64);
 	OutputLine(NULL, "「どうだい？",
 		   NULL, "\"So?", Line_WaitForInput);
 	OutputLine(NULL, "　ダメ？」",
@@ -70,6 +76,7 @@
 
 //「参ったなぁ...。...@
 // どんなに熱中しても、電話くらいはしてくれる人なんだけれどなぁ！＠
+	PlaySE(4, "S20/00/kimiM44011", 128, 64);
 	OutputLine(NULL, "「参ったなぁ…。…",
 		   NULL, "\"I'm not sure what to do...", Line_WaitForInput);
 	OutputLine(NULL, "どんなに熱中しても、電話くらいはしてくれる人なんだけれどなぁ！」",
@@ -97,6 +104,7 @@
 	PlayBGM( 1, "msys13", 128, 0 );
 
 //「はい＠　公由です。＠
+	PlaySE(4, "S20/00/kimiM44012", 128, 64);
 	OutputLine(NULL, "「はい！",
 		   NULL, "\"Hello!", Line_WaitForInput);
 	OutputLine(NULL, "　公由です。」",
@@ -105,6 +113,7 @@
 
 
 //「園崎です＠どうです＠　村長さんは見つかりましたか？＠
+	PlaySE(4, "S20/03/440300078", 128, 64);
 	OutputLine(NULL, "「園崎です。",
 		   NULL, "\"This is Sonozaki.", Line_WaitForInput);
 	OutputLine(NULL, "どうです？",
@@ -116,6 +125,7 @@
 
 
 //「あぁ、魅音ちゃんか＠...片っ端から電話をかけてみたけど、だめだよ＠見つからないんだ...＠参ったなぁ...＠　どこで油を売ってるのかなぁ...！￥
+	PlaySE(4, "S20/00/kimiM44013", 128, 64);
 	OutputLine(NULL, "「あぁ、魅音ちゃんか。",
 		   NULL, "\"Oh, Mion-chan.", Line_WaitForInput);
 	OutputLine(NULL, "…片っ端から電話をかけてみたけど、だめだよ。",
@@ -133,6 +143,7 @@
 
 
 //「こっちでも心当たりにいろいろと問い合わせましたけど、!w800...全然。＠
+	PlaySE(4, "S20/03/440300080", 128, 64);
 	OutputLine(NULL, "「こっちでも心当たりにいろいろと問い合わせましたけど、",
 		   NULL, "\"I put a word in with a bunch of people who might have had an idea...", Line_ContinueAfterTyping);
 
@@ -147,6 +158,7 @@
 
 
 //「.................................。＠
+	PlaySE(4, "S20/00/kimiM44017", 128, 64);
 	OutputLine(NULL, "「……………………………。」",
 		   NULL, "\"............\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -161,6 +173,7 @@
 
 
 //「こ、こんな時間にかい...＠　それに、別に行方不明になったと決まったわけでもないし...、＠
+	PlaySE(4, "S20/00/kimiM44018", 128, 64);
 	OutputLine(NULL, "「こ、こんな時間にかい…？",
 		   NULL, "\"A-At this hour...?", Line_WaitForInput);
 	OutputLine(NULL, "　それに、別に行方不明になったと決まったわけでもないし…、」",
@@ -171,6 +184,7 @@
 	PlaySE( 3, "wa_026", 128, 64 );
 
 //「綿流しの直後ですから＠少し慎重に扱った方がいいとのことです＠それでも見つからないなら、明朝、警察に通報しましょう＠見つかる見つからないは別にして、痛くない腹を探られない方がいいでしょうから。￥
+	PlaySE(4, "S20/03/440300082", 128, 64);
 	OutputLine(NULL, "「綿流しの直後ですから。",
 		   NULL, "\"Watanagashi just happened.", Line_WaitForInput);
 	OutputLine(NULL, "少し慎重に扱った方がいいとのことです。",
@@ -191,6 +205,7 @@
 
 
 //「はい＠直接、声を聞かないと信用できないなら、電話先に出させますよ？＠
+	PlaySE(4, "S20/03/440300085", 128, 64);
 	OutputLine(NULL, "「はい。",
 		   NULL, "\"Yes.", Line_WaitForInput);
 	OutputLine(NULL, "直接、声を聞かないと信用できないなら、電話先に出させますよ？」",
@@ -199,6 +214,7 @@
 
 
 //「い、いえ...＠　わかりました＠青年団を集めて探しましょう＠それで見つからなければ...翌朝に警察に通報します。￥
+	PlaySE(4, "S20/00/kimiM44020", 128, 64);
 	OutputLine(NULL, "「い、いえ…！",
 		   NULL, "\"N-No, that's fine...!", Line_WaitForInput);
 	OutputLine(NULL, "　わかりました。",
@@ -212,6 +228,7 @@
 	ClearMessage();
 
 //「青年団の連絡網、よろしくお願いしますね＠私も婆っちゃの代行ということでそちらに参ります。＠
+	PlaySE(4, "S20/03/440300086", 128, 64);
 	OutputLine(NULL, "「青年団の連絡網、よろしくお願いしますね。",
 		   NULL, "\"She'll leave it to you to organize the men.", Line_WaitForInput);
 	OutputLine(NULL, "私も婆っちゃの代行ということでそちらに参ります。」",
@@ -220,6 +237,7 @@
 
 
 //「あ、ありがとう＠すぐにみんなを集めます...。＠
+	PlaySE(4, "S20/00/kimiM44023", 128, 64);
 	OutputLine(NULL, "「あ、ありがとう。",
 		   NULL, "\"Th-Thank you.", Line_WaitForInput);
 	OutputLine(NULL, "すぐにみんなを集めます…。」",
@@ -228,6 +246,7 @@
 
 
 //「えぇ＠では。￥
+	PlaySE(4, "S20/03/440300087", 128, 64);
 	OutputLine(NULL, "「えぇ。",
 		   NULL, "\"Thanks.", Line_WaitForInput);
 	OutputLine(NULL, "では。」",
