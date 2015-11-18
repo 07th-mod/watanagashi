@@ -26,6 +26,7 @@
 
 
 //「あんりゃ、蔵ちゃん。あんたが一番遅いよ～＠　若い人はみんな揃ってる。＠
+	PlaySE(4, "S20/00/master44001", 128, 64);
 	OutputLine(NULL, "「あんりゃ、蔵ちゃん。あんたが一番遅いよ〜？",
 		   NULL, "\"Heya, Kura-chan. You're the last one here~", Line_WaitForInput);
 	OutputLine(NULL, "　若い人はみんな揃ってる。」",
@@ -35,6 +36,7 @@
 
 
 //「なっはっはっは...＠じゃあお母さん、すみませんね。＠
+	PlaySE(4, "S20/11/440700179", 128, 64);
 	OutputLine(NULL, "「なっはっはっは…。",
 		   NULL, "\"Na-ha-ha-ha...", Line_WaitForInput);
 	OutputLine(NULL, "じゃあお母さん、すみませんね。」",
@@ -52,6 +54,7 @@
 	DrawSceneWithMask( "bg_071", "up", 0, 0, 1300 );
 
 //「大石さん＠　お疲れさまっす！！＠
+	PlaySE(4, "S20/19/443100036", 128, 64);
 	OutputLine(NULL, "「大石さん！",
 		   NULL, "\"Ooishi-san!", Line_WaitForInput);
 	OutputLine(NULL, "　お疲れさまっす！！」",
@@ -60,6 +63,7 @@
 
 
 //「なんだ、みんな真面目に待ってたんですか＠　サンマでもやってりゃ良かったのに。￥
+	PlaySE(4, "S20/11/440700180", 128, 64);
 	OutputLine(NULL, "「なんだ、みんな真面目に待ってたんですか？",
 		   NULL, "\"What, were you all earnestly waiting for me?", Line_WaitForInput);
 	OutputLine(NULL, "　サンマでもやってりゃ良かったのに。」",
@@ -79,6 +83,9 @@
 
 
 //「「「ぅおおっす！！」」＠
+	PlaySE(4, "S20/00/442500011", 128, 64);
+	PlaySE(5, "S20/00/KeijiB44008", 128, 64);
+	PlaySE(6, "S20/19/443100037", 128, 64);
 	OutputLine(NULL, "「「「ぅおおっす！！」」」",
 		   NULL, "\"\"\"Thank you!!\"\"\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -92,6 +99,7 @@
 	ClearMessage();
 
 //「状況は芳しくありません＠署長が園崎系議員の恫喝に屈したそうです＠
+	PlaySE(4, "S20/11/440700182", 128, 64);
 	OutputLine(NULL, "「状況は芳しくありません。",
 		   NULL, "\"The situation is not looking good.", Line_WaitForInput);
 	OutputLine(NULL, "署長が園崎系議員の恫喝に屈したそうです。",
@@ -100,6 +108,7 @@
 
 
 //　近日中に鷹野殺しは岐阜県警に譲り、村長たちの失踪は行方不明扱いで生活課に委ねるようです。＠
+	PlaySE(4, "S20/11/440700183", 128, 64);
 	OutputLine(NULL, "　近日中に鷹野殺しは岐阜県警に譲り、村長たちの失踪は行方不明扱いで生活課に委ねるようです。」",
 		   NULL, "In the coming days, we'll hand off Takano's murder to the Gifu Police, and give the missing persons case of the disappearance of the mayor and the others to the community division.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
@@ -114,15 +123,18 @@
 
 //「請求した令状も全て却下されました＠課長からは園崎家界隈には近付くなとまで言われてます＠...いやいや、困ったモンです＠
 //　ちなみに、私には来週から警視庁への研修命令が出るそうです＠その後は余った有給を伊豆で消化しろとまで言われてます＠...いやぁ、そういうのも悪くないですねぇ～。＠
+	PlaySE(4, "S20/11/440700184", 128, 64);
 	OutputLine(NULL, "「請求した令状も全て却下されました。",
 		   NULL, "\"All of our requests for warrants were turned down as well.", Line_WaitForInput);
 	OutputLine(NULL, "課長からは園崎家界隈には近付くなとまで言われてます。",
 		   NULL, " I've even been told by our section chief not to go anywhere near the Sonozaki house.", Line_WaitForInput);
+	PlaySE(4, "S20/11/440700184", 128, 64);
 	OutputLine(NULL, "…いやいや、困ったモンです。",
 		   NULL, " ...We're certainly in a bind, that we are.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
+	PlaySE(4, "S20/11/440700186", 128, 64);
 	OutputLine(NULL, "　ちなみに、私には来週から警視庁への研修命令が出るそうです。",
 		   NULL, "Incidentally, it looks like I'll be getting orders soon to go to training at the Metropolitan Police Department starting next week.", Line_WaitForInput);
 	OutputLine(NULL, "その後は余った有給を伊豆で消化しろとまで言われてます。",
@@ -141,10 +153,12 @@
 	ClearMessage();
 
 //「いつもそうですが、事件と車のキーの閉じ込めはよく似てます＠開けるためのカギはいつもその中に閉じ込められているんです＠車ならＪＡＦを呼んで扉をこじ開ける＠事件なら＠　熊ちゃん、図面を。＠
+	PlaySE(4, "S20/11/440700188", 128, 64);
 	OutputLine(NULL, "「いつもそうですが、事件と車のキーの閉じ込めはよく似てます。",
 		   NULL, "\"This always happens, but incidents are a lot like locking your keys in the car.", Line_WaitForInput);
 	OutputLine(NULL, "開けるためのカギはいつもその中に閉じ込められているんです。",
 		   NULL, " The keys you need to unlock the door are always locked inside.", Line_WaitForInput);
+	PlaySE(4, "S20/11/440700189", 128, 64);
 	OutputLine(NULL, "車ならＪＡＦを呼んで扉をこじ開ける。",
 		   NULL, " For cars, you call JAF and they'll pry open your door.", Line_WaitForInput);
 	PlaySE(4, "S20/11/440700190", 128, 64);
@@ -164,6 +178,7 @@
 	ClearMessage();
 
 //「私もずーーっとこの商売をやってます＠勘には自信があるつもりですがね、今回ばかりはハズレるかもしれませんよ＠　退職金が惜しい方は私が１０数える間に席を外してください。＠
+	PlaySE(4, "S20/11/440700192", 128, 64);
 	OutputLine(NULL, "「私もずーーっとこの商売をやってます。",
 		   NULL, "\"Now, I've been doing this job for a looong time.", Line_WaitForInput);
 	OutputLine(NULL, "勘には自信があるつもりですがね、今回ばかりはハズレるかもしれませんよ？",
@@ -186,6 +201,7 @@
 	ClearMessage();
 
 //「９、１０！＠　あ～あ～、誰も出てかないよ＠皆さん、ご家族はもっと大切にして下さいよ？　んっふっふっふ！＠
+	PlaySE(4, "S20/11/440700194", 128, 64);
 	OutputLine(NULL, "「９、１０！！",
 		   NULL, "\"Nine, ten!!", Line_WaitForInput);
 	OutputLine(NULL, "　あ〜あ〜、誰も出てかないよ。",
@@ -197,6 +213,9 @@
 
 
 //「「「わっはっはっはっはっは...！！」」＠
+	PlaySE(4, "S20/00/442500012", 128, 64);
+	PlaySE(5, "S20/00/KeijiB44009", 128, 64);
+	PlaySE(6, "S20/19/443100038", 128, 64);
 	OutputLine(NULL, "「「「わっはっはっはっはっは…！！」」」",
 		   NULL, "\"\"\"Wa-ha-ha-ha-ha-ha...!!\"\"\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -208,6 +227,7 @@
 	ClearMessage();
 
 //「各自、手元の資料を確認＠監視カメラの所在と死角を叩き込んでください＠熊ちゃんは指揮車で待機＠非常時は私に代わって指揮をお願いしますよ＠小宮山くんは突入Ａ班＠敦くんは突入Ｂ班を指揮＠監視班は１から８まで所定の位置で監視を＠盆地くんはタイムテーブルを厳守＠署に怪しまれないようローテを管理して下さい＠さて、待機中の班が一番大仕事ですよ＠　課長に私の所在を聞かれたらとぼけて下さい。＠
+	PlaySE(4, "S20/11/440700196", 128, 64);
 	OutputLine(NULL, "「各自、手元の資料を確認。",
 		   NULL, "\"I want everyone to go over their materials.", Line_WaitForInput);
 	OutputLine(NULL, "監視カメラの所在と死角を叩き込んでください。",
@@ -215,8 +235,10 @@
 	PlaySE(4, "S20/11/440700197", 128, 64);
 	OutputLine(NULL, "熊ちゃんは指揮車で待機。",
 		   NULL, " Kuma-chan, you'll stand by in the command car.", Line_WaitForInput);
+	PlaySE(4, "S20/11/440700198", 128, 64);
 	OutputLine(NULL, "非常時は私に代わって指揮をお願いしますよ。",
 		   NULL, " If something happens, you'll switch with me and take over.", Line_WaitForInput);
+	PlaySE(4, "S20/11/440700199", 128, 64);
 	OutputLine(NULL, "小宮山くんは突入Ａ班。",
 		   NULL, " Komiyama-kun will head up Infiltration Team A.", Line_WaitForInput);
 	OutputLine(NULL, "敦くんは突入Ｂ班を指揮。",
@@ -227,8 +249,10 @@
 	PlaySE(4, "S20/11/440700201", 128, 64);
 	OutputLine(NULL, "盆地くんはタイムテーブルを厳守。",
 		   NULL, " Bonchi-kun, you're responsible for keeping a strict timetable.", Line_WaitForInput);
+	PlaySE(4, "S20/11/440700202", 128, 64);
 	OutputLine(NULL, "署に怪しまれないようローテを管理して下さい。",
 		   NULL, " Control your rotations so HQ doesn't get wise.", Line_WaitForInput);
+	PlaySE(4, "S20/11/440700203", 128, 64);
 	OutputLine(NULL, "さて、待機中の班が一番大仕事ですよ？",
 		   NULL, " Now, the team on standby has the most important job, all right?", Line_WaitForInput);
 	OutputLine(NULL, "　課長に私の所在を聞かれたらとぼけて下さい。」",
@@ -237,11 +261,15 @@
 //長文につき＠を￥に変換
 
 //「「「わっはっはっはっはっは！！」」￥
+	PlaySE(4, "S20/00/442500013", 128, 64);
+	PlaySE(5, "S20/00/KeijiB44010", 128, 64);
+	PlaySE(6, "S20/19/443100039", 128, 64);
 	OutputLine(NULL, "「「「わっはっはっはっはっは！！」」」",
 		   NULL, "\"\"\"Wa-ha-ha-ha-ha-ha-ha!!\"\"\"", Line_Normal);
 	ClearMessage();
 
 //「ゲストのエスコート役は私がやります＠きっと会場へ連れて行きますので皆さん、気長に待ってください。＠
+	PlaySE(4, "S20/11/440700204", 128, 64);
 	OutputLine(NULL, "「ゲストのエスコート役は私がやります。",
 		   NULL, "\"I'll handle escorting our guest.", Line_WaitForInput);
 	OutputLine(NULL, "きっと会場へ連れて行きますので皆さん、気長に待ってください。」",
@@ -250,6 +278,7 @@
 
 
 //「.........落ちるっすかね＠前原圭一は。＠
+	PlaySE(4, "S20/19/443100040", 128, 64);
 	OutputLine(NULL, "「………落ちるっすかね。",
 		   NULL, "\"...Wonder if he'll cave?", Line_WaitForInput);
 	OutputLine(NULL, "前原圭一は。」",
@@ -258,10 +287,12 @@
 
 
 //「私の見たとこじゃあ、明日明後日にはイケそうですよ＠もうコロっとね＠んっふっふっふ！￥
+	PlaySE(4, "S20/11/440700205", 128, 64);
 	OutputLine(NULL, "「私の見たとこじゃあ、明日明後日にはイケそうですよ。",
 		   NULL, "\"From what I've seen, we're set for tomorrow or the day after in that regard.", Line_WaitForInput);
 	OutputLine(NULL, "もうコロっとね。",
 		   NULL, " It'll be easy.", Line_WaitForInput);
+	PlaySE(4, "S20/11/440700206", 128, 64);
 	OutputLine(NULL, "んっふっふっふ！」",
 		   NULL, " Nfu-fu-fu-fu!\"", Line_Normal);
 	ClearMessage();

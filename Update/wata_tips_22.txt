@@ -25,6 +25,7 @@
 	DrawBustshotWithFiltering( 3, "oi_si_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「どうです＠　何か手掛かりはありました？＠
+	PlaySE(4, "S20/11/440700160", 128, 64);
 	OutputLine(NULL, "「どうです？",
 		   NULL, "\"How did it go?", Line_WaitForInput);
 	OutputLine(NULL, "　何か手掛かりはありました？」",
@@ -52,6 +53,7 @@
 	ClearMessage();
 
 //「課長＠若い子から交替で仮眠取らせてあげて下さい＠ここからは長丁場になりますからねぇ＠無理せず、体を休めながらのんびり行きましょ。＠
+	PlaySE(4, "S20/11/440700161", 128, 64);
 	OutputLine(NULL, "「課長。",
 		   NULL, "\"Chief.", Line_WaitForInput);
 	OutputLine(NULL, "若い子から交替で仮眠取らせてあげて下さい。",
@@ -66,6 +68,7 @@
 
 
 //「みんなには交代で休めって言ってるんだけどね＠みんな遠慮してなかなか休んでくれないんだよ＠...大石さんからも言ってくれないか。￥
+	PlaySE(4, "S20/00/442700020", 128, 64);
 	OutputLine(NULL, "「みんなには交代で休めって言ってるんだけどね。",
 		   NULL, "\"I've been telling them to sleep in shifts.", Line_WaitForInput);
 	OutputLine(NULL, "みんな遠慮してなかなか休んでくれないんだよ。",
@@ -79,6 +82,7 @@
 	DrawBustshot( 3, "oi_si_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「ありゃありゃ＠みんな、遠慮しないでいいんですよ＠　小宮山くん＠若い子から順に交代で休ませてあげて下さい。＠
+	PlaySE(4, "S20/11/440700164", 128, 64);
 	OutputLine(NULL, "「ありゃありゃ。",
 		   NULL, "\"Oh my.", Line_WaitForInput);
 	OutputLine(NULL, "みんな、遠慮しないでいいんですよ？",
@@ -93,6 +97,7 @@
 
 
 //「小宮山さん＠そうしてあげてください。＠
+	PlaySE(4, "S20/00/442700022", 128, 64);
 	OutputLine(NULL, "「小宮山さん。",
 		   NULL, "\"Komiyama-san.", Line_WaitForInput);
 	OutputLine(NULL, "そうしてあげてください。」",
@@ -109,6 +114,7 @@
 	DrawBustshot( 3, "oi_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「で、課長＠例の請求なんですけど、まだ駄目そうです？＠
+	PlaySE(4, "S20/11/440700167", 128, 64);
 	OutputLine(NULL, "「で、課長。",
 		   NULL, "\"So, Chief.", Line_WaitForInput);
 	OutputLine(NULL, "例の請求なんですけど、まだ駄目そうです？」",
@@ -117,6 +123,7 @@
 
 
 //「...第一、村人の噂だけなんでしょう＠　もっと具体的な証拠がなければ難しいよ。＠
+	PlaySE(4, "S20/00/442700023", 128, 64);
 	OutputLine(NULL, "「…第一、村人の噂だけなんでしょう？",
 		   NULL, "\"...It's just a rumor among the villagers in the first place, you know?", Line_WaitForInput);
 	OutputLine(NULL, "　もっと具体的な証拠がなければ難しいよ。」",
@@ -141,6 +148,7 @@
 	DrawBustshot( 3, "oi_si_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「課長～＠ナゾナゾやってるんじゃないですよ＠　死んだ２人を含む４人が綿流しの晩に祭具殿と呼ばれる禁断の蔵に無断で入り込み、それを何者かが見ていた＠　ここまでは信頼できる情報なんです。＠
+	PlaySE(4, "S20/11/440700169", 128, 64);
 	OutputLine(NULL, "「課長〜。",
 		   NULL, "\"Chief~", Line_WaitForInput);
 	OutputLine(NULL, "ナゾナゾやってるんじゃないですよ？",
@@ -161,6 +169,7 @@
 	ClearMessage();
 
 //「そりゃまぁ、４人が頬かむりして忍び込む写真はありませんがねぇ＠/
+	PlaySE(4, "S20/11/440700172", 128, 64);
 	OutputLine(NULL, "「そりゃまぁ、４人が頬かむりして忍び込む写真はありませんがねぇ。",
 		   NULL, "\"Well, it's true that we don't have any pictures of the four of them sneaking in with cloth tied around their heads.", Line_WaitForInput);
 
@@ -168,6 +177,7 @@
 	DrawBustshot( 3, "oi_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //とにかく、４人は祭具殿の中で何かを見たんです＠　消されるくらいの何かを！＠
+	PlaySE(4, "S20/11/440700173", 128, 64);
 	OutputLine(NULL, "とにかく、４人は祭具殿の中で何かを見たんです！",
 		   NULL, " Anyway, those four saw something inside the storehouse!", Line_WaitForInput);
 	OutputLine(NULL, "　消されるくらいの何かを！」",
@@ -188,16 +198,19 @@
 	ClearMessage();
 
 //「園崎家絡みの暴力団関係が有力候補ですなぁ＠トカレフの山か、ケシの密造工場か＠園崎家の隠し資産ってのも捨てがたい辺りです。＠
+	PlaySE(4, "S20/11/440700174", 128, 64);
 	OutputLine(NULL, "「園崎家絡みの暴力団関係が有力候補ですなぁ。",
 		   NULL, "\"Anything pointing out the Sonozaki family's connections to violent organizations would be a major contender.", Line_WaitForInput);
 	OutputLine(NULL, "トカレフの山か、ケシの密造工場か。",
 		   NULL, " Like a pile of Tokarevs, or a secret poppy production facility.", Line_WaitForInput);
+	PlaySE(4, "S20/11/440700175", 128, 64);
 	OutputLine(NULL, "園崎家の隠し資産ってのも捨てがたい辺りです。」",
 		   NULL, " The secret Sonozaki family fortune would also be pretty difficult to discard.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //「...大石さん、気持ちはわかるけど＠　あの祭具殿ってのは古手神社にある神聖な建物で、地元の人間への相当の配慮が必要な建物なんだよ。＠
+	PlaySE(4, "S20/00/442700027", 128, 64);
 	OutputLine(NULL, "「…大石さん、気持ちはわかるけど！",
 		   NULL, "\"...Look, Ooishi-san, I know how you feel!", Line_WaitForInput);
 	OutputLine(NULL, "　あの祭具殿ってのは古手神社にある神聖な建物で、地元の人間への相当の配慮が必要な建物なんだよ。」",
@@ -213,6 +226,7 @@
 	ClearMessage();
 
 //「とにかく＠　相当の証拠がない限り、祭具殿の捜査令状は取れないよ＠園崎本家への令状も同じだ＠　特に園崎本家への捜査は四課と県警の暴対が絡んでる＠入念な事前調整がいるんだ！＠
+	PlaySE(4, "S20/00/442700028", 128, 64);
 	OutputLine(NULL, "「とにかく！",
 		   NULL, "\"Anyway!", Line_WaitForInput);
 	OutputLine(NULL, "　相当の証拠がない限り、祭具殿の捜査令状は取れないよ。",
@@ -233,6 +247,7 @@
 	DrawBustshot( 3, "oi_si_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「......調整がいるってんなら、私、直接乗り込んで付けてきてもいいですよ＠　四課長はシゲちゃんでしょ＠　暴対は山海さん＠隣の雀荘で話した方が早そうな面子ですねぇ。￥
+	PlaySE(4, "S20/11/440700176", 128, 64);
 	OutputLine(NULL, "「……調整がいるってんなら、私、直接乗り込んで付けてきてもいいですよ？",
 		   NULL, "\"...If you say you need preparations, then why don't you just let me talk with them directly?", Line_WaitForInput);
 	OutputLine(NULL, "　四課長はシゲちゃんでしょ？",
@@ -249,6 +264,7 @@
 	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
 
 //「か、課長にお客様です...＠　えっと、...ぅわ！＠
+	PlaySE(4, "S20/00/442500010", 128, 64);
 	OutputLine(NULL, "「か、課長にお客様です…！",
 		   NULL, "\"C-Chief, you have a visitor...!", Line_WaitForInput);
 	OutputLine(NULL, "　えっと、…ぅわ！」",
@@ -268,6 +284,7 @@
 	DrawScene( "black", 400 );
 
 //「わしは議員の園崎じゃ！＠　責任者を出さんかッ！！＠　早ぅせいッ！！＠
+	PlaySE(4, "S20/00/saburo44001", 128, 64);
 	OutputLine(NULL, "「わしは議員の園崎じゃ！！",
 		   NULL, "\"I am Congressman Sonozaki!!", Line_WaitForInput);
 	OutputLine(NULL, "　責任者を出さんかッ！！！",
@@ -280,6 +297,7 @@
 
 
 //「ど、どうも...＠　私が課長の高杉でございます！！＠
+	PlaySE(4, "S20/00/442700032", 128, 64);
 	OutputLine(NULL, "「ど、どうも…！",
 		   NULL, "\"H-Hello...!", Line_WaitForInput);
 	OutputLine(NULL, "　私が課長の高杉でございます！！」",
@@ -289,6 +307,7 @@
 
 
 //「お前の名刺なぞ要らんわ！＠　お前なんぞ、いつだって閑職に飛ばせるんじゃぞ＠　それにお前だけでは足らん＠　大石とか言う男も呼ばんか！＠　神聖な古手神社に捜査令状なんぞを請求しおったバチ当たり者じゃッ！！！￥
+	PlaySE(4, "S20/00/saburo44003", 128, 64);
 	OutputLine(NULL, "「お前の名刺なぞ要らんわ！！",
 		   NULL, "\"I don't need YOUR name!!", Line_WaitForInput);
 	OutputLine(NULL, "　お前なんぞ、いつだって閑職に飛ばせるんじゃぞ！",
@@ -305,6 +324,7 @@
 	ClearMessage();
 
 //「も、申し訳ございません...＠　お、大石はただいま捜査に出ておりまして、なかなか連絡が付き難く...私が代わって承りますので...＠　ど、どうぞ、おかけください！＠
+	PlaySE(4, "S20/00/442700033", 128, 64);
 	OutputLine(NULL, "「も、申し訳ございません…！",
 		   NULL, "\"I-I sincerely apologize...!", Line_WaitForInput);
 	OutputLine(NULL, "　お、大石はただいま捜査に出ておりまして、なかなか連絡が付き難く…私が代わって承りますので…！",
@@ -332,22 +352,27 @@
 	DrawSceneWithMask( "bg_172", "left", 0, 0, 300 );
 
 //「良いかッ？！　古手神社はそもそも皇暦２６００年に継ぐ２５００年の歴史を有する、神聖にして侵すべからずの聖地なのじゃ！＠　八百万の神々とオヤシロさまと先祖の霊を祀り、日が昇りてから沈むまで＠月が昇りてから沈むまで雛見沢を見守る尊い神社なのじゃ＠それを土足で踏みにじろうという馬鹿がいるッッ！！＠
+	PlaySE(4, "S20/00/saburo44007", 128, 64);
 	OutputLine(NULL, "「良いかッ？！　古手神社はそもそも皇暦２６００年に継ぐ２５００年の歴史を有する、神聖にして侵すべからずの聖地なのじゃ！！",
 		   NULL, "\"Listen here!! The Furude Shrine spent 2600 years under the imperial calendar and 2500 more beyond that! It is sacred! A sanctuary that must never be defiled!!", Line_WaitForInput);
+	PlaySE(4, "S20/00/saburo44008", 128, 64);
 	OutputLine(NULL, "　八百万の神々とオヤシロさまと先祖の霊を祀り、日が昇りてから沈むまで。",
 		   NULL, " The eight hundred thousand gods, Oyashiro-sama, and the spirits of our ancestors are enshrined there.", Line_WaitForInput);
 	OutputLine(NULL, "月が昇りてから沈むまで雛見沢を見守る尊い神社なのじゃ。",
 		   NULL, " The holy shrine protects Hinamizawa from when the sun comes up to when it sets, and from when the moon rises to when it falls.", Line_WaitForInput);
+	PlaySE(4, "S20/00/saburo44009", 128, 64);
 	OutputLine(NULL, "それを土足で踏みにじろうという馬鹿がいるッッ！！！",
 		   NULL, " Who is the idiot who wanted to set foot in there?!?!", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //　そもそも信仰の自由は憲法で定められた国民の最も尊い権利であろうが！！＠　それを自らの捜査の怠慢を口実に汚そうという魂胆ッ！！＠　こんなものは断じて許せんぞッ！！＠　聞いておるのか大虚けがッ！！＠　わしを怒らせてただで済むと思わん方がいいぞぉおおぉッ！！！￥
+	PlaySE(4, "S20/00/saburo44010", 128, 64);
 	OutputLine(NULL, "　そもそも信仰の自由は憲法で定められた国民の最も尊い権利であろうが！！！",
 		   NULL, "Besides, the right to religion is the most revered right of the people of this country in the constitution!!!", Line_WaitForInput);
 	OutputLine(NULL, "　それを自らの捜査の怠慢を口実に汚そうという魂胆ッ！！！",
 		   NULL, " You dare to be so bold as to sully that using your own investigation's negligence as pretext!!?", Line_WaitForInput);
+	PlaySE(4, "S20/00/saburo44011", 128, 64);
 	OutputLine(NULL, "　こんなものは断じて許せんぞッ！！！",
 		   NULL, " I cannot—I will not allow it!!!", Line_WaitForInput);
 	OutputLine(NULL, "　聞いておるのか大虚けがッ！！！",
