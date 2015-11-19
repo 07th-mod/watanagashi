@@ -179,6 +179,7 @@
 	PlayBGM( 1, "msys06", 128, 0 );
 
 //「詩音！......その、!w1000......昨夜は......すまなかった＠...つい興奮して......。＠
+  PlaySE(4, "S02/01/130100517", 128, 64);
 	OutputLine(NULL, "「詩音！……その、",
 		   NULL, "\"Shion! ...Umm,", Line_ContinueAfterTyping);
 
@@ -195,6 +196,7 @@
 
 
 //「.................................。＠
+  PlaySE(4, "S02/06/130600288", 128, 64);
 	OutputLine(NULL, "「……………………………。」",
 		   NULL, "\"............\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -307,6 +309,7 @@
 	ClearMessage();
 
 //「......犯人たちは、祭具殿を穢した主謀格のあの２人を殺し、...次に私たちを狙います＠......否定したいでしょうが、...これを認めてください＠...失踪してから認めても、もう遅いんですよ？！＠
+  PlaySE(4, "S02/06/130600299", 128, 64);
 	OutputLine(NULL, "「……犯人たちは、祭具殿を穢した主謀格のあの２人を殺し、…次に私たちを狙います。",
 		   NULL, "\"......The culprits killed those two, the ones responsible for sullying the storehouse... and they'll come for us next.", Line_WaitForInput);
 	PlaySE(4, "S02/06/130600300", 128, 64);
@@ -352,8 +355,10 @@
 	PlaySE(4, "S02/06/130600304", 128, 64);
 	OutputLine(NULL, "「……互いに、何か気になることがあったら報告し合いましょう。",
 		   NULL, "\"...Let's report anything we noticed that seemed strange.", Line_WaitForInput);
+  PlaySE(4, "S02/06/130600305", 128, 64);
 	OutputLine(NULL, "…互いの持つ小さな断片を合わせていけば、…ひょっとすると、鷹野さんたちを殺した、…いえ、今年の事件に限らない。",
 		   NULL, " ...If we connect all the tiny pieces that we have... then just maybe we'll find out who killed them... or maybe even the truth behind the incidents of the previous years.", Line_WaitForInput);
+  PlaySE(4, "S02/06/130600306", 128, 64);
 	OutputLine(NULL, "過去の連続事件を解決するカギが見つかるかもしれません。」",
 		   NULL, " We could find the key that'll resolve everything.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -383,12 +388,14 @@
 	FadeOutBGM( 2, 1000, TRUE );
 
 //「......では、まずは言い出した私から行きます＠/
+  PlaySE(4, "S02/06/130600307", 128, 64);
 	OutputLine(NULL, "「……では、まずは言い出した私から行きます。",
 		   NULL, "\"...Then I'll start, since I suggested it.", Line_WaitForInput);
 
 	PlaySE( 3, "wa_023", 128, 64 );
 
 //...最近、誰かに監視されているような気がします。＠
+  PlaySE(4, "S02/06/130600308", 128, 64);
 	OutputLine(NULL, "…最近、誰かに監視されているような気がします。」",
 		   NULL, " ...I feel like somebody has been watching me lately.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -405,12 +412,14 @@
 	PlaySE(4, "S02/06/130600309", 128, 64);
 	OutputLine(NULL, "「……と言っても、気のせいかもしれません。",
 		   NULL, "\"......It might be my imagination, but...", Line_WaitForInput);
+  PlaySE(4, "S02/06/130600310", 128, 64);
 	OutputLine(NULL, "…でも一応、報告します。",
 		   NULL, " I'll tell you anyway.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //　......今は気のせいだと思っていますけど、...もしも圭ちゃんも同じように、誰かに監視されているように感じるなら......＠......これは気のせいじゃないのかもしれませんから...。￥
+  PlaySE(4, "S02/06/130600311", 128, 64);
 	OutputLine(NULL, "　……今は気のせいだと思っていますけど、…もしも圭ちゃんも同じように、誰かに監視されているように感じるなら……。",
 		   NULL, "...I think it's just me, but... if you feel like you're being watched too, Kei-chan, then...", Line_WaitForInput);
 	PlaySE(4, "S02/06/130600312", 128, 64);
@@ -454,8 +463,10 @@
 	PlaySE(4, "S02/06/130600314", 128, 64);
 	OutputLine(NULL, "…では気のせいということにしますが、…圭ちゃんも注意して下さい。",
 		   NULL, " ...Then I suppose it was my imagination... but you be careful too, Kei-chan.", Line_WaitForInput);
+  PlaySE(4, "S02/06/130600315", 128, 64);
 	OutputLine(NULL, "特に、１人で表を歩く時は細心の注意を払ってください。",
 		   NULL, " Be especially careful when you're by yourself in public.", Line_WaitForInput);
+  PlaySE(4, "S02/06/130600316", 128, 64);
 	OutputLine(NULL, "…私は興宮ですから、１人きりになることはそうそうありませんが、圭ちゃんは雛見沢です。",
 		   NULL, " ...I'm in Okinomiya, so I won't be alone very often, but you live in Hinamizawa.", Line_WaitForInput);
 	PlaySE(4, "S02/06/130600317", 128, 64);
@@ -479,6 +490,7 @@
 	PlayBGM( 1, "msys07", 128, 0 );
 
 //「......それから...お姉なんですが、!w1000......何か変わった様子はありませんか？＠
+  PlaySE(4, "S02/06/130600319", 128, 64);
 	OutputLine(NULL, "「……それから…お姉なんですが、",
 		   NULL, "\"...Also... about my sister...", Line_ContinueAfterTyping);
 
@@ -716,12 +728,14 @@
 
 
 //「...昨日も話しました通り、園崎家は雛見沢に強い影響力を持っています＠/
+  PlaySE(4, "S02/06/130600332", 128, 64);
 	OutputLine(NULL, "「…昨日も話しました通り、園崎家は雛見沢に強い影響力を持っています。",
 		   NULL, "\"...As I explained yesterday, the Sonozaki family holds a lot of influence over Hinamizawa.", Line_WaitForInput);
 
 	PlaySE( 3, "wa_024", 128, 64 );
 
 //......大石は、一連の連続怪死事件を、園崎本家が中心になった村ぐるみの犯行だと疑っていますから。＠
+  PlaySE(4, "S02/06/130600333", 128, 64);
 	OutputLine(NULL, "……大石は、一連の連続怪死事件を、園崎本家が中心になった村ぐるみの犯行だと疑っていますから。」",
 		   NULL, " ......Ooishi is under the impression that the whole village, with the Sonozaki family at the center of it all, is responsible for the recurrent freak deaths.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -761,6 +775,7 @@
 
 
 //「......あぁ＠雛見沢全体で一丸となって戦ったんだろ＠　デモをしたり、裁判に訴えたり、テレビに出たり...。＠
+  PlaySE(4, "S02/01/130100557", 128, 64);
 	OutputLine(NULL, "「……あぁ。",
 		   NULL, "\"...Yeah.", Line_WaitForInput);
 	PlaySE(4, "S02/01/130100558", 128, 64);
@@ -791,6 +806,7 @@
 	DrawScene( "bg_239", 400 );
 
 //「例えば、夜中に建設現場に忍び込み、機材を盗んだり、壊したり、建設重機のガソリンタンクに角砂糖を入れたりとか。＠
+  PlaySE(4, "S02/06/130600338", 128, 64);
 	OutputLine(NULL, "「例えば、夜中に建設現場に忍び込み、機材を盗んだり、壊したり、建設重機のガソリンタンクに角砂糖を入れたりとか。」",
 		   NULL, "\"For example, they would sneak into the construction site in the middle of the night and steal equipment, or break it, or put sugar cubes in the gasoline tanks of the construction vehicles.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -830,14 +846,17 @@
 	ClearMessage();
 
 //「建設現場への監視が強化されると、今度は工事の重要な立場にある人間への攻撃に変更されました＠
+  PlaySE(4, "S02/06/130600342", 128, 64);
 	OutputLine(NULL, "「建設現場への監視が強化されると、今度は工事の重要な立場にある人間への攻撃に変更されました。",
 		   NULL, "\"When they beefed up the guard at the construction facility, the family turned to attacking important construction personnel who worked there.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //　...例えば、工事を認可した役人たちには様々な脅迫が行なわれました＠それは県庁の役人だけでなく、建設省の偉い役人にまで及んだそうです＠/
+  PlaySE(4, "S02/06/130600343", 128, 64);
 	OutputLine(NULL, "　…例えば、工事を認可した役人たちには様々な脅迫が行なわれました。",
 		   NULL, "...The government officials who had given permission for the construction, for example, received all kinds of threats.", Line_WaitForInput);
+  PlaySE(4, "S02/06/130600344", 128, 64);
 	OutputLine(NULL, "それは県庁の役人だけでなく、建設省の偉い役人にまで及んだそうです。",
 		   NULL, " Not just people from the prefectural office, either—apparently this reached as far as the Ministry of Construction.", Line_WaitForInput);
 
@@ -846,6 +865,7 @@
 	PlaySE( 3, "wa_027", 128, 64 );
 
 //...聞いた話では...子供の誘拐までやったとか。＠
+  PlaySE(4, "S02/06/130600345", 128, 64);
 	OutputLine(NULL, "…聞いた話では…子供の誘拐までやったとか。」",
 		   NULL, " ...As far as I've heard... they even kidnapped a child once.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -867,12 +887,14 @@
 	PlaySE(4, "S02/06/130600347", 128, 64);
 	OutputLine(NULL, "建設省の雛見沢ダムを担当する偉い人の子供が、神隠しにあったんですよ。",
 		   NULL, " The child of an important person in the Ministry of Construction who was in charge of the Hinamizawa dam got spirited away.", Line_WaitForInput);
+  PlaySE(4, "S02/06/130600348", 128, 64);
 	OutputLine(NULL, "……で、ある日、突然、雛見沢のもっと上流の、高津戸の山中で保護されまして。",
 		   NULL, " ...Then, one day, all of a sudden, he was rescued in the Takatsudo Mountains, which are upstream from Hinamizawa.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //　...犯行声明はなかったって言われてるんですけど、...ダム工事を中止するようにとの脅迫があったのではないかと囁かれています＠......他にも他にも、枚挙に暇がないほどの脅迫の話があります。＠
+  PlaySE(4, "S02/06/130600349", 128, 64);
 	OutputLine(NULL, "　…犯行声明はなかったって言われてるんですけど、…ダム工事を中止するようにとの脅迫があったのではないかと囁かれています。",
 		   NULL, "...Apparently there were never any criminal accusations... but people whispered that it had been a threat to stop the dam construction from happening.", Line_WaitForInput);
 	PlaySE(4, "S02/06/130600350", 128, 64);
@@ -912,6 +934,7 @@
 	ClearMessage();
 
 //「犯人も、口封じで「消した」んじゃないかって、大石は思ってるみたいです＠...当然ですね＠......身内である私ですら＠......園崎本家の暗躍があったのではないかと思ってるくらいですから。＠
+  PlaySE(4, "S02/06/130600355", 128, 64);
 	OutputLine(NULL, "「犯人も、口封じで「消した」んじゃないかって、大石は思ってるみたいです。",
 		   NULL, "\"Ooishi-san even seems to think that the criminal was 'erased,' so he wouldn't talk.", Line_WaitForInput);
 	PlaySE(4, "S02/06/130600356", 128, 64);
@@ -942,8 +965,10 @@
 	PlaySE(4, "S02/06/130600359", 128, 64);
 	OutputLine(NULL, "「圭ちゃんが信じなくても、村人たちは信じてます。",
 		   NULL, "\"Even if you don't, Kei-chan, the villagers do.", Line_WaitForInput);
+  PlaySE(4, "S02/06/130600360", 128, 64);
 	OutputLine(NULL, "…自分たちがキレイな抵抗運動をする影で、園崎家が汚い抵抗運動をしてくれた。",
 		   NULL, " ...While they opposed the dam in upright and lawful ways, the Sonozaki house did the dirty work for them.", Line_WaitForInput);
+  PlaySE(4, "S02/06/130600361", 128, 64);
 	OutputLine(NULL, "…自分たちの矢面に立って戦ってくれたんだってみんな思ってます。",
 		   NULL, " ...Everyone believes that—that they fought at the front, so they'd take the brunt of the criticism.", Line_WaitForInput);
 	PlaySE(4, "S02/06/130600362", 128, 64);
@@ -953,6 +978,7 @@
 
 
 //「.................................。￥
+  PlaySE(4, "S02/01/130100567", 128, 64);
 	OutputLine(NULL, "「……………………………。」",
 		   NULL, "\"............\"", Line_Normal);
 	ClearMessage();
@@ -961,6 +987,7 @@
 	PlaySE(4, "S02/06/130600363", 128, 64);
 	OutputLine(NULL, "「私が知っているのは本当に一部だけだと思います。",
 		   NULL, "\"I think I only really know one part of it.", Line_WaitForInput);
+  PlaySE(4, "S02/06/130600364", 128, 64);
 	OutputLine(NULL, "…例えば、誘拐なんかの特にヤバイ話は、当主の婆っちゃを含め、ほんの数人しか知らされてないと思います。",
 		   NULL, " ...For example, the really bad stuff, like the kidnapping—I think only a handful of people even know about it, including Grandma.", Line_WaitForInput);
 	PlaySE(4, "S02/06/130600365", 128, 64);
@@ -1016,6 +1043,7 @@
 	PlaySE(4, "S02/06/130600367", 128, 64);
 	OutputLine(NULL, "「うちのお父さん、ヤクザの大物ですから。",
 		   NULL, "\"Well, our dad is a big-shot yakuza.", Line_WaitForInput);
+  PlaySE(4, "S02/06/130600367", 128, 64);
 	OutputLine(NULL, "…年少のお姉でも、若いガラの悪いのを何人も従えることができました。",
 		   NULL, " ...Even when she was little, my sister managed to subjugate a bunch of young street rats.", Line_WaitForInput);
 	OutputLine(NULL, "で、様々な嫌がらせや妨害をやってのけたんです。」",
@@ -1030,12 +1058,15 @@
 	ClearMessage();
 
 //「...今は何だかのんびりした雰囲気だから想像も付かないでしょうが＠器物破損から脅迫、暴行まで一通りこなして、何度も補導されたんですよ＠...子供ですから、すぐに釈放してもらえたみたいですけどね＠...お姉は、自分の年齢が武器になることを知ってたみたいです。＠
+  PlaySE(4, "S02/06/130600370", 128, 64);
 	OutputLine(NULL, "「…今は何だかのんびりした雰囲気だから想像も付かないでしょうが。",
 		   NULL, "\"...Now she's pretty laid-back, so it might be hard to imagine.", Line_WaitForInput);
 	OutputLine(NULL, "器物破損から脅迫、暴行まで一通りこなして、何度も補導されたんですよ。",
 		   NULL, " They put her in charge of everything, from property damage to threats and even acts of violence.", Line_WaitForInput);
+  PlaySE(4, "S02/06/130600372", 128, 64);
 	OutputLine(NULL, "…子供ですから、すぐに釈放してもらえたみたいですけどね。",
 		   NULL, " ...Though since she was a kid, they could get her released pretty easily.", Line_WaitForInput);
+  PlaySE(4, "S02/06/130600373", 128, 64);
 	OutputLine(NULL, "…お姉は、自分の年齢が武器になることを知ってたみたいです。」",
 		   NULL, " ...She learned that her age could be used as a weapon.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1199,7 +1230,7 @@
 		   NULL, "\"We're sisters related by blood... but within the Sonozaki family, we're basically of a different class.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-
+  PlaySE(4, "S02/06/130600382", 128, 64);
 	OutputLine(NULL, "　……私とは、とても遠い存在だということを認識して下さい。",
 		   NULL, "...I want you to recognize how distant they are from me.", Line_WaitForInput);
 	PlaySE(4, "S02/06/130600383", 128, 64);
@@ -1264,11 +1295,12 @@
 
 //「...ただ、...今、説明した通り、園崎の人間はそもそも警察に睨まれているんです＠
 //　特に大石は、園崎家がまるごと連続事件の黒幕だと決めてかかってますからね＠...それはもちろん私も含めてです＠......ですから、...私はあまり大石には関わりたくないんです。￥
+  PlaySE(4, "S02/06/130600387", 128, 64);
 	OutputLine(NULL, "「…ただ、…今、説明した通り、園崎の人間はそもそも警察に睨まれているんです。",
 		   NULL, "\"...It's just... at the moment, like I explained, the police have their eyes on the Sonozaki family already.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-
+  PlaySE(4, "S02/06/130600388", 128, 64);
 	OutputLine(NULL, "　特に大石は、園崎家がまるごと連続事件の黒幕だと決めてかかってますからね。",
 		   NULL, "Ooishi in particular completely believes that they're the masterminds behind the serial incidents.", Line_WaitForInput);
 	PlaySE(4, "S02/06/130600389", 128, 64);
@@ -1449,6 +1481,7 @@
 	PlaySE(4, "S02/06/130600400", 128, 64);
 	OutputLine(NULL, "「ないようでしたら私から聞きたいんですけど。",
 		   NULL, "\"It doesn't sound like it, so can I ask you something?", Line_WaitForInput);
+  PlaySE(4, "S02/06/130600401", 128, 64);
 	OutputLine(NULL, "…私もついさっき聞いたんですが………、",
 		   NULL, " ...I just heard this myself......", Line_ContinueAfterTyping);
 
@@ -1507,6 +1540,7 @@
 	PlaySE(4, "S02/01/130100587", 128, 64);
 	OutputLine(NULL, "実はな、…昨夜、会合のあと、家に帰ってこないとかで雛見沢中で大騒ぎになったんだ。",
 		   NULL, " Actually... last night, after a meeting, he didn't come home, so all of Hinamizawa was confused.", Line_WaitForInput);
+  PlaySE(4, "S02/01/130100588", 128, 64);
 	OutputLine(NULL, "村中で探したみたいだけど、まだ見つかったって話は聞かないな…。",
 		   NULL, " They searched all through the village, but if they've found him, then I haven't heard...", Line_WaitForInput);
 	PlaySE(4, "S02/01/130100589", 128, 64);
@@ -1565,6 +1599,7 @@
 	PlayBGM( 1, "msys07", 128, 0 );
 
 //「.......................................圭ちゃん、!w1000......私、!w800...............どうしよう......。＠
+  PlaySE(4, "S02/06/130600405", 128, 64);
 	OutputLine(NULL, "「…………………………………圭ちゃん、",
 		   NULL, "\"............Kei-chan...", Line_ContinueAfterTyping);
 
@@ -1639,6 +1674,7 @@
 
 
 //「私、!s300............!sd公由のお爺ちゃんに!w1000......打ち明けたんです。＠
+  PlaySE(4, "S02/06/130600409", 128, 64);
 	OutputLine(NULL, "「私、",
 		   NULL, "\"I...", Line_ContinueAfterTyping);
 //!s300
@@ -1819,7 +1855,7 @@
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
-
+  PlaySE(4, "S02/06/130600425", 128, 64);
 	OutputLine(NULL, "…本当に",
 		   NULL, " ...He was really...", Line_ContinueAfterTyping);
 
@@ -1909,8 +1945,10 @@
 	PlaySE(4, "S02/06/130600431", 128, 64);
 	OutputLine(NULL, "　公由のお爺ちゃんが…知ってしまったから…！",
 		   NULL, " Old man Kimiyoshi found out about everything...!", Line_WaitForInput);
+  PlaySE(4, "S02/06/130600432", 128, 64);
 	OutputLine(NULL, "　だから……殺されてしまったに違いないんです！！",
 		   NULL, " So... he has to have been killed!!", Line_WaitForInput);
+  PlaySE(4, "S02/06/130600433", 128, 64);
 	OutputLine(NULL, "　だって、…打ち明けてすぐなんですよ？！",
 		   NULL, " ...It was right after I told him, after all!!", Line_WaitForInput);
 	PlaySE(4, "S02/06/130600434", 128, 64);
@@ -1941,6 +1979,7 @@
 
 
 //　これは全部、...私たち４人の咎だったはず！＠　他人に話してはいけないことだったんです！＠　話したから殺されてしまった＠　知ったから殺されてしまった＠
+  PlaySE(4, "S02/06/130600436", 128, 64);
 	OutputLine(NULL, "　これは全部、…私たち４人の咎だったはず！！",
 		   NULL, "All of this... should have just been our fault! Only the four of us!!", Line_WaitForInput);
 	PlaySE(4, "S02/06/130600437", 128, 64);
@@ -1949,14 +1988,14 @@
 	PlaySE(4, "S02/06/130600438", 128, 64);
 	OutputLine(NULL, "　話したから殺されてしまった！",
 		   NULL, " He got killed because I told him!", Line_WaitForInput);
-	PlaySE(4, "S02/06/130600448", 128, 64);
+	PlaySE(4, "S02/06/130600439", 128, 64);
 	OutputLine(NULL, "　知ったから殺されてしまった！",
 		   NULL, " He got killed because he knew!", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
 
 
 //　打ち明けたから......殺されてしまったッ！！！！￥
-	PlaySE(4, "S02/06/130600449", 128, 64);
+	PlaySE(4, "S02/06/130600440", 128, 64);
 	OutputLine(NULL, "　打ち明けたから……殺されてしまったッ！！！！」",
 		   NULL, "He got killed... because I revealed it!!!!\"", Line_Normal);
 	ClearMessage();
@@ -1992,6 +2031,7 @@
 
 
 //「...は...？　な、!w800...なんだって？！￥
+  PlaySE(4, "S02/01/130100612", 128, 64);
 	OutputLine(NULL, "「…は…？　な、",
 		   NULL, "\"...Hah...? Wha...", Line_ContinueAfterTyping);
 
@@ -2046,8 +2086,10 @@
 	PlaySE(4, "S02/06/130600447", 128, 64);
 	OutputLine(NULL, "　私が話したから殺されてしまった！",
 		   NULL, " I told him, so he was killed!", Line_WaitForInput);
+  PlaySE(4, "S02/06/130600448", 128, 64);
 	OutputLine(NULL, "　知ったから殺されてしまった！",
 		   NULL, " He got killed because he knew!", Line_WaitForInput);
+  PlaySE(4, "S02/06/130600449", 128, 64);
 	OutputLine(NULL, "　打ち明けたから……殺されてしまったッ！！！！」",
 		   NULL, " I confessed it to him...... so he got killed!!!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -2161,6 +2203,7 @@
 
 
 //「お、...俺も!w800......実は...、!w800...う、!w900...打ち明けたんだ＠...梨花ちゃんに、!w1000......今日ッ！！￥
+  PlaySE(4, "S02/01/130100620", 128, 64);
 	OutputLine(NULL, "「お、…俺も",
 		   NULL, "\"I... I, well...", Line_ContinueAfterTyping);
 
@@ -2184,6 +2227,7 @@
 
 	OutputLine(NULL, "…打ち明けたんだ。",
 		   NULL, " ...I told her about it.", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100621", 128, 64);
 	OutputLine(NULL, "…梨花ちゃんに、",
 		   NULL, " ...I told Rika-chan...", Line_ContinueAfterTyping);
 
