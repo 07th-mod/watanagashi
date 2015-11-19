@@ -28,7 +28,7 @@ Old collaborators welcome to join the repository, however it's still preferred t
 - [ ] wata_008.txt
 - [ ] wata_009.txt
 - [ ] wata_009_02.txt
-- [ ] wata_010.txt
+- [ ] **wata_010.txt**
 - [ ] wata_010_02.txt
 - [ ] wata_010_03.txt
 - [ ] wata_010_04.txt
