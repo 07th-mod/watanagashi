@@ -30,8 +30,8 @@ Old collaborators welcome to join the repository, however it's still preferred t
 - [ ] wata_009_02.txt
 - [x] wata_010.txt
 - [x] wata_010_02.txt
-- [ ] **wata_010_03.txt**
-- [ ] wata_010_04.txt
+- [x] wata_010_03.txt
+- [ ] **wata_010_04.txt**
 - [ ] wata_011.txt
 - [ ] wata_011_02.txt
 - [ ] wata_012.txt
