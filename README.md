@@ -17,8 +17,8 @@ Old collaborators welcome to join the repository, however it's still preferred t
 
 >Bold lines mean "in progress"
 
-- [ ] **omake_02.txt**
-- [ ] wata_001.txt
+- [x] omake_02.txt
+- [ ] **wata_001.txt**
 - [ ] wata_002.txt
 - [ ] wata_003.txt
 - [ ] wata_004.txt
