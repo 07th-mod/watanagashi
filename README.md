@@ -19,11 +19,11 @@ Old collaborators welcome to join the repository, however it's still preferred t
 
 - [x] omake_02.txt
 - [x] wata_001.txt
-- [ ] **wata_002.txt**
-- [ ] wata_003.txt
+- [x] wata_002.txt
+- [ ] **wata_003.txt**
 - [ ] wata_004.txt
 - [ ] wata_005.txt
-- [ ] wata_006.txt
+- [x] wata_006.txt
 - [ ] wata_007.txt
 - [ ] wata_008.txt
 - [ ] wata_009.txt
@@ -37,8 +37,8 @@ Old collaborators welcome to join the repository, however it's still preferred t
 - [ ] wata_012.txt
 - [ ] wata_012_02.txt
 - [ ] wata_012_03.txt
-- [ ] wata_ep_01.txt
-- [ ] wata_ep_02.txt
+- [x] wata_ep_01.txt
+- [x] wata_ep_02.txt
 - [x] wata_tips_01.txt
 - [x] wata_tips_02.txt
 - [x] wata_tips_03.txt
@@ -65,6 +65,8 @@ Old collaborators welcome to join the repository, however it's still preferred t
 - [x] wata_tips_24.txt
 
 # Known issues
+
+> In wata_002.txt, the scene where they are playing a game is missing a large chunk of dialog. Most likely because of obvious copyright issues. Needs retranslation to fit with the PS3 audio.
 
 > In wata_tips_01.txt, [lines 474~526](https://github.com/higurashi-mod/watanagashi/blob/master/Update/wata_tips_01.txt#L474-L526) are clearly different from the PS3 version. Probably because of the whole red light talk. PS3 files for this scene are S20/05/440500017 and S20/04/440400025.
 

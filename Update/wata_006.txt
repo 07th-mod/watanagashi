@@ -103,6 +103,7 @@
 	DrawBustshot( 3, "re_se_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「えーっと!w1000......その、!w1000.........災難だったみたいだね＠/
+	PlaySE(4, "S19/02/500200326", 128, 64);
 	OutputLine(NULL, "「えーっと",
 		   NULL, "\"Ummm...", Line_ContinueAfterTyping);
 
@@ -124,6 +125,7 @@
 	DrawBustshot( 3, "re_se_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //...あははははは。＠
+	PlaySE(4, "S19/02/500200327", 128, 64);
 	OutputLine(NULL, "…あははははは。」",
 		   NULL, " ...Ahahahahaha.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -244,6 +246,7 @@
 
 
 //「......うーん!s500......!sdわかったよ。＠
+	PlaySE(4, "S19/01/HR_KEI21090", 128, 64);
 	OutputLine(NULL, "「……うーん",
 		   NULL, "\"...Okay...", Line_ContinueAfterTyping);
 //!s500
@@ -254,7 +257,6 @@
 //!sd
 	SetSpeedOfMessage( FALSE, 0, );
 
-	PlaySE(4, "S19/01/HR_KEI32330", 128, 64);
 	OutputLine(NULL, "わかったよ。」",
 		   NULL, "I got it.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
@@ -354,6 +356,7 @@
 	PlaySE(4, "S19/02/500200344", 128, 64);
 	OutputLine(NULL, "今日だけは申し訳ないけど圭一くん、下校はひとりでいいかな。",
 		   NULL, " I'm sorry, Keiichi-kun, but just for today, can you go home by yourself?", Line_WaitForInput);
+	PlaySE(4, "S19/02/500200345", 128, 64);
 	OutputLine(NULL, "明日からは元通りだから今日だけ。",
 		   NULL, " It'll all be back to normal by tomorrow, so just for today.", Line_ContinueAfterTyping);
 
@@ -480,8 +483,10 @@
 	ClearMessage();
 
 //「......きっと圭一は素敵な大人になれますですよ。＠...なでなで＠
+	PlaySE(4, "S19/05/500500070", 128, 64);
 	OutputLine(NULL, "「……きっと圭一は素敵な大人になれますですよ。」",
 		   NULL, "\"...I'm sure that Keiichi will grow up to be a wonderful adult.\"", Line_WaitForInput);
+	PlaySE(4, "S19/05/500500071", 128, 64);
 	OutputLine(NULL, "…なでなで。",
 		   NULL, " ...*pat pat*", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
