@@ -32,8 +32,8 @@ Old collaborators welcome to join the repository, however it's still preferred t
 - [x] wata_010_02.txt
 - [x] wata_010_03.txt
 - [x] wata_010_04.txt
-- [ ] **wata_011.txt**
-- [ ] wata_011_02.txt
+- [x] wata_011.txt
+- [ ] **wata_011_02.txt**
 - [ ] wata_012.txt
 - [ ] wata_012_02.txt
 - [ ] wata_012_03.txt
