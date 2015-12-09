@@ -170,6 +170,7 @@
 	DrawBustshot( 3, "re_se_bi_b1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「で、でも、!w1000どうして警察の人が圭一くんに用があるんだろ。...だろ。＠
+	PlaySE(4, "S02/02/130200384", 128, 64);
 	OutputLine(NULL, "「で、でも、",
 		   NULL, "\"B-But,", Line_ContinueAfterTyping);
 
@@ -223,6 +224,7 @@
 
 
 //「............でも、!w800......事件に、......何の関わりもないとは...言い切れない。＠
+	PlaySE(4, "S02/01/130100810_1", 128, 64);
 	OutputLine(NULL, "「…………でも、",
 		   NULL, "\"......That said...", Line_ContinueAfterTyping);
 
@@ -256,6 +258,7 @@
 	DrawBustshot( 3, "re_se_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「うん＠......待ってるね。＠
+	PlaySE(4, "S02/02/130200387", 128, 64);
 	OutputLine(NULL, "「うん。",
 		   NULL, "\"Okay.", Line_WaitForInput);
 	PlaySE(4, "S02/02/130200388", 128, 64);
@@ -529,6 +532,7 @@
 	DrawBustshot( 3, "oi_si_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「......こっちはお恥ずかしいかな、...さっぱり進展なしです＠
+	PlaySE(4, "S02/11/130700230", 128, 64);
 	OutputLine(NULL, "「……こっちはお恥ずかしいかな、…さっぱり進展なしです。",
 		   NULL, "\"......On this one, embarrassingly enough... we haven't made any progress at all.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -538,6 +542,7 @@
 	DrawBustshot( 3, "oi_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //　まずは富竹さん＠集団で暴行を受けた形跡はあるのですが、自分の喉を掻き破るなんて異常な死に方の説明がつかないんです＠
+	PlaySE(4, "S02/11/130700231", 128, 64);
 	OutputLine(NULL, "　まずは富竹さん。",
 		   NULL, "First of all, Tomitake-san.", Line_WaitForInput);
 	PlaySE(4, "S02/11/130700232", 128, 64);
@@ -547,6 +552,7 @@
 
 
 //　...覚醒剤なんかの薬物中毒を疑っているんですが検出はされませんでした。￥
+	PlaySE(4, "S02/11/130700233", 128, 64);
 	OutputLine(NULL, "　…覚醒剤なんかの薬物中毒を疑っているんですが検出はされませんでした。」",
 		   NULL, "...We suspect an overdose from a stimulant or something, but we didn't detect anything.\"", Line_Normal);
 	ClearMessage();
@@ -565,12 +571,14 @@
 	PlaySE(4, "S02/11/130700235", 128, 64);
 	OutputLine(NULL, "焼死死体は検死が非常〜に困難でして。",
 		   NULL, " Autopsies for those who are burned to death are reeeeal tough.", Line_WaitForInput);
+	PlaySE(4, "S02/11/130700236", 128, 64);
 	OutputLine(NULL, "首を絞められた後にガソリンをかけられたんじゃないかと見ています。",
 		   NULL, " We believe she was doused in gasoline after she was strangled.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //　...管轄が岐阜県さんでね＠あちらさん、自分たちの縄張りの事件だからって、あんまり協力的じゃないんですよ＠/
+	PlaySE(4, "S02/11/130700237", 128, 64);
 	OutputLine(NULL, "　…管轄が岐阜県さんでね。",
 		   NULL, "...That one falls under the Gifu Prefecture's police department.", Line_WaitForInput);
 	PlaySE(4, "S02/11/130700238", 128, 64);
@@ -598,6 +606,7 @@
 	PlaySE(4, "S02/11/130700240", 128, 64);
 	OutputLine(NULL, "「ですが、犯行時間は概ね、お祭りが終わった直後だろうと見ています。",
 		   NULL, "\"Nonetheless, the times when the incidents occurred have been generally placed right after the festival ended.", Line_WaitForInput);
+	PlaySE(4, "S02/11/130700241", 128, 64);
 	OutputLine(NULL, "……鷹野さんの方はちょっとあやふやですが、富竹さんとほぼ同じ時刻に殺害され、岐阜の山中に遺棄されたと考えるのが妥当でしょうなぁ。」",
 		   NULL, " ...It's a bit uncertain in Takano-san's case, but the likely prospect is that she was murdered at about the same time as Tomitake-san, then dumped in the mountains in Gifu.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -668,8 +677,10 @@
 	PlaySE(4, "S02/11/130700247", 128, 64);
 	OutputLine(NULL, "「古い生まれの方って非常にプライドが高いんですよね。",
 		   NULL, "\"People who've lived a long time have an unusual amount of pride.", Line_WaitForInput);
+	PlaySE(4, "S02/11/130700248", 128, 64);
 	OutputLine(NULL, "…それで村長さん、誰にも内緒で鹿骨市内の某大学病院の肛門科に通われていたんです。",
 		   NULL, " ...So the mayor hadn't been telling anyone that he was going to a proctologist at a certain university hospital in Shishibone.", Line_WaitForInput);
+	PlaySE(4, "S02/11/130700249", 128, 64);
 	OutputLine(NULL, "失踪当日、村長さんは診察の予約が取ってあったんで朝一で出掛けられました。」",
 		   NULL, " On the day he disappeared, he had an appointment for a checkup, so he went out first thing in the morning.\"", Line_Normal);
 	ClearMessage();
@@ -691,6 +702,7 @@
 	PlaySE(4, "S02/11/130700251", 128, 64);
 	OutputLine(NULL, "その後、病院内のレストランで軽食を取られ、雑誌を読みながら時間をつぶされました。",
 		   NULL, " After that, he ate a light meal in the hospital restaurant and passed the time reading a magazine.", Line_WaitForInput);
+	PlaySE(4, "S02/11/130700252", 128, 64);
 	OutputLine(NULL, "…この辺りのことは自宅にあったお財布の中のレシートでわかってます。」",
 		   NULL, " ...We know this because of a receipt we found in his wallet at his house.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -702,20 +714,24 @@
 	ClearMessage();
 
 //「その日は夕方から神社の集会所で会合の予定があったんです＠
+	PlaySE(4, "S02/11/130700253", 128, 64);
 	OutputLine(NULL, "「その日は夕方から神社の集会所で会合の予定があったんです。",
 		   NULL, "\"That day, he had planned to go to a meeting in the assembly hall in the evening.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //　...それで余裕を持ってお帰りになるはずだったんですが、途中、電車で人身事故がありましてね＠どうも、それで足止めを食ってしまったらしく、家についたのは会合の時間の直前でした＠
+	PlaySE(4, "S02/11/130700254", 128, 64);
 	OutputLine(NULL, "　…それで余裕を持ってお帰りになるはずだったんですが、途中、電車で人身事故がありましてね。",
 		   NULL, "...He was supposed return home with plenty of time to spare, but while he was on the train coming back, there was an accident.", Line_WaitForInput);
+	PlaySE(4, "S02/11/130700255", 128, 64);
 	OutputLine(NULL, "どうも、それで足止めを食ってしまったらしく、家についたのは会合の時間の直前でした。",
 		   NULL, " Seems it delayed him a bit, and he only got back to his house right before the meeting was scheduled to start.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //　ご家族が、大慌てで神社の集会所に出かけていく村長さんを目撃しています。￥
+	PlaySE(4, "S02/11/130700256", 128, 64);
 	OutputLine(NULL, "　ご家族が、大慌てで神社の集会所に出かけていく村長さんを目撃しています。」",
 		   NULL, "His family witnessed a very hectic mayor leaving to go to the assembly hall at the shrine.\"", Line_Normal);
 	ClearMessage();
@@ -738,6 +754,7 @@
 
 
 //　今年も起こってしまった連続怪死事件の対応について協議したものと思われます。＠
+	PlaySE(4, "S02/11/130700259", 128, 64);
 	OutputLine(NULL, "　今年も起こってしまった連続怪死事件の対応について協議したものと思われます。」",
 		   NULL, "We think they were discussing how to deal with the serial freak death incidents that had happened again this year.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
@@ -765,6 +782,7 @@
 	ClearMessage();
 
 //「え＠/
+	PlaySE(4, "S02/01/130100825", 128, 64);
 	OutputLine(NULL, "「え？",
 		   NULL, "\"Hm?", Line_ContinueAfterTyping);
 
@@ -780,7 +798,7 @@
 		   NULL, " ............", Line_ContinueAfterTyping);
 //!sd
 	SetSpeedOfMessage( FALSE, 0, );
-
+	PlaySE(4, "S02/01/130100826", 128, 64);
 	OutputLine(NULL, "あれ……？」",
 		   NULL, " Huh......?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1036,14 +1054,17 @@
 	ClearMessage();
 
 //「......公由のお爺ちゃん、...怒らなかった＠
+	PlaySE(4, "S02/06/130600464", 128, 64);
 	OutputLine(NULL, "「……公由のお爺ちゃん、…怒らなかった。",
 		   NULL, "\"...Old man Kimiyoshi... didn't get angry.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //　......そして、にっこり笑って、詩音ちゃんがちゃんと反省してるなら、鬼隠しになんかなるものか、...って＠...本当に......笑いながら......任せなさい...って.........。!w1500......ぅぅ...ッ！！＠
+	PlaySE(4, "S02/06/130600465", 128, 64);
 	OutputLine(NULL, "　……そして、にっこり笑って、詩音ちゃんがちゃんと反省してるなら、鬼隠しになんかなるものか、…って。",
 		   NULL, "......He smiled, then told me that if I was properly sorry about it, there was no way I'd be demoned away...", Line_WaitForInput);
+	PlaySE(4, "S02/06/130600466", 128, 64);
 	OutputLine(NULL, "…本当に……笑いながら……任せなさい…って………。",
 		   NULL, " ...He was really... smiling... and he told me to leave it to... him......", Line_ContinueAfterTyping);
 
@@ -1190,6 +1211,7 @@
 	PlaySE(4, "S02/11/130700262", 128, 64);
 	OutputLine(NULL, "　大丈夫ですか？",
 		   NULL, " Are you all right?", Line_WaitForInput);
+	PlaySE(4, "S02/11/130700263", 128, 64);
 	OutputLine(NULL, "　やっぱり熱いならクーラー入れますよ？」",
 		   NULL, " If you're too hot, I can turn on the air conditioner, mm?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1268,6 +1290,7 @@
 
 
 //「.................................。￥
+	PlaySE(4, "S02/01/130100835", 128, 64);
 	OutputLine(NULL, "「……………………………。」",
 		   NULL, "\"............\"", Line_Normal);
 	ClearMessage();
@@ -1287,6 +1310,7 @@
 	PlaySE(4, "S02/11/130700268", 128, 64);
 	OutputLine(NULL, "「ほらほら、また黙り込む。",
 		   NULL, "\"Now, now, don't clam up again.", Line_WaitForInput);
+	PlaySE(4, "S02/11/130700269", 128, 64);
 	OutputLine(NULL, "…もし誤解があるような先に解いておきたいんですがね。",
 		   NULL, " ...If there are any misunderstandings, I'd like to clear them up first.", Line_WaitForInput);
 	PlaySE(4, "S02/11/130700270", 128, 64);
@@ -1304,8 +1328,10 @@
 	PlaySE(4, "S02/11/130700271", 128, 64);
 	OutputLine(NULL, "「…あの晩、あなたたち４人が祭具殿に忍び込んだことは知っています。",
 		   NULL, "\"...I know the four of you snuck into the ritual storehouse that night.", Line_WaitForInput);
+	PlaySE(4, "S02/11/130700272", 128, 64);
 	OutputLine(NULL, "次の日にはもう村の、知る人は誰でも知る噂になってましたからね。",
 		   NULL, " Everyone in the village heard rumors about it by the next day.", Line_WaitForInput);
+	PlaySE(4, "S02/11/130700273", 128, 64);
 	OutputLine(NULL, "…それ自体は不法侵入として問われるべきことですが、問題はそれじゃない。",
 		   NULL, " ...That in itself means we should take you in for trespassing, but that isn't the problem.", Line_WaitForInput);
 	PlaySE(4, "S02/11/130700274", 128, 64);
@@ -1318,6 +1344,7 @@
 
 
 //「...............何も、!w1500......なかったです。＠
+	PlaySE(4, "S02/01/130100836", 128, 64);
 	OutputLine(NULL, "「……………何も、",
 		   NULL, "\"............There...", Line_ContinueAfterTyping);
 
@@ -1336,17 +1363,20 @@
 	ClearMessage();
 
 //「...本当に何もなかったんですか＠
+	PlaySE(4, "S02/11/130700276", 128, 64);
 	OutputLine(NULL, "「…本当に何もなかったんですか？",
 		   NULL, "\"...Was there really nothing in there?", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //　だって、現にこうして中に入った人たちが次々と犠牲になってるんですよ＠　しかも、扉のカギを付け替えた村長や梨花さんまで犠牲に＠...それだけの事態を引き起こす、何があの中になったんです？￥
+	PlaySE(4, "S02/11/130700277", 128, 64);
 	OutputLine(NULL, "　だって、現にこうして中に入った人たちが次々と犠牲になってるんですよ？",
 		   NULL, "I mean, everyone who went in is being sacrificed one by one, you know?", Line_WaitForInput);
 	PlaySE(4, "S02/11/130700278", 128, 64);
 	OutputLine(NULL, "　しかも、扉のカギを付け替えた村長や梨花さんまで犠牲に。",
 		   NULL, " Even the mayor and Rika-san, who switched the lock on the door, were sacrificed.", Line_WaitForInput);
+	PlaySE(4, "S02/11/130700279", 128, 64);
 	OutputLine(NULL, "…それだけの事態を引き起こす、何があの中になったんです？」",
 		   NULL, " ...What was inside that could have caused such terrible things to happen?\"", Line_Normal);
 	ClearMessage();
@@ -1386,6 +1416,7 @@
 	ClearMessage();
 
 //「口封じをされるような、とんでもない物が隠してあったんじゃないですか＠　...例えば、覚醒剤の山とか＠ケシの秘密工場があったとか＠あるいはソ連か中国辺りの拳銃が山ほど積まれていたと＠不審な木箱やコンテナが山積みされてませんでしたか？＠
+	PlaySE(4, "S02/11/130700281", 128, 64);
 	OutputLine(NULL, "「口封じをされるような、とんでもない物が隠してあったんじゃないですか？",
 		   NULL, "\"There was nothing terrible in there that would make you keep silent?", Line_WaitForInput);
 	OutputLine(NULL, "　…例えば、覚醒剤の山とか。",
@@ -1394,6 +1425,7 @@
 		   NULL, " Maybe a secret poppy workshop?", Line_WaitForInput);
 	OutputLine(NULL, "あるいはソ連か中国辺りの拳銃が山ほど積まれていたと。",
 		   NULL, " Perhaps there were mountains of Soviet or Chinese handguns.", Line_WaitForInput);
+	PlaySE(4, "S02/11/130700285", 128, 64);
 	OutputLine(NULL, "不審な木箱やコンテナが山積みされてませんでしたか？」",
 		   NULL, " There weren't any suspicious wooden boxes or containers packed in there?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
@@ -1427,8 +1459,10 @@
 	PlaySE(4, "S02/11/130700286", 128, 64);
 	OutputLine(NULL, "「…あの祭具殿に、何か秘密があるんじゃないかと思って、捜査令状を請求したんですがね、",
 		   NULL, "\"...We put in a request for a search warrant thinking that there might have been some secrets hidden in that storehouse.", Line_WaitForInput);
+	PlaySE(4, "S02/11/130700287", 128, 64);
 	OutputLine(NULL, "……もーー、空前絶後の妨害工作がありまして。",
 		   NULL, " ...Agh, it's been the sabotage of the century.", Line_WaitForInput);
+	PlaySE(4, "S02/11/130700288", 128, 64);
 	OutputLine(NULL, "信仰の対象に対する侮辱であり、憲法で定めた信仰の自由を何たらかんたら…。",
 		   NULL, " They said it would be an insult to religious figures, and something about the right to free religion in the constitution...", Line_WaitForInput);
 	PlaySE(4, "S02/11/130700289", 128, 64);
@@ -1470,12 +1504,14 @@
 	PlaySE(4, "S02/11/130700293", 128, 64);
 	OutputLine(NULL, "「……もういちいち隠しませんけどね。",
 		   NULL, "\"...I suppose I won't bother hiding it anymore.", Line_WaitForInput);
+	PlaySE(4, "S02/11/130700294", 128, 64);
 	OutputLine(NULL, "…あなただけが今日まで被害を免れてるんです。",
 		   NULL, " ...You're the only one to escape harm so far.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //　あなた以外は全員が消えたのに、/
+	PlaySE(4, "S02/11/130700295", 128, 64);
 	OutputLine(NULL, "　あなた以外は全員が消えたのに、",
 		   NULL, "Everyone but you has disappeared,", Line_ContinueAfterTyping);
 
@@ -1488,6 +1524,7 @@
 
 
 //　...あなたが無事で、あなた以外が被害に遭う、どんな違いがあったのか＠　それが知りたいんです。￥
+	PlaySE(4, "S02/11/130700296", 128, 64);
 	OutputLine(NULL, "　…あなたが無事で、あなた以外が被害に遭う、どんな違いがあったのか？",
 		   NULL, "...What's the difference between you and them that would protect you, but bring harm to the others?", Line_WaitForInput);
 	PlaySE(4, "S02/11/130700297", 128, 64);
@@ -1523,6 +1560,7 @@
 	DrawBustshot( 3, "oi_si_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「なははは、!w1000...ですから、!w800あなただけが、!w800最後の生き残りなんじゃないですか＠/
+	PlaySE(4, "S02/11/130700298", 128, 64);
 	OutputLine(NULL, "「なははは、",
 		   NULL, "\"Na-ha-ha-ha.", Line_ContinueAfterTyping);
 
@@ -1552,6 +1590,7 @@
 
 
 //祭具殿に忍び込んだコソ泥４人組の。＠
+	PlaySE(4, "S02/11/130700299", 128, 64);
 	OutputLine(NULL, "祭具殿に忍び込んだコソ泥４人組の。」",
 		   NULL, "Out of the four people who tiptoed into the storehouse for ritual implements, I mean.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
@@ -1577,6 +1616,7 @@
 	DrawBustshot( 3, "oi_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「あの晩に、富竹ジロウさんと鷹野三四さんが死に、!w1500翌日、園崎詩音さんが失踪しました＠...あなただけが、無事に今日までを過ごしてるんです＠...なぜあなただけなのか＠　私はそれが知りたいと言ってるんです。＠
+	PlaySE(4, "S02/11/130700300", 128, 64);
 	OutputLine(NULL, "「あの晩に、富竹ジロウさんと鷹野三四さんが死に、",
 		   NULL, "\"Jirou Tomitake-san and Miyo Takano-san died that night,", Line_ContinueAfterTyping);
 
@@ -1646,6 +1686,7 @@
 	ClearMessage();
 
 //「...ありゃ、......とっくにご存知だったとばかり。＠
+	PlaySE(4, "S02/11/130700304", 128, 64);
 	OutputLine(NULL, "「…ありゃ、……とっくにご存知だったとばかり。」",
 		   NULL, "\"...Oh, well now... I thought you were long since aware of this.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1850,6 +1891,7 @@
 	PlaySE(4, "S02/11/130700312", 128, 64);
 	OutputLine(NULL, "「ほら、覚えてませんか？",
 		   NULL, "\"Don't you remember?", Line_WaitForInput);
+	PlaySE(4, "S02/11/130700313", 128, 64);
 	OutputLine(NULL, "　綿流しの次の日に、私たち図書館でお会いしたでしょう。",
 		   NULL, " We talked at the library the day after Watanagashi.", Line_WaitForInput);
 
@@ -1857,6 +1899,7 @@
 	DrawBustshot( 3, "oi_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //あの時、詩音さんも居ましたよね＠...あれが最後の目撃なんです＠あの後、彼女の所在は確認されてないんです。＠
+	PlaySE(4, "S02/11/130700314", 128, 64);
 	OutputLine(NULL, "あの時、詩音さんも居ましたよね。",
 		   NULL, " Shion-san was there then.", Line_WaitForInput);
 	PlaySE(4, "S02/11/130700315", 128, 64);
@@ -1905,8 +1948,10 @@
 
 
 //「.........そんな馬鹿な...＠............そんな馬鹿な......。￥
+	PlaySE(4, "S02/01/130100852", 128, 64);
 	OutputLine(NULL, "「………そんな馬鹿な…。",
 		   NULL, "\"......That can't be...", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100853", 128, 64);
 	OutputLine(NULL, "…………そんな馬鹿な……。」",
 		   NULL, " .........It can't be...\"", Line_Normal);
 	ClearMessage();
@@ -2050,6 +2095,7 @@
 
 //「そんな、.........!s100馬鹿ぁあぁあぁああぁあぁぁあぁあぁああぁあぁぁあぁあぁああぁあぁぁああぁあッ！！！」!sd
 
+	PlaySE(4, "S02/01/130100854", 128, 64);
 	OutputLine(NULL, "「そんな、………",
 		   NULL, "\"That's...", Line_ContinueAfterTyping);
 // !s100
@@ -2765,6 +2811,7 @@
 	ClearMessage();
 
 //「いや別に...留守ってわけじゃ......、!w800そ、そそ、そんな事より！＠　聞いたか？＠　梨花ちゃんと沙都子の件。＠
+	PlaySE(4, "S02/01/130100861", 128, 64);
 	OutputLine(NULL, "「いや別に…留守ってわけじゃ……、",
 		   NULL, "\"Well, no... They're not really...", Line_ContinueAfterTyping);
 
@@ -2865,7 +2912,7 @@
 
 
 //「......はい＠それは間違いないでしょうね...。＠
-	PlaySE(4, "S02/06/130600579", 128, 64);
+	PlaySE(4, "S02/06/130600477", 128, 64);
 	OutputLine(NULL, "「……はい。",
 		   NULL, "\"...Yes.", Line_WaitForInput);
 	PlaySE(4, "S02/06/130600478", 128, 64);
@@ -2902,6 +2949,7 @@
 	ClearMessage();
 
 //「...............梨花ちゃんと、沙都子は、!w1000......あ、いや...ッ、えぇと......、あ、ごめん＠...その.........村長さんは、!w800...さらわれて...どうなったと思う...＠　まだ......生きてるんだろうか...？＠
+	PlaySE(4, "S02/01/130100868", 128, 64);
 	OutputLine(NULL, "「……………梨花ちゃんと、沙都子は、",
 		   NULL, "\"............Rika-chan and Satoko were...", Line_ContinueAfterTyping);
 
@@ -2911,6 +2959,7 @@
 
 	OutputLine(NULL, "……あ、いや…ッ、えぇと……、あ、ごめん。",
 		   NULL, " Ah, no... I mean... I'm sorry.", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100869", 128, 64);
 	OutputLine(NULL, "…その………村長さんは、",
 		   NULL, " ...Umm....... About the mayor...", Line_ContinueAfterTyping);
 
@@ -2964,6 +3013,7 @@
 	ClearMessage();
 
 //「.........お、!w600.........おいおい、!w800.........そんなにあっさり......。＠
+	PlaySE(4, "S02/01/130100871", 128, 64);
 	OutputLine(NULL, "「………お、",
 		   NULL, "\"...He", Line_ContinueAfterTyping);
 
@@ -3086,6 +3136,7 @@
 	ClearMessage();
 
 //「梨花ちゃんと沙都子ちゃんも、...同じだと思ったほうがいいでしょうね。＠
+	PlaySE(4, "S02/06/130600484", 128, 64);
 	OutputLine(NULL, "「梨花ちゃんと沙都子ちゃんも、…同じだと思ったほうがいいでしょうね。」",
 		   NULL, "\"It's probably better to think that Rika-chan and Satoko-chan ended up the same way.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -3226,7 +3277,7 @@
 	ClearMessage();
 
 //「......圭ちゃん＠............どうか気を確かに...。＠
-	PlaySE(4, "S02/03/130300694", 128, 64);
+	PlaySE(4, "S02/06/130600484_1", 128, 64);
 	OutputLine(NULL, "「……圭ちゃん。",
 		   NULL, "\"......Kei-chan.", Line_WaitForInput);
 	OutputLine(NULL, "…………どうか気を確かに…。」",
@@ -3420,8 +3471,10 @@
 	PlaySE(4, "S02/06/130600495", 128, 64);
 	OutputLine(NULL, "…ダム闘争はとっくの昔に終わったんです。",
 		   NULL, " ...The dam wars ended a long time ago.", Line_WaitForInput);
+	PlaySE(4, "S02/06/130600496", 128, 64);
 	OutputLine(NULL, "なのに毎年、オヤシロさまの祟りと言う名の殺人と失踪が繰り返されている。",
 		   NULL, " Yet, murders and disappearances keep happening every year under the guise of Oyashiro-sama's curse.", Line_WaitForInput);
+	PlaySE(4, "S02/06/130600497", 128, 64);
 	OutputLine(NULL, "……なぜ？！",
 		   NULL, " ...Why?!", Line_WaitForInput);
 	PlaySE(4, "S02/06/130600498", 128, 64);
@@ -3460,18 +3513,21 @@
 	PlaySE(4, "S02/06/130600502", 128, 64);
 	OutputLine(NULL, "「いいですか。",
 		   NULL, "\"Listen.", Line_WaitForInput);
+	PlaySE(4, "S02/06/130600503", 128, 64);
 	OutputLine(NULL, "…オヤシロさまの祟りなんて非現実的なものは初めから存在しません。",
 		   NULL, " ...Oyashiro-sama's curse never existed. It's too unrealistic.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //　圭ちゃんの言うとおり、村の何者かが、オヤシロさまの祟りというもっともらしい大義名分を利用して、綿流しの度に殺しと失踪を繰り返しているんです！！＠
+	PlaySE(4, "S02/06/130600504", 128, 64);
 	OutputLine(NULL, "　圭ちゃんの言うとおり、村の何者かが、オヤシロさまの祟りというもっともらしい大義名分を利用して、綿流しの度に殺しと失踪を繰り返しているんです！！！",
 		   NULL, "Just like you said, someone in the village is using the grand name of 'Oyashiro-sama's curse' as a justification for continuing these murders and disappearances every Watanagashi!!!", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //　...ヤツらは狡猾でした＠祟りを都合よく利用して、村の仇敵を毎年２人ずつ消し去るシステムを構築していったんです＠...そしてこのシステムで、今年は鷹野さんたちが殺された！！￥
+	PlaySE(4, "S02/06/130600505", 128, 64);
 	OutputLine(NULL, "　…ヤツらは狡猾でした。",
 		   NULL, "...They were cunning.", Line_WaitForInput);
 	PlaySE(4, "S02/06/130600506", 128, 64);
@@ -3489,19 +3545,23 @@
 	PlaySE(4, "S02/01/130100891", 128, 64);
 	OutputLine(NULL, "　どうして村長や梨花ちゃんや沙都子まで殺されなくちゃならないんだよッ！！",
 		   NULL, " Why did the mayor and Rika-chan and Satoko have to get killed too?!", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100892", 128, 64);
 	OutputLine(NULL, "　それに俺は過去のことは今さらどうでもいいんだ！！",
 		   NULL, " I don't give a shit about the past!!", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //　梨花ちゃんと沙都子がなぜ殺されなくちゃならなかったのか、その一点にしか興味はないんだ！＠　どうしてなんだ？＠　沙都子には打ち明けてすらないんだぞ？！？＠　どうして沙都子まで......＠どうしてなんだぁああぁあぁあぁあ？！？！￥
+	PlaySE(4, "S02/01/130100893", 128, 64);
 	OutputLine(NULL, "　梨花ちゃんと沙都子がなぜ殺されなくちゃならなかったのか、その一点にしか興味はないんだ！！",
 		   NULL, "The only thing I care about is why Rika-chan and Satoko needed to be killed!!", Line_WaitForInput);
 	PlaySE(4, "S02/01/130100894", 128, 64);
 	OutputLine(NULL, "　どうしてなんだ？！",
 		   NULL, " Why is that?!", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100895", 128, 64);
 	OutputLine(NULL, "　沙都子には打ち明けてすらないんだぞ？！？！",
 		   NULL, " I didn't say a word to Satoko, you know!!!", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100896", 128, 64);
 	OutputLine(NULL, "　どうして沙都子まで……。",
 		   NULL, " Why even her...", Line_WaitForInput);
 	PlaySE(4, "S02/01/130100897", 128, 64);
@@ -3524,6 +3584,7 @@
 	ClearMessage();
 
 //「............圭ちゃん、!w1000.........もう!w800......いじめないで下さい......＠......ぅっく...。＠
+	PlaySE(4, "S02/06/130600508", 128, 64);
 	OutputLine(NULL, "「…………圭ちゃん、",
 		   NULL, "\".........Kei-chan,", Line_ContinueAfterTyping);
 
@@ -3540,6 +3601,7 @@
 
 	OutputLine(NULL, "……いじめないで下さい……。",
 		   NULL, " ......stop being mean...", Line_WaitForInput);
+	PlaySE(4, "S02/06/130600509", 128, 64);
 	OutputLine(NULL, "……ぅっく…。」",
 		   NULL, " ...hic...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -3556,14 +3618,17 @@
 
 //「.....................私だって何が何だかわからないんです...@
 // 。祭具殿に忍び込んだあの晩から......全てが変わってしまった......。＠
+	PlaySE(4, "S02/06/130600510", 128, 64);
 	OutputLine(NULL, "「…………………私だって何が何だかわからないんです…",
 		   NULL, "\"............I don't have any idea what's going on either...", Line_WaitForInput);
+	PlaySE(4, "S02/06/130600511", 128, 64);
 	OutputLine(NULL, "。祭具殿に忍び込んだあの晩から……全てが変わってしまった……。」",
 		   NULL, " Everything changed... when we went into the ritual storehouse that night......\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //「....................................。＠
+	PlaySE(4, "S02/01/130100898", 128, 64);
 	OutputLine(NULL, "「………………………………。」",
 		   NULL, "\"............\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -3587,6 +3652,7 @@
 	PlaySE(4, "S02/06/130600513", 128, 64);
 	OutputLine(NULL, "……そして……すぐに気付いたんです。",
 		   NULL, " ...Then... I realized it instantly.", Line_WaitForInput);
+	PlaySE(4, "S02/06/130600514", 128, 64);
 	OutputLine(NULL, "……今度は、",
 		   NULL, " ...I realized...", Line_ContinueAfterTyping);
 
@@ -3600,6 +3666,7 @@
 
 
 //　忍び込んだのは私たち４人＠...私と圭ちゃんだけが都合よく許してもらえるわけがない...＠...そう思った時、それがどれだけ心細くて......恐ろしいことだったか、...圭ちゃんにはわかりますよね......？＠
+	PlaySE(4, "S02/06/130600515", 128, 64);
 	OutputLine(NULL, "　忍び込んだのは私たち４人。",
 		   NULL, "The four of us snuck in there.", Line_WaitForInput);
 	PlaySE(4, "S02/06/130600516", 128, 64);
@@ -3623,6 +3690,7 @@
 	ClearMessage();
 
 //「.........だから私、!w1500......公由のお爺ちゃんに打ち明けたんです...。＠
+	PlaySE(4, "S02/06/130600518", 128, 64);
 	OutputLine(NULL, "「………だから私、",
 		   NULL, "\"...That's why I...", Line_ContinueAfterTyping);
 
@@ -3635,12 +3703,14 @@
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
 
 //　......私は、みんなが入ってはいけないという祭具殿に、面白半分な気持ちで踏み入ってしまいました＠
+	PlaySE(4, "S02/06/130600519", 128, 64);
 	OutputLine(NULL, "　……私は、みんなが入ってはいけないという祭具殿に、面白半分な気持ちで踏み入ってしまいました。",
 		   NULL, "...All of us entered the forbidden storehouse—it was just a little bit of fun.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //　...いけないことだとはわかっていましたが、!w900......本当に面白半分な気持ち、!w1000......ちょっとした探検気分のつもりだったんです......￥
+	PlaySE(4, "S02/06/130600520", 128, 64);
 	OutputLine(NULL, "　…いけないことだとはわかっていましたが、",
 		   NULL, "...We knew we shouldn't have done it...", Line_ContinueAfterTyping);
 
@@ -3660,6 +3730,7 @@
 	ClearMessage();
 
 //　...一緒に入った鷹野さんたちは、その後すぐに殺されてしまいました...＠それも...あんな惨い最期を......＠
+	PlaySE(4, "S02/06/130600521", 128, 64);
 	OutputLine(NULL, "　…一緒に入った鷹野さんたちは、その後すぐに殺されてしまいました…。",
 		   NULL, "...Takano-san and Tomitake-san, who went in with us, were killed shortly afterward...", Line_WaitForInput);
 	OutputLine(NULL, "それも…あんな惨い最期を……。",
@@ -3667,12 +3738,14 @@
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
 
 //　あの日から、...いつ私も襲われるのではないかと...怯えています...＠
+	PlaySE(4, "S02/06/130600522", 128, 64);
 	OutputLine(NULL, "　あの日から、…いつ私も襲われるのではないかと…怯えています…。",
 		   NULL, "Since that day... I've been living in fear... of when I would be attacked...", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //　......公由のお爺ちゃんしか助けてくれる人がいません...＠......だからお爺ちゃん、!w1000......助けて、って.........￥
+	PlaySE(4, "S02/06/130600523", 128, 64);
 	OutputLine(NULL, "　……公由のお爺ちゃんしか助けてくれる人がいません…。",
 		   NULL, "...There was nobody except old man Kimiyoshi who would help me...", Line_WaitForInput);
 	OutputLine(NULL, "……だからお爺ちゃん、",
@@ -3687,10 +3760,13 @@
 	ClearMessage();
 
 //「......公由のお爺ちゃん、...怒らなかった＠......そして、にっこり笑って、詩音ちゃんがちゃんと反省してるなら、鬼隠しになんかなるものか、...って＠...本当に......笑いながら!w1000......任せなさい...って.........。!w800......ぅぅ...ッ！！＠
+	PlaySE(4, "S02/06/130600524", 128, 64);
 	OutputLine(NULL, "「……公由のお爺ちゃん、…怒らなかった。",
 		   NULL, "\"...Old man Kimiyoshi... he wasn't mad.", Line_WaitForInput);
+	PlaySE(4, "S02/06/130600525", 128, 64);
 	OutputLine(NULL, "……そして、にっこり笑って、詩音ちゃんがちゃんと反省してるなら、鬼隠しになんかなるものか、…って。",
 		   NULL, " ...He smiled, and said, 'if you're really sorry, Shion-chan, then you'd never be demoned away'...", Line_WaitForInput);
+	PlaySE(4, "S02/06/130600526", 128, 64);
 	OutputLine(NULL, "…本当に……笑いながら",
 		   NULL, " ...He really did... smile at me...", Line_ContinueAfterTyping);
 
@@ -3813,6 +3889,7 @@
 
 
 //「......ぅっく......、!w600......え......？＠
+	PlaySE(4, "S02/06/130600527", 128, 64);
 	OutputLine(NULL, "「……ぅっく……、",
 		   NULL, "\"...hic...", Line_ContinueAfterTyping);
 
@@ -3887,6 +3964,7 @@
 
 
 //「...............あの、!w800............圭ちゃん...＠　......それが...何か...？＠
+	PlaySE(4, "S02/06/130600531", 128, 64);
 	OutputLine(NULL, "「……………あの、",
 		   NULL, "\".........Umm.........", Line_ContinueAfterTyping);
 
@@ -3923,6 +4001,7 @@
 	ClearMessage();
 
 //「............痔だったのは、!w1000...知ってます...＠......座る時とか、辛そうでしたから...。＠
+	PlaySE(4, "S02/06/130600533", 128, 64);
 	OutputLine(NULL, "「…………痔だったのは、",
 		   NULL, "\"......I knew that...", Line_ContinueAfterTyping);
 
@@ -3952,6 +4031,7 @@
 //!sd200
 	SetSpeedOfMessage( TRUE, 0, );
 
+	PlaySE(4, "S02/06/130600535", 128, 64);
 	OutputLine(NULL, "「……………………………………",
 		   NULL, "\"............", Line_ContinueAfterTyping);
 //!sd
@@ -3966,6 +4046,7 @@
 
 	OutputLine(NULL, "それはちょっと知りませんけど…。",
 		   NULL, " I don't know that much, but...", Line_WaitForInput);
+	PlaySE(4, "S02/06/130600536", 128, 64);
 	OutputLine(NULL, "………でも、圭ちゃん、",
 		   NULL, " ......Kei-chan...", Line_ContinueAfterTyping);
 
@@ -4036,6 +4117,7 @@
 	PlaySE(4, "S02/06/130600537", 128, 64);
 	OutputLine(NULL, "「………………………………圭ちゃん…、…何でそんなことを……。",
 		   NULL, "\"............Kei-chan... Why are you asking that...", Line_WaitForInput);
+	PlaySE(4, "S02/06/130600538", 128, 64);
 	OutputLine(NULL, "……ぅっく…。」",
 		   NULL, " ...hic...\"", Line_Normal);
 	ClearMessage();
@@ -4085,6 +4167,7 @@
 
 
 //「.................................ぇ、!w700......そ...、!w800.........そんな......、￥
+	PlaySE(4, "S02/06/130600539", 128, 64);
 	OutputLine(NULL, "「……………………………ぇ、",
 		   NULL, "\"............Eh...", Line_ContinueAfterTyping);
 
@@ -4194,6 +4277,7 @@
 	ClearMessage();
 
 //「...............えっと、!w1000.........実は会合に出...、」!w600
+	PlaySE(4, "S02/06/130600541", 128, 64);
 	OutputLine(NULL, "「……………えっと、",
 		   NULL, "\".........Umm......", Line_ContinueAfterTyping);
 
@@ -4223,6 +4307,7 @@
 
 
 //「..............................圭ちゃん、!w800.........あの、.........、＠
+	PlaySE(4, "S02/06/130600542", 128, 64);
 	OutputLine(NULL, "「…………………………圭ちゃん、",
 		   NULL, "\"............Kei-chan...", Line_ContinueAfterTyping);
 
@@ -4270,6 +4355,7 @@
 
 
 //「......ぅっく......、!w1000......えっく......、!w600...っく...、!w800......ぅっく......、＠
+	PlaySE(4, "S02/06/130600543", 128, 64);
 	OutputLine(NULL, "「……ぅっく……、",
 		   NULL, "\"......hic......", Line_ContinueAfterTyping);
 
@@ -4324,6 +4410,7 @@
 
 
 //「.........ぅっく、!w1000......っく!w500......っく......、￥
+	PlaySE(4, "S02/06/130600544", 128, 64);
 	OutputLine(NULL, "「………ぅっく、",
 		   NULL, "\".........hic......", Line_ContinueAfterTyping);
 
@@ -4370,6 +4457,7 @@
 
 
 //「......っく、......っく、......。!w1000.../
+	PlaySE(4, "S02/06/130600545", 128, 64);
 	OutputLine(NULL, "「……っく、……っく、……。",
 		   NULL, "\"......hic...... hic......", Line_ContinueAfterTyping);
 
@@ -4384,6 +4472,7 @@
 
 //!s0
 	SetSpeedOfMessage( TRUE, 127, );
+	PlaySE(4, "S02/06/130600546", 128, 64);
 	OutputLine(NULL, "く",
 		   NULL, " Hu...", Line_ContinueAfterTyping);
 

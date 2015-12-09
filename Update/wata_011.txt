@@ -1,4 +1,4 @@
-﻿void main()
+void main()
 {
 
 ////*Watanagasi_day11
@@ -62,6 +62,7 @@
 	ClearMessage();
 
 //「...じゃあ、昨夜はお友達とみんなで、夜遅くまで探してたの？＠
+	PlaySE(4, "S02/00/132700026", 128, 64);
 	OutputLine(NULL, "「…じゃあ、昨夜はお友達とみんなで、夜遅くまで探してたの？」",
 		   NULL, "\"...So then, you were out late last night with all your friends looking for them?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -134,6 +135,7 @@
 
 //「...何時間寝れたんだろな。...@
 // 多分、ニワトリの足でも数えられるくらいだと思う。＠
+	PlaySE(4, "S02/01/130100748", 128, 64);
 	OutputLine(NULL, "「…何時間寝れたんだろな。…",
 		   NULL, "\"...I think I slept for a few hours...", Line_WaitForInput);
 	PlaySE(4, "S02/01/130100749", 128, 64);
@@ -257,6 +259,7 @@
 	PlaySE(4, "S02/01/130100755", 128, 64);
 	OutputLine(NULL, "……あいつにとっては昨日だけじゃないんだよな。",
 		   NULL, " ...For her, it wasn't just yesterday.", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100756", 128, 64);
 	OutputLine(NULL, "…一昨日の晩も、村長さんを探して徹夜してるんだよな…。」",
 		   NULL, " ...She was up all night looking for the mayor the night before last, too...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -319,6 +322,7 @@
 	ClearMessage();
 
 //「......魅音、!w1000......本当にいるよな。＠
+	PlaySE(4, "S02/01/130100759", 128, 64);
 	OutputLine(NULL, "「……魅音、",
 		   NULL, "\"...Mion...", Line_ContinueAfterTyping);
 
@@ -386,9 +390,10 @@
 	ClearMessage();
 
 //「おはようございます＠おはようございます。＠
+	PlaySE(4, "S02/00/133200001", 128, 64);
 	OutputLine(NULL, "「おはようございます。",
 		   NULL, "\"Good morning.", Line_WaitForInput);
-	PlaySE(4, "S02/22/131400009", 128, 64);
+	PlaySE(4, "S02/00/Spar0300001", 128, 64);
 	OutputLine(NULL, "おはようございます。」",
 		   NULL, " Good morning.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -423,6 +428,7 @@
 
 
 //「すぐに先生から大切なお話があるから、すぐに教室に入るように＠...いいかね。＠
+	PlaySE(4, "S02/00/133200004", 128, 64);
 	OutputLine(NULL, "「すぐに先生から大切なお話があるから、すぐに教室に入るように。",
 		   NULL, "\"Your teacher has something important to say, so head straight to the classroom.", Line_WaitForInput);
 	PlaySE(4, "S02/00/133200005", 128, 64);
@@ -552,8 +558,10 @@
 	PlaySE(4, "S02/22/131400019", 128, 64);
 	OutputLine(NULL, "　今日から当分の間、登下校は保護者の方と一緒に行ないます。",
 		   NULL, " From today on, your parents or guardians will be taking you to school.", Line_WaitForInput);
+	PlaySE(4, "S02/22/131400020", 128, 64);
 	OutputLine(NULL, "保護者の方の都合が付き難い生徒は集団での登下校とします。",
 		   NULL, " For those of you whose parents can't do so, you'll be coming here in groups.", Line_WaitForInput);
+	PlaySE(4, "S02/22/131400021", 128, 64);
 	OutputLine(NULL, "プリントを作りましたのでよく読み、保護者の方にも必ず見せて下さい。",
 		   NULL, " I made a handout, so read it carefully, and be sure to show it to your parents.", Line_WaitForInput);
 	PlaySE(4, "S02/22/131400022", 128, 64);
@@ -760,6 +768,7 @@
 	PlaySE(4, "S02/02/130200299", 128, 64);
 	OutputLine(NULL, "「……うふふ！",
 		   NULL, "\"......Ufufu!", Line_WaitForInput);
+	PlaySE(4, "S02/02/130200300", 128, 64);
 	OutputLine(NULL, "　こうして２人だけでお弁当を突っつき合ってると…何だか…、",
 		   NULL, " Just the two of us sharing our lunches like this... It's sort of...", Line_ContinueAfterTyping);
 
@@ -841,6 +850,7 @@
 	PlayBGM( 2, "lsys12", 128, 0 );
 
 //「......梨花ちゃんと沙都子、!w1000......どこに行ったんだろうな。＠
+	PlaySE(4, "S02/01/130100772", 128, 64);
 	OutputLine(NULL, "「……梨花ちゃんと沙都子、",
 		   NULL, "\"...Rika-chan, Satoko...", Line_ContinueAfterTyping);
 
@@ -918,12 +928,14 @@
 	PlaySE(4, "S02/02/130200304", 128, 64);
 	OutputLine(NULL, "「…うん。",
 		   NULL, "\"...Yeah.", Line_WaitForInput);
+	PlaySE(4, "S02/02/130200305", 128, 64);
 	OutputLine(NULL, "……警察の人も、家に帰ってからすぐに自転車で遊びに行ったんだろうって言ってる。",
 		   NULL, " ...The police also said that they probably went out on their bikes to go play somewhere as soon as they got home.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //　...家に帰ってからすぐに自転車で遊びに行くところといったら、!w1000...町かもしれないでしょ＠
+	PlaySE(4, "S02/02/130200306", 128, 64);
 	OutputLine(NULL, "　…家に帰ってからすぐに自転車で遊びに行くところといったら、",
 		   NULL, "...If they were going out to play somewhere on their bikes right after getting home...", Line_ContinueAfterTyping);
 
@@ -937,6 +949,7 @@
 
 
 //　......だから、興宮の町でいなくなったんじゃないかって結論になってるみたい＠警察は明るくなってから捜査範囲を興宮にも広げるって言ってた。￥
+	PlaySE(4, "S02/02/130200307", 128, 64);
 	OutputLine(NULL, "　……だから、興宮の町でいなくなったんじゃないかって結論になってるみたい。",
 		   NULL, "...So I guess they concluded they disappeared while in Okinomiya.", Line_WaitForInput);
 	PlaySE(4, "S02/02/130200308", 128, 64);
@@ -1039,6 +1052,7 @@
 
 
 //「...............町なんかに、!w1000...行くわけないと思うんだ。￥
+	PlaySE(4, "S02/01/130100777", 128, 64);
 	OutputLine(NULL, "「……………町なんかに、",
 		   NULL, "\".........I don't think...", Line_ContinueAfterTyping);
 
@@ -1245,6 +1259,7 @@
 	PlaySE(4, "S02/02/130200321", 128, 64);
 	OutputLine(NULL, "中にはお豆腐が多分、一丁の半分くらい入ってたと思う。",
 		   NULL, " I think there was probably about half of it inside.", Line_WaitForInput);
+	PlaySE(4, "S02/02/130200322", 128, 64);
 	OutputLine(NULL, "残りの半分は冷蔵庫の中にあったの。",
 		   NULL, " The rest was in the refrigerator.", Line_WaitForInput);
 
@@ -1252,8 +1267,10 @@
 	DrawBustshot( 2, "re_se_wa_b1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //冷やっこにするつもりだったんだね＠お皿に開けてサランラップがかけてあった。＠
+	PlaySE(4, "S02/02/130200323", 128, 64);
 	OutputLine(NULL, "冷やっこにするつもりだったんだね。",
 		   NULL, " They must have been planning to make chilled tofu.", Line_WaitForInput);
+	PlaySE(4, "S02/02/130200324", 128, 64);
 	OutputLine(NULL, "お皿に開けてサランラップがかけてあった。」",
 		   NULL, " It was on a plate in plastic wrap.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
@@ -1271,14 +1288,17 @@
 
 
 //「圭一くん＠お味噌汁のお豆腐って、本当に最後の最後に入れるんだよ＠
+	PlaySE(4, "S02/02/130200325", 128, 64)
 	OutputLine(NULL, "「圭一くん。",
 		   NULL, "\"Keiichi-kun.", Line_WaitForInput);
+	PlaySE(4, "S02/02/130200326", 128, 64)
 	OutputLine(NULL, "お味噌汁のお豆腐って、本当に最後の最後に入れるんだよ。",
 		   NULL, " When you make miso soup, you put the tofu in last.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //　つまり、お料理してた梨花ちゃんかもしくは沙都子ちゃんは、お夕飯の時間の直前まであそこに立って料理をしていたことになるの。￥
+	PlaySE(4, "S02/02/130200327", 128, 64)
 	OutputLine(NULL, "　つまり、お料理してた梨花ちゃんかもしくは沙都子ちゃんは、お夕飯の時間の直前まであそこに立って料理をしていたことになるの。」",
 		   NULL, "That means that Rika-chan, or Satoko-chan, whoever was cooking, was standing there making it up until right before dinnertime.\"", Line_Normal);
 	ClearMessage();
@@ -1288,6 +1308,7 @@
 	PlaySE( 3, "wa_023", 128, 64 );
 
 //「夕食の時間の...!w1000直前まで...？！＠
+	PlaySE(4, "S02/01/130100785", 128, 64)
 	OutputLine(NULL, "「夕食の時間の…",
 		   NULL, "\"Right up until...", Line_ContinueAfterTyping);
 
@@ -1322,6 +1343,7 @@
 	ClearMessage();
 
 //「......それってつまり、!w1000......沙都子に関しては、遊びに行かず、!w800...夕食の準備をしてたってことなのか...？！」/
+	PlaySE(4, "S02/01/130100786", 128, 64)
 	OutputLine(NULL, "「……それってつまり、",
 		   NULL, "\"...So that means...", Line_ContinueAfterTyping);
 
@@ -1386,6 +1408,7 @@
 	PlaySE(4, "S02/02/130200336", 128, 64);
 	OutputLine(NULL, "それだけじゃない。",
 		   NULL, " That's not all, either.", Line_WaitForInput);
+	PlaySE(4, "S02/02/130200337", 128, 64);
 	OutputLine(NULL, "お夕飯用に作ったおかずも何皿かあって、それらにはみんなサランラップがされていた。」",
 		   NULL, " There were a whole bunch of plates with side dishes for dinner, and all of them were in plastic wrap.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
@@ -1407,6 +1430,7 @@
 	PlaySE(4, "S02/02/130200338", 128, 64);
 	OutputLine(NULL, "「そう。",
 		   NULL, "\"That's right.", Line_WaitForInput);
+	PlaySE(4, "S02/02/130200339", 128, 64);
 	OutputLine(NULL, "サランラップって、食べ残しとかを取っておくためにするものだよね。",
 		   NULL, " You use plastic wrap to save leftovers for later.", Line_WaitForInput);
 	PlaySE(4, "S02/02/130200340", 128, 64);
@@ -1416,6 +1440,7 @@
 
 
 //「.........えっと!w800......そういうことになるのか...？￥
+	PlaySE(4, "S02/01/130100789", 128, 64);
 	OutputLine(NULL, "「………えっと",
 		   NULL, "\"...Umm...", Line_ContinueAfterTyping);
 
@@ -1430,11 +1455,13 @@
 	DrawBustshot( 2, "re_se_ko_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「圭一くん＠もっとよく考えて＠...お夕飯をまったく手付けずでサランラップしてあったんだよ＠　どういうことだと思う？＠
+	PlaySE(4, "S02/02/130200341", 128, 64);
 	OutputLine(NULL, "「圭一くん。",
 		   NULL, "\"Keiichi-kun.", Line_WaitForInput);
 	PlaySE(4, "S02/02/130200342", 128, 64);
 	OutputLine(NULL, "もっとよく考えて。",
 		   NULL, " Think a little harder.", Line_WaitForInput);
+	PlaySE(4, "S02/02/130200343", 128, 64);
 	OutputLine(NULL, "…お夕飯をまったく手付けずでサランラップしてあったんだよ？",
 		   NULL, " ...Their dinner was totally untouched and wrapped up.", Line_WaitForInput);
 	PlaySE(4, "S02/02/130200344", 128, 64);
@@ -1444,6 +1471,7 @@
 
 
 //「......えっと!w800...じゃあ、!w1000......夕食を食べる必要がなくなったわけだ＠...外食とか、出前とかで。￥
+	PlaySE(4, "S02/01/130100790", 128, 64);
 	OutputLine(NULL, "「……えっと",
 		   NULL, "\"......Umm...", Line_ContinueAfterTyping);
 
@@ -1472,17 +1500,20 @@
 	PlaySE(4, "S02/02/130200346", 128, 64);
 	OutputLine(NULL, "前もって決まっていたらお料理なんかしない。",
 		   NULL, " If they had decided to do that beforehand, they wouldn't have made anything, but...", Line_WaitForInput);
+	PlaySE(4, "S02/02/130200347", 128, 64);
 	OutputLine(NULL, "…そして、お夕食は２人分用意されていた。",
 		   NULL, " ...there was dinner for the two of them.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //　つまり、沙都子ちゃんは、２人で食事が出来ると、本当に直前までそう思って料理をしていたということなの。￥
+	PlaySE(4, "S02/02/130200348", 128, 64);
 	OutputLine(NULL, "　つまり、沙都子ちゃんは、２人で食事が出来ると、本当に直前までそう思って料理をしていたということなの。」",
 		   NULL, "That means that when Satoko-chan was making their dinner, they really thought they were going to eat it until right before they didn't.\"", Line_Normal);
 	ClearMessage();
 
 //「......じゃ、じゃあ......、!w1000２人で遊びに行っていなくなったというのは.../
+	PlaySE(4, "S02/01/130100792", 128, 64);
 	OutputLine(NULL, "「……じゃ、じゃあ……、",
 		   NULL, "\"...So, then...", Line_ContinueAfterTyping);
 
@@ -1504,6 +1535,7 @@
 	DrawBustshot( 2, "re_se_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「そう＠...つまり、いなくなったのはお夕飯が出来て、夕食に至るまでの本当にわずかな時間＠...多分、７時頃くらい。＠
+	PlaySE(4, "S02/02/130200349", 128, 64);
 	OutputLine(NULL, "「そう。",
 		   NULL, "\"Yep.", Line_WaitForInput);
 	PlaySE(4, "S02/02/130200350", 128, 64);
@@ -1662,6 +1694,7 @@
 	DrawBustshot( 2, "re_se_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「うん＠雛見沢ではそんなに珍しいことじゃないよ。￥
+	PlaySE(4, "S02/02/130200363_1", 128, 64);
 	OutputLine(NULL, "「うん。",
 		   NULL, "\"Yeah.", Line_WaitForInput);
 	OutputLine(NULL, "雛見沢ではそんなに珍しいことじゃないよ。」",
@@ -1890,6 +1923,7 @@
 	DrawBustshot( 2, "re_se_na_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「圭一くん＠......これって雛見沢の人を疑うって意味だよ＠...確信もないのに村の人を疑えない。＠
+	PlaySE(4, "S02/02/130200375", 128, 64);
 	OutputLine(NULL, "「圭一くん。",
 		   NULL, "\"Keiichi-kun.", Line_WaitForInput);
 	PlaySE(4, "S02/02/130200376", 128, 64);
