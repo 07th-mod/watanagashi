@@ -33,8 +33,8 @@ Old collaborators welcome to join the repository, however it's still preferred t
 - [x] wata_010_03.txt
 - [x] wata_010_04.txt
 - [x] wata_011.txt
-- [ ] **wata_011_02.txt**
-- [ ] wata_012.txt
+- [x] wata_011_02.txt
+- [ ] **wata_012.txt**
 - [ ] wata_012_02.txt
 - [ ] wata_012_03.txt
 - [x] wata_ep_01.txt
@@ -77,6 +77,8 @@ Old collaborators welcome to join the repository, however it's still preferred t
 >In wata_010_04.tx, [lines 2046~2053](https://github.com/higurashi-mod/watanagashi/blob/master/Update/wata_010_04.txt#L2046-L2053) this last bit of the conversation has 2 problems.
 >1- The last question Oishi asks Keiichi dosn't have a sound file.
 >2- There are 2 soundfiles for Keiichi in this scene, first is the one where he responds Oishi and says he didn't see the representatives. The file is S02/01/130100732 where he responds with 「見ていません。(miteimasen). The second soundfile (S02/01/130100733) is what is being said in the text displayed.I left only the second sound file, since it won't change the meaning of the conversation.
+
+>In wata_011_02, [lines 1422~1427](https://github.com/higurashi-mod/watanagashi/blob/master/Update/wata_011_02.txt#L1422-L1427) this part of the conversation dosn't have sound files for Oishi.
 
 > Some voiced lines might end early if you are a slow header or playing with auto mode. There are too many cases of split lines (PS3 and PC version share the same script, but the reading is different) to fix manually. Some extreme cases may be fixed if you take your time to open an Issue.
 
