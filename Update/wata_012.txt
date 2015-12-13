@@ -167,17 +167,21 @@
 	DrawSceneWithMask( "bg_261", "down", 0, 0, 1300 );
 
 //　...ここは入ってはいけないところなんだろ？＠　やめようぜ＠　カギが掛かっているのを勝手に開けて押し入るなんて、例え物を盗まなくったって犯罪なんだぞ！＠　詩音だって、これが逢引現場じゃないとわかったなら充分だろ？＠　俺はこんなのには全然興味はないんだ＠　こんなところにいる間に梨花ちゃんの演舞が終わっちゃったらどうするんだよ？￥
+	PlaySE(4, "S02/01/130100944", 128, 64);
 	OutputLine(NULL, "　…ここは入ってはいけないところなんだろ？！",
 		   NULL, "...This isn't somewhere we should be going, is it?!", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100945", 128, 64);
 	OutputLine(NULL, "　やめようぜ！",
 		   NULL, " Let's not!", Line_WaitForInput);
 	OutputLine(NULL, "　カギが掛かっているのを勝手に開けて押し入るなんて、例え物を盗まなくったって犯罪なんだぞ！！",
 		   NULL, " It's a crime to force your way into a locked building, even if you don't steal anything!!", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100946", 128, 64);
 	OutputLine(NULL, "　詩音だって、これが逢引現場じゃないとわかったなら充分だろ？！",
 		   NULL, " Shion, now that you know they weren't having some secret rendezvous, you've had enough, right?!", Line_WaitForInput);
 	PlaySE(4, "S02/01/130100947", 128, 64);
 	OutputLine(NULL, "　俺はこんなのには全然興味はないんだ！",
 		   NULL, " I don't want to do something like this!", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100948", 128, 64);
 	OutputLine(NULL, "　こんなところにいる間に梨花ちゃんの演舞が終わっちゃったらどうするんだよ？！",
 		   NULL, " What if Rika-chan's dance ends while we're messing around here?!", Line_Normal);
 	ClearMessage();
@@ -298,6 +302,7 @@
 	ClearMessage();
 
 //「圭一＠しばらく学校を休んだほうがいいんじゃないのか。＠
+	PlaySE(4, "S02/00/132600018", 128, 64);
 	OutputLine(NULL, "「圭一。",
 		   NULL, "\"Keiichi.", Line_WaitForInput);
 	PlaySE(4, "S02/00/132600019", 128, 64);
@@ -403,6 +408,7 @@
 
 
 //「.............................................。￥
+	PlaySE(4, "S02/01/130100954", 128, 64);
 	OutputLine(NULL, "「………………………………………。」",
 		   NULL, "\"............\"", Line_Normal);
 	ClearMessage();
@@ -410,6 +416,7 @@
 	DrawBustshot( 2, "re_se_de_b1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「あ、それから、!w700...これ＠......回覧板＠...お母様に渡しておいてくれるかな＠いろいろ大事なお知らせがあるみたいだから。＠
+	PlaySE(4, "S02/02/130200396", 128, 64);
 	OutputLine(NULL, "「あ、それから、",
 		   NULL, "\"Oh, and...", Line_ContinueAfterTyping);
 
@@ -422,6 +429,7 @@
 	PlaySE(4, "S02/02/130200397", 128, 64);
 	OutputLine(NULL, "……回覧板。",
 		   NULL, " ...It's a notice they're sending around.", Line_WaitForInput);
+	PlaySE(4, "S02/02/130200398", 128, 64);
 	OutputLine(NULL, "…お母様に渡しておいてくれるかな。",
 		   NULL, " ...Could you give it to your mom?", Line_WaitForInput);
 	PlaySE(4, "S02/02/130200399", 128, 64);
@@ -449,8 +457,10 @@
 	DrawBustshot( 2, "re_se_na_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「.....................警察も必死に探してくれてる＠...きっと、!w1000......見つかるから＠待ってよ＠...ね。＠
+	PlaySE(4, "S02/02/130200400", 128, 64);
 	OutputLine(NULL, "「…………………警察も必死に探してくれてる。",
 		   NULL, "\"............The police are looking as best they can, too.", Line_WaitForInput);
+	PlaySE(4, "S02/02/130200401", 128, 64);
 	OutputLine(NULL, "…きっと、",
 		   NULL, " ...They'll...", Line_ContinueAfterTyping);
 
@@ -481,6 +491,7 @@
 	ClearMessage();
 
 //「............レナは、!w800...............俺を問い詰めないんだな。＠
+	PlaySE(4, "S02/01/130100955", 128, 64);
 	OutputLine(NULL, "「…………レナは、",
 		   NULL, "\".........Rena, you're...", Line_ContinueAfterTyping);
 
@@ -514,6 +525,7 @@
 
 
 //「祭具殿に忍び込んだこと、!w600......かな。＠
+	PlaySE(4, "S02/02/130200405", 128, 64);
 	OutputLine(NULL, "「祭具殿に忍び込んだこと、",
 		   NULL, "\"Do you mean...", Line_ContinueAfterTyping);
 
@@ -575,12 +587,14 @@
 
 
 //「.............................................。＠
+	PlaySE(4, "S02/01/130100960", 128, 64);
 	OutputLine(NULL, "「………………………………………。」",
 		   NULL, "\"............\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //「圭ちゃんは...、......自分から言い出して、謝らなくちゃいけなかったんじゃないかな。＠
+	PlaySE(4, "S02/02/130200409", 128, 64);
 	OutputLine(NULL, "「圭ちゃんは…、……自分から言い出して、謝らなくちゃいけなかったんじゃないかな。」",
 		   NULL, "\"Maybe, Kei-chan... Maybe you should have told her yourself and apologized.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -648,6 +662,7 @@
 	ClearMessage();
 
 //「................................................。＠
+	PlaySE(4, "S02/01/130100963", 128, 64);
 	OutputLine(NULL, "「…………………………………………。」",
 		   NULL, "\"............\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -849,6 +864,7 @@
 
 
 //「回覧板、...お母様に渡しておいてね＠あと、回覧板は暗くなったら持って行かないようにって注意付きだから。￥
+	PlaySE(4, "S02/02/130200424", 128, 64);
 	OutputLine(NULL, "「回覧板、…お母様に渡しておいてね。",
 		   NULL, "\"Be sure to... give the notice to your mom, okay?", Line_WaitForInput);
 	PlaySE(4, "S02/02/130200425", 128, 64);
@@ -886,6 +902,7 @@
 	PlayBGM( 1, "msys12", 128, 0 );
 
 //「...........................なんだ、!w1000......これ...。＠
+	PlaySE(4, "S02/01/130100971", 128, 64);
 	OutputLine(NULL, "「………………………なんだ、",
 		   NULL, "\"............What...", Line_ContinueAfterTyping);
 
@@ -939,6 +956,7 @@
 	PlayBGM( 1, "msys17", 128, 0 );
 
 //「............醤油をもらいに行くなら、!w700......園崎家へ、か＠......レナ＠...お前、ひょっとして......知ってたんじゃ...。＠
+	PlaySE(4, "S02/01/130100972", 128, 64);
 	OutputLine(NULL, "「…………醤油をもらいに行くなら、",
 		   NULL, "\".........If you need some soy sauce...", Line_ContinueAfterTyping);
 
@@ -1065,6 +1083,7 @@
 
 
 //「..............................。＠
+	PlaySE(4, "S02/02/130200428", 128, 64);
 	OutputLine(NULL, "「…………………………。」",
 		   NULL, "\"............\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1421,6 +1440,7 @@
 	ClearMessage();
 
 //「...ザ、ザ、熊谷です＠大石さんどーぞー！＠
+	PlaySE(4, "S02/19/133100003", 128, 64);
 	OutputLine(NULL, "「…ザ、ザ、熊谷です。",
 		   NULL, "\"...Bzz, bzz, this is Kumatani.", Line_WaitForInput);
 	PlaySE(4, "S02/19/133100004", 128, 64);
@@ -1545,10 +1565,13 @@
 	DrawBustshot( 1, "oi_si_de_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「...事情聴取も家宅捜査も、とにかく、なーんにも許可が下りないんですよ＠園崎本家を守ろうという、園崎家の防衛機能がガキガキに作用しちゃってるらしくて＠令状がなくっちゃ、私たち、現行犯以外はなーんにも手出しできませんからね。んっふっふっふ！＠
+	PlaySE(4, "S02/11/130700358", 128, 64);
 	OutputLine(NULL, "「…事情聴取も家宅捜査も、とにかく、なーんにも許可が下りないんですよ。",
 		   NULL, "\"...Nor for questioning witnesses, or for searching houses... We don't have permission for anything, really.", Line_WaitForInput);
+	PlaySE(4, "S02/11/130700359", 128, 64);
 	OutputLine(NULL, "園崎本家を守ろうという、園崎家の防衛機能がガキガキに作用しちゃってるらしくて。",
 		   NULL, " The Sonozaki house's defenses said to protect the family members are also in full working condition.", Line_WaitForInput);
+	PlaySE(4, "S02/11/130700360", 128, 64);
 	OutputLine(NULL, "令状がなくっちゃ、私たち、現行犯以外はなーんにも手出しできませんからね。んっふっふっふ！」",
 		   NULL, " Without a warrant, we can't do anything about anything, unless the crime happens right in front of us. Nfu-fu-fu-fu!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1558,6 +1581,7 @@
 	DrawBustshotWithFiltering( 3, "re_se_ik_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「............大石さんって、!w1000...ひょっとして。＠
+	PlaySE(4, "S02/02/130200440", 128, 64);
 	OutputLine(NULL, "「…………大石さんって、",
 		   NULL, "\".........Ooishi-san...", Line_ContinueAfterTyping);
 
@@ -1673,6 +1697,7 @@
 	DrawBustshot( 1, "oi_si_wa_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「...............いやいや、!w1000......こりゃあ、とんだところに名探偵がいたもんです＠...いやはやいやはや＠...あなた、うちの試験受ける気ありません＠　刑事課配属の推薦状、書いてあげてもいいですよ。んっふっふっふっふ...！！＠
+	PlaySE(4, "S02/11/130700364", 128, 64);
 	OutputLine(NULL, "「……………いやいや、",
 		   NULL, "\".........My, my.", Line_ContinueAfterTyping);
 
@@ -1903,6 +1928,7 @@
 
 
 //「ザザ、...ザ、熊谷です＠どうぞー。＠
+	PlaySE(4, "S02/19/133100013", 128, 64);
 	OutputLine(NULL, "「ザザ、…ザ、熊谷です。",
 		   NULL, "\"Bzz, ...bz, this is Kumatani.", Line_WaitForInput);
 	PlaySE(4, "S02/19/133100014", 128, 64);
@@ -1922,6 +1948,7 @@
 
 
 //「了解っす！　ザザ！＠
+	PlaySE(4, "S02/19/133100015", 128, 64);
 	OutputLine(NULL, "「了解っす！　ザザ！」",
 		   NULL, "\"Roger! Zzz!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
