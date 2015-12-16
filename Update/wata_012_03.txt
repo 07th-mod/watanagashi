@@ -57,6 +57,7 @@
 	PlaySE(4, "S02/03/130300501", 128, 64);
 	OutputLine(NULL, "「……私に腕を組まれたら、…何だか緊張しちゃわない？",
 		   NULL, "\"...Do you get kind of nervous... with your arm through mine?", Line_WaitForInput);
+	PlaySE(4, "S02/03/130300502", 128, 64);
 	OutputLine(NULL, "　例えば、急に関節技を極められちゃんじゃないかな…なんて思ったりとか…。」",
 		   NULL, " You're not thinking for example... that I'd suddenly put you in a world-class joint lock, or anything...?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -165,6 +166,7 @@
 	PlaySE(4, "S02/01/130101072", 128, 64);
 	OutputLine(NULL, "　右手と左手？",
 		   NULL, " My right hand and left hand?", Line_WaitForInput);
+	PlaySE(4, "S02/01/130101073", 128, 64);
 	OutputLine(NULL, "　…それは仲がいいとか悪いとか、そういう言い方で例えるものじゃないなぁ…。」",
 		   NULL, " ...I don't think you could describe them as getting along or not...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -189,11 +191,13 @@
 
 
 //「例えば利き腕というものがあるように、右手と左手には間違いなく優劣の違いがある＠/
+	PlaySE(4, "S02/03/130300508", 128, 64);
 	OutputLine(NULL, "「例えば利き腕というものがあるように、右手と左手には間違いなく優劣の違いがある。",
 		   NULL, "\"For example, one of your hands is dominant, so there will always be a better hand.", Line_WaitForInput);
 
 
 //......もしも鍋掴みが片方しかなかったら、迷うことなく利き腕にするでしょ＠　そういう差はあったんじゃないかと思う。＠
+	PlaySE(4, "S02/03/130300509", 128, 64);
 	OutputLine(NULL, "……もしも鍋掴みが片方しかなかったら、迷うことなく利き腕にするでしょ？",
 		   NULL, " ...If you only had one oven mitt, you would put it on your dominant hand without thinking, right?", Line_WaitForInput);
 	PlaySE(4, "S02/03/130300510", 128, 64);
@@ -203,6 +207,7 @@
 
 
 //「..............................。￥
+	PlaySE(4, "S02/01/130101074", 128, 64);
 	OutputLine(NULL, "「…………………………。」",
 		   NULL, "\"............\"", Line_Normal);
 	ClearMessage();
@@ -223,8 +228,10 @@
 	PlaySE(4, "S02/01/130101075", 128, 64);
 	OutputLine(NULL, "「………多分、…それは近くに居過ぎるから見えなくなっているだけで…。",
 		   NULL, "\"......I think that maybe... you lived too close together, and just stopped being able to see it, but...", Line_WaitForInput);
+	PlaySE(4, "S02/01/130101076", 128, 64);
 	OutputLine(NULL, "…きっととても仲のいいことなんだと思う。",
 		   NULL, " I think that means you get along really well.", Line_WaitForInput);
+	PlaySE(4, "S02/01/130101077", 128, 64);
 	OutputLine(NULL, "……俺は一人っ子だから、…祭りの前日。",
 		   NULL, " ...I'm an only child, so... the day before the festival...", Line_WaitForInput);
 	PlaySE(4, "S02/01/130101078", 128, 64);
@@ -292,6 +299,7 @@
 	DrawBustshot( 2, "me_si_si_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「................................................。＠
+	PlaySE(4, "S02/03/130300516", 128, 64);
 	OutputLine(NULL, "「…………………………………………。」",
 		   NULL, "\"............\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -357,6 +365,7 @@
 	DrawBustshot( 2, "me_si_ma_a2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「........................詩音は、!w800まだ生きてる。＠
+	PlaySE(4, "S02/03/130300517", 128, 64);
 	OutputLine(NULL, "「……………………詩音は、",
 		   NULL, "\"............Shion is...", Line_ContinueAfterTyping);
 
@@ -452,6 +461,7 @@
 
 
 //「..........................................。￥
+	PlaySE(4, "S02/01/130101082", 128, 64);
 	OutputLine(NULL, "「……………………………………。」",
 		   NULL, "\"............\"", Line_Normal);
 	ClearMessage();
@@ -638,11 +648,13 @@
 	DrawBustshotWithFiltering( 3, "me_si_ma_a2", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「.................................引き返すなら今だよ＠圭ちゃんの中の園崎魅音がどんな人かは知らないけれど＠......中に入れば、......その魅音はきっと.........、!w1500..........................................。＠
+	PlaySE(4, "S02/03/130300531", 128, 64);
 	OutputLine(NULL, "「……………………………引き返すなら今だよ。",
 		   NULL, "\"............If you want to turn back, now's your chance.", Line_WaitForInput);
 	PlaySE(4, "S02/03/130300532", 128, 64);
 	OutputLine(NULL, "圭ちゃんの中の園崎魅音がどんな人かは知らないけれど。",
 		   NULL, " I don't know what kind of person Mion Sonozaki is to you...", Line_WaitForInput);
+	PlaySE(4, "S02/03/130300533", 128, 64);
 	OutputLine(NULL, "……中に入れば、……その魅音はきっと………、",
 		   NULL, " but if you go inside... that Mion will probably...", Line_ContinueAfterTyping);
 
@@ -696,6 +708,7 @@
 	DrawBustshot( 3, "me_si_si_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「..................私はただの鬼だから、!w1000...もう人間の気持ちはわからないけれど＠......魅音があんたを好きになったの、!w700...よくわかる気がする。＠
+	PlaySE(4, "S02/03/130300534", 128, 64);
 	OutputLine(NULL, "「………………私はただの鬼だから、",
 		   NULL, "\"............I am nothing more than a demon...", Line_ContinueAfterTyping);
 
@@ -705,6 +718,7 @@
 
 	OutputLine(NULL, "…もう人間の気持ちはわからないけれど。",
 		   NULL, " so I don't understand human feelings anymore.", Line_WaitForInput);
+	PlaySE(4, "S02/03/130300535", 128, 64);
 	OutputLine(NULL, "……魅音があんたを好きになったの、",
 		   NULL, " ...I have a feeling, though...", Line_ContinueAfterTyping);
 
@@ -846,6 +860,7 @@
 	PlaySE(4, "S02/01/130101095", 128, 64);
 	OutputLine(NULL, "「……そりゃそうだな。",
 		   NULL, "\"...I can imagine why.", Line_WaitForInput);
+	PlaySE(4, "S02/01/130101096", 128, 64);
 	OutputLine(NULL, "…この現代日本で、犠牲者をのんびりと沢でバラして殺せるなんて思えない。」",
 		   NULL, " ...You'd never think people could be okay with drowning people in a swamp and killing them in modern Japan.\"", Line_WaitForInput);
 
@@ -943,8 +958,10 @@
 	PlaySE(4, "S02/03/130300546", 128, 64);
 	OutputLine(NULL, "「…大昔の当主の書き物によるとね。",
 		   NULL, "\"...According to something a leader from a long time ago wrote...", Line_WaitForInput);
+	PlaySE(4, "S02/03/130300547", 128, 64);
 	OutputLine(NULL, "…血の飛沫ってのは、犠牲者に負担をかけない割にはインパクトがあるんだってさ。",
 		   NULL, " Blood splatter has impact, despite the fact that it doesn't tax the sacrifice.", Line_WaitForInput);
+	PlaySE(4, "S02/03/130300548", 128, 64);
 	OutputLine(NULL, "……綿流しは見せしめのショーだったから。",
 		   NULL, " ...Watanagashi was meant as a deterrent, after all.", Line_WaitForInput);
 	PlaySE(4, "S02/03/130300549", 128, 64);
@@ -978,6 +995,7 @@
 
 
 //「............................................................。＠
+	PlaySE(4, "S02/01/130101097", 128, 64);
 	OutputLine(NULL, "「……………………………………………………。」",
 		   NULL, "\"............\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -999,6 +1017,7 @@
 	StopSE( 3 );
 
 //「みんなここで、!w1000..................私が殺した＠...見てくれている観客はいなかったけど、...私は綿流しを上手にやって見せた＠......いや、観客はひとりだけいたかな。＠
+	PlaySE(4, "S02/03/130300553", 128, 64);
 	OutputLine(NULL, "「みんなここで、",
 		   NULL, "\"Right here...", Line_ContinueAfterTyping);
 
@@ -1170,6 +1189,7 @@
 
 
 //「............................................................。￥
+	PlaySE(4, "S02/01/130101105", 128, 64);
 	OutputLine(NULL, "「……………………………………………………。」",
 		   NULL, "\"............\"", Line_Normal);
 	ClearMessage();
@@ -1274,6 +1294,7 @@
 
 
 //「...ぃ.........ぃや.........いや、!w1000............ぁああぁああぁあぁああぁあッ！！！！＠
+	PlaySE(4, "S02/06/130600549", 128, 64);
 	OutputLine(NULL, "「…ぃ………ぃや………いや、",
 		   NULL, "\"...N...... no...... no.........", Line_ContinueAfterTyping);
 
@@ -1451,6 +1472,7 @@
 	DrawBustshot( 3, "me_si_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「あっはははははははははははははははははははははッ！！＠/
+	PlaySE(4, "S02/03/130300568", 128, 64);
 	OutputLine(NULL, "「あっはははははははははははははははははははははッ！！！",
 		   NULL, "\"Ah-hahahahahahahahahahahahahahahahahahah!!!", Line_WaitForInput);
 
@@ -1458,13 +1480,16 @@
 	DrawBustshot( 3, "me_si_fu_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //　そんなに死にたければ、この男を殺した後に、ゆっくりとひき肉にしてやるよ＠...古式に則り、四肢の先端から少しずつ＠ガリゴリと削ってミンチにしてやる＠...あの肉挽き機はあんたのためにとっておいてあるんだからね＠/
+	PlaySE(4, "S02/03/130300569", 128, 64);
 	OutputLine(NULL, "　そんなに死にたければ、この男を殺した後に、ゆっくりとひき肉にしてやるよ。",
 		   NULL, " If you want to die that badly, then after I've killed this man, I'll take my time making mincemeat out of you.", Line_WaitForInput);
 	PlaySE(4, "S02/03/130300570", 128, 64);
 	OutputLine(NULL, "…古式に則り、四肢の先端から少しずつ。",
 		   NULL, " ...In accordance with the ancient rites, I'll do it slowly, starting with your extremities.", Line_WaitForInput);
+	PlaySE(4, "S02/03/130300571", 128, 64);
 	OutputLine(NULL, "ガリゴリと削ってミンチにしてやる。",
 		   NULL, " I'll shave you down and mince you.", Line_WaitForInput);
+	PlaySE(4, "S02/03/130300572", 128, 64);
 	OutputLine(NULL, "…あの肉挽き機はあんたのためにとっておいてあるんだからね。",
 		   NULL, " I had that mincing machine set up specifically for you, after all.", Line_WaitForInput);
 
@@ -1472,6 +1497,7 @@
 	DrawBustshot( 3, "me_si_aw_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //...それとも、それで圭ちゃんをミンチにして見せた方が、あんたには面白いかなぁ？￥
+	PlaySE(4, "S02/03/130300573", 128, 64);
 	OutputLine(NULL, "…それとも、それで圭ちゃんをミンチにして見せた方が、あんたには面白いかなぁ？」",
 		   NULL, " ...Or would it be funnier if I were to mince up Kei-chan in front of you?\"", Line_Normal);
 	ClearMessage();
@@ -1612,8 +1638,10 @@
 	PlaySE(4, "S02/03/130300575", 128, 64);
 	OutputLine(NULL, "　そうだ。釘台なんかどうかなぁ？",
 		   NULL, " Oh, yes. What do you think of a bed of nails?", Line_WaitForInput);
+	PlaySE(4, "S02/03/130300576", 128, 64);
 	OutputLine(NULL, "　あのチビガキ二人組に試したかったんだけど、手が小さくて拘束台にサイズが合わなかったからねぇ！！",
 		   NULL, " I tested it on those two little brats, but their hands were too small for the restraining table!!", Line_WaitForInput);
+	PlaySE(4, "S02/03/130300577", 128, 64);
 	OutputLine(NULL, "　あれにしようあれにしよう、あっはははははははははははは！！」",
 		   NULL, " Let's do that, let's do that! Ah-hahahahahahahahaha!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
@@ -1632,6 +1660,7 @@
 	PlaySE(4, "S02/06/130600565", 128, 64);
 	OutputLine(NULL, "　もうやめてよお姉ぇえぇえ……！！",
 		   NULL, " Please, stop, siiiiiiiiiiiiis...!!", Line_WaitForInput);
+	PlaySE(4, "S02/06/130600566", 128, 64);
 	OutputLine(NULL, "　…もう",
 		   NULL, " ...Please......", Line_ContinueAfterTyping);
 
@@ -1668,12 +1697,14 @@
 
 
 //「...あんたもかわいい声で泣けるじゃない＠
+	PlaySE(4, "S02/03/130300578", 128, 64);
 	OutputLine(NULL, "「…あんたもかわいい声で泣けるじゃない？",
 		   NULL, "\"...My, you sure can cry with a cute voice, can't you?", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //　あんたのワザとらしい空威張りには虫唾が走ってたんだけど、やっぱりそういうあんたが一番似合ってるよ＠くっくっくっく！＠
+	PlaySE(4, "S02/03/130300579", 128, 64);
 	OutputLine(NULL, "　あんたのワザとらしい空威張りには虫唾が走ってたんだけど、やっぱりそういうあんたが一番似合ってるよ。",
 		   NULL, "Your unnatural bravado was making my skin crawl, but this definitely suits you the best.", Line_WaitForInput);
 	PlaySE(4, "S02/03/130300580", 128, 64);
@@ -1692,6 +1723,7 @@
 	PlaySE(4, "S02/06/130600569", 128, 64);
 	OutputLine(NULL, "…私をどういう風に殺しても構いませんから。",
 		   NULL, " ...I don't care how you choose to kill me, but...", Line_WaitForInput);
+	PlaySE(4, "S02/06/130600570", 128, 64);
 	OutputLine(NULL, "…どうか圭ちゃんだけは見逃して上げてください。",
 		   NULL, " please, at least let Kei-chan go.", Line_WaitForInput);
 	PlaySE(4, "S02/06/130600571", 128, 64);
@@ -1723,14 +1755,17 @@
 	PlaySE(4, "S02/03/130300581", 128, 64);
 	OutputLine(NULL, "「…あんたの希望なんか聞くつもりは全然なかったんだけど。",
 		   NULL, "\"...You know, I wasn't planning on listening to your petty wishes.", Line_WaitForInput);
+	PlaySE(4, "S02/03/130300582", 128, 64);
 	OutputLine(NULL, "あんたがあまりにも面白い声で泣くものだから。…",
 		   NULL, " The way you're crying, though, is just too funny...", Line_WaitForInput);
+	PlaySE(4, "S02/03/130300583", 128, 64);
 	OutputLine(NULL, "何だか聞いててやってもいいような気がしてきたかな。",
 		   NULL, " I think maybe I'll change my mind and listen to you.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //　......思えばあんたには姉らしいこと、何にもしてやれなかったからね。＠
+	PlaySE(4, "S02/03/130300584", 128, 64);
 	OutputLine(NULL, "　……思えばあんたには姉らしいこと、何にもしてやれなかったからね。」",
 		   NULL, "...Since come to think of it, I never did anything big-sister-like for you.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1791,6 +1826,7 @@
 	PlaySE(4, "S02/03/130300589", 128, 64);
 	OutputLine(NULL, "「…そんなので私の積年の怨み辛みが償えると思ってるわけ？",
 		   NULL, "\"...You think you can make up for years of grudges and hard feelings like that?", Line_WaitForInput);
+	PlaySE(4, "S02/03/130300590", 128, 64);
 	OutputLine(NULL, "　こんなんじゃ駄目だね。",
 		   NULL, " That just will not do.", Line_WaitForInput);
 
@@ -1798,6 +1834,7 @@
 	DrawBustshot( 3, "me_si_ik_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //......やっぱり圭ちゃんから挽き肉だぁあぁ！！！！＠
+	PlaySE(4, "S02/03/130300591", 128, 64);
 	OutputLine(NULL, "……やっぱり圭ちゃんから挽き肉だぁあぁ！！！！」",
 		   NULL, " ...I guess I'll make mincemeat out of you both!!!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1850,6 +1887,7 @@
 
 
 //「......はい＠...はひ...＠...ありぁとうぉざいますぉ姉さま......＠ぅぅ......。￥
+	PlaySE(4, "S02/06/130600579", 128, 64);
 	OutputLine(NULL, "「……はい。",
 		   NULL, "\"...Yes.", Line_WaitForInput);
 	PlaySE(4, "S02/06/130600580", 128, 64);
@@ -1919,6 +1957,7 @@
 
 
 //「...はぃ...、!w1000ありがとうございます......ありがとうございます...！＠
+	PlaySE(4, "S02/06/130600583", 128, 64);
 	OutputLine(NULL, "「…はぃ…、",
 		   NULL, "\"...Yes...", Line_ContinueAfterTyping);
 
@@ -1965,6 +2004,7 @@
 
 
 //「...........................そ、!w800......園崎詩音は......、＠
+	PlaySE(4, "S02/06/130600584", 128, 64);
 	OutputLine(NULL, "「………………………そ、",
 		   NULL, "\"............Shi...", Line_ContinueAfterTyping);
 
@@ -1994,8 +2034,10 @@
 	ClearMessage();
 
 //「......園崎詩音は.........魅音姉さまの足元にも及ばない、下賤で卑しい雌豚でございます...＠...身の程をわきまえず...お姉さまに働いた...か、数々の無礼を、お、思えば......、!w800ぅっく......、＠
+	PlaySE(4, "S02/06/130600585", 128, 64);
 	OutputLine(NULL, "「……園崎詩音は………魅音姉さまの足元にも及ばない、下賤で卑しい雌豚でございます…。",
 		   NULL, "\"...Shion Sonozaki...... is a lowly, worthless sow not fit to even lick her big sister Mion's feet...", Line_WaitForInput);
+	PlaySE(4, "S02/06/130600586", 128, 64);
 	OutputLine(NULL, "…身の程をわきまえず…お姉さまに働いた…か、数々の無礼を、お、思えば……、",
 		   NULL, " ...and when I think of... th-the countless times I've been rude... to my big sister... w-without knowing my place...", Line_ContinueAfterTyping);
 
@@ -2043,6 +2085,7 @@
 	ClearMessage();
 
 //「......生意気だったこれまでを...反省し、!w700......一生、!w800...み、魅音姉さまに忠誠を誓います...＠...ですから......ぅぅ.........、＠
+	PlaySE(4, "S02/06/130600587", 128, 64);
 	OutputLine(NULL, "「……生意気だったこれまでを…反省し、",
 		   NULL, "\"...I reflect on... how impertinent I've been...", Line_ContinueAfterTyping);
 
@@ -2192,6 +2235,7 @@
 	ClearMessage();
 
 //「......お姉ぇえっぇぇぇえぇ...、!w700殺さないでぇえぇぇえええ......、!w700お姉ぇええええぇえぇ......！！＠
+	PlaySE(4, "S02/06/130600593", 128, 64);
 	OutputLine(NULL, "「……お姉ぇえっぇぇぇえぇ…、",
 		   NULL, "\"...Siiiiiiiiiiiis...", Line_ContinueAfterTyping);
 
@@ -2288,6 +2332,7 @@
 
 
 //「...........................お前は!w1000......誰だ。￥
+	PlaySE(4, "S02/01/130101121", 128, 64);
 	OutputLine(NULL, "「………………………お前は",
 		   NULL, "\"............Who......", Line_ContinueAfterTyping);
 
@@ -2469,6 +2514,7 @@
 	PlaySE(4, "S02/03/130300635", 128, 64);
 	OutputLine(NULL, "園崎魅音に殺されようとしているこの瞬間に、目の前の私を否定するわけ？",
 		   NULL, " In this very moment, Mion Sonozaki is trying to kill you, and you're trying to reject me?", Line_WaitForInput);
+	PlaySE(4, "S02/03/130300636", 128, 64);
 	OutputLine(NULL, "　……こんな面白い人が世の中にいるなんて始めて知ったわ。」",
 		   NULL, " ...I never knew there was such a funny person in all the world.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -2570,6 +2616,7 @@
 	PlaySE(4, "S02/01/130101142", 128, 64);
 	OutputLine(NULL, "　お前はこんな弱いヤツじゃないだろ？！",
 		   NULL, " You're not that weak, are you?!", Line_WaitForInput);
+	PlaySE(4, "S02/01/130101143", 128, 64);
 	OutputLine(NULL, "　負けるな…、",
 		   NULL, " Don't lose...", Line_ContinueAfterTyping);
 
@@ -2618,6 +2665,7 @@
 	PlaySE(4, "S02/03/130300641", 128, 64);
 	OutputLine(NULL, "「わーっはっはっはっはっはっはっは……。",
 		   NULL, "\"Wahh-ha-ha-ha-ha-ha-ha-ha-ha......", Line_WaitForInput);
+	PlaySE(4, "S02/03/130300642", 128, 64);
 	OutputLine(NULL, "はぁ、……お腹の筋肉がよじれて痛いよ。",
 		   NULL, " Haah...... My sides hurt like they're about to split.", Line_WaitForInput);
 
@@ -2626,6 +2674,7 @@
 	DrawScene( "bg_177", 300 );
 
 //.........もういい＠　そろそろ始めるよ＠　いい声を出してね＠これは圭ちゃんへの拷問である以上に、詩音への拷問なんだからさ。￥
+	PlaySE(4, "S02/03/130300643", 128, 64);
 	OutputLine(NULL, "………もういい？",
 		   NULL, " ......Is that all?", Line_WaitForInput);
 	PlaySE(4, "S02/03/130300644", 128, 64);
@@ -2642,6 +2691,7 @@
 	DrawScene( "black", 400 );
 
 //「..................どうして、!w800........................どうして、!w700......こんなことに...＠...........................魅音...ッ！！！＠
+	PlaySE(4, "S02/01/130101144", 128, 64);
 	OutputLine(NULL, "「………………どうして、",
 		   NULL, "\"............Why...", Line_ContinueAfterTyping);
 
@@ -2743,8 +2793,10 @@
 	PlaySE(4, "S02/03/130300651", 128, 64);
 	OutputLine(NULL, "…その鬼は私を蝕み凶行に駆り立てようとした。",
 		   NULL, " ...It was gnawing at my heart, trying to spur me to violence, but...", Line_WaitForInput);
+	PlaySE(4, "S02/03/130300652", 128, 64);
 	OutputLine(NULL, "……だけれど、私はそれを理性で抑えつけた。",
 		   NULL, " I suppressed it with my reason.", Line_WaitForInput);
+	PlaySE(4, "S02/03/130300653", 128, 64);
 	OutputLine(NULL, "……鬼はそれで治まり、…私は、その鬼はどこかへ行ってしまったんだと思い込んでいた。",
 		   NULL, " ...That settled the demon down... and I got to thinking it had gone away somewhere.", Line_WaitForInput);
 	PlaySE(4, "S02/03/130300654", 128, 64);
@@ -2817,6 +2869,7 @@
 	ClearMessage();
 
 //「........................あの時、!w800...あんたがもらった人形を、躊躇なく私に渡していたなら、!w1000............全ては狂いださなかったかもしれない。＠
+	PlaySE(4, "S02/03/130300662", 128, 64);
 	OutputLine(NULL, "「……………………あの時、",
 		   NULL, "\"............At the time...", Line_ContinueAfterTyping);
 
@@ -2856,8 +2909,10 @@
 	PlaySE(4, "S02/03/130300664", 128, 64);
 	OutputLine(NULL, "理解できなくて当然。",
 		   NULL, " I wouldn't expect you to.", Line_WaitForInput);
+	PlaySE(4, "S02/03/130300665", 128, 64);
 	OutputLine(NULL, "………だけどね、そこからドミノ倒しみたいにパタパタパタといろんなものが倒れ始めて、…収拾がつかなくなってしまった。",
 		   NULL, " ......But, you see, all sorts of things started falling over like dominoes after that... and soon it was too much for me to control.", Line_WaitForInput);
+	PlaySE(4, "S02/03/130300666", 128, 64);
 	OutputLine(NULL, "……初めの小さなひとつを倒したあなたに自覚がないのは当然だろうけど、………あなたが元凶なの。」",
 		   NULL, " ...It only makes sense that you wouldn't be aware of knocking over the first one, since it was so small...... but you're the one who set it up.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -2870,6 +2925,7 @@
 	ClearMessage();
 
 //「...............あんたが「魅音」を泣かさなかったら、......私は起きなくて済んだのにね＠/
+	PlaySE(4, "S02/03/130300667", 128, 64);
 	OutputLine(NULL, "「……………あんたが「魅音」を泣かさなかったら、……私は起きなくて済んだのにね。",
 		   NULL, "\".......If you hadn't made 'Mion' cry... then I wouldn't have had to wake up.", Line_WaitForInput);
 
@@ -2877,6 +2933,7 @@
 	DrawBustshot( 2, "me_si_si_a2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //...........................これで充分＠　冥土の土産は...。＠
+	PlaySE(4, "S02/03/130300668", 128, 64);
 	OutputLine(NULL, "………………………これで充分？",
 		   NULL, " ............Is that enough?", Line_WaitForInput);
 	PlaySE(4, "S02/03/130300669", 128, 64);
@@ -3004,6 +3061,7 @@
 	PlaySE(4, "S02/03/130300673", 128, 64);
 	OutputLine(NULL, "「……じゃあそろそろいい？",
 		   NULL, "\"...Can I start now, then?", Line_WaitForInput);
+	PlaySE(4, "S02/03/130300674", 128, 64);
 	OutputLine(NULL, "　この拷問はね、とてもシンプル。",
 		   NULL, " This method of torture is very simple.", Line_WaitForInput);
 	OutputLine(NULL, "左手の小指の先端の節に釘を打つ。",
@@ -3034,6 +3092,7 @@
 	ClearMessage();
 
 //「............他の人を拷問する時にはなんのためらいもなかったけど＠......なぜかあんたにはためらいがあるよ。＠
+	PlaySE(4, "S02/03/130300682_1", 128, 64);
 	OutputLine(NULL, "「…………他の人を拷問する時にはなんのためらいもなかったけど。",
 		   NULL, "\"............I didn't hesitate at all when I was torturing the others.", Line_WaitForInput);
 	PlaySE(4, "S02/03/130300683", 128, 64);
@@ -3057,6 +3116,7 @@
 	DrawBustshot( 2, "me_si_bi_a2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「...............あんた、!w900......本気で言ってるの...？＠
+	PlaySE(4, "S02/03/130300684", 128, 64);
 	OutputLine(NULL, "「……………あんた、",
 		   NULL, "\"...........Are...", Line_ContinueAfterTyping);
 
@@ -3077,6 +3137,7 @@
 
 
 //「............................................................。￥
+	PlaySE(4, "S02/03/130300685", 128, 64);
 	OutputLine(NULL, "「……………………………………………………。」",
 		   NULL, "\"............\"", Line_Normal);
 	ClearMessage();
@@ -3115,6 +3176,7 @@
 	DrawBustshot( 2, "me_si_si_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「あんた、!w1000.........この期に及んで...自分より詩音の心配ができるわけ...？￥
+	PlaySE(4, "S02/03/130300686", 128, 64);
 	OutputLine(NULL, "「あんた、",
 		   NULL, "\"You......", Line_ContinueAfterTyping);
 
@@ -3127,6 +3189,7 @@
 	ClearMessage();
 
 //「...もう一つは、!w900......気が済んだら、...もうお前は消えろ＠.........その体を、!w800......魅音に返してやってくれ＠.....................それだけだ。＠
+	PlaySE(4, "S02/01/130101155", 128, 64);
 	OutputLine(NULL, "「…もう一つは、",
 		   NULL, "\"...The other thing...", Line_ContinueAfterTyping);
 
@@ -3136,6 +3199,7 @@
 
 	OutputLine(NULL, "……気が済んだら、…もうお前は消えろ。",
 		   NULL, " is that when you've had your fill... you disappear.", Line_WaitForInput);
+	PlaySE(4, "S02/01/130101156", 128, 64);
 	OutputLine(NULL, "………その体を、",
 		   NULL, " ......Give that body...", Line_ContinueAfterTyping);
 
@@ -3365,6 +3429,7 @@
 //!s300
 	SetSpeedOfMessage( TRUE, 0, );
 
+	PlaySE(4, "S02/03/130300708", 128, 64);
 	OutputLine(NULL, "「…………………………………………………………",
 		   NULL, "\"............", Line_ContinueAfterTyping);
 //!sd
@@ -3449,6 +3514,7 @@
 	PlaySE(4, "S02/03/130300713", 128, 64);
 	OutputLine(NULL, "本物のスタンガンだよ。",
 		   NULL, " It's a real stun gun.", Line_WaitForInput);
+	PlaySE(4, "S02/03/130300714", 128, 64);
 	OutputLine(NULL, "…違法品なんでかなり出力が上げられるようになってるけどね。」",
 		   NULL, " ...It's illegal, and its output has been increased quite a bit.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -3570,6 +3636,7 @@
 	PlaySE(4, "S02/03/130300722", 128, 64);
 	OutputLine(NULL, "「…………………でも忘れて。",
 		   NULL, "\"............Look, forget about that.", Line_WaitForInput);
+	PlaySE(4, "S02/03/130300723", 128, 64);
 	OutputLine(NULL, "今日以降、もしも私を見かけても、",
 		   NULL, " If you ever see me after today...", Line_ContinueAfterTyping);
 
