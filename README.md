@@ -20,9 +20,9 @@ Old collaborators welcome to join the repository, however it's still preferred t
 - [x] omake_02.txt
 - [x] wata_001.txt
 - [x] wata_002.txt
-- [ ] **wata_003.txt**
-- [ ] wata_004.txt
-- [ ] wata_005.txt
+- [x] wata_003.txt
+- [x] wata_004.txt
+- [ ] **wata_005.txt**
 - [x] wata_006.txt
 - [ ] wata_007.txt
 - [ ] wata_008.txt
@@ -69,6 +69,8 @@ Old collaborators welcome to join the repository, however it's still preferred t
 > In wata_002.txt, the scene where they are playing a game is missing a large chunk of dialog. Most likely because of obvious copyright issues. Needs retranslation to fit with the PS3 audio.
 
 > In wata_tips_01.txt, [lines 474~526](https://github.com/higurashi-mod/watanagashi/blob/master/Update/wata_tips_01.txt#L474-L526) are clearly different from the PS3 version. Probably because of the whole red light talk. PS3 files for this scene are S20/05/440500017 and S20/04/440400025.
+
+> In wata_04.txt, the PS3 script differs a lot from the PC version. There are dozens of new dialog lines, including voiced ones. Some voices are also missing and some lines were rewritten. This will most likely bother you if you play with japanese text.
 
 >In wata_010.txt, [line 241](https://github.com/higurashi-mod/watanagashi/blob/master/Update/wata_010.txt#L241) the dialogue said in the text and the voice file diverge. In the original text, Keiichi only asks confirmation about the hour (3:00). In the sound file, he adds "昨日に続いてか？" asking about the day before.
 
