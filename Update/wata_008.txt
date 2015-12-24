@@ -138,6 +138,7 @@
 	ClearMessage();
 
 //「沙都子と梨花ちゃんは？＠祭り会場で合流か？＠
+	PlaySE(4, "S02/01/130100007", 128, 64);
 	OutputLine(NULL, "「沙都子と梨花ちゃんは？　",
 		   NULL, "\"Where's Satoko and Rika-chan?", Line_WaitForInput);
 	PlaySE(4, "S02/01/130100008", 128, 64);
@@ -153,6 +154,7 @@
 	PlaySE(4, "S02/02/130200007", 128, 64);
 	OutputLine(NULL, "「うん。",
 		   NULL, "\"Yep.", Line_WaitForInput);
+	PlaySE(4, "S02/02/130200008", 128, 64);
 	OutputLine(NULL, "梨花ちゃんはほら、大切なお勤めがあるから昨日からずーっと。",
 		   NULL, " Rika-chan's actually been there since yesterday because she has such an important job.", Line_WaitForInput);
 	PlaySE(4, "S02/02/130200009", 128, 64);
@@ -210,6 +212,7 @@
 	DrawBustshot( 1, "re_si_ha_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「け、圭一くん、早いよ...、!w800...待ってぇ～～...！！＠
+	PlaySE(4, "S02/02/130200011", 128, 64);
 	OutputLine(NULL, "「け、圭一くん、早いよ…、",
 		   NULL, "\"K-Keiichi-kun, you're going too fast...", Line_ContinueAfterTyping);
 
@@ -259,8 +262,10 @@
 
 
 //　ありゃ、公由分家の寝たきり爺さんまで来てるじゃない＠　あの爺さん、去年の綿流し以降、ずーっと布団の中で過ごしてたんじゃないかなぁ。￥
+	PlaySE(4, "S02/03/130300008", 128, 64);
 	OutputLine(NULL, "　ありゃ、公由分家の寝たきり爺さんまで来てるじゃない！",
 		   NULL, "Huh? The bedridden old man from the Kimiyoshi branch family is here too!", Line_WaitForInput);
+	PlaySE(4, "S02/03/130300009", 128, 64);
 	OutputLine(NULL, "　あの爺さん、去年の綿流し以降、ずーっと布団の中で過ごしてたんじゃないかなぁ。」",
 		   NULL, " I think that old guy went home from Watanagashi last year and stayed in bed ever since.\"", Line_Normal);
 	ClearMessage();
@@ -557,6 +562,10 @@
 	DrawBustshot( 1, "sa_si_wa_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「「「おおーーーー！！！」」￥
+	PlaySE(4, "S02/02/130200024", 128, 64);
+	PlaySE(5, "S02/03/130300017", 128, 64);
+	PlaySE(6, "S02/04/130400007", 128, 64);
+	PlaySE(7, "S02/05/130500007", 128, 64);
 	OutputLine(NULL, "「「「おおーーーー！！！」」」",
 		   NULL, "\"\"\"Yeeaaahh!!!\"\"\"", Line_Normal);
 	ClearMessage();
@@ -643,6 +652,7 @@
 
 //「うん＠圭一くんがおいしそうに食べてると、何だかいつもよりもずーっとおいしそうに感じるもんね。＠
 
+	PlaySE(4, "S02/02/130200026", 128, 64);
 	OutputLine(NULL, "「うん。",
 		   NULL, "\"Yeah.", Line_WaitForInput);
 	PlaySE(4, "S02/02/130200027", 128, 64);
@@ -673,6 +683,7 @@
 	ClearMessage();
 
 //「一言で言うとだ＠/
+	PlaySE(4, "S02/01/130100023", 128, 64);
 	OutputLine(NULL, "「一言で言うとだ。",
 		   NULL, "\"I'll do it in two words.", Line_WaitForInput);
 
@@ -689,6 +700,7 @@
 	DrawScene( "bg_015", 400 );
 
 //...うまいッ！＠　胃袋がもう１つあるんなら、迷わずもう１つ買ってるな！＠
+	PlaySE(4, "S02/01/130100024", 128, 64);
 	OutputLine(NULL, "…うまいッ！！",
 		   NULL, " ...Absolutely Scrumptious!!", Line_WaitForInput);
 	PlaySE(4, "S02/01/130100025", 128, 64);
@@ -731,6 +743,7 @@
 	PlaySE(4, "S02/04/130400009", 128, 64);
 	OutputLine(NULL, "　では私も挑戦してみましてよ？",
 		   NULL, " Then perhaps I shall try it out.", Line_WaitForInput);
+	PlaySE(4, "S02/04/130400010", 128, 64);
 	OutputLine(NULL, "　おじさんおじさん、たこ焼きをひとつ下さいますこと？」",
 		   NULL, " Mister, mister, could I perchance bother you for one takoyaki?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -768,6 +781,7 @@
 	ClearMessage();
 
 //「さー、ミシュラン雛見沢の北条沙都子審査員のご感想をどうぞー！＠
+	PlaySE(4, "S02/03/130300025", 128, 64);
 	OutputLine(NULL, "「さー、ミシュラン雛見沢の北条沙都子審査員のご感想をどうぞー！」",
 		   NULL, "\"Now, it's time for the Hinamizawa Michelin, Judge Satoko Houjou, to give her impressions!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -895,6 +909,7 @@
 	DrawBustshot( 2, "re_si_na_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「えっとね、えっとね、...こんなのはどうかな＠/
+	PlaySE(4, "S02/02/130200032", 128, 64);
 	OutputLine(NULL, "「えっとね、えっとね、…こんなのはどうかな？",
 		   NULL, "\"Umm, err... How about this?", Line_WaitForInput);
 
@@ -902,6 +917,7 @@
 	DrawBustshot( 2, "re_si_wa_b1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //　たこ焼きなのにタコが入ってないからとってもヘルシ～＠　タコの嫌いな人でも食べられるおいしいたこ焼き～...☆＠
+	PlaySE(4, "S02/02/130200033", 128, 64);
 	OutputLine(NULL, "　たこ焼きなのにタコが入ってないからとってもヘルシ〜☆",
 		   NULL, " Takoyaki without any octopus is really healthy~☆.", Line_WaitForInput);
 	PlaySE(4, "S02/02/130200034", 128, 64);
@@ -931,6 +947,7 @@
 	DrawBustshotWithFiltering( 1, "me_si_de_a2", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「じゃー次は私が挑戦するよ＠/
+	PlaySE(4, "S02/03/130300029", 128, 64);
 	OutputLine(NULL, "「じゃー次は私が挑戦するよ。",
 		   NULL, "\"Alright, then I'll give it a try next.", Line_WaitForInput);
 
@@ -938,6 +955,7 @@
 	DrawBustshot( 1, "me_si_to_a2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //小麦粉やねぎ、紅しょうがの味などの素朴さをしっとりと味わわせてくれる自信作＠　タコが入ってない分だけ素材の味がほどよく...、」/
+	PlaySE(4, "S02/03/130300031", 128, 64);
 	OutputLine(NULL, "小麦粉やねぎ、紅しょうがの味などの素朴さをしっとりと味わわせてくれる自信作！",
 		   NULL, " A self-inspired take on takoyaki, in which you can clearly taste the simple flavors of the flour, green onions, and pickled ginger!", Line_WaitForInput);
 	PlaySE(4, "S02/03/130300031", 128, 64);
@@ -1010,6 +1028,7 @@
 	DrawBustshotWithFiltering( 1, "me_si_th_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「いや!s100～～...!sdなんかその...、!w900私ら、とんでもないことをしてるような～...＠/
+	PlaySE(4, "S02/03/130300032", 128, 64);
 	OutputLine(NULL, "「いや",
 		   NULL, "\"Well", Line_ContinueAfterTyping);
 //!s100
@@ -1035,8 +1054,10 @@
 	DrawBustshot( 1, "me_si_aw_a2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //ほら、沙都子＠　あんたが始めたことなんだからビシ！っとここで逆転させなさいよ！＠
+	PlaySE(4, "S02/03/130300033", 128, 64);
 	OutputLine(NULL, "ほら、沙都子！",
 		   NULL, " Hey, Satoko!", Line_WaitForInput);
+	PlaySE(4, "S02/03/130300034", 128, 64);
 	OutputLine(NULL, "　あんたが始めたことなんだからビシ！っとここで逆転させなさいよ！」",
 		   NULL, " You started all this, so give us a great big turnaround!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1046,12 +1067,14 @@
 	DrawBustshot( 3, "sa_si_bi_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「むむむむ、無理でございますわー！＠/
+	PlaySE(4, "S02/04/130400014", 128, 64);
 	OutputLine(NULL, "「むむむむ、無理でございますわー！！",
 		   NULL, "\"Mgh... I cannot do it!!", Line_WaitForInput);
 
 	PlaySE( 3, "wa_006", 128, 64 );
 
 //　タコの入ってないたこ焼きなんてどう褒めればいいんですのーッ！！＠
+	PlaySE(4, "S02/04/130400015", 128, 64);
 	OutputLine(NULL, "　タコの入ってないたこ焼きなんてどう褒めればいいんですのーッ！！」",
 		   NULL, " How do you expect me to lavish praise upon takoyaki without any octopus in it!?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1162,6 +1185,11 @@
 
 
 //「「「えぇ...？！？！」」＠
+	PlaySE(4, "S02/02/130200040", 128, 64);
+	PlaySE(5, "S02/03/130300034_1", 128, 64);
+	PlaySE(6, "S02/04/130400016", 128, 64);
+	PlaySE(7, "S02/05/130500015", 128, 64);
+	PlaySE(8, "S02/00/yataA03006", 128, 64);
 	OutputLine(NULL, "「「「えぇ…？！？！」」」",
 		   NULL, "\"\"\"Ehhh...?!?!\"\"\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1178,12 +1206,14 @@
 	PlaySE(4, "S02/01/130100033", 128, 64);
 	OutputLine(NULL, "「あの親父さんは、本当にたこ焼きが大好きなんだ。",
 		   NULL, "\"This man truly does love takoyaki.", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100034", 128, 64);
 	OutputLine(NULL, "大好きだからこそ、いい加減なたこ焼きを作りたくないんだ。",
 		   NULL, " And because he loves it, he doesn't want to create halfhearted, random ones.", Line_WaitForInput);
 
 	PlaySE( 3, "wa_012", 128, 64 );
 
 //......そうだね？　親父さん！＠
+	PlaySE(4, "S02/01/130100035", 128, 64);
 	OutputLine(NULL, "……そうだね？　親父さん！」",
 		   NULL, " ......Isn't that right?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1221,6 +1251,7 @@
 	PlaySE(4, "S02/01/130100038", 128, 64);
 	OutputLine(NULL, "だが……これは親父さんにとっての、最大限の妥協点なんだ。",
 		   NULL, " However...... It's the best possible compromise this man could find.", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100039", 128, 64);
 	OutputLine(NULL, "親父さんは今日だって！本当のたこ焼きを作ってるよ。",
 		   NULL, " This man is making real takoyaki today, as he always does!", Line_WaitForInput);
 	PlaySE(4, "S02/01/130100040", 128, 64);
@@ -1251,6 +1282,7 @@
 	PlaySE(4, "S02/01/130100042", 128, 64);
 	OutputLine(NULL, "それが本物のたこ焼きだ。",
 		   NULL, " That was a bona fide takoyaki...", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100043", 128, 64);
 	OutputLine(NULL, "……それ以外のたこ焼きは…",
 		   NULL, " ...and as for the other ones...", Line_ContinueAfterTyping);
 
@@ -1279,22 +1311,27 @@
 	FadeAllBustshots( 400, TRUE );
 
 //「その秘密は...タコにあるんだ＠親父さん、このタコ、/
+	PlaySE(4, "S02/01/130100044", 128, 64);
 	OutputLine(NULL, "「その秘密は…タコにあるんだ。",
 		   NULL, "\"The secret... lies in the octopus.", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100045", 128, 64);
 	OutputLine(NULL, "親父さん、このタコ、",
 		   NULL, " Mister, this octopus...", Line_ContinueAfterTyping);
 
 	PlaySE( 3, "wa_010", 128, 64 );
 
 //本物の明石のタコだね＠
+	
 	OutputLine(NULL, "本物の明石のタコだね？",
 		   NULL, " It's true Akashi octopus, isn't it?", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //　近年、明石のタコの水揚げは激減して、とても高騰しているんだ＠たこ焼きになんかにとても使えないような...とても高い値段になってしまってるんだ。＠
+	PlaySE(4, "S02/01/130100046", 128, 64);
 	OutputLine(NULL, "　近年、明石のタコの水揚げは激減して、とても高騰しているんだ。",
 		   NULL, "In recent years, the number of octopuses caught in Akashi has decreased, and their prices have risen drastically.", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100047", 128, 64);
 	OutputLine(NULL, "たこ焼きになんかにとても使えないような…とても高い値段になってしまってるんだ。」",
 		   NULL, " The prices are now so high... that you wouldn't think of using them in takoyaki.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1330,19 +1367,23 @@
 
 
 //　明石のじゃないのに明石という登りを立てて販売してるインチキたこ焼き屋はいくらでもあるのに！＠
+	PlaySE(4, "S02/01/130100050", 128, 64);
 	OutputLine(NULL, "　明石のじゃないのに明石という登りを立てて販売してるインチキたこ焼き屋はいくらでもあるのに！！",
 		   NULL, "There are plenty of other scamming takoyaki vendors who claim theirs are from Akashi, even though they're not!!", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //　親父さんは誤魔化さなかった、ウソをつかなかった＠　タコは明石ッ！！＠　この一点だけを頑なに譲らなかったんだ！！＠　親父さんはタコ焼きを愛してた＠　だからウソをつけなかった！＠　でも...どうしても一点だけ強いられる妥協点があったんだ。￥
+	PlaySE(4, "S02/01/130100051", 128, 64);
 	OutputLine(NULL, "　親父さんは誤魔化さなかった、ウソをつかなかった！",
 		   NULL, "But this man wouldn't accept it! He wouldn't tell lies!", Line_WaitForInput);
 	PlaySE(4, "S02/01/130100052", 128, 64);
 	OutputLine(NULL, "　タコは明石ッ！！！",
 		   NULL, " Akashi octopus are supreme!!!", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100053", 128, 64);
 	OutputLine(NULL, "　この一点だけを頑なに譲らなかったんだ！！！",
 		   NULL, " He would never relinquish this one stubborn conviction!!!", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100054", 128, 64);
 	OutputLine(NULL, "　親父さんはタコ焼きを愛してた！",
 		   NULL, " This man loved takoyaki!", Line_WaitForInput);
 	PlaySE(4, "S02/01/130100055", 128, 64);
@@ -1368,16 +1409,20 @@
 	PlaySE(4, "S02/01/130100058", 128, 64);
 	OutputLine(NULL, "たこ焼きってのは１舟、８個がポピュラーだ。",
 		   NULL, " The popular opinion is that a stick of takoyaki should have 8 pieces on it.", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100059", 128, 64);
 	OutputLine(NULL, "いくら本物の明石のタコだからって言って、４００円で１個だけってわけにはいかないだろ？！",
 		   NULL, " Even if it's real Akashi octopus, he couldn't charge 400 yen for just one piece, could he?!", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100060", 128, 64);
 	OutputLine(NULL, "　でも８個にしなくて買ってもらえない…。",
 		   NULL, " If he didn't have eight pieces, nobody would buy them...", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100061", 128, 64);
 	OutputLine(NULL, "…だから親父は涙を飲んだ！！",
 		   NULL, " ...This man wept over it!!", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //　本物のたこ焼きをひとつ作るために.../
+	PlaySE(4, "S02/01/130100062", 128, 64);
 	OutputLine(NULL, "　本物のたこ焼きをひとつ作るために…",
 		   NULL, "In order to make just one true piece of takoyaki...", Line_ContinueAfterTyping);
 
@@ -1431,8 +1476,10 @@
 	PlaySE(4, "S02/01/130100066", 128, 64);
 	OutputLine(NULL, "「さぁ、みんな！！",
 		   NULL, "\"Everyone!!", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100067", 128, 64);
 	OutputLine(NULL, "　この本物のたこ焼き屋のたこ焼きを、どうか食べてやってくれ！！",
 		   NULL, " I beg of you, please, eat some of this true takoyaki vendor's takoyaki!!", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100068", 128, 64);
 	OutputLine(NULL, "　こんな純粋な男を大事にしなくて、どうして本当のたこ焼き道が守れようか！！",
 		   NULL, " If we don't treasure genuine men like this, then how can we protect the true path of the takoyaki!?", Line_WaitForInput);
 	PlaySE(4, "S02/01/130100069", 128, 64);
@@ -1447,6 +1494,7 @@
 	DrawBustshotWithFiltering( 3, "re_si_bi_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「わ、わ、見てた人たちがみんな並ぶよ？＠/
+	PlaySE(4, "S02/02/130200043", 128, 64);
 	OutputLine(NULL, "「わ、わ、見てた人たちがみんな並ぶよ？！",
 		   NULL, "\"Wah, wah, everyone watching is lining up!", Line_WaitForInput);
 
@@ -1454,6 +1502,7 @@
 	DrawBustshot( 3, "re_si_wa_b1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //　圭一くん、やったやった！！＠
+	PlaySE(4, "S02/02/130200044", 128, 64);
 	OutputLine(NULL, "　圭一くん、やったやった！！」",
 		   NULL, " Keiichi-kun, you did it! You did it!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1517,6 +1566,7 @@
 	DrawBustshotWithFiltering( 1, "re_si_wa_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「よぅし、頑張るよ～！＠/
+	PlaySE(4, "S02/02/130200045", 128, 64);
 	OutputLine(NULL, "「よぅし、頑張るよ〜！！",
 		   NULL, "\"Okay! I'll do my best~!!", Line_WaitForInput);
 
@@ -1524,6 +1574,7 @@
 	DrawBustshot( 1, "re_si_ka_b1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //　......はぅ～～！！！＠あんずアメが冷えててとってもおいしいんだよ～！＠　水あめの上にね、ちょこんってあんずが乗ってるの＠はぅ、かぁいいねぇ！＠　お持ち帰り～～！　はぅ～～～～！！！！！￥
+	PlaySE(4, "S02/02/130200046", 128, 64);
 	OutputLine(NULL, "　……はぅ〜〜！！！　",
 		   NULL, " ......Hau~~!!!", Line_WaitForInput);
 	PlaySE(4, "S02/02/130200047", 128, 64);
@@ -1574,6 +1625,7 @@
 	DrawBustshotWithFiltering( 3, "sa_si_bi_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「えーっとえーっと...＠/
+	PlaySE(4, "S02/04/130400020", 128, 64);
 	OutputLine(NULL, "「えーっとえーっと…。",
 		   NULL, "\"Umm, rather, well...", Line_WaitForInput);
 
@@ -1581,6 +1633,7 @@
 	DrawBustshot( 3, "sa_si_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //焼きそばに揚げ玉入りでかりかりなのがとっても美味しいでございますわねぇ！＠　大きなベーコンがまるごと敷いてあって、かじるとほら、びろ～んって出てきて...はふはふはふ！！￥
+	PlaySE(4, "S02/04/130400021", 128, 64);
 	OutputLine(NULL, "焼きそばに揚げ玉入りでかりかりなのがとっても美味しいでございますわねぇ！！",
 		   NULL, " The crunch of the fried tempura batter mixed with yakisoba is simply to die for!!", Line_WaitForInput);
 	PlaySE(4, "S02/04/130400022", 128, 64);
@@ -1662,6 +1715,7 @@
 	DrawBustshotWithFiltering( 3, "re_si_bi_b1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「あれ？　で、でも圭ちゃん、お隣のお店は......、＠
+	PlaySE(4, "S02/02/130200051", 128, 64);
 	OutputLine(NULL, "「あれ？　で、でも圭ちゃん、お隣のお店は……、」",
 		   NULL, "\"Huh? B-But Kei-chan, the stall next to that is...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1723,8 +1777,10 @@
 
 
 //「よし、やるぞ＠......うーん、金魚はみんな活きがいいねぇ！＠/
+	PlaySE(4, "S02/03/130300044", 128, 64);
 	OutputLine(NULL, "「よし、やるぞ。",
 		   NULL, "\"Okay, here we go.", Line_WaitForInput);
+	PlaySE(4, "S02/06/130600001", 128, 64);
 	OutputLine(NULL, "……うーん、金魚はみんな活きがいいねぇ！！",
 		   NULL, " ......Hmm! The goldfish are energetic today!!", Line_WaitForInput);
 
@@ -1732,6 +1788,7 @@
 	PlaySE( 3, "wa_029", 128, 64 );
 
 //　実に美味しそう＠/
+	PlaySE(4, "S02/06/130600002", 128, 64);
 	OutputLine(NULL, "　実に美味しそう！",
 		   NULL, " They really look delicious!", Line_WaitForInput);
 
@@ -1739,6 +1796,7 @@
 	PlaySE( 3, "wa_029", 128, 64 );
 
 //　この小さいのなんか、そのままボリボリと生で行けちゃうよね～！！！￥
+	PlaySE(4, "S02/06/130600003", 128, 64);
 	OutputLine(NULL, "　この小さいのなんか、そのままボリボリと生で行けちゃうよね〜！！！」",
 		   NULL, " Small things like these—you could crunch 'em down whole~!!!\"", Line_Normal);
 	ClearMessage();
@@ -1920,6 +1978,7 @@
 	DrawBustshotWithFiltering( 3, "re_si_ko_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「圭一くんＨだ...、鼻血出てるよ...。＠
+	PlaySE(4, "S02/02/130200055", 128, 64);
 	OutputLine(NULL, "「圭一くんＨだ…、鼻血出てるよ…。」",
 		   NULL, "\"Keiichi-kun, you're a pervert... Your nose is bleeding...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1945,6 +2004,7 @@
 	PlaySE(4, "S02/06/130600012", 128, 64);
 	OutputLine(NULL, "「へー、そうなんですか？",
 		   NULL, "\"Heh, is that right?", Line_WaitForInput);
+	PlaySE(4, "S02/06/130600013", 128, 64);
 	OutputLine(NULL, "　じゃあ力を入れたらもっと出てくるかな？",
 		   NULL, " Then will more come out if I squeeze harder?", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1954,6 +2014,7 @@
 	DrawBustshot( 1, "si_si_wi_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //　え～い☆/
+	PlaySE(4, "S02/06/130600014", 128, 64);
 	OutputLine(NULL, "　え〜い☆",
 		   NULL, "Eei! ☆", Line_ContinueAfterTyping);
 	PlaySE( 3, "wa_029", 128, 64 );
@@ -2011,6 +2072,7 @@
 	DrawBustshotWithFiltering( 3, "ri_mk_wa_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「......ボクの平らなお胸ではどうなのです？＠
+	PlaySE(4, "S02/05/130500018", 128, 64);
 	OutputLine(NULL, "「……ボクの平らなお胸ではどうなのです？」",
 		   NULL, "\"......What about my flat chest?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -2144,6 +2206,7 @@
 	ClearMessage();
 
 //「あはははははは＠/
+	PlaySE(4, "S02/06/130600018", 128, 64);
 	OutputLine(NULL, "「あはははははは！",
 		   NULL, "\"Ahahahahaha!", Line_WaitForInput);
 
@@ -2151,6 +2214,7 @@
 	DrawBustshot( 1, "si_si_aw_b1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //　もっと一緒にいたいけど、あんまり圭ちゃんを誘惑すると、本当にお姉に噛み付かれちゃいそうです＠だから私、一時退却しますね＠また来ます＠じゃあね、お姉！＠
+	PlaySE(4, "S02/06/130600019", 128, 64);
 	OutputLine(NULL, "　もっと一緒にいたいけど、あんまり圭ちゃんを誘惑すると、本当にお姉に噛み付かれちゃいそうです。",
 		   NULL, " I want to stay with you all, but if I continue seducing Kei-chan, my sister looks like she's literally going to bite my head off.", Line_WaitForInput);
 	PlaySE(4, "S02/06/130600020", 128, 64);
@@ -2343,6 +2407,10 @@
 	DrawBustshot( 2, "re_si_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「「「ファイト、おーー！！！」」￥
+	PlaySE(4, "S02/02/130200060", 128, 64);
+	PlaySE(5, "S02/03/130300061", 128, 64);
+	PlaySE(6, "S02/04/130400031", 128, 64);
+	PlaySE(7, "S02/05/130500023", 128, 64);
 	OutputLine(NULL, "「「「ファイト、おーー！！！」」」",
 		   NULL, "\"\"\"Go for it, yay!!!\"\"\"", Line_Normal);
 	ClearMessage();
@@ -2378,6 +2446,7 @@
 	PlaySE(4, "S02/04/130400032", 128, 64);
 	OutputLine(NULL, "「ダメですのよ！",
 		   NULL, "\"You mustn't!", Line_WaitForInput);
+	PlaySE(4, "S02/04/130400033", 128, 64);
 	OutputLine(NULL, "　演舞中は静かにしてないといけませんでございますわよ！」",
 		   NULL, " You must keep silent during the performance!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -2736,6 +2805,7 @@
 	DrawBustshot( 1, "si_si_de_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「はい？/
+	PlaySE(4, "S02/06/130600031", 128, 64);
 	OutputLine(NULL, "「はい？",
 		   NULL, "\"What?", Line_ContinueAfterTyping);
 
@@ -2803,6 +2873,7 @@
 	PlayBGM( 1, "msys13", 128, 0 );
 
 //（しーーーーーー＠あれを見て下さい...＠　ほら。＠
+	PlaySE(4, "S02/06/130600032", 128, 64);
 	OutputLine(NULL, "（しーーーーーー。",
 		   NULL, "(Shhhhh!", Line_WaitForInput);
 	OutputLine(NULL, "あれを見て下さい…！",
@@ -2824,6 +2895,7 @@
 	ClearMessage();
 
 //（な、...なんだ、ありゃ＠...............まま、まさか...。＠
+	PlaySE(4, "S02/01/130100094", 128, 64);
 	OutputLine(NULL, "（な、…なんだ、ありゃ。",
 		   NULL, "(Wha... What's that?", Line_WaitForInput);
 	OutputLine(NULL, "……………まま、まさか…。）",
@@ -2832,6 +2904,7 @@
 
 
 //（逢引の生現場に決まってるじゃないですか～＠ほらほら、よく見て下さい＠あれ、誰だかわかります？￥
+	PlaySE(4, "S02/06/130600033", 128, 64);
 	OutputLine(NULL, "（逢引の生現場に決まってるじゃないですか〜。",
 		   NULL, "(We're right at the scene of a rendezvous, of course~.", Line_WaitForInput);
 	OutputLine(NULL, "ほらほら、よく見て下さい。",
@@ -2865,6 +2938,7 @@
 	DrawSceneWithMask( "bg_263", "left", 0, 0, 300 );
 
 //（...まさか、詩音＠......これを見せたくて俺を呼んだのか？＠
+	PlaySE(4, "S02/01/130100095", 128, 64);
 	OutputLine(NULL, "（…まさか、詩音。",
 		   NULL, "(...Wait, Shion.", Line_WaitForInput);
 	OutputLine(NULL, "……これを見せたくて俺を呼んだのか？）",
@@ -2876,6 +2950,7 @@
 	DrawBustshot( 3, "si_si_aw_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //（圭ちゃん＠梨花ちゃまの演舞は毎年見れるけど、こーゆうのは二度とお目にかかれませんよ？＠
+	PlaySE(4, "S02/06/130600034", 128, 64);
 	OutputLine(NULL, "（圭ちゃん。",
 		   NULL, "(Kei-chan.", Line_WaitForInput);
 	OutputLine(NULL, "梨花ちゃまの演舞は毎年見れるけど、こーゆうのは二度とお目にかかれませんよ？）",
@@ -2889,6 +2964,7 @@
 	ClearMessage();
 
 //（俺は帰るぞ＠　二度とこんなのに呼ぶなよなぁ！！＠
+	PlaySE(4, "S02/01/130100096", 128, 64);
 	OutputLine(NULL, "（俺は帰るぞ！",
 		   NULL, "(I'm going back!", Line_WaitForInput);
 	OutputLine(NULL, "　二度とこんなのに呼ぶなよなぁ！！）",
@@ -2962,6 +3038,7 @@
 	PlaySE(4, "S02/08/130800001", 128, 64);
 	OutputLine(NULL, "「おやおや……、圭一くんも隅に置けないねぇ！",
 		   NULL, "\"What's this...? Keiichi-kun, you sure are smart, you know that?", Line_WaitForInput);
+	PlaySE(4, "S02/08/130800002", 128, 64);
 	OutputLine(NULL, "　こんな所で逢引かい？",
 		   NULL, " Having a secret date in a place like this?", Line_WaitForInput);
 	PlaySE(4, "S02/08/130800003", 128, 64);
@@ -2982,6 +3059,7 @@
 	ClearMessage();
 
 //「ってことは富竹さんたちは、逢引してたってわけじゃないみたいですね。＠
+	PlaySE(4, "S02/06/130600038", 128, 64);
 	OutputLine(NULL, "「ってことは富竹さんたちは、逢引してたってわけじゃないみたいですね。」",
 		   NULL, "\"Wait, so you two weren't having a little rendezvous, then?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -3012,6 +3090,7 @@
 	PlaySE(4, "S02/09/130900005", 128, 64);
 	OutputLine(NULL, "「くすくす…。",
 		   NULL, "\"Heehee...", Line_WaitForInput);
+	PlaySE(4, "S02/09/130900006", 128, 64);
 	OutputLine(NULL, "残念だけど、貴方たちが覗き見したくなるような逢引現場じゃないのよ。",
 		   NULL, " Unfortunately, this wasn't the location of a rendezvous either of you would want to see.", Line_WaitForInput);
 	PlaySE(4, "S02/09/130900007", 128, 64);
@@ -3026,6 +3105,7 @@
 	PlaySE(4, "S02/06/130600039", 128, 64);
 	OutputLine(NULL, "「ふーん。",
 		   NULL, "\"Hmm.", Line_WaitForInput);
+	PlaySE(4, "S02/06/130600040", 128, 64);
 	OutputLine(NULL, "逢引現場じゃなかったら、何してるんですか？",
 		   NULL, " If this wasn't a rendezvous, then what were you doing?", Line_WaitForInput);
 	PlaySE(4, "S02/06/130600041", 128, 64);
@@ -3059,6 +3139,7 @@
 	PlaySE(4, "S02/08/130800006", 128, 64);
 	OutputLine(NULL, "「……バレちゃあしょうがないなぁ。",
 		   NULL, "\"......Guess we've been found out, huh?", Line_WaitForInput);
+	PlaySE(4, "S02/08/130800007", 128, 64);
 	OutputLine(NULL, "僕たちが倉庫破りをしてたなんて、",
 		   NULL, " We were trying to break into the warehouse... ", Line_ContinueAfterTyping);
 
@@ -3072,6 +3153,7 @@
 
 
 //「な、内緒って...、!w800それ、ドロボウってことですか？！＠
+	PlaySE(4, "S02/01/130100097", 128, 64);
 	OutputLine(NULL, "「な、内緒って…、",
 		   NULL, "\"D-Don't tell anyone...?", Line_ContinueAfterTyping);
 
@@ -3169,18 +3251,21 @@
 	PlaySE(4, "S02/09/130900013", 128, 64);
 	OutputLine(NULL, "祭具をしまっている倉庫なの。",
 		   NULL, " Basically, this is a warehouse where they store such tools used in rituals.", Line_WaitForInput);
+	PlaySE(4, "S02/09/130900014", 128, 64);
 	OutputLine(NULL, "…いえ、祭具を祀っている神殿と言ってもいいかもしれないわね。",
 		   NULL, " ...Well, more accurately, maybe it's a temple where the implements are enshrined.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //　梨花ちゃんが奉納演舞で使っている祭事用の鍬も、今日までこの中にしまわれていたものよ＠
+	PlaySE(4, "S02/09/130900015", 128, 64);
 	OutputLine(NULL, "　梨花ちゃんが奉納演舞で使っている祭事用の鍬も、今日までこの中にしまわれていたものよ。",
 		   NULL, "The ritual hoe Rika-chan is using for the offertory dance was inside here until today.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //　もちろん、古手家の人間以外は/
+	PlaySE(4, "S02/09/130900016", 128, 64);
 	OutputLine(NULL, "　もちろん、古手家の人間以外は",
 		   NULL, "Of course, if anyone but the Furude family enters...", Line_ContinueAfterTyping);
 
@@ -3216,6 +3301,7 @@
 
 
 //　この中に入れるチャンスを今日までずっと待ってたんだから。＠
+	PlaySE(4, "S02/09/130900020", 128, 64);
 	OutputLine(NULL, "　この中に入れるチャンスを今日までずっと待ってたんだから。」",
 		   NULL, "I've waited all this time until today for this chance.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
@@ -3234,6 +3320,7 @@
 	DrawBustshotWithFiltering( 3, "si_si_wi_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「へー＠富竹さんにカギ開けの技術があるなんて知りませんでした。＠
+	PlaySE(4, "S02/06/130600046", 128, 64);
 	OutputLine(NULL, "「へー。",
 		   NULL, "\"Heh, I see.", Line_WaitForInput);
 	PlaySE(4, "S02/06/130600047", 128, 64);
@@ -3348,6 +3435,7 @@
 	ClearMessage();
 
 //「どう＠　貴方たちも共犯なんだし＠せっかくだから一緒に見学しない＠　雛見沢の秘史を埋める、貴重な文化遺産の見物会よ＠...今日だけの限定開館。くすくす...。＠
+	PlaySE(4, "S02/09/130900027", 128, 64);
 	OutputLine(NULL, "「どう？",
 		   NULL, "\"How about it?", Line_WaitForInput);
 	PlaySE(4, "S02/09/130900028", 128, 64);
@@ -3642,6 +3730,7 @@
 	PlaySE(4, "S02/09/130900036", 128, 64);
 	OutputLine(NULL, "…じゃあ門番をよろしくね。",
 		   NULL, " ...Okay, doorman, keep a good watch.", Line_WaitForInput);
+	PlaySE(4, "S02/09/130900037", 128, 64);
 	OutputLine(NULL, "ここ、締めるわよ。」",
 		   NULL, " We're shutting the door now.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -3655,6 +3744,7 @@
 	DrawBustshot( 1, "tm_si_ko_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「やれやれ...＠...じゃあみんな、ゆっくり楽しんでおいで。￥
+	PlaySE(4, "S02/08/130800022", 128, 64);
 	OutputLine(NULL, "「やれやれ…。",
 		   NULL, "\"Man...", Line_WaitForInput);
 	PlaySE(4, "S02/08/130800023", 128, 64);
@@ -3706,6 +3796,7 @@
 	PlaySE(4, "S02/09/130900041", 128, 64);
 	OutputLine(NULL, "「ただの倉庫なのに前室があるなんて変わってるでしょう。",
 		   NULL, "\"Strange how it has an antechamber even though it's just a warehouse, isn't it?", Line_WaitForInput);
+	PlaySE(4, "S02/09/130900042", 128, 64);
 	OutputLine(NULL, "…一度に１枚ずつ扉を出入りさせることによって、祭事殿の中が外に見えないようにする工夫だと考えられるわね。」",
 		   NULL, " ...I believe it's set up this way so that you open one door at a time, never letting the room with all the tools be seen from the outside.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -3811,6 +3902,7 @@
 	DrawBustshotWithFiltering( 3, "ta_si_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「大丈夫よ＠本当に一瞬だし。＠
+	PlaySE(4, "S02/09/130900043", 128, 64);
 	OutputLine(NULL, "「大丈夫よ。",
 		   NULL, "\"It's all right.", Line_WaitForInput);
 	PlaySE(4, "S02/09/130900044", 128, 64);
@@ -3834,6 +3926,7 @@
 	PlaySE(4, "S02/09/130900045", 128, 64);
 	OutputLine(NULL, "「さ、入りましょう。",
 		   NULL, "\"Let's go in.", Line_WaitForInput);
+	PlaySE(4, "S02/09/130900046", 128, 64);
 	OutputLine(NULL, "…よいしょ、",
 		   NULL, " ...Here we go...", Line_ContinueAfterTyping);
 
@@ -3893,6 +3986,7 @@
 	DrawBustshotWithFiltering( 3, "ta_si_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「あれが雛見沢の守り神、.../
+	PlaySE(4, "S02/09/130900047", 128, 64);
 	OutputLine(NULL, "「あれが雛見沢の守り神、…",
 		   NULL, "\"That's the guardian god of Hinamizawa...", Line_ContinueAfterTyping);
 
@@ -3997,6 +4091,7 @@
 	StopSE( 3 );
 
 //「......あら、!w1000...面白くないかしら？＠
+	PlaySE(4, "S02/09/130900052", 128, 64);
 	OutputLine(NULL, "「……あら、",
 		   NULL, "\"......Oh...", Line_ContinueAfterTyping);
 
@@ -4023,6 +4118,7 @@
 	DrawBustshot( 2, "ta_si_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「ふふ、!w800.........圭一くんはよくわかってないみたいね＠無理もないけれど。￥
+	PlaySE(4, "S02/09/130900053", 128, 64);
 	OutputLine(NULL, "「ふふ、",
 		   NULL, "\"Fufu.", Line_ContinueAfterTyping);
 
@@ -4274,6 +4370,7 @@
 	DrawBustshot( 2, "ta_si_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「残念だけど、このお話には桃太郎もスーパーマンも登場しないわ。＠
+	PlaySE(4, "S02/09/130900069", 128, 64);
 	OutputLine(NULL, "「残念だけど、このお話には桃太郎もスーパーマンも登場しないわ。」",
 		   NULL, "\"Unfortunately, there is no Momotarou or Superman in this fairy tale.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -4513,6 +4610,7 @@
 
 
 //　そして自らも地上に留まり、末永く両者の交流を見守ることにしたんだそうよ。￥
+	PlaySE(4, "S02/09/130900084", 128, 64);
 	OutputLine(NULL, "　そして自らも地上に留まり、末永く両者の交流を見守ることにしたんだそうよ。」",
 		   NULL, "He himself decided to stay on the surface and watch over the everlasting peace between them.\"", Line_Normal);
 	ClearMessage();
@@ -4833,6 +4931,7 @@
 	DrawBustshotWithFiltering( 3, "si_si_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「...............ごめんなさい、!w1000気にしないで下さい。＠
+	PlaySE(4, "S02/06/130600073", 128, 64);
 	OutputLine(NULL, "「……………ごめんなさい、",
 		   NULL, "\"......I'm sorry.", Line_ContinueAfterTyping);
 
@@ -4926,6 +5025,7 @@
 	DrawBustshot( 2, "ta_si_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「平たく言えば、鬼たちによる誘拐行為よ＠鬼ヶ淵村の村人たちが人里に押し寄せ、哀れな生贄を無理やり力尽くでさらったんですって。￥
+	PlaySE(4, "S02/09/130900109", 128, 64);
 	OutputLine(NULL, "「平たく言えば、鬼たちによる誘拐行為よ。",
 		   NULL, "\"Broadly speaking, it's when an demon kidnaps someone; when a person is 'demoned away.'", Line_WaitForInput);
 	OutputLine(NULL, "鬼ヶ淵村の村人たちが人里に押し寄せ、哀れな生贄を無理やり力尽くでさらったんですって。」",
@@ -4970,6 +5070,7 @@
 	PlaySE(4, "S02/09/130900111", 128, 64);
 	OutputLine(NULL, "「もちろんオヤシロさまも了承してたそうよ。",
 		   NULL, "\"Oyashiro-sama knew about it, of course.", Line_WaitForInput);
+	PlaySE(4, "S02/09/130900112", 128, 64);
 	OutputLine(NULL, "だから『鬼隠し』は無差別ではなく、神さまが決めた生贄以外には誰もさらわなかったらしいし。",
 		   NULL, " Onikakushi isn't indiscriminate. The villagers apparently never kidnapped anyone other than the sacrifices decided upon by their god.", Line_WaitForInput);
 	OutputLine(NULL, "ほとんどの場合は１人か２人だったって記されてるわね。」",
@@ -4999,6 +5100,7 @@
 	PlaySE(4, "S02/09/130900114", 128, 64);
 	OutputLine(NULL, "「そうして生贄をさらってきた夜にはね。",
 		   NULL, "\"So on the nights when they raided villages...", Line_WaitForInput);
+	PlaySE(4, "S02/09/130900115", 128, 64);
 	OutputLine(NULL, "…哀れな犠牲者を美味しく頂くため、『綿流し』の儀式が開かれたというわ。」",
 		   NULL, " they would feast on their kidnapped sacrifices, which is why the nights came to be known as 'Watanagashi.'\"", Line_Normal);
 	ClearMessage();
@@ -5094,14 +5196,17 @@
 	DrawBustshotWithFiltering( 1, "ta_si_aw_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「そう＠前原くんの想像している通りよ＠
+	PlaySE(4, "S02/09/130900116", 128, 64);
 	OutputLine(NULL, "「そう。",
 		   NULL, "\"Yes.", Line_WaitForInput);
+	PlaySE(4, "S02/09/130900117", 128, 64);
 	OutputLine(NULL, "前原くんの想像している通りよ。",
 		   NULL, " It's as you imagine, Maebara-kun.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //　...今でこそ綿流しは毎年６月に行なわれるちょっと早い夏祭りに過ぎないけど、昔は違った＠哀れな食材をさらってきた夜にだけ開かれた......凄惨な人食いの宴のことだったの。＠
+	PlaySE(4, "S02/09/130900118", 128, 64);
 	OutputLine(NULL, "　…今でこそ綿流しは毎年６月に行なわれるちょっと早い夏祭りに過ぎないけど、昔は違った。",
 		   NULL, "...Right now, the Watanagashi Festival might just be a somewhat early summer festival occurring every June, but it used to be different.", Line_WaitForInput);
 	OutputLine(NULL, "哀れな食材をさらってきた夜にだけ開かれた……凄惨な人食いの宴のことだったの。」",
@@ -5170,6 +5275,7 @@
 	PlaySE(4, "S02/09/130900122", 128, 64);
 	OutputLine(NULL, "「では、梨花ちゃんがやった奉納演舞を思い出してちょうだい。",
 		   NULL, "\"Why don't you think back to the offertory dance Rika-chan performed?", Line_WaitForInput);
+	PlaySE(4, "S02/09/130900123", 128, 64);
 	OutputLine(NULL, "梨花ちゃんがあそこで何をしていたか、",
 		   NULL, " Do you know...", Line_ContinueAfterTyping);
 
@@ -5213,8 +5319,10 @@
 	DrawBustshot( 1, "ta_si_aw_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「梨花ちゃんが持っていた祭事用の鍬＠...もう薄々は気付いてると思うけど、あれは田畑を耕す鍬ではなくて＠/
+	PlaySE(4, "S02/09/130900124", 128, 64);
 	OutputLine(NULL, "「梨花ちゃんが持っていた祭事用の鍬。",
 		   NULL, "\"Rika-chan was carrying a festival hoe.", Line_WaitForInput);
+	PlaySE(4, "S02/09/130900125", 128, 64);
 	OutputLine(NULL, "…もう薄々は気付いてると思うけど、あれは田畑を耕す鍬ではなくて。",
 		   NULL, " ...You've probably realized it already, but that's not a hoe for plowing fields.", Line_WaitForInput);
 
@@ -5354,6 +5462,7 @@
 	DrawBustshot( 3, "si_si_aw_b1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「この辺まで話を聞けば、!w1000...圭ちゃんにも、この祭具殿の中にどういうものがあるのか、理解できるようになってきませんか＠　ほら。＠
+	PlaySE(4, "S02/06/130600081", 128, 64);
 	OutputLine(NULL, "「この辺まで話を聞けば、",
 		   NULL, "\"After hearing all that,", Line_ContinueAfterTyping);
 
@@ -5594,6 +5703,7 @@
 	ClearMessage();
 
 //「......話には聞いてたけど......、!w1000.........すごい.........。＠
+	PlaySE(4, "S02/06/130600085", 128, 64);
 	OutputLine(NULL, "「……話には聞いてたけど……、",
 		   NULL, "\"......I'd heard the stories......", Line_ContinueAfterTyping);
 
@@ -5872,6 +5982,7 @@
 	DrawBustshotWithFiltering( 3, "si_si_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「鷹野さん、看護婦さんですから。＠
+	PlaySE(4, "S02/06/130600086", 128, 64);
 	OutputLine(NULL, "「鷹野さん、看護婦さんですから。」",
 		   NULL, "\"Takano-san is a nurse.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -6236,7 +6347,6 @@
 	DrawBustshot( 2, "si_si_yw_b1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「...................................................。＠
-	PlaySE(4, "S02/01/130100476", 128, 64);
 	OutputLine(NULL, "「……………………………………………。」",
 		   NULL, "\"...............\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -6311,6 +6421,7 @@
 	DrawSceneWithMask( "bg_177", "down", 0, 0, 300 );
 
 //「......中世の暗黒時代とかがそうだったように、!w800...雛見沢にも暗黒時代があった＠...そういうものなんだと解釈します＠
+	PlaySE(4, "S02/01/130100153", 128, 64);
 	OutputLine(NULL, "「……中世の暗黒時代とかがそうだったように、",
 		   NULL, "\"...Just as Europe had its Dark Age,", Line_ContinueAfterTyping);
 
@@ -6320,12 +6431,14 @@
 
 	OutputLine(NULL, "…雛見沢にも暗黒時代があった。",
 		   NULL, " ...Hinamizawa had one too.", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100154", 128, 64);
 	OutputLine(NULL, "…そういうものなんだと解釈します。",
 		   NULL, " ...That's how this should be taken.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //　...本当に雛見沢でこういう恐ろしいことがあったのだとしても、!w800......それは大昔の出来事なんです＠...今、暮らしている雛見沢の人々とは何の関係もないことです。￥
+	PlaySE(4, "S02/01/130100155", 128, 64);
 	OutputLine(NULL, "　…本当に雛見沢でこういう恐ろしいことがあったのだとしても、",
 		   NULL, "...Even if these things all really happened in Hinamizawa,", Line_ContinueAfterTyping);
 
@@ -6411,6 +6524,7 @@
 	PlaySE(4, "S02/09/130900181", 128, 64);
 	OutputLine(NULL, "「前原くんも内緒にしてね？",
 		   NULL, "\"Maebara-kun, you keep it a secret too, okay?", Line_WaitForInput);
+	PlaySE(4, "S02/09/130900182", 128, 64);
 	OutputLine(NULL, "　知られたら私、オヤシロさまの祟りにあうか、生贄にされちゃうかするかもしれない。",
 		   NULL, " If this gets out, I could suffer Oyashiro-sama's curse, or be made into a sacrifice.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -6420,8 +6534,10 @@
 	DrawBustshot( 1, "ta_si_wa_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //　祟りなら、今年はどんな死に方をさせられちゃうのかしら＠生贄なら...鬼ヶ淵の沼に生きたまま沈められちゃうのかしら＠......そう言えば今夜よね＠オヤシロさまの祟りがある夜は。＠
+	PlaySE(4, "S02/09/130900183", 128, 64);
 	OutputLine(NULL, "　祟りなら、今年はどんな死に方をさせられちゃうのかしら。",
 		   NULL, "If it's the curse, then I wonder what kind of death it'll be this year?", Line_WaitForInput);
+	PlaySE(4, "S02/09/130900184", 128, 64);
 	OutputLine(NULL, "生贄なら…鬼ヶ淵の沼に生きたまま沈められちゃうのかしら？",
 		   NULL, " If it's the sacrifice... then will I be thrown into the Onigafuchi Swamp while still alive?", Line_WaitForInput);
 	PlaySE(4, "S02/09/130900185", 128, 64);
@@ -6471,12 +6587,14 @@
 	DrawBustshot( 1, "ta_si_de_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「本当は国会図書館で当時の新聞が探したいんだけどね...＠/
+	PlaySE(4, "S02/09/130900187", 128, 64);
 	OutputLine(NULL, "「本当は国会図書館で当時の新聞が探したいんだけどね…。",
 		   NULL, "\"What I'd really like to do is search through the national library for newspapers from the era, but...", Line_WaitForInput);
 
 	PlaySE( 3, "wa_021", 128, 64 );
 
 //...ほら、ここ。＠
+	PlaySE(4, "S02/09/130900188", 128, 64);
 	OutputLine(NULL, "…ほら、ここ。」",
 		   NULL, " ...Here it is.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -6669,6 +6787,7 @@
 	ClearMessage();
 
 //「その......薄気味悪い事件が、!w1000...何だって言うんですか。＠
+	PlaySE(4, "S02/01/130100157", 128, 64);
 	OutputLine(NULL, "「その……薄気味悪い事件が、",
 		   NULL, "\"So...... that creepy incident.", Line_ContinueAfterTyping);
 
@@ -6749,6 +6868,7 @@
 	PlaySE(4, "S02/09/130900204", 128, 64);
 	OutputLine(NULL, "昭和に入ってからだって、あるんだから。",
 		   NULL, " It kept happening even after the beginning of the Showa period.", Line_WaitForInput);
+	PlaySE(4, "S02/09/130900205", 128, 64);
 	OutputLine(NULL, "…終戦直後に騒ぎになった",
 		   NULL, " ...Like with the uproar around the post-war", Line_ContinueAfterTyping);
 
@@ -6787,6 +6907,7 @@
 	PlaySE(4, "S02/01/130100161", 128, 64);
 	OutputLine(NULL, "　今、鷹野さん、何て言いました？",
 		   NULL, " Takano-san, what did you just say?", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100162", 128, 64);
 	OutputLine(NULL, "　人肉缶詰って…、」",
 		   NULL, " Canned flesh...?\"", Line_Normal);
 	ClearMessage();
@@ -6832,6 +6953,7 @@
 	DrawBustshotWithFiltering( 3, "ta_si_wa_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「あら、ジロウさんも見たくて我慢できなくなったかしら＠　......ここ、素敵な拷問道具の宝庫よ。＠
+	PlaySE(4, "S02/09/130900207", 128, 64);
 	OutputLine(NULL, "「あら、ジロウさんも見たくて我慢できなくなったかしら？",
 		   NULL, "\"Oh, Jirou-san, could you not resist seeing inside?", Line_WaitForInput);
 	OutputLine(NULL, "　……ここ、素敵な拷問道具の宝庫よ。」",
@@ -6846,6 +6968,7 @@
 	PlaySE(4, "S02/08/130800026", 128, 64);
 	OutputLine(NULL, "「僕は遠慮させてもらうよ。",
 		   NULL, "\"I'll pass on that.", Line_WaitForInput);
+	PlaySE(4, "S02/08/130800027", 128, 64);
 	OutputLine(NULL, "…あははは…、",
 		   NULL, " ...Ahahaha...", Line_ContinueAfterTyping);
 
@@ -7182,6 +7305,7 @@
 	DrawBustshotWithFiltering( 1, "ta_si_de_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「ごめんなさい＠フィルムがなくなっちゃったわ＠ジロウさん、フィルムが余ってたら分けてくれないかしら。￥
+	PlaySE(4, "S02/09/130900214", 128, 64);
 	OutputLine(NULL, "「ごめんなさい。",
 		   NULL, "\"I'm sorry.", Line_WaitForInput);
 	PlaySE(4, "S02/09/130900215", 128, 64);
@@ -7224,6 +7348,7 @@
 	PlaySE(4, "S02/09/130900217", 128, 64);
 	OutputLine(NULL, "「…もう。",
 		   NULL, "\"...Geez.", Line_WaitForInput);
+	PlaySE(4, "S02/09/130900218", 128, 64);
 	OutputLine(NULL, "いついかなる時でもフィルムを残しておかないとピューリッツァーなんか取れないわよ？",
 		   NULL, " You won't win any Pulitzer Prizes by not stocking enough film for any occasion, you know.", Line_WaitForInput);
 	PlaySE(4, "S02/09/130900219", 128, 64);
@@ -7466,6 +7591,7 @@
 	DrawBustshotWithFiltering( 3, "si_si_aw_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「まさか＠お二人の邪魔なんてできません＠どうぞごゆっくり～。＠
+	PlaySE(4, "S02/06/130600101", 128, 64);
 	OutputLine(NULL, "「まさか。",
 		   NULL, "\"No, no.", Line_WaitForInput);
 	PlaySE(4, "S02/06/130600102", 128, 64);
@@ -7557,6 +7683,7 @@
 	PlaySE(4, "S02/01/130100171", 128, 64);
 	OutputLine(NULL, "魅音たちと別れたまま、それっきりだったな。",
 		   NULL, " They've been by themselves ever since we got separated.", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100172", 128, 64);
 	OutputLine(NULL, "探してると悪い…。」",
 		   NULL, " I'd feel bad if they were looking for me...\"", Line_Normal);
 	ClearMessage();
@@ -7592,12 +7719,14 @@
 	DrawBustshot( 3, "si_si_wi_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「そういう意味だけじゃないですよ＠
+	PlaySE(4, "S02/06/130600113", 128, 64);
 	OutputLine(NULL, "「そういう意味だけじゃないですよ。",
 		   NULL, "\"Not only because of that, either.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //　...今夜、私たちがしたことを思えば、秘密にするのは当然です＠......今夜起こるかもしれないオヤシロさまの祟り、...私たち４人が最有力候補なんですからね。＠
+	PlaySE(4, "S02/06/130600114", 128, 64);
 	OutputLine(NULL, "　…今夜、私たちがしたことを思えば、秘密にするのは当然です。",
 		   NULL, "...Considering what we were doing tonight, we really need to keep it secret.", Line_WaitForInput);
 	PlaySE(4, "S02/06/130600115", 128, 64);
@@ -7724,6 +7853,7 @@
 	DrawBustshot( 3, "si_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「..................音ですよ。/
+	PlaySE(4, "S02/06/130600126", 128, 64);
 	OutputLine(NULL, "「………………音ですよ。",
 		   NULL, "\"..................The sound.", Line_ContinueAfterTyping);
 
@@ -7731,6 +7861,7 @@
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
 //ドタンバタンって＠...うるさかったじゃないですか？＠
+	PlaySE(4, "S02/06/130600127", 128, 64);
 	OutputLine(NULL, "ドタンバタンって。",
 		   NULL, "You know, the banging noise.", Line_WaitForInput);
 	PlaySE(4, "S02/06/130600128", 128, 64);
@@ -8123,6 +8254,7 @@
 	PlaySE(4, "S02/08/130800059", 128, 64);
 	OutputLine(NULL, "「何だかドタンバタンと飛び跳ねるような音がよく聞こえたからね。",
 		   NULL, "\"I could clearly hear some noises like someone jumping up and down.", Line_WaitForInput);
+	PlaySE(4, "S02/08/130800060", 128, 64);
 	OutputLine(NULL, "僕は不安で不安で…。」",
 		   NULL, " I was getting pretty nervous...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -8285,6 +8417,7 @@
 	DrawBustshot( 1, "ri_mk_ko_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「..............................。＠
+	PlaySE(4, "S02/05/130500026", 128, 64);
 	OutputLine(NULL, "「…………………………。」",
 		   NULL, "\"..............................\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
