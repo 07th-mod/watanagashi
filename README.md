@@ -22,9 +22,9 @@ Old collaborators welcome to join the repository, however it's still preferred t
 - [x] wata_002.txt
 - [x] wata_003.txt
 - [x] wata_004.txt
-- [ ] **wata_005.txt**
+- [x] wata_005.txt
 - [x] wata_006.txt
-- [ ] wata_007.txt
+- [ ] **wata_007.txt**
 - [ ] wata_008.txt
 - [ ] wata_009.txt
 - [ ] **wata_009_02.txt**

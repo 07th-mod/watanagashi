@@ -202,12 +202,14 @@
 	DrawBustshot( 1, "me_se_wi_a2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「ほら、興宮の駅前の正面にエンジェルモートって言うファミレスがあるじゃない＠
+	PlaySE(4, "S19/03/500300173", 128, 64);
 	OutputLine(NULL, "「ほら、興宮の駅前の正面にエンジェルモートって言うファミレスがあるじゃない？",
 		   NULL, "\"You know there's that family restaurant called Angel Mort right by Okinomiya Station?", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //　あそこではね、季節の変わり目に新デザートのお披露目イベントをやるんだよ＠それが今日でね＠...あ。行っても無駄だよ＠クジ当選者以外は入店できない貸切デーだから。＠
+	PlaySE(4, "S19/03/500300174", 128, 64);
 	OutputLine(NULL, "　あそこではね、季節の変わり目に新デザートのお披露目イベントをやるんだよ。",
 		   NULL, "Every season, they hold an event to promote their new dessert menu.", Line_WaitForInput);
 	PlaySE(4, "S19/03/500300175", 128, 64);
@@ -246,6 +248,7 @@
 	PlaySE(4, "S19/03/500300178", 128, 64);
 	OutputLine(NULL, "「あははは、頑張れー！",
 		   NULL, "\"Ahahaha, knock yourself out!", Line_WaitForInput);
+	PlaySE(4, "S19/03/500300179", 128, 64);
 	OutputLine(NULL, "　ちなみに聞いた話だと、当選クジはマニア垂涎のプラチナチケットで、闇では高値で取引されてるなんて噂が…！！」",
 		   NULL, " By the way, this is just something I heard, but there's a rumor that the tickets are being sold on the black market for a pretty penny...\"", Line_Normal);
 	ClearMessage();
@@ -364,6 +367,7 @@
 
 
 //「......ん、!w800......そ、そうなのか？＠
+	PlaySE(4, "S19/01/HR_KEI17690", 128, 64);
 	OutputLine(NULL, "「……ん、",
 		   NULL, "\"...Hm? What?", Line_ContinueAfterTyping);
 
@@ -440,6 +444,7 @@
 	PlaySE(4, "S19/02/500200169", 128, 64);
 	OutputLine(NULL, "じゃあ何なんだろうね。",
 		   NULL, " I wonder what it is, then.", Line_WaitForInput);
+	PlaySE(4, "S19/02/500200170", 128, 64);
 	OutputLine(NULL, "でも魅ぃちゃんが機嫌いいとレナもうれしいよ。",
 		   NULL, " When Mii-chan is in a good mood, so is Rena.", Line_WaitForInput);
 
@@ -447,6 +452,7 @@
 	DrawBustshot( 2, "re_se_ka_b1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //はぅ～～～♪＠
+	PlaySE(4, "S19/02/500200171", 128, 64);
 	OutputLine(NULL, "はぅ〜〜〜♪」",
 		   NULL, " Hau~~~♪\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -504,6 +510,7 @@
 
 
 //「傷つけって、!w1000......え？＠
+	PlaySE(4, "S19/01/HR_KEI17710", 128, 64);
 	OutputLine(NULL, "「傷つけって、",
 		   NULL, "\"What do you mean...", Line_ContinueAfterTyping);
 
@@ -522,6 +529,7 @@
 	ClearMessage();
 
 //「...始めはあまり気にしてないふりをしてたけど＠...怪我と同じ＠だんだん腫れてきた＠ジンジン腫れてきた＠......とうとう痛みがこらえられなくなって、夜中に目を覚ました＠そしてレナに電話してきたの＠......魅ぃちゃんは泣いてた。￥
+	PlaySE(4, "S19/02/500200176", 128, 64);
 	OutputLine(NULL, "「…始めはあまり気にしてないふりをしてたけど。",
 		   NULL, "\"...At first she tried to pretend it wasn't a big deal...", Line_WaitForInput);
 	PlaySE(4, "S19/02/500200177", 128, 64);
@@ -530,8 +538,10 @@
 	PlaySE(4, "S19/02/500200178", 128, 64);
 	OutputLine(NULL, "だんだん腫れてきた。",
 		   NULL, " It began to fester...", Line_WaitForInput);
+	PlaySE(4, "S19/02/500200179", 128, 64);
 	OutputLine(NULL, "ジンジン腫れてきた。",
 		   NULL, " fester and grow.", Line_WaitForInput);
+	PlaySE(4, "S19/02/500200180", 128, 64);
 	OutputLine(NULL, "……とうとう痛みがこらえられなくなって、夜中に目を覚ました。",
 		   NULL, " ...Eventually, she was no longer able to bear the pain, and woke up in the middle of the night.", Line_WaitForInput);
 	PlaySE(4, "S19/02/500200181", 128, 64);
@@ -823,6 +833,7 @@
 
 
 //「「「そ、その４名様までのお供に...ぜひ俺たちをぉおぉおぉおお～！！」」￥
+	PlaySE(4, "S19/00/otall50001", 128, 64);
 	OutputLine(NULL, "「「「そ、その４名様までのお供に…ぜひ俺たちをぉおぉおぉおお〜！！」」」",
 		   NULL, "\"\"\"Th-That ticket can admit up to four people... please bring us with yooouuuuuuuuuu~!!\"\"\"", Line_Normal);
 	ClearMessage();
@@ -910,12 +921,14 @@
 	PlaySE(4, "S19/00/waitA50004", 128, 64);
 	OutputLine(NULL, "「いらっしゃいませ。",
 		   NULL, "\"Good afternoon.", Line_WaitForInput);
+	PlaySE(4, "S19/00/waitA50005", 128, 64);
 	OutputLine(NULL, "エンジェルモートへようこそいらっしゃいました。",
 		   NULL, " Welcome to Angel Mort.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //　本日はデザートフェスタにつき、チケットのお客様のみの貸切になっております＠チケットとご芳名をお伺いしてもよろしいでしょうか？＠
+	PlaySE(4, "S19/00/waitA50006", 128, 64);
 	OutputLine(NULL, "　本日はデザートフェスタにつき、チケットのお客様のみの貸切になっております。",
 		   NULL, "Due to today's Dessert Festa, the restaurant is reserved for customers who won the draw.", Line_WaitForInput);
 	PlaySE(4, "S19/00/waitA50007", 128, 64);
@@ -934,6 +947,7 @@
 	ClearMessage();
 
 //「前原...!w700前原＠...あった＠...失礼ですがフルネームでお伺いしてよろしいですか？＠
+	PlaySE(4, "S19/00/waitA50008", 128, 64);
 	OutputLine(NULL, "「前原…",
 		   NULL, "\"Maebara...", Line_ContinueAfterTyping);
 
@@ -1007,6 +1021,7 @@
 	DrawBustshot( 2, "si_ma_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「いらっしゃいませ＠ようこそエンジェルモートへ。＠
+	PlaySE(4, "S19/06/500600191", 128, 64);
 	OutputLine(NULL, "「いらっしゃいませ。",
 		   NULL, "\"Good afternoon.", Line_WaitForInput);
 	PlaySE(4, "S19/06/500600192", 128, 64);
@@ -1046,6 +1061,7 @@
 	PlaySE(4, "S19/06/500600195", 128, 64);
 	OutputLine(NULL, "「…見ての通り、今日はお客さんがすっごいんで…定時に抜けさせてもらえるかちょっと自信がないんです。",
 		   NULL, "\"...As you can see, there's a lot of customers here today. ...I'm not sure I'll be able to take a break.", Line_WaitForInput);
+	PlaySE(4, "S19/06/500600196", 128, 64);
 	OutputLine(NULL, "私の仕事が終わるまでのんびりしてて下さいね。",
 		   NULL, " Please take your time and relax until I'm finished.", Line_WaitForInput);
 
@@ -1053,6 +1069,7 @@
 	DrawBustshot( 2, "si_ma_wi_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //終わったら一緒に遊びに行きましょうね～。＠
+	PlaySE(4, "S19/06/500600197", 128, 64);
 	OutputLine(NULL, "終わったら一緒に遊びに行きましょうね〜。」",
 		   NULL, " When I'm done, let's go play somewhere, okay~?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1155,6 +1172,7 @@
 	DrawSceneWithMask( "bg_161", "right", 0, 0, 1300 );
 
 //「はぁはぁ...!w800エンジェルモート萌え～♪＠
+	PlaySE(4, "S19/00/otaA50001", 128, 64);
 	OutputLine(NULL, "「はぁはぁ…",
 		   NULL, "\"*pant pant*", Line_ContinueAfterTyping);
 
@@ -1171,6 +1189,7 @@
 	PlaySE(4, "S19/00/otaB50001", 128, 64);
 	OutputLine(NULL, "「僕ですか？",
 		   NULL, "\"Me?", Line_WaitForInput);
+	PlaySE(4, "S19/00/otaB50002", 128, 64);
 	OutputLine(NULL, "　当選チケットは×オクで７万で落札したっす！」",
 		   NULL, " I boughts my ticket for 70,000 on [redacted] Auctions!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1255,6 +1274,7 @@
 
 
 //「......あ、!w1000...いえ＠............何かこう...、!w1000今日の店内は雰囲気が違うな...と。￥
+	PlaySE(4, "S19/01/HR_KEI17980", 128, 64);
 	OutputLine(NULL, "「……あ、",
 		   NULL, "\"...Ah,", Line_ContinueAfterTyping);
 
@@ -1264,6 +1284,7 @@
 
 	OutputLine(NULL, "…いえ。",
 		   NULL, " ...No.", Line_WaitForInput);
+	PlaySE(4, "S19/01/HR_KEI17990", 128, 64);
 	OutputLine(NULL, "…………何かこう…、",
 		   NULL, " ...It's just...", Line_ContinueAfterTyping);
 
@@ -1338,6 +1359,7 @@
 	DrawBustshot( 2, "si_ma_bi_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「すす、!w700す、すみませんでした...＠　そのお召し物はそ、そのその......、＠
+	PlaySE(4, "S19/06/500600199", 128, 64);
 	OutputLine(NULL, "「すす、",
 		   NULL, "\"I-I-I,", Line_ContinueAfterTyping);
 
@@ -1359,6 +1381,7 @@
 	PlaySE(4, "S19/00/otaC50003", 128, 64);
 	OutputLine(NULL, "「何て事をするにゃりん〜！！",
 		   NULL, "\"Oh, what have you done~!!", Line_WaitForInput);
+	PlaySE(4, "S19/00/otaC50004", 128, 64);
 	OutputLine(NULL, "　某ジーンズ専門店で１８００円もしたズボンが生クリームでベトベトにゃりんよ！！",
 		   NULL, " The jeans that I bought at a certain specialty shop for a whole 1,800 yen are all shticky with frosting!!", Line_ContinueAfterTyping);
 
@@ -1414,6 +1437,7 @@
 	DrawBustshot( 2, "si_ma_yw_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「え.........!w500でも......!w500その、!w800...............わた、私、!w700............、＠
+	PlaySE(4, "S19/06/500600201", 128, 64);
 	OutputLine(NULL, "「え………",
 		   NULL, "\"Uh...", Line_ContinueAfterTyping);
 
@@ -1448,6 +1472,7 @@
 
 
 //「「「フキフキ！!w1000　フキフキ！！!w1000　フキフキ！！！」」＠
+	PlaySE(4, "S19/00/otall50002", 128, 64);
 	OutputLine(NULL, "「「「フキフキ！",
 		   NULL, "Wipey-wipey!!", Line_ContinueAfterTyping);
 
@@ -1494,6 +1519,7 @@
 	PlaySE(4, "S19/01/HR_KEI18000", 128, 64);
 	OutputLine(NULL, "「あ、足を引っ掛けてだって？！",
 		   NULL, "\"Ah, so you're saying she was tripped?", Line_WaitForInput);
+	PlaySE(4, "S19/01/HR_KEI18010", 128, 64);
 	OutputLine(NULL, "　じゃあ今のあれも…事故じゃなくて？",
 		   NULL, " Then what happened just now... wasn't an accident?", Line_ContinueAfterTyping);
 
@@ -1506,8 +1532,10 @@
 	ClearMessage();
 
 //「メインの女の子は充分気をつけてますから絶対あぁはならないんですけど...、園崎さんは短期バイトだからまだガードが甘くて＠...今日のお客様たちにも早々に見破られちゃったみたいで...朝からあんな感じで絡まれてるんです。＠
+	PlaySE(4, "S19/00/waitB50013", 128, 64);
 	OutputLine(NULL, "「メインの女の子は充分気をつけてますから絶対あぁはならないんですけど…、園崎さんは短期バイトだからまだガードが甘くて。",
 		   NULL, "\"The regular girls are careful about it, so they definitely won't end up like that... but Sonozaki-san is only a seasonal hire, so she had her guard down.", Line_WaitForInput);
+	PlaySE(4, "S19/00/waitB50014", 128, 64);
 	OutputLine(NULL, "…今日のお客様たちにも早々に見破られちゃったみたいで…朝からあんな感じで絡まれてるんです。」",
 		   NULL, " ...The customers today could easily pick up on that... so she's been targeted since this morning.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1603,10 +1631,13 @@
 	DrawBustshot( 3, "si_si_wi_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 400, TRUE );
 
 //　私だって怖かったですよ＠でも、他ならぬ圭ちゃんのピンチだし......＠勇気出して頑張りましたってことです＠
+	PlaySE(4, "S19/06/500600053", 128, 64);
 	OutputLine(NULL, "　私だって怖かったですよ。",
 		   NULL, "Even I was scared.", Line_WaitForInput);
+	PlaySE(4, "S19/06/500600054", 128, 64);
 	OutputLine(NULL, "でも、他ならぬ圭ちゃんのピンチだし……。",
 		   NULL, " But, Kei-chan was in trouble so...", Line_WaitForInput);
+	PlaySE(4, "S19/06/500600055", 128, 64);
 	OutputLine(NULL, "勇気出して頑張りましたってことです。",
 		   NULL, " I had to be brave and do my best.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
@@ -1705,6 +1736,7 @@
 
 
 //「やかましいぞ脂デブ＠　俺の目が黒い内に出て失せろ。＠
+	PlaySE(4, "S19/01/HR_KEI18070", 128, 64);
 	OutputLine(NULL, "「やかましいぞ脂デブ！",
 		   NULL, "\"Shut up, you greasy fatass!", Line_WaitForInput);
 	PlaySE(4, "S19/01/HR_KEI18080", 128, 64);
@@ -1731,6 +1763,7 @@
 	PlaySE(4, "S19/00/otaE50007", 128, 64);
 	OutputLine(NULL, "「わかっておらんでござるな。",
 		   NULL, "\"It seems you don't understand.", Line_WaitForInput);
+	PlaySE(4, "S19/00/otaE50008", 128, 64);
 	OutputLine(NULL, "そのウェイトレスが余のおズボンに粗相をしたのでござるよ？",
 		   NULL, " Yonder waitress was the one who wet mine pants!", Line_WaitForInput);
 	PlaySE(4, "S19/00/otaE50009", 128, 64);
@@ -1820,12 +1853,14 @@
 
 
 //「詩音は足を引っ掛けられたんだろ＠
+	PlaySE(4, "S19/01/HR_KEI18120", 128, 64);
 	OutputLine(NULL, "「詩音は足を引っ掛けられたんだろ？",
 		   NULL, "\"You were tripped, weren't you Shion?", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //　向こうが悪いんだから付け上がらせることなんかないぞ！＠
+	PlaySE(4, "S19/01/HR_KEI18130", 128, 64);
 	OutputLine(NULL, "　向こうが悪いんだから付け上がらせることなんかないぞ！」",
 		   NULL, "They're the ones in the wrong here, so don't let them take advantage of you!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1835,6 +1870,7 @@
 	DrawBustshot( 1, "si_ma_yw_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「そ、...そうだけど......でも、!w800.........やっぱり悪いのは......私だし......。￥
+	PlaySE(4, "S19/06/500600203", 128, 64);
 	OutputLine(NULL, "「そ、…そうだけど……でも、",
 		   NULL, "\"T-That may be... but...", Line_ContinueAfterTyping);
 
@@ -2147,12 +2183,14 @@
 
 
 //「う、うぅん、私のために助けに来てくれただけで......うれしかったです＠/
+	PlaySE(4, "S19/06/500600206", 128, 64);
 	OutputLine(NULL, "「う、うぅん、私のために助けに来てくれただけで……うれしかったです。",
 		   NULL, "\"No, you just trying to help made me... happy.", Line_WaitForInput);
 	DisableWindow();
 	DrawBustshot( 1, "si_ma_de_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //本当ですよ＠　それだけでも...今日は圭ちゃんに来てもらえてよかったかな...って。￥
+	PlaySE(4, "S19/06/500600207", 128, 64);
 	OutputLine(NULL, "本当ですよ？",
 		   NULL, " I'm not joking.", Line_WaitForInput);
 	PlaySE(4, "S19/06/500600208", 128, 64);
@@ -2171,6 +2209,7 @@
 	ClearMessage();
 
 //「園崎さん、Ｒ入っててもいいですよ＠あと１～２時間でしょう？＠
+	PlaySE(4, "S19/00/waitA50016", 128, 64);
 	OutputLine(NULL, "「園崎さん、Ｒ入っててもいいですよ。",
 		   NULL, "\"Sonozaki-san, you can take your break now.", Line_WaitForInput);
 	PlaySE(4, "S19/00/waitA50017", 128, 64);
@@ -2364,6 +2403,7 @@
 	PlayBGM( 1, "msys04", 128, 0 );
 
 //「名簿には、!w1000竜宮レナ。!w800それから北条沙都子。!w800古手梨花で。＠
+	PlaySE(4, "S19/01/HR_KEI18260", 128, 64);
 	OutputLine(NULL, "「名簿には、",
 		   NULL, "\"Please add:", Line_ContinueAfterTyping);
 
@@ -2794,6 +2834,7 @@
 	DrawSceneWithMask( "bg_161", "down", 0, 0, 1300 );
 
 //「......諸々の都合により魅音は参戦できないので、臨時に俺が指揮を取る＠......作戦内容は詩音の護衛と敵勢力の殲滅。＠
+	PlaySE(4, "S19/01/HR_KEI18380", 128, 64);
 	OutputLine(NULL, "「……諸々の都合により魅音は参戦できないので、臨時に俺が指揮を取る。",
 		   NULL, "\"...Mion can't join us due to various circumstances, so I'll temporarily be taking command.", Line_WaitForInput);
 	PlaySE(4, "S19/01/HR_KEI18390", 128, 64);
@@ -2865,6 +2906,7 @@
 	PlaySE(4, "S19/04/500400081", 128, 64);
 	OutputLine(NULL, "「不要に決まってますわッ！！",
 		   NULL, "\"Of course we don't have to!!", Line_WaitForInput);
+	PlaySE(4, "S19/04/500400082", 128, 64);
 	OutputLine(NULL, "　魅音さんの妹に狼藉を働く輩に手加減なんか不要ですの！！」",
 		   NULL, " We have no need to show mercy to the rabble that would dare lay a finger on Mion's little sister!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -2958,6 +3000,9 @@
 	DrawBustshot( 1, "sa_si_wa_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「「「おぉぉーーーッ！！！」」＠
+	PlaySE(4, "S19/02/500200216", 128, 64);
+	PlaySE(5, "S19/04/500400086", 128, 64);
+	PlaySE(6, "S19/01/HR_KEI18480_01", 128, 64);
 	OutputLine(NULL, "「「「おぉぉーーーッ！！！」」」",
 		   NULL, "\"\"\"Yaaaay!!!\"\"\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
@@ -3001,6 +3046,7 @@
 	DrawScene( "bg_163", 200 );
 
 //「園崎さ～ん、７番テーブルにDXパフェを５つお願いします～！＠
+	PlaySE(4, "S19/00/waitA50024", 128, 64);
 	OutputLine(NULL, "「園崎さ〜ん、７番テーブルにDXパフェを５つお願いします〜！」",
 		   NULL, "\"Sonozaki-sa~n, five Deluxe Parfaits for table seven~!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -3037,6 +3083,7 @@
 
 
 //「今度はミーのおズボンにぶっかけさせて、ぱんつの中までフキフキしてもらうニョリ！！＠
+	PlaySE(4, "S19/00/otaA50002", 128, 64);
 	OutputLine(NULL, "「今度はミーのおズボンにぶっかけさせて、ぱんつの中までフキフキしてもらうニョリ！！」",
 		   NULL, "\"This time we'll have her spill everything on my pants, and have her wipey-wipey right down to my underwear!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
@@ -3233,11 +3280,13 @@
 	ClearMessage();
 
 //「はぅ～～～...おいたはダメなんだよ～☆＠メッだよ？　メ＠　レナがお持ち帰りするからメ～～～～～♪」＠
+	PlaySE(4, "S19/02/500200218", 128, 64);
 	OutputLine(NULL, "「はぅ〜〜〜…おいたはダメなんだよ〜☆　",
 		   NULL, "\"Hau~~~~ No mischief, okay~☆.", Line_WaitForInput);
 	PlaySE(4, "S19/02/500200219", 128, 64);
 	OutputLine(NULL, "メッだよ？　メ！",
 		   NULL, " No means no. No!", Line_WaitForInput);
+	PlaySE(4, "S19/02/500200220", 128, 64);
 	OutputLine(NULL, "　レナがお持ち帰りするからメ〜〜〜〜〜♪」」",
 		   NULL, " Rena's going to be the one to take her hoooome~~~♪\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -3317,6 +3366,7 @@
 
 
 //「圭一よりレナへ＠ご苦労だった＠引き続き護衛を続けてくれ＠それからお持ち帰りは不可＠　繰り返す、お持ち帰りは不可！！＠
+	PlaySE(4, "S19/01/HR_KEI18560", 128, 64);
 	OutputLine(NULL, "「圭一よりレナへ。",
 		   NULL, "\"Rena, this is Keiichi.", Line_WaitForInput);
 	PlaySE(4, "S19/01/HR_KEI18570", 128, 64);
@@ -3412,6 +3462,7 @@
 	DrawBustshotWithFiltering( 3, "si_ma_bi_a1", "left", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「......ちょっと...さっきから何をしてんの？！＠
+	PlaySE(4, "S19/06/500600217", 128, 64);
 	OutputLine(NULL, "「……ちょっと…さっきから何をしてんの？！」",
 		   NULL, "\"...Hey... what are you doing!?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -3452,6 +3503,7 @@
 	PlaySE(4, "S19/02/500200227", 128, 64);
 	OutputLine(NULL, "　かぁいいデザートがいっぱい来たよ〜〜！！",
 		   NULL, " Lots of kyute desserts are coming~!!", Line_WaitForInput);
+	PlaySE(4, "S19/02/500200228", 128, 64);
 	OutputLine(NULL, "　はぅ〜〜！！」",
 		   NULL, " Hau~~!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -3642,6 +3694,7 @@
 	PlaySE(4, "S19/00/otaD50006", 128, 64);
 	OutputLine(NULL, "「僕もにゃりんよ。",
 		   NULL, "\"Mew too.", Line_WaitForInput);
+	PlaySE(4, "S19/00/otaD50007", 128, 64);
 	OutputLine(NULL, "スモールでなくビッグの方でござる！",
 		   NULL, " Not a nyamber one, but a nyamber two!", Line_WaitForInput);
 	PlaySE(4, "S19/00/otaD50008", 128, 64);
@@ -3657,6 +3710,7 @@
 	PlaySE(4, "S19/00/otaE50020", 128, 64);
 	OutputLine(NULL, "　見つけたにゃー！",
 		   NULL, " I found eeeet!", Line_WaitForInput);
+	PlaySE(4, "S19/00/otaE50021", 128, 64);
 	OutputLine(NULL, "　レッツ尿〜！！！」",
 		   NULL, " Urine for it now!!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
@@ -3689,6 +3743,7 @@
 	ShakeScreen( 0, 50, 20, 4, 0, );
 
 //「「「こここ、これは...何としたことでござるかぁあぁあぁあああッ！！！」」￥
+	PlaySE(4, "S19/00/otall50003", 128, 64);
 	OutputLine(NULL, "「「「こここ、これは…何としたことでござるかぁあぁあぁあああッ！！！」」」",
 		   NULL, "\"\"\"W-W-W-What... what is thiiiiiiiiiiiis!!!\"\"\"", Line_Normal);
 	ClearMessage();
@@ -3808,6 +3863,7 @@
 
 
 //「今日のお客さんに女子はいないにゃりん！＠　コロンブスの卵でにゃりん！！＠
+	PlaySE(4, "S19/00/otaD50010", 128, 64);
 	OutputLine(NULL, "「今日のお客さんに女子はいないにゃりん！！",
 		   NULL, "\"I'm purrty sure there's no female customers today!!", Line_WaitForInput);
 	PlaySE(4, "S19/00/otaD50011", 128, 64);
@@ -3817,6 +3873,7 @@
 
 
 //「はぁはぁ...女子便最高～～！！！！！＠
+	PlaySE(4, "S19/00/otaE50023", 128, 64);
 	OutputLine(NULL, "「はぁはぁ…女子便最高〜〜！！！！！」",
 		   NULL, "\"*pant pant*... Women's toilets are the best~~!!!!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
@@ -3839,6 +3896,7 @@
 	DrawScene( "bg_226", 400 );
 
 //「......みぃ？＠
+	PlaySE(4, "S19/05/500500049", 128, 64);
 	OutputLine(NULL, "「……みぃ？」",
 		   NULL, "\"...Mii?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -3848,6 +3906,7 @@
 	ShakeScreen( 1, 50, 20, 6, 0, );
 
 //「「「のわぁあぁあああぁああぁあッ...？！？！」」＠
+	PlaySE(4, "S19/00/HR_OTK00000_ABC", 128, 64);
 	OutputLine(NULL, "「「「のわぁあぁあああぁああぁあッ…？！？！」」」",
 		   NULL, "\"\"\"Nnnnwaaaaaaaaaaah!?!?\"\"\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
@@ -3886,6 +3945,7 @@
 	ClearMessage();
 
 //「こ、ここ、これはでござるな、!w1000マドモアゼール...。＠
+	PlaySE(4, "S19/00/otaC50012", 128, 64);
 	OutputLine(NULL, "「こ、ここ、これはでござるな、",
 		   NULL, "\"D-D-Dis is, you see,", Line_ContinueAfterTyping);
 
@@ -3902,6 +3962,7 @@
 	DrawBustshot( 2, "ri_si_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「......みぃ。＠
+	PlaySE(4, "S19/05/500500050", 128, 64);
 	OutputLine(NULL, "「……みぃ。」",
 		   NULL, "\"...Mii.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -4006,6 +4067,7 @@
 	PlaySE(4, "S19/00/otaD50013", 128, 64);
 	OutputLine(NULL, "　さぁさぁ！！",
 		   NULL, " Purrease, purrease!!", Line_WaitForInput);
+	PlaySE(4, "S19/00/otaD50014", 128, 64);
 	OutputLine(NULL, "　このままじゃ集団浣腸プレイ状態にゃりん〜！！」",
 		   NULL, " At this rate it'll end up becoming group enema purray~~!!\"", Line_Normal);
 	ClearMessage();
@@ -4052,6 +4114,7 @@
 	PlaySE(4, "S19/02/500200230", 128, 64);
 	OutputLine(NULL, "「圭一くん、シメだよ。",
 		   NULL, "\"Keiichi-kun, finish it.", Line_WaitForInput);
+	PlaySE(4, "S19/02/500200231", 128, 64);
 	OutputLine(NULL, "ビシ！っといってね！」",
 		   NULL, " Give 'em hell!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -4082,6 +4145,7 @@
 
 
 //「脂デブども...！＠　この扉から一歩外へ出ることがどういうことになるか、わかってるんだろうな？！＠
+	PlaySE(4, "S19/01/HR_KEI18710", 128, 64);
 	OutputLine(NULL, "「脂デブども…！！",
 		   NULL, "\"Listen up, you tubs of lard!!", Line_WaitForInput);
 	PlaySE(4, "S19/01/HR_KEI18720", 128, 64);
@@ -4099,6 +4163,7 @@
 	DrawBustshotWithFiltering( 3, "re_si_wa_b1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「あははははは！　ほら、チケットに書いてあるよ＠/
+	PlaySE(4, "S19/02/500200232", 128, 64);
 	OutputLine(NULL, "「あははははは！　ほら、チケットに書いてあるよ。",
 		   NULL, "\"Ahahahahaha! Look, it's written right here on the ticket.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -4107,6 +4172,7 @@
 	PlaySE( 3, "wa_007", 128, 64 );
 
 //「途中退店無効」って～！＠
+	PlaySE(4, "S19/02/500200233", 128, 64);
 	OutputLine(NULL, "「途中退店無効」って〜！」",
 		   NULL, "'Not valid for re-entry', see?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -4130,6 +4196,7 @@
 	ClearMessage();
 
 //「「「おお、覚えてろぉおおぉおぉおおおッ！！！」」＠
+	PlaySE(4, "S19/00/otall50004", 128, 64);
 	OutputLine(NULL, "「「「おお、覚えてろぉおおぉおぉおおおッ！！！」」」",
 		   NULL, "\"\"\"Y-Y-You remember this!!!\"\"\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -4140,6 +4207,7 @@
 	DrawBustshotWithFiltering( 2, "ri_si_de_a1", "right", 7, 0, 0, FALSE, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「......そんなこわいこと言う人たちに案内したくないのです。＠
+	PlaySE(4, "S19/05/500500056", 128, 64);
 	OutputLine(NULL, "「……そんなこわいこと言う人たちに案内したくないのです。」",
 		   NULL, "\"...I don't want to guide anybody who says scary things like that.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
@@ -4168,6 +4236,7 @@
 
 
 //「「「アイシャルリタぁああぁあぁあぁあぁンッ！！！！」」￥
+	PlaySE(4, "S19/00/otall50005", 128, 64);
 	OutputLine(NULL, "「「「アイシャルリタぁああぁあぁあぁあぁンッ！！！！」」」",
 		   NULL, "\"\"\"We shall retuuuuuuuuuuurrrn!!!!\"\"\"", Line_Normal);
 	ClearMessage();
@@ -4441,6 +4510,7 @@
 	DrawBustshot( 1, "re_si_ha_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「け、圭一くん......Ｈなんだぁ...。＠
+	PlaySE(4, "S19/02/500200241", 128, 64);
 	OutputLine(NULL, "「け、圭一くん……Ｈなんだぁ…。」",
 		   NULL, "\"Ke-Keiichi-kun... was a pervert...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -4513,6 +4583,7 @@
 	DrawBustshot( 3, "sa_si_ak_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「あ、!w800......それもそうですわねぇ。＠
+	PlaySE(4, "S19/04/500400107", 128, 64);
 	OutputLine(NULL, "「あ、",
 		   NULL, "\"Ah,", Line_ContinueAfterTyping);
 
@@ -4533,6 +4604,7 @@
 	DrawBustshot( 2, "re_si_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「うん＠レナが電話した時はお部屋の片付け中だったんだよ＠でも駆けつけてくれたんだよね！＠
+	PlaySE(4, "S19/02/500200242", 128, 64);
 	OutputLine(NULL, "「うん。",
 		   NULL, "\"Yeah.", Line_WaitForInput);
 	PlaySE(4, "S19/02/500200243", 128, 64);
@@ -4561,6 +4633,7 @@
 	DrawBustshot( 1, "ri_si_wa_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「......それに、甘いのをいっぱいいっぱい食べさせてもらえましたですから、とても喜んでいますよ。￥
+	PlaySE(4, "S19/05/500500065", 128, 64);
 	OutputLine(NULL, "「……それに、甘いのをいっぱいいっぱい食べさせてもらえましたですから、とても喜んでいますよ。」",
 		   NULL, "\"...Besides that, I got to eat a looooot of sweets, so I'm very happy.\"", Line_Normal);
 	ClearMessage();
@@ -4869,6 +4942,7 @@
 	ClearMessage();
 
 //「もし!s500......!sd仮にそういうことがあったとしても...＠そりゃ俺には悪意はなかったんだよ。＠
+	PlaySE(4, "S19/01/HR_KEI18940", 128, 64);
 	OutputLine(NULL, "「もし",
 		   NULL, "\"Hypothetically...", Line_ContinueAfterTyping);
 //!s500
@@ -4895,6 +4969,7 @@
 	DrawBustshot( 3, "re_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「うん＠きっとそうだと思う＠圭一くんに悪気はなかったと思うな。＠
+	PlaySE(4, "S19/02/500200258", 128, 64);
 	OutputLine(NULL, "「うん。",
 		   NULL, "\"Yeah.", Line_WaitForInput);
 	PlaySE(4, "S19/02/500200259", 128, 64);
@@ -4965,8 +5040,10 @@
 
 
 //　考えようによっては...ずるいのは魅ぃちゃんの方なのかも知れないし＠ずるいのが女の子だ、って居直るのもまたずるい気がするし。￥
+	PlaySE(4, "S19/02/500200265", 128, 64);
 	OutputLine(NULL, "　考えようによっては…ずるいのは魅ぃちゃんの方なのかも知れないし。",
 		   NULL, "Depending on how you look at it... Mii-chan might be the one who's being unfair.", Line_WaitForInput);
+	PlaySE(4, "S19/02/500200266", 128, 64);
 	OutputLine(NULL, "ずるいのが女の子だ、って居直るのもまたずるい気がするし。」",
 		   NULL, " Taking the stance that the girl was the one being unfair might be unfair in itself.\"", Line_Normal);
 	ClearMessage();
@@ -4989,6 +5066,7 @@
 	PlaySE(4, "S19/01/HR_KEI19000", 128, 64);
 	OutputLine(NULL, "…魅音は俺の最高の仲間のひとりだ。",
 		   NULL, " ...Mion is one of my best friends.", Line_WaitForInput);
+	PlaySE(4, "S19/01/HR_KEI19010", 128, 64);
 	OutputLine(NULL, "禍根を残してなんか付き合いたくない。",
 		   NULL, " I don't want to leave something between us that could cause problems later on.", Line_WaitForInput);
 	PlaySE(4, "S19/01/HR_KEI19020", 128, 64);
@@ -5106,6 +5184,7 @@
 	PlaySE(4, "S19/01/HR_KEI19090", 128, 64);
 	OutputLine(NULL, "「多分な。",
 		   NULL, "\"Probably.", Line_WaitForInput);
+	PlaySE(4, "S19/01/HR_KEI19100", 128, 64);
 	OutputLine(NULL, "…でもそれとこれが何の関係があるんだよ？」",
 		   NULL, " ...But what does that have to do with anything?\"", Line_Normal);
 	ClearMessage();
@@ -5166,12 +5245,14 @@
 	DrawBustshot( 2, "re_si_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「ごめんね。頼まれてるお買い物があるからそろそろ帰るね＠
+	PlaySE(4, "S19/02/500200278", 128, 64);
 	OutputLine(NULL, "「ごめんね。頼まれてるお買い物があるからそろそろ帰るね。",
 		   NULL, "\"Sorry. I was asked to buy a few things, so it's about time I left.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //　詩ぃちゃんには挨拶もせずに先に帰っちゃってゴメン、って伝えておいてもらえるかな。＠
+	PlaySE(4, "S19/02/500200279", 128, 64);
 	OutputLine(NULL, "　詩ぃちゃんには挨拶もせずに先に帰っちゃってゴメン、って伝えておいてもらえるかな。」",
 		   NULL, "Is it okay with you if you tell Shion I'm sorry I didn't say goodbye?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -5223,12 +5304,14 @@
 	PlaySE(4, "S19/02/500200284", 128, 64);
 	OutputLine(NULL, "「魅ぃちゃんだってもうそんなに気にしてないことだと思うの。",
 		   NULL, "\"I think to Mii-chan, it's something that doesn't bother her much anymore.", Line_WaitForInput);
+	PlaySE(4, "S19/02/500200285", 128, 64);
 	OutputLine(NULL, "だからなかったことにして、忘れちゃってもいいと思うんだけど。",
 		   NULL, " So if you want to forget the whole thing happened, that's fine too.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //　......でもね、同じ女の子としては、...圭一くんに自分で気付いて自分で謝りに来て欲しいなって夢を見ちゃうの＠/
+	PlaySE(4, "S19/02/500200286", 128, 64);
 	OutputLine(NULL, "　……でもね、同じ女の子としては、…圭一くんに自分で気付いて自分で謝りに来て欲しいなって夢を見ちゃうの。",
 		   NULL, "...But you see, as a girl, I'd hope that Keiichi-kun realizes it by himself and comes to apologize of his own volition.", Line_WaitForInput);
 
@@ -5236,6 +5319,7 @@
 	DrawBustshot( 2, "re_si_ka_b1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //......はぅ♪＠
+	PlaySE(4, "S19/02/500200287", 128, 64);
 	OutputLine(NULL, "……はぅ♪」",
 		   NULL, " ...Hau♪\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -5326,7 +5410,7 @@
 	ClearMessage();
 
 //「そうですか＠/
-	PlaySE(4, "S19/11/500700052", 128, 64);
+	PlaySE(4, "S19/06/500600231", 128, 64);
 	OutputLine(NULL, "「そうですか。",
 		   NULL, "\"I see.", Line_WaitForInput);
 
@@ -5334,8 +5418,10 @@
 	DrawBustshot( 2, "si_si_wi_b1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //...じゃ、私たちも表に行きません＠　例えオフでもバイト先は緊張しちゃいますから☆￥
+	PlaySE(4, "S19/06/500600232", 128, 64);
 	OutputLine(NULL, "…じゃ、私たちも表に行きません？",
 		   NULL, " ...Well then, should we leave as well?", Line_WaitForInput);
+	PlaySE(4, "S19/06/500600233", 128, 64);
 	OutputLine(NULL, "　例えオフでもバイト先は緊張しちゃいますから☆」",
 		   NULL, " Even though I'm off-duty, I'm still nervous around the workplace☆.\"", Line_Normal);
 	ClearMessage();
@@ -5646,6 +5732,7 @@
 	DrawBustshot( 2, "si_si_wi_b1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「...そういうのじゃなくって......!w1000その、こういう感じの。＠
+	PlaySE(4, "S19/06/500600254", 128, 64);
 	OutputLine(NULL, "「…そういうのじゃなくって……",
 		   NULL, "\"...Not that...", Line_ContinueAfterTyping);
 
@@ -5672,6 +5759,7 @@
 	DrawBustshot( 2, "si_si_bi_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「ちょ、...そんなに驚かなくてもいいじゃないですか＠/
+	PlaySE(4, "S19/06/500600255", 128, 64);
 	OutputLine(NULL, "「ちょ、…そんなに驚かなくてもいいじゃないですか。",
 		   NULL, "\"Hey... you don't have to act so surprised.", Line_WaitForInput);
 
@@ -5679,6 +5767,7 @@
 	DrawBustshot( 2, "si_si_wi_b1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //女の子と腕を組むくらい、そんなに恥ずかしいことなんですかー？＠
+	PlaySE(4, "S19/06/500600256", 128, 64);
 	OutputLine(NULL, "女の子と腕を組むくらい、そんなに恥ずかしいことなんですかー？」",
 		   NULL, " It's not so embarrassing to link arms with a girl, is it?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -5762,6 +5851,7 @@
 	ClearMessage();
 
 //「............林間学校を封じられると、!w1000......辛いな。＠
+	PlaySE(4, "S19/01/HR_KEI19540", 128, 64);
 	OutputLine(NULL, "「…………林間学校を封じられると、",
 		   NULL, "\"...Well, if field trips are out...", Line_ContinueAfterTyping);
 
@@ -5794,8 +5884,10 @@
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
+	PlaySE(4, "S19/01/HR_KEI19560", 128, 64);
 	OutputLine(NULL, "　お前本当に詩音なんだろうなぁ。",
 		   NULL, "You really are Shion, right?", Line_WaitForInput);
+	PlaySE(4, "S19/01/HR_KEI19570", 128, 64);
 	OutputLine(NULL, "　魅音が詩音だってウソを付いてるんじゃないのかぁ？」",
 		   NULL, " You're not just Mion saying that you're Shion, are you?\"", Line_Normal);
 	ClearMessage();
@@ -5904,6 +5996,7 @@
 	PlaySE(4, "S19/06/500600276", 128, 64);
 	OutputLine(NULL, "「お姉は男の子に生まれた方がよかったんじゃないかなぁって思うことありますよ。",
 		   NULL, "\"Sometimes I think that my sister would have been better off if she'd been born a boy.", Line_WaitForInput);
+	PlaySE(4, "S19/06/500600277", 128, 64);
 	OutputLine(NULL, "……そしたら、私も惚れてるかもなー。",
 		   NULL, " ...If she did, I might have fallen for her.", Line_WaitForInput);
 
@@ -5911,6 +6004,7 @@
 	DrawBustshot( 2, "si_si_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //なんちゃって～！　あっははははははは！＠
+	PlaySE(4, "S19/06/500600278", 128, 64);
 	OutputLine(NULL, "なんちゃって〜！　あっははははははは！」",
 		   NULL, " Just kidding~! Ahahahahahaha!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -5966,6 +6060,7 @@
 
 
 //「まぁそこそこは仲良くやってます＠/
+	PlaySE(4, "S19/06/500600283", 128, 64);
 	OutputLine(NULL, "「まぁそこそこは仲良くやってます。",
 		   NULL, "\"Well, we get along well enough.", Line_WaitForInput);
 
@@ -5973,6 +6068,7 @@
 	DrawBustshot( 2, "si_si_wi_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //でも、姉妹として許せないなぁってところはいろいろありますよ＠/
+	PlaySE(4, "S19/06/500600284", 128, 64);
 	OutputLine(NULL, "でも、姉妹として許せないなぁってところはいろいろありますよ？",
 		   NULL, " Still, there's a few things for which I can't forgive her, as her sister.", Line_WaitForInput);
 
@@ -5980,6 +6076,7 @@
 	DrawBustshot( 2, "si_si_wa_b1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //　......あ、あれ見て下さい＠　かわいいと思いません...？￥
+	PlaySE(4, "S19/06/500600285", 128, 64);
 	OutputLine(NULL, "　……あ、あれ見て下さい！",
 		   NULL, " ...Hey, look at that!", Line_WaitForInput);
 	PlaySE(4, "S19/06/500600286", 128, 64);
@@ -6184,8 +6281,10 @@
 	PlaySE(4, "S19/06/500600300", 128, 64);
 	OutputLine(NULL, "「善郎おじさんが、日曜日のイベントを盛り上げてくれたお礼にって。",
 		   NULL, "\"Uncle Yoshirou gave those out as thanks for helping liven things up at Sunday's event.", Line_WaitForInput);
+	PlaySE(4, "S19/06/500600301", 128, 64);
 	OutputLine(NULL, "お姉が連れて来た友達４人に配ったんだそうです。",
 		   NULL, " It seems he gave them to the four friends my sister brought along.", Line_WaitForInput);
+	PlaySE(4, "S19/06/500600302", 128, 64);
 	OutputLine(NULL, "ドレスの人形は圭ちゃんがもらったんですね。",
 		   NULL, " So, you got the doll with the dress then.", Line_WaitForInput);
 	PlaySE(4, "S19/06/500600303", 128, 64);
@@ -6210,6 +6309,7 @@
 
 
 //「持っててもしょうがないから、!w1000......あげちゃったよ。￥
+	PlaySE(4, "S19/01/HR_KEI19750", 128, 64);
 	OutputLine(NULL, "「持っててもしょうがないから、",
 		   NULL, "\"I wasn't really going to do anything with it,", Line_ContinueAfterTyping);
 
@@ -6354,6 +6454,7 @@
 
 //「あっはっはっは＠　圭ちゃんには一番似合わないのが出てきちゃったねぇ！＠
 //　…そんな表情を読み取られたくなくて、精一杯の照れ隠しを言っていた。\
+	PlaySE(4, "S19/03/500300186", 128, 64);
 	OutputLine(NULL, "「あっはっはっは！",
 		   NULL, "\"Ahahaha!", Line_WaitForInput);
 	PlaySE(4, "S19/03/500300187", 128, 64);
@@ -6375,6 +6476,7 @@
 	DrawBustshot( 2, "me_si_wi_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「圭ちゃんが持ってたら、確実に明日から変態扱いだね。うん！＠
+	PlaySE(4, "S19/03/500300188", 128, 64);
 	OutputLine(NULL, "「圭ちゃんが持ってたら、確実に明日から変態扱いだね。うん！」",
 		   NULL, "\"If you walked around with it, then you'd be treated like a weirdo starting tomorrow. Definitely!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
@@ -6563,6 +6665,7 @@
 	DrawBustshot( 2, "si_ma_ha_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「え、!w80...............それって!w700......あの、＠
+	PlaySE(4, "S19/06/990600035", 128, 64);
 	OutputLine(NULL, "「え、",
 		   NULL, "\"Huh,", Line_ContinueAfterTyping);
 
@@ -6753,10 +6856,10 @@
 
 
 //「......レナ＠お前、魅音にいくらもらったんだよ。＠
-	PlaySE(4, "S19/01/HR_KEI19920", 128, 64);
+	PlaySE(4, "S19/01/HR_KEI15670", 128, 64);
 	OutputLine(NULL, "「……レナ。",
 		   NULL, "\"...Rena.", Line_WaitForInput);
-	PlaySE(4, "S19/01/HR_KEI19930", 128, 64);
+	PlaySE(4, "S19/01/HR_KEI15680", 128, 64);
 	OutputLine(NULL, "お前、魅音にいくらもらったんだよ。」",
 		   NULL, " How much did Mion pay you exactly?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -6826,6 +6929,7 @@
 
 
 //　......圭ちゃんに悪気がなかったのはわかってる＠...わかってるつもり￥
+	PlaySE(4, "S19/03/500300197", 128, 64);
 	OutputLine(NULL, "　……圭ちゃんに悪気がなかったのはわかってる。",
 		   NULL, "...I know Kei-chan didn't mean anything wrong.", Line_WaitForInput);
 	OutputLine(NULL, "…わかってるつもり。",
@@ -6843,12 +6947,14 @@
 
 
 //　.........じゃあ、何なんだろうね＠
+	PlaySE(4, "S19/03/500300198", 128, 64);
 	OutputLine(NULL, "　………じゃあ、何なんだろうね。",
 		   NULL, "...Then, what was it?", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //　......悔しいのか、それとも悲しいのか...!w1000全然わかんなくて.........￥
+	PlaySE(4, "S19/03/500300199", 128, 64);
 	OutputLine(NULL, "　……悔しいのか、それとも悲しいのか…",
 		   NULL, "...Frustration? Sadness?", Line_ContinueAfterTyping);
 
@@ -6876,6 +6982,7 @@
 //!s300
 	SetSpeedOfMessage( TRUE, 0, );
 
+	PlaySE(4, "S19/03/500300200", 128, 64);
 	OutputLine(NULL, "………………………………。",
 		   NULL, ".........", Line_WaitForInput);
 //!sd
@@ -6892,6 +6999,7 @@
 
 
 //　...............そうだね￥
+	PlaySE(4, "S19/03/500300201", 128, 64);
 	OutputLine(NULL, "　……………そうだね。",
 		   NULL, "...You're right.", Line_Normal);
 	ClearMessage();
@@ -6912,6 +7020,7 @@
 
 
 //　そ、そんなの...できるわけないじゃない...￥
+	PlaySE(4, "S19/03/500300202", 128, 64);
 	OutputLine(NULL, "　そ、そんなの…できるわけないじゃない…！",
 		   NULL, "T-There's no way I could do that...!", Line_Normal);
 	ClearMessage();
@@ -6926,6 +7035,7 @@
 
 
 //　........................魅音じゃない私で、!w800もう一回やり直したい＠
+	PlaySE(4, "S19/03/500300203", 128, 64);
 	OutputLine(NULL, "　……………………魅音じゃない私で、",
 		   NULL, "...I want to try again,", Line_ContinueAfterTyping);
 
@@ -6939,18 +7049,21 @@
 
 
 //　そうしたら、今度はもっと素直になりたい...＠
+	PlaySE(4, "S19/03/500300204", 128, 64);
 	OutputLine(NULL, "　そうしたら、今度はもっと素直になりたい…。",
 		   NULL, "This time, I can be more honest with myself...", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //　魅音としての圭ちゃんとの関係はとても気に入ってるよッ？＠
+	PlaySE(4, "S19/03/500300205", 128, 64);
 	OutputLine(NULL, "　魅音としての圭ちゃんとの関係はとても気に入ってるよッ？！",
 		   NULL, "Don't get me wrong, I'm pretty fond of the relationship I have with Kei-chan.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //　わがままだと知ってるけど......もう一回...￥
+	PlaySE(4, "S19/03/500300206", 128, 64);
 	OutputLine(NULL, "　わがままだと知ってるけど……もう一回…。",
 		   NULL, "This might be selfish... but one more time...", Line_Normal);
 	ClearMessage();
@@ -6965,6 +7078,7 @@
 
 
 //　...............そうかな￥
+	PlaySE(4, "S19/03/500300207", 128, 64);
 	OutputLine(NULL, "　……………そうかな。",
 		   NULL, "...I wonder if that's true.", Line_Normal);
 	ClearMessage();
@@ -6973,6 +7087,7 @@
 	PlaySE(4, "S19/02/500200316", 128, 64);
 	OutputLine(NULL, "「レナも応援するから。",
 		   NULL, "\"Rena will cheer you on too.", Line_WaitForInput);
+	PlaySE(4, "S19/02/500200317", 128, 64);
 	OutputLine(NULL, "……魅ぃちゃんが悲しみが軽くなる方法を探してみようよ。",
 		   NULL, " ...So let's find a way for you to ease your sadness.", Line_WaitForInput);
 	PlaySE(4, "S19/02/500200318", 128, 64);
@@ -6985,6 +7100,7 @@
 
 
 //　.........信じる＠...信じる￥
+	PlaySE(4, "S19/03/500300208", 128, 64);
 	OutputLine(NULL, "　………信じる。",
 		   NULL, "......I'll believe.", Line_WaitForInput);
 	OutputLine(NULL, "…信じる。",
@@ -6997,6 +7113,7 @@
 	PlaySE(4, "S19/02/500200320", 128, 64);
 	OutputLine(NULL, "「きっと圭一くんは魅ぃちゃんのこともわかってくれるよ。",
 		   NULL, "\"Keiichi-kun will definitely come to understand.", Line_WaitForInput);
+	PlaySE(4, "S19/02/500200321", 128, 64);
 	OutputLine(NULL, "それでね、無神経なことを言ってごめんねって言って…",
 		   NULL, " He'll say he's sorry for saying something so callous...", Line_ContinueAfterTyping);
 
@@ -7010,6 +7127,7 @@
 
 
 //　......うん＠......うん￥
+	PlaySE(4, "S19/03/500300209", 128, 64);
 	OutputLine(NULL, "　……うん。",
 		   NULL, "......Yeah.", Line_WaitForInput);
 	OutputLine(NULL, "……うん。",
@@ -7017,6 +7135,7 @@
 	ClearMessage();
 
 //「そうしたら...魅ぃちゃんもありがとう、!w700って言うんだよ＠...茶化しちゃダメだよ＠素直に言うんだからね。＠
+	PlaySE(4, "S19/02/500200322", 128, 64);
 	OutputLine(NULL, "「そうしたら…魅ぃちゃんもありがとう、",
 		   NULL, "\"And then... Mii-chan, you'll say", Line_ContinueAfterTyping);
 
@@ -7036,6 +7155,7 @@
 
 
 //　.........うん＠......ぅっく......￥
+	PlaySE(4, "S19/03/500300210", 128, 64);
 	OutputLine(NULL, "　………うん。",
 		   NULL, "......Yeah.", Line_WaitForInput);
 	OutputLine(NULL, "……ぅっく……。",
@@ -7051,6 +7171,7 @@
 	DrawBustshot( 2, "si_si_ha_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, TRUE );
 
 //「......ほしいな、!w800って言ったら.........圭ちゃん、...買ってくれます...？＠
+	PlaySE(4, "S19/06/500600311", 128, 64);
 	OutputLine(NULL, "「……ほしいな、",
 		   NULL, "\"...If I said I wanted it,", Line_ContinueAfterTyping);
 
@@ -7129,6 +7250,7 @@
 	DrawBustshot( 2, "si_si_ha_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「ほ、!w800...ほ、!w600.........本当にいいんですか＠　あのドレスのだけは、...ちょっぴり高いんですよ？＠
+	PlaySE(4, "S19/06/500600313", 128, 64);
 	OutputLine(NULL, "「ほ、",
 		   NULL, "\"Is...", Line_ContinueAfterTyping);
 
@@ -7162,10 +7284,13 @@
 
 //「私、......今日は圭ちゃんに、...嫌なお客さんから助けてもらえて...本当に嬉しかったです＠
 //　...先輩たちもみんな助けてくれなかったのに、...圭ちゃんだけは助けてくれました＠......私の肩をぐい！って、引っ張ってくれましたよね...＠　あの時、すごく......カッコ良かったです＠なのに私.........恥ずかしくって...ちゃんとしたお礼もできなくって......。￥
+	PlaySE(4, "S19/06/500600315", 128, 64);
 	OutputLine(NULL, "「私、……今日は圭ちゃんに、…嫌なお客さんから助けてもらえて…本当に嬉しかったです。",
 		   NULL, "\"When I... was saved by Kei-chan from those unsavory customers today... I was really happy.", Line_WaitForInput);
+	PlaySE(4, "S19/06/500600316", 128, 64);
 	OutputLine(NULL, "　…先輩たちもみんな助けてくれなかったのに、…圭ちゃんだけは助けてくれました。",
 		   NULL, " ...Even though my co-workers didn't save me, Kei-chan did.", Line_WaitForInput);
+	PlaySE(4, "S19/06/500600317", 128, 64);
 	OutputLine(NULL, "……私の肩をぐい！って、引っ張ってくれましたよね…？",
 		   NULL, " ...You grabbed me by the shoulder really firmly, right...?", Line_WaitForInput);
 	PlaySE(4, "S19/06/500600318", 128, 64);
@@ -7324,6 +7449,7 @@
 
 
 //「え、...!s200えぇえぇぇぇえ!sd...ッ？！？＠　な、なな、何で圭ちゃん...？＠
+	PlaySE(4, "S19/03/660300194", 128, 64);
 	OutputLine(NULL, "「え、…",
 		   NULL, "\"Huh...", Line_ContinueAfterTyping);
 //!s200
@@ -7403,10 +7529,13 @@
 	PlaySE(4, "S19/06/660600216", 128, 64);
 	OutputLine(NULL, "お姉がご執心の圭ちゃんってどんな人なのかなって思って。",
 		   NULL, " I was wondering what kind of person this Kei-chan you were so infatuated with was.", Line_WaitForInput);
+	PlaySE(4, "S19/06/660600217", 128, 64);
 	OutputLine(NULL, "デザートフェスタのチケット、都合してあげたんです。",
 		   NULL, " So I happened to give him a ticket to the Dessert Festa.", Line_WaitForInput);
+	PlaySE(4, "S19/06/660600218", 128, 64);
 	OutputLine(NULL, "…そしたら、圭ちゃん、…私が嫌なお客さんに絡まれているところに颯爽と現れて…。",
 		   NULL, " ...There, when I was being bothered by all sorts of troublesome customers, Kei-chan gallantly appeared...", Line_WaitForInput);
+	PlaySE(4, "S19/06/660600219", 128, 64);
 	OutputLine(NULL, "ばったばったとなぎ倒して私を助けてくれて",
 		   NULL, " ...and saved me by kicking them all to the curb", Line_ContinueAfterTyping);
 //!s200
@@ -7423,6 +7552,7 @@
 
 
 //「「えぇええぇえぇぇ～～...？！？！」」/
+	PlaySE(4, "S19/03/500300217", 128, 64);
 	OutputLine(NULL, "「「えぇええぇえぇぇ〜〜…？！？！」」",
 		   NULL, "\"\"WhaaaaaaaaaaaaaaAAAAaaaa~~...!?!?\"\"", Line_ContinueAfterTyping);
 
@@ -7440,6 +7570,7 @@
 	ClearMessage();
 
 //「......魅音が......!w1000電話をくれたろ...＠　昨日さ...。＠
+	PlaySE(4, "S19/01/HR_KEI20900", 128, 64);
 	OutputLine(NULL, "「……魅音が……",
 		   NULL, "\"...Mion...", Line_ContinueAfterTyping);
 
@@ -7473,6 +7604,7 @@
 	PlaySE(4, "S19/06/660600220", 128, 64);
 	OutputLine(NULL, "「私、圭ちゃんのためにお弁当を届けてあげたよね？",
 		   NULL, "\"I delivered that bento for you, didn't I, Kei-chan?", Line_WaitForInput);
+	PlaySE(4, "S19/06/660600221", 128, 64);
 	OutputLine(NULL, "　あれは私だもんねー？",
 		   NULL, " That was me, right?", Line_WaitForInput);
 
@@ -7480,6 +7612,7 @@
 	DrawBustshot( 1, "si_si_aw_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //　それともあれ、お姉だったの＠　園崎魅音ともあろうお方が手作り弁当を作って、男の子の家に甲斐甲斐しく届けに行ったと＠　へー...お姉って見かけによらず大胆～！＠
+	PlaySE(4, "S19/06/660600222", 128, 64);
 	OutputLine(NULL, "　それともあれ、お姉だったの？",
 		   NULL, " Or was it my sister?", Line_WaitForInput);
 	PlaySE(4, "S19/06/660600223", 128, 64);
@@ -7518,8 +7651,10 @@
 	PlaySE(4, "S19/06/500600342", 128, 64);
 	OutputLine(NULL, "お姉は知らないって。",
 		   NULL, " My sister says she doesn't know.", Line_WaitForInput);
+	PlaySE(4, "S19/06/500600343", 128, 64);
 	OutputLine(NULL, "だから昨日までのは全部、私、園崎詩音なの。",
 		   NULL, " So everything up until yesterday was me, Shion Sonozaki.", Line_WaitForInput);
+	PlaySE(4, "S19/06/500600344", 128, 64);
 	OutputLine(NULL, "　私のフリをしたお姉かもしれないって思ってたかもしれないけど、これで疑いは晴れたしょ。」",
 		   NULL, " You might have thought it was my sister pretending to be me, but with this, there's no doubt, right?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
@@ -7565,6 +7700,7 @@
 	PlayBGM( 2, "lsys12", 128, 0 );
 
 //「ぇ......え......、!w1000......そんな!w1000.........圭ちゃ～...ん...。＠
+	PlaySE(4, "S19/03/500300221", 128, 64);
 	OutputLine(NULL, "「ぇ……え……、",
 		   NULL, "\"Wai... wha...", Line_ContinueAfterTyping);
 
@@ -7602,12 +7738,14 @@
 	PlaySE(4, "S19/06/500600350", 128, 64);
 	OutputLine(NULL, "　もう暗くなってきたから、お家まで送ってあげるね。",
 		   NULL, " It's already dark out, so I'll see you home.", Line_WaitForInput);
+	PlaySE(4, "S19/06/500600351", 128, 64);
 	OutputLine(NULL, "お姉、悪いけど興宮の家に電話して車を回すように言ってもらえる？",
 		   NULL, " Sis, sorry, but could you phone the house in Okinomiya and have them send out a car?", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //　自転車も積めるように、ワゴンか何かで来てほしいって伝えてね。＠
+	PlaySE(4, "S19/06/500600352", 128, 64);
 	OutputLine(NULL, "　自転車も積めるように、ワゴンか何かで来てほしいって伝えてね。」",
 		   NULL, "Maybe a van that we can fit a bike into, please.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
