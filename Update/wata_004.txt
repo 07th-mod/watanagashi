@@ -2670,8 +2670,8 @@
 	OutputLine(NULL, "……視線が自然と周りへ泳ぐ。",
 		   NULL, " My gaze floundered about the surrounding area.", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-	DrawSceneWithMask( "bg_123", "left", 0, 0, 300 );
+//	DisableWindow();
+//	DrawSceneWithMask( "bg_123", "left", 0, 0, 300 );
 
 //　...こんな見るからにガラの悪そうな３人に絡まれているのだ＠
 	OutputLine(NULL, "　…こんな見るからにガラの悪そうな３人に絡まれているのだ。",
@@ -2771,8 +2771,10 @@
 		   NULL, "Still holding me by the collar, the three thugs spun around to look behind them.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 2, "si_si_ik_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawScene( "bg_123", 1000 );
+//	DrawBustshot( 2, "si_si_ik_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+//	DrawScene( "bg_123", 1000 );
+
+	DrawScene( "cg_009b", 1000 );
 	PlayBGM( 1, "msys12", 128, 0 );
 
 //「...ンだてめぇええぇッ！！！＠
@@ -2815,7 +2817,7 @@
 		   NULL, " At the same time, they were the most reassuring things in the world.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 2, "si_si_ma_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+//	DrawBustshot( 2, "si_si_ma_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「もう一度だけ言うよ＠...圭ちゃん離してとっとと失せな。＠
 	PlaySE(4, "S19/06/500600027", 128, 64);
@@ -2912,7 +2914,9 @@
 		   NULL, "...They were slowly increasing in number. Little by little.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	FadeBustshot( 2, FALSE, 0, 0, 0, 0, 200, TRUE );
+//	FadeBustshot( 2, FALSE, 0, 0, 0, 0, 200, TRUE );
+	DrawSceneWithMask( "bg_124", "right", 0, 0, 300 );
+
 	FadeOutBGM( 1, 1000, TRUE );
 
 //　始めは帰宅途中のサラリーマンが見物しているように見えた＠
@@ -3101,7 +3105,7 @@
 	FadeOutBGM( 0, 1000, FALSE );
 	FadeOutBGM( 1, 1000, FALSE );
 	FadeOutBGM( 2, 1000, TRUE );
-	DrawSceneWithMask( "bg_124", "right", 0, 0, 300 );
+//	DrawSceneWithMask( "bg_124", "right", 0, 0, 300 );
 
 //「ハイハイハイハイ、どうしたのかなぁ、どうしたのかなぁ！！＠
 	PlaySE(4, "S19/00/poliA50001", 128, 64);
@@ -5619,7 +5623,6 @@
 	DrawSceneWithMask( "bg_080", "right", 0, 0, 300 );
 
 //「俺、詩音に世話になってばかりだよなぁ...。＠
-	PlaySE(4, "S19/01/HR_KEI17590", 128, 64);
 	OutputLine(NULL, "「俺、詩音に世話になってばかりだよなぁ…。」",
 		   NULL, "\"I've only been receiving favors from Shion, haven't I...?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);

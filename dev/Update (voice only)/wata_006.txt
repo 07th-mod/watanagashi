@@ -1,0 +1,605 @@
+﻿void main()
+{
+
+//■６日目・空冷の一日
+//（一日経たせちゃうのはどうかな？　そうすればわずらわしいシーンは飛ばせるし。一日飛ばして土曜にしちゃって、放課後には綿流しの会場設営のお手伝い。で、そこで富竹＆鷹野に会うってのはどう？）
+
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+
+	DisableWindow();
+	DrawScene( "white", 1000 );
+	DrawSceneWithMask( "bg_108", "m1", 0, 0, 1300 );
+	PlayBGM( 1, "msys06", 128, 0 );
+
+//　あの日の翌日＠
+	OutputLine(NULL, "　あの日の翌日。",
+		   NULL, "The next day.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　...魅音は平静を取り戻そうとやっきになっている変な一日だった￥
+	OutputLine(NULL, "　…魅音は平静を取り戻そうとやっきになっている変な一日だった。",
+		   NULL, "...It was a strange day, where Mion was desperate to regain her composure.", Line_Normal);
+	ClearMessage();
+
+//　俺と目が合うと、用事を思い出したとかトイレに行くとか言ってすぐに逃げて行ってしまうのだ＠
+	OutputLine(NULL, "　俺と目が合うと、用事を思い出したとかトイレに行くとか言ってすぐに逃げて行ってしまうのだ。",
+		   NULL, "Every time our eyes met, she would say that she had something to do, or that she had to use the washroom, and run off.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　見かねたレナが付きっ切りで魅音を介護していた￥
+	OutputLine(NULL, "　見かねたレナが付きっ切りで魅音を介護していた。",
+		   NULL, "Unable to just watch, Rena was taking care of her the entire time.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawSceneWithMask( "black", "left", 0, 0, 1300 );
+	DrawSceneWithMask( "bg_109", "left", 0, 0, 1300 );
+	DrawBustshotWithFiltering( 3, "sa_se_ak_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「......今日の魅音さん、...徹底的にヘンですわね。＠
+	PlaySE(4, "S19/04/500400114", 128, 64);
+	OutputLine(NULL, "「……今日の魅音さん、…徹底的にヘンですわね。」",
+		   NULL, "\"...Mion-san... She's acting totally strange today.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「一部始終を知ってはいるんだが......何とも説明しづらい...。＠
+	PlaySE(4, "S19/01/HR_KEI21000", 128, 64);
+	OutputLine(NULL, "「一部始終を知ってはいるんだが……何とも説明しづらい…。」",
+		   NULL, "\"I know the whole story... but it's hard to explain...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "ri_se_de_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「......女の子には不安定になる時もあるのです＠放っておいてあげるのが一番なのですよ。￥
+	PlaySE(4, "S19/05/500500067", 128, 64);
+	OutputLine(NULL, "「……女の子には不安定になる時もあるのです。",
+		   NULL, "\"...There are times when girls are emotionally unstable.", Line_WaitForInput);
+	PlaySE(4, "S19/05/500500068", 128, 64);
+	OutputLine(NULL, "放っておいてあげるのが一番なのですよ。」",
+		   NULL, " It's best to just leave her alone.\"", Line_Normal);
+	ClearMessage();
+
+//　...ん＠
+	OutputLine(NULL, "　…ん？",
+		   NULL, "...Hm?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　ふと見ると、廊下からレナが呼んでいた＠...何だろう￥
+	OutputLine(NULL, "　ふと見ると、廊下からレナが呼んでいた。",
+		   NULL, "Turning around, I saw Rena calling me from the hallway.", Line_WaitForInput);
+	OutputLine(NULL, "…何だろう。",
+		   NULL, " ...I wondered what it was.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawScene( "black", 400 );
+	DrawBustshot( 3, "re_se_ko_b1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	DrawSceneWithMask( "bg_093", "right", 0, 0, 300 );
+
+//「圭一くん、こっちこっち。＠
+	PlaySE(4, "S19/02/500200325", 128, 64);
+	OutputLine(NULL, "「圭一くん、こっちこっち。」",
+		   NULL, "\"Keiichi-kun, over here, over here.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「何だよ、こんなとこに呼んで＠内緒話か？＠
+	PlaySE(4, "S19/01/HR_KEI21010", 128, 64);
+	OutputLine(NULL, "「何だよ、こんなとこに呼んで。",
+		   NULL, "\"What is it, calling me over like this?", Line_WaitForInput);
+	PlaySE(4, "S19/01/HR_KEI21020", 128, 64);
+	OutputLine(NULL, "内緒話か？」",
+		   NULL, " Is it a secret?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	DisableWindow();
+	DrawBustshot( 3, "re_se_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//「えーっと!w1000......その、!w1000.........災難だったみたいだね＠/
+	PlaySE(4, "S19/02/500200326", 128, 64);
+	OutputLine(NULL, "「えーっと",
+		   NULL, "\"Ummm...", Line_ContinueAfterTyping);
+
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "……その、",
+		   NULL, " ...That is...", Line_ContinueAfterTyping);
+
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "………災難だったみたいだね。",
+		   NULL, " ...It looks like it was a disaster.", Line_WaitForInput);
+
+	DisableWindow();
+	DrawBustshot( 3, "re_se_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//...あははははは。＠
+	PlaySE(4, "S19/02/500200327", 128, 64);
+	OutputLine(NULL, "…あははははは。」",
+		   NULL, " ...Ahahahahaha.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「う、......う～......ん...。￥
+	PlaySE(4, "S19/01/HR_KEI21030", 128, 64);
+	OutputLine(NULL, "「う、……う〜……ん…。」",
+		   NULL, "\"Uh... Yea~h.\"", Line_Normal);
+	ClearMessage();
+
+//「魅ぃちゃん、かなり壊れてたけど、...何とか直しておいたから。＠
+	PlaySE(4, "S19/02/500200328", 128, 64);
+	OutputLine(NULL, "「魅ぃちゃん、かなり壊れてたけど、…何とか直しておいたから。」",
+		   NULL, "\"Mii-chan seemed pretty broken, but I somehow got her working again.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「よく直せたな...＠一体どうやって...。￥
+	PlaySE(4, "S19/01/HR_KEI21040", 128, 64);
+	OutputLine(NULL, "「よく直せたな…。",
+		   NULL, "\"I'm surprised you managed it...", Line_WaitForInput);
+	PlaySE(4, "S19/01/HR_KEI21050", 128, 64);
+	OutputLine(NULL, "一体どうやって…。」",
+		   NULL, " How did you exactly...?", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawBustshot( 3, "re_se_wa_b1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//「うん。テレビと同じ＠斜め４５度くらいの角度でえい！えい！って。＠
+	PlaySE(4, "S19/02/500200329", 128, 64);
+	OutputLine(NULL, "「うん。テレビと同じ。",
+		   NULL, "\"Same way I do with the television.", Line_WaitForInput);
+	PlaySE(4, "S19/02/500200330", 128, 64);
+	OutputLine(NULL, "斜め４５度くらいの角度でえい！えい！って。」",
+		   NULL, " Just come at it from a 45 degree angle and HIYAAAA!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　そう言い、チョップするような仕草をして見せた＠
+	OutputLine(NULL, "　そう言い、チョップするような仕草をして見せた。",
+		   NULL, "Saying that, she made a chopping motion.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　...ギャグなのか本当なのか区別が付かないぞ...￥
+	OutputLine(NULL, "　…ギャグなのか本当なのか区別が付かないぞ…。",
+		   NULL, "...You know I can't tell if you're joking or not, right?", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawBustshot( 3, "re_se_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//「明日からは大丈夫だから＠だけど圭一くんにもお願いしたいことがあるの。＠
+	PlaySE(4, "S19/02/500200331", 128, 64);
+	OutputLine(NULL, "「明日からは大丈夫だから。",
+		   NULL, "\"She'll be fine by tomorrow.", Line_WaitForInput);
+	PlaySE(4, "S19/02/500200332", 128, 64);
+	OutputLine(NULL, "だけど圭一くんにもお願いしたいことがあるの。」",
+		   NULL, " Also, there's something I want you to do, Keiichi-kun.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「......悪気はないんだが、なぜか罪の意識もある＠...何でも聞くぞ。＠
+	PlaySE(4, "S19/01/HR_KEI21060", 128, 64);
+	OutputLine(NULL, "「……悪気はないんだが、なぜか罪の意識もある。",
+		   NULL, "\"...I didn't meant to do anything wrong, but I still feel guilty.", Line_WaitForInput);
+	PlaySE(4, "S19/01/HR_KEI21070", 128, 64);
+	OutputLine(NULL, "…何でも聞くぞ。」",
+		   NULL, " ...I'm listening.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「うん。助かる＠......魅ぃちゃんはね、昨日までの数日間のこと、なかったことにするから。＠
+	PlaySE(4, "S19/02/500200333", 128, 64);
+	OutputLine(NULL, "「うん。助かる。",
+		   NULL, "\"Thanks.", Line_WaitForInput);
+	PlaySE(4, "S19/02/500200334", 128, 64);
+	OutputLine(NULL, "……魅ぃちゃんはね、昨日までの数日間のこと、なかったことにするから。」",
+		   NULL, " ...You see, Mii-chan is just going to pretend the last few days never happened.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+
+//　なかったこと、って...＠......なるほど、そういう逃げ方もあるなぁ...￥
+	OutputLine(NULL, "　なかったこと、って…。",
+		   NULL, "Never happened, huh...", Line_WaitForInput);
+	OutputLine(NULL, "……なるほど、そういう逃げ方もあるなぁ…。",
+		   NULL, " ...I see... well, that's one way to run from it...", Line_Normal);
+	ClearMessage();
+
+//「だからね＠　圭一くんもなかったことにしてあげて＠それで魅ぃちゃん、いつも通りだから。＠
+	PlaySE(4, "S19/02/500200335", 128, 64);
+	OutputLine(NULL, "「だからね！",
+		   NULL, "\"So, you see...", Line_WaitForInput);
+	PlaySE(4, "S19/02/500200336", 128, 64);
+	OutputLine(NULL, "　圭一くんもなかったことにしてあげて。",
+		   NULL, " Keiichi-kun, could you pretend too?", Line_WaitForInput);
+	PlaySE(4, "S19/02/500200337", 128, 64);
+	OutputLine(NULL, "それで魅ぃちゃん、いつも通りだから。」",
+		   NULL, " Then Mii-chan can go back to normal.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「そ、そんな簡単なことで...本当に大丈夫なのか...？＠
+	PlaySE(4, "S19/01/HR_KEI21080", 128, 64);
+	OutputLine(NULL, "「そ、そんな簡単なことで…本当に大丈夫なのか…？」",
+		   NULL, "\"J-Just doing something as simple as that... is it really going to be okay...?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	DisableWindow();
+	DrawBustshot( 3, "re_se_na_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//「お願いだから魅ぃちゃんの心の整理が付くまでそっとしておいてあげてよ。＠
+	PlaySE(4, "S19/02/500200338", 128, 64);
+	OutputLine(NULL, "「お願いだから魅ぃちゃんの心の整理が付くまでそっとしておいてあげてよ。」",
+		   NULL, "\"Please, until Mii-chan gets her feelings in order, just go with it.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「......うーん!s500......!sdわかったよ。＠
+	PlaySE(4, "S19/01/HR_KEI21090", 128, 64);
+	OutputLine(NULL, "「……うーん",
+		   NULL, "\"...Okay...", Line_ContinueAfterTyping);
+//!s500
+	SetSpeedOfMessage( TRUE, 0, );
+
+	OutputLine(NULL, "……",
+		   NULL, " ...", Line_ContinueAfterTyping);
+//!sd
+	SetSpeedOfMessage( FALSE, 0, );
+
+	OutputLine(NULL, "わかったよ。」",
+		   NULL, "I got it.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+
+//　俺に落ち度はないはずなのに......なぜか俺が悪い気がする＠
+	OutputLine(NULL, "　俺に落ち度はないはずなのに……なぜか俺が悪い気がする。",
+		   NULL, "Even though I shouldn't have been at fault... for some reason I felt guilty.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　一番悪いのは事情を知りつつ丸一日魅音に成りすましてた詩音なんだが...！！￥
+	OutputLine(NULL, "　一番悪いのは事情を知りつつ丸一日魅音に成りすましてた詩音なんだが…！！！",
+		   NULL, "The one at fault here was the one who knew about the entire situation and pretended to be Mion for an entire day: Shion...!!!", Line_Normal);
+	ClearMessage();
+
+//　うー...でも......あいつ一言も自分が魅音だとは言ってないもんな...＠...うー...＠このやり場のないゲンコツはどこへ向ければいいんだよー...＠
+	OutputLine(NULL, "　うー…でも……あいつ一言も自分が魅音だとは言ってないもんな…。",
+		   NULL, "Ugh... but... she never once said that she was Mion...", Line_WaitForInput);
+	OutputLine(NULL, "…うー…。",
+		   NULL, " ...Ugh...", Line_WaitForInput);
+	OutputLine(NULL, "このやり場のないゲンコツはどこへ向ければいいんだよー…！",
+		   NULL, " What am I supposed to be angry at!?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+
+//　俺がそんな、ヤキモキとした仕草で地団太を踏んでいるのを見て、レナはくすくすと笑っていた￥
+	OutputLine(NULL, "　俺がそんな、ヤキモキとした仕草で地団太を踏んでいるのを見て、レナはくすくすと笑っていた。",
+		   NULL, "Seeing me stomping the ground impatiently, Rena giggled.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawBustshot( 3, "re_se_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//「でも、圭一くんもわかったでしょ＠魅ぃちゃんにもかわいいところがあるんだ、って。＠
+	PlaySE(4, "S19/02/500200339", 128, 64);
+	OutputLine(NULL, "「でも、圭一くんもわかったでしょ。",
+		   NULL, "\"But Keiichi-kun, you knew as well.", Line_WaitForInput);
+	PlaySE(4, "S19/02/500200340", 128, 64);
+	OutputLine(NULL, "魅ぃちゃんにもかわいいところがあるんだ、って。」",
+		   NULL, " That Mii-chan has some cute things about her.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　レナは風に髪をなびかせながら、落ち着きのある声で言った￥
+	OutputLine(NULL, "　レナは風に髪をなびかせながら、落ち着きのある声で言った。",
+		   NULL, "Rena talked in a calm voice as her hair rustled in the wind.", Line_Normal);
+	ClearMessage();
+
+//「.........あぁ＠退屈しないヤツだということがわかった。＠
+	PlaySE(4, "S19/01/HR_KEI21100", 128, 64);
+	OutputLine(NULL, "「………あぁ。",
+		   NULL, "\"......Yeah.", Line_WaitForInput);
+	PlaySE(4, "S19/01/HR_KEI21110", 128, 64);
+	OutputLine(NULL, "退屈しないヤツだということがわかった。」",
+		   NULL, " I know that she'll never let it be boring.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「...よかった。＠
+	PlaySE(4, "S19/02/500200341", 128, 64);
+	OutputLine(NULL, "「…よかった。」",
+		   NULL, "\"...Good.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　レナは短くそう答えると大きく伸びをして空を仰いだ￥
+	OutputLine(NULL, "　レナは短くそう答えると大きく伸びをして空を仰いだ。",
+		   NULL, "Following this curt reply, Rena looked up at the sky and stretched.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawScene( "bg_203", 1000 );
+
+//「圭一くんがそれに気付いてくれれば、この数日間の出来事はすぐに笑い話になるんだよ。￥
+	PlaySE(4, "S19/02/500200342", 128, 64);
+	OutputLine(NULL, "「圭一くんがそれに気付いてくれれば、この数日間の出来事はすぐに笑い話になるんだよ。」",
+		   NULL, "\"As long as you realize that, Keiichi-kun, these past few days will soon be nothing more than a story to laugh about.\"", Line_Normal);
+	ClearMessage();
+
+//　俺もレナがするように伸びをして空を仰いだ＠
+	OutputLine(NULL, "　俺もレナがするように伸びをして空を仰いだ。",
+		   NULL, "Copying Rena, I also began to stretch as I looked at the sky.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　澄み渡る空はどこまでも高かった￥
+	OutputLine(NULL, "　澄み渡る空はどこまでも高かった。",
+		   NULL, "The clear sky towered into the distance.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawBustshot( 3, "re_se_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	DrawScene( "bg_093", 1000 );
+
+//「今日は部活も何にもなし＠今日だけは申し訳ないけど圭一くん、下校はひとりでいいかな＠明日からは元通りだから今日だけ。!w1000...ね。＠
+	PlaySE(4, "S19/02/500200343", 128, 64);
+	OutputLine(NULL, "「今日は部活も何にもなし。",
+		   NULL, "\"There's no club activities or anything today.", Line_WaitForInput);
+	PlaySE(4, "S19/02/500200344", 128, 64);
+	OutputLine(NULL, "今日だけは申し訳ないけど圭一くん、下校はひとりでいいかな。",
+		   NULL, " I'm sorry, Keiichi-kun, but just for today, can you go home by yourself?", Line_WaitForInput);
+	PlaySE(4, "S19/02/500200345", 128, 64);
+	OutputLine(NULL, "明日からは元通りだから今日だけ。",
+		   NULL, " It'll all be back to normal by tomorrow, so just for today.", Line_ContinueAfterTyping);
+
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "…ね。」",
+		   NULL, " ...Okay?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　今日一日、そっとしておけば元に戻るなら、楽な注文だ￥
+	OutputLine(NULL, "　今日一日、そっとしておけば元に戻るなら、楽な注文だ。",
+		   NULL, "If all it took for everything to go back to normal was to leave Mion alone for today, then it was an easy decision to make.", Line_Normal);
+	ClearMessage();
+
+//「わかったよ＠.........魅音に面と向かって言えないから、レナに言っとく＠......何だか、申し訳ないな。謝る...。＠
+	PlaySE(4, "S19/01/HR_KEI21120", 128, 64);
+	OutputLine(NULL, "「わかったよ。",
+		   NULL, "\"Got it.", Line_WaitForInput);
+	PlaySE(4, "S19/01/HR_KEI21130", 128, 64);
+	OutputLine(NULL, "………魅音に面と向かって言えないから、レナに言っとく。",
+		   NULL, " ...I can't say it directly to Mion, so I'll say it to you.", Line_WaitForInput);
+	PlaySE(4, "S19/01/HR_KEI21140", 128, 64);
+	OutputLine(NULL, "……何だか、申し訳ないな。謝る…。」",
+		   NULL, " ...I still feel kind of guilty about it. So I want to apologize...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	DisableWindow();
+	DrawBustshot( 3, "re_se_wa_b1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//「...う～ん＠　元はと言えば、圭一くんが無神経なことを言うからいけなかったんだよね＠これに懲りて、少しはデリカシーってものを身に付けるんだよ？＠
+	PlaySE(4, "S19/02/500200346", 128, 64);
+	OutputLine(NULL, "「…う〜ん！",
+		   NULL, "\"...Ah, no!", Line_WaitForInput);
+	PlaySE(4, "S19/02/500200347", 128, 64);
+	OutputLine(NULL, "　元はと言えば、圭一くんが無神経なことを言うからいけなかったんだよね。",
+		   NULL, " The root of the problem was Keiichi-kun saying something insensitive, right?", Line_WaitForInput);
+	PlaySE(4, "S19/02/500200348", 128, 64);
+	OutputLine(NULL, "これに懲りて、少しはデリカシーってものを身に付けるんだよ？」",
+		   NULL, " So if you learned anything from this, you need to look a bit into gaining a sense of delicacy.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「へいへーい、努力しまーす。￥
+	PlaySE(4, "S19/01/HR_KEI21150", 128, 64);
+	OutputLine(NULL, "「へいへーい、努力しまーす。」",
+		   NULL, "\"Right, right. I'll try.\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawScene( "black", 1000 );
+	PlayBGM( 1, "msys12", 128, 0 );
+	DrawSceneWithMask( "bg_110", "left", 0, 0, 300 );
+
+//　その日は、これまでで一番短い一日だった￥
+	OutputLine(NULL, "　その日は、これまでで一番短い一日だった。",
+		   NULL, "That day, was the shortest day of my life.", Line_Normal);
+	ClearMessage();
+
+//　レナが魅音に付きっ切りでずーっと話をして過ごしているようだった＠
+	OutputLine(NULL, "　レナが魅音に付きっ切りでずーっと話をして過ごしているようだった。",
+		   NULL, "Rena was talking to Mion while accompanying her around the entire time.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+
+//　とても楽しそうな話なので、ついつい加わろうかと思ったが、それはしない約束だ＠
+	OutputLine(NULL, "　とても楽しそうな話なので、ついつい加わろうかと思ったが、それはしない約束だ。",
+		   NULL, "It looked like a really fun conversation, so I reflexively thought about joining in, but I had made a promise not to.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+
+//　魅音も、俺を意識しないように精一杯がんばってるようだった＠
+	OutputLine(NULL, "　魅音も、俺を意識しないように精一杯がんばってるようだった。",
+		   NULL, "It seemed that Mion was also trying her best to ignore me.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　...だから俺も同じ様に、魅音を意識しないように精一杯がんばる￥
+	OutputLine(NULL, "　…だから俺も同じ様に、魅音を意識しないように精一杯がんばる。",
+		   NULL, "...So likewise, I did my best to ignore her.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawScene( "black", 1000 );
+	DrawScene( "bg_109", 1000 );
+
+//　お昼も久しぶりにひとりで食べた＠
+	OutputLine(NULL, "　お昼も久しぶりにひとりで食べた。",
+		   NULL, "For the first time in a while, I ate lunch alone.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　魅音もレナと二人きりで食べた￥
+	OutputLine(NULL, "　魅音もレナと二人きりで食べた。",
+		   NULL, "Mion and Rena ate theirs by themselves.", Line_Normal);
+	ClearMessage();
+
+//　灰色の感情でため息を漏らしていたら、梨花ちゃんがやって来て、俺の頭を撫でてくれた￥
+	OutputLine(NULL, "　灰色の感情でため息を漏らしていたら、梨花ちゃんがやって来て、俺の頭を撫でてくれた。",
+		   NULL, "As I let out a sigh in my ashen mood, Rika-chan came over and patted me on the head.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "ri_se_wa_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「......圭一も魅ぃもいっぱいいっぱいお勉強しましたですね。＠
+	PlaySE(4, "S19/05/500500069", 128, 64);
+	OutputLine(NULL, "「……圭一も魅ぃもいっぱいいっぱいお勉強しましたですね。」",
+		   NULL, "\"...Both Keiichi and Mii learned a whole lot.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　勉強って言い方をするとは思わなかったな＠...なんか恋愛のトラブルがあったみたいですごく嫌だぞ＠
+	OutputLine(NULL, "　勉強って言い方をするとは思わなかったな。",
+		   NULL, "I'd never say it like that.", Line_WaitForInput);
+	OutputLine(NULL, "…なんか恋愛のトラブルがあったみたいですごく嫌だぞ。",
+		   NULL, " ...It made it sound like we were having romantic problems. I didn't like that one bit.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　見かねた先生とかに、放課後に職員室に呼ばれたりはしないだろうな...￥
+	OutputLine(NULL, "　見かねた先生とかに、放課後に職員室に呼ばれたりはしないだろうな…。",
+		   NULL, "Hopefully the teacher wouldn't notice and call us to the staff room after school or something...", Line_Normal);
+	ClearMessage();
+
+//「......きっと圭一は素敵な大人になれますですよ。＠...なでなで＠
+	PlaySE(4, "S19/05/500500070", 128, 64);
+	OutputLine(NULL, "「……きっと圭一は素敵な大人になれますですよ。」",
+		   NULL, "\"...I'm sure that Keiichi will grow up to be a wonderful adult.\"", Line_WaitForInput);
+	PlaySE(4, "S19/05/500500071", 128, 64);
+	OutputLine(NULL, "…なでなで。",
+		   NULL, " ...*pat pat*", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「...ふーん＠...梨花ちゃんはお勉強家だからすごい素敵な大人になれそうだな？＠
+	PlaySE(4, "S19/01/HR_KEI21160", 128, 64);
+	OutputLine(NULL, "「…ふーん。",
+		   NULL, "\"...Hmmm.", Line_WaitForInput);
+	PlaySE(4, "S19/01/HR_KEI21170", 128, 64);
+	OutputLine(NULL, "…梨花ちゃんはお勉強家だからすごい素敵な大人になれそうだな？」",
+		   NULL, " ...Rika-chan is the studious type, so maybe you'll grow up to be an amazingly wonderful adult?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「......もちろんなのですよ＠ボクは大人になったらスゴイスゴイのです。＠
+	PlaySE(4, "S19/05/500500072", 128, 64);
+	OutputLine(NULL, "「……もちろんなのですよ。",
+		   NULL, "\"...Of course.", Line_WaitForInput);
+	PlaySE(4, "S19/05/500500073", 128, 64);
+	OutputLine(NULL, "ボクは大人になったらスゴイスゴイのです。」",
+		   NULL, " When I grow up I'll be super amazing.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 3, "sa_se_aw_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「あぁら、私も大人になったらすごいレディーになるんですのよ～？￥
+	PlaySE(4, "S19/04/500400115", 128, 64);
+	OutputLine(NULL, "「あぁら、私も大人になったらすごいレディーになるんですのよ〜？」",
+		   NULL, "\"My, when I grow up I'll be an amazing lady, you know?\"", Line_Normal);
+	ClearMessage();
+
+//「沙都子はいくつになってもお子様だと思うぞ。賭けてもいい。＠
+	PlaySE(4, "S19/01/HR_KEI21180", 128, 64);
+	OutputLine(NULL, "「沙都子はいくつになってもお子様だと思うぞ。賭けてもいい。」",
+		   NULL, "\"No matter how old you get, you'll still be a brat. You can put money on it.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	DisableWindow();
+	DrawBustshot( 3, "sa_se_bi_b1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//「なななな、なんですってぇえぇええええぇ？！？！＠
+	PlaySE(4, "S19/04/500400116", 128, 64);
+	OutputLine(NULL, "「なななな、なんですってぇえぇええええぇ？！？！」",
+		   NULL, "\"Wha-Wha-Wha-What did you saaaaaaaaaAAaaaaay!?!?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　沙都子が指を鳴らすと上からタライが落ちてきて、俺の頭に命中した。/
+	OutputLine(NULL, "　沙都子が指を鳴らすと上からタライが落ちてきて、俺の頭に命中した。",
+		   NULL, "As Satoko snapped her fingers a washbasin fell from above, hitting me squarely in the head.", Line_ContinueAfterTyping);
+
+	PlaySE( 3, "wa_015", 128, 64 );
+	Wait( 150 );
+	PlaySE( 3, "wa_029", 128, 64 );
+	DrawScene( "white", 10 );
+	PlaySE( 3, "wa_018", 128, 64 );
+	DrawScene( "black", 10 );
+	DrawScene( "bg_110", 50 );
+	ShakeScreen( 1, 50, 20, 3, 0, );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	ClearMessage();
+
+	PlayBGM( 1, "msys03", 128, 0 );
+
+//「いってぇええぇえぇ...＠何しやがんだ沙都子ぉおおぉおぉ！！！！＠
+	PlaySE(4, "S19/01/HR_KEI21190", 128, 64);
+	OutputLine(NULL, "「いってぇええぇえぇ…。",
+		   NULL, "\"Owwwwwww....", Line_WaitForInput);
+	PlaySE(4, "S19/01/HR_KEI21200", 128, 64);
+	OutputLine(NULL, "何しやがんだ沙都子ぉおおぉおぉ！！！！」",
+		   NULL, " What do you think you're doing SatokooooooooOooo!!!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	PlaySE( 3, "wa_008", 128, 64 );
+	Wait( 100 );
+	PlaySE( 3, "wa_002", 128, 64 );
+	ShakeScreen( 1, 50, 20, 3, 0, );
+	PlaySE( 3, "wa_015", 128, 64 );
+	Wait( 100 );
+	PlaySE( 3, "wa_004", 128, 64 );
+	ShakeScreen( 0, 50, 20, 3, 0, );
+
+//　どったんばったん！＠　つねったりひっかいたり...！＠
+	OutputLine(NULL, "　どったんばったん！！",
+		   NULL, "*bang* *smash*", Line_WaitForInput);
+	OutputLine(NULL, "　つねったりひっかいたり…！！",
+		   NULL, " *pinch* *squeeze*", Line_WaitForInput);
+
+//　仲間のありがたみを噛み締める一日だった￥
+	OutputLine(NULL, "　仲間のありがたみを噛み締める一日だった。",
+		   NULL, " It was a day I could thoroughly appreciate the value of having friends.", Line_Normal);
+	ClearMessage();
+
+//■６日目アイキャッチ（あっという間なので幕間じゃなくてアイキャッチでいいでしょ）
+
+
+//mov %CAMP_MUGIC,0
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+//	Wait( 1000 );
+	DrawBustshotWithFiltering( 6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot( 7, "Title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot( 5, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	Wait( 1000 );
+	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
+	DrawScene( "black", 1000 );
+	SetValidityOfInput( TRUE );
+
+}

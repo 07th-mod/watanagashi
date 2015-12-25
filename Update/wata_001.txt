@@ -2315,6 +2315,11 @@
 		   NULL, " ......Huh?", Line_Normal);
 	ClearMessage();
 
+	DisableWindow();
+	DrawBustshot( 1, "tomita1_Def", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, FALSE );
+	DrawBustshot( 3, "oka1_Def", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+
 //「あれ、...お前ら、学校のクラスメートだよなぁ？＠
 	PlaySE(4, "S19/01/HR_KEI09280", 128, 64);
 	OutputLine(NULL, "「あれ、…お前ら、学校のクラスメートだよなぁ？」",
@@ -3329,6 +3334,9 @@
 		   NULL, " Right now, how much money do you have?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	DrawBustshotWithFiltering( 3, "oka1_Def", "right", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+
 
 //　岡村くんがエリートコースでたっぷりと溜め込んだ、切れるように白い十万＄札を数え始める￥
 	OutputLine(NULL, "　岡村くんがエリートコースでたっぷりと溜め込んだ、切れるように白い十万＄札を数え始める。",
@@ -3344,6 +3352,7 @@
 
 	DisableWindow();
 	FadeBustshotWithFiltering( 1, "right", 1, FALSE, 0, 0, 300, TRUE );
+	FadeBustshotWithFiltering( 3, "right", 1, FALSE, 0, 0, 300, TRUE );
 	DrawBustshotWithFiltering( 1, "ri_si_de_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「......富田はどれくらいお金持ちですか？＠
@@ -3351,6 +3360,9 @@
 	OutputLine(NULL, "「……富田はどれくらいお金持ちですか？」",
 		   NULL, "\"...How much money do you have, Tomita?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	DrawBustshotWithFiltering( 1, "tomita1_Def", "left", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 
 //「あ、...俺は.........８８万＄＠まだまだ逆転できる位置だね！＠
@@ -3609,6 +3621,10 @@
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask( "bg_154", "left", 0, 0, 300 );
+	DrawBustshot( 1, "tomita1_Def", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, FALSE );
+	DrawBustshot( 3, "oka1_Def", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+
 
 //「前原君は...投了でいいかな...？＠
 	PlaySE(4, "S19/00/mas99003", 128, 64);
@@ -3694,10 +3710,19 @@
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
+	DisableWindow();
+	DrawBustshot( 1, "tomita1_Odoroki", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, FALSE );
+	DrawBustshot( 3, "oka1_Odoroki", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+
 //　二人は何を言われたのか、それが何を意味するのか一瞬わからず困惑する￥
 	OutputLine(NULL, "　二人は何を言われたのか、それが何を意味するのか一瞬わからず困惑する。",
 		   NULL, "The two of them, not immediately understanding what I had just said or the meaning behind it, were momentarily confused.", Line_Normal);
 	ClearMessage();
+
+
+	DisableWindow();
+	DrawBustshot( 1, "tomita1_Kanashimi", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, FALSE );
 
 //「な、前原さん、暴力はなしですよ＠　ちゃんとゲームで勝敗を...！！＠
 	PlaySE(4, "S19/25/992500005", 128, 64);
@@ -3748,6 +3773,12 @@
 	OutputLine(NULL, "　…二人は軽く考え込む。",
 		   NULL, "...The two of them considered it briefly.", Line_Normal);
 	ClearMessage();
+
+	DisableWindow();
+	DrawBustshot( 1, "tomita1_Def, -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, FALSE );
+	DrawBustshot( 3, "oka1_Def", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+
 
 //「新しいゲーム買うとか...＠...お菓子とか＠...ジュースとか...。＠
 	PlaySE(4, "S19/25/992500007", 128, 64);
@@ -3834,6 +3865,11 @@
 	OutputLine(NULL, "　赤くなるなッ！！！！」",
 		   NULL, " Don't turn red!!!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+
+	DisableWindow();
+	DrawBustshot( 1, "tomita1_Tere", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, FALSE );
+	DrawBustshot( 3, "oka1_Tere", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 
 //　赤面し、今のが回りに聞こえなかったかを気にする二人の肩をさらに力強く抱き寄せる￥
@@ -4047,6 +4083,10 @@
 	PlaySE( 3, "wa_007", 128, 64 );
 	ShakeScreen( 1, 50, 20, 3, 0, );
 	DrawScene( "bg_156", 400 );
+	DrawBustshot( 1, "tomita1_Warai", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, FALSE );
+	DrawBustshot( 3, "oka1_Warai", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+
 
 //「「ま、前原さぁあぁあぁあぁぁぁぁぁぁあああんッ！！！！！！」￥
 	PlaySE(4, "S19/24/992400014", 128, 64);
@@ -5237,7 +5277,7 @@
 	ClearMessage();
 	DisableWindow();
 	DrawScene( "black", 1000 );
-	DrawScene( "bg_127", 400 );
+	DrawScene( "bg_125", 400 );
 	PlayBGM( 1, "msys05", 128, 0 );
 
 //　熱気で火照った体を鎮めるように、いつの間にか風はやさしく涼しくなっていた＠
@@ -5289,7 +5329,7 @@
 	ClearMessage();
 	DisableWindow();
 	DrawScene( "black", 1000 );
-	DrawSceneWithMask( "bg_129", "left", 0, 0, 300 );
+	DrawSceneWithMask( "bg_125", "left", 0, 0, 300 );
 	PlayBGM( 2, "lsys11", 128, 0 );
 	DrawBustshotWithFiltering( 3, "sa_si_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
@@ -5352,7 +5392,7 @@
 		   NULL, " Ohohoho!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_129", "left", 0, 0, 300 );
+	DrawSceneWithMask( "bg_125", "left", 0, 0, 300 );
 	DrawBustshotWithFiltering( 3, "ri_si_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「......圭一も、最後はとうとう牙を剥きましたです。＠
@@ -5428,7 +5468,7 @@
 	ClearMessage();
 	DisableWindow();
 	DrawScene( "black", 1000 );
-	DrawScene( "bg_040", 400 );
+	DrawScene( "bg_126", 400 );
 
 //　その後もみんなで互いの戦果を称え合い、今日がいかに楽しかったかをいつまでも噛み締め合うのだった￥
 	OutputLine(NULL, "　その後もみんなで互いの戦果を称え合い、今日がいかに楽しかったかをいつまでも噛み締め合うのだった。",
@@ -5458,7 +5498,7 @@
 		   NULL, "The cries of the higurashi were gentle and very comforting...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "bg_040", 1000 );
+	DrawScene( "bg_126", 1000 );
 
 //■１日目幕間
 

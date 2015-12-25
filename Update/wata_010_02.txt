@@ -622,7 +622,7 @@
 	DrawScene( "black", 1000 );
 	FadeOutBGM( 1, 1000, TRUE );
 	FadeOutBGM( 2, 1000, TRUE );
-	DrawScene( "bg_080", 1000 );
+	DrawScene( "bg_081", 1000 );
 	PlayBGM( 1, "msys13", 128, 0 );
 
 //「...では、圭ちゃんの方では何か私に話すことはありませんか？＠
@@ -959,7 +959,7 @@
 	ClearMessage();
 	DisableWindow();
 	DrawScene( "black", 1000 );
-	DrawSceneWithMask( "bg_080", "up", 0, 0, 300 );
+	DrawSceneWithMask( "bg_081", "up", 0, 0, 300 );
 
 //「圭ちゃんが信じなくても、村人たちは信じてます＠...自分たちがキレイな抵抗運動をする影で、園崎家が汚い抵抗運動をしてくれた＠...自分たちの矢面に立って戦ってくれたんだってみんな思ってます＠...ですから、ちょっとしたダークヒーローとして崇められているんですよね。＠
 	PlaySE(4, "S02/06/130600359", 128, 64);
@@ -1091,7 +1091,7 @@
 	DisableWindow();
 	DrawScene( "black", 400 );
 	FadeFilm( 1000, TRUE );
-	DrawScene( "bg_080", 400 );
+	DrawScene( "bg_081", 400 );
 	PlayBGM( 1, "msys13", 128, 0 );
 
 //「笑い事じゃないです！＠　真剣になってください！！＠
@@ -1230,7 +1230,7 @@
 		   NULL, "\"We're sisters related by blood... but within the Sonozaki family, we're basically of a different class.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-  PlaySE(4, "S02/06/130600382", 128, 64);
+
 	OutputLine(NULL, "　……私とは、とても遠い存在だということを認識して下さい。",
 		   NULL, "...I want you to recognize how distant they are from me.", Line_WaitForInput);
 	PlaySE(4, "S02/06/130600383", 128, 64);
@@ -1300,7 +1300,7 @@
 		   NULL, "\"...It's just... at the moment, like I explained, the police have their eyes on the Sonozaki family already.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-  PlaySE(4, "S02/06/130600388", 128, 64);
+
 	OutputLine(NULL, "　特に大石は、園崎家がまるごと連続事件の黒幕だと決めてかかってますからね。",
 		   NULL, "Ooishi in particular completely believes that they're the masterminds behind the serial incidents.", Line_WaitForInput);
 	PlaySE(4, "S02/06/130600389", 128, 64);
@@ -1794,7 +1794,7 @@
 		   NULL, "...Shion must have been thinking the same thing...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_080", "up", 0, 0, 300 );
+	DrawSceneWithMask( "bg_081", "up", 0, 0, 300 );
 
 //「......村長さんに＠......私、あの晩＠祭具殿に忍び込んだこと......打ち明けたんです＠...誰かにそれを見られてて、......私たちを狙っている人がいるって。＠
 
@@ -1855,7 +1855,7 @@
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "S02/06/130600425", 128, 64);
+
 	OutputLine(NULL, "…本当に",
 		   NULL, " ...He was really...", Line_ContinueAfterTyping);
 
@@ -2388,7 +2388,6 @@
 	PlaySE(4, "S02/01/130100632", 128, 64);
 	OutputLine(NULL, "「…くそ…、無事でいてくれ…。",
 		   NULL, "\"...Damn it... Please be safe...", Line_WaitForInput);
-	PlaySE(4, "S02/01/130100633", 128, 64);
 	OutputLine(NULL, "……梨花ちゃんッ！！！」",
 		   NULL, " ...Rika-chan!!!\"", Line_Normal);
 	ClearMessage();

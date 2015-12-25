@@ -506,8 +506,8 @@
 	DisableWindow();
 	DrawScene( "black", 3000 );
 	PlayBGM( 1, "msys11", 128, 0 );
-	DrawSceneWithMask( "bg_043", "left", 0, 0, 3000 );
-	DrawBustshot( 2, "re_se_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	DrawSceneWithMask( "sunset/bg_051", "left", 0, 0, 3000 );
+	DrawBustshot( 2, "sunset/re_se_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「......そっか＠......引っ越しちゃうんだね＠......いつ？＠
 	PlaySE(4, "S02/02/130200586", 128, 64);
@@ -533,7 +533,7 @@
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshot( 2, "re_se_ko_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	DrawBustshot( 2, "sunset/re_se_ko_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「!s200.............................................!sd寂しくなるね＠...私一人しか、!w1000...残らない。＠
 //!s200
@@ -1179,7 +1179,7 @@
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshot( 2, "me_si_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	DrawBustshot( 2, "night/me_si_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //　み...見間違いなんかじゃない＠
 	OutputLine(NULL, "　み…見間違いなんかじゃない。",
@@ -1342,7 +1342,7 @@
 
 
 	DisableWindow();
-	DrawBustshot( 2, "me_si_wi_a2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	DrawBustshot( 2, "night/me_si_wi_a2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「あはははは、お久しぶり～＠...どう＠　元気にしてた？＠
 	PlaySE(4, "S02/03/130300725", 128, 64);
@@ -1387,7 +1387,7 @@
 
 
 	DisableWindow();
-	DrawBustshot( 2, "me_si_wa_a2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	DrawBustshot( 2, "night/me_si_wa_a2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「............本当はいけないよ＠...えへへへ。＠
 	PlaySE(4, "S02/03/130300728", 128, 64);
@@ -1431,7 +1431,7 @@
 
 
 	DisableWindow();
-	DrawBustshot( 2, "me_si_de_a2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	DrawBustshot( 2, "night/me_si_de_a2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「...最後にお話したかったから。＠
 	PlaySE(4, "S02/03/130300730", 128, 64);
@@ -1906,8 +1906,8 @@
 
 	DisableWindow();
 //	DrawFilm( 2, 170, 0, 0, 255, 0, 1000, TRUE );
-	DrawScene( "wata_mion01", 1000 );
-//	DrawBustshot( 2, "me_si_si_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, TRUE );
+//	DrawScene( "wata_mion01", 1000 );
+	DrawBustshot( 2, "me_si_si_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, TRUE );
 
 //「......今日を境に魅音が戻ってくることはもうない。＠
 	PlaySE(4, "S02/03/130300745", 128, 64);
@@ -1946,6 +1946,7 @@
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask( "bg_118", "up", 0, 0, 1300 );
+	DrawBustshot( 2, "night/me_si_him_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, TRUE );
 //	FadeBustshotWithFiltering( 5, "up", 1, FALSE, 0, 0, 300, TRUE );
 //	FadeFilm( 1000, TRUE );
 //print 6
@@ -1973,7 +1974,8 @@
 
 
 	SetValidityOfWindowDisablingWhenGraphicsControl( FALSE );
-	DrawScene( "wata_mion02", 1000 );
+	DrawScene( "black", 1000 );
+//	DrawScene( "wata_mion02", 1000 );
 //	DrawFilm( 2, 170, 170, 170, 255, 0, 1000, TRUE );
 //print 2
 
@@ -1999,7 +2001,7 @@
 
 
 
-	DrawScene( "wata_mion03", 1000 );
+//	DrawScene( "wata_mion03", 1000 );
 //	DrawFilm( 2, 119, 119, 119, 255, 0, 1000, TRUE );
 //print 2
 
@@ -2022,7 +2024,7 @@
 		   NULL, " Mion.........", Line_WaitForInput);
 
 
-	DrawScene( "wata_mion04", 1000 );
+//	DrawScene( "wata_mion04", 1000 );
 //	DrawFilm( 2,  68, 68, 68, 255, 0, 1000, TRUE );
 //print 2
 
@@ -2061,7 +2063,7 @@
 		   NULL, " so red...............", Line_WaitForInput);
 
 
-	DrawScene( "wata_mion05", 1000 );
+//	DrawScene( "wata_mion05", 1000 );
 //	DrawFilm( 2,  17, 17, 17, 255, 0, 1000, TRUE );
 //print 2
 	SetValidityOfWindowDisablingWhenGraphicsControl( TRUE );
@@ -2072,7 +2074,7 @@
 		   NULL, "............Mion............", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "black", 1000 );
+//	DrawScene( "black", 1000 );
 //	FadeFilm( 1000, TRUE );
 	DrawScene( "bg_122", 1000 );
 

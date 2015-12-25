@@ -1,0 +1,224 @@
+﻿void main()
+{
+
+//１０■４人だけの罪に終わらない？
+//（おでん屋の屋台で情報屋と接触してた感じで）
+//*Sub_Tips_038
+//gosub *tip_s
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+	DisableWindow();
+	DrawScene( "black", 1000 );
+	PlayBGM( 1, "msys13", 128, 0 );
+	DrawScene( "bg_237", 1000 );
+	PlayBGM( 2, "lsys20", 128, 0 );
+
+//「いえいえ、気にしないで下さいよ＠この店でおでんを食べるとですね＠なぜか、年契のガソリンスタンドの請求書に化けちゃうんですよ＠だから遠慮しないでもう一杯飲んでいけばいいのに。￥
+	PlaySE(4, "S20/11/440700140", 128, 64);
+	OutputLine(NULL, "「いえいえ、気にしないで下さいよ。",
+		   NULL, "\"No, no, don't worry about it.", Line_WaitForInput);
+	OutputLine(NULL, "この店でおでんを食べるとですね。",
+		   NULL, " You see, when you order the oden here...", Line_WaitForInput);
+	PlaySE(4, "S20/11/440700141", 128, 64);
+	OutputLine(NULL, "なぜか、年契のガソリンスタンドの請求書に化けちゃうんですよ。",
+		   NULL, " for some reason, it ends up on the annual invoice for our gas contracts.", Line_WaitForInput);
+	PlaySE(4, "S20/11/440700142", 128, 64);
+	OutputLine(NULL, "だから遠慮しないでもう一杯飲んでいけばいいのに。」",
+		   NULL, " So don't be shy and have another drink.\"", Line_Normal);
+	ClearMessage();
+
+//　男は、これでもう充分と赤ら顔で手を振り、駅前の華やかなネオンの中に消えていった￥
+	OutputLine(NULL, "　男は、これでもう充分と赤ら顔で手を振り、駅前の華やかなネオンの中に消えていった。",
+		   NULL, "The man, red-faced, waved his hand to say that he'd had enough, and disappeared into the brilliant neon lights in front of the station.", Line_Normal);
+	ClearMessage();
+
+
+//「......熊ちゃんも勉強しといて下さいよ＠謙虚な人が結局、一番長生きするんです。んっふっふっふ！＠
+	PlaySE(4, "S20/11/440700143", 128, 64);
+	OutputLine(NULL, "「……熊ちゃんも勉強しといて下さいよ。",
+		   NULL, "\"...Kuma-chan, you should be taking notes.", Line_WaitForInput);
+	OutputLine(NULL, "謙虚な人が結局、一番長生きするんです。んっふっふっふ！」",
+		   NULL, " The most modest people are the ones who live the longest. Nfu-fu-fu-fu!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「さっきの話、...本当っすかね。￥
+	PlaySE(4, "S20/19/443100025", 128, 64);
+	OutputLine(NULL, "「さっきの話、…本当っすかね。」",
+		   NULL, "\"Was all that... true?\"", Line_Normal);
+	ClearMessage();
+
+//「さぁて、それはわからないですけどね＠真偽はともかく、そういう話がまことしやかに流れてるということには意味があると思いますよ。＠
+	PlaySE(4, "S20/11/440700144", 128, 64);
+	OutputLine(NULL, "「さぁて、それはわからないですけどね。",
+		   NULL, "\"Well, I don't know about that.", Line_WaitForInput);
+	OutputLine(NULL, "真偽はともかく、そういう話がまことしやかに流れてるということには意味があると思いますよ。」",
+		   NULL, " Whether or not it's true, I think there's meaning in hearing something that sounds so plausible.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「...そんなのが村長を狙う動機になりうるんすかね...？＠
+	PlaySE(4, "S20/19/443100026", 128, 64);
+	OutputLine(NULL, "「…そんなのが村長を狙う動機になりうるんすかね…？」",
+		   NULL, "\"...Would something like that be a motive to go for the mayor...?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「熊ちゃん、いつも言ってるでしょ＠動機ってのは、その本人に充分でありさえすれば足りるんです＠価値観の違いをよく考えなくちゃ＠...お母さん、!w700もう一杯ください。￥
+	PlaySE(4, "S20/11/440700145", 128, 64);
+	OutputLine(NULL, "「熊ちゃん、いつも言ってるでしょ。",
+		   NULL, "\"Kuma-chan, here's what I always say.", Line_WaitForInput);
+	OutputLine(NULL, "動機ってのは、その本人に充分でありさえすれば足りるんです。",
+		   NULL, " The motive only has to be enough for the person in question.", Line_WaitForInput);
+	PlaySE(4, "S20/11/440700146", 128, 64);
+	OutputLine(NULL, "価値観の違いをよく考えなくちゃ。",
+		   NULL, " You need to think about how different people value different things.", Line_WaitForInput);
+	PlaySE(4, "S20/11/440700147", 128, 64);
+	OutputLine(NULL, "…お母さん、",
+		   NULL, " ...Hey, bartender,", Line_ContinueAfterTyping);
+
+	SetValidityOfInput( FALSE );
+	Wait( 700 );
+	SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "もう一杯ください。」",
+		   NULL, " give me another mug.\"", Line_Normal);
+	ClearMessage();
+
+
+//　情報を伏せているにも関わらず、すでに雛見沢中で知られている、富竹と鷹野の死￥
+	OutputLine(NULL, "　情報を伏せているにも関わらず、すでに雛見沢中で知られている、富竹と鷹野の死。",
+		   NULL, "Though we have been suppressing the information, Tomitake and Takano's deaths were already known throughout Hinamizawa.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawScene( "bg_261", 400 );
+	PlayBGM( 1, "msys07", 128, 0 );
+
+//　その死は、禁断の神殿「祭具殿」に踏み入ったためにオヤシロさまの怒りに触れた、というのがもっぱらの噂だ＠
+	OutputLine(NULL, "　その死は、禁断の神殿「祭具殿」に踏み入ったためにオヤシロさまの怒りに触れた、というのがもっぱらの噂だ。",
+		   NULL, "All of the rumors pointed to them having incurred the wrath of Oyashiro-sama for setting foot in the forbidden temple—the storehouse for ritual implements.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+
+//　その噂によれば、踏み入った人間はまだ２人いる＠...園崎詩音と＠前原圭一＠
+	OutputLine(NULL, "　その噂によれば、踏み入った人間はまだ２人いる。",
+		   NULL, "According to the rumors, there were two other people who went in there with them.", Line_WaitForInput);
+	OutputLine(NULL, "…園崎詩音と、",
+		   NULL, " ...Shion Sonozaki...", Line_WaitForInput);
+	OutputLine(NULL, "前原圭一。",
+		   NULL, " and Keiichi Maebara.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　この２人にも「オヤシロさまの祟り」があるかもしれないと、影で囁く声があるという￥
+	OutputLine(NULL, "　この２人にも「オヤシロさまの祟り」があるかもしれないと、影で囁く声があるという。",
+		   NULL, "People were whispering in the shadows that those two would be cursed by Oyashiro-sama as well.", Line_Normal);
+	ClearMessage();
+
+//　だが、責任は祭具殿に踏み入った４人だけに留まらないらしいのだ＠
+	OutputLine(NULL, "　だが、責任は祭具殿に踏み入った４人だけに留まらないらしいのだ。",
+		   NULL, "Apparently, however, the responsibility didn't fall solely on the four trespassers' shoulders.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+
+//　昨年までは厳重な施錠だったのだが、今年からは簡単な施錠になったため、簡単に賊の侵入を許してしまったのではないか＠
+	OutputLine(NULL, "　昨年までは厳重な施錠だったのだが、今年からは簡単な施錠になったため、簡単に賊の侵入を許してしまったのではないか。",
+		   NULL, "Until last year, it was locked up tight, but this year it had been changed to a simpler lock—hadn't that been what allowed thieves to enter so easily?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　...そういう噂が流れているのだ￥
+	OutputLine(NULL, "　…そういう噂が流れているのだ。",
+		   NULL, "...Those were the rumors going around.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawScene( "bg_237", 400 );
+	PlayBGM( 2, "lsys20", 128, 0 );
+	PlayBGM( 0, "lsys13", 128, 0 );
+//dwaveplayloop 1
+
+//「熊ちゃんは見たことありませんか＠　私はずいぶん前に何かの用で行った時に見たことをよく覚えてますよ。＠
+	PlaySE(4, "S20/11/440700148", 128, 64);
+	OutputLine(NULL, "「熊ちゃんは見たことありませんか？",
+		   NULL, "\"Have you ever seen it, Kuma-chan?", Line_WaitForInput);
+	OutputLine(NULL, "　私はずいぶん前に何かの用で行った時に見たことをよく覚えてますよ。」",
+		   NULL, " I remember it well—I had to go there for something quite a while back.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「すみません、ちょっと思い出せないっす。＠
+	PlaySE(4, "S20/19/443100027", 128, 64);
+	OutputLine(NULL, "「すみません、ちょっと思い出せないっす。」",
+		   NULL, "\"Sorry, I don't really remember.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「それはもう、おっかないくらいに厳重に施錠してありましてね＠重そうなカンヌキでどっかりと塞がれていて＠まるで大金庫みたいに厳重な蔵だったんですよ。￥
+	PlaySE(4, "S20/11/440700149", 128, 64);
+	OutputLine(NULL, "「それはもう、おっかないくらいに厳重に施錠してありましてね。",
+		   NULL, "\"It was locked up so tight it was scary.", Line_WaitForInput);
+	OutputLine(NULL, "重そうなカンヌキでどっかりと塞がれていて。",
+		   NULL, " There were these real heavy bars holding it shut.", Line_WaitForInput);
+	PlaySE(4, "S20/11/440700150", 128, 64);
+	OutputLine(NULL, "まるで大金庫みたいに厳重な蔵だったんですよ。」",
+		   NULL, " It was sealed up as good as a bank vault.\"", Line_Normal);
+	ClearMessage();
+
+//　それが今年から、本当に簡単な、安っぽい南京錠ひとつだけになった＠
+	OutputLine(NULL, "　それが今年から、本当に簡単な、安っぽい南京錠ひとつだけになった。",
+		   NULL, "This year, it was a very simple and cheap padlock.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+
+//　......神社を守る一人娘、古手梨花が重い施錠を嫌い、村長に相談＠...簡単な南京錠に付け替えたというのだ￥
+	OutputLine(NULL, "　……神社を守る一人娘、古手梨花が重い施錠を嫌い、村長に相談。",
+		   NULL, "......The lone girl protecting the shrine, Rika Furude, disliked the heavy locks, and consulted with the mayor...", Line_WaitForInput);
+	OutputLine(NULL, "…簡単な南京錠に付け替えたというのだ。",
+		   NULL, " who had replaced it with a simpler padlock.", Line_Normal);
+	ClearMessage();
+
+//「...だから、村長と古手梨花も同罪、ってことなんすか...＠　だとしたら、...村長に続いて、古手梨花もまずいじゃないっすか？！＠
+	PlaySE(4, "S20/19/443100028", 128, 64);
+	OutputLine(NULL, "「…だから、村長と古手梨花も同罪、ってことなんすか…？",
+		   NULL, "\"...So then the mayor and Rika Furude share the crime...?", Line_WaitForInput);
+	OutputLine(NULL, "　だとしたら、…村長に続いて、古手梨花もまずいじゃないっすか？！」",
+		   NULL, " So... then, after the mayor, wouldn't Rika Furude be in danger next?!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「その可能性は大ですねぇ＠......熊ちゃん＠雛見沢を巡回してる覆面車に至急連絡＠古手神社近辺に張り付かせてください。＠
+	PlaySE(4, "S20/11/440700151", 128, 64);
+	OutputLine(NULL, "「その可能性は大ですねぇ。",
+		   NULL, "\"There's a decent possibility.", Line_WaitForInput);
+	OutputLine(NULL, "……熊ちゃん。",
+		   NULL, " ...Kuma-chan.", Line_WaitForInput);
+	PlaySE(4, "S20/11/440700152", 128, 64);
+	OutputLine(NULL, "雛見沢を巡回してる覆面車に至急連絡。",
+		   NULL, " I want you to contact all the cars we have in Hinamizawa.", Line_WaitForInput);
+	PlaySE(4, "S20/11/440700153", 128, 64);
+	OutputLine(NULL, "古手神社近辺に張り付かせてください。」",
+		   NULL, " Tell them to stick near the Furude Shrine.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「りょ、了解っす！！！￥
+	PlaySE(4, "S20/19/443100029", 128, 64);
+	OutputLine(NULL, "「りょ、了解っす！！！」",
+		   NULL, "\"G-Got it!!!\"", Line_Normal);
+	ClearMessage();
+
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	DisableWindow();
+	DrawScene( "black", 1000 );
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+//gosub *tip_e
+//return
+
+
+}

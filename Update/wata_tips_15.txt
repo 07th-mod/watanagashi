@@ -152,18 +152,16 @@
 	OutputLine(NULL, "　御三家で合議することが名残となっているだけで、村内の取り決めは事実上、現当主の園崎お魎がひとりで決めていると言っていい。",
 		   NULL, "The three families conferring with each other is similar to the old way—the current head of the Sonozaki family, Oryou, essentially decides all of the goings-on in the village by herself.", Line_Normal);
 	ClearMessage();
-
-
-	SetValidityOfInput( FALSE );
-	Wait( 1000 );
-	SetValidityOfInput( TRUE );
 	DisableWindow();
+	SetValidityOfInput( FALSE );
+	DrawBustshotWithFiltering( 6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot( 7, "Title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot( 5, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	Wait( 1000 );
+	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
 	DrawScene( "black", 1000 );
-	FadeOutBGM( 0, 1000, FALSE );
-	FadeOutBGM( 1, 1000, FALSE );
-	FadeOutBGM( 2, 1000, TRUE );
-//gosub *tip_e
-//return
+	SetValidityOfInput( TRUE );
 
 
 }

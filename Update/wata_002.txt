@@ -3563,7 +3563,7 @@
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
 	PlayBGM( 1, "msys01", 128, 0 );
-	DrawScene( "bg_170", 1000 );
+	DrawScene( "bg_210", 1000 );
 //gosub *Sion_resutoran
 
 //「圭一いる＠　あら、お風呂だったのね＠...............それ、化粧水よ？＠
@@ -3642,7 +3642,7 @@
 	ClearMessage();
 	DisableWindow();
 	DrawScene( "black", 1000 );
-	DrawSceneWithMask( "bg_117", "left", 0, 0, 300 );
+	DrawSceneWithMask( "night/bg_117", "left", 0, 0, 300 );
 
 //　親父にしては機敏に車の準備をしていた＠
 	OutputLine(NULL, "　親父にしては機敏に車の準備をしていた。",
@@ -3655,7 +3655,7 @@
 		   NULL, "He must be hungry, he really only moves so energetically when it's time to eat.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "bg_100", 400 );
+	DrawScene( "bg_103", 400 );
 
 //「お待たせー＠で、どこに食べに行くの。＠
 	PlaySE(4, "S19/01/HR_KEI11690", 128, 64);
@@ -3694,7 +3694,7 @@
 		   NULL, "As one who seeks the way of the gourmand, I, Keiichi Maebara, am genuinely intrigued!", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "bg_209", 400 );
+	DrawScene( "bg_252", 400 );
 
 //　車は、暮れだしたら早い雛見沢の闇夜をライトで切り裂きながら、一路、町を目指すのだった￥
 	OutputLine(NULL, "　車は、暮れだしたら早い雛見沢の闇夜をライトで切り裂きながら、一路、町を目指すのだった。",
@@ -3703,7 +3703,7 @@
 	DisableWindow();
 	DrawScene( "black", 1000 );
 	PlayBGM( 2, "lsys20", 128, 0 );
-	DrawSceneWithMask( "bg_168", "left", 0, 0, 300 );
+	DrawSceneWithMask( "bg_127", "left", 0, 0, 300 );
 
 //　隠れた名店はどこにあるのかと思ったら......。それは何と駅前のファミレスだった￥
 	OutputLine(NULL, "　隠れた名店はどこにあるのかと思ったら……。それは何と駅前のファミレスだった。",
@@ -3766,7 +3766,7 @@
 		   NULL, " That was the reason I never noticed it before.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_169", "left", 0, 0, 300 );
+	DrawSceneWithMask( "bg_168b", "left", 0, 0, 300 );
 
 //　お店の駐車場に車を入れる＠......繁盛しているらしいな＠車は結構止まっている￥
 	OutputLine(NULL, "　お店の駐車場に車を入れる。",
@@ -3843,15 +3843,9 @@
 	ClearMessage();
 
 	DisableWindow();
-//setwindow 31,16,22,16,26,26,0,2,20,1,1,#ffffff,0,0,639,479
-	DrawSceneWithMask( "bg_167", "left", 0, 0, 1300 );
-	SetValidityOfInput( FALSE );
-	Wait( 1000 );
-	SetValidityOfInput( TRUE );
-//setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,639,479
 	FadeOutBGM( 1, 1000, TRUE );
 	FadeOutBGM( 2, 1000, TRUE );
-	DrawSceneWithMask( "bg_165", "left", 0, 0, 1300 );
+	DrawSceneWithMask( "night/bg_165", "left", 0, 0, 1300 );
 	PlayBGM( 1, "msys02", 128, 0 );
 //!sd
 
@@ -3879,7 +3873,7 @@
 		   NULL, "The taste was - no offense to Dad - not so different from your run-of-the-mill family restaurant...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "bg_163", 1000 );
+	DrawScene( "night/bg_163", 1000 );
 
 //「...味だけで言えば、...普通のファミレスに見える。＠
 	PlaySE(4, "S19/01/HR_KEI11740", 128, 64);
@@ -3999,7 +3993,7 @@
 		   NULL, "The apparently rookie waitress rushed off flustered.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_164", "left", 0, 0, 300 );
+	DrawSceneWithMask( "night/bg_164", "left", 0, 0, 300 );
 
 //「...お父さん＠......ひょっとしてこの店って...。＠
 	PlaySE(4, "S19/01/HR_KEI11750", 128, 64);
@@ -4031,7 +4025,7 @@
 	ShakeScreen( 0, 50, 20, 3, 0, );
 	FadeBustshot( 5, FALSE, 0, 0, 0, 0, 100, TRUE );
 //setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,639,479
-	DrawScene( "bg_164", 400 );
+	DrawScene( "night/bg_164", 400 );
 
 //!sd
 
@@ -4135,7 +4129,7 @@
 	ClearMessage();
 	DisableWindow();
 	FadeOutBGM( 1, 1000, TRUE );
-	DrawSceneWithMask( "bg_161", "right", 0, 0, 300 );
+	DrawSceneWithMask( "night/bg_163", "right", 0, 0, 300 );
 	PlayBGM( 1, "msys01", 128, 0 );
 
 //　親父がいなくなり、ボックス席には俺ひとり＠
@@ -5114,14 +5108,14 @@
 		   NULL, "...Because there was no way that the Mion I knew had this side to her.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_165", "left", 0, 0, 300 );
+	DrawSceneWithMask( "night/bg_165", "left", 0, 0, 300 );
 
 //　その時、先輩のウェイトレスが向こうで手を振っているのに気付いた￥
 	OutputLine(NULL, "　その時、先輩のウェイトレスが向こうで手を振っているのに気付いた。",
 		   NULL, "At that moment, we realized that the more veteran waitress was waving at us from across the room.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_161", "right", 0, 0, 300 );
+	DrawSceneWithMask( "night/bg_163", "right", 0, 0, 300 );
 
 //「園崎さ～ん、Ｒ入っちゃっていいですよ～！＠
 	PlaySE(4, "S19/00/wait99001", 128, 64);
@@ -5223,7 +5217,7 @@
 		   NULL, "Mion laughed with a warm smile devoid of any remaining nervousness, and disappeared into the back...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_165", "right", 0, 0, 300 );
+	DrawSceneWithMask( "night/bg_165", "right", 0, 0, 300 );
 
 //　...今日は何だか貴重な経験を得た気がする＠
 	OutputLine(NULL, "　…今日は何だか貴重な経験を得た気がする。",

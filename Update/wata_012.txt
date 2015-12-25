@@ -186,7 +186,7 @@
 		   NULL, " What if Rika-chan's dance ends while we're messing around here?!", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "tm_si_ko_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "night/tm_si_ko_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //　......そうまくし立てて、富竹さんの手から錠前を取り返し、...掛け直す＠
 	OutputLine(NULL, "　……そうまくし立てて、富竹さんの手から錠前を取り返し、…掛け直す。",
@@ -202,7 +202,7 @@
 		   NULL, " Let's go, let's go!!", Line_WaitForInput);
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 3, "ta_si_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "night/ta_si_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
 
@@ -213,7 +213,7 @@
 		   NULL, " Tomitake-san grinned painfully.", Line_WaitForInput);
 
 	DisableWindow();
-	DrawBustshot( 2, "si_si_aw_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	DrawBustshot( 2, "night/si_si_aw_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //詩音は俺のことを、小馬鹿にするように肩をすくめる＠...でもそれでいいんだ￥
 	OutputLine(NULL, "詩音は俺のことを、小馬鹿にするように肩をすくめる。",
@@ -950,7 +950,7 @@
 	ClearMessage();
 	DisableWindow();
 	DrawBustshot( 2, "re_se_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawScene( "bg_022", 1000 );
+	DrawScene( "bg_020", 1000 );
 
 
 	PlayBGM( 1, "msys17", 128, 0 );
@@ -1965,7 +1965,6 @@
 	PlaySE(4, "S02/11/130700383", 128, 64);
 	OutputLine(NULL, "「では…参りましょうか。",
 		   NULL, "\"Then... let's get going.", Line_WaitForInput);
-	PlaySE(4, "S02/11/130700384", 128, 64);
 	OutputLine(NULL, "お茶菓子でも買って行きます？」",
 		   NULL, " Want to buy some tea biscuits on the way there?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);

@@ -102,18 +102,21 @@
 	ClearMessage();
 	DisableWindow();
 	DrawScene( "white", 400 );
-	DrawSceneWithMask( "bg_067", "m1", 0, 0, 300 );
+	DrawSceneWithMask( "bg_038", "m1", 0, 0, 300 );
 	PlayBGM( 1, "msys01", 128, 0 );
 	DrawBustshotWithFiltering( 2, "re_se_de_a1", "right", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 //「圭一く～ん、おっはよ～＠　あれ＠　圭一くん、目が真っ赤だよ＠　どうしてだろ？　だろ？」＠
+	PlaySE(4, "S02/02/130200071", 128, 64);
 	OutputLine(NULL, "「圭一く〜ん、おっはよ〜！",
 		   NULL, "\"Keiichi-kuuun! Good morning!", Line_WaitForInput);
+	PlaySE(4, "S02/02/130200072", 128, 64);
 	OutputLine(NULL, "　あれ？",
 		   NULL, " Huh?", Line_WaitForInput);
 	PlaySE(4, "S02/02/130200073", 128, 64);
 	OutputLine(NULL, "　圭一くん、目が真っ赤だよ？",
 		   NULL, " Keiichi-kun, your eyes are all red!", Line_WaitForInput);
+	PlaySE(4, "S02/02/130200074", 128, 64);
 	OutputLine(NULL, "　どうしてだろ？　だろ？」」",
 		   NULL, " Why is that? Why?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -142,6 +145,7 @@
 	PlaySE(4, "S02/02/130200075", 128, 64);
 	OutputLine(NULL, "「昨日のお祭りは楽しかったね…！",
 		   NULL, "\"The festival yesterday was a lot of fun...!", Line_WaitForInput);
+	PlaySE(4, "S02/02/130200076", 128, 64);
 	OutputLine(NULL, "　レナも興奮がなかなか覚めなくて、なかなか寝れなかったんだよ。だよ！」",
 		   NULL, " Rena's excitement took a long time to go to sleep, so I took a long time to go to sleep too! To sleep!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -153,6 +157,7 @@
 	ClearMessage();
 
 //「こういうお祭りが何度もあればいいのにね＠/
+	PlaySE(4, "S02/02/130200077", 128, 64);
 	OutputLine(NULL, "「こういうお祭りが何度もあればいいのにね！",
 		   NULL, "\"They should have this kind of festival more often!", Line_WaitForInput);
 
@@ -160,6 +165,7 @@
 	DrawBustshot( 2, "re_se_ha_b1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //　またみんなで大盛り上がり。はぅ！＠
+	PlaySE(4, "S02/02/130200078", 128, 64);
 	OutputLine(NULL, "　またみんなで大盛り上がり。はぅ！」",
 		   NULL, " So we can have lots of fun together again. Hau!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -280,6 +286,7 @@
 
 
 //「え...？＠
+	PlaySE(4, "S02/01/130100213", 128, 64);
 	OutputLine(NULL, "「え…？」",
 		   NULL, "\"Huh...?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -423,6 +430,7 @@
 	DrawBustshot( 3, "re_se_na_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「......魅ぃちゃん、!w800...ひょっとして、具合悪くない？＠
+	PlaySE(4, "S02/02/130200086", 128, 64);
 	OutputLine(NULL, "「……魅ぃちゃん、",
 		   NULL, "\"......Mii-chan,", Line_ContinueAfterTyping);
 
@@ -461,6 +469,7 @@
 	DrawBustshot( 3, "re_se_ko_b1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「魅ぃちゃん...ちょとだけど熱あるよ？＠
+	PlaySE(4, "S02/02/130200087", 128, 64);
 	OutputLine(NULL, "「魅ぃちゃん…ちょとだけど熱あるよ？」",
 		   NULL, "\"Mii-chan... You're a little bit warm.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -741,6 +750,7 @@
 	FadeOutBGM( 1, 1000, TRUE );
 	FadeOutBGM( 2, 1000, TRUE );
 	DrawSceneWithMask( "bg_109", "left", 0, 0, 300 );
+	DrawBustshot( 1, "Tie_Niramu", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, FALSE );
 	PlayBGM( 1, "msys03", 128, 0 );
 
 //　俺の背後に...まるでスケ番がカミソリでも持つように、両手に３本ずつのチョークを持った先生の影が......＠ゴゴゴゴゴ......￥
@@ -761,6 +771,7 @@
 
 
 //「あ、!w1000......は、はい、!w700よ、喜んで...！＠
+	PlaySE(4, "S02/01/130100227", 128, 64);
 	OutputLine(NULL, "「あ、",
 		   NULL, "\"Uh,", Line_ContinueAfterTyping);
 
@@ -866,8 +877,10 @@
 	ClearMessage();
 
 //「...魅音、風邪の方はいいのかよ＠眠いのは寝不足じゃなくて、風邪薬の副作用なんだろ？＠
+	PlaySE(4, "S02/01/130100231", 128, 64);
 	OutputLine(NULL, "「…魅音、風邪の方はいいのかよ。",
 		   NULL, "\"...Mion, how is your cold doing?", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100232", 128, 64);
 	OutputLine(NULL, "眠いのは寝不足じゃなくて、風邪薬の副作用なんだろ？」",
 		   NULL, " You're sleepy because of the medicine, not from lack of sleep, right?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -877,8 +890,10 @@
 	DrawBustshot( 2, "me_se_aw_a2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「ん＠　...あはははは、実は内緒なんだけど...、昨日はお祭りのあとで親族の宴会に巻き込まれちゃってさ＠/
+	PlaySE(4, "S02/03/130300099", 128, 64);
 	OutputLine(NULL, "「ん？",
 		   NULL, "\"Hm?", Line_WaitForInput);
+	PlaySE(4, "S02/03/130300100", 128, 64);
 	OutputLine(NULL, "　…あはははは、実は内緒なんだけど…、昨日はお祭りのあとで親族の宴会に巻き込まれちゃってさ。",
 		   NULL, " ...Ahahahaha. Actually, this is a secret, but... after the festival yesterday, I got wrapped up in the party my relatives were having.", Line_WaitForInput);
 
@@ -886,6 +901,7 @@
 	DrawBustshot( 2, "me_se_wi_b2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //それで...チョイっと。￥
+	PlaySE(4, "S02/03/130300101", 128, 64);
 	OutputLine(NULL, "それで…チョイっと。」",
 		   NULL, " And well... I had a bit.\"", Line_Normal);
 	ClearMessage();
@@ -1107,6 +1123,7 @@
 	DrawBustshot( 2, "me_se_ma_b2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「昨日の綿流しの晩さ。/
+	PlaySE(4, "S02/03/130300113", 128, 64);
 	OutputLine(NULL, "「昨日の綿流しの晩さ。",
 		   NULL, "\"Last night, near the end of the festival.", Line_ContinueAfterTyping);
 
@@ -1207,8 +1224,10 @@
 	PlaySE(4, "S02/03/130300117", 128, 64);
 	OutputLine(NULL, "じゃあもうひとつ質問ね。",
 		   NULL, " Then, one more question.", Line_WaitForInput);
+	PlaySE(4, "S02/03/130300118", 128, 64);
 	OutputLine(NULL, "同じく昨夜。",
 		   NULL, " On the same night,", Line_WaitForInput);
+	PlaySE(4, "S02/03/130300119", 128, 64);
 	OutputLine(NULL, "詩音に会わなかった？」",
 		   NULL, " did you see Shion?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1427,6 +1446,7 @@
 
 
 //「.........あ、!w800.........あぁ。＠
+	PlaySE(4, "S02/01/130100253", 128, 64);
 	OutputLine(NULL, "「………あ、",
 		   NULL, "\"......Um.", Line_ContinueAfterTyping);
 
@@ -1518,6 +1538,7 @@
 	DisableWindow();
 	StopSE( 3 );
 	DrawScene( "bg_028", 400 );
+	DrawBustshot( 1, "Tie_Niramu", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, FALSE );
 	PlayBGM( 1, "msys12", 128, 0 );
 
 //「こぉら＠　遅いですよ前原くん＠顔を洗うだけなのに、時間がかかり過ぎです！＠
@@ -1560,7 +1581,8 @@
 		   NULL, "I turned around, but Mion had crossed through the schoolyard without me realizing it and was now standing at the gate.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_019", "right", 0, 0, 300 );
+	DrawScene( "bg_028", 400 );
+	DrawBustshot( 1, "Tie_def", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, FALSE );
 
 //「さ、お勉強に戻りますよ＠　早く早く。＠
 	PlaySE(4, "S02/22/131400006", 128, 64);
@@ -1629,6 +1651,7 @@
 	DrawBustshotWithFiltering( 3, "re_se_wa_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「あ、あははははは～！＠/
+	PlaySE(4, "S02/02/130200094", 128, 64);
 	OutputLine(NULL, "「あ、あははははは〜！！",
 		   NULL, "\"Ah, ahahahaha~!!", Line_WaitForInput);
 
@@ -1636,6 +1659,7 @@
 	DrawBustshot( 3, "re_se_ka_b1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //　ゆ、昨夜の沙都子ちゃん、か、かぁいかったよ！　はぅ～！！＠
+	PlaySE(4, "S02/02/130200095", 128, 64);
 	OutputLine(NULL, "　ゆ、昨夜の沙都子ちゃん、か、かぁいかったよ！　はぅ〜！！」",
 		   NULL, " S-Satoko-chan was so...so kyuute last night! Hau~!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1664,7 +1688,7 @@
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
 	DrawBustshot( 2, "re_se_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "bg_120", "left", 0, 0, 300 );
+	DrawSceneWithMask( "bg_038", "left", 0, 0, 300 );
 
 
 	PlayBGM( 1, "msys12", 128, 0 );
@@ -1687,6 +1711,7 @@
 	DrawBustshot( 2, "re_se_ha_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「......魅ぃちゃんも風邪だったみたいだけど、!w1000...ひょっとして圭一くんもなのかな？　かな？＠
+	PlaySE(4, "S02/02/130200098", 128, 64);
 	OutputLine(NULL, "「……魅ぃちゃんも風邪だったみたいだけど、",
 		   NULL, "\"...Mii-chan had a cold, right?", Line_ContinueAfterTyping);
 
@@ -1841,6 +1866,7 @@
 	PlaySE(4, "S02/00/132700010", 128, 64);
 	OutputLine(NULL, "「もしもし！",
 		   NULL, "\"Hello!", Line_WaitForInput);
+	PlaySE(4, "S02/00/132700011", 128, 64);
 	OutputLine(NULL, "　前原です。",
 		   NULL, " Maebara speaking.", Line_ContinueAfterTyping);
 //!s300
@@ -1917,6 +1943,7 @@
 	PlaySE(4, "S02/01/130100267", 128, 64);
 	OutputLine(NULL, "「詩音か。",
 		   NULL, "\"Shion?", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100268", 128, 64);
 	OutputLine(NULL, "魅音と同じで、今日は二日酔いで寝込んでるんじゃないかと思ったぜ。」",
 		   NULL, " I thought you'd be sleeping in today with a hangover, same as Mion.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1926,6 +1953,7 @@
 	PlaySE(4, "S02/06/130600153", 128, 64);
 	OutputLine(NULL, "「え？",
 		   NULL, "\"What?", Line_WaitForInput);
+	PlaySE(4, "S02/06/130600154", 128, 64);
 	OutputLine(NULL, "　お姉、二日酔いなんですか？",
 		   NULL, " Mion had a hangover?", Line_WaitForInput);
 	PlaySE(4, "S02/06/130600155", 128, 64);
@@ -1952,6 +1980,7 @@
 
 
 //「...お話したいことがあったんですけど...長電話が無理じゃ仕方ないですね...。＠
+	PlaySE(4, "S02/06/130600156", 128, 64);
 	OutputLine(NULL, "「…お話したいことがあったんですけど…長電話が無理じゃ仕方ないですね…。」",
 		   NULL, "\"...There's something I wanted to talk about... but if we can't talk long, I guess that's that...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -2145,6 +2174,7 @@
 	ClearMessage();
 
 //「お前も昨夜は飲んだだろ＠隠しても無駄だぞー＠で、学校を早退したに違いない。＠
+	PlaySE(4, "S02/01/130100283", 128, 64);
 	OutputLine(NULL, "「お前も昨夜は飲んだだろ。",
 		   NULL, "\"You were drinking last night too, weren't you?", Line_WaitForInput);
 	PlaySE(4, "S02/01/130100284", 128, 64);
@@ -2410,6 +2440,10 @@
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
+	DisableWindow();
+	DrawSceneWithMask( "bg_112", "left", 0, 0, 300 );
+
+
 //　...結局、ひと気のない休憩コーナーでお喋りをすることになった￥
 	OutputLine(NULL, "　…結局、ひと気のない休憩コーナーでお喋りをすることになった。",
 		   NULL, "...We ended up going to the lounge area, which was vacant, and continuing the conversation.", Line_Normal);
@@ -2620,6 +2654,7 @@
 	PlaySE(4, "S02/11/130700004", 128, 64);
 	OutputLine(NULL, "「どうも！",
 		   NULL, "\"Hello!", Line_WaitForInput);
+	PlaySE(4, "S02/11/130700005", 128, 64);
 	OutputLine(NULL, "　こんにちは。",
 		   NULL, " Good afternoon.", Line_WaitForInput);
 	PlaySE(4, "S02/11/130700006", 128, 64);
@@ -2726,6 +2761,7 @@
 
 
 //「え＠　あ、...そうなのか？＠
+	PlaySE(4, "S02/01/130100309", 128, 64);
 	OutputLine(NULL, "「え？",
 		   NULL, "\"Huh?", Line_WaitForInput);
 	PlaySE(4, "S02/01/130100310", 128, 64);
@@ -2760,8 +2796,10 @@
 
 
 //「あぁ＠丈夫だと思う。＠
+	PlaySE(4, "S02/01/130100311", 128, 64);
 	OutputLine(NULL, "「あぁ。",
 		   NULL, "\"Yeah.", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100312", 128, 64);
 	OutputLine(NULL, "丈夫だと思う。」",
 		   NULL, " Probably okay.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -2771,6 +2809,7 @@
 	PlaySE(4, "S02/06/130600201", 128, 64);
 	OutputLine(NULL, "「じゃあ、今夜電話しますので、その時に。",
 		   NULL, "\"Then I'll talk to you later tonight.", Line_WaitForInput);
+	PlaySE(4, "S02/06/130600202", 128, 64);
 	OutputLine(NULL, "じゃ！」",
 		   NULL, " Bye!\"", Line_Normal);
 	ClearMessage();
@@ -2868,11 +2907,12 @@
 	FadeOutBGM( 2, 1000, TRUE );
 	DrawScene( "black", 1000 );
 	DrawBustshot( 2,"oi_si_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "bg_234", "up", 0, 0, 200 );
+	DrawSceneWithMask( "bg_112", "up", 0, 0, 200 );
 
 	PlayBGM( 1, "msys12", 128, 0 );
 
 //「前原さんは園崎さんのことをどれくらいご存知で？＠
+	PlaySE(4, "S02/11/130700019", 128, 64);
 	OutputLine(NULL, "「前原さんは園崎さんのことをどれくらいご存知で？」",
 		   NULL, "\"Maebara-san, how much do you know about Sonozaki-san?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -2893,10 +2933,13 @@
 	ClearMessage();
 
 //「園崎家はこの地域一帯を牛耳ってるヤクザ屋さんです＠ちなみに彼女のお父さんは、××組系のヤクザの大幹部さんです＠ご存知でした？＠
+	PlaySE(4, "S02/11/130700020", 128, 64);
 	OutputLine(NULL, "「園崎家はこの地域一帯を牛耳ってるヤクザ屋さんです。",
 		   NULL, "\"The Sonozakis are a yakuza group with this entire region under their thumb.", Line_WaitForInput);
+	PlaySE(4, "S02/11/130700021", 128, 64);
 	OutputLine(NULL, "ちなみに彼女のお父さんは、××組系のヤクザの大幹部さんです。",
 		   NULL, " Plus, her father is a high-ranked executive in the ×× yakuza association.", Line_WaitForInput);
+	PlaySE(4, "S02/11/130700022", 128, 64);
 	OutputLine(NULL, "ご存知でした？」",
 		   NULL, " Did you know that?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -2912,12 +2955,14 @@
 	ClearMessage();
 
 //「詩音さんの自宅をご存知ないんですか＠
+	PlaySE(4, "S02/11/130700023", 128, 64);
 	OutputLine(NULL, "「詩音さんの自宅をご存知ないんですか？",
 		   NULL, "\"Have you ever seen where Shion-san lives?", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //　高い塀に有刺鉄線と監視カメラで守られた、典型的なヤクザの組長宅ですよ＠今度ぜひ遊びに行ってみてください。＠
+	PlaySE(4, "S02/11/130700024", 128, 64);
 	OutputLine(NULL, "　高い塀に有刺鉄線と監視カメラで守られた、典型的なヤクザの組長宅ですよ。",
 		   NULL, "It's the very picture of a gang boss's house, protected by high walls, barbed-wire fence, and security cameras.", Line_WaitForInput);
 	PlaySE(4, "S02/11/130700025", 128, 64);
@@ -2927,6 +2972,7 @@
 
 
 //「..............................。＠
+	PlaySE(4, "S02/01/130100318", 128, 64);
 	OutputLine(NULL, "「…………………………。」",
 		   NULL, "\"............\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
@@ -2945,11 +2991,13 @@
 	PlaySE(4, "S02/11/130700027", 128, 64);
 	OutputLine(NULL, "まさかまさか。",
 		   NULL, " Not at all, not at all.", Line_WaitForInput);
+	PlaySE(4, "S02/11/130700028", 128, 64);
 	OutputLine(NULL, "園崎魅音さんが継ぐのはそんなチンケなヤクザ組織だけじゃありません。",
 		   NULL, " A boring old yakuza group isn't the only thing Mion Sonozaki-san will inherit.", Line_WaitForInput);
 	PlaySE(4, "S02/11/130700029", 128, 64);
 	OutputLine(NULL, "彼女が継ぐのは園崎家そのものですよ。",
 		   NULL, " She's inheriting the Sonozaki family itself.", Line_WaitForInput);
+	PlaySE(4, "S02/11/130700030", 128, 64);
 	OutputLine(NULL, "……その辺りの意味、ちょっと噛み締めていただけますかな？」",
 		   NULL, " ...I'll leave it to you to mull over what exactly that means.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
@@ -2982,6 +3030,7 @@
 	DrawBustshot( 2, "oi_si_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「なっはっはっは...、しませんしません。ものの例えですよ。￥
+	PlaySE(4, "S02/11/130700033", 128, 64);
 	OutputLine(NULL, "「なっはっはっは…、しませんしません。ものの例えですよ。」",
 		   NULL, "\"Na-ha-ha-ha... She wouldn't, she wouldn't. I'm just speaking hypothetically.\"", Line_Normal);
 	ClearMessage();
@@ -3083,8 +3132,10 @@
 	PlaySE(4, "S02/11/130700039", 128, 64);
 	OutputLine(NULL, "「…落ち着いて下さい。",
 		   NULL, "\"...Please, calm down.", Line_WaitForInput);
+	PlaySE(4, "S02/11/130700040", 128, 64);
 	OutputLine(NULL, "さっきも申し上げました通り、園崎家は良い意味でも悪い意味でも、この辺り一帯で強い力を持っているんです。",
 		   NULL, " As I said before, the Sonozaki family holds a lot of power in this region, for better or worse.", Line_WaitForInput);
+	PlaySE(4, "S02/11/130700041", 128, 64);
 	OutputLine(NULL, "ですから、ちょっと何かあるとすぐに疑いがかかってしまう。",
 		   NULL, " So if anything happens, they would immediately be suspect.", Line_WaitForInput);
 	PlaySE(4, "S02/11/130700042", 128, 64);
@@ -3277,6 +3328,7 @@
 
 
 //「昨日の綿流しの晩＠/
+	PlaySE(4, "S02/11/130700055", 128, 64);
 	OutputLine(NULL, "「昨日の綿流しの晩。",
 		   NULL, "\"Last night, during the festival.", Line_WaitForInput);
 
@@ -3286,6 +3338,7 @@
 	FadeOutBGM( 2, 1000, TRUE );
 
 //...富竹ジロウさんと鷹野三四さんにお会いしませんでしたか？￥
+	PlaySE(4, "S02/11/130700056", 128, 64);
 	OutputLine(NULL, "…富竹ジロウさんと鷹野三四さんにお会いしませんでしたか？」",
 		   NULL, " ...Did you see Jirou Tomitake-san and Miyo Takano-san?\"", Line_Normal);
 	ClearMessage();
@@ -3419,6 +3472,7 @@
 	ClearMessage();
 
 //「...っと...、!w800繰り返し聞かれても......!w1000こ、答えはさっきと同じ、です......。＠
+	PlaySE(4, "S02/01/130100338", 128, 64);
 	OutputLine(NULL, "「…っと…、",
 		   NULL, "\"...Er...", Line_ContinueAfterTyping);
 
@@ -3473,12 +3527,14 @@
 	ClearMessage();
 
 //「では質問を変えます＠/
+	PlaySE(4, "S02/11/130700066", 128, 64);
 	OutputLine(NULL, "「では質問を変えます。",
 		   NULL, "\"I'll change the question.", Line_WaitForInput);
 	DisableWindow();
 	DrawBustshot( 2, "oi_si_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //...ほら、前原さん＠リラックスリラックス。＠
+	PlaySE(4, "S02/11/130700067", 128, 64);
 	OutputLine(NULL, "…ほら、前原さん。",
 		   NULL, " ...Come, Maebara-san.", Line_WaitForInput);
 	PlaySE(4, "S02/11/130700068", 128, 64);
@@ -3512,6 +3568,7 @@
 	PlayBGM( 2, "lsys15", 128, 0 );
 
 //「同じく昨夜のお祭りなんですが、/
+	PlaySE(4, "S02/11/130700069", 128, 64);
 	OutputLine(NULL, "「同じく昨夜のお祭りなんですが、",
 		   NULL, "\"On the same night of the festival,", Line_ContinueAfterTyping);
 
@@ -3563,6 +3620,7 @@
 	DrawBustshot( 2, "oi_si_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「なっはっはっは＠...そんなわけはないでしょう？＠
+	PlaySE(4, "S02/11/130700070", 128, 64);
 	OutputLine(NULL, "「なっはっはっは。",
 		   NULL, "\"Na-ha-ha-ha.", Line_WaitForInput);
 	PlaySE(4, "S02/11/130700071", 128, 64);
@@ -3676,10 +3734,15 @@
 	FadeOutBGM( 1, 1000, TRUE );
 	FadeOutBGM( 2, 1000, TRUE );
 	StopSE( 3 );
-	DrawScene( "bg_229", 400 );
+	DrawScene( "bg_112", 400 );
 	PlayBGM( 1, "msys11", 128, 0 );
 
+	DisableWindow();
+	DrawBustshotWithFiltering( 2,"Kuma_Def", "left", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+
 //「大石さん＠蛍の光っす。＠
+	PlaySE(4, "S02/19/133100001", 128, 64);
 	OutputLine(NULL, "「大石さん。",
 		   NULL, "\"Ooishi-san.", Line_WaitForInput);
 	PlaySE(4, "S02/19/133100002", 128, 64);
@@ -3749,6 +3812,8 @@
 	ClearMessage();
 	DisableWindow();
 	FadeBustshotWithFiltering( 1, "left", 1, FALSE, 0, 0, 300, TRUE );
+	FadeBustshotWithFiltering( 2, "left", 1, FALSE, 0, 0, 300, TRUE );
+
 
 //　大石さんは、部下を伴うと、休憩コーナーを後にした＠......と思った矢先に、ぐるっと振り返る￥
 	OutputLine(NULL, "　大石さんは、部下を伴うと、休憩コーナーを後にした。",
@@ -3768,6 +3833,7 @@
 
 
 //「...な、!w800......何ですか...。＠
+	PlaySE(4, "S02/01/130100342", 128, 64);
 	OutputLine(NULL, "「…な、",
 		   NULL, "\"...Wha...", Line_ContinueAfterTyping);
 
@@ -3846,7 +3912,6 @@
 	PlaySE(4, "S02/11/130700088", 128, 64);
 	OutputLine(NULL, "「ではまたお会いしましょう。",
 		   NULL, "\"We'll meet again.", Line_WaitForInput);
-	PlaySE(4, "S02/11/130700089", 128, 64);
 	OutputLine(NULL, "よいお年を。」",
 		   NULL, " Have a good year.\"", Line_WaitForInput);
 

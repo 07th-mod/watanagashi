@@ -14,9 +14,9 @@
 
 	DisableWindow();
 	DrawSceneWithMask( "white", "c", 0, 0, 300 );
-	DrawSceneWithMask( "bg_243", "m1", 0, 0, 1300 );
+	DrawSceneWithMask( "sunset/bg_038", "m1", 0, 0, 1300 );
 	PlayBGM( 1, "msys01", 128, 0 );
-	DrawBustshotWithFiltering( 2, "re_si_wa_a1", "left", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 10, 1300, TRUE );
+	DrawBustshotWithFiltering( 2, "sunset/re_si_wa_a1", "left", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 10, 1300, TRUE );
 
 //「わー＠　圭一くんだ、おはようなんだよ！　だよ！＠
 	PlaySE(4, "S02/02/130200001", 128, 64);
@@ -44,7 +44,7 @@
 
 
 	DisableWindow();
-	DrawBustshot( 2, "re_si_ha_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	DrawBustshot( 2, "sunset/re_si_ha_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「でもでも、...今日、圭一くんにする最初の挨拶だから、やっぱりおはようがいいな。いいな。＠
 	PlaySE(4, "S02/02/130200003", 128, 64);
@@ -69,7 +69,7 @@
 		   NULL, "I grabbed Rena's head and rubbed it with my hand.", Line_WaitForInput);
 
 	DisableWindow();
-	DrawBustshot( 2, "re_si_wa_b1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	DrawBustshot( 2, "sunset/re_si_wa_a1_zoom", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //うにゃうにゃと喜ぶそれはまるで猫みたいだ￥
 	OutputLine(NULL, "うにゃうにゃと喜ぶそれはまるで猫みたいだ。",
@@ -77,7 +77,7 @@
 	ClearMessage();
 	DisableWindow();
 	FadeBustshotWithFiltering( 2, "right", 1, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 1, "me_si_wa_a2", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sunset/me_si_wa_a2", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「やっほ、圭ちゃん＠　昨日は申し訳なかったね。黙って帰っちゃってさ。＠
 	PlaySE(4, "S02/03/130300001", 128, 64);
@@ -100,7 +100,7 @@
 
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 3, "re_si_ha_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "sunset/re_si_ha_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「昨日のお祭りの準備のことかな＠　どうだった圭一くん＠しっかりとお仕事してた？＠
 	PlaySE(4, "S02/02/130200004", 128, 64);
@@ -120,7 +120,7 @@
 		   NULL, "The slight muscle pain throughout my body and my sluggish movements were already obvious...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 1, "me_si_wi_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	DrawBustshot( 1, "sunset/me_si_wi_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「がんばってたよ＠へばってたけどね～！＠
 	PlaySE(4, "S02/03/130300003", 128, 64);
@@ -148,7 +148,7 @@
 
 
 	DisableWindow();
-	DrawBustshot( 3, "re_si_wa_b1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	DrawBustshot( 3, "sunset/re_si_wa_b1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「うん＠梨花ちゃんはほら、大切なお勤めがあるから昨日からずーっと＠沙都子ちゃんもそのお供だそうだから、もう２人とも神社にいるよ。￥
 	PlaySE(4, "S02/02/130200007", 128, 64);
@@ -191,6 +191,12 @@
 		   NULL, "\"\"Yeeeaaahh~~~!!\"\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+
+
+	DrawSceneWithMask( "sunset/bg_147", "m1", 0, 0, 1300 );
+	DrawSceneWithMask( "night/bg_147", "m1", 0, 0, 3000 );
+
+
 	DrawSceneWithMask( "black", "right", 0, 0, 1300 );
 	DrawSceneWithMask( "bg_255", "right", 0, 0, 1300 );
 
@@ -1321,7 +1327,6 @@
 	PlaySE( 3, "wa_010", 128, 64 );
 
 //本物の明石のタコだね＠
-	
 	OutputLine(NULL, "本物の明石のタコだね？",
 		   NULL, " It's true Akashi octopus, isn't it?", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1966,14 +1971,18 @@
 	OutputLine(NULL, "　そう言って、俺の腕を取り、胸を押し付けてくる。",
 		   NULL, "she asked, grabbing my arm and pushing her chest into it.", Line_WaitForInput);
 
+	DisableWindow();
+	DrawBustshot( 1, "si_si_wi_b1_zoom", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+
+
 	PlaySE( 3, "wa_029", 128, 64 );
 
 //ふに￥
 	OutputLine(NULL, "ふに。",
 		   NULL, " Bounce.", Line_Normal);
-	ClearMessage();
+//	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_017", "left", 0, 0, 300 );
+//	DrawSceneWithMask( "bg_017", "left", 0, 0, 300 );
 	PlayBGM( 1, "msys03", 128, 0 );
 	DrawBustshotWithFiltering( 3, "re_si_ko_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
@@ -1998,7 +2007,7 @@
 
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "si_si_aw_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "si_si_aw_a1_zoom", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「へー、そうなんですか＠　じゃあ力を入れたらもっと出てくるかな＠/
 	PlaySE(4, "S02/06/130600012", 128, 64);
@@ -2011,7 +2020,7 @@
 
 
 	DisableWindow();
-	DrawBustshot( 1, "si_si_wi_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	DrawBustshot( 1, "si_si_wi_b1_zoom", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //　え～い☆/
 	PlaySE(4, "S02/06/130600014", 128, 64);
@@ -2054,7 +2063,8 @@
 
 
 	DisableWindow();
-	DrawBustshot( 2, "sa_si_bi_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	DrawBustshotWithFiltering( 3, "sa_si_bi_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+//	DrawBustshot( 2, "sa_si_bi_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「...不潔ですわ！＠　見損ないましてよー！！＠
 	PlaySE(4, "S02/04/130400025", 128, 64);
@@ -2067,7 +2077,7 @@
 
 
 	DisableWindow();
-	FadeBustshotWithFiltering( 2, "left", 1, FALSE, 0, 0, 300, FALSE );
+//	FadeBustshotWithFiltering( 2, "left", 1, FALSE, 0, 0, 300, FALSE );
 	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
 	DrawBustshotWithFiltering( 3, "ri_mk_wa_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
@@ -2077,6 +2087,8 @@
 		   NULL, "\"......What about my flat chest?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	DisableWindow();
+	DrawBustshotWithFiltering( 3, "ri_mk_wa_a1_zoom", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //　梨花ちゃんも反対の腕に、/
 	OutputLine(NULL, "　梨花ちゃんも反対の腕に、",
@@ -2631,7 +2643,7 @@
 	ClearMessage();
 	DisableWindow();
 	FadeOutBGM( 2, 1000, TRUE );
-	DrawSceneWithMask( "bg_008", "left", 0, 0, 300 );
+//	DrawSceneWithMask( "bg_008", "left", 0, 0, 300 );
 	PlayBGM( 1, "msys13", 128, 0 );
 	DrawBustshotWithFiltering( 3, "si_si_de_a1", "left", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
@@ -2722,7 +2734,7 @@
 
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "si_si_wi_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "night/si_si_wi_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「しーーーー＠　黙って付いて来ればわかりますから。＠
 	PlaySE(4, "S02/06/130600026", 128, 64);
@@ -2763,7 +2775,7 @@
 
 
 	DisableWindow();
-	DrawBustshot( 1, "si_si_de_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	DrawBustshot( 1, "night/si_si_de_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「はい？　何で屋根に登んなくちゃいけないんです？＠
 	PlaySE(4, "S02/06/130600028", 128, 64);
@@ -2780,7 +2792,7 @@
 
 
 	DisableWindow();
-	DrawBustshot( 1, "si_si_aw_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	DrawBustshot( 1, "night/si_si_aw_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「梨花ちゃまの演舞なんか見たかったんですか＠　圭ちゃん、ひょっとしてストライクゾーン、もっのすごく低くありません？￥
 	PlaySE(4, "S02/06/130600029", 128, 64);
@@ -2802,7 +2814,7 @@
 
 
 	DisableWindow();
-	DrawBustshot( 1, "si_si_de_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	DrawBustshot( 1, "night/si_si_de_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「はい？/
 	PlaySE(4, "S02/06/130600031", 128, 64);
@@ -2924,8 +2936,8 @@
 		   NULL, "...Oh, it's Tomitake-san and Takano-san...!", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 1, "ta_si_de_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
-	DrawBustshot( 3, "tm_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	DrawBustshot( 1, "night/ta_si_de_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 3, "night/tm_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawSceneWithMask( "bg_261", "left", 0, 0, 300 );
 
 //　富竹さんと鷹野さんは、明らかに息を殺し、気配を悟られまいとしてきょろきょろと辺りを伺いながら、倉庫のような木造の建物の入口にしゃがみ込んでいた￥
@@ -2934,7 +2946,7 @@
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshot( 3, "si_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	DrawBustshot( 3, "night/si_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawSceneWithMask( "bg_263", "left", 0, 0, 300 );
 
 //（...まさか、詩音＠......これを見せたくて俺を呼んだのか？＠
@@ -2947,7 +2959,7 @@
 
 
 	DisableWindow();
-	DrawBustshot( 3, "si_si_aw_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	DrawBustshot( 3, "night/si_si_aw_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //（圭ちゃん＠梨花ちゃまの演舞は毎年見れるけど、こーゆうのは二度とお目にかかれませんよ？＠
 	PlaySE(4, "S02/06/130600034", 128, 64);
@@ -2973,7 +2985,7 @@
 
 
 	DisableWindow();
-	DrawBustshot( 3, "si_si_bi_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	DrawBustshot( 3, "night/si_si_bi_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //（あ、今、動いたらバレちゃいますって...！！＠
 	PlaySE(4, "S02/06/130600035", 128, 64);
@@ -2987,7 +2999,7 @@
 		   NULL, "At our noisy argument, Takano-san suddenly turned around!", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 1, "ta_si_de_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 1, "night/ta_si_de_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawSceneWithMask( "bg_261", "left", 0, 0, 300 );
 
 //「......あらあら。どなたかしら？￥
@@ -3007,7 +3019,7 @@
 		   NULL, "Shion and I exchanged glances, then gave up and climbed out from behind the bush.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshotWithFiltering( 3, "si_si_wa_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "night/si_si_wa_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「どうもこんばんはー＠お月様の綺麗ないい夜ですね。＠
 	PlaySE(4, "S02/06/130600036", 128, 64);
@@ -3032,7 +3044,7 @@
 	ClearMessage();
 	DisableWindow();
 	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 3, "tm_si_wa_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "night/tm_si_wa_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「おやおや......、圭一くんも隅に置けないねぇ＠　こんな所で逢引かい＠　だとしたら、僕たち、とんでもないお邪魔をしちゃったかな。あっはっはっは！！＠
 	PlaySE(4, "S02/08/130800001", 128, 64);
@@ -3066,7 +3078,7 @@
 
 
 	DisableWindow();
-	DrawBustshot( 3, "tm_si_ko_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	DrawBustshot( 3, "night/tm_si_ko_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「そ、それはもちろん違うよ＠/
 	PlaySE(4, "S02/08/130800004", 128, 64);
@@ -3074,7 +3086,7 @@
 		   NULL, "\"O-Of course we weren't.", Line_WaitForInput);
 
 	DisableWindow();
-	DrawBustshot( 3, "tm_si_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	DrawBustshot( 3, "night/tm_si_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //そういうロマンスも嫌いじゃないけどねぇ。＠
 	PlaySE(4, "S02/08/130800005", 128, 64);
@@ -3084,7 +3096,7 @@
 
 
 	DisableWindow();
-	DrawBustshot( 1, "ta_si_wa_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	DrawBustshot( 1, "night/ta_si_wa_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「くすくす...＠残念だけど、貴方たちが覗き見したくなるような逢引現場じゃないのよ＠期待に添えなくて申し訳ないわね。￥
 	PlaySE(4, "S02/09/130900005", 128, 64);
@@ -3099,7 +3111,7 @@
 	ClearMessage();
 	DisableWindow();
 	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 3, "si_si_aw_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "night/si_si_aw_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「ふーん＠逢引現場じゃなかったら、何してるんですか＠　富竹さん、今、扉の南京錠をいじってませんでした？￥
 	PlaySE(4, "S02/06/130600039", 128, 64);
@@ -3133,7 +3145,7 @@
 		   NULL, "They were hunched in front of a warehouse door, fiddling with a pretty heavy-looking padlock.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "tm_si_wa_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "night/tm_si_wa_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「......バレちゃあしょうがないなぁ＠僕たちが倉庫破りをしてたなんて、!w1000...内緒だよ？＠
 	PlaySE(4, "S02/08/130800006", 128, 64);
@@ -3171,7 +3183,7 @@
 		   NULL, "I demanded unthinkingly, just because of how absently Tomitake-san was grinning.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshotWithFiltering( 3, "ta_si_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "night/ta_si_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「やぁね＠ドロボウってのは物を盗む人たちのことでしょう＠　別に私たちは物を持ち出そうとしてるわけじゃないのよ。＠
 	PlaySE(4, "S02/09/130900008", 128, 64);
@@ -3188,7 +3200,7 @@
 
 	DisableWindow();
 	FadeBustshotWithFiltering( 1, "right", 1, FALSE, 0, 0, 300, TRUE );
-	DrawBustshot( 1, "si_si_aw_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	DrawBustshot( 1, "night/si_si_aw_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「へー...＠じゃあ何のためにカギ開けなんかしてるんですか＠　ここ、開かずの祭具殿ですよね＠古手家とほんの一握りの人間しか入ることが許されないって言う。＠
 	PlaySE(4, "S02/06/130600042", 128, 64);
@@ -3239,7 +3251,7 @@
 		   NULL, "Now that I looked at it more closely, it was certainly different than normal warehouses.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 2, "ta_si_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	DrawBustshot( 2, "night/ta_si_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「ここはね＠祭具殿といってね＠祭具をしまっている倉庫なの＠...いえ、祭具を祀っている神殿と言ってもいいかもしれないわね＠
 	PlaySE(4, "S02/09/130900011", 128, 64);
@@ -3317,7 +3329,7 @@
 	ClearMessage();
 	DisableWindow();
 	FadeBustshotWithFiltering( 2, "left", 1, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 3, "si_si_wi_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "night/si_si_wi_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「へー＠富竹さんにカギ開けの技術があるなんて知りませんでした。＠
 	PlaySE(4, "S02/06/130600046", 128, 64);
@@ -3330,7 +3342,7 @@
 
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "tm_si_ko_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "night/tm_si_ko_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「...よしてくれよ＠僕だって嫌々やってるんだよ？￥
 	PlaySE(4, "S02/08/130800008", 128, 64);
@@ -3342,7 +3354,7 @@
 	ClearMessage();
 	DisableWindow();
 	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 3, "ta_si_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "night/ta_si_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「つき合わせてしまってごめんなさいね＠でも、ジロウさんのお陰よ＠感謝してるわ。＠
 	PlaySE(4, "S02/09/130900021", 128, 64);
@@ -3389,7 +3401,7 @@
 		   NULL, "...Tomitake-san undid the padlock and placed it to the side.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 3, "tm_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	DrawBustshot( 3, "night/tm_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawSceneWithMask( "bg_261", "up", 0, 0, 300 );
 
 //「開いたよ。＠
@@ -3400,7 +3412,7 @@
 
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "ta_si_de_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "night/ta_si_de_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「ありがとう＠...いよいよね。＠
 	PlaySE(4, "S02/09/130900025", 128, 64);
@@ -3462,7 +3474,7 @@
 
 	DisableWindow();
 	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 3, "si_si_wi_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "night/si_si_wi_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「...面白いと思いません＠　ねぇ、覗いて見ましょうよ。＠
 	PlaySE(4, "S02/06/130600048", 128, 64);
@@ -3496,7 +3508,7 @@
 
 
 	DisableWindow();
-	DrawBustshot( 3, "si_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	DrawBustshot( 3, "night/si_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「私は一応、園崎の人間ですからこの中にあるものは、おおよそ想像がついてます＠でも、それは圭ちゃんにも見てもらいたいものです。＠
 	PlaySE(4, "S02/06/130600050", 128, 64);
@@ -3562,7 +3574,7 @@
 		   NULL, " I dunno about this...!", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 3, "si_si_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	DrawBustshot( 3, "night/si_si_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「面白くないって思ったら、圭ちゃんはすぐに出ればいいです＠きっと興味を引かれると思いますけどね。＠
 	PlaySE(4, "S02/06/130600052", 128, 64);
@@ -3580,7 +3592,7 @@
 	ClearMessage();
 	DisableWindow();
 	FadeBustshotWithFiltering( 1, "right", 1, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 1, "tm_si_wa_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "night/tm_si_wa_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「僕がここで見張っててあげるから＠一緒に見てきてごらん＠僕はあまり趣味じゃないけど...＠圭一くんみたいな若い男の子には結構面白いかもしれないよ。......ふっふっふ！＠
 	PlaySE(4, "S02/08/130800014", 128, 64);
@@ -3613,7 +3625,7 @@
 
 
 	DisableWindow();
-	DrawBustshot( 1, "tm_si_ko_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	DrawBustshot( 1, "night/tm_si_ko_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「まぁね＠鷹野さんにたっぷり聞かされてるからね。＠
 	PlaySE(4, "S02/08/130800018", 128, 64);
@@ -3626,7 +3638,7 @@
 
 
 	DisableWindow();
-	DrawBustshot( 3, "si_si_aw_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	DrawBustshot( 3, "night/si_si_aw_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「相方の特殊な趣味に付き合わされる殿方も大変ですね～。＠
 	PlaySE(4, "S02/06/130600054", 128, 64);
@@ -3668,7 +3680,7 @@
 
 
 	DisableWindow();
-	DrawBustshot( 3, "si_si_wi_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	DrawBustshot( 3, "night/si_si_wi_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //　そうこなくっちゃ！　詩音が魅音そっくりにウィンクして見せる￥
 	OutputLine(NULL, "　そうこなくっちゃ！　詩音が魅音そっくりにウィンクして見せる。",
@@ -3676,7 +3688,7 @@
 	ClearMessage();
 	DisableWindow();
 	FadeAllBustshots( 400, TRUE );
-	DrawBustshot( 2, "ta_si_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	DrawBustshot( 2, "night/ta_si_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「決まったみたいね＠じゃあ行きましょうか＠...ジロウさん、留守番をお願いね。＠
 	PlaySE(4, "S02/09/130900032", 128, 64);
@@ -3701,14 +3713,16 @@
 
 	DisableWindow();
 	DrawScene( "black", 1000 );
-	DrawScene( "bg_176", 3000 );
+	DrawScene( "night/bg_177", 3000 );
 
 //　中は真っ暗だったが、鷹野さんが用意していた電池式のランタンを灯すと、かなり狭い前室であることがわかった￥
 	OutputLine(NULL, "　中は真っ暗だったが、鷹野さんが用意していた電池式のランタンを灯すと、かなり狭い前室であることがわかった。",
 		   NULL, "The inside was pitch black, but Takano-san turned on the battery-powered lantern she'd brought, revealing a pretty cramped front room.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "tm_si_de_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawScene( "bg_177", 3000 );
+
+//	DrawBustshotWithFiltering( 1, "tm_si_de_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「真っ暗だねぇ＠みんな転ばないように気をつけるんだよ。＠
 	PlaySE(4, "S02/08/130800020", 128, 64);
@@ -3721,7 +3735,8 @@
 
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 3, "ta_si_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawScene( "night/bg_178", 3000 );
+	DrawBustshotWithFiltering( 3, "night/ta_si_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「ご心配ありがとう＠...じゃあ門番をよろしくね＠ここ、締めるわよ。＠
 	PlaySE(4, "S02/09/130900035", 128, 64);
@@ -3741,7 +3756,7 @@
 		   NULL, "Takano-san smiled spitefully, as if leaving Tomitake-san out of something fun, and began to close the door.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 1, "tm_si_ko_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	DrawBustshot( 1, "night/tm_si_ko_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「やれやれ...＠...じゃあみんな、ゆっくり楽しんでおいで。￥
 	PlaySE(4, "S02/08/130800022", 128, 64);
@@ -3843,8 +3858,8 @@
 		   NULL, "Everyone scrunched up their faces at the sudden strobe-like brightness.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 1, "si_si_bi_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
-	DrawSceneWithMask( "bg_176", "up", 0, 0, 200 );
+	DrawBustshot( 1, "night/si_si_bi_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawSceneWithMask( "night/bg_178", "up", 0, 0, 200 );
 
 //「ダメです！！＠
 	PlaySE(4, "S02/06/130600055", 128, 64);
@@ -3873,7 +3888,7 @@
 
 
 	DisableWindow();
-	DrawBustshot( 1, "si_si_ik_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	DrawBustshot( 1, "night/si_si_ik_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「ダメです圭ちゃん＠私たち、ここに忍び込んでるんですよ＠　灯りなんかつけたらバレちゃうかもしれないじゃないですか...！＠
 	PlaySE(4, "S02/06/130600056", 128, 64);
@@ -3899,7 +3914,7 @@
 		   NULL, "It looked like she was worried about whether someone had seen them from the momentary light.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshotWithFiltering( 3, "ta_si_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "night/ta_si_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「大丈夫よ＠本当に一瞬だし。＠
 	PlaySE(4, "S02/09/130900043", 128, 64);
@@ -3952,7 +3967,7 @@
 		   NULL, " and the other smell, the nasty one, was hard to explain... but it was like the raw odor of a fish market.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_178", "left", 0, 0, 300 );
+	DrawSceneWithMask( "night/bg_177", "left", 0, 0, 300 );
 
 //　音の響き具合から、前室とは比べ物にならない広さを感じる＠
 	OutputLine(NULL, "　音の響き具合から、前室とは比べ物にならない広さを感じる。",
@@ -3964,6 +3979,10 @@
 	OutputLine(NULL, "　鷹野さんがランタンをかざすと、その広々とした内部が鮮明にわかった。",
 		   NULL, "Takano-san held up her lantern and revealed the contents of the expansive room.", Line_Normal);
 	ClearMessage();
+
+	DisableWindow();
+	DrawSceneWithMask( "bg_176", "left", 0, 0, 300 );
+
 
 //「...ぅわ...！！＠
 	PlaySE(4, "S02/01/130100109", 128, 64);
@@ -3983,7 +4002,7 @@
 		   NULL, "I was taken aback by its unseen force, lit up by the slender beam of the lantern.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshotWithFiltering( 3, "ta_si_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "night/ta_si_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「あれが雛見沢の守り神、.../
 	PlaySE(4, "S02/09/130900047", 128, 64);
@@ -3999,7 +4018,7 @@
 
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "si_si_de_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "night/si_si_de_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「......社にあるのより、ずっと立派ですね。￥
 	PlaySE(4, "S02/06/130600059", 128, 64);
@@ -4030,7 +4049,7 @@
 		   NULL, "\"...It looks like... there are far more tools stored here than I thought, but...", Line_WaitForInput);
 
 	DisableWindow();
-	DrawBustshot( 3, "ta_si_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	DrawBustshot( 3, "night/ta_si_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //...でも残念＠どれもあまり手入れがされていないわ＠...状態が悪いのが悔やまれるわね...。＠
 	PlaySE(4, "S02/09/130900049", 128, 64);
@@ -4056,7 +4075,7 @@
 		   NULL, "Takano-san, speaking as if in a trance, was infatuated by the various implements filling the dark room.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_177", "right", 0, 0, 300 );
+	DrawSceneWithMask( "bg_179", "right", 0, 0, 300 );
 
 //　...あまり祭事的な、芸術的な形のものはなく、どちらかと言えば...鍛冶屋や大工さんなんかの作業場のような＠そんな感じの木製や金属性の大道具がごろごろと並べられていた＠
 	OutputLine(NULL, "　…あまり祭事的な、芸術的な形のものはなく、どちらかと言えば…鍛冶屋や大工さんなんかの作業場のような、",
@@ -4085,8 +4104,8 @@
 		   NULL, "My expression betrayed my dashed hopes, and they caught on right away.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_178", "left", 0, 0, 300 );
-	DrawBustshotWithFiltering( 2, "ta_si_de_a1", "left", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawSceneWithMask( "bg_179", "left", 0, 0, 300 );
+	DrawBustshotWithFiltering( 2, "night/ta_si_de_a1", "left", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	StopSE( 3 );
 
@@ -4115,7 +4134,7 @@
 
 
 	DisableWindow();
-	DrawBustshot( 2, "ta_si_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	DrawBustshot( 2, "night/ta_si_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「ふふ、!w800.........圭一くんはよくわかってないみたいね＠無理もないけれど。￥
 	PlaySE(4, "S02/09/130900053", 128, 64);
@@ -4179,7 +4198,7 @@
 		   NULL, "...I'll endure it for now and pretend to be calm.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 2, "ta_si_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	DrawBustshot( 2, "night/ta_si_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「いーい＠　じゃあ...読むわよ。＠
 	PlaySE(4, "S02/09/130900058", 128, 64);
@@ -4213,7 +4232,7 @@
 		   NULL, " People said it was connected to Hell, the land of demons.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "bg_159", 1000 );
+	DrawScene( "bg_159b", 1000 );
 
 //　その沼は海より深いと噂され、飲み込まれればそのまま黄泉の底まで沈んでいくと伝えられる、底無しの沼だった＠
 	OutputLine(NULL, "　その沼は海より深いと噂され、飲み込まれればそのまま黄泉の底まで沈んでいくと伝えられる、底無しの沼だった。",
@@ -4240,7 +4259,7 @@
 		   NULL, " ...Could that be the swamp she's talking about?", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_178", "up", 0, 0, 300 );
+	DrawSceneWithMask( "bg_176", "up", 0, 0, 300 );
 
 //「...ってことはその村は、...雛見沢ですね。＠
 	PlaySE(4, "S02/01/130100112", 128, 64);
@@ -4250,7 +4269,7 @@
 
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 3, "ta_si_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "night/ta_si_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「察しがいいわね＠そうよ＠...当時は鬼ヶ淵村って呼ばれてたけどね。＠
 	PlaySE(4, "S02/09/130900063", 128, 64);
@@ -4276,7 +4295,7 @@
 
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "si_si_de_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "night/si_si_de_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「イメージもあったんでしょうね＠明治の頃に、今の名前に改称されたって聞きました。＠
 	PlaySE(4, "S02/06/130600060", 128, 64);
@@ -4318,7 +4337,9 @@
 		   NULL, " But then, one day...\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_160", "left", 0, 0, 300 );
+//	DrawSceneWithMask( "bg_160", "left", 0, 0, 300 );
+	DrawSceneWithMask( "cg_demon", "left", 0, 0, 300 );
+
 
 //　沼の底から鬼たちが次々に現れたのだ＠
 	OutputLine(NULL, "　沼の底から鬼たちが次々に現れたのだ。",
@@ -4357,7 +4378,7 @@
 		   NULL, "...They could do no more than hide themselves and tremble...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_178", "right", 0, 0, 300 );
+	DrawSceneWithMask( "bg_179", "right", 0, 0, 300 );
 
 //「...で、誰かが鬼を退治するわけですか？＠
 	PlaySE(4, "S02/01/130100115", 128, 64);
@@ -4367,7 +4388,7 @@
 
 
 	DisableWindow();
-	DrawBustshot( 2, "ta_si_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	DrawBustshot( 2, "night/ta_si_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「残念だけど、このお話には桃太郎もスーパーマンも登場しないわ。＠
 	PlaySE(4, "S02/09/130900069", 128, 64);
@@ -4449,7 +4470,7 @@
 		   NULL, " 'Oyashiro-sama' descended unto them.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_177", "left", 0, 0, 300 );
+	DrawSceneWithMask( "bg_179", "left", 0, 0, 300 );
 
 //「なるほど...＠つまり、天からやって来たオヤシロさまが鬼たちをやっつけるわけですか。＠
 	PlaySE(4, "S02/01/130100120", 128, 64);
@@ -4462,7 +4483,7 @@
 
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 3, "si_si_aw_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "night/si_si_aw_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「...圭ちゃんは男の子ですねぇ＠すぐに腕力で解決する方に走るんですから。＠
 	PlaySE(4, "S02/06/130600062", 128, 64);
@@ -4479,7 +4500,7 @@
 		   NULL, "Shion sighed, a little annoyed. Embarrassed, I held my tongue.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "ta_si_de_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "night/ta_si_de_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「オヤシロさまはね＠やっつけるとか、そういう暴力的な神さまじゃなかったの＠......もっとやさしい、慈愛のある神さまだったの。￥
 	PlaySE(4, "S02/09/130900075", 128, 64);
@@ -4494,7 +4515,7 @@
 	ClearMessage();
 	DisableWindow();
 	DrawScene( "black", 1000 );
-	DrawSceneWithMask( "bg_159", "up", 0, 0, 300 );
+	DrawSceneWithMask( "bg_159b", "up", 0, 0, 300 );
 
 //　天から降臨したオヤシロさまの力は鬼たちとは比べ物にならなかった＠鬼たちは戦うまでもなく、その威光の前に平伏する...＠
 	OutputLine(NULL, "　天から降臨したオヤシロさまの力は鬼たちとは比べ物にならなかった。",
@@ -4509,8 +4530,8 @@
 		   NULL, "Oyashiro-sama urged them to go back to Hell from whence they came, but the demons wept and challenged him, saying they could never return.", Line_Normal);
 	ClearMessage();
 
-	DrawBustshot( 1, "ta_si_de_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
-	DrawSceneWithMask( "bg_178", "up", 0, 0, 1000 );
+	DrawBustshot( 1, "night/ta_si_de_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawSceneWithMask( "bg_179", "up", 0, 0, 1000 );
 
 //「鬼たちの世界にも厳しい戒律があってね＠彼らは地獄を追放された鬼たちだったんですって。＠
 	PlaySE(4, "S02/09/130900078", 128, 64);
@@ -4560,7 +4581,7 @@
 
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 3, "si_si_de_b1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "night/si_si_de_b1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「ですよね＠鬼ってのは元来、諸悪の象徴のはず＠それとの共存を決めたというお話なんだから、本当に変わってます。￥
 	PlaySE(4, "S02/06/130600064", 128, 64);
@@ -4596,8 +4617,8 @@
 		   NULL, "It was said that in payment for this good deed, the demons shared their many kinds of power and secrets with the villagers.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 3, "ta_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
-	DrawSceneWithMask( "bg_178", "up", 0, 0, 3000 );
+	DrawBustshot( 3, "night/ta_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	DrawSceneWithMask( "bg_179", "up", 0, 0, 3000 );
 
 //「オヤシロさまはその微笑ましい交流をとても喜んでね＠鬼たちが村人と分け隔てなく暮らせるよう、人間の姿を与えたんですって＠
 	PlaySE(4, "S02/09/130900082", 128, 64);
@@ -4638,7 +4659,7 @@
 		   NULL, "...I see. I guess it is kind of interesting.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 3, "ta_si_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	DrawBustshot( 3, "night/ta_si_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「普通のおとぎ話ならここで終わりなんだけどね＠このお話は江戸時代にだいぶ加筆されたみたいで、まだまだ続くずいぶんと長い話になってるわ。＠
 	PlaySE(4, "S02/09/130900085", 128, 64);
@@ -4663,7 +4684,7 @@
 
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "si_si_de_b1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "night/si_si_de_b1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「いいえ＠消えたりなんかしないです＠半分はしっかりと残ってたそうですよ。＠
 	PlaySE(4, "S02/06/130600067", 128, 64);
@@ -4689,7 +4710,7 @@
 		   NULL, "They were well aware the power they had was heresy, and as those below worshipped them, they lived out their lives in secrecy...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 3, "ta_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, TRUE );
+	DrawBustshot( 3, "night/ta_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, TRUE );
 
 //「このお話がね、その後に派生するたくさんの昔話・フィクションの原点になってるの＠だからこのお話がある意味、基礎中の基礎＠ベーシックね。＠
 	PlaySE(4, "S02/09/130900087", 128, 64);
@@ -4811,7 +4832,7 @@
 		   NULL, "They would flee into the mountains to survive, turn into bandit groups, and attack villages for food and the like.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_178", "left", 0, 0, 300 );
+	DrawSceneWithMask( "bg_179", "left", 0, 0, 300 );
 
 //「なんて説はどうでしょう＠...ちょっと子供じみてますかね...。＠
 	PlaySE(4, "S02/01/130100126", 128, 64);
@@ -4834,7 +4855,7 @@
 		   NULL, "Still, she didn't smile as if to make fun of me.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 2, "ta_si_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	DrawBustshot( 2, "night/ta_si_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「別に可笑しくないわよ＠実際に漂流異人説を唱える人もいるもの＠でも実際はどうなのかは誰にもわからない＠山賊化した異人の集団だったのか、本当に地の底から来た鬼たちだったのか...ね。＠
 	PlaySE(4, "S02/09/130900092", 128, 64);
@@ -4879,7 +4900,7 @@
 		   NULL, "Here I'd thought she'd reject unrealistic stories like that.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 2, "ta_si_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	DrawBustshot( 2, "night/ta_si_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「さて＠......いよいよここからよ＠面白くなるのは。＠
 	PlaySE(4, "S02/09/130900098", 128, 64);
@@ -4928,7 +4949,7 @@
 
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 3, "si_si_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "night/si_si_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「...............ごめんなさい、!w1000気にしないで下さい。＠
 	PlaySE(4, "S02/06/130600073", 128, 64);
@@ -4956,7 +4977,7 @@
 	ClearMessage();
 	DisableWindow();
 	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
-	DrawBustshot( 2, "ta_si_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	DrawBustshot( 2, "night/ta_si_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「...村人たちに半分、鬼の血が流れてるのは話したわね＠実はその血なんだけど、鬼は鬼でも、『人食い鬼』の血なんだ、って言われてるの。＠
 	PlaySE(4, "S02/09/130900101", 128, 64);
@@ -4979,7 +5000,7 @@
 	DisableWindow();
 	FadeOutBGM( 1, 1000, TRUE );
 	FadeOutBGM( 2, 1000, TRUE );
-	DrawBustshot( 2, "ta_si_aw_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	DrawBustshot( 2, "night/ta_si_aw_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「その血は今でも村人たちには脈々と流れていてね＠/
 	PlaySE(4, "S02/09/130900103", 128, 64);
@@ -5001,7 +5022,7 @@
 	ClearMessage();
 	DisableWindow();
 	PlayBGM( 1, "msys07", 128, 0 );
-	DrawBustshot( 2, "ta_si_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	DrawBustshot( 2, "night/ta_si_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「人食い鬼だから＠何十年かに一度、どうしても人肉が食べたくて仕方がなくなる周期があるんですって＠だからって村人同士で共食いするわけにはいかない＠......だから彼らはその度に人里へ降り、『鬼隠し』をしたと伝えられてるわ。￥
 	OutputLine(NULL, "「人食い鬼だから。",
@@ -5022,7 +5043,7 @@
 
 
 	DisableWindow();
-	DrawBustshot( 2, "ta_si_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	DrawBustshot( 2, "night/ta_si_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「平たく言えば、鬼たちによる誘拐行為よ＠鬼ヶ淵村の村人たちが人里に押し寄せ、哀れな生贄を無理やり力尽くでさらったんですって。￥
 	PlaySE(4, "S02/09/130900109", 128, 64);
@@ -5092,7 +5113,7 @@
 		   NULL, " ...and ugly truth...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 2, "ta_si_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	DrawBustshot( 2, "night/ta_si_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	StopSE( 3 );
 
@@ -5134,7 +5155,7 @@
 
 	DisableWindow();
 	FadeBustshotWithFiltering( 2, "left", 1, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 3, "si_si_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "night/si_si_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「圭ちゃん＠...ワタって言いません＠　臓物のこと。＠
 	PlaySE(4, "S02/06/130600074", 128, 64);
@@ -5193,7 +5214,7 @@
 	DisableWindow();
 	PlayBGM( 1, "msys08", 128, 0 );
 	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 1, "ta_si_aw_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "night/ta_si_aw_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「そう＠前原くんの想像している通りよ＠
 	PlaySE(4, "S02/09/130900116", 128, 64);
@@ -5228,7 +5249,7 @@
 		   NULL, " but I couldn't help it.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 1, "ta_si_de_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	DrawBustshot( 1, "night/ta_si_de_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「前原くんはさっき、綿流しは布団を清める儀式だと言ったわね＠ワタが詰まった布団って、何を意味してると思うかしら？＠
 	OutputLine(NULL, "「前原くんはさっき、綿流しは布団を清める儀式だと言ったわね。",
@@ -5297,7 +5318,7 @@
 		   NULL, " I didn't even watch the whole thing, anyway...!!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshotWithFiltering( 3, "si_si_de_b1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "night/si_si_de_b1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「しーーー＠圭ちゃん、エキサイトし過ぎです。＠
 	PlaySE(4, "S02/06/130600077", 128, 64);
@@ -5316,7 +5337,7 @@
 		   NULL, " Even so, I still can't suppress this agitation I feel.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 1, "ta_si_aw_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	DrawBustshot( 1, "night/ta_si_aw_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「梨花ちゃんが持っていた祭事用の鍬＠...もう薄々は気付いてると思うけど、あれは田畑を耕す鍬ではなくて＠/
 	PlaySE(4, "S02/09/130900124", 128, 64);
@@ -5364,7 +5385,7 @@
 		   NULL, " ......That's the kind of ritual it was.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 1, "ta_si_wa_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	DrawBustshot( 1, "night/ta_si_wa_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「平たく言えば、魚のワタを取り出して三角コーナーに捨てるのを、仰々しく儀式仕立にしたってことね＠...それで儀式はおしまい＠
 	OutputLine(NULL, "「平たく言えば、魚のワタを取り出して三角コーナーに捨てるのを、仰々しく儀式仕立にしたってことね。",
@@ -5419,7 +5440,7 @@
 	ClearMessage();
 	DisableWindow();
 	PlayBGM( 1, "msys13", 128, 0 );
-	DrawBustshot( 3, "si_si_ma_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	DrawBustshot( 3, "night/si_si_ma_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 	StopSE( 3 );
 
@@ -5459,7 +5480,7 @@
 		   NULL, "Takano-san spoke without a hint of malice as she smiled gracefully.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 3, "si_si_aw_b1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	DrawBustshot( 3, "night/si_si_aw_b1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「この辺まで話を聞けば、!w1000...圭ちゃんにも、この祭具殿の中にどういうものがあるのか、理解できるようになってきませんか＠　ほら。＠
 	PlaySE(4, "S02/06/130600081", 128, 64);
@@ -5483,7 +5504,7 @@
 		   NULL, "Shion pointed out one of the walls vaguely illuminated by the lantern's light.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "bg_177", 400 );
+	DrawScene( "night/bg_177", 400 );
 
 //　......そこには＠...さっきまで何の興味も感じなかった＠つまらない形をした祭具が並べてかけられていた＠
 	OutputLine(NULL, "　……そこには、",
@@ -5578,8 +5599,8 @@
 		   NULL, " ......The things hung up on this wall... all looked exactly the same as those.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_178", "left", 0, 0, 300 );
-	DrawBustshotWithFiltering( 3, "ta_si_aw_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawSceneWithMask( "bg_179", "left", 0, 0, 300 );
+	DrawBustshotWithFiltering( 3, "night/ta_si_aw_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「もっと怖い言い方をするなら、調理道具と言ったところかしらね＠...くすくす。＠
 	OutputLine(NULL, "「もっと怖い言い方をするなら、調理道具と言ったところかしらね。",
@@ -5601,7 +5622,7 @@
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask( "bg_179", "left", 0, 0, 300 );
-	DrawBustshot( 2, "ta_si_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	DrawBustshot( 2, "night/ta_si_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「...ほら。＠
 	OutputLine(NULL, "「…ほら。」",
@@ -5621,7 +5642,7 @@
 	ClearMessage();
 	DisableWindow();
 	FadeBustshot( 2, FALSE, 0, 0, 0, 0, 200, TRUE );
-	DrawBustshotWithFiltering( 3, "si_si_bi_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "night/si_si_bi_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「け、...圭ちゃん＠......あれ。￥
 	PlaySE(4, "S02/06/130600083", 128, 64);
@@ -5631,6 +5652,9 @@
 	OutputLine(NULL, "……あれ。」",
 		   NULL, " ......Look at that.\"", Line_Normal);
 	ClearMessage();
+	DisableWindow();
+	DrawSceneWithMask( "cg_106", "left", 0, 0, 300 );
+
 
 //　肩をぶつけてきた詩音が指差す先には......はっきりと人型と見て取れる形をした...拘束台が立てかけられていた＠
 	OutputLine(NULL, "　肩をぶつけてきた詩音が指差す先には……はっきりと人型と見て取れる形をした…拘束台が立てかけられていた。",
@@ -5652,8 +5676,8 @@
 	OutputLine(NULL, "まるで、その拘束台が次なる犠牲者を求めて、両手を広げて覆いかぶさってくるかのようだった…。",
 		   NULL, " It was like the table was searching for its next sacrifice, ready to spread their arms wide and close them in...", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-	DrawBustshotWithFiltering( 1, "ta_si_wa_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+//	DisableWindow();
+//	DrawBustshotWithFiltering( 1, "ta_si_wa_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「多分、...まな板じゃないかしら＠犠牲者を拘束してこの台の上でお料理をしたんだと思うわね。＠
 	OutputLine(NULL, "「多分、…まな板じゃないかしら。",
@@ -5819,8 +5843,8 @@
 	OutputLine(NULL, "…このわずかな感触が、今ここに自分以外の味方がいることを感じさせてくれるから……。",
 		   NULL, " ...That minor sensation allowed me to feel the presence of an ally, here and now......", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-	DrawSceneWithMask( "bg_178", "right", 0, 0, 300 );
+//	DisableWindow();
+//	DrawSceneWithMask( "bg_178", "right", 0, 0, 300 );
 
 //　祭事殿の中を...半分も歩かない内に、...肌で感じていた空気の感触はがらりと変わっていた￥
 	OutputLine(NULL, "　祭事殿の中を…半分も歩かない内に、…肌で感じていた空気の感触はがらりと変わっていた。",
@@ -5940,8 +5964,8 @@
 	OutputLine(NULL, "　この差が、どれほどおぞましく…そして恐ろしいことなのか……今この瞬間、はっきりと自覚する……。",
 		   NULL, "Only now, in this moment, did I fully realize... just how terrifying and fearsome... that difference was.", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-	DrawBustshotWithFiltering( 1, "ta_si_wa_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+//	DisableWindow();
+//	DrawBustshotWithFiltering( 1, "ta_si_wa_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「人ってね＠上手にやると、結構殺さずに済むものらしいの。＠
 	PlaySE(4, "S02/09/130900143", 128, 64);
@@ -5978,8 +6002,8 @@
 	OutputLine(NULL, "…その疑問には、すぐに詩音が答えてくれた。",
 		   NULL, " ...Shion immediately answered the question I had.", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-	DrawBustshotWithFiltering( 3, "si_si_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+//	DisableWindow();
+//	DrawBustshotWithFiltering( 3, "si_si_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「鷹野さん、看護婦さんですから。＠
 	PlaySE(4, "S02/06/130600086", 128, 64);
@@ -5992,8 +6016,8 @@
 	OutputLine(NULL, "　…医者のなんとかほど恐ろしいものはないと言うが……本当のようだ。",
 		   NULL, "...There's a saying that nothing can scare a doctor...... I guess it's true.", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-	DrawBustshot( 1, "ta_si_de_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+//	DisableWindow();
+//	DrawBustshot( 1, "ta_si_de_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「ところがね＠ローマの時代の処刑方法にね、網焼きというものがあったの＠バーベキューと同じにね＠金網で挟みつけて、炭火でじっくりと焼いたんですって。＠
 	OutputLine(NULL, "「ところがね。",
@@ -6044,8 +6068,8 @@
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
-	DisableWindow();
-	DrawBustshot( 3, "si_si_yw_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+//	DisableWindow();
+//	DrawBustshot( 3, "si_si_yw_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //　詩音が俺の背中に、しがみ付くようにくっついてくる＠
 	OutputLine(NULL, "　詩音が俺の背中に、しがみ付くようにくっついてくる。",
@@ -6082,8 +6106,8 @@
 	OutputLine(NULL, "　まるで、鷹野さんが目線だけで…俺の内臓をこね回しているかのようだった…。",
 		   NULL, "It was like my organs were coiling up... just from Takano-san's stare...", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-	DrawBustshot( 1, "ta_si_wa_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+//	DisableWindow();
+//	DrawBustshot( 1, "ta_si_wa_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「ウィンチで引っ張り出すっていうのは何だか大仰な方法だけど＠もっと野蛮に、裂いた腹から臓物を、千切っては投げ千切っては投げという...!w1000そんな恐ろしい刑もあったんじゃないかって充分に考えられない＠　でも処刑者には意識があるの＠...それは痛い以上に...恐ろしい体験なんでしょうね...。＠
 	OutputLine(NULL, "「ウィンチで引っ張り出すっていうのは何だか大仰な方法だけど。",
@@ -6110,8 +6134,8 @@
 	OutputLine(NULL, "…耳元で、詩音が何度も唾を飲み込む音がした……。",
 		   NULL, " ...I heard Shion gulping multiple times near my ears......", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-	DrawBustshot( 1, "ta_si_de_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+//	DisableWindow();
+//	DrawBustshot( 1, "ta_si_de_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「雛見沢の、いえ、鬼ヶ淵村の綿流しもそんな感じだったのかしらね＠......ほら＠耳を澄ませば......聞こえてくるような気がしない？＠
 	OutputLine(NULL, "「雛見沢の、いえ、鬼ヶ淵村の綿流しもそんな感じだったのかしらね。",
@@ -6143,7 +6167,7 @@
 	SetValidityOfInput( TRUE );
 	FadeOutBGM( 2, 1000, TRUE );
 	FadeBustshotWithFiltering( 5, "up", 0, FALSE, 0, 0, 1300, TRUE );
-	DrawBustshot( 1, "ta_si_wa_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+//	DrawBustshot( 1, "night/ta_si_wa_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //　鷹野さんは、俺と詩音を充分に怖がらせたことを確認すると、今度は和ますようににっこりと笑った＠
 	OutputLine(NULL, "　鷹野さんは、俺と詩音を充分に怖がらせたことを確認すると、今度は和ますようににっこりと笑った。",
@@ -6173,8 +6197,8 @@
 	ClearMessage();
 	DisableWindow();
 	DrawScene( "black", 3000 );
-	DrawSceneWithMask( "bg_177", "left", 0, 0, 1300 );
-	DrawBustshotWithFiltering( 1, "ta_si_de_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawSceneWithMask( "bg_179", "left", 0, 0, 1300 );
+	DrawBustshotWithFiltering( 1, "night/ta_si_de_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「これで軽く一周できたかしら＠ね＠　面白いところでしょう？＠
 	PlaySE(4, "S02/09/130900168", 128, 64);
@@ -6200,7 +6224,7 @@
 		   NULL, "The dim lighting didn't change... but for some reason, it felt like I was able to see all of those horrible tools at once...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshotWithFiltering( 3, "si_si_bi_b1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "night/si_si_bi_b1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「け、......圭ちゃん＠......上......。＠
 	PlaySE(4, "S02/06/130600087", 128, 64);
@@ -6285,8 +6309,8 @@
 		   NULL, " Things crowding the ceiling... were even hanging over our heads...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_177", "up", 0, 0, 300 );
-	DrawBustshotWithFiltering( 3, "ta_si_wa_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawSceneWithMask( "bg_179", "up", 0, 0, 300 );
+	DrawBustshotWithFiltering( 3, "night/ta_si_wa_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「ヨーロッパの拷問道具に、こう言った鳥篭がたくさん登場するわね＠日本にもあったなんて驚きだわ。＠
 	OutputLine(NULL, "「ヨーロッパの拷問道具に、こう言った鳥篭がたくさん登場するわね。",
@@ -6297,7 +6321,7 @@
 
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "si_si_bi_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "night/si_si_bi_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「け、......圭ちゃん、!w800......あれ、中に入ってない？＠　人＠　ミイラ？！＠
 	OutputLine(NULL, "「け、……圭ちゃん、",
@@ -6332,7 +6356,7 @@
 		   NULL, "...Being that dark, there wasn't any way you could tell if something was there in the first place.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 3, "ta_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, TRUE );
+	DrawBustshot( 3, "night/ta_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, TRUE );
 
 //「......私には何も見えないけど＠見間違いじゃないの？＠
 	OutputLine(NULL, "「……私には何も見えないけど。",
@@ -6344,7 +6368,7 @@
 
 	DisableWindow();
 	FadeAllBustshots( 400, TRUE );
-	DrawBustshot( 2, "si_si_yw_b1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	DrawBustshot( 2, "night/si_si_yw_b1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「...................................................。＠
 	OutputLine(NULL, "「……………………………………………。」",
@@ -6417,8 +6441,8 @@
 		   NULL, "That must apply to Hinamizawa as well...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 1, "ta_si_de_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
-	DrawSceneWithMask( "bg_177", "down", 0, 0, 300 );
+	DrawBustshot( 1, "night/ta_si_de_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawSceneWithMask( "bg_179", "down", 0, 0, 300 );
 
 //「......中世の暗黒時代とかがそうだったように、!w800...雛見沢にも暗黒時代があった＠...そういうものなんだと解釈します＠
 	PlaySE(4, "S02/01/130100153", 128, 64);
@@ -6454,7 +6478,7 @@
 	ClearMessage();
 	DisableWindow();
 	PlayBGM( 1, "msys13", 128, 0 );
-	DrawBustshot( 1, "ta_si_wa_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	DrawBustshot( 1, "night/ta_si_wa_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「前原くんは、本当に雛見沢が好きなのね...。＠
 	PlaySE(4, "S02/09/130900177", 128, 64);
@@ -6470,7 +6494,7 @@
 		   NULL, " Takano-san gave me a light smile.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshotWithFiltering( 3, "si_si_ma_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "night/si_si_ma_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「でも、鷹野さんはその風習が、実は現代にも残っているんじゃないかと思って、研究をしてるんです＠...そうでしたよね？＠
 	PlaySE(4, "S02/06/130600093", 128, 64);
@@ -6500,7 +6524,7 @@
 	ClearMessage();
 	DisableWindow();
 	PlayBGM( 1, "msys07", 128, 0 );
-	DrawBustshot( 1, "ta_si_de_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	DrawBustshot( 1, "night/ta_si_de_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「......これ、本当に内緒なんだからね＠　詩音ちゃんは理解のある人だから話したけど、他の村人には聞かれたくないの＠...下手をしたら罰当たり者ってことで、袋叩きにされかねないんだから。＠
 	PlaySE(4, "S02/09/130900178", 128, 64);
@@ -6531,7 +6555,7 @@
 
 
 	DisableWindow();
-	DrawBustshot( 1, "ta_si_wa_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	DrawBustshot( 1, "night/ta_si_wa_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //　祟りなら、今年はどんな死に方をさせられちゃうのかしら＠生贄なら...鬼ヶ淵の沼に生きたまま沈められちゃうのかしら＠......そう言えば今夜よね＠オヤシロさまの祟りがある夜は。＠
 	PlaySE(4, "S02/09/130900183", 128, 64);
@@ -6584,7 +6608,7 @@
 		   NULL, "The letters were very small and bunched together, so I couldn't tell at a glance what it was about.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 1, "ta_si_de_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	DrawBustshot( 1, "night/ta_si_de_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「本当は国会図書館で当時の新聞が探したいんだけどね...＠/
 	PlaySE(4, "S02/09/130900187", 128, 64);
@@ -6694,8 +6718,8 @@
 		   NULL, "The police immediately began an investigation, but since they couldn't even determine the identity of the victim—much less the criminal—finding answers was extremely difficult...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 2, "ta_si_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "bg_177", "up", 0, 0, 300 );
+	DrawBustshot( 2, "night/ta_si_de_a1_zoom", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "bg_179", "up", 0, 0, 300 );
 
 //「どういう状況か、わかるかしら？＠
 	PlaySE(4, "S02/09/130900194", 128, 64);
@@ -6715,7 +6739,7 @@
 		   NULL, "This was the first time I was ever thankful for my lack of imagination...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 2, "ta_si_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	DrawBustshot( 2, "night/ta_si_wa_a1_zoom", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「被害者は生きながらにして全身の皮を剥がれ、あらゆる拷問を受けて虐め殺されたんですって＠
 	OutputLine(NULL, "「被害者は生きながらにして全身の皮を剥がれ、あらゆる拷問を受けて虐め殺されたんですって。",
@@ -6730,7 +6754,7 @@
 
 
 	DisableWindow();
-	DrawBustshot( 2, "ta_si_aw_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	DrawBustshot( 2, "night/ta_si_aw_a1_zoom", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //　......私は、どの工程も『生きている』!w900内にやったんじゃないか、って思ってるんだけどね＠前原くんはどう思うかしら？＠
 	OutputLine(NULL, "　……私は、どの工程も『生きている』",
@@ -6853,7 +6877,7 @@
 
 
 	DisableWindow();
-	DrawBustshot( 2, "ta_si_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	DrawBustshot( 2, "night/ta_si_de_a1_zoom", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「たったよ＠...たった百年前のことよ＠それにね＠昭和に入ってからだって、あるんだから＠...終戦直後に騒ぎになった/
 	PlaySE(4, "S02/09/130900201", 128, 64);
@@ -6928,8 +6952,8 @@
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshot( 1, "tm_si_de_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
-	DrawSceneWithMask( "bg_176", "right", 0, 0, 300 );
+	DrawBustshot( 1, "night/tm_si_de_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawSceneWithMask( "night/bg_178", "right", 0, 0, 300 );
 
 //　...扉を細く開けた富竹さんだった￥
 	OutputLine(NULL, "　…扉を細く開けた富竹さんだった。",
@@ -6937,7 +6961,7 @@
 	ClearMessage();
 	DisableWindow();
 	PlayBGM( 1, "msys13", 128, 0 );
-	DrawBustshot( 1, "tm_si_wa_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	DrawBustshot( 1, "night/tm_si_wa_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「あっはっはっは＠驚かせちゃったかな？＠
 	PlaySE(4, "S02/08/130800024", 128, 64);
@@ -6950,7 +6974,7 @@
 
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 3, "ta_si_wa_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "night/ta_si_wa_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「あら、ジロウさんも見たくて我慢できなくなったかしら＠　......ここ、素敵な拷問道具の宝庫よ。＠
 	PlaySE(4, "S02/09/130900207", 128, 64);
@@ -6962,7 +6986,7 @@
 
 
 	DisableWindow();
-	DrawBustshot( 1, "tm_si_ko_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	DrawBustshot( 1, "night/tm_si_ko_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「僕は遠慮させてもらうよ＠...あははは...、!w800生来ね、こういうのは苦手なんだ。＠
 	PlaySE(4, "S02/08/130800026", 128, 64);
@@ -6986,7 +7010,7 @@
 		   NULL, "Takano-san held her stomach and had to muffle her laughter, as if she wanted to make a comment about his masculinity.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 1, "tm_si_de_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	DrawBustshot( 1, "night/tm_si_de_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「それより＠演舞とセレモニーが終わって、みんな沢の方に降りて行ったよ＠あと何分もしない内にお祭りは終わっちゃう。＠
 	PlaySE(4, "S02/08/130800028", 128, 64);
@@ -7002,7 +7026,7 @@
 
 
 	DisableWindow();
-	DrawBustshot( 3, "ta_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, TRUE );
+	DrawBustshot( 3, "night/ta_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, TRUE );
 
 //「あら、いけない＠前原くんがあまりにも聞き上手だから、またお話三昧になっちゃったわ。＠
 	PlaySE(4, "S02/09/130900209", 128, 64);
@@ -7072,7 +7096,7 @@
 
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 3, "si_si_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "night/si_si_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「同感です＠出ましょう。￥
 	PlaySE(4, "S02/06/130600095", 128, 64);
@@ -7133,7 +7157,7 @@
 		   NULL, "The voices of the bugs, on the other hand, were clear... lending an empty feeling of isolation to the place.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshotWithFiltering( 3, "tm_si_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "night/tm_si_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「どうだい＠面白かったかい？＠
 	PlaySE(4, "S02/08/130800033", 128, 64);
@@ -7164,7 +7188,7 @@
 
 
 	DisableWindow();
-	DrawBustshot( 3, "tm_si_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	DrawBustshot( 3, "night/tm_si_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 
 
@@ -7180,7 +7204,7 @@
 		   NULL, "Tomitake-san laughed so delightfully that it wiped away our dark feelings.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 3, "tm_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	DrawBustshot( 3, "night/tm_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「詩音ちゃんはどうだったかな＠　怖かったかい？＠
 	PlaySE(4, "S02/08/130800036", 128, 64);
@@ -7193,7 +7217,7 @@
 
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "si_si_de_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "night/si_si_de_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「...一応、心の準備があった分、怖くはなかったですけど＠...でもやっぱり実物は迫力あります。＠
 	PlaySE(4, "S02/06/130600097", 128, 64);
@@ -7221,7 +7245,7 @@
 		   NULL, "As Tomitake-san grinned candidly, my mind, exhausted and locked up by nervousness began to calm itself...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 3, "tm_si_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	DrawBustshot( 3, "night/tm_si_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「鷹野さんは大人しく見物してたかな＠　ほら、彼女、子供っぽいところがあるだろう＠　宝の山を前に、さぞや興奮してたんじゃないかと思ってね。＠
 	PlaySE(4, "S02/08/130800038", 128, 64);
@@ -7241,7 +7265,7 @@
 		   NULL, "Both Shion and I laughed, and left that as our answer.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 3, "tm_si_ko_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	DrawBustshot( 3, "night/tm_si_ko_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「見るだけならいいんだけどね＠こっそりと何かを持ち出したり、いじくり過ぎて祭具を壊したりしないかが心配なんだよ。＠
 	PlaySE(4, "S02/08/130800041", 128, 64);
@@ -7270,7 +7294,7 @@
 		   NULL, "She might pilfer something small and easily concealed, hiding it in her pocket.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 1, "si_si_wa_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	DrawBustshot( 1, "night/si_si_wa_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「あははははは、うん＠やりかねないです。＠
 	PlaySE(4, "S02/06/130600099", 128, 64);
@@ -7302,7 +7326,7 @@
 
 	DisableWindow();
 	FadeBustshotWithFiltering( 1, "right", 1, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 1, "ta_si_de_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "night/ta_si_de_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「ごめんなさい＠フィルムがなくなっちゃったわ＠ジロウさん、フィルムが余ってたら分けてくれないかしら。￥
 	PlaySE(4, "S02/09/130900214", 128, 64);
@@ -7329,7 +7353,7 @@
 		   NULL, " ...He's pretty mature.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 3, "tm_si_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	DrawBustshot( 3, "night/tm_si_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「あ、あっはっはっは＠　もう予備のフィルムは切れちゃったよ＠申し訳ないね...。＠
 	PlaySE(4, "S02/08/130800046", 128, 64);
@@ -7379,7 +7403,7 @@
 		   NULL, "We checked carefully to make sure we hadn't left anything inside, then closed the door and turned to the heavy padlock we'd left beside it.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 3, "tm_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	DrawBustshot( 3, "night/tm_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「鷹野さん...、何も持ち出してないだろうね...。＠
 	PlaySE(4, "S02/08/130800049", 128, 64);
@@ -7414,7 +7438,7 @@
 		   NULL, "...From a cursory glance, it didn't look like thieves had snuck in at all.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 3, "tm_si_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	DrawBustshot( 3, "night/tm_si_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「よし＠僕たちも沢に行こう＠綿を流すところくらいやらないと、お祭りに来た意味がないよ。＠
 	PlaySE(4, "S02/08/130800050", 128, 64);
@@ -7451,7 +7475,7 @@
 		   NULL, "Takano-san, looking a little let down, kept turning back to glance at the ritual storehouse.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 3, "tm_si_ko_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	DrawBustshot( 3, "night/tm_si_ko_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「もうこれっきりにしてくれよ＠充分に知的好奇心は満たせただろ？＠
 	PlaySE(4, "S02/08/130800053", 128, 64);
@@ -7464,7 +7488,7 @@
 
 
 	DisableWindow();
-	DrawBustshot( 1, "ta_si_wa_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	DrawBustshot( 1, "night/ta_si_wa_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「まさか＠　むしろ新しい興味を惹かれるような発見ばかりよ＠今日ので、これまでの仮説が一気に現実になったわ＠これで今後の調べ方がだいぶ変わってくるんだから...！＠
 	PlaySE(4, "S02/09/130900222", 128, 64);
@@ -7503,7 +7527,7 @@
 		   NULL, "We descended the stone stairs and all the people crowding the stream came into view.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_263", "up", 0, 0, 1300 );
+	DrawSceneWithMask( "bg_246b", "up", 0, 0, 1300 );
 
 //　石段の下辺りで、ワタを千切ってもらい、それに願掛けをしてから沢に流している様子がここからでもよくわかる＠
 	OutputLine(NULL, "　石段の下辺りで、ワタを千切ってもらい、それに願掛けをしてから沢に流している様子がここからでもよくわかる。",
@@ -7515,7 +7539,9 @@
 		   NULL, "...The festival was already over.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "tm_si_ko_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawSceneWithMask( "bg_263", "up", 0, 0, 1300 );
+
+	DrawBustshotWithFiltering( 1, "night/tm_si_ko_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「まずったなぁ＠綿流しの一番いいところを撮影し損ねたよ。＠
 	PlaySE(4, "S02/08/130800055", 128, 64);
@@ -7528,7 +7554,7 @@
 
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 3, "ta_si_wa_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "night/ta_si_wa_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「あら、まだ遅くないわよ＠私が行って流すんだから＠私を撮っては下さらないのかしら？＠
 	PlaySE(4, "S02/09/130900226", 128, 64);
@@ -7574,7 +7600,7 @@
 
 
 	DisableWindow();
-	DrawBustshot( 1, "tm_si_de_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	DrawBustshot( 1, "night/tm_si_de_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「僕たちは今からでも沢に行ってみるよ＠君たちも一緒に来るかい？＠
 	PlaySE(4, "S02/08/130800057", 128, 64);
@@ -7588,7 +7614,7 @@
 
 	DisableWindow();
 	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 3, "si_si_aw_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "night/si_si_aw_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「まさか＠お二人の邪魔なんてできません＠どうぞごゆっくり～。＠
 	PlaySE(4, "S02/06/130600101", 128, 64);
@@ -7621,7 +7647,7 @@
 		   NULL, "Shion gave a big stretch and sat down on the stone steps.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 3, "si_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	DrawBustshot( 3, "night/si_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「えへへ...＠疲れちゃいました。＠
 	PlaySE(4, "S02/06/130600104", 128, 64);
@@ -7644,7 +7670,7 @@
 
 
 	DisableWindow();
-	DrawBustshot( 3, "si_si_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	DrawBustshot( 3, "night/si_si_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「圭ちゃんは綿流し、初めてなんですよね＠　私なんか気にしないで行って来て下さい＠私は疲れちゃったんで、人ごみはちょっとパスしておきます。＠
 	PlaySE(4, "S02/06/130600106", 128, 64);
@@ -7664,7 +7690,7 @@
 		   NULL, "Yeah, if we were to go now, we'd barely slip into the end of the cotton-drifting ceremony.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 3, "si_si_wi_b1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	DrawBustshot( 3, "night/si_si_wi_b1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「お姉たちが圭ちゃんのこと、探してるかも知れませんから＠行って来て下さい。＠
 	PlaySE(4, "S02/06/130600109", 128, 64);
@@ -7693,7 +7719,7 @@
 		   NULL, "Then, Shion suddenly got a playful look on her face, then put her index finger to her lips as if telling me to keep this a secret.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 3, "si_si_aw_b1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	DrawBustshot( 3, "night/si_si_aw_b1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「お姉ってすっごく嫉妬深いんです＠私が圭ちゃんを独占してたことがバレると、いろいろうるさいんで、今夜のことは秘密にしておいて下さいね。＠
 	PlaySE(4, "S02/06/130600111", 128, 64);
@@ -7716,7 +7742,7 @@
 		   NULL, "......Don't say things that are so embarrassing!", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 3, "si_si_wi_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	DrawBustshot( 3, "night/si_si_wi_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「そういう意味だけじゃないですよ＠
 	PlaySE(4, "S02/06/130600113", 128, 64);
@@ -7748,7 +7774,7 @@
 		   NULL, "Shion, however, burst out laughing.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 3, "si_si_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	DrawBustshot( 3, "night/si_si_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「じゃあ、私はお姉に出くわす前に退散します＠今日は本当に疲れてるから、お姉とやり合えるだけの体力はないですし。＠
 	PlaySE(4, "S02/06/130600116", 128, 64);
@@ -7766,7 +7792,7 @@
 		   NULL, "\"I can't tell if you get along with her or not.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 3, "si_si_wi_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	DrawBustshot( 3, "night/si_si_wi_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「仲、いいですよ。＠
 	PlaySE(4, "S02/06/130600118", 128, 64);
@@ -7791,7 +7817,7 @@
 
 
 	DisableWindow();
-	DrawBustshot( 3, "si_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	DrawBustshot( 3, "night/si_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「はい。余計なお節介と承ります＠...それじゃあ私はこの辺で＠圭ちゃんも急いで行った方がいいですよ＠本当に綿流しが終わっちゃいます。￥
 	PlaySE(4, "S02/06/130600119", 128, 64);
@@ -7821,7 +7847,7 @@
 		   NULL, "After watching her do so, I returned my eyes to the final ceremony of the Watanagashi Festival below me.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 3, "si_si_yw_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	DrawBustshot( 3, "night/si_si_yw_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「でも本当に＠...あの音は何だったんでしょうね＠不愉快というか、気味が悪いというか。＠
 	PlaySE(4, "S02/06/130600123", 128, 64);
@@ -7850,7 +7876,7 @@
 
 
 	DisableWindow();
-	DrawBustshot( 3, "si_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	DrawBustshot( 3, "night/si_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「..................音ですよ。/
 	PlaySE(4, "S02/06/130600126", 128, 64);
@@ -7891,7 +7917,7 @@
 
 
 	DisableWindow();
-	DrawBustshot( 3, "si_si_ma_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	DrawBustshot( 3, "night/si_si_ma_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「.........圭ちゃん、あれ＠...気にならなかったんですか？」/
 	PlaySE(4, "S02/06/130600129", 128, 64);
@@ -7986,7 +8012,7 @@
 		   NULL, " ...You said there was a sound. What are you talking about?\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 3, "si_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	DrawBustshot( 3, "night/si_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「ドタンバタンって＠何だかどこか遠くの板の間で、子供が跳ねてるような＠...本当に気にならなかったんですか...？＠
 	PlaySE(4, "S02/06/130600133", 128, 64);
@@ -8013,7 +8039,7 @@
 		   NULL, " I never heard anything.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 3, "si_si_bi_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	DrawBustshot( 3, "night/si_si_bi_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「ちょっと圭ちゃん...、...それ、...本気で言ってるんですか？￥
 	PlaySE(4, "S02/06/130600136", 128, 64);
@@ -8034,7 +8060,7 @@
 		   NULL, "......I have no clue what she's talking about, but if it has Shion acting so like this... Whatever it was, it gave me the creeps, and sent a chill down my spine.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 3, "si_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	DrawBustshot( 3, "night/si_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「さっき、祭具殿の中で鷹野さんと一緒に見て回ってる最中＠...鷹野さんが昔話を始めた頃からかな＠　少しずつ＠だんだんと＠ちょくちょくと...。＠
 	PlaySE(4, "S02/06/130600137", 128, 64);
@@ -8081,7 +8107,7 @@
 		   NULL, "...In fact, it was so utterly silent in there that my own heartbeat was almost deafening.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 3, "si_si_yw_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	DrawBustshot( 3, "night/si_si_yw_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「圭ちゃんこそ、怖がらせないで下さい＠...何だか、鷹野さんの怖い話に合わせて音を立ててるようで、...私、ずーっと薄気味悪かったんですから。￥
 	PlaySE(4, "S02/06/130600142", 128, 64);
@@ -8158,7 +8184,7 @@
 	ClearMessage();
 	DisableWindow();
 	PlayBGM( 1, "msys13", 128, 0 );
-	DrawBustshot( 3, "si_si_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	DrawBustshot( 3, "night/si_si_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「あ、......あはははははははは。＠
 	PlaySE(4, "S02/06/130600147", 128, 64);
@@ -8175,7 +8201,7 @@
 
 
 	DisableWindow();
-	DrawBustshot( 3, "si_si_wi_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	DrawBustshot( 3, "night/si_si_wi_b1_zoom", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「引っ掛かりましたね圭ちゃん＠ウソですよ、ウ・ソ。＠
 	PlaySE(4, "S02/06/130600148", 128, 64);
@@ -8324,7 +8350,7 @@
 		   NULL, "Then, all of a sudden, I was pounced on from behind, causing my heart to lurch!!", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 3, "ri_mk_ni_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	DrawBustshot( 3, "night/ri_mk_ni_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawSceneWithMask( "bg_263", "down", 0, 0, 200 );
 
 	PlayBGM( 1, "msys02", 128, 0 );
@@ -8343,7 +8369,7 @@
 		   NULL, " ...When I turned round, Mion and Rena were there too.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "me_si_wa_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "night/me_si_wa_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「はーー、やっと見つけた＠あとは沙都子かー。＠
 	PlaySE(4, "S02/03/130300065", 128, 64);
@@ -8357,7 +8383,7 @@
 
 	DisableWindow();
 	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 3, "re_si_wa_b1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "night/re_si_wa_b1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「今年はみんなはぐれちゃったね＠来年からはちゃんと合流場所を決めておきたいな。はぅ。＠
 	PlaySE(4, "S02/02/130200062", 128, 64);
@@ -8370,7 +8396,7 @@
 
 
 	DisableWindow();
-	DrawBustshot( 1, "me_si_wi_a2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	DrawBustshot( 1, "night/me_si_wi_a2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「そーだねー＠やっぱりお祭りはみんなと一緒でないとね！＠
 	PlaySE(4, "S02/03/130300067", 128, 64);
@@ -8388,7 +8414,7 @@
 	ClearMessage();
 	DisableWindow();
 	FadeBustshotWithFiltering( 1, "right", 1, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 1, "ri_mk_de_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "night/ri_mk_de_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「......圭一はボクの演舞はちゃんと応援してくれましたですか？＠
 	PlaySE(4, "S02/05/130500025", 128, 64);
@@ -8414,7 +8440,7 @@
 
 
 	DisableWindow();
-	DrawBustshot( 1, "ri_mk_ko_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	DrawBustshot( 1, "night/ri_mk_ko_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「..............................。＠
 	PlaySE(4, "S02/05/130500026", 128, 64);
@@ -8424,7 +8450,7 @@
 
 
 	DisableWindow();
-	DrawBustshot( 3, "re_si_ha_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	DrawBustshot( 3, "night/re_si_ha_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「...うん＠そうだよ梨花ちゃん＠あんなのはミスの内に入らないよ～。￥
 	PlaySE(4, "S02/02/130200064", 128, 64);
@@ -8455,7 +8481,7 @@
 	ClearMessage();
 	DisableWindow();
 	FadeBustshotWithFiltering( 1, "right", 1, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 1, "me_si_ma_a2", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "night/me_si_ma_a2", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 	PlayBGM( 1, "msys13", 128, 0 );
 
 //「...圭ちゃんはやった＠　ワタをもらって、沢に流した？＠
@@ -8481,7 +8507,7 @@
 		   NULL, "...Without the courage to tell any more lies... I lifelessly shook my head.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 3, "re_si_wa_b1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	DrawBustshot( 3, "night/re_si_wa_b1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「あれ＠　そうなの圭一くん＠　早く行かないと終わっちゃうよ＠終わっちゃうよ。＠
 	PlaySE(4, "S02/02/130200067", 128, 64);
@@ -8513,7 +8539,7 @@
 
 
 	DisableWindow();
-	DrawBustshot( 1, "me_si_de_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	DrawBustshot( 1, "night/me_si_de_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「...............そうだったね＠ごめん。￥
 	PlaySE(4, "S02/03/130300071", 128, 64);
@@ -8531,7 +8557,7 @@
 		   NULL, "Mion took my hand and we started walking down the stone steps.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 2, "me_si_de_a2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	DrawBustshot( 2, "night/me_si_de_a2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「...ねぇ圭ちゃん。＠
 	PlaySE(4, "S02/03/130300073", 128, 64);
@@ -8584,7 +8610,7 @@
 
 
 	DisableWindow();
-	DrawBustshot( 2, "me_si_ma_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	DrawBustshot( 2, "night/me_si_ma_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「...そんなに間違えないでしょ＠服装だって違うんだから。＠
 	PlaySE(4, "S02/03/130300076", 128, 64);
@@ -8608,13 +8634,12 @@
 		   NULL, "Mion's momentary silence was like a deathgrip upon me...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 2, "me_si_aw_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	DrawBustshot( 2, "night/me_si_aw_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「......しょーがないなぁ、詩音は＠　まぁあいつのことだから、放っておいても大丈夫かな。＠
 	PlaySE(4, "S02/03/130300078", 128, 64);
 	OutputLine(NULL, "「……しょーがないなぁ、詩音は！",
 		   NULL, "\"...I just can't do anything about that Shion!", Line_WaitForInput);
-	PlaySE(4, "S02/03/130300079", 128, 64);
 	OutputLine(NULL, "　まぁあいつのことだから、放っておいても大丈夫かな。」",
 		   NULL, " Well, it's her we're talking about, so we can just leave her be.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);

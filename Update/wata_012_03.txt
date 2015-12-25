@@ -906,8 +906,8 @@
 		   NULL, " a modern storehouse for ritual implements......", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_177", "up", 0, 0, 1300 );
-	DrawBustshot( 2, "me_si_de_a2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	DrawSceneWithMask( "bg_176b", "up", 0, 0, 1300 );
+	DrawBustshot( 2, "night/me_si_de_a2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	PlayBGM( 1, "msys21", 128, 0 );
 
 //「...いろいろ、......あるでしょ＠一部のものは実際に祭具殿から運び込まれたものなんだよ。＠
@@ -927,7 +927,7 @@
 		   NULL, " but the things in here were different.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_179", "right", 0, 0, 300 );
+	DrawSceneWithMask( "bg_176b", "right", 0, 0, 300 );
 
 //　どれもよく手入れされ、...今すぐ使用できる状態に維持されていた＠
 	OutputLine(NULL, "　どれもよく手入れされ、…今すぐ使用できる状態に維持されていた。",
@@ -1120,7 +1120,7 @@
 		   NULL, "Mion groped around in the darkness, and a handful of naked light bulbs came on here and there.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "bg_178", 3000 );
+	DrawScene( "bg_undergr1", 3000 );
 
 //　...目が闇に慣れるに従い。おぼろげな灯りの中に大空洞が姿を現す...＠
 	OutputLine(NULL, "　…目が闇に慣れるに従い。おぼろげな灯りの中に大空洞が姿を現す…。",
@@ -1246,7 +1246,7 @@
 		   NULL, "When I noticed it, I looked up as well.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_176", "left", 0, 0, 300 );
+	DrawSceneWithMask( "bg_undergr1", "left", 0, 0, 300 );
 
 //「.....................詩音？＠　...............詩音かッ？！？！＠
 	PlaySE(4, "S02/01/130101107", 128, 64);
@@ -1345,7 +1345,7 @@
 		   NULL, "...However, it didn't seem like it was getting through her screams...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 3, "me_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	DrawBustshot( 3, "night/me_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「詩音＠...ご機嫌はいかがだった...？＠
 	PlaySE(4, "S02/03/130300562", 128, 64);
@@ -1421,7 +1421,7 @@
 	ClearMessage();
 	DisableWindow();
 	FadeOutBGM( 1, 1000, TRUE );
-	DrawBustshot( 3, "me_si_fu_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	DrawBustshot( 3, "night/me_si_fu_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「安心しなよ＠あんたは殺さない＠...まだまだ殺さないんだから＠......くっくっくっくっくっくっくっくっくっくっくっく...！！＠
 	PlaySE(4, "S02/03/130300564", 128, 64);
@@ -1469,7 +1469,7 @@
 		   NULL, " I don't want anyone else... to dieeeeeeeee!!!!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 3, "me_si_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	DrawBustshot( 3, "nigth/me_si_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「あっはははははははははははははははははははははッ！！＠/
 	PlaySE(4, "S02/03/130300568", 128, 64);
@@ -1477,7 +1477,7 @@
 		   NULL, "\"Ah-hahahahahahahahahahahahahahahahahahah!!!", Line_WaitForInput);
 
 	DisableWindow();
-	DrawBustshot( 3, "me_si_fu_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	DrawBustshot( 3, "night/me_si_fu_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //　そんなに死にたければ、この男を殺した後に、ゆっくりとひき肉にしてやるよ＠...古式に則り、四肢の先端から少しずつ＠ガリゴリと削ってミンチにしてやる＠...あの肉挽き機はあんたのためにとっておいてあるんだからね＠/
 	PlaySE(4, "S02/03/130300569", 128, 64);
@@ -1494,7 +1494,7 @@
 		   NULL, " I had that mincing machine set up specifically for you, after all.", Line_WaitForInput);
 
 	DisableWindow();
-	DrawBustshot( 3, "me_si_aw_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	DrawBustshot( 3, "night/me_si_aw_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //...それとも、それで圭ちゃんをミンチにして見せた方が、あんたには面白いかなぁ？￥
 	PlaySE(4, "S02/03/130300573", 128, 64);
@@ -1529,6 +1529,8 @@
 	ClearMessage();
 	DisableWindow();
 	DrawScene( "black", 50 );
+	DrawScene( "cg_029", 400 );
+
 	FadeOutBGM( 2, 1000, TRUE );
 	PlayBGM( 1, "msys20", 128, 0 );
 
@@ -1693,7 +1695,7 @@
 		   NULL, "...As if her crying had whetted Mion's interest, she held flung me down and returned to the prison cell again.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "bg_176", 400 );
+	DrawScene( "bg_undergr1", 400 );
 
 
 //「...あんたもかわいい声で泣けるじゃない＠
@@ -1988,7 +1990,7 @@
 		   NULL, "The Mion I knew well... would never do something so nasty like enjoy trampling all over someone's dignity like this...!!!", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "bg_176", 400 );
+	DrawScene( "bg_undergr1", 400 );
 
 //「さ＠やってごらん＠お姉ちゃんはちゃんと聞いててあげるから。＠
 	PlaySE(4, "S02/03/130300600", 128, 64);
@@ -2150,7 +2152,7 @@
 
 	DisableWindow();
 	DrawBustshot( 3, "me_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
-	DrawScene( "bg_176", 400 );
+	DrawScene( "bg_176b", 400 );
 
 //「いいよ、もう＠...充分面白かったわ＠あんたがそこまでプライドを捨てられるとは思わなかったから＠うんうん＠充分に愉快。＠
 	PlaySE(4, "S02/03/130300606", 128, 64);
@@ -2214,7 +2216,7 @@
 		   NULL, "\"............N... Nooooooooooooooooooooooooooo!!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "bg_177", 1000 );
+	DrawScene( "bg_176b", 1000 );
 
 //　拷問室に引きずられてきた俺は、手際よく拘束台に縛り付けられていった＠あっという間に大の字に拘束されてしまう...￥
 	OutputLine(NULL, "　拷問室に引きずられてきた俺は、手際よく拘束台に縛り付けられていった。",
@@ -2671,7 +2673,7 @@
 
 	DisableWindow();
 	DrawBustshot( 2, "me_si_aw_a2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawScene( "bg_177", 300 );
+	DrawScene( "bg_176b", 300 );
 
 //.........もういい＠　そろそろ始めるよ＠　いい声を出してね＠これは圭ちゃんへの拷問である以上に、詩音への拷問なんだからさ。￥
 	PlaySE(4, "S02/03/130300643", 128, 64);
@@ -2758,7 +2760,7 @@
 //	PlayBGM( 1, "msys18", 128, 0 );
 	DisableWindow();
 	DrawBustshot( 2, "me_si_si_a2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawScene( "bg_179", 300 );
+	DrawScene( "bg_176b", 300 );
 
 //「...............圭ちゃん＠...冥土の土産、...なんて気の利いたものじゃないけれど＠............どうしても知りたがっているようだから、ひとつだけ教えてあげるよ。＠
 	PlaySE(4, "S02/03/130300647", 128, 64);
@@ -3055,7 +3057,7 @@
 		   NULL, "I simply... just cried and cried...... and reflected indifferently... on the taste of my tears... on the taste of regret...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "bg_179", 1000 );
+	DrawScene( "bg_176b", 1000 );
 
 //「......じゃあそろそろいい＠　この拷問はね、とてもシンプル＠左手の小指の先端の節に釘を打つ＠順に親指まで打ったらまた小指に戻って、今度は真ん中の節に釘を打つ＠...この調子で１５本の釘で左手を打ちつける＠それが終わったら次は右手＠......それが終わったら次は、............まだ意識があったら教えるね＠指先って、たくさんの神経が集まってるから、圭ちゃんが想像するよりもはるかに痛いよ＠...両手３０本を打ち終える前に、失神しちゃう人もいるそうだから...。￥
 	PlaySE(4, "S02/03/130300673", 128, 64);
@@ -3328,7 +3330,7 @@
 		   NULL, "Mion put down the hammer... and gently stroked my cheek.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "bg_177", 1000 );
+	DrawScene( "bg_176b", 1000 );
 	DrawBustshot( 3, "me_si_si_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 1000, TRUE );
 
 //「......圭ちゃん＠今の、......三つ目の願いだけは、聞いてもいいよ。＠
@@ -3478,7 +3480,7 @@
 
 	DisableWindow();
 	DrawBustshot( 3, "me_si_si_a2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
-	DrawSceneWithMask( "bg_177", "right", 0, 0, 300 );
+	DrawSceneWithMask( "bg_176b", "right", 0, 0, 300 );
 
 //「帰りが遅いから、レナが大石を呼んだんでしょ＠.........あのぼやーっとした感じの子が、こんなに頭が回るのだけは計算外だったな。＠
 	PlaySE(4, "S02/03/130300710", 128, 64);
@@ -3610,7 +3612,7 @@
 
 	DisableWindow();
 	DrawBustshot( 3, "me_si_yw_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
-	DrawScene( "bg_177", 200 );
+	DrawScene( "bg_176b", 200 );
 
 //「..........................................ごめんね＠......魅音を汚して。＠
 	PlaySE(4, "S02/03/130300720", 128, 64);
@@ -3646,7 +3648,6 @@
 
 	OutputLine(NULL, "…近寄らないでね。",
 		   NULL, " don't come near me.", Line_WaitForInput);
-	PlaySE(4, "S02/03/130300724", 128, 64);
 	OutputLine(NULL, "……それは私の屍に取り憑いた…鬼なんだから。」",
 		   NULL, " ...By then, it will be the demon... that inherited my corpse.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);

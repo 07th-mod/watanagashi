@@ -308,11 +308,11 @@
 //setwindow 31,16,22,16,26,26,0,2,20,1,1,#ffffff,0,0,639,479
 	PlayBGM( 1, "msys12", 128, 0 );
 	DisableWindow();
-	DrawScene( "bg_132", 1000 );
+//	DrawScene( "bg_132", 1000 );
 	SetValidityOfInput( FALSE );
-	Wait( 2000 );
+//	Wait( 2000 );
 	SetValidityOfInput( TRUE );
-	DrawScene( "bg_186", 1000 );
+	DrawScene( "bg_hosp", 1000 );
 //setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,639,479
 //!sd
 
@@ -904,7 +904,7 @@
 
 	DisableWindow();
 	DrawBustshot( 2, "oi_si_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, FALSE );
-	DrawScene( "bg_186", 1000 );
+	DrawScene( "bg_hosp", 1000 );
 
 //「.........過去の園崎家の当主が作らせた、秘密の逃げ道だったんでしょうね。＠
 	PlaySE(4, "S02/01/130101209", 128, 64);
@@ -1212,7 +1212,7 @@
 	DisableWindow();
 	DrawScene( "black", 1000 );
 	FadeFilm( 1000, TRUE );
-	DrawScene( "bg_186", 1000 );
+	DrawScene( "bg_hosp", 1000 );
 	DrawBustshotWithFiltering( 2,"oi_si_de_a1", "left", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	StopSE( 3 );
@@ -1582,7 +1582,7 @@
 
 	DisableWindow();
 	DrawBustshot( 2,"oi_si_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "bg_186", "down", 0, 0, 200 );
+	DrawSceneWithMask( "bg_hosp", "down", 0, 0, 200 );
 
 
 //「...つまり、壁越しに聞いたというだけなんです＠しかもこのマンション、組の関係で住人がほとんどいないんです＠ですからこの騒ぎを聞いてたのも彼らだけ＠......重ねて言えば、園崎魅音を目撃した者は誰一人いないんです。＠
@@ -2127,7 +2127,7 @@
 	DrawScene( "black", 1000 );
 	FadeFilm( 1000, TRUE );
 	DrawBustshot( 2,"oi_si_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "bg_186", "up", 0, 0, 300 );
+	DrawSceneWithMask( "bg_hosp", "up", 0, 0, 300 );
 
 
 
@@ -2280,7 +2280,7 @@
 	ClearMessage();
 
 	DisableWindow();
-	DrawScene( "black", 1000 );
+	DrawScene( "cg_107a", 1000 );
 
 //　俺にとっての事件を終わらせようと思って...＠
 	OutputLine(NULL, "　俺にとっての事件を終わらせようと思って…？",
@@ -2340,6 +2340,9 @@
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
+
+	DrawScene( "cg_107b", 1000 );
+
 
 //　.........その時、ぬぅっと、...鮮血をこびり付かせた腕が、!w600...ベッドの下から生えてきた＠
 	OutputLine(NULL, "　………その時、ぬぅっと、…鮮血をこびり付かせた腕が、",
@@ -2689,6 +2692,7 @@
 		   NULL, "I felt... a crooked nail press against my left pinky fingertip.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	DrawScene( "cg_107c", 1000 );
 
 
 //　...額を割った魅音が...血をこびり付かせた顔で...にやりと笑いながら...、!w1000鼻がぶつかるくらいの...目の前に...￥
@@ -2700,7 +2704,8 @@
 	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "鼻がぶつかるくらいの…目の前に…。",
-		   NULL, " and got right up... in front of my nose...", Line_Normal);
+	//	   NULL, " and got right up... in front of my nose...", Line_Normal);
+		   NULL, " and got right up... just behind me...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	PlayBGM( 1, "msys11", 128, 0 );
@@ -2771,6 +2776,10 @@
 		   NULL, " is my only wish...\"", Line_Normal);
 	ClearMessage();
 
+	DisableWindow();
+	DrawScene( "cg_107c", 1000 );
+
+
 
 //「あの時、!w1000一つかなえてあげたでしょ＠　今度はダメぇ＠......あっはははははははははははははははははははははははははははははははははははははははははははは！！！＠
 	PlaySE(4, "S02/03/130300751", 128, 64);
@@ -2786,7 +2795,6 @@
 	PlaySE(4, "S02/03/130300752", 128, 64);
 	OutputLine(NULL, "　今度はダメぇ。",
 		   NULL, " You don't get any more.", Line_WaitForInput);
-	PlaySE(4, "S02/03/130300753", 128, 64);
 	OutputLine(NULL, "……あっはははははははははははははははははははははははははははははははははははははははははははは！！！」",
 		   NULL, " ......Ah-hahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahaha!!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);

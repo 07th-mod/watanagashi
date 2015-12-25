@@ -180,16 +180,15 @@
 	OutputLine(NULL, "　大石は特に答えず、再び紫煙を吐き出して、文字通り煙に巻いていた…。",
 		   NULL, "Ooishi didn't respond, exhaled another cloud of tobacco smoke, his surroundings now as foggy as his mind...", Line_Normal);
 	ClearMessage();
-
+	DisableWindow();
 	SetValidityOfInput( FALSE );
+	DrawBustshotWithFiltering( 6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot( 7, "Title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot( 5, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
 	DrawScene( "black", 1000 );
-	FadeOutBGM( 0, 1000, FALSE );
-	FadeOutBGM( 1, 1000, FALSE );
-	FadeOutBGM( 2, 1000, TRUE );
-//gosub *tip_e
-//return
-
+	SetValidityOfInput( TRUE );
 
 }

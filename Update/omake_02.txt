@@ -1,4 +1,4 @@
-﻿void main()
+void main()
 {
 
 //■お疲れさま会２
@@ -180,15 +180,21 @@
 ////setwindow 31,16,22,16,26,26,0,2,20,1,1,#ffffff,0,0,639,479
 	PlaySE( 3, "wa_015", 128, 64 );
 	DrawScene( "white", 200 );
+
+	DrawBustshot( 5, "cg_001c", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 50, TRUE );
+	ShakeScreen( 1, 50, 20, 3, 0, );
 	PlaySE( 3, "wa_005", 128, 64 );
-	DrawBustshot( 5, "Furiker_b", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 50, TRUE );
+	DrawBustshot( 5, "cg_001d", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 50, TRUE );
 	ShakeScreen( 1, 50, 20, 3, 0, );
 ////setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,639,479
 
 
 	DisableWindow();
 	DrawBustshot( 3, "re_se_wa_b1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+
 	DrawSceneWithMask( "bg_161", "up", 0, 0, 300 );
+
+	DrawBustshotWithFiltering( 1, "ri_se_wa_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 //!sd
 
 //「魅ぃ～ちゃん＠悪ふざけが過ぎると私も怒るよ～？＠
@@ -203,8 +209,8 @@
 
 
 //＜レナ笑顔☆
-	DisableWindow();
-	DrawBustshotWithFiltering( 1, "ri_se_wa_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+//	DisableWindow();
+//	DrawBustshotWithFiltering( 1, "ri_se_wa_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「......魅ぃがぺったんこなのです＠...なでなでしたくても頭がわからないのです。＠
 	PlaySE(4, "S20/05/440500106", 128, 64);
