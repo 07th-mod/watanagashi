@@ -12,7 +12,7 @@ This patch aims to combine the efforts of the ps3 voice patch and the ps3 sprite
 2. Development
     * [Known issues](https://github.com/higurashi-mod/watanagashi#known-issues)
     * [Developing with us](https://github.com/higurashi-mod/watanagashi#developing-with-us)
-3. [Credits](https://github.com/higurashi-mod/watanagashi#helping-the-project)
+3. [Credits](https://github.com/higurashi-mod/watanagashi#credits)
 
 
 # Prerequisites
