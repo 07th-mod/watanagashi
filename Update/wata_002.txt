@@ -674,6 +674,7 @@
 	DrawBustshot( 3, "re_se_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //　だったらレナ、知ってるよ！＠
+	PlaySE(4, "S19/02/990200465", 128, 64);
 	OutputLine(NULL, "　だったらレナ、知ってるよ！」",
 		   NULL, " In that case, Rena knows about it!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
@@ -896,7 +897,7 @@
 	PlaySE(4, "S19/02/990200466", 128, 64);
 	OutputLine(NULL, "「イチゴ」",
 		   NULL, "\"Strawberry.\"", Line_WaitForInput);
-	PlaySE(4, "S19/03/990300530", 128, 64);
+	PlaySE(4, "S19/01/HR_KEI10840_01", 128, 64);
 	OutputLine(NULL, "「メロン」",
 		   NULL, " \"Melon.\"", Line_WaitForInput);
 	PlaySE(4, "S19/05/990500108", 128, 64);
@@ -905,7 +906,7 @@
 	PlaySE(4, "S19/04/990400229", 128, 64);
 	OutputLine(NULL, "「イチゴ」",
 		   NULL, " \"Strawberry.\"", Line_WaitForInput);
-	PlaySE(4, "S19/01/HR_KEI10840_01", 128, 64);
+	PlaySE(4, "S19/03/990300530", 128, 64);
 	OutputLine(NULL, "「イチゴ」",
 		   NULL, " \"Strawberry.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
@@ -943,7 +944,7 @@
 		   NULL, "\"Rena also likes melon flavor!", Line_WaitForInput);
 	PlaySE(4, "S19/02/990200468", 128, 64);
 	OutputLine(NULL, "　でもやっぱり…イチゴ味だよね。よね☆」",
-		   NULL, " But really... it's all about the strawberry, right? Right☆!", Line_WaitForInput);
+		   NULL, " But really... it's all about the strawberry, right? Right☆!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
@@ -959,7 +960,7 @@
 		   NULL, " But you see, this is a word association game.", Line_WaitForInput);
 	PlaySE(4, "S19/03/990300533", 128, 64);
 	OutputLine(NULL, "　かき氷って言ったらまず筆頭はイチゴでしょ！！」",
-		   NULL, " If somebody says shaved ice the first thing you think of is strawberryt!\"", Line_WaitForInput);
+		   NULL, " If somebody says shaved ice the first thing you think of is strawberry!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
 
 //　釈然としないが......まぁとにかく！　こういうゲームなのだ！￥
@@ -1069,11 +1070,13 @@
 //　え、罰ゲームか？＠
 	PlaySE(4, "S19/01/VT0_keiichi0001", 128, 64);
 	OutputLine(NULL, "　え、罰ゲームか？？",
-		   NULL, "Wha- for the penalty game??", Line_Normal);
+		   NULL, "\"Wha- for the penalty game??\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   
 //　......小学校の頃...罰ゲームってのがあったら......うん＠やっぱりアレだよな＠/
 	PlaySE(4, "S19/01/VT0_keiichi0002", 128, 64);
 	OutputLine(NULL, "　……小学校の頃…罰ゲームってのがあったら……うん。",
-		   NULL, " ...When I was in elementary school... there was a penalty game... yeah.", Line_WaitForInput);
+		   NULL, "\"...When I was in elementary school... there was a penalty game... yeah.", Line_WaitForInput);
 	PlaySE(4, "S19/01/VT0_keiichi0003", 128, 64);
 	OutputLine(NULL, "やっぱりアレだよな。",
 		   NULL, " It can only be -that-.", Line_WaitForInput);
@@ -1083,7 +1086,7 @@
 //荷物持ち￥
 	PlaySE(4, "S19/01/VT0_keiichi0004", 128, 64);
 	OutputLine(NULL, "荷物持ち！",
-		   NULL, " Schlepping!", Line_Normal);
+		   NULL, " Schlepping!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawBustshot( 3, "me_se_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
@@ -1324,7 +1327,7 @@
 	OutputLine(NULL, "　あらやだ本当に？",
 		   NULL, "Oh my, really?", Line_WaitForInput);
 	OutputLine(NULL, "　恥ずかしいったらありませんわね、をーっほっほっほ！！",
-		   NULL, " That'd be so embarassing, you know? Ooohohoho!!", Line_Normal);
+		   NULL, " That'd be so embarrassing, you know? Ooohohoho!!", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	FadeOutBGM( 2, 1000, TRUE );
@@ -1339,8 +1342,8 @@
 		   NULL, "\"Ngyaaaa----!!!", Line_WaitForInput);
 	PlaySE(4, "S19/01/HR_KEI10920", 128, 64);
 	OutputLine(NULL, "　そ、それは辛すぎるー！！！！！」",
-		   NULL, " Th-That's way too harsh!!!!!", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " Th-That's way too harsh!!!!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
 
 
 //　それはあまりに...苛烈だ！＠　正常な罰ゲームに戻すなら...今しかないはず！！￥
@@ -1585,7 +1588,7 @@
 		   NULL, "\"The first topic is...", Line_ContinueAfterTyping);
 
 	SetValidityOfInput( FALSE );
-	Wait( 1000 );
+	Wait( 2000 );
 	SetValidityOfInput( TRUE );
 
 	PlaySE( 3, "wa_012", 128, 64 );
@@ -1907,7 +1910,7 @@
 		   NULL, " Let's keep going!! ...Next is...", Line_ContinueAfterTyping);
 
 	SetValidityOfInput( FALSE );
-	Wait( 1000 );
+	Wait( 2000 );
 	SetValidityOfInput( TRUE );
 
 	PlaySE( 3, "wa_012", 128, 64 );
@@ -2202,11 +2205,26 @@
 //　心が貧しいとか言うなぁあぁあぁあッ！＠　大体、魅音とレナの答えは何だよ＠　魚類じゃないぞそれ＠　哺乳類だしッ！！＠
 	PlaySE(4, "S19/01/HR_KEI11100", 128, 64);
 	OutputLine(NULL, "　心が貧しいとか言うなぁあぁあぁあッ！！",
-		   NULL, "Don't say my something like my soul is destituuuuuuuuUUuuuuuuuuuute!!", Line_WaitForInput);
+		   NULL, " Don't say my something like my soul is destituuuuuuuuUUuuuuuuuuuute!!", Line_ContinueAfterTyping);
+		  
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );		  
+		  
 	OutputLine(NULL, "　大体、魅音とレナの答えは何だよ！",
-		   NULL, " Besides, what's with Mion and Rena's answers, anyways!", Line_WaitForInput);
+		   NULL, " Besides, what's with Mion and Rena's answers, anyways!", Line_ContinueAfterTyping);
+		   
+	SetValidityOfInput( FALSE );
+	Wait( 500 );
+	SetValidityOfInput( TRUE );	
+	
 	OutputLine(NULL, "　魚類じゃないぞそれ！",
-		   NULL, " Those aren't even fish!", Line_WaitForInput);
+		   NULL, " Those aren't even fish!", Line_ContinueAfterTyping);
+		   
+	SetValidityOfInput( FALSE );
+	Wait( 500 );
+	SetValidityOfInput( TRUE );		   
+		   
 	OutputLine(NULL, "　哺乳類だしッ！！」",
 		   NULL, " Those are mammals!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -2255,7 +2273,7 @@
 		   NULL, "\"Alright, the next topic is...", Line_ContinueAfterTyping);
 
 	SetValidityOfInput( FALSE );
-	Wait( 1000 );
+	Wait( 2000 );
 	SetValidityOfInput( TRUE );
 
 	PlaySE( 3, "wa_011", 128, 64 );
@@ -2423,7 +2441,7 @@
 //　今頃になって食い気を出すんじゃねぇえぇえッ！！＠
 	PlaySE(4, "S19/01/HR_KEI11120", 128, 64);
 	OutputLine(NULL, "　今頃になって食い気を出すんじゃねぇえぇえッ！！」",
-		   NULL, "Now is not the time to think with your stomach!!\"", Line_WaitForInput);
+		   NULL, " Now is not the time to think with your stomach!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
@@ -2547,6 +2565,7 @@
 	PlayBGM( 1, "msys03", 128, 0 );
 
 //「さ、!w500ささッ、!w800さ/
+	PlaySE(4, "S19/01/HR_KEI11170", 128, 64);
 	OutputLine(NULL, "「さ、",
 		   NULL, "\"Sa--", Line_ContinueAfterTyping);
 
@@ -2610,10 +2629,12 @@
 	DrawBustshotWithFiltering( 1, "re_se_de_b1", "left", 7, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「うんうん＠かぁいいんだよね＠　レナもたまに立ち読みでストーリーちゃんと追ってるよ☆＠
+	PlaySE(4, "S19/02/990200496", 128, 64);
 	OutputLine(NULL, "「うんうん。",
-		   NULL, "\"Yup, yup.", Line_WaitForInput);
+		   NULL, "\"Yup, yup.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "かぁいいんだよね！",
-		   NULL, " \"It's kyute, isn't it!", Line_WaitForInput);
+		   NULL, " It's kyute, isn't it!", Line_WaitForInput);
+	PlaySE(4, "S19/02/990200497", 128, 64);
 	OutputLine(NULL, "　レナもたまに立ち読みでストーリーちゃんと追ってるよ☆」",
 		   NULL, " Rena sometimes browses through it at the magazine stand to keep up with the story☆.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -2644,7 +2665,7 @@
 
 //「小さい女の子だけじゃなくて、その道の割と大きな男の子にも人気があるんだって＠...圭ちゃんもその一人だったとはねぇ～。＠
 	OutputLine(NULL, "「小さい女の子だけじゃなくて、その道の割と大きな男の子にも人気があるんだって？",
-		   NULL, "\"It's not just popular with little girls, it's also surpringly well-received by older boys, isn't it?", Line_WaitForInput);
+		   NULL, "\"It's not just popular with little girls, it's also surprisingly well-received by older boys, isn't it?", Line_WaitForInput);
 	OutputLine(NULL, "…圭ちゃんもその一人だったとはねぇ〜。」",
 		   NULL, " ...To think that Kei-chan was one of those~.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
@@ -2720,7 +2741,7 @@
 //矯正不能なくらい。＠
 	PlaySE(4, "S19/03/990300603", 128, 64);
 	OutputLine(NULL, "矯正不能なくらい。」",
-		   NULL, "Irrevocably so.\"", Line_WaitForInput);
+		   NULL, " Irrevocably so.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
@@ -2736,7 +2757,7 @@
 //何でみんなそんな同情的な目でみるんだぁあぁあああぁあぁあ！！！￥
 	PlaySE(4, "S19/01/HR_KEI11260", 128, 64);
 	OutputLine(NULL, "　何でみんなそんな同情的な目でみるんだぁあぁあああぁあぁあ！！！」",
-		   NULL, "Why is everybody looking at me with those eyes filled with piittttttyyyyyyyyy!!!\"", Line_Normal);
+		   NULL, " Why is everybody looking at me with those eyes filled with piittttttyyyyyyyyy!!!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask( "bg_108", "left", 0, 0, 200 );
@@ -3093,13 +3114,13 @@
 //「なな、何が画竜点睛だー！＠　バカこら＠　いじるな！！＠
 	PlaySE(4, "S19/01/HR_KEI11490", 128, 64);
 	OutputLine(NULL, "「なな、何が画竜点睛だー！！",
-		   NULL, "Wh-Wh-What do you mean, finishes off the look!?", Line_WaitForInput);
+		   NULL, "\"Wh-Wh-What do you mean, finishes off the look!?", Line_WaitForInput);
 	PlaySE(4, "S19/01/HR_KEI11500", 128, 64);
 	OutputLine(NULL, "　バカこら！",
 		   NULL, " Dumbass!", Line_WaitForInput);
 	PlaySE(4, "S19/01/HR_KEI11510", 128, 64);
 	OutputLine(NULL, "　いじるな！！」",
-		   NULL, " Stop teasing me!!", Line_WaitForInput);
+		   NULL, " Stop teasing me!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
@@ -3956,6 +3977,7 @@
 	DrawBustshot( 3, "si_ma_bi_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「あ、...も！!w1000　も、申し訳ございません...。＠
+	PlaySE(4, "S19/06/990600001", 128, 64);
 	OutputLine(NULL, "「あ、…も！",
 		   NULL, "\"Oh... I—!", Line_ContinueAfterTyping);
 
