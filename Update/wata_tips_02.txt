@@ -16,7 +16,7 @@
 //「は＠　魅音さんの家族？＠
 	PlaySE(4, "S20/04/440400027", 128, 64);
 	OutputLine(NULL, "「は？",
-		   NULL, "\"Huh?", Line_WaitForInput);
+		   NULL, "\"Huh?", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　魅音さんの家族？」",
 		   NULL, " Mion-san's family?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -26,7 +26,7 @@
 //「あぁ＠もっと平たく言えば、あいつに兄弟とかいないのかなーって思ってさ。￥
 	PlaySE(4, "S20/01/440100057", 128, 64);
 	OutputLine(NULL, "「あぁ。",
-		   NULL, "\"Yeah.", Line_WaitForInput);
+		   NULL, "\"Yeah.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "もっと平たく言えば、あいつに兄弟とかいないのかなーって思ってさ。」",
 		   NULL, " More broadly, I was just wondering if she had any brothers or anything.\"", Line_Normal);
 	ClearMessage();
@@ -80,7 +80,7 @@
 //「えぇ＠お婆さん以外にはありませんですわ。＠
 	PlaySE(4, "S20/04/440400030", 128, 64);
 	OutputLine(NULL, "「えぇ。",
-		   NULL, "\"Yes.", Line_WaitForInput);
+		   NULL, "\"Yes.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "お婆さん以外にはありませんですわ。」",
 		   NULL, " I've never seen any of her relatives except for her grandmother.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -96,7 +96,7 @@
 //「そういうのは梨花が詳しいですわよ＠梨花に聞いて御覧なさいですわ。￥
 	PlaySE(4, "S20/04/440400031", 128, 64);
 	OutputLine(NULL, "「そういうのは梨花が詳しいですわよ。",
-		   NULL, "\"Rika would know more than I.", Line_WaitForInput);
+		   NULL, "\"Rika would know more than I.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "梨花に聞いて御覧なさいですわ。」",
 		   NULL, " You would do well to ask her.\"", Line_Normal);
 	ClearMessage();
@@ -114,7 +114,7 @@
 //「梨花ぁ＠魅音さんのご家族のことをご存知ですの？＠
 	PlaySE(4, "S20/04/440400032", 128, 64);
 	OutputLine(NULL, "「梨花ぁ。",
-		   NULL, "\"Rika!", Line_WaitForInput);
+		   NULL, "\"Rika!", Line_ContinueAfterTyping);
 	OutputLine(NULL, "魅音さんのご家族のことをご存知ですの？」",
 		   NULL, " Do you know anything about Mion-san's family?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -159,7 +159,7 @@
 //「......詩ぃですか＠　詩音はいますですよ。＠
 	PlaySE(4, "S20/05/440500020", 128, 64);
 	OutputLine(NULL, "「……詩ぃですか？",
-		   NULL, "\"......You mean Shii?", Line_WaitForInput);
+		   NULL, "\"......You mean Shii?", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　詩音はいますですよ。」",
 		   NULL, " Shion exists.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -185,7 +185,7 @@
 //「ふ～ん＠　よく似た名前ですのね＠間違えて舌を噛んじゃいそうですわ。＠
 	PlaySE(4, "S20/04/440400033", 128, 64);
 	OutputLine(NULL, "「ふ〜ん？",
-		   NULL, "\"Hmm?", Line_WaitForInput);
+		   NULL, "\"Hmm?", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　よく似た名前ですのね。",
 		   NULL, " Their names are quite similar, you know.", Line_WaitForInput);
 	PlaySE(4, "S20/04/440400034", 128, 64);
@@ -228,7 +228,7 @@
 //「お家も興宮なのかもしれませんわよ＠だって、魅音さん自身、家族とは別でお婆さんと暮らしてるわけですから。＠
 	PlaySE(4, "S20/04/440400035", 128, 64);
 	OutputLine(NULL, "「お家も興宮なのかもしれませんわよ。",
-		   NULL, "\"She may live there, too.", Line_WaitForInput);
+		   NULL, "\"She may live there, too.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "だって、魅音さん自身、家族とは別でお婆さんと暮らしてるわけですから。」",
 		   NULL, " Mion-san herself lives apart from her family with her grandmother, after all.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -259,7 +259,7 @@
 //「親類の数が多いらしいですから＠きっといろいろと都合があるに違いないのですわ。＠
 	PlaySE(4, "S20/04/440400036", 128, 64);
 	OutputLine(NULL, "「親類の数が多いらしいですから。",
-		   NULL, "\"She seems to have many relatives.", Line_WaitForInput);
+		   NULL, "\"She seems to have many relatives.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "きっといろいろと都合があるに違いないのですわ。」",
 		   NULL, " There are doubtless many different circumstances.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -277,7 +277,7 @@
 //「お、３人揃って何の話だい＠　おじさんも混ぜてよー。＠
 	PlaySE(4, "S20/03/440300054", 128, 64);
 	OutputLine(NULL, "「お、３人揃って何の話だい？",
-		   NULL, "\"Oh, what are the three of you talking about?", Line_WaitForInput);
+		   NULL, "\"Oh, what are the three of you talking about?", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　おじさんも混ぜてよー。」",
 		   NULL, " Let this old man in on it!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -290,7 +290,7 @@
 //「あら、魅音さん、いいところへ～＠　魅音さんに双子の妹さんがいるってのは本当でございますのー？＠
 	PlaySE(4, "S20/04/440400037", 128, 64);
 	OutputLine(NULL, "「あら、魅音さん、いいところへ〜！",
-		   NULL, "\"Oh, Mion-san, you've come at a good time~!", Line_WaitForInput);
+		   NULL, "\"Oh, Mion-san, you've come at a good time~!", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　魅音さんに双子の妹さんがいるってのは本当でございますのー？」",
 		   NULL, " Might it be true that you have a younger twin sister?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -339,7 +339,7 @@
 //「あら～＠　それは知らなかったですわ～＠　どんな方なのかしら＠ぜひ一度お顔を見てみたいですわねー！！＠
 	PlaySE(4, "S20/04/440400038", 128, 64);
 	OutputLine(NULL, "「あら〜！",
-		   NULL, "\"Oh, my~!", Line_WaitForInput);
+		   NULL, "\"Oh, my~!", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　それは知らなかったですわ〜！",
 		   NULL, " I had no idea~!", Line_WaitForInput);
 	PlaySE(4, "S20/04/440400039", 128, 64);
@@ -357,7 +357,7 @@
 //「会わない方がいいよ＠　ぜ、全然可愛くないし＠　生意気だし＠　たまに電話で話すくらいで...私もしばらく会ってないし...！￥
 	PlaySE(4, "S20/03/440300057", 128, 64);
 	OutputLine(NULL, "「会わない方がいいよ！",
-		   NULL, "\"You shouldn't bother!", Line_WaitForInput);
+		   NULL, "\"You shouldn't bother!", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　ぜ、全然可愛くないし！",
 		   NULL, " Sh-She's not cute at all!", Line_WaitForInput);
 	PlaySE(4, "S20/03/440300058", 128, 64);
