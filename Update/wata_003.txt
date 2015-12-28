@@ -585,7 +585,7 @@
 		   NULL, " Curry is Rika's specialty!", Line_WaitForInput);
 	PlaySE(4, "S19/04/500400011", 128, 64);
 	OutputLine(NULL, "　皆さんなんかコテンパンですわー！！」",
-		   NULL, " We'll cream you all!!", Line_WaitForInput);
+		   NULL, " We'll cream you all!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
@@ -874,7 +874,7 @@
 
 //　俺も本当は料理は得意なんだぞ...＠　特に中華なんかは...！￥
 	OutputLine(NULL, "　俺も本当は料理は得意なんだぞ…！",
-		   NULL, "I'm also really good at a cooking!", Line_WaitForInput);
+		   NULL, "I'm also really good at cooking!", Line_WaitForInput);
 	OutputLine(NULL, "　特に中華なんかは…！！",
 		   NULL, " Especially Chinese food!!", Line_Normal);
 	ClearMessage();
@@ -1152,7 +1152,7 @@
 //俺が勝てたら、沙都子＆梨花ちゃんグループのカレーを食わせてやる＠これならどうだ？＠
 	PlaySE(4, "S19/01/HR_KEI13620", 128, 64);
 	OutputLine(NULL, "俺が勝てたら、沙都子＆梨花ちゃんグループのカレーを食わせてやる。",
-		   NULL, " If I win, I'll let you eat the curry that Satoko and Rika-chan's group makes.", Line_WaitForInput);
+		   NULL, " If I win, I'll let you eat the curry that Satoko and Rika-chan's group makes.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "これならどうだ？」",
 		   NULL, " How about that?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1399,13 +1399,13 @@
 //「わ、魅音てめぇ！＠　そりゃ何だよ！＠　ハンバーグなんてどこから！！＠
 	PlaySE(4, "S19/01/HR_KEI13700", 128, 64);
 	OutputLine(NULL, "「わ、魅音てめぇ！！",
-		   NULL, "Wha-- Mion you--!!", Line_WaitForInput);
+		   NULL, "\"Wha-- Mion you--!!", Line_WaitForInput);
 	PlaySE(4, "S19/01/HR_KEI13710", 128, 64);
 	OutputLine(NULL, "　そりゃ何だよ！！",
 		   NULL, " What the heck is that!?", Line_WaitForInput);
 	PlaySE(4, "S19/01/HR_KEI13720", 128, 64);
 	OutputLine(NULL, "　ハンバーグなんてどこから！！」",
-		   NULL, " Where did you get meat from!?", Line_WaitForInput);
+		   NULL, " Where did you get meat from!?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
@@ -2581,14 +2581,17 @@
 	PlaySE( 3, "wa_006", 128, 64 );
 
 //「騙されてはなりません審査員の皆々様方！＠/
+	PlaySE(4, "S19/03/500300037", 128, 64);
 	OutputLine(NULL, "「騙されてはなりません審査員の皆々様方！！",
 		   NULL, "\"Don't be fooled, my esteemed judges!!", Line_WaitForInput);
 
 	PlayBGM( 1, "msys04", 128, 0 );
 
 //　貧乏くささをお袋の味と錯覚させるなどまやかしもいいとこ！＠　皆様方が本当に食べたかったのは...こういうカレーじゃない？！￥
+	PlaySE(4, "S19/03/500300038", 128, 64);
 	OutputLine(NULL, "　貧乏くささをお袋の味と錯覚させるなどまやかしもいいとこ！！",
 		   NULL, " Don't be deceived into thinking that this meager slop is the taste only a mother can provide!!", Line_WaitForInput);
+	PlaySE(4, "S19/03/500300039", 128, 64);
 	OutputLine(NULL, "　皆様方が本当に食べたかったのは…こういうカレーじゃない？！」",
 		   NULL, " What you people actually wanted to eat... was this kind of curry, wasn't it!?\"", Line_Normal);
 	ClearMessage();
@@ -2687,12 +2690,14 @@
 	PlaySE(4, "S19/22/501400023", 128, 64);
 	OutputLine(NULL, "「とても美味しい…。",
 		   NULL, "\"This is sublime...", Line_WaitForInput);
+	PlaySE(4, "S19/22/501400024", 128, 64);
 	OutputLine(NULL, "実に豊かな味わいですよ園崎さん！",
 		   NULL, " Truly a taste to savor, Sonozaki-san!", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //　このカレーこそ...インド６０００年の英知と日本人の食文化の美しい融和の生きた証...＠...先生、感激です＠　これは満点の仕上りですね！＠　百点をあげちゃいます。＠
+	PlaySE(4, "S19/22/501400025", 128, 64);	
 	OutputLine(NULL, "　このカレーこそ…インド６０００年の英知と日本人の食文化の美しい融和の生きた証…。",
 		   NULL, "This curry is no doubt... a living testimony to 6000 years of Indian knowledge in beautiful harmony with Japanese cuisine...", Line_WaitForInput);
 	PlaySE(4, "S19/22/501400026", 128, 64);
@@ -3495,13 +3500,13 @@
 		   NULL, "\"You see, Satoko-chan.", Line_WaitForInput);
 	PlaySE(4, "S19/02/500200045", 128, 64);
 	OutputLine(NULL, "審査員さんたちね、実は……、」",
-		   NULL, " That's because the judges are actually...", Line_Normal);
+		   NULL, " That's because the judges are actually...\"", Line_Normal);
 	ClearMessage();
 
 //!s0　...カレーに食べ飽きているのだ！!sd/
 //!s0
 	OutputLine(NULL, "　…カレーに食べ飽きているのだ！",
-		   NULL, "...tired of eating curry!\"", Line_ContinueAfterTyping);
+		   NULL, "...tired of eating curry!", Line_ContinueAfterTyping);
 
 //sd/
 
@@ -4198,879 +4203,382 @@
 	OutputLine(NULL, "カ",
 		   NULL, " Curry", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "レ",
 		   NULL, " Was", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "ー",
 		   NULL, " Created", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "は",
 		   NULL, " In", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "四",
 		   NULL, " Ancient", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "大",
 		   NULL, " India", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "河",
 		   NULL, " One", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "川",
 		   NULL, " Of", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "文",
 		   NULL, " The", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "明",
 		   NULL, " Four", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "に",
 		   NULL, " Great", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "匹",
 		   NULL, " River", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "敵",
 		   NULL, " Valley", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "す",
 		   NULL, " Civilizations", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "る",
 		   NULL, " And", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "第",
 		   NULL, " Was", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "五",
 		   NULL, " Raved", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "の",
 		   NULL, " About", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "文",
 		   NULL, " During", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "明",
 		   NULL, " The", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "と",
 		   NULL, " Reign", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "し",
 		   NULL, " Of", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "て",
 		   NULL, " King", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "古",
 		   NULL, " Ashoka", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "代",
 		   NULL, " In", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "イ",
 		   NULL, " Kapilavastu", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "ン",
 		   NULL, " For", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "ド",
 		   NULL, " The", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "に",
 		   NULL, " Birth", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "生",
 		   NULL, " Of", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "ま",
 		   NULL, " The", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "れ",
 		   NULL, " Shakya", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "、",
 		   NULL, " At", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "ア",
 		   NULL, " The", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "シ",
 		   NULL, " International", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "ョ",
 		   NULL, " Food", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "カ",
 		   NULL, " Expo", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "王",
 		   NULL, " Michelin", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "の",
 		   NULL, " Twirly", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "時",
 		   NULL, " Twirly", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "代",
 		   NULL, " Even", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "に",
 		   NULL, " The", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "カ",
 		   NULL, " Eiffel", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "ピ",
 		   NULL, " Tower", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "ラ",
 		   NULL, " Was", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "城",
 		   NULL, " Pickled", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "で",
 		   NULL, " In", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "シ",
 		   NULL, " Simmering", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "ャ",
 		   NULL, " Curry", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "カ",
 		   NULL, " Turmeric", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "の",
 		   NULL, " Whether", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "生",
 		   NULL, " You", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "誕",
 		   NULL, " Are", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "に",
 		   NULL, " Asleep", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "万",
 		   NULL, " Or", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "国",
 		   NULL, " Awake", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "食",
 		   NULL, " Curry", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "文",
 		   NULL, " Curry", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "化",
 		   NULL, " Curry", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "博",
 		   NULL, " Curry", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
+//line
 
+	if(GetGlobalFlag(GLanguage) == 0)
+	{	
+	
 	OutputLine(NULL, "覧",
-		   NULL, " Curry", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
+		   NULL, " ", Line_ContinueAfterTyping);
 
 	OutputLine(NULL, "会",
-		   NULL, " Curry", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
+		   NULL, " ", Line_ContinueAfterTyping);
 
 	OutputLine(NULL, "が",
-		   NULL, " Curry", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
+		   NULL, " ", Line_ContinueAfterTyping);
 
 	OutputLine(NULL, "絶",
-		   NULL, " Curry", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
+		   NULL, " ", Line_ContinueAfterTyping);
 
 	OutputLine(NULL, "賛",
 		   NULL, " ", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
-//line
-
-	if(GetGlobalFlag(GLanguage) == 0)
-	{
-
 	OutputLine(NULL, "し",
 		   NULL, " ", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
+		   
 	OutputLine(NULL, "て",
 		   NULL, " ", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "ミ",
 		   NULL, " ", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "シ",
 		   NULL, " ", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "ュ",
 		   NULL, " ", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "ラ",
 		   NULL, " ", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "ン",
 		   NULL, " ", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "ぐ",
 		   NULL, " ", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "る",
 		   NULL, " ", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "ぐ",
 		   NULL, " ", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "る",
 		   NULL, " ", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "エ",
 		   NULL, " ", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "ッ",
 		   NULL, " ", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "フ",
 		   NULL, " ", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "ェ",
 		   NULL, " ", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "ル",
 		   NULL, " ", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "塔",
 		   NULL, " ", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "す",
 		   NULL, " ", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "ら",
 		   NULL, " ", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "も",
 		   NULL, " ", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "カ",
 		   NULL, " ", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "レ",
 		   NULL, " ", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "ー",
 		   NULL, " ", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "漬",
 		   NULL, " ", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "け",
 		   NULL, " ", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "を",
 		   NULL, " ", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "ぐ",
 		   NULL, " ", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "つ",
 		   NULL, " ", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "ぐ",
 		   NULL, " ", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "つ",
 		   NULL, " ", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "煮",
 		   NULL, " ", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "込",
 		   NULL, " ", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "ん",
 		   NULL, " ", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "で",
 		   NULL, " ", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "タ",
 		   NULL, " ", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "ー",
 		   NULL, " ", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "メ",
 		   NULL, " ", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "リ",
 		   NULL, " ", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "ッ",
 		   NULL, " ", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "ク",
 		   NULL, " ", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "が",
 		   NULL, " ", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "寝",
 		   NULL, " ", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "て",
 		   NULL, " ", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "も",
 		   NULL, " ", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "覚",
 		   NULL, " ", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "め",
 		   NULL, " ", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "て",
 		   NULL, " ", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "も",
 		   NULL, " ", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "カ",
 		   NULL, " ", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
+		   
 	OutputLine(NULL, "レ",
 		   NULL, " ", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "ー",
 		   NULL, " ", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "カ",
 		   NULL, " ", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "レ",
 		   NULL, " ", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "ー",
 		   NULL, " ", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "カ",
+		   NULL, " ", Line_ContinueAfterTyping);
+		   
+	OutputLine(NULL, "レ",
+		   NULL, " ", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "ー",
+		   NULL, " ", Line_ContinueAfterTyping);
 
 	OutputLine(NULL, "カ",
 		   NULL, " ", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "レ",
 		   NULL, " ", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "ー",
 		   NULL, " ", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
-	OutputLine(NULL, "カ",
-		   NULL, " ", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
-	OutputLine(NULL, "レ",
-		   NULL, " ", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
-
-	OutputLine(NULL, "ー",
-		   NULL, " ", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
 
 	}
 
