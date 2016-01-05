@@ -5033,7 +5033,7 @@
 		   NULL, "\"...How do I say this... I could say it's pretty or cute...", Line_WaitForInput);
 	PlaySE(4, "S19/01/HR_KEI10160", 128, 64);
 	OutputLine(NULL, "…可愛いのは認めるんだが…着せ替え人形はちょっとなぁ…。」",
-		   NULL, " \"...Well, I guess it's cute and pretty... I can admit, it's adorable... but a doll with changable clothes is... eh...\"", Line_WaitForInput);
+		   NULL, " ...Well, I guess it's cute and pretty... I can admit, it's adorable... but a doll with changable clothes is... eh...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
@@ -5057,10 +5057,10 @@
 //　魅音だけおみやげをもらってないので、魅音に渡そうかと思ったが、ちょっと考えてからレナに渡すことにした￥
 	OutputLine(NULL, "　魅音だけおみやげをもらってないので、魅音に渡そうかと思ったが、ちょっと考えてからレナに渡すことにした。",
 		   NULL, "Mion was the only one who hadn't received a present, so I thought about giving it to her. However, after briefly considering, I gave it to Rena instead.", Line_Normal);
+	
 	ClearMessage();
 	DisableWindow();
-	FadeBustshotWithFiltering( 2, "right", 1, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 3, "re_si_wa_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawSceneWithMask( "cg_006", "m1", 0, 0, 300 );
 
 //「えッ？！？＠　くれるの？＠　レナに？＠　ありがと～～～！！！！！＠
 	PlaySE(4, "S19/02/990200431", 128, 64);
@@ -5087,10 +5087,13 @@
 		   NULL, " ...If I didn't give it to Rena, then walking the streets at night would be scary.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-
+	ClearMessage();
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "me_si_wa_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawSceneWithMask( "bg_153", "m1", 0, 0, 300 );
+	DrawBustshot( 2, "me_si_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
+//me_si_wa_a1	
+	
 //「あっはっはっは！＠　違いない違いない！￥
 	PlaySE(4, "S19/03/990300474", 128, 64);
 	OutputLine(NULL, "「あっはっはっは！！",
@@ -5098,9 +5101,7 @@
 	PlaySE(4, "S19/03/990300475", 128, 64);
 	OutputLine(NULL, "　違いない違いない！」",
 		   NULL, " No doubt! No doubt!\"", Line_Normal);
-	ClearMessage();
-	DisableWindow();
-	DrawSceneWithMask( "bg_153", "m1", 0, 0, 300 );
+
 
 //「魅音にあげようかと思ったけど...ちょっと違うよな！＠
 	PlaySE(4, "S19/01/HR_KEI10190", 128, 64);
@@ -5108,7 +5109,7 @@
 		   NULL, "\"I thought about giving it to Mion, but it just didn't feel right!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-
+	ClearMessage();
 	DisableWindow();
 	DrawBustshot( 2, "me_si_to_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
@@ -5128,7 +5129,7 @@
 		   NULL, "\"It's better that you're a girl.", Line_WaitForInput);
 	PlaySE(4, "S19/01/HR_KEI10210", 128, 64);
 	OutputLine(NULL, "男だったらもうとっくに殺してる！」",
-		   NULL, " \"If you were a boy, I would have killed you already!\"", Line_Normal);
+		   NULL, " If you were a boy, I would have killed you already!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawBustshot( 2, "me_si_wa_a2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
