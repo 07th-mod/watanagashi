@@ -331,7 +331,7 @@
 //「おー＠　圭ちゃんも我が部のことがわかってきたねぇ＠　で、どう？　来れそう？￥
 	PlaySE(4, "S19/03/990300373", 128, 64);
 	OutputLine(NULL, "「おー！",
-		   NULL, "\"Oooh!", Line_WaitForInput);
+		   NULL, "\"Oooh!", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　圭ちゃんも我が部のことがわかってきたねぇ！",
 		   NULL, " It looks like Kei-chan has come to understand our club!", Line_WaitForInput);
 	PlaySE(4, "S19/03/990300374", 128, 64);
@@ -1065,8 +1065,8 @@
 
 //「圭々がいじめたぁあぁあ！！＠　わぁああぁああぁあああぁあんッ！！！＠
 	PlaySE(4, "S19/04/990400171", 128, 64);
-	OutputLine(NULL, "「圭々がいじめたぁあぁあ！！！",
-		   NULL, "\"Kei-kei is bullying meeeeeEEeee!!!", Line_WaitForInput);
+	OutputLine(NULL, "「圭一さんがぶったぁあぁあ！！！",
+		   NULL, "\"Keiichi-san hit meeeeeEEeee!!!", Line_WaitForInput);
 	PlaySE(4, "S19/04/990400172", 128, 64);
 	OutputLine(NULL, "　わぁああぁああぁあああぁあんッ！！！」",
 		   NULL, " WaaaaaaAAaaaAAAaaa!!!\"", Line_WaitForInput);
@@ -1953,7 +1953,7 @@
 	OutputLine(NULL, "「みんないいかな〜？！",
 		   NULL, "\"Is everybody ready~?!", Line_WaitForInput);
 	PlaySE(4, "S19/03/990300412", 128, 64);
-	OutputLine(NULL, "　傾注傾注〜！！」",
+	OutputLine(NULL, "　傾聴傾聴～！！」",
 		   NULL, " Listen close now~!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
