@@ -4060,15 +4060,14 @@
 //　自分に素直になれッ！！＠夢を追え！＠そしてかなえろ！！＠俺がかなえてやるッ！！＠俺がだぁああぁあぁあッ！！！！」/
 	PlaySE(4, "S19/01/HR_KEI09900_03", 128, 64);
 	OutputLine(NULL, "　自分に素直になれッ！！！",
-		   NULL, "Be honest with yourselves!!!", Line_WaitForInput);
+		   NULL, "Be honest with yourselves!!!", Line_ContinueAfterTyping);
 	OutputLine(NULL, "夢を追え！！",
-		   NULL, " Chase your dreams!!", Line_WaitForInput);
+		   NULL, " Chase your dreams!!", Line_ContinueAfterTyping);
 	OutputLine(NULL, "そしてかなえろ！！！",
-		   NULL, " Fulfill them!!!", Line_WaitForInput);
+		   NULL, " Fulfill them!!!", Line_ContinueAfterTyping);
 	OutputLine(NULL, "俺がかなえてやるッ！！！",
 		   NULL, " I'll fulfill them for you!!!", Line_WaitForInput);
-	OutputLine(NULL, "俺がだぁああぁあぁあッ！！！！」",
-		   NULL, " I wiiiiilllllll!!!!\"", Line_ContinueAfterTyping);
+
 
 	PlaySE( 3, "wa_006", 128, 64 );
 	ShakeScreen( 1, 50, 20, 4, 0, );
