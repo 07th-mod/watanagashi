@@ -3848,10 +3848,9 @@
 	ClearMessage();
 
 //「まず富田くん＠君は沙都子萌えだよな＠　否定するなッ！！＠　そして岡村くん＠君は梨花萌えだな＠　赤くなるなッ！！！！＠
-	PlaySE(4, "S19/01/HR_KEI09700", 128, 64);
-	OutputLine(NULL, "「まず富田くん。",
-		   NULL, "\"First of all, Tomita-kun.", Line_WaitForInput);
 	PlaySE(4, "S19/01/HR_KEI09710", 128, 64);
+	OutputLine(NULL, "「まず富田くん。",
+		   NULL, "\"First of all, Tomita-kun.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "君は沙都子萌えだよな？",
 		   NULL, " You like Satoko, right?", Line_WaitForInput);
 	PlaySE(4, "S19/01/HR_KEI09720", 128, 64);
