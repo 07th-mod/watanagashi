@@ -4336,8 +4336,11 @@
 
 //「もちろんですわ～！　ねー！！！＠
 	PlaySE(4, "S19/04/990400200", 128, 64);
-	OutputLine(NULL, "「もちろんですわ〜！　ねー！！！」",
-		   NULL, "\"That's only natural~! Right~?\"", Line_WaitForInput);
+	OutputLine(NULL, "「もちろんですわ〜！",
+		   NULL, "\"That's only natural~!", Line_WaitForInput);
+	PlaySE(4, "S19/04/990400200_01", 128, 64);
+	OutputLine(NULL, "　ねー！！！」",
+		   NULL, " Right~?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
