@@ -462,7 +462,7 @@
 //「あいつに小銭を借りると、妙に返却期限にうるさいのは、サラ金屋の血が流れてるからかー＠納得納得！＠
 	PlaySE(4, "S20/01/440100056", 128, 64);
 	OutputLine(NULL, "「あいつに物を借りると、妙に返却期限にうるさいのは、金融業者さんの血が流れてるからかー。",
-		   NULL, "\"So the reason she's so fussy about returning money she lent you is because the blood of loan sharks runs through her veins, huh?", Line_WaitForInput);
+		   NULL, "\"So the reason she's so fussy about the return date of things she lends out is because the blood of a financier runs through her veins, huh?", Line_WaitForInput);
 	OutputLine(NULL, "納得納得！」",
 		   NULL, " That explains that!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -474,48 +474,41 @@
 //「......魅ぃにお買い物代を借りたことをコロリと忘れてしまったら＠耳を揃えて返さんと身売りして風呂に沈めたるどーと凄まれましたのです。＠
 	PlaySE(4, "S20/05/440500017", 128, 64);
 	OutputLine(NULL, "「……魅ぃに百億兆者ゲームを借りたことをコロリと忘れてしまったら、",
-		   NULL, "\"......Once, I completely forgot to pay Mii back for money she gave me to go shopping,", Line_ContinueAfterTyping);
+		   NULL, "\"......Once, I completely forgot to give Mii back the Billionaire game I borrowed from her,", Line_ContinueAfterTyping);
 	OutputLine(NULL, "リアルで百億兆者ゲームをプレイさせたるどーと凄まれましたのです。」",
-		   NULL, " and she threatened me, saying that if I didn't return it all, she'd throw me into the red-light district and that would be the end of me.\"", Line_WaitForInput);
+		   NULL, " and she threatened to force me to play a real-life Billionaire game.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
 
 
-//　.........梨花ちゃんが借金のかたに特殊な風俗業界に身売り...＠
-	OutputLine(NULL, "　………梨花ちゃんが借金のかたに特殊な風俗業界に身売り…。",
-		   NULL, "...Rika-chan being sold into the entertainment industry to pay off her debts...", Line_WaitForInput);
+	OutputLine(NULL, "　………梨花ちゃんがリアル百億兆者ゲームをプレイ…。",
+		   NULL, "...Rika-chan playing a real-life Billionaire game...", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
-
-//　......あ、やべ、...鼻血～￥
-	OutputLine(NULL, "　……あ、やべ、…鼻血〜☆",
-		   NULL, "...Ah, crap... my nosebleed~☆", Line_Normal);
+	OutputLine(NULL, "　……したたかにＩＴ長者にでもなっていそうな気がするけど……。",
+		   NULL, "...I get the feeling she'd claw her way up to a position as an IT billionaire...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawBustshot( 3, "sa_se_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
-//「お風呂に沈められて溺れ死ぬなんて、おマヌケにもほどがありますわね～！＠
-	OutputLine(NULL, "「お風呂に沈められて溺れ死ぬなんて、おマヌケにもほどがありますわね〜！」",
-		   NULL, "\"Dying by being thrown on the ground must be the silliest form of death I've ever heard of~!\"", Line_WaitForInput);
+	PlaySE(4, "S20/04/440400025", 128, 64);
+	OutputLine(NULL, "「リアルに百億兆者ゲームをプレイなんて、なかなかに愉快そうですわね～！」",
+		   NULL, "\"Getting to play Billionaire for real does sound rather thrilling~!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
-//　......は＠
-	OutputLine(NULL, "　……は？",
-		   NULL, "...Huh?", Line_WaitForInput);
+	OutputLine(NULL, "　……もっとも。",
+		   NULL, "...Satoko, huh?", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
-//　...こいつ、よく意味がわかってないな...＠
-	OutputLine(NULL, "　…こいつ、よく意味がわかってないな…？",
-		   NULL, "...She doesn't really get it, does she...?", Line_WaitForInput);
+	OutputLine(NULL, "　…こいつの場合、人から恨みつらみを重ねてとんでもねー目にあいそうだけど。",
+		   NULL, "...She'd probably end up amassing grudges and bitterness from people before meeting her demise.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
-
-//　今どきなかなか初々しいヤツ＠
-	OutputLine(NULL, "　今どきなかなか初々しいヤツ。",
-		   NULL, "Recently, she's seemed so... unspoiled.", Line_WaitForInput);
+	OutputLine(NULL, "　まぁ、それはそれで沙都子らしくていいかもな。",
+		   NULL, "Well, that would seem fitting for her.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
