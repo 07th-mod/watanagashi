@@ -461,7 +461,7 @@
 
 //「あいつに小銭を借りると、妙に返却期限にうるさいのは、サラ金屋の血が流れてるからかー＠納得納得！＠
 	PlaySE(4, "S20/01/440100056", 128, 64);
-	OutputLine(NULL, "「あいつに小銭を借りると、妙に返却期限にうるさいのは、サラ金屋の血が流れてるからかー。",
+	OutputLine(NULL, "「あいつに物を借りると、妙に返却期限にうるさいのは、金融業者さんの血が流れてるからかー。",
 		   NULL, "\"So the reason she's so fussy about returning money she lent you is because the blood of loan sharks runs through her veins, huh?", Line_WaitForInput);
 	OutputLine(NULL, "納得納得！」",
 		   NULL, " That explains that!\"", Line_WaitForInput);
@@ -472,9 +472,10 @@
 	DrawBustshot( 1, "ri_se_ko_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「......魅ぃにお買い物代を借りたことをコロリと忘れてしまったら＠耳を揃えて返さんと身売りして風呂に沈めたるどーと凄まれましたのです。＠
-	OutputLine(NULL, "「……魅ぃにお買い物代を借りたことをコロリと忘れてしまったら、",
-		   NULL, "\"......Once, I completely forgot to pay Mii back for money she gave me to go shopping,", Line_WaitForInput);
-	OutputLine(NULL, "耳を揃えて返さんと身売りして風呂に沈めたるどーと凄まれましたのです。」",
+	PlaySE(4, "S20/05/440500017", 128, 64);
+	OutputLine(NULL, "「……魅ぃに百億兆者ゲームを借りたことをコロリと忘れてしまったら、",
+		   NULL, "\"......Once, I completely forgot to pay Mii back for money she gave me to go shopping,", Line_ContinueAfterTyping);
+	OutputLine(NULL, "リアルで百億兆者ゲームをプレイさせたるどーと凄まれましたのです。」",
 		   NULL, " and she threatened me, saying that if I didn't return it all, she'd throw me into the red-light district and that would be the end of me.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
 
