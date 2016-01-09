@@ -21,7 +21,7 @@
 //「うん＠ごめん＠今日はさ、急に叔父さんの店のバイトが入っちゃってさ。＠
 	PlaySE(4, "S20/03/440300045", 128, 64);
 	OutputLine(NULL, "「うん。",
-		   NULL, "\"Yep.", Line_WaitForInput);
+		   NULL, "\"Yep.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "ごめん。",
 		   NULL, " Sorry.", Line_WaitForInput);
 	PlaySE(4, "S20/03/440300046", 128, 64);
@@ -100,7 +100,7 @@
 //「......やめとく＠俺がいじったら、ロッカーの中身がドサドサーッて溢れてきそうな気がするよ。＠
 	PlaySE(4, "S20/01/440100046", 128, 64);
 	OutputLine(NULL, "「……やめとく。",
-		   NULL, "\"...Nah, we shouldn't.", Line_WaitForInput);
+		   NULL, "\"...Nah, we shouldn't.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "俺がいじったら、ロッカーの中身がドサドサーッて溢れてきそうな気がするよ。」",
 		   NULL, " I get the feeling that if I mess around in that locker, everything inside will come tumbling down on me.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -112,7 +112,7 @@
 //「あっはっはっは＠　う～ん、そうだねぇ＠素人は手を出さない方が無難かもしれない。くっくっく！＠
 	PlaySE(4, "S20/03/440300050", 128, 64);
 	OutputLine(NULL, "「あっはっはっは！",
-		   NULL, "\"Ah-ha-ha-ha!", Line_WaitForInput);
+		   NULL, "\"Ah-ha-ha-ha!", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　う〜ん、そうだねぇ。",
 		   NULL, " Yeah, I guess you're right.", Line_WaitForInput);
 	PlaySE(4, "S20/03/440300051", 128, 64);
@@ -132,7 +132,7 @@
 //「......魅ぃ＠先生が体育倉庫のカギを探してますですよ＠心当たりはありませんですか？＠
 	PlaySE(4, "S20/05/440500010", 128, 64);
 	OutputLine(NULL, "「……魅ぃ。",
-		   NULL, "\"......Mii.", Line_WaitForInput);
+		   NULL, "\"......Mii.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "先生が体育倉庫のカギを探してますですよ。",
 		   NULL, " The teacher is looking for the key to the gym storehouse.", Line_WaitForInput);
 	PlaySE(4, "S20/05/440500011", 128, 64);
@@ -147,7 +147,7 @@
 //「はれ＠　...私、職員室に返さなかったっけ？＠
 	PlaySE(4, "S20/03/440300052", 128, 64);
 	OutputLine(NULL, "「はれ？",
-		   NULL, "\"Eh?", Line_WaitForInput);
+		   NULL, "\"Eh?", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　…私、職員室に返さなかったっけ？」",
 		   NULL, " ...Did I not return it to the teachers' lounge?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
@@ -171,7 +171,7 @@
 //「ほぅらやっぱり魅音さんですのよ～＠　私、絶対絶対ぜーったいそうだと確信してたでございますわー！＠
 	PlaySE(4, "S20/04/440400018", 128, 64);
 	OutputLine(NULL, "「ほぅらやっぱり魅音さんですのよ〜！",
-		   NULL, "\"I knew you had it, Mion-san~!", Line_WaitForInput);
+		   NULL, "\"I knew you had it, Mion-san~!", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　私、絶対絶対ぜーったいそうだと確信してたでございますわー！」",
 		   NULL, " I knew beyond a shadow of a doubt that you simply must have been the one who had it!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -183,7 +183,7 @@
 //「......ボクも大正解なのですよ＠沙都子と一緒に大正解なのです。＠
 	PlaySE(4, "S20/05/440500012", 128, 64);
 	OutputLine(NULL, "「……ボクも大正解なのですよ。",
-		   NULL, "\"......I was right, too.", Line_WaitForInput);
+		   NULL, "\"......I was right, too.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "沙都子と一緒に大正解なのです。」",
 		   NULL, " Satoko and I were both right.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -230,7 +230,7 @@
 //「あ、そうだ＠二人とも聞いたか＠　今日は魅音、バイトがあるから部活はお休みだとさ。＠
 	PlaySE(4, "S20/01/440100047", 128, 64);
 	OutputLine(NULL, "「あ、そうだ。",
-		   NULL, "\"Oh, right.", Line_WaitForInput);
+		   NULL, "\"Oh, right.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "二人とも聞いたか？",
 		   NULL, " Have you two heard?", Line_WaitForInput);
 	PlaySE(4, "S20/01/440100048", 128, 64);
@@ -245,7 +245,7 @@
 //「あら、そうなんですの？＠　それはつまらないでございますわね。＠
 	PlaySE(4, "S20/04/440400019", 128, 64);
 	OutputLine(NULL, "「あら、そうなんですの？！",
-		   NULL, "\"Oh, is that so?!", Line_WaitForInput);
+		   NULL, "\"Oh, is that so?!", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　それはつまらないでございますわね。」",
 		   NULL, " That's so very droll of her.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -286,7 +286,7 @@
 //「魅音ってバイトをやってるんだよな＠...あいつ、一体何のバイトをしてるんだ？＠
 	PlaySE(4, "S20/01/440100049", 128, 64);
 	OutputLine(NULL, "「魅音ってバイトをやってるんだよな。",
-		   NULL, "\"So Mion's got a part-time job.", Line_WaitForInput);
+		   NULL, "\"So Mion's got a part-time job.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "…あいつ、一体何のバイトをしてるんだ？」",
 		   NULL, " ...I wonder what she's doing, anyway?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -356,7 +356,7 @@
 //「あー...、なるほどな＠そう言えば、叔父さんのとこでバイトなんて話＠前にも聞いたことがあるような気がする。＠
 	PlaySE(4, "S20/01/440100051", 128, 64);
 	OutputLine(NULL, "「あー…、なるほどな。",
-		   NULL, "\"Ah... I get it.", Line_WaitForInput);
+		   NULL, "\"Ah... I get it.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "そう言えば、叔父さんのとこでバイトなんて話。",
 		   NULL, " Now that you mention it, her having a job at her uncle's place...", Line_WaitForInput);
 	PlaySE(4, "S20/01/440100052", 128, 64);
@@ -386,7 +386,7 @@
 //「あら、圭一さんはご存知ありませんの＠　興宮には魅音さんの親戚の方がやってるお店って結構いっぱいありますのよ？＠
 	PlaySE(4, "S20/04/440400021", 128, 64);
 	OutputLine(NULL, "「あら、圭一さんはご存知ありませんの？",
-		   NULL, "\"Oh, you were unaware, Keiichi-san?", Line_WaitForInput);
+		   NULL, "\"Oh, you were unaware, Keiichi-san?", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　興宮には魅音さんの親戚の方がやってるお店って結構いっぱいありますのよ？」",
 		   NULL, " There are many relatives of Mion-san's in Okinomiya who run their own stores.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -396,7 +396,7 @@
 //「へー...＠そりゃ知らなかった＠...そんなにいろいろあるのか？＠
 	PlaySE(4, "S20/01/440100053", 128, 64);
 	OutputLine(NULL, "「へー…。",
-		   NULL, "\"Huh...", Line_WaitForInput);
+		   NULL, "\"Huh...", Line_ContinueAfterTyping);
 	OutputLine(NULL, "そりゃ知らなかった。",
 		   NULL, " I didn't know that.", Line_WaitForInput);
 	PlaySE(4, "S20/01/440100054", 128, 64);
@@ -411,7 +411,7 @@
 //「えぇ＠パン屋さんとか八百屋さんとかラーメン屋さんとか＠他にもまだまだ＠あの部活をやったおもちゃ屋さんもそうなんですのよ。＠
 	PlaySE(4, "S20/04/440400022", 128, 64);
 	OutputLine(NULL, "「えぇ。",
-		   NULL, "\"Yes.", Line_WaitForInput);
+		   NULL, "\"Yes.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "パン屋さんとか八百屋さんとかラーメン屋さんとか。",
 		   NULL, " There's a bakery, a produce market, a ramen shop,", Line_WaitForInput);
 	PlaySE(4, "S20/04/440400023", 128, 64);
@@ -434,7 +434,7 @@
 //「...魅音の一族って何気に商才があるんじゃないのか＠　それだけいろいろあるってのも何だかすごいよな！＠
 	PlaySE(4, "S20/01/440100055", 128, 64);
 	OutputLine(NULL, "「…魅音の一族って何気に商才があるんじゃないのか？",
-		   NULL, "\"...Is Mion's family blessed with some kind of crazy business sense?", Line_WaitForInput);
+		   NULL, "\"...Is Mion's family blessed with some kind of crazy business sense?", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　それだけいろいろあるってのも何だかすごいよな！」",
 		   NULL, " They run so many different things, it's kind of amazing!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -445,8 +445,8 @@
 
 //「......他にも、サラ金屋さんとか、地上げ屋さんとか、イメクラ屋さんとか、ソープランド屋さんとか＠いろいろやってると言ってますです。＠
 	PlaySE(4, "S20/05/440500016", 128, 64);
-	OutputLine(NULL, "「……他にも、サラ金屋さんとか、地上げ屋さんとか、イメクラ屋さんとか、ソープランド屋さんとか。",
-		   NULL, "\"...There are others, like a loan shark, a land shark, a strip club, and a brothel.", Line_WaitForInput);
+	OutputLine(NULL, "「……他にも、金融業とか、不動産業とか、アパレル産業とか、アミューズメント産業とか。",
+		   NULL, "\"...There are others, like a loan shark, a land shark, a strip club, and a brothel.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "いろいろやってると言ってますです。」",
 		   NULL, " What I'm saying is they do lots of things.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
