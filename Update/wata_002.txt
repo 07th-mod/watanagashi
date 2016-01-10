@@ -604,7 +604,7 @@
 
 //「はーい！！　みんな傾注傾注～＠　ルールを説明するよ～！！＠
 	PlaySE(4, "S19/03/990300509", 128, 64);
-	OutputLine(NULL, "「はーい！！　みんな傾注傾注〜！",
+	OutputLine(NULL, "「はーい！！　みんな傾聴傾聴〜！",
 		   NULL, "\"Alright! Everybody pay attention~!", Line_WaitForInput);
 	PlaySE(4, "S19/03/990300510", 128, 64);
 	OutputLine(NULL, "　ルールを説明するよ〜！！」",
@@ -1085,7 +1085,7 @@
 
 //荷物持ち￥
 	PlaySE(4, "S19/01/VT0_keiichi0004", 128, 64);
-	OutputLine(NULL, "荷物持ち！",
+	OutputLine(NULL, "荷物持ちだ！",
 		   NULL, " Schlepping!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
@@ -2529,8 +2529,9 @@
 	ClearMessage();
 
 //「.........『カードマスターさくら』って書いてありますです。￥
-	OutputLine(NULL, "「………『カードマスターさくら』って書いてありますです。」",
-		   NULL, "\"...'Card Master Sakura'  is written down here.\"", Line_Normal);
+	PlaySE(4, "S19/05/990500121", 128, 64);
+	OutputLine(NULL, "「………『口紅』って書いてありますです。」",
+		   NULL, "\"...It says 'lipstick' .\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask( "black", "down", 0, 0, 1300 );
@@ -2580,27 +2581,19 @@
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 
-	OutputLine(NULL, "さ",
-		   NULL, " Sa-", Line_ContinueAfterTyping);
-
 	PlaySE( 3, "wa_006", 128, 64 );
 	PlayBGM( 1, "msys03", 128, 0 );
 
-//くらって言ったら『カードマスターさくら』だろーッ？！？＠　国営放送で毎週放送中の大人気アニメ！！＠
-	OutputLine(NULL, "くらって言ったら『カードマスターさくら』だろーッ？！？！",
-		   NULL, "kura can only mean 'Card Master Sakura,' can't it!?!?", Line_WaitForInput);
-	OutputLine(NULL, "　国営放送で毎週放送中の大人気アニメ！！！",
-		   NULL, " It's a super-popular anime that's broadcast every week on the government-run networks!!!", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-
-
-//　小さな女の子から大きなお友達まで大ヒットブレイク中のっぉおおぉッ！＠　お前らだって見てるだろ？＠　いや絶対見てるさ、俺だって見てるくらいなんだからぁああぁあぁあッ！！！！￥
-	OutputLine(NULL, "　小さな女の子から大きなお友達まで大ヒットブレイク中のっぉおおぉッ！！",
-		   NULL, "It's broken through to every demographic from little girls to grown meeeeeeen!!", Line_WaitForInput);
-	OutputLine(NULL, "　お前らだって見てるだろ？！",
-		   NULL, " You've seen it, haven't you!?", Line_WaitForInput);
-	OutputLine(NULL, "　いや絶対見てるさ、俺だって見てるくらいなんだからぁああぁあぁあッ！！！！」",
-		   NULL, " No, you've definitely seen it, even I've seheheeen iiiiiiiiit!!!!\"", Line_Normal);
+	PlaySE(4, "S19/01/HR_KEI11180", 128, 64);
+	OutputLine(NULL, "さくらって言ったらあの有名な口紅の商品名『Ｓａｋｕｒａ』だろおおお！",
+		   NULL, "Sakura can only mean that famous lipstick brand 'Sakura', right!?!?", Line_WaitForInput);
+	PlaySE(4, "S19/01/HR_KEI11190", 128, 64);
+	OutputLine(NULL, "　ほら、新色が出たってＴＶでも言ってたし、ワイドショーでも特集組んでたじゃん！",
+		   NULL, " You know, the one in a new color they've been talking about on TV, they even did a special on it!", Line_ContinueAfterTyping);
+	OutputLine(NULL, "　女としてはチェック入れるんじゃないのか？",
+		   NULL, "Don't you check these things out, as ladies?", Line_WaitForInput);
+	OutputLine(NULL, "　俺だって知ってるぐらいなんだからぁああぁあぁあッ！！！！」",
+		   NULL, " Even I've seheheeen iiiiiiiiit!!!!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawBustshotWithFiltering( 3, "me_se_th_a1", "right", 7, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 200, TRUE );
@@ -2610,8 +2603,8 @@
 	OutputLine(NULL, "「……いやそんな、力説しなくてもよく知ってるよ。",
 		   NULL, "\"...Um yeah, even without the forced explanation, I know about it.", Line_WaitForInput);
 	PlaySE(4, "S19/03/990300597", 128, 64);
-	OutputLine(NULL, "あの毎週、違うコスチュームで戦うヤツでしょ？",
-		   NULL, " It's that thingy where she fights in a different costume every week, right?", Line_WaitForInput);
+	OutputLine(NULL, "なんかコーヒー飲んでもカップに付かないってやつでしょ？",
+		   NULL, " It's the one that doesn't stick to the cup even if you're drinking coffee, right?", Line_WaitForInput);
 	PlaySE(4, "S19/03/990300598", 128, 64);
 	OutputLine(NULL, "　うん。",
 		   NULL, " Yeah.", Line_ContinueAfterTyping);
@@ -2632,11 +2625,14 @@
 	PlaySE(4, "S19/02/990200496", 128, 64);
 	OutputLine(NULL, "「うんうん。",
 		   NULL, "\"Yup, yup.", Line_ContinueAfterTyping);
-	OutputLine(NULL, "かぁいいんだよね！",
-		   NULL, " It's kyute, isn't it!", Line_WaitForInput);
+	OutputLine(NULL, "とってもかぁいい色してるんだよね！",
+		   NULL, " It's a really kyute color, isn't it!", Line_WaitForInput);
 	PlaySE(4, "S19/02/990200497", 128, 64);
-	OutputLine(NULL, "　レナもたまに立ち読みでストーリーちゃんと追ってるよ☆」",
-		   NULL, " Rena sometimes browses through it at the magazine stand to keep up with the story☆.\"", Line_WaitForInput);
+	OutputLine(NULL, "　レナも薬局の化粧品売り場で見たよ。",
+		   NULL, " I saw it in the makeup section at the drug store.", Line_WaitForInput);
+	PlaySE(4, "S19/02/990200498", 128, 64);
+	OutputLine(NULL, "　薄いピンク色で、お持ち帰りしようかと思っちゃった～」",
+		   NULL, " That pink color made me want to take it home~\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
@@ -2644,11 +2640,12 @@
 	FadeBustshotWithFiltering( 3, "left", 7, FALSE, 0, 0, 200, TRUE );
 	DrawBustshotWithFiltering( 3, "sa_se_wa_a1", "right", 7, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
-//「最近、見始めましたわ＠さくらが元気一杯でカッコイイんですの！＠
-	OutputLine(NULL, "「最近、見始めましたわ。",
-		   NULL, "\"I saw it for the first time recently.", Line_WaitForInput);
-	OutputLine(NULL, "さくらが元気一杯でカッコイイんですの！」",
-		   NULL, " Sakura is cool and so cheerful all the time!\"", Line_WaitForInput);
+	PlaySE(4, "S19/04/990400252", 128, 64);
+	OutputLine(NULL, "「そ、そうですわね。",
+		   NULL, "\"I-indeed.", Line_WaitForInput);
+	PlaySE(4, "S19/04/990400253", 128, 64);
+	OutputLine(NULL, "女性としては一通りチェックを入れるのは常識ですわよねぇ！」",
+		   NULL, " It's only common sense for a lady to keep up on these matters!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
@@ -2656,52 +2653,44 @@
 	FadeBustshotWithFiltering( 1, "right", 7, FALSE, 0, 0, 200, TRUE );
 	DrawBustshotWithFiltering( 1, "ri_se_wa_a1", "left", 7, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
-//「......ボクはビデオを撮ってる女の子が好きなのです。￥
-	OutputLine(NULL, "「……ボクはビデオを撮ってる女の子が好きなのです。」",
-		   NULL, "\"...I like that girl who's always filming with the camcorder.\"", Line_Normal);
+	PlaySE(4, "S19/05/990500122", 128, 64);
+	OutputLine(NULL, "「沙都子はどちらかというと、特売のティッシュの方に興味があったみたいなのです。」",
+		   NULL, "\"I thought you were more interested in the bargain-sale tissues, Satoko.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	PlaySE(4, "S19/04/990400254", 128, 64);
+	OutputLine(NULL, "「し、失礼ですわね！　ちゃんと新製品のチェックぐらい入れてましてよっ！」",
+		   NULL, "\"How rude of you! I make sure to keep an eye on the newest products!\"", Line_Normal);
+
 	ClearMessage();
 	DisableWindow();
 	DrawBustshot( 2, "me_se_aw_a2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
-//「小さい女の子だけじゃなくて、その道の割と大きな男の子にも人気があるんだって＠...圭ちゃんもその一人だったとはねぇ～。＠
-	OutputLine(NULL, "「小さい女の子だけじゃなくて、その道の割と大きな男の子にも人気があるんだって？",
-		   NULL, "\"It's not just popular with little girls, it's also surprisingly well-received by older boys, isn't it?", Line_WaitForInput);
-	OutputLine(NULL, "…圭ちゃんもその一人だったとはねぇ〜。」",
-		   NULL, " ...To think that Kei-chan was one of those~.\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+//魅音「まあ、それはいいんだけどさ、“さくら”って聞いて発想がそっちに行っちゃうってのは……」
+	PlaySE(4, "S19/03/990300599", 128, 64);
+	OutputLine(NULL, "「まあ、それはいいんだけどさ、“さくら”って聞いて発想がそっちに行っちゃうってのは……」",
+		   NULL, "\"That aside, it's just a bit surprising that's the first thing you think of when you hear 'Sakura'...", Line_Normal);
 
-
-//　思わず余計なことまで言って自爆してしまったようだが...問題なのはそこじゃない￥
-	OutputLine(NULL, "　思わず余計なことまで言って自爆してしまったようだが…問題なのはそこじゃない。",
-		   NULL, "I felt like I had inadvertently blurted out something unnecessary and had completely self-destructed but... that wasn't the main problem.", Line_Normal);
-	ClearMessage();
-
-	PlaySE( 3, "wa_006", 128, 64 );
-	ShakeScreen( 1, 50, 20, 3, 0, );
-
-//「お、お前ら全員知ってるじゃねぇかぁあぁあ？！？＠　それを何で書かなねぇんだよぉおぉおお？！？＠
-	OutputLine(NULL, "「お、お前ら全員知ってるじゃねぇかぁあぁあ？！？！",
-		   NULL, "\"S-So you all know it, don't yoooooooou!?!?", Line_WaitForInput);
-	OutputLine(NULL, "　それを何で書かなねぇんだよぉおぉおお？！？！",
-		   NULL, " Then why didn't you write it dooooooooooooown!?!?", Line_WaitForInput);
+//圭一rvS19/01/HR_KEI11200.「な、なんでだよおおお！kvS19/01/HR_KEI11210.　女の立場になって考えてみただけだろおおおお！」
+	PlaySE(4, "S19/01/HR_KEI11200", 128, 64);
+	OutputLine(NULL, "「な、なんでだよおおお！",
+		   NULL, "\"Wh- whaaaat?", Line_WaitForInput);
+	PlaySE(4, "S19/01/HR_KEI11210", 128, 64);
+	OutputLine(NULL, "　女の立場になって考えてみただけだろおおおお！」",
+		   NULL, " I was just thinking from a ladies perspective!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-
-//　さくらっつったら木之元さくら！＠　さくらたんはぁはぁ！＠　カードマスターさくらって考えるのが正しいんだよぉおおおぉおぉおーー...ッ！！！」/
-	OutputLine(NULL, "　さくらっつったら木之元さくら！！",
-		   NULL, "Sakura means Sakura Kinomoto!!", Line_WaitForInput);
-	OutputLine(NULL, "　さくらたんはぁはぁ！！",
-		   NULL, " Sakura-tan *pant pant*!!", Line_WaitForInput);
-	OutputLine(NULL, "　カードマスターさくらって考えるのが正しいんだよぉおおおぉおぉおーー…ッ！！！」",
-		   NULL, " Card Master Sakura is the right answeeeeeeeeeeeer!!!\"", Line_ContinueAfterTyping);
-
-	PlaySE( 3, "wa_007", 128, 64 );
-	OutputLineAll(NULL, "", Line_WaitForInput);
-
-	ClearMessage();
-	DisableWindow();
-	DrawSceneWithMask( "bg_109", "left", 0, 0, 300 );
-	DrawBustshot( 2, "me_se_fu_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+//圭一rvS19/01/HR_KEI11220.「女に生まれたからには当然美しく装うのがデフォ！kvS19/01/HR_KEI11230.　そう考えるのが正しいんだよぉおおおぉおぉおーー…ッ！！kvS19/01/HR_KEI11240.　そうじゃなきゃダメなんだよぉおおおぉおぉおーー…ッ！！！」
+	PlaySE(4, "S19/01/HR_KEI11220", 128, 64);
+	OutputLine(NULL, "「女に生まれたからには当然美しく装うのがデフォ！",
+		   NULL, "\"Being born as a lady, obviously it's normal to maintain a beautiful image!", Line_WaitForInput);
+	PlaySE(4, "S19/01/HR_KEI11230", 128, 64);
+	OutputLine(NULL, "　そう考えるのが正しいんだよぉおおおぉおぉおーー…ッ！！",
+		   NULL, " It's right to think thaaaaaaat!!", Line_WaitForInput);
+	PlaySE(4, "S19/01/HR_KEI11240", 128, 64);
+	OutputLine(NULL, "　そうじゃなきゃダメなんだよぉおおおぉおぉおーー…ッ！！！」",
+		   NULL, " That's how it has to beeeeeeeee!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 //　ぽん＠
 	OutputLine(NULL, "　ぽん。",
