@@ -331,7 +331,7 @@
 //「おー＠　圭ちゃんも我が部のことがわかってきたねぇ＠　で、どう？　来れそう？￥
 	PlaySE(4, "S19/03/990300373", 128, 64);
 	OutputLine(NULL, "「おー！",
-		   NULL, "\"Oooh!", Line_WaitForInput);
+		   NULL, "\"Oooh!", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　圭ちゃんも我が部のことがわかってきたねぇ！",
 		   NULL, " It looks like Kei-chan has come to understand our club!", Line_WaitForInput);
 	PlaySE(4, "S19/03/990300374", 128, 64);
@@ -1065,8 +1065,8 @@
 
 //「圭々がいじめたぁあぁあ！！＠　わぁああぁああぁあああぁあんッ！！！＠
 	PlaySE(4, "S19/04/990400171", 128, 64);
-	OutputLine(NULL, "「圭々がいじめたぁあぁあ！！！",
-		   NULL, "\"Kei-kei is bullying meeeeeEEeee!!!", Line_WaitForInput);
+	OutputLine(NULL, "「圭一さんがぶったぁあぁあ！！！",
+		   NULL, "\"Keiichi-san hit meeeeeEEeee!!!", Line_WaitForInput);
 	PlaySE(4, "S19/04/990400172", 128, 64);
 	OutputLine(NULL, "　わぁああぁああぁあああぁあんッ！！！」",
 		   NULL, " WaaaaaaAAaaaAAAaaa!!!\"", Line_WaitForInput);
@@ -1953,7 +1953,7 @@
 	OutputLine(NULL, "「みんないいかな〜？！",
 		   NULL, "\"Is everybody ready~?!", Line_WaitForInput);
 	PlaySE(4, "S19/03/990300412", 128, 64);
-	OutputLine(NULL, "　傾注傾注〜！！」",
+	OutputLine(NULL, "　傾聴傾聴～！！」",
 		   NULL, " Listen close now~!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
@@ -2434,7 +2434,7 @@
 
 
 //　百万長者ゲーム＠
-	OutputLine(NULL, "　百万長者ゲーム。",
+	OutputLine(NULL, "　百億兆者ゲーム。",
 		   NULL, "It was a game called 'Billionaire'.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
@@ -2572,7 +2572,6 @@
 
 
 //　そう＠
-	PlaySE(4, "S19/03/990300629", 128, 64);
 	OutputLine(NULL, "　そう。",
 		   NULL, "That's right.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -3849,10 +3848,9 @@
 	ClearMessage();
 
 //「まず富田くん＠君は沙都子萌えだよな＠　否定するなッ！！＠　そして岡村くん＠君は梨花萌えだな＠　赤くなるなッ！！！！＠
-	PlaySE(4, "S19/01/HR_KEI09700", 128, 64);
-	OutputLine(NULL, "「まず富田くん。",
-		   NULL, "\"First of all, Tomita-kun.", Line_WaitForInput);
 	PlaySE(4, "S19/01/HR_KEI09710", 128, 64);
+	OutputLine(NULL, "「まず富田くん。",
+		   NULL, "\"First of all, Tomita-kun.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "君は沙都子萌えだよな？",
 		   NULL, " You like Satoko, right?", Line_WaitForInput);
 	PlaySE(4, "S19/01/HR_KEI09720", 128, 64);
@@ -4022,9 +4020,9 @@
 //　前原先輩のわがままの犠牲者なだけ！＠　いやいやでいいんだよ！＠　わかってるッ！！！お前たちの胸の内は全部わかってるッ！！！！＠
 	PlaySE(4, "S19/01/HR_KEI09880", 128, 64);
 	OutputLine(NULL, "　前原先輩のわがままの犠牲者なだけ！！",
-		   NULL, "You two are simply sacrifices to Maebara-senpai's whims!!", Line_WaitForInput);
+		   NULL, "You two are simply sacrifices to Maebara-senpai's whims!!", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　いやいやでいいんだよ！！",
-		   NULL, " You can pretend to be against it!!", Line_WaitForInput);
+		   NULL, " You can pretend to be against it!!", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　わかってるッ！！！お前たちの胸の内は全部わかってるッ！！！！」",
 		   NULL, " I understand!!! I know everything that your hearts desire!!!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
@@ -4048,7 +4046,7 @@
 //　......だから...後輩のお前たちには.../
 	PlaySE(4, "S19/01/HR_KEI09900_01", 128, 64);
 	OutputLine(NULL, "　……だから…後輩のお前たちには…",
-		   NULL, "...So... to you, my juniors...", Line_ContinueAfterTyping);
+		   NULL, "...So... to you, my juniors...", Line_WaitForInput);
 
 	PlaySE( 3, "wa_007", 128, 64 );
 
@@ -4062,15 +4060,14 @@
 //　自分に素直になれッ！！＠夢を追え！＠そしてかなえろ！！＠俺がかなえてやるッ！！＠俺がだぁああぁあぁあッ！！！！」/
 	PlaySE(4, "S19/01/HR_KEI09900_03", 128, 64);
 	OutputLine(NULL, "　自分に素直になれッ！！！",
-		   NULL, "Be honest with yourselves!!!", Line_WaitForInput);
+		   NULL, "Be honest with yourselves!!!", Line_ContinueAfterTyping);
 	OutputLine(NULL, "夢を追え！！",
-		   NULL, " Chase your dreams!!", Line_WaitForInput);
+		   NULL, " Chase your dreams!!", Line_ContinueAfterTyping);
 	OutputLine(NULL, "そしてかなえろ！！！",
-		   NULL, " Fulfill them!!!", Line_WaitForInput);
+		   NULL, " Fulfill them!!!", Line_ContinueAfterTyping);
 	OutputLine(NULL, "俺がかなえてやるッ！！！",
 		   NULL, " I'll fulfill them for you!!!", Line_WaitForInput);
-	OutputLine(NULL, "俺がだぁああぁあぁあッ！！！！」",
-		   NULL, " I wiiiiilllllll!!!!\"", Line_ContinueAfterTyping);
+
 
 	PlaySE( 3, "wa_006", 128, 64 );
 	ShakeScreen( 1, 50, 20, 4, 0, );
@@ -4339,8 +4336,11 @@
 
 //「もちろんですわ～！　ねー！！！＠
 	PlaySE(4, "S19/04/990400200", 128, 64);
-	OutputLine(NULL, "「もちろんですわ〜！　ねー！！！」",
-		   NULL, "\"That's only natural~! Right~?\"", Line_WaitForInput);
+	OutputLine(NULL, "「もちろんですわ〜！",
+		   NULL, "\"That's only natural~!", Line_WaitForInput);
+	PlaySE(4, "S19/04/990400200_01", 128, 64);
+	OutputLine(NULL, "　ねー！！！」",
+		   NULL, " Right~?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
@@ -5042,7 +5042,7 @@
 
 //「圭ちゃんが持ってたら、確実に明日から変態扱いだね。うん！￥
 	PlaySE(4, "S19/03/990300473", 128, 64);
-	OutputLine(NULL, "「圭ちゃんが持ってたら、確実に明日から変態扱いだね。うん！」",
+	OutputLine(NULL, "「圭ちゃんが持ってたら、確実に明日からアレな趣味の人扱いだね。うん！」",
 		   NULL, "\"If you walked around with it, then you'd be treated like a weirdo starting tomorrow. Definitely!\"", Line_Normal);
 	ClearMessage();
 
