@@ -3501,8 +3501,9 @@
 	PlaySE(4, "S19/00/womB50003", 128, 64);
 	OutputLine(NULL, "　最近の町モンは物騒なんだから！",
 		   NULL, " City kids these days are pretty unruly!", Line_WaitForInput);
-	OutputLine(NULL, "　ブツブツ！」",
-		   NULL, " *grumble*\"", Line_WaitForInput);
+	PlaySE(4, "S19/00/womB50004", 128, 64);
+	OutputLine(NULL, "　はぁ…まったく！」",
+		   NULL, " *sigh*... honestly!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
@@ -3735,6 +3736,7 @@
 	ClearMessage();
 
 //「でも本当にさ、!w900......さっきのは助かったよ＠詩音が本当に頼もしく見えた。＠
+	PlaySE(4, "S19/01/HR_KEI16600", 128, 64);
 	OutputLine(NULL, "「でも本当にさ、",
 		   NULL, "\"But really,", Line_ContinueAfterTyping);
 
@@ -3742,7 +3744,6 @@
 	Wait( 900 );
 	SetValidityOfInput( TRUE );
 
-	PlaySE(4, "S19/01/HR_KEI16600", 128, 64);
 	OutputLine(NULL, "……さっきのは助かったよ。",
 		   NULL, " ...you really saved my hide there.", Line_WaitForInput);
 	PlaySE(4, "S19/01/HR_KEI16610", 128, 64);
@@ -3766,6 +3767,7 @@
 	DrawBustshot( 2, "si_ma_wi_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //勇気出して頑張りましたってことです。＠
+	PlaySE(4, "S19/06/500600055", 128, 64);
 	OutputLine(NULL, "勇気出して頑張りましたってことです。」",
 		   NULL, " I had to be brave and do my best.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -4156,14 +4158,16 @@
 	DrawBustshot( 2, "si_ma_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「例えばですよ？　聞いてます？＠
+	PlaySE(4, "S19/06/500600078", 128, 64);
 	OutputLine(NULL, "「例えばですよ？　聞いてます？」",
 		   NULL, "\"Hypothetically, okay? Are you listening?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //「あ、ごめん＠うん、聞いてるよ。＠
+	PlaySE(4, "S19/01/HR_KEI17010_01", 128, 64);
 	OutputLine(NULL, "「あ、ごめん。",
-		   NULL, "\"Ah, sorry.", Line_WaitForInput);
+		   NULL, "\"Ah, sorry.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "うん、聞いてるよ。」",
 		   NULL, " Yeah, I'm listening.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
