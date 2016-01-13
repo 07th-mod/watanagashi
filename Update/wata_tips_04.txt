@@ -16,7 +16,7 @@
 //「おい、魅音＠これ。＠
 	PlaySE(4, "S20/01/440100064", 128, 64);
 	OutputLine(NULL, "「おい、魅音。",
-		   NULL, "\"Hey, Mion.", Line_WaitForInput);
+		   NULL, "\"Hey, Mion.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "これ。」",
 		   NULL, " Here.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -147,7 +147,7 @@
 //「...魅音に瓜二つなヤツだと思うぞ＠だって双子なんだろ＠　似てて当然だよ。＠
 	PlaySE(4, "S20/01/440100071", 128, 64);
 	OutputLine(NULL, "「…魅音に瓜二つなヤツだと思うぞ。",
-		   NULL, "\"...You two are like peas in a pod.", Line_WaitForInput);
+		   NULL, "\"...You two are like peas in a pod.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "だって双子なんだろ？",
 		   NULL, " You're twins, right?", Line_WaitForInput);
 	PlaySE(4, "S20/01/440100072", 128, 64);
