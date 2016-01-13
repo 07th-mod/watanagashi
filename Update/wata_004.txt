@@ -969,9 +969,10 @@
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
 
 //「こらッ＠　園崎さん、前原くん、授業中ですよ...！＠　園崎さんはどこまで進みましたか？　ノートを持ってきてください。￥
-	PlaySE(4, "S19/22/501400053", 128, 64);
+	PlaySE(4, "S19/22/501400052", 128, 64);
 	OutputLine(NULL, "「こらッ！",
 		   NULL, "\"Hey!", Line_WaitForInput);
+	PlaySE(4, "S19/22/501400053", 128, 64);
 	OutputLine(NULL, "　園崎さん、前原くん、授業中ですよ…！！",
 		   NULL, " Sonozaki-san! Maebara-kun! We're in the middle of class!", Line_WaitForInput);
 	PlaySE(4, "S19/22/501400054", 128, 64);
