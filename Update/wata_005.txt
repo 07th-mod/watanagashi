@@ -1218,33 +1218,40 @@
 	PlaySE(4, "S19/00/otaE50001", 128, 64);
 	OutputLine(NULL, "「エンジェルモートのフィギュアが今度発売されるらしいでござるな。",
 		   NULL, "\"I heard they're planning on selling Angel Mort figures.", Line_WaitForInput);
-	OutputLine(NULL, "ＷＦは要注意でござる…！！」",
-		   NULL, " We'll have to pay heed at the next Wonder Festival...!!\"", Line_WaitForInput);
+	PlaySE(4, "S19/00/otaE50002", 128, 64);
+	OutputLine(NULL, "次のイベントは要注意でござる…！！」",
+		   NULL, " We'll have to pay heed at the next event...!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
-//「アキバの××××４Ｆでエンジェルモートの使用済み制服が売ってたらしいナリ！＠　でも２８万もしてたニョー...。￥
-	OutputLine(NULL, "「アキバの××××４Ｆでエンジェルモートの使用済み制服が売ってたらしいナリ！！",
-		   NULL, "\"Theys sell used Angel Mort uniforms on the 4th floor of [redacted] in Akiba!!", Line_WaitForInput);
-	OutputLine(NULL, "　でも２８万もしてたニョー…。」",
-		   NULL, " But theys cost 280,000...\"", Line_Normal);
+//オタク「そうそう、今度あの大手フィギュアメーカーが商品化を決めたそうであります！　発売日は要チェックなのであります…！」
+	PlaySE(4, "S19/00/otaF50001", 128, 64);
+	OutputLine(NULL, "「そうそう、今度あの大手フィギュアメーカーが商品化を決めたそうであります！",
+		   NULL, "\"Speaking of which, that major figure maker decided to bring out the line!", Line_WaitForInput);
+	PlaySE(4, "S19/00/otaF50002", 128, 64);
+	OutputLine(NULL, "　発売日は要チェックなのであります…！」",
+		   NULL, " We must confirm the release date ...!\"", Line_Normal);
 	ClearMessage();
 
-//「凄まじいレートでござるな＠　アンミュラで８万、閉店後のブロバで１２万が相場でござるのに...！！（使用済みの場合でござるよ。コピー品は半額以下でござる！）＠
-	OutputLine(NULL, "「凄まじいレートでござるな！",
-		   NULL, "\"'Tis an absurd price!", Line_WaitForInput);
-	OutputLine(NULL, "　アンミュラで８万、閉店後のブロバで１２万が相場でござるのに…！！（使用済みの場合でござるよ。コピー品は半額以下でござる！）」",
-		   NULL, " AnnMull cost 80,000; when BroBa closed down the going rate for theirs was 12,000. (That's the price for used ones. Knock-offs are less than half of that!)\"", Line_WaitForInput);
+//オタク「しかし大人買いするには種類が多すぎるのでごわすな……。普通のファミレス制服のフィギュアなら１０種類程度でごわすのに……今度のはシークレットポーズ差分込みでざっと１００種類！！」
+	PlaySE(4, "S19/00/otaG50001", 128, 64);
+	OutputLine(NULL, "「しかし大人買いするには種類が多すぎるのでごわすな……。",
+		   NULL, "\"'The problem is, there's too many variations to bulk buy them ...", Line_WaitForInput);
+	PlaySE(4, "S19/00/otaG50002", 128, 64);
+	OutputLine(NULL, "　普通のファミレス制服のフィギュアなら１０種類程度でごわすのに……今度のはシークレットポーズ差分込みでざっと１００種類！！",
+		   NULL, " If it were just a normal set of family restaurant uniforms, there'd only be around ten types... But, including the secret set with different poses that are planned, there's 100 or so!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
-//「×××でコピー品でいいから衣装販売してくれないか尿～＠　そしたら我輩が××××××××でン十万で買った等身大フィギュアに着せ着せするです尿～＠　毎朝毎朝、エンジェルの制服を見上げて目を覚ますでおじゃるよ～！！！￥
-	OutputLine(NULL, "「×××でコピー品でいいから衣装販売してくれないか尿〜☆",
-		   NULL, "\"A knock-off from [redacted] is fine with me, I wonder if they'll start selling them~☆", Line_WaitForInput);
-	OutputLine(NULL, "　そしたら我輩が××××××××でン十万で買った等身大フィギュアに着せ着せするです尿〜☆",
-		   NULL, " Then I'll put it on mine life-size figure I did buy off of [redacted] for several hundred thousand~☆", Line_WaitForInput);
-	OutputLine(NULL, "　毎朝毎朝、エンジェルの制服を見上げて目を覚ますでおじゃるよ〜！！！」",
-		   NULL, " If I can wake up every day to an angel from Angel, that'll really get my gears going~!!!\"", Line_Normal);
+//オタク「ダブった時は誰かトレードしてもらいたいでおじゃる～。　ファンとしては即日コンプは義務！　いや君とボクとのデスティニーでおじゃるよ～！！」
+	PlaySE(4, "S19/00/otaH50001", 128, 64);
+	OutputLine(NULL, "「ダブった時は誰かトレードしてもらいたいでおじゃる～。",
+		   NULL, "\"Someone, trade with me when I get a double~☆", Line_WaitForInput);
+	PlaySE(4, "S19/00/otaH50002", 128, 64);
+	OutputLine(NULL, "　ファンとしては即日コンプは義務！",
+		   NULL, " It's my duty as a fan to complete the collection right away!", Line_ContinueAfterTyping);
+	OutputLine(NULL, "　いや君とボクとのデスティニーでおじゃるよ～！！」",
+		   NULL, " No, this is destiny between us~!!\"", Line_Normal);
 	ClearMessage();
 
 //　.........彼らの口走る単語のほとんどは意味不明な隠語だ＠
