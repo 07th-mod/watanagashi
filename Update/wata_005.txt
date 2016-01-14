@@ -3237,17 +3237,12 @@
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 
-//!w800「ぅごッ！！」/
-	OutputLine(NULL, "「ぅごッ！！」",
-		   NULL, " \"Unf!!\"", Line_ContinueAfterTyping);
+
 	PlaySE( 3, "wa_003", 128, 64 );
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 
-//!w800「ぬわんとぉッ？！？！」/
-	OutputLine(NULL, "「ぬわんとぉッ？！？！」",
-		   NULL, " \"Hwaaa!?!?\"", Line_ContinueAfterTyping);
 	PlaySE( 3, "wa_004", 128, 64 );
 
 	OutputLineAll(NULL, "", Line_WaitForInput);
@@ -3563,16 +3558,10 @@
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 
-//!w800「......これは。」/
-	OutputLine(NULL, "「……これは。」",
-		   NULL, " \"...This is...\"", Line_ContinueAfterTyping);
 	PlaySE( 3, "wa_011", 128, 64 );
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
-//!w800「......ぅごぉ、」/
-	OutputLine(NULL, "「……ぅごぉ、」",
-		   NULL, " \"...Urk...\"", Line_ContinueAfterTyping);
 	PlaySE( 3, "wa_011", 128, 64 );
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
@@ -6485,7 +6474,7 @@
 
 //「圭ちゃんが持ってたら、確実に明日から変態扱いだね。うん！＠
 	PlaySE(4, "S19/03/500300188", 128, 64);
-	OutputLine(NULL, "「圭ちゃんが持ってたら、確実に明日から変態扱いだね。うん！」",
+	OutputLine(NULL, "「圭ちゃんが持ってたら、確実に明日からアレな趣味の人扱いだね。うん！」",
 		   NULL, "\"If you walked around with it, then you'd be treated like a weirdo starting tomorrow. Definitely!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
 
@@ -6947,7 +6936,8 @@
 //　......圭ちゃんに悪気がなかったのはわかってる＠...わかってるつもり￥
 	PlaySE(4, "S19/03/500300197", 128, 64);
 	OutputLine(NULL, "　……圭ちゃんに悪気がなかったのはわかってる。",
-		   NULL, "...I know Kei-chan didn't mean anything wrong.", Line_WaitForInput);
+		   NULL, "...I know Kei-chan didn't mean anything wrong.", Line_ContinueAfterTyping);
+	Wait( 2000 );
 	OutputLine(NULL, "…わかってるつもり。",
 		   NULL, " ...At least, he didn't intend to.", Line_Normal);
 	ClearMessage();
@@ -7775,6 +7765,7 @@
 	DrawBustshot( 3, "me_si_bi_a2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「......ぅぅ............圭ちゃ～...ん...。＠
+	PlaySE(4, "S19/03/500300223", 128, 64);
 	OutputLine(NULL, "「……ぅぅ…………圭ちゃ〜…ん…。」",
 		   NULL, "\"......Ooo......Kei-cha~...n...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
