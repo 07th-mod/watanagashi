@@ -1286,7 +1286,7 @@
 		   NULL, "\"...Ah,", Line_ContinueAfterTyping);
 
 	SetValidityOfInput( FALSE );
-	Wait( 1000 );
+	Wait( 600 );
 	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…いえ。",
@@ -1744,7 +1744,7 @@
 
 //「やかましいぞ脂デブ＠　俺の目が黒い内に出て失せろ。＠
 	PlaySE(4, "S19/01/HR_KEI18070", 128, 64);
-	OutputLine(NULL, "「やかましいぞ脂デブ！",
+	OutputLine(NULL, "「やかましいぞ重量オーバー！",
 		   NULL, "\"Shut up, you greasy fatass!", Line_WaitForInput);
 	PlaySE(4, "S19/01/HR_KEI18080", 128, 64);
 	OutputLine(NULL, "　俺の目が黒い内に出て失せろ。」",
@@ -1771,7 +1771,7 @@
 	OutputLine(NULL, "「わかっておらんでござるな。",
 		   NULL, "\"It seems you don't understand.", Line_WaitForInput);
 	PlaySE(4, "S19/00/otaE50008", 128, 64);
-	OutputLine(NULL, "そのウェイトレスが余のおズボンに粗相をしたのでござるよ？",
+	OutputLine(NULL, "そのスタッフが余のおズボンに粗相をしたのでござるよ？",
 		   NULL, " Yonder waitress was the one who wet mine pants!", Line_WaitForInput);
 	PlaySE(4, "S19/00/otaE50009", 128, 64);
 	OutputLine(NULL, "　これはお仕置きなのでござる〜！！」",
@@ -2692,8 +2692,8 @@
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
-//「...それに関しては言い返すことはない。￥
-	OutputLine(NULL, "「…それに関しては言い返すことはない。」",
+	PlaySE(4, "S19/01/HR_KEI18350", 128, 64);
+	OutputLine(NULL, "「…それについては返す言葉がない。」",
 		   NULL, "\"...There's nothing I can say to that.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
