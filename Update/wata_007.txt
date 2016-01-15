@@ -452,11 +452,11 @@
 		   NULL, " Keiichi-kun, what kind of Rena would you want to meet?\"", Line_Normal);
 	ClearMessage();
 
-//「バスト９０以上＠お触りＯＫのボインボイン。＠
-	OutputLine(NULL, "「バスト９０以上。",
-		   NULL, "\"One with a bust size of at least 90.", Line_WaitForInput);
-	OutputLine(NULL, "お触りＯＫのボインボイン。」",
-		   NULL, " Huge knockers that you're okay with me touching.\"", Line_WaitForInput);
+	PlaySE(4, "S19/01/HR_KEI34750", 128, 64);
+	OutputLine(NULL, "「プロポーション最上級。",
+		   NULL, "\"One with a model class body line,", Line_ContinueAfterTyping);
+	OutputLine(NULL, "アイドル真っ青のルックスと、俺の言うことなんでも確実に聞く器量よしで頼む。」",
+		   NULL, " the looks of an innocent young idol, and the patience to see to my every whim.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
@@ -517,7 +517,7 @@
 
 //「おぅ！！　明日、祭りに会おうなー！！！￥
 	PlaySE(4, "S19/01/HR_KEI34810", 128, 64);
-	OutputLine(NULL, "「おぅ！！　明日、祭りに会おうなー！！！」",
+	OutputLine(NULL, "「おぅ！！　明日、祭りで会おうなー！！！」",
 		   NULL, "\"You got it!! Let's meet up tomorrow!!!\"", Line_Normal);
 	ClearMessage();
 
