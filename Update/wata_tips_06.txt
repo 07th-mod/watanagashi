@@ -16,7 +16,7 @@
 //「...だから初めましてじゃないですって＠　昨日まで毎日、お会いしてたじゃないですか。＠
 	PlaySE(4, "S20/06/440600001", 128, 64);
 	OutputLine(NULL, "「…だから初めましてじゃないですって！",
-		   NULL, "\"...Stop saying 'it's been a while'!", Line_WaitForInput);
+		   NULL, "\"...Stop saying 'it's been a while'!", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　昨日まで毎日、お会いしてたじゃないですか。」",
 		   NULL, " We've seen each other every day up until yesterday, haven't we?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -26,7 +26,7 @@
 //「......もういい＠お前がそうだって言うならそういうことでいい。￥
 	PlaySE(4, "S20/01/440100084", 128, 64);
 	OutputLine(NULL, "「……もういい。",
-		   NULL, "\"...Whatever.", Line_WaitForInput);
+		   NULL, "\"...Whatever.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "お前がそうだって言うならそういうことでいい。」",
 		   NULL, " If you say so, we'll go with that.\"", Line_Normal);
 	ClearMessage();
@@ -59,7 +59,7 @@
 //「しかし......そっくりだなぁ＠魅音みたいに髪を後ろで結んだら、やっぱり魅音そっくりになるのか？＠
 	PlaySE(4, "S20/01/440100085", 128, 64);
 	OutputLine(NULL, "「しかし……そっくりだなぁ。",
-		   NULL, "\"Still... you two look so alike.", Line_WaitForInput);
+		   NULL, "\"Still... you two look so alike.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "魅音みたいに髪を後ろで結んだら、やっぱり魅音そっくりになるのか？」",
 		   NULL, " If you tied your hair back like Mion does, would you look exactly like her?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -71,7 +71,7 @@
 //「さぁ＠試せばそうなるんじゃないですか＠　私たち、筋金入りの一卵性ですから＠昔は服を取替えっこしただけで、誰も見破れなかったものです＠お姉と一緒にことあるごとに入れ替わって、いろいろと騙したりしましたっけ。あははは！￥
 	PlaySE(4, "S20/06/440600002", 128, 64);
 	OutputLine(NULL, "「さぁ。",
-		   NULL, "\"Who knows?", Line_WaitForInput);
+		   NULL, "\"Who knows?", Line_ContinueAfterTyping);
 	OutputLine(NULL, "試せばそうなるんじゃないですか？",
 		   NULL, " That's probably what would happen.", Line_WaitForInput);
 	PlaySE(4, "S20/06/440600003", 128, 64);
@@ -95,7 +95,7 @@
 //「なぁに、葛西＠そのふかーいため息は。＠
 	PlaySE(4, "S20/06/440600006", 128, 64);
 	OutputLine(NULL, "「なぁに、葛西。",
-		   NULL, "\"What's wrong, Kasai?", Line_WaitForInput);
+		   NULL, "\"What's wrong, Kasai?", Line_ContinueAfterTyping);
 	OutputLine(NULL, "そのふかーいため息は。」",
 		   NULL, " That was a pretty deep sigh.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -105,7 +105,7 @@
 //「失礼しました＠......昔から変わられないなぁと思っただけですよ。＠
 	PlaySE(4, "S20/15/441500001", 128, 64);
 	OutputLine(NULL, "「失礼しました。",
-		   NULL, "\"Excuse me.", Line_WaitForInput);
+		   NULL, "\"Excuse me.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "……昔から変わられないなぁと思っただけですよ。」",
 		   NULL, " ...I was just thinking that you haven't changed.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -122,7 +122,7 @@
 //「それより、圭ちゃんの家ってこっちでいいんですか＠　葛西は園崎本家への道以外は雛見沢をよく知らないから＠任せておくと谷河内辺りまで走ってっちゃいますよ。＠
 	PlaySE(4, "S20/06/440600007", 128, 64);
 	OutputLine(NULL, "「それより、圭ちゃんの家ってこっちでいいんですか？",
-		   NULL, "\"Anyway, Kei-chan, your house was around here, right?", Line_WaitForInput);
+		   NULL, "\"Anyway, Kei-chan, your house was around here, right?", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　葛西は園崎本家への道以外は雛見沢をよく知らないから。",
 		   NULL, " Kasai doesn't know much about Hinamizawa aside from the road that goes to the Sonozaki main house.", Line_WaitForInput);
 	PlaySE(4, "S20/06/440600008", 128, 64);
@@ -135,7 +135,7 @@
 //「そ、そりゃ困る＠　...すみません、次の右に入る細い道のところで停めてください＠そこまでで結構です。￥
 	PlaySE(4, "S20/01/440100086", 128, 64);
 	OutputLine(NULL, "「そ、そりゃ困る！",
-		   NULL, "\"I-I don't want that!", Line_WaitForInput);
+		   NULL, "\"I-I don't want that!", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　…すみません、次の右に入る細い道のところで停めてください。",
 		   NULL, " ...Excuse me, could you stop at the narrow road at the next right?", Line_WaitForInput);
 	PlaySE(4, "S20/01/440100087", 128, 64);
@@ -159,8 +159,9 @@
 	ClearMessage();
 
 //「あ、...どうもすみません＠今日は送ってもらってありがとうございます...。＠
+	PlaySE(4, "S20/01/440100088", 128, 64);
 	OutputLine(NULL, "「あ、…どうもすみません。",
-		   NULL, "\"Ah... Sorry about that.", Line_WaitForInput);
+		   NULL, "\"Ah... Sorry about that.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "今日は送ってもらってありがとうございます…。」",
 		   NULL, " Thank you very much for showing me home today...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -173,7 +174,7 @@
 //「圭一さんでしたか＠お名前。＠
 	PlaySE(4, "S20/15/441500002", 128, 64);
 	OutputLine(NULL, "「圭一さんでしたか、",
-		   NULL, "\"Was it Kei-san?", Line_WaitForInput);
+		   NULL, "\"Was it Kei-san?", Line_ContinueAfterTyping);
 	OutputLine(NULL, "お名前。」",
 		   NULL, " Your name, that is.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -240,7 +241,7 @@
 //「じゃあね圭ちゃん！　また会いましょうね＠姉にもよろしくお伝え下さい＠私も明日から雛見沢の学校に通おうかな。＠
 	PlaySE(4, "S20/06/440600009", 128, 64);
 	OutputLine(NULL, "「じゃあね圭ちゃん！　また会いましょうね。",
-		   NULL, "\"Bye, Kei-chan! We'll see each other again soon.", Line_WaitForInput);
+		   NULL, "\"Bye, Kei-chan! We'll see each other again soon.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "姉にもよろしくお伝え下さい。",
 		   NULL, " Say hi to my sister for me, too.", Line_WaitForInput);
 	PlaySE(4, "S20/06/440600010", 128, 64);
@@ -253,7 +254,7 @@
 //「絶対に来るな＠詩音が転校して来たら、俺が興宮の学校に転校するから。＠
 	PlaySE(4, "S20/01/440100091", 128, 64);
 	OutputLine(NULL, "「絶対に来るな。",
-		   NULL, "\"Don't you dare.", Line_WaitForInput);
+		   NULL, "\"Don't you dare.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "詩音が転校して来たら、俺が興宮の学校に転校するから。」",
 		   NULL, " If you transferred in, I'll transfer out to a school in Okinomiya.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
