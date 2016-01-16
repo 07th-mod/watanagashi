@@ -1441,8 +1441,7 @@
 		   NULL, " The festival is coming up tomorrow!", Line_WaitForInput);
 	PlaySE(4, "S19/08/500800036", 128, 64);
 	OutputLine(NULL, "　今日は準備、お疲れさん。」",
-		   NULL, " Thanks for all your hard work setting it up today.\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " Thanks for all your hard work setting it up today.\"", Line_Normal);
 
 
 	DisableWindow();
@@ -1495,36 +1494,44 @@
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
-//...このカメラマンみたいなおっさん、会ったことがあるような気がするな￥
-	OutputLine(NULL, "　…このカメラマンみたいなおっさん、会ったことがあるような気がするな。",
-		   NULL, "...I feel like I've seen this photographer guy before.", Line_Normal);
-	ClearMessage();
-
-//「えー...っと、どこかでお会いしてますよね？＠
-	OutputLine(NULL, "「えー…っと、どこかでお会いしてますよね？」",
-		   NULL, "\"Umm... Have we met before?\"", Line_WaitForInput);
+//圭一「いえ、それほどでも……詩音とも知り合いなんですか？」
+	PlaySE(4, "S19/01/HR_KEI35230", 128, 64);
+	OutputLine(NULL, "　「いえ、それほどでも……詩音とも知り合いなんですか？」",
+		   NULL, "\"It was nothing... Do you know Shion, too?.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-
-//「覚えててくれてうれしいね＠圭一くんとは道で何度かすれ違ってるよ＠僕は富竹＠東京から来てるフリーのカメラマンさ。＠
-	OutputLine(NULL, "「覚えててくれてうれしいね。",
-		   NULL, "\"I'm glad you remembered.", Line_WaitForInput);
-	OutputLine(NULL, "圭一くんとは道で何度かすれ違ってるよ。",
-		   NULL, " We've passed many times on the road, Keiichi-kun.", Line_WaitForInput);
-	OutputLine(NULL, "僕は富竹。",
-		   NULL, " I'm Tomitake.", Line_WaitForInput);
-	OutputLine(NULL, "東京から来てるフリーのカメラマンさ。」",
-		   NULL, " I'm a freelancing photographer from Tokyo.\"", Line_WaitForInput);
+//富竹「あっははは、まあね。毎年ここに来てるからね。といっても髪形変わったら、まだどっちがどっちなのか区別できないけど」
+	PlaySE(4, "S19/08/500800039", 128, 64);
+	OutputLine(NULL, "　「あっははは、まあね。",
+		   NULL, "\"Ha ha ha! Indeed I do.", Line_WaitForInput);
+	PlaySE(4, "S19/08/500800040", 128, 64);
+	OutputLine(NULL, "毎年ここに来てるからね。",
+		   NULL, " I come every year, after all.", Line_WaitForInput);
+	PlaySE(4, "S19/08/500800041", 128, 64);
+	OutputLine(NULL, "といっても髪形変わったら、まだどっちがどっちなのか区別できないけど」",
+		   NULL, " Still, if they changed hair styles, I still wouldn't be able to tell them apart.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "sunset/me_si_th_a2", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//魅音「一緒にしないでください、こんなやつと」
+	PlaySE(4, "S19/03/500300801", 128, 64);
+	OutputLine(NULL, "　「一緒にしないでください、こんなやつと。」",
+		   NULL, "\"Don't lump me in with someone like her.\"", Line_Normal);
 
 	DisableWindow();
 	DrawBustshotWithFiltering( 1, "sunset/ta_si_de_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
+	PlaySE(4, "S19/01/HR_KEI35240", 128, 64);
+	OutputLine(NULL, "「あ、えっと……」",
+		   NULL, "\"Ah, err...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
 //「じゃあ私はわかるかしら...？＠
 	PlaySE(4, "S19/09/500900004", 128, 64);
-	OutputLine(NULL, "「じゃあ私はわかるかしら…？」",
-		   NULL, "\"Then do you recognize me...?\"", Line_WaitForInput);
+	OutputLine(NULL, "「こんばんは。私はわかるかしら…？」",
+		   NULL, "\"Good evening. Do you recognize me...?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
@@ -1579,8 +1586,8 @@
 
 //「話には聞いていたけど、一卵性双生児ってのは初めて見たよ＠本当にそっくりなんだなぁ！＠
 	PlaySE(4, "S19/08/500800042", 128, 64);
-	OutputLine(NULL, "「話には聞いていたけど、一卵性双生児ってのは初めて見たよ。",
-		   NULL, "\"I've heard about them, but this is the first time I've actually seen a pair of identical twins.", Line_WaitForInput);
+	OutputLine(NULL, "「いやあ、一卵性双生児とは聞いてたけど、並んで見ると壮観だね。",
+		   NULL, "\"Wow, I'd heard you two were identical twins, but it really is quite something to see you side-by-side.", Line_WaitForInput);
 	PlaySE(4, "S19/08/500800043", 128, 64);
 	OutputLine(NULL, "本当にそっくりなんだなぁ！」",
 		   NULL, " You really do look exactly alike!\"", Line_WaitForInput);
@@ -2534,14 +2541,14 @@
 
 //下界との交流を「穢れ（ケガレ）」として忌み嫌ったそうなの＠
 	PlaySE(4, "S19/09/500900031", 128, 64);
-	OutputLine(NULL, "下界との交流を「穢れ（ケガレ）」として忌み嫌ったそうなの。",
+	OutputLine(NULL, "下界との交流を『格が落ちる』として忌み嫌ったそうなの。」",
 		   NULL, "They believed that interaction with the lower world would sully their souls.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //　......だから、村に下界の人間が来ると穢れてオヤシロさまのバチが当たると強く信じ、何者も近寄らせなかったそうよ。￥
 	PlaySE(4, "S19/09/500900032", 128, 64);
-	OutputLine(NULL, "　……だから、村に下界の人間が来ると穢れてオヤシロさまのバチが当たると強く信じ、何者も近寄らせなかったそうよ。」",
+	OutputLine(NULL, "　……だから、村に下界の人間が来ると不純が混じってオヤシロさまのバチが当たると強く信じ、何者も近寄らせなかったそうよ。」",
 		   NULL, "......So everyone believed that if one from the lower world came to the village, they would be sullied and suffer the wrath of Oyashiro-sama. Apparently that kept everyone away.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
@@ -2550,11 +2557,11 @@
 
 //「よそ者を嫌う村、ってよく金田一の小説に出てくるだろ＠典型的なそういう村だったらしいんだよ。＠
 	PlaySE(4, "S19/08/500800072", 128, 64);
-	OutputLine(NULL, "「よそ者を嫌う村、ってよく金田一の小説に出てくるだろ。",
-		   NULL, "\"Villages that hate outsiders come up all the time in Kindaichi novels.", Line_WaitForInput);
+	OutputLine(NULL, "「よそ者を嫌う村、ってよく推理小説に出てくるだろ。",
+		   NULL, "\"Villages that hate outsiders come up all the time in mystery novels.", Line_WaitForInput);
 	PlaySE(4, "S19/08/500800073", 128, 64);
 	OutputLine(NULL, "典型的なそういう村だったらしいんだよ。」",
-		   NULL, " This was once a run-of-the-mill village of xenophobes.\"", Line_WaitForInput);
+		   NULL, " This was once a classic example of a xenophobic village.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
@@ -2664,19 +2671,13 @@
 
 	PlayBGM( 1, "msys07", 128, 0 );
 
-//「部下と喧嘩して、つるはしで滅多打ちにされて、両手両足、首をもいで捨てられたんだそうです。￥
-	OutputLine(NULL, "「部下と喧嘩して、つるはしで滅多打ちにされて、両手両足、首をもいで捨てられたんだそうです。」",
-		   NULL, "\"He had a fight with a subordinate and was beaten to death with a pickaxe. His limbs and head were torn off, and the remains disposed of.\"", Line_Normal);
-	ClearMessage();
 	DisableWindow();
 	DrawBustshot( 1, "sunset/tm_si_ko_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「バラバラ殺人だよ＠ひところ流行ったろ。￥
 	PlaySE(4, "S19/08/500800078", 128, 64);
 	OutputLine(NULL, "「バラバラ殺人だよ。",
-		   NULL, "\"One of those dismemberment homicides.", Line_WaitForInput);
-	OutputLine(NULL, "ひところ流行ったろ。」",
-		   NULL, " They were all the rage at one point.\"", Line_Normal);
+		   NULL, "\"The construction manager was murdered and dismembered.", Line_Normal);
 	ClearMessage();
 
 //　......なんとも凄惨な事件...＠
