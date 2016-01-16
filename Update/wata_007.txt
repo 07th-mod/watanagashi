@@ -1486,8 +1486,10 @@
 	DrawBustshotWithFiltering( 3, "sunset/tm_si_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「君が噂の転校生、前原圭一くんだね＠　今日は張り切って仕事してたね！　感心したよ。＠
-	OutputLine(NULL, "「君が噂の転校生、前原圭一くんだね？",
-		   NULL, "\"So you're that transfer student I've been hearing about—Keiichi Maebara-kun, right?", Line_WaitForInput);
+	PlaySE(4, "S19/08/500800037", 128, 64);
+	OutputLine(NULL, "「やあ、圭一くん。",
+		   NULL, "\"Hey there, Keiichi-kun.", Line_WaitForInput);
+	PlaySE(4, "S19/08/500800038", 128, 64);
 	OutputLine(NULL, "　今日は張り切って仕事してたね！　感心したよ。」",
 		   NULL, " You really did a bang-up job today! I'm impressed.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
