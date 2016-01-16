@@ -2847,6 +2847,7 @@
 
 
 //　もちろん、犯人は捕まったけどね。＠
+	PlaySE(4, "S19/08/500800087", 128, 64);
 	OutputLine(NULL, "　もちろん、犯人は捕まったけどね。」",
 		   NULL, "Of course, they caught that criminal.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -3656,8 +3657,10 @@
 	PlaySE(4, "S19/08/500800107", 128, 64);
 	OutputLine(NULL, "　が殺されたんだよな。",
 		   NULL, " She was killed.", Line_WaitForInput);
-	OutputLine(NULL, "……この事件でも誰かが消え、」",
-		   NULL, " ......And the same way, someone disa—\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "じゃあ、……その時にも誰かが、……『消えた』？",
+		   NULL, " So... at that time, someone else... "vanished"?", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
@@ -3667,7 +3670,7 @@
 //「消えました＠...北条悟史くんっていう、私と同い年の男の子です＠殺された主婦の義理の甥に当たります。＠
 	PlaySE(4, "S19/06/500600515", 128, 64);
 	OutputLine(NULL, "「消えました。",
-		   NULL, "\"Disappeared.", Line_WaitForInput);
+		   NULL, "\"Someome did disappear.", Line_WaitForInput);
 	PlaySE(4, "S19/06/500600516", 128, 64);
 	OutputLine(NULL, "…北条悟史くんっていう、私と同い年の男の子です。",
 		   NULL, " ...It was a boy around my age named Satoshi Houjou.", Line_WaitForInput);
