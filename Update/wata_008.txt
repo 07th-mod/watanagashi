@@ -5245,46 +5245,14 @@
 	DisableWindow();
 	DrawBustshot( 1, "night/ta_si_de_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
-//「前原くんはさっき、綿流しは布団を清める儀式だと言ったわね＠ワタが詰まった布団って、何を意味してると思うかしら？＠
-	OutputLine(NULL, "「前原くんはさっき、綿流しは布団を清める儀式だと言ったわね。",
-		   NULL, "\"Maebara-kun, you said that Watanagashi is a ritual about purifying futons, right?", Line_WaitForInput);
-	OutputLine(NULL, "ワタが詰まった布団って、何を意味してると思うかしら？」",
-		   NULL, " What do you think the futons, filled with cotton—with 'wata'—represent?\"", Line_WaitForInput);
+	OutputLine(NULL, "……さっきまでの、楽しかったひとときの記憶がノイズまじりに乱れ、ぼやけて、……砂嵐の中へと消え去ってゆく。",
+		   NULL, "...My fun memories from just a short while earlier swirled and blurred into noise,... as if vanishing into a sandstorm.", Line_WaitForInput);
+
+	OutputLine(NULL, "『綿流し』の名前に隠されたどす黒く陰惨な響きが、全身にまるで痺れのような圧迫となって……",
+		   NULL, " It felt like the name of the 'Watanagashi' had taken on a sticky dark, shadowy aura and was pressing down on my whole being, numbing my senses.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-
-
-//「布団は布団だろ？＠　寝具＠　寝るための道具だよ＠　他に何の意味があるんだよ？！￥
-	OutputLine(NULL, "「布団は布団だろ？！",
-		   NULL, "\"Futons are futons!!", Line_WaitForInput);
-	OutputLine(NULL, "　寝具！",
-		   NULL, " They're beds!", Line_WaitForInput);
-	OutputLine(NULL, "　寝るための道具だよ！",
-		   NULL, " They're things for sleeping in!", Line_WaitForInput);
-	OutputLine(NULL, "　他に何の意味があるんだよ？！」",
-		   NULL, " What else could they possibly represent?!\"", Line_Normal);
-	ClearMessage();
-
-//　...自分のうわべは、鷹野さんの言うおぞましい『綿流し』を否定しようと必死にまくし立てる＠
-	OutputLine(NULL, "　…自分のうわべは、鷹野さんの言うおぞましい『綿流し』を否定しようと必死にまくし立てる。",
-		   NULL, "I was rattling on, desperately attempting to deny the horrible festival that Takano-san was describing...", Line_WaitForInput);
-	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
-
-
-//　...だが、心の奥底は...鷹野さんの言った意味をよく理解してしまっていた￥
-	OutputLine(NULL, "　…だが、心の奥底は…鷹野さんの言った意味をよく理解してしまっていた。",
-		   NULL, "Deep down, however... I found myself understanding all too well what she meant.", Line_Normal);
-	ClearMessage();
-
-//　ワタの詰まった布団＠
-	OutputLine(NULL, "　ワタの詰まった布団。",
-		   NULL, "Futons, stuffed with cotton.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-
-
-//　ワタは腸（はらわた）を意味するものなのだとしたら、腸の詰まった布団というのは...人間のことに他ならない￥
-	OutputLine(NULL, "　ワタは腸（はらわた）を意味するものなのだとしたら、腸の詰まった布団というのは…人間のことに他ならない。",
-		   NULL, "If the cotton represented entrails in both pronunciation and meaning, then entrail-filled futons... would have to be humans.", Line_Normal);
-	ClearMessage();
+	OutputLine(NULL, "目の前のもののいろが灰色に反転して、ぐるぐると渦巻きながら揺れ動いて見えた。",
+		   NULL, " My vision had turned gray, sapped of color, and everything looked like it was spinning dizzily.", Line_Normal);
 
 //「では、梨花ちゃんがやった奉納演舞を思い出してちょうだい＠梨花ちゃんがあそこで何をしていたか、!w1000...わかってくる？＠
 	PlaySE(4, "S02/09/130900122", 128, 64);
