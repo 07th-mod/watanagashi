@@ -2918,10 +2918,10 @@
 
 //（逢引の生現場に決まってるじゃないですか～＠ほらほら、よく見て下さい＠あれ、誰だかわかります？￥
 	PlaySE(4, "S02/06/130600033", 128, 64);
-	OutputLine(NULL, "（逢引の生現場に決まってるじゃないですか〜。",
-		   NULL, "(We're right at the scene of a rendezvous, of course~.", Line_WaitForInput);
+	OutputLine(NULL, "（密会の生現場に決まってるじゃないですか〜。",
+		   NULL, "(We're right at the scene of a rendezvous, of course~.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "ほらほら、よく見て下さい。",
-		   NULL, " See, look closely.", Line_WaitForInput);
+		   NULL, " See, look closely.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "あれ、誰だかわかります？）",
 		   NULL, " Can you tell who they are?)", Line_Normal);
 	ClearMessage();
@@ -2953,7 +2953,7 @@
 //（...まさか、詩音＠......これを見せたくて俺を呼んだのか？＠
 	PlaySE(4, "S02/01/130100095", 128, 64);
 	OutputLine(NULL, "（…まさか、詩音。",
-		   NULL, "(...Wait, Shion.", Line_WaitForInput);
+		   NULL, "(...Wait, Shion.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "……これを見せたくて俺を呼んだのか？）",
 		   NULL, " ......Could this be what you wanted to show me?)", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -2965,7 +2965,7 @@
 //（圭ちゃん＠梨花ちゃまの演舞は毎年見れるけど、こーゆうのは二度とお目にかかれませんよ？＠
 	PlaySE(4, "S02/06/130600034", 128, 64);
 	OutputLine(NULL, "（圭ちゃん。",
-		   NULL, "(Kei-chan.", Line_WaitForInput);
+		   NULL, "(Kei-chan.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "梨花ちゃまの演舞は毎年見れるけど、こーゆうのは二度とお目にかかれませんよ？）",
 		   NULL, " You can see Rika-chama's dance any year, but you won't ever get another chance like this, okay?)", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
@@ -2979,7 +2979,7 @@
 //（俺は帰るぞ＠　二度とこんなのに呼ぶなよなぁ！！＠
 	PlaySE(4, "S02/01/130100096", 128, 64);
 	OutputLine(NULL, "（俺は帰るぞ！",
-		   NULL, "(I'm going back!", Line_WaitForInput);
+		   NULL, "(I'm going back!", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　二度とこんなのに呼ぶなよなぁ！！）",
 		   NULL, " Don't call me for something like this again!!)", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -3052,7 +3052,7 @@
 	OutputLine(NULL, "「おやおや……、圭一くんも隅に置けないねぇ！",
 		   NULL, "\"What's this...? Keiichi-kun, you sure are smart, you know that?", Line_WaitForInput);
 	PlaySE(4, "S02/08/130800002", 128, 64);
-	OutputLine(NULL, "　こんな所で逢引かい？",
+	OutputLine(NULL, "　こんな所で二人きりかい？",
 		   NULL, " Having a secret date in a place like this?", Line_WaitForInput);
 	PlaySE(4, "S02/08/130800003", 128, 64);
 	OutputLine(NULL, "　だとしたら、僕たち、とんでもないお邪魔をしちゃったかな。あっはっはっは！！」",
