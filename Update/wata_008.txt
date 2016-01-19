@@ -1530,7 +1530,7 @@
 	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
 	DrawBustshotWithFiltering( 3, "ri_mk_wa_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
-//「......秋葉原駅の入口なんかでやるとウケそうですよ。＠
+	PlaySE(4, "S02/05/130500015_1", 128, 64);
 	OutputLine(NULL, "「……スーパーの実演販売でもやればウケそうですよ。」",
 		   NULL, "\"......You would do well at product demonstrations in a supermarket.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1539,9 +1539,10 @@
 	DisableWindow();
 	DrawBustshot( 2, "sa_si_ak_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
-//「...梨花、秋葉原ってドコですの？￥
-	OutputLine(NULL, "「…梨花、秋葉原ってドコですの？」",
-		   NULL, "\"...Rika, I have never heard of this 'Akihabara.' Where is it?\"", Line_Normal);
+//沙都子「…アヤしい万能包丁とか売りつける仕事に向いてそうですわねえ」
+	PlaySE(4, "S02/04/130400019", 128, 64);
+	OutputLine(NULL, "「…アヤしい万能包丁とか売りつける仕事に向いてそうですわねえ。」",
+		   NULL, "\"...I suspect he would be good at selling off suspicious wonder-knives.\"", Line_Normal);
 	ClearMessage();
 
 //　この大盛況に度肝を抜かれ、さらに隣の露店の親父が声をかけてくる￥
