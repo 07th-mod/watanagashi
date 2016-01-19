@@ -5025,15 +5025,10 @@
 	PlayBGM( 1, "msys07", 128, 0 );
 	DrawBustshot( 2, "night/ta_si_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
-//「人食い鬼だから＠何十年かに一度、どうしても人肉が食べたくて仕方がなくなる周期があるんですって＠だからって村人同士で共食いするわけにはいかない＠......だから彼らはその度に人里へ降り、『鬼隠し』をしたと伝えられてるわ。￥
-	OutputLine(NULL, "「人食い鬼だから。",
-		   NULL, "\"Well, they eat people.", Line_WaitForInput);
-	OutputLine(NULL, "何十年かに一度、どうしても人肉が食べたくて仕方がなくなる周期があるんですって。",
-		   NULL, " They say that every decade or so, they can't help but want to feast on human flesh.", Line_WaitForInput);
-	OutputLine(NULL, "だからって村人同士で共食いするわけにはいかない。",
-		   NULL, " The villagers can't eat other villagers...", Line_WaitForInput);
-	OutputLine(NULL, "……だから彼らはその度に人里へ降り、『鬼隠し』をしたと伝えられてるわ。」",
-		   NULL, " So when this happens, it's said that they descended on the human villages and conducted Onikakushi.\"", Line_Normal);
+	OutputLine(NULL, "……鷹野さんが言うには、鬼の血を引く者たちは周期的に『狩猟者』としての本能が目覚め、獲物を求めて人里に姿を現すのだという。",
+		   NULL, "...As Takano-san explained it, those with demon blood in them periodically awaken to their instincts as "hunters".", Line_WaitForInput);
+	OutputLine(NULL, "そして、その際に行われるのが『鬼隠し』だそうだ。",
+		   NULL, " So when this happens, it's said that they descended on the human villages looking for prey and conducted Onikakushi.", Line_Normal);
 	ClearMessage();
 
 //「なんですか、『鬼隠し』って。＠
