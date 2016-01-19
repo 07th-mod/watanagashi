@@ -2920,8 +2920,10 @@
 	PlaySE(4, "S02/06/130600033", 128, 64);
 	OutputLine(NULL, "（密会の生現場に決まってるじゃないですか〜。",
 		   NULL, "(We're right at the scene of a rendezvous, of course~.", Line_ContinueAfterTyping);
+	Wait ( 3000 );
 	OutputLine(NULL, "ほらほら、よく見て下さい。",
 		   NULL, " See, look closely.", Line_ContinueAfterTyping);
+	Wait ( 2000 );
 	OutputLine(NULL, "あれ、誰だかわかります？）",
 		   NULL, " Can you tell who they are?)", Line_Normal);
 	ClearMessage();
@@ -5219,8 +5221,8 @@
 
 //　...今でこそ綿流しは毎年６月に行なわれるちょっと早い夏祭りに過ぎないけど、昔は違った＠哀れな食材をさらってきた夜にだけ開かれた......凄惨な人食いの宴のことだったの。＠
 	PlaySE(4, "S02/09/130900118", 128, 64);
-	OutputLine(NULL, "　…今でこそ綿流しは毎年６月に行なわれるちょっと早い夏祭りに過ぎないけど、昔は違った。",
-		   NULL, "...Right now, the Watanagashi Festival might just be a somewhat early summer festival occurring every June, but it used to be different.", Line_WaitForInput);
+	OutputLine(NULL, "　「…今でこそ綿流しは毎年６月に行なわれるちょっと早い夏祭りに過ぎないけど、昔は違った。」",
+		   NULL, "\"...Right now, the Watanagashi Festival might just be a somewhat early summer festival occurring every June, but it used to be different.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	OutputLine(NULL, "　それは、……決して露店や祭囃子でにぎわうものなどではなく、",
@@ -5251,7 +5253,7 @@
 	OutputLine(NULL, "『綿流し』の名前に隠されたどす黒く陰惨な響きが、全身にまるで痺れのような圧迫となって……",
 		   NULL, " It felt like the name of the 'Watanagashi' had taken on a sticky dark, shadowy aura and was pressing down on my whole being, numbing my senses.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-	OutputLine(NULL, "目の前のもののいろが灰色に反転して、ぐるぐると渦巻きながら揺れ動いて見えた。",
+	OutputLine(NULL, "　目の前のもののいろが灰色に反転して、ぐるぐると渦巻きながら揺れ動いて見えた。",
 		   NULL, " My vision had turned gray, sapped of color, and everything looked like it was spinning dizzily.", Line_Normal);
 
 //「では、梨花ちゃんがやった奉納演舞を思い出してちょうだい＠梨花ちゃんがあそこで何をしていたか、!w1000...わかってくる？＠
