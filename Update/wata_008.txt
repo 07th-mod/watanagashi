@@ -5308,14 +5308,14 @@
 	OutputLine(NULL, "「梨花ちゃんが持っていた祭事用の鍬。",
 		   NULL, "\"Rika-chan was carrying a festival hoe.", Line_WaitForInput);
 	PlaySE(4, "S02/09/130900125", 128, 64);
-	OutputLine(NULL, "…もう薄々は気付いてると思うけど、あれは田畑を耕す鍬ではなくて。",
-		   NULL, " ...You've probably realized it already, but that's not a hoe for plowing fields.", Line_WaitForInput);
+	OutputLine(NULL, "…もう薄々は気付いてると思うけど、あれは田畑を耕す鍬ではなくて。」",
+		   NULL, " ...You've probably realized it already, but that's not a hoe for plowing fields.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
 
 	PlaySE( 3, "wa_023", 128, 64 );
 
-//...人間の腹をこじ開けるための解剖道具なのよ。＠
-	OutputLine(NULL, "…人間の腹をこじ開けるための解剖道具なのよ。」",
-		   NULL, " ...It's a tool for dissecting human bodies.\"", Line_WaitForInput);
+	OutputLine(NULL, "鷹野さんはそこで言葉を区切って、にやりと笑う。……つまり、『鍬』といっても鋭利な『刃物』としての道具とでもいいたいのだろうか……。",
+		   NULL, " Takano-san cut off with a smirk... Did she mean to say that despite being a hoe, it actually serves as a sharp bladed tool...?", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
 
 
@@ -5350,22 +5350,6 @@
 	ClearMessage();
 	DisableWindow();
 	DrawBustshot( 1, "night/ta_si_wa_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
-
-//「平たく言えば、魚のワタを取り出して三角コーナーに捨てるのを、仰々しく儀式仕立にしたってことね＠...それで儀式はおしまい＠
-	OutputLine(NULL, "「平たく言えば、魚のワタを取り出して三角コーナーに捨てるのを、仰々しく儀式仕立にしたってことね。",
-		   NULL, "\"Broadly speaking, it was quite the bombastic ceremony, where they'd rip out the guts and throw them into a basin.", Line_WaitForInput);
-	OutputLine(NULL, "…それで儀式はおしまい。",
-		   NULL, " ...And then the ritual was over.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-
-
-//　そのあとは、それぞれの役割を持った村人たちが、各々に肉を解体して美味しく頂いたって考えられてるわね＠...くすくす。＠
-	OutputLine(NULL, "　そのあとは、それぞれの役割を持った村人たちが、各々に肉を解体して美味しく頂いたって考えられてるわね。",
-		   NULL, "It's thought that afterwards, the villagers, each with a different role, dismantled the flesh piece-by-piece and feasted upon it.", Line_WaitForInput);
-	OutputLine(NULL, "…くすくす。」",
-		   NULL, " ...Heehee.\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
-
 
 //　...さも愉快そうな鷹野さんの笑いに、どうしてか、猛烈な不快さを感じた￥
 	OutputLine(NULL, "　…さも愉快そうな鷹野さんの笑いに、どうしてか、猛烈な不快さを感じた。",
