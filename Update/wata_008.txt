@@ -5221,10 +5221,13 @@
 	PlaySE(4, "S02/09/130900118", 128, 64);
 	OutputLine(NULL, "　…今でこそ綿流しは毎年６月に行なわれるちょっと早い夏祭りに過ぎないけど、昔は違った。",
 		   NULL, "...Right now, the Watanagashi Festival might just be a somewhat early summer festival occurring every June, but it used to be different.", Line_WaitForInput);
-	OutputLine(NULL, "哀れな食材をさらってきた夜にだけ開かれた……凄惨な人食いの宴のことだったの。」",
-		   NULL, " It used to be a ghastly, cannibalistic feast... held on the night the villagers had collected their unfortunate dinner.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	OutputLine(NULL, "　それは、……決して露店や祭囃子でにぎわうものなどではなく、",
+		   NULL, " It... certainly wasn't the sort of event lively with street stands and festive chanting.", Line_WaitForInput);
+	OutputLine(NULL, "　……もっと違う、背筋が震えて身が凍るような……凄惨な宴だったのだ……！！",
+		   NULL, "...It was more of a ghastly feast... the sort which would send a shiver down your spine and chill you the the bones...!!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 //「う、嘘だッ！！！＠
 	PlaySE(4, "S02/01/130100143", 128, 64);
