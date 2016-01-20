@@ -5518,13 +5518,6 @@
 		   NULL, "Yes...... on the page introducing the <i>Kaitai Shinsho</i>, or the <i>New Text on Anatomy.</i>", Line_Normal);
 	ClearMessage();
 
-//「こういうのはね＠医学の本場、ドイツの文献の方がリアルに掲載されてるわよ。＠
-	OutputLine(NULL, "「こういうのはね。",
-		   NULL, "\"These sorts of things...", Line_WaitForInput);
-	OutputLine(NULL, "医学の本場、ドイツの文献の方がリアルに掲載されてるわよ。」",
-		   NULL, " They're printed realistically in the literature of Germany, capital of the medical world.\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-
 
 //　これは...大工道具なんかじゃない＠...この歪な形をした道具類は...解剖道具なのだ＠
 	OutputLine(NULL, "　これは…大工道具なんかじゃない。",
@@ -5550,14 +5543,6 @@
 	DrawSceneWithMask( "bg_179", "left", 0, 0, 300 );
 	DrawBustshotWithFiltering( 3, "night/ta_si_aw_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
-//「もっと怖い言い方をするなら、調理道具と言ったところかしらね＠...くすくす。＠
-	OutputLine(NULL, "「もっと怖い言い方をするなら、調理道具と言ったところかしらね。",
-		   NULL, "\"If you want a scarier way of looking at it, think of them as cooking utensils.", Line_WaitForInput);
-	OutputLine(NULL, "…くすくす。」",
-		   NULL, " ...Heehee.\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-
-
 //　鷹野さんは唯一の灯りであるランタンを持って、壁に沿って先導していく＠
 	OutputLine(NULL, "　鷹野さんは唯一の灯りであるランタンを持って、壁に沿って先導していく。",
 		   NULL, "Takano-san, holding the lantern, the only light source in the room, led us along the wall.", Line_WaitForInput);
@@ -5571,11 +5556,6 @@
 	DisableWindow();
 	DrawSceneWithMask( "bg_179", "left", 0, 0, 300 );
 	DrawBustshot( 2, "night/ta_si_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
-
-//「...ほら。＠
-	OutputLine(NULL, "「…ほら。」",
-		   NULL, "\"...Look.\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //　鷹野さんが照らし出す先には、見るものを威圧しそうな鎖のとぐろ＠
@@ -5626,19 +5606,6 @@
 	ClearMessage();
 //	DisableWindow();
 //	DrawBustshotWithFiltering( 1, "ta_si_wa_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
-
-//「多分、...まな板じゃないかしら＠犠牲者を拘束してこの台の上でお料理をしたんだと思うわね。＠
-	OutputLine(NULL, "「多分、…まな板じゃないかしら。",
-		   NULL, "\"It's probably... a chopping block.", Line_WaitForInput);
-	OutputLine(NULL, "犠牲者を拘束してこの台の上でお料理をしたんだと思うわね。」",
-		   NULL, " I think you'd strap the sacrifice down to prep them for eating.\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-
-
-//　まな板という言葉にぞくりとする......￥
-	OutputLine(NULL, "　まな板という言葉にぞくりとする……。",
-		   NULL, "The words 'chopping block' sent a jolt through my body......", Line_Normal);
-	ClearMessage();
 
 //　目を凝らすと......確かに、包丁のようなノコギリのような、そんなどす黒い切り傷が、幾重にも刻み付けられていた...＠
 	OutputLine(NULL, "　目を凝らすと……確かに、包丁のようなノコギリのような、そんなどす黒い切り傷が、幾重にも刻み付けられていた…。",
