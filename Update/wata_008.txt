@@ -6428,44 +6428,19 @@
 	OutputLine(NULL, "　貧困な想像力に感謝したことは生まれて初めてだった…。",
 		   NULL, "This was the first time I was ever thankful for my lack of imagination...", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-	DrawBustshot( 2, "night/ta_si_wa_a1_zoom", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
-//「被害者は生きながらにして全身の皮を剥がれ、あらゆる拷問を受けて虐め殺されたんですって＠
-	OutputLine(NULL, "「被害者は生きながらにして全身の皮を剥がれ、あらゆる拷問を受けて虐め殺されたんですって。",
-		   NULL, "\"The victim was skinned while still alive, underwent all kinds of torture, and was killed brutally...", Line_WaitForInput);
+
+	OutputLine(NULL, "　被害者は、すぐには殺されなかったのだろう。",
+		   NULL, " The victim surely wansn't allowed to go peacefully.", Line_WaitForInput);
+	OutputLine(NULL, "　むしろ、……自分が殺される過程すら目の当たりにしながら、……命を絶たれたのかもしれない。",
+		   NULL, " To the contrary, they most likely had to watch the whole process... before finally being extinguished.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-
-//　......そして死後にもさらに遺体を分解・解剖と残虐の限りを尽くしたのではないか、って筆者は見ているはね＠
-	OutputLine(NULL, "　……そして死後にもさらに遺体を分解・解剖と残虐の限りを尽くしたのではないか、って筆者は見ているはね。",
-		   NULL, "...The author here also thinks that even after death, the remains were divided and dissected even further—the epitome of inhumanity.", Line_WaitForInput);
+	OutputLine(NULL, "もし、……それが自分だったら……？",
+		   NULL, " What... what if that was me...?", Line_WaitForInput);
+	OutputLine(NULL, "　そんなこと、考えもつかないし、……考えたくもない。",
+		   NULL, " I couldn't even imagine it... and didn't want to, either.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-
-
-	DisableWindow();
-	DrawBustshot( 2, "night/ta_si_aw_a1_zoom", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
-
-//　......私は、どの工程も『生きている』!w900内にやったんじゃないか、って思ってるんだけどね＠前原くんはどう思うかしら？＠
-	OutputLine(NULL, "　……私は、どの工程も『生きている』",
-		   NULL, "......I'm of the opinion that the entire 'process'", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 1000 );
-	SetValidityOfInput( TRUE );
-
-	OutputLine(NULL, "内にやったんじゃないか、って思ってるんだけどね。",
-		   NULL, " was performed while the person was still alive, though.", Line_WaitForInput);
-	OutputLine(NULL, "前原くんはどう思うかしら？」",
-		   NULL, " What do you think, Maebara-kun?\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
-
-
-//　...彼女がもっともっと残酷な想像を掻き立てるようなことを言ったが...＠
-	OutputLine(NULL, "　…彼女がもっともっと残酷な想像を掻き立てるようなことを言ったが…。",
-		   NULL, "...She spoke in a way intended to make me imagine even more vicious things...", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-
 
 //　俺の脳のキャパシティはとっくに限界で、それ以上の凄惨な想像などできるはずもなかった￥
 	OutputLine(NULL, "　俺の脳のキャパシティはとっくに限界で、それ以上の凄惨な想像などできるはずもなかった。",
