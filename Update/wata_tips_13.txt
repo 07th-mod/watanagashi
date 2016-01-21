@@ -35,7 +35,7 @@
 //「大石さん、こっちは検死入りました＠　じい様もさっき到着です！＠　俺もスタンバイＯＫしました！＠　このまま岐阜へ直行します！！＠
 	PlaySE(4, "S20/19/443100015", 128, 64);
 	OutputLine(NULL, "「大石さん、こっちは検死入りました！",
-		   NULL, "\"Ooishi-san, I've got the autopsy results!", Line_WaitForInput);
+		   NULL, "\"Ooishi-san, I've got the autopsy results!", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　じい様もさっき到着です！！",
 		   NULL, " The court physician just got here!!", Line_WaitForInput);
 	PlaySE(4, "S20/19/443100016", 128, 64);
@@ -54,7 +54,7 @@
 //「熊ちゃん、ちょっと話がややこしくなりました＠向こうは身元の判別が非常に困難な状態だそうです。￥
 	PlaySE(4, "S20/11/440700121", 128, 64);
 	OutputLine(NULL, "「熊ちゃん、ちょっと話がややこしくなりました。",
-		   NULL, "\"Kuma-chan, things have gotten a bit complicated.", Line_WaitForInput);
+		   NULL, "\"Kuma-chan, things have gotten a bit complicated.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "向こうは身元の判別が非常に困難な状態だそうです。」",
 		   NULL, " They appear to be having a very difficult time determining who the victim is.\"", Line_Normal);
 	ClearMessage();
@@ -62,8 +62,8 @@
 
 //「まさか、バラバラっすか...？！＠
 	PlaySE(4, "S20/19/443100018", 128, 64);
-	OutputLine(NULL, "「まさか、バラバラっすか…？！」",
-		   NULL, "\"Could they have been... dismembered...?!\"", Line_WaitForInput);
+	OutputLine(NULL, "「まさか、４年前のアレっすか…？！」",
+		   NULL, "\"You don't mean... like 4 years ago...?!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
@@ -106,11 +106,9 @@
 //「ばっちり黒焦げだそうで＠あぁ言う臭いってこもるんですよねぇ＠岐阜さん、可哀想だなぁ。＠
 	PlaySE(4, "S20/11/440700124", 128, 64);
 	OutputLine(NULL, "「ばっちり黒焦げだそうで。",
-		   NULL, "\"Completely blackened, it seems.", Line_WaitForInput);
-	OutputLine(NULL, "あぁ言う臭いってこもるんですよねぇ。",
-		   NULL, " Probably smells terrible, too.", Line_WaitForInput);
-	OutputLine(NULL, "岐阜さん、可哀想だなぁ。」",
-		   NULL, " What a shame it is to be Gifu-san.\"", Line_WaitForInput);
+		   NULL, "\"Completely blackened, it seems.", Line_ContinueAfterTyping);
+	OutputLine(NULL, "あっちの現場、可哀想だなぁ。」",
+		   NULL, " I feel sorry for the guys on the scene.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
@@ -147,8 +145,8 @@
 	OutputLine(NULL, "…ごめん！",
 		   NULL, " ...Sorry!", Line_WaitForInput);
 	PlaySE(4, "S20/11/440700127", 128, 64);
-	OutputLine(NULL, "　誰かウルトラマイルド、２箱くらい買ってきてくれません？」",
-		   NULL, " Could someone go buy me two or so boxes of ultra-mild?\"", Line_WaitForInput);
+	OutputLine(NULL, "　誰かキツメのタバコ、２箱くらい買ってきてくれません？」",
+		   NULL, " Could someone go buy me two or so boxes of strong cigarettes?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
