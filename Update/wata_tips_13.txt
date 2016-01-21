@@ -161,8 +161,8 @@
 //「......今年は見事、見つけましたね＠...ひょっとすると、過去の失踪者もこんな感じで県外でバラされてたんすかね。＠
 	PlaySE(4, "S20/19/443100020", 128, 64);
 	OutputLine(NULL, "「……今年は見事、見つけましたね。",
-		   NULL, "\"...We did an excellent job finding it this year.", Line_WaitForInput);
-	OutputLine(NULL, "…ひょっとすると、過去の失踪者もこんな感じで県外でバラされてたんすかね。」",
+		   NULL, "\"...We did an excellent job finding it this year.", Line_ContinueAfterTyping);
+	OutputLine(NULL, "…ひょっとすると、過去の失踪者もこんな感じで県外で殺されてたんすかね。」",
 		   NULL, " ...It could be that the people who disappeared in past years were scattered outside the prefecture like this too.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
@@ -173,7 +173,7 @@
 //「なら埋めればいいじゃないですか＠重り付けて日本海でも琵琶湖でもいいですねぇ。＠
 	PlaySE(4, "S20/11/440700128", 128, 64);
 	OutputLine(NULL, "「なら埋めればいいじゃないですか。",
-		   NULL, "\"Then why not bury them,", Line_WaitForInput);
+		   NULL, "\"Then why not bury them,", Line_ContinueAfterTyping);
 	OutputLine(NULL, "重り付けて日本海でも琵琶湖でもいいですねぇ。」",
 		   NULL, " or sink them into the Sea of Japan, or Lake Biwa, or somewhere like that?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -183,7 +183,7 @@
 //「...でもどうして＠...１人死んで１人消えるのがこれまでのパターンじゃないすか。￥
 	PlaySE(4, "S20/19/443100021", 128, 64);
 	OutputLine(NULL, "「…でもどうして。",
-		   NULL, "\"...Why, though?", Line_WaitForInput);
+		   NULL, "\"...Why, though?", Line_ContinueAfterTyping);
 	OutputLine(NULL, "…１人死んで１人消えるのがこれまでのパターンじゃないすか。」",
 		   NULL, " ...Hasn't the pattern so far been one person dies, and another disappears?\"", Line_Normal);
 	ClearMessage();
@@ -192,7 +192,7 @@
 //「熊ちゃん。仏は拘束なしでドラム缶の中でこんがりでしょ＠多分、シメられた後にわざわざ焼いたんじゃないかと思うんですよ＠見つかることを覚悟の上でです。＠
 	PlaySE(4, "S20/11/440700129", 128, 64);
 	OutputLine(NULL, "「熊ちゃん。仏は拘束なしでドラム缶の中でこんがりでしょ。",
-		   NULL, "\"Kuma-chan, the corpse was inside an oil drum, unrestrained, and cooked.", Line_WaitForInput);
+		   NULL, "\"Kuma-chan, the corpse was inside an oil drum, unrestrained, and cooked.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "多分、シメられた後にわざわざ焼いたんじゃないかと思うんですよ。",
 		   NULL, " They probably burned them after strangling them.", Line_WaitForInput);
 	PlaySE(4, "S20/11/440700130", 128, 64);
@@ -211,7 +211,7 @@
 //「消す気がないってよりは、これはそれとはまったく別のものでしょうねぇ＠消すどころか、主張しているようにすら感じられますよ。＠
 	PlaySE(4, "S20/11/440700131", 128, 64);
 	OutputLine(NULL, "「消す気がないってよりは、これはそれとはまったく別のものでしょうねぇ。",
-		   NULL, "\"Not so much that as they just aren't related.", Line_WaitForInput);
+		   NULL, "\"Not so much that as they just aren't related.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "消すどころか、主張しているようにすら感じられますよ。」",
 		   NULL, " The person didn't disappear—in fact, whoever did it seems to have wanted to make a show of it.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -244,7 +244,7 @@
 //　...こんな遠くまで運んで焼いちゃったら、下手したらわかんないでしょ＠見せしめにするなら雛見沢の近くでやるべきなんですよ＠
 	PlaySE(4, "S20/11/440700133", 128, 64);
 	OutputLine(NULL, "　…こんな遠くまで運んで焼いちゃったら、下手したらわかんないでしょ。",
-		   NULL, "...If they'd messed up, taking the victim far away and burning them alive wouldn't have been noticed.", Line_WaitForInput);
+		   NULL, "...If they'd messed up, taking the victim far away and burning them alive wouldn't have been noticed.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "見せしめにするなら雛見沢の近くでやるべきなんですよ。",
 		   NULL, " If they meant it as a warning, they should have done it closer to Hinamizawa.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -253,7 +253,7 @@
 //......殺したことを主張したいのに、場所は演出効果の確実じゃない遠方＠主張したいのか隠したいのか＠.........今年はなぁに考えてるのかなぁ、オヤシロさまは～。￥
 	PlaySE(4, "S20/11/440700134", 128, 64);
 	OutputLine(NULL, "……殺したことを主張したいのに、場所は演出効果の確実じゃない遠方。",
-		   NULL, "...They wanted to emphasize the fact that they killed the victim, but instead of doing it somewhere for dramatic effect, they did it outside the prefecture.", Line_WaitForInput);
+		   NULL, "...They wanted to emphasize the fact that they killed the victim, but instead of doing it somewhere for dramatic effect, they did it outside the prefecture.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "主張したいのか隠したいのか。",
 		   NULL, " Did they want to emphasize it or hide it?", Line_WaitForInput);
 	PlaySE(4, "S20/11/440700135", 128, 64);
@@ -279,7 +279,7 @@
 //「大石さん＠　小宮山さんです！＠　出ました＠　興宮のデンタルクリニックで３年前に親知らずの治療をしてます！！＠
 	PlaySE(4, "S20/00/KeijiA44001", 128, 64);
 	OutputLine(NULL, "「大石さん！",
-		   NULL, "\"Ooishi-san!", Line_WaitForInput);
+		   NULL, "\"Ooishi-san!", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　小宮山さんです！！",
 		   NULL, " It's Komiyama!!", Line_WaitForInput);
 	PlaySE(4, "S20/00/KeijiA44002", 128, 64);
@@ -314,7 +314,7 @@
 //「いやぁ...、こんな明け方前に歯医者さんには申し訳ないなぁ＠熊ちゃん、小宮山くんからカルテ受け取ったらすぐに出発して下さい。＠
 	PlaySE(4, "S20/11/440700137", 128, 64);
 	OutputLine(NULL, "「いやぁ…、こんな明け方前に歯医者さんには申し訳ないなぁ。",
-		   NULL, "\"Well... I feel bad for waking up the dentist before dawn.", Line_WaitForInput);
+		   NULL, "\"Well... I feel bad for waking up the dentist before dawn.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "熊ちゃん、小宮山くんからカルテ受け取ったらすぐに出発して下さい。」",
 		   NULL, " Kuma-chan, get out there as soon as you get the records from Komiyama-kun.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -331,7 +331,7 @@
 //「あ、課長です！＠　夜分、お疲れさまです！＠
 	PlaySE(4, "S20/00/KeijiA44005", 128, 64);
 	OutputLine(NULL, "「あ、課長です！！",
-		   NULL, "\"Oh, it's the Chief!!", Line_WaitForInput);
+		   NULL, "\"Oh, it's the Chief!!", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　夜分、お疲れさまです！」",
 		   NULL, " Thank you for coming out at this hour!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -341,7 +341,7 @@
 //「大石さん、遅くなって申し訳ない＠状況は？！＠
 	PlaySE(4, "S20/00/442700019", 128, 64);
 	OutputLine(NULL, "「大石さん、遅くなって申し訳ない。",
-		   NULL, "\"Ooishi-san, my apologies for my lateness.", Line_WaitForInput);
+		   NULL, "\"Ooishi-san, my apologies for my lateness.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "状況は？！」",
 		   NULL, " What's the situation?!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -353,7 +353,7 @@
 //「う～ん、...やっと面白くなって来たってとこですかねぇ＠燃えてきたぞぅ＠　わぁ～お♪！！￥
 	PlaySE(4, "S20/11/440700138", 128, 64);
 	OutputLine(NULL, "「う〜ん、…やっと面白くなって来たってとこですかねぇ。",
-		   NULL, "\"Hmm... Well, it's just getting good, you see.", Line_WaitForInput);
+		   NULL, "\"Hmm... Well, it's just getting good, you see.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "燃えてきたぞぅ！",
 		   NULL, " We're all getting fired up!", Line_WaitForInput);
 	PlaySE(4, "S20/11/440700139", 128, 64);
