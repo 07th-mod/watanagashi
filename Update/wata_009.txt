@@ -948,8 +948,8 @@
 //　...確かに体調が悪いのは同じだろうが＠風邪と二日酔いじゃ、その扱いは全然違うぞ￥
 	OutputLine(NULL, "　…確かに体調が悪いのは同じだろうが。",
 		   NULL, "...I suppose she'd be feeling lousy either way.", Line_WaitForInput);
-	OutputLine(NULL, "風邪と二日酔いじゃ、その扱いは全然違うぞ。",
-		   NULL, " Still, you treat colds and hangovers in completely different ways.", Line_Normal);
+	OutputLine(NULL, "風邪と徹夜明けじゃ、その扱いは全然違うぞ。",
+		   NULL, " Still, you treat colds and sleep deprivation in completely different ways.", Line_Normal);
 	ClearMessage();
 
 //「心配して損したぞ＠ったく...魅音らしいというか何というか...。＠
@@ -969,10 +969,10 @@
 
 
 //　...確かに具合は悪そうだが、二日酔いだとわかればそんなに心配はいらない＠時間と共に快調に向かうんだからな￥
-	OutputLine(NULL, "　…確かに具合は悪そうだが、二日酔いだとわかればそんなに心配はいらない。",
-		   NULL, "...She didn't seem to be feeling well, but now that I knew it was a hangover, I didn't need to worry too much.", Line_WaitForInput);
-	OutputLine(NULL, "時間と共に快調に向かうんだからな。",
-		   NULL, " It would go away with time, after all.", Line_Normal);
+	OutputLine(NULL, "　…確かに具合は悪そうだが、寝不足だとわかればそんなに心配はいらない。",
+		   NULL, "...She didn't seem to be feeling well, but now that I knew the cause, I didn't need to worry too much.", Line_WaitForInput);
+	OutputLine(NULL, "ちょっと休めば快調に向かうんだからな。",
+		   NULL, " It would go away with a little rest, after all.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawBustshot( 2, "me_se_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
@@ -1937,8 +1937,8 @@
 
 
 //　...姉は二日酔いだったのに、妹の方はケロッとしている￥
-	OutputLine(NULL, "　…姉は二日酔いだったのに、妹の方はケロッとしている。",
-		   NULL, "...The older sister had a hangover today, but the younger made no reference to it.", Line_Normal);
+	OutputLine(NULL, "　…姉は徹夜明けで眠そうだったのに、妹の方はケロッとしている。",
+		   NULL, "...The older sister shattered from an all nighter, but the younger seemed fine.", Line_Normal);
 	ClearMessage();
 
 //「詩音か＠魅音と同じで、今日は二日酔いで寝込んでるんじゃないかと思ったぜ。＠
@@ -1946,8 +1946,8 @@
 	OutputLine(NULL, "「詩音か。",
 		   NULL, "\"Shion?", Line_WaitForInput);
 	PlaySE(4, "S02/01/130100268", 128, 64);
-	OutputLine(NULL, "魅音と同じで、今日は二日酔いで寝込んでるんじゃないかと思ったぜ。」",
-		   NULL, " I thought you'd be sleeping in today with a hangover, same as Mion.\"", Line_WaitForInput);
+	OutputLine(NULL, "魅音と同じで、今日は徹夜明けで寝込んでるんじゃないかと思ったぜ。」",
+		   NULL, " I thought you'd be catching up on your sleep today, same as Mion.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
@@ -1956,8 +1956,8 @@
 	OutputLine(NULL, "「え？",
 		   NULL, "\"What?", Line_WaitForInput);
 	PlaySE(4, "S02/06/130600154", 128, 64);
-	OutputLine(NULL, "　お姉、二日酔いなんですか？",
-		   NULL, " Mion had a hangover?", Line_WaitForInput);
+	OutputLine(NULL, "　それじゃお姉、今日はズル休みですか？",
+		   NULL, " Is Mionplaying truant today?", Line_WaitForInput);
 	PlaySE(4, "S02/06/130600155", 128, 64);
 	OutputLine(NULL, "　あっはははははは！　お姉らし〜〜！」",
 		   NULL, " Ah-hahahaha! That's so like her~~!\"", Line_WaitForInput);
@@ -2171,14 +2171,14 @@
 //　詩音も、何となくふらふらなような＠...こいつも魅音同様、昨夜は飲んだな￥
 	OutputLine(NULL, "　詩音も、何となくふらふらなような。",
 		   NULL, "Shion seemed a little unsteady too.", Line_WaitForInput);
-	OutputLine(NULL, "…こいつも魅音同様、昨夜は飲んだな？",
-		   NULL, " ...She was drinking with Mion last night, wasn't she?", Line_Normal);
+	OutputLine(NULL, "…こいつも魅音同様、今日は徹夜明けだな？",
+		   NULL, " ...She was up all night with Mion, wasn't she?", Line_Normal);
 	ClearMessage();
 
 //「お前も昨夜は飲んだだろ＠隠しても無駄だぞー＠で、学校を早退したに違いない。＠
 	PlaySE(4, "S02/01/130100283", 128, 64);
-	OutputLine(NULL, "「お前も昨夜は飲んだだろ。",
-		   NULL, "\"You were drinking last night too, weren't you?", Line_WaitForInput);
+	OutputLine(NULL, "「お前も昨夜は寝てないんだろ。",
+		   NULL, "\"You didn't get any sleep last night either, did you?", Line_WaitForInput);
 	PlaySE(4, "S02/01/130100284", 128, 64);
 	OutputLine(NULL, "隠しても無駄だぞー。",
 		   NULL, " Don't try and hide it!", Line_WaitForInput);
@@ -2936,11 +2936,11 @@
 
 //「園崎家はこの地域一帯を牛耳ってるヤクザ屋さんです＠ちなみに彼女のお父さんは、××組系のヤクザの大幹部さんです＠ご存知でした？＠
 	PlaySE(4, "S02/11/130700020", 128, 64);
-	OutputLine(NULL, "「園崎家はこの地域一帯を牛耳ってるヤクザ屋さんです。",
-		   NULL, "\"The Sonozakis are a yakuza group with this entire region under their thumb.", Line_WaitForInput);
+	OutputLine(NULL, "「園崎家はこの地域一帯を牛耳ってる暴力団です。",
+		   NULL, "\"The Sonozakis are a syndicate with this entire region under their thumb.", Line_WaitForInput);
 	PlaySE(4, "S02/11/130700021", 128, 64);
-	OutputLine(NULL, "ちなみに彼女のお父さんは、××組系のヤクザの大幹部さんです。",
-		   NULL, " Plus, her father is a high-ranked executive in the ×× yakuza association.", Line_WaitForInput);
+	OutputLine(NULL, "ちなみに彼女のお父さんは、関東でも有名な暴力団グループの大幹部さんです。",
+		   NULL, " Incidentally, her father is a high-ranked executive in a syndicate association that's well known even in the Kanto region.", Line_WaitForInput);
 	PlaySE(4, "S02/11/130700022", 128, 64);
 	OutputLine(NULL, "ご存知でした？」",
 		   NULL, " Did you know that?\"", Line_WaitForInput);
@@ -2965,7 +2965,7 @@
 
 //　高い塀に有刺鉄線と監視カメラで守られた、典型的なヤクザの組長宅ですよ＠今度ぜひ遊びに行ってみてください。＠
 	PlaySE(4, "S02/11/130700024", 128, 64);
-	OutputLine(NULL, "　高い塀に有刺鉄線と監視カメラで守られた、典型的なヤクザの組長宅ですよ。",
+	OutputLine(NULL, "　高い塀に有刺鉄線と監視カメラで守られた、典型的な暴力団の組長宅ですよ。",
 		   NULL, "It's the very picture of a gang boss's house, protected by high walls, barbed-wire fence, and security cameras.", Line_WaitForInput);
 	PlaySE(4, "S02/11/130700025", 128, 64);
 	OutputLine(NULL, "今度ぜひ遊びに行ってみてください。」",
@@ -2980,8 +2980,8 @@
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
 
 //　魅音は跡継ぎだとか言ってたけど......まさか...そのヤクザの...￥
-	OutputLine(NULL, "　魅音は跡継ぎだとか言ってたけど……まさか…そのヤクザの…？",
-		   NULL, "She'd mentioned Mion being a successor...... but... to a yakuza group...?", Line_Normal);
+	OutputLine(NULL, "　魅音は跡継ぎだとか言ってたけど……まさか…その暴力団の…？",
+		   NULL, "She'd mentioned Mion being a successor...... but... to a crime syndicate...?", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawBustshot( 2, "oi_si_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
@@ -2994,8 +2994,8 @@
 	OutputLine(NULL, "まさかまさか。",
 		   NULL, " Not at all, not at all.", Line_WaitForInput);
 	PlaySE(4, "S02/11/130700028", 128, 64);
-	OutputLine(NULL, "園崎魅音さんが継ぐのはそんなチンケなヤクザ組織だけじゃありません。",
-		   NULL, " A boring old yakuza group isn't the only thing Mion Sonozaki-san will inherit.", Line_WaitForInput);
+	OutputLine(NULL, "園崎魅音さんが継ぐのはそんなチンケな暴力団組織だけじゃありません。",
+		   NULL, " A boring old syndicate isn't the only thing Mion Sonozaki-san will inherit.", Line_WaitForInput);
 	PlaySE(4, "S02/11/130700029", 128, 64);
 	OutputLine(NULL, "彼女が継ぐのは園崎家そのものですよ。",
 		   NULL, " She's inheriting the Sonozaki family itself.", Line_WaitForInput);
@@ -3914,6 +3914,7 @@
 	PlaySE(4, "S02/11/130700088", 128, 64);
 	OutputLine(NULL, "「ではまたお会いしましょう。",
 		   NULL, "\"We'll meet again.", Line_WaitForInput);
+	PlaySE(4, "S02/11/130700089", 128, 64);
 	OutputLine(NULL, "よいお年を。」",
 		   NULL, " Have a good year.\"", Line_WaitForInput);
 
