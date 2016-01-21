@@ -902,28 +902,30 @@
 
 //それで...チョイっと。￥
 	PlaySE(4, "S02/03/130300101", 128, 64);
-	OutputLine(NULL, "それで…チョイっと。」",
-		   NULL, " And well... I had a bit.\"", Line_Normal);
+	OutputLine(NULL, "それで…実はエンドレスに突入しちゃって。」",
+		   NULL, " And well... things dragged on a while.\"", Line_Normal);
 	ClearMessage();
 
 //　チョイっと＠
-	OutputLine(NULL, "　チョイっと。",
-		   NULL, "A bit.", Line_WaitForInput);
+	OutputLine(NULL, "　エンドレス。",
+		   NULL, "Things dragged on?", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //　コップを傾けるようなジェスチャー＠......ってことはお前、風邪なんじゃなくて...￥
-	OutputLine(NULL, "　コップを傾けるようなジェスチャー。",
-		   NULL, "She made a gesture like she was tilting a cup into her mouth.", Line_WaitForInput);
+	OutputLine(NULL, "　日本語に直すと連続。",
+		   NULL, "So, you mean to say...", Line_WaitForInput);
 	OutputLine(NULL, "……ってことはお前、風邪なんじゃなくて…、",
-		   NULL, " ...Which means you didn't have a cold or anything...", Line_Normal);
+		   NULL, " ...You didn't have a cold or anything...", Line_Normal);
 	ClearMessage();
 
 //「ふ、二日酔いかよー？＠　お前、歳はいくつだー！！＠
-	OutputLine(NULL, "「ふ、二日酔いかよー？！",
-		   NULL, "\"A-Are you hung over?!", Line_WaitForInput);
-	OutputLine(NULL, "　お前、歳はいくつだー！！」",
-		   NULL, " How old are you?!!\"", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100233", 128, 64);
+	OutputLine(NULL, "「つまりホントに、寝不足なのかよー？！",
+		   NULL, "\"So you really are just tired?!", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100234", 128, 64);
+	OutputLine(NULL, "　徹夜明けならそうと言え、まぎらわしい……」",
+		   NULL, " If you were up all night, just say so! That was confusing...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
