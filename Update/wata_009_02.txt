@@ -1859,8 +1859,8 @@
 
 
 //　中年の男性の声＠......一気に失望する￥
-	OutputLine(NULL, "　中年の男性の声。",
-		   NULL, "It was the voice of a middle-aged man.", Line_WaitForInput);
+	OutputLine(NULL, "　詩音とは明らかに違う女の子の声。",
+		   NULL, "It was the voice of a girl who clearly wasn't Shion.", Line_WaitForInput);
 	OutputLine(NULL, "……一気に失望する。",
 		   NULL, " ...All my hopes rushed out of me.", Line_Normal);
 	ClearMessage();
@@ -1904,6 +1904,7 @@
 	PlaySE(4, "S02/36/132900008", 128, 64);
 	OutputLine(NULL, "　夜分遅くに申し訳ありませんでした。",
 		   NULL, " Again, I apologize for calling you so late at night.", Line_WaitForInput);
+	PlaySE(4, "S02/36/132900009", 128, 64);
 	OutputLine(NULL, "失礼いたします……。」",
 		   NULL, " Good-bye......\"", Line_Normal);
 	ClearMessage();
