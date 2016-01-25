@@ -122,10 +122,7 @@
 		   NULL, " Are you going somewhere today?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-
-//「...お出掛け＠　......うん＠...学校に。￥
-	OutputLine(NULL, "「…お出掛け？",
-		   NULL, "\"...Going somewhere?", Line_WaitForInput);
+//圭一「……うん。…学校に」
 	PlaySE(4, "S02/01/130100430", 128, 64);
 	OutputLine(NULL, "　……うん。",
 		   NULL, " ...Yeah.", Line_WaitForInput);
@@ -210,8 +207,8 @@
 
 
 //　...昨日、二日酔いで早退した魅音だが、今朝も具合は優れないのだろうか＠
-	OutputLine(NULL, "　…昨日、二日酔いで早退した魅音だが、今朝も具合は優れないのだろうか。",
-		   NULL, "...Mion had gone home early yesterday with a hangover, but she didn't look too good this morning, either.", Line_WaitForInput);
+	OutputLine(NULL, "　…昨日、徹夜明けで早退した魅音だが、今朝も具合は優れないのだろうか。",
+		   NULL, "...Mion had gone home early yesterday with sleep deprivation, but she didn't look too good this morning, either.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
@@ -237,8 +234,8 @@
 
 //「さ、３時ぃ？＠　おいおい、...夜更かしにも限度ってもんがあるぞ？＠　大方、漫画の単行本が面白くなっちゃって、１巻から読破してしまったんだろう＠うんうん、俺にも経験があるぞ。＠
 	PlaySE(4, "S02/01/130100434", 128, 64);
-	OutputLine(NULL, "「さ、３時ぃ？！",
-		   NULL, "\"Th-Three?!", Line_WaitForInput);
+	OutputLine(NULL, "「さ、３時ぃ？！　昨日に続いてか？！",
+		   NULL, "\"Th-Three?! Right after yesterday?!", Line_WaitForInput);
 	PlaySE(4, "S02/01/130100435", 128, 64);
 	OutputLine(NULL, "　おいおい、…夜更かしにも限度ってもんがあるぞ？！",
 		   NULL, " Hey, now... You can't keep staying up late!", Line_WaitForInput);
@@ -1367,10 +1364,9 @@
 		   NULL, " ...It's more of a 'gwahh,' and she opens her mouth really wide so you can see the back of her throat...?\"", Line_Normal);
 	ClearMessage();
 
-//「ののののの、のどちん、ゆらゆら～～～！　はぅ～～～～！！！！＠
 	PlaySE(4, "S02/02/130200129", 128, 64);
-	OutputLine(NULL, "「ののののの、のどちん、ゆらゆら〜〜〜！　はぅ〜〜〜〜！！！！」",
-		   NULL, "\"H-H-H-H-H-Her throat, the thing in her throat, all wobbly~~~! Hau~~~~!!!!\"", Line_WaitForInput);
+	OutputLine(NULL, "「りりりり、梨花ちゃんの、大あくび～～～！！　はぅ～～～～！！！！」",
+		   NULL, "\"R-R-R-R-Rika-chan's giant yawn~~~! Hau~~~~!!!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
