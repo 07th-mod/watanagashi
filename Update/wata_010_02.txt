@@ -1295,7 +1295,7 @@
 		   NULL, "\"...It's just... at the moment, like I explained, the police have their eyes on the Sonozaki family already.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-
+	PlaySE(4, "S02/06/130600388", 128, 64);
 	OutputLine(NULL, "　特に大石は、園崎家がまるごと連続事件の黒幕だと決めてかかってますからね。",
 		   NULL, "Ooishi in particular completely believes that they're the masterminds behind the serial incidents.", Line_WaitForInput);
 	PlaySE(4, "S02/06/130600389", 128, 64);
@@ -1851,6 +1851,7 @@
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 
+	PlaySE(4, "S02/06/130600425", 128, 64);
 	OutputLine(NULL, "…本当に",
 		   NULL, " ...He was really...", Line_ContinueAfterTyping);
 
