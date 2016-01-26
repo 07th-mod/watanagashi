@@ -18,7 +18,7 @@
 //「いえいえ、気にしないで下さいよ＠この店でおでんを食べるとですね＠なぜか、年契のガソリンスタンドの請求書に化けちゃうんですよ＠だから遠慮しないでもう一杯飲んでいけばいいのに。￥
 	PlaySE(4, "S20/11/440700140", 128, 64);
 	OutputLine(NULL, "「いえいえ、気にしないで下さいよ。",
-		   NULL, "\"No, no, don't worry about it.", Line_WaitForInput);
+		   NULL, "\"No, no, don't worry about it.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "この店でおでんを食べるとですね。",
 		   NULL, " You see, when you order the oden here...", Line_WaitForInput);
 	PlaySE(4, "S20/11/440700141", 128, 64);
@@ -38,7 +38,7 @@
 //「......熊ちゃんも勉強しといて下さいよ＠謙虚な人が結局、一番長生きするんです。んっふっふっふ！＠
 	PlaySE(4, "S20/11/440700143", 128, 64);
 	OutputLine(NULL, "「……熊ちゃんも勉強しといて下さいよ。",
-		   NULL, "\"...Kuma-chan, you should be taking notes.", Line_WaitForInput);
+		   NULL, "\"...Kuma-chan, you should be taking notes.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "謙虚な人が結局、一番長生きするんです。んっふっふっふ！」",
 		   NULL, " The most modest people are the ones who live the longest. Nfu-fu-fu-fu!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -53,7 +53,7 @@
 //「さぁて、それはわからないですけどね＠真偽はともかく、そういう話がまことしやかに流れてるということには意味があると思いますよ。＠
 	PlaySE(4, "S20/11/440700144", 128, 64);
 	OutputLine(NULL, "「さぁて、それはわからないですけどね。",
-		   NULL, "\"Well, I don't know about that.", Line_WaitForInput);
+		   NULL, "\"Well, I don't know about that.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "真偽はともかく、そういう話がまことしやかに流れてるということには意味があると思いますよ。」",
 		   NULL, " Whether or not it's true, I think there's meaning in hearing something that sounds so plausible.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -69,7 +69,7 @@
 //「熊ちゃん、いつも言ってるでしょ＠動機ってのは、その本人に充分でありさえすれば足りるんです＠価値観の違いをよく考えなくちゃ＠...お母さん、!w700もう一杯ください。￥
 	PlaySE(4, "S20/11/440700145", 128, 64);
 	OutputLine(NULL, "「熊ちゃん、いつも言ってるでしょ。",
-		   NULL, "\"Kuma-chan, here's what I always say.", Line_WaitForInput);
+		   NULL, "\"Kuma-chan, here's what I always say.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "動機ってのは、その本人に充分でありさえすれば足りるんです。",
 		   NULL, " The motive only has to be enough for the person in question.", Line_WaitForInput);
 	PlaySE(4, "S20/11/440700146", 128, 64);
@@ -142,7 +142,7 @@
 //「熊ちゃんは見たことありませんか＠　私はずいぶん前に何かの用で行った時に見たことをよく覚えてますよ。＠
 	PlaySE(4, "S20/11/440700148", 128, 64);
 	OutputLine(NULL, "「熊ちゃんは見たことありませんか？",
-		   NULL, "\"Have you ever seen it, Kuma-chan?", Line_WaitForInput);
+		   NULL, "\"Have you ever seen it, Kuma-chan?", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　私はずいぶん前に何かの用で行った時に見たことをよく覚えてますよ。」",
 		   NULL, " I remember it well—I had to go there for something quite a while back.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -158,7 +158,7 @@
 //「それはもう、おっかないくらいに厳重に施錠してありましてね＠重そうなカンヌキでどっかりと塞がれていて＠まるで大金庫みたいに厳重な蔵だったんですよ。￥
 	PlaySE(4, "S20/11/440700149", 128, 64);
 	OutputLine(NULL, "「それはもう、おっかないくらいに厳重に施錠してありましてね。",
-		   NULL, "\"It was locked up so tight it was scary.", Line_WaitForInput);
+		   NULL, "\"It was locked up so tight it was scary.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "重そうなカンヌキでどっかりと塞がれていて。",
 		   NULL, " There were these real heavy bars holding it shut.", Line_WaitForInput);
 	PlaySE(4, "S20/11/440700150", 128, 64);
@@ -182,7 +182,7 @@
 //「...だから、村長と古手梨花も同罪、ってことなんすか...＠　だとしたら、...村長に続いて、古手梨花もまずいじゃないっすか？！＠
 	PlaySE(4, "S20/19/443100028", 128, 64);
 	OutputLine(NULL, "「…だから、村長と古手梨花も同罪、ってことなんすか…？",
-		   NULL, "\"...So then the mayor and Rika Furude share the crime...?", Line_WaitForInput);
+		   NULL, "\"...So then the mayor and Rika Furude share the crime...?", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　だとしたら、…村長に続いて、古手梨花もまずいじゃないっすか？！」",
 		   NULL, " So... then, after the mayor, wouldn't Rika Furude be in danger next?!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -191,7 +191,8 @@
 //「その可能性は大ですねぇ＠......熊ちゃん＠雛見沢を巡回してる覆面車に至急連絡＠古手神社近辺に張り付かせてください。＠
 	PlaySE(4, "S20/11/440700151", 128, 64);
 	OutputLine(NULL, "「その可能性は大ですねぇ。",
-		   NULL, "\"There's a decent possibility.", Line_WaitForInput);
+		   NULL, "\"There's a decent possibility.", Line_ContinueAfterTyping);
+	Wait (2000);
 	OutputLine(NULL, "……熊ちゃん。",
 		   NULL, " ...Kuma-chan.", Line_WaitForInput);
 	PlaySE(4, "S20/11/440700152", 128, 64);

@@ -1764,7 +1764,7 @@
 
 
 //「......例えば、担いで石段を上がったとか。￥
-	PlaySE(4, "SS02/01/130100677", 128, 64);
+	PlaySE(4, "S02/01/130100677", 128, 64);
 	OutputLine(NULL, "「……例えば、担いで石段を上がったとか。」",
 		   NULL, "\"......Could they have brought them up the stairs?\"", Line_Normal);
 	ClearMessage();
@@ -2433,12 +2433,13 @@
 		   NULL, " He was never rewarded, that Satoshi-kun.", Line_WaitForInput);
 	PlaySE(4, "S02/03/130300182", 128, 64);
 	OutputLine(NULL, "なんて恩知らずなあの子なの。",
-		   NULL, " How ungrateful that child is.", Line_Normal);
-	ClearMessage();
+		   NULL, " How ungrateful that child is.", Line_ContinueAfterTyping);
 
 //　......あの子は呪われた子＠あの子に近付けば、それが誰でも末路は同じ＠祟りで死ぬか、!w800祟りで消えるか＠あの子に安らぎなんてあるものか、!w1000あの子に安らぎなんてあるものか＠......梨花ちゃんが消えたのもきっと沙都子のせいだよ!s0違!w100い!w100な!w100い!w100違!w100い!w100な!w100い!w100違!w100い!w100な!w100い!w100違!w100い!w100な!w100い!w100違!w100い!w100な!w100い!w100違!w100い!w100な!w100い!w100違!w100い!w100な!w100い!w100違!w100い!w100な!w100違!w100違!w100違!w100違!w100違!w100違!sd...￥
 	OutputLine(NULL, "　……あの子は呪われた子。",
-		   NULL, "......She is cursed.", Line_WaitForInput);
+		   NULL, "......She is cursed.", Line_Normal);
+   	ClearMessage();
+
 	PlaySE(4, "S02/03/130300183", 128, 64);
 	OutputLine(NULL, "あの子に近付けば、それが誰でも末路は同じ。",
 		   NULL, " All who get near her suffer the same fate.", Line_WaitForInput);
