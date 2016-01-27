@@ -2043,15 +2043,16 @@
 	PlaySE(4, "S02/11/130700161", 128, 64);
 	OutputLine(NULL, "　綿流しのお祭りの開会式典で、各家の代表がそれぞれ挨拶をなさっているでしょう。",
 		   NULL, " Representatives from each of them gave short addresses at the Watanagashi festival's opening ceremony.", Line_WaitForInput);
-	OutputLine(NULL, "見ていません？」",
-		   NULL, " Did you see them?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //「......祭りには...途中から来たから...よくは...。￥
+	PlaySE(4, "S02/01/130100732", 128, 64);
+	OutputLine(NULL, "見ていません。」",
+		   NULL, "\"I didn't see them.", Line_WaitForInput);
 	PlaySE(4, "S02/01/130100733", 128, 64);
 	OutputLine(NULL, "「……祭りには…途中から来たから…よくは…。」",
-		   NULL, "\"...I came... partway through the festival... so I don't really...\"", Line_Normal);
+		   NULL, " ...I came... partway through the festival... so I don't really...\"", Line_Normal);
 	ClearMessage();
 
 //「御三家ってのは雛見沢の旧家の３つの家のことなんです＠具体的に言うと、!w800公由家、!w1000園崎家、!w1000古手家の３つのことです＠...本当に古い家筋らしくてね＠
