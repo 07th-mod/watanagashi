@@ -212,7 +212,7 @@
 //「...大石さん、気持ちはわかるけど＠　あの祭具殿ってのは古手神社にある神聖な建物で、地元の人間への相当の配慮が必要な建物なんだよ。＠
 	PlaySE(4, "S20/00/442700027", 128, 64);
 	OutputLine(NULL, "「…大石さん、気持ちはわかるけど！",
-		   NULL, "\"...Look, Ooishi-san, I know how you feel!", Line_WaitForInput);
+		   NULL, "\"...Look, Ooishi-san, I know how you feel!", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　あの祭具殿ってのは古手神社にある神聖な建物で、地元の人間への相当の配慮が必要な建物なんだよ。」",
 		   NULL, " However, that storehouse is a sacred building belonging to the Furude Shrine, and we need to have proper consideration for the locals when dealing with it.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
@@ -228,7 +228,7 @@
 //「とにかく＠　相当の証拠がない限り、祭具殿の捜査令状は取れないよ＠園崎本家への令状も同じだ＠　特に園崎本家への捜査は四課と県警の暴対が絡んでる＠入念な事前調整がいるんだ！＠
 	PlaySE(4, "S20/00/442700028", 128, 64);
 	OutputLine(NULL, "「とにかく！",
-		   NULL, "\"Anyway!", Line_WaitForInput);
+		   NULL, "\"Anyway!", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　相当の証拠がない限り、祭具殿の捜査令状は取れないよ。",
 		   NULL, " As long as we don't have suitable evidence, we won't get a search warrant for the storehouse.", Line_WaitForInput);
 	PlaySE(4, "S20/00/442700029", 128, 64);
@@ -249,7 +249,7 @@
 //「......調整がいるってんなら、私、直接乗り込んで付けてきてもいいですよ＠　四課長はシゲちゃんでしょ＠　暴対は山海さん＠隣の雀荘で話した方が早そうな面子ですねぇ。￥
 	PlaySE(4, "S20/11/440700176", 128, 64);
 	OutputLine(NULL, "「……調整がいるってんなら、私、直接乗り込んで付けてきてもいいですよ？",
-		   NULL, "\"...If you say you need preparations, then why don't you just let me talk with them directly?", Line_WaitForInput);
+		   NULL, "\"...If you say you need preparations, then why don't you just let me talk with them directly?", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　四課長はシゲちゃんでしょ？",
 		   NULL, " Shige-chan is the head of Section 4, right?", Line_WaitForInput);
 	PlaySE(4, "S20/11/440700177", 128, 64);
@@ -266,7 +266,7 @@
 //「か、課長にお客様です...＠　えっと、...ぅわ！＠
 	PlaySE(4, "S20/00/442500010", 128, 64);
 	OutputLine(NULL, "「か、課長にお客様です…！",
-		   NULL, "\"C-Chief, you have a visitor...!", Line_WaitForInput);
+		   NULL, "\"C-Chief, you have a visitor...!", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　えっと、…ぅわ！」",
 		   NULL, " Um... yikes!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
@@ -286,7 +286,7 @@
 //「わしは議員の園崎じゃ！＠　責任者を出さんかッ！！＠　早ぅせいッ！！＠
 	PlaySE(4, "S20/00/saburo44001", 128, 64);
 	OutputLine(NULL, "「わしは議員の園崎じゃ！！",
-		   NULL, "\"I am Congressman Sonozaki!!", Line_WaitForInput);
+		   NULL, "\"I am Congressman Sonozaki!!", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　責任者を出さんかッ！！！",
 		   NULL, " I demand to know who's responsible for this!!!", Line_WaitForInput);
 	PlaySE(4, "S20/00/saburo44002", 128, 64);
@@ -299,7 +299,7 @@
 //「ど、どうも...＠　私が課長の高杉でございます！！＠
 	PlaySE(4, "S20/00/442700032", 128, 64);
 	OutputLine(NULL, "「ど、どうも…！",
-		   NULL, "\"H-Hello...!", Line_WaitForInput);
+		   NULL, "\"H-Hello...!", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　私が課長の高杉でございます！！」",
 		   NULL, " I am the division chief, Takasugi!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -309,7 +309,7 @@
 //「お前の名刺なぞ要らんわ！＠　お前なんぞ、いつだって閑職に飛ばせるんじゃぞ＠　それにお前だけでは足らん＠　大石とか言う男も呼ばんか！＠　神聖な古手神社に捜査令状なんぞを請求しおったバチ当たり者じゃッ！！！￥
 	PlaySE(4, "S20/00/saburo44003", 128, 64);
 	OutputLine(NULL, "「お前の名刺なぞ要らんわ！！",
-		   NULL, "\"I don't need YOUR name!!", Line_WaitForInput);
+		   NULL, "\"I don't need YOUR name!!", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　お前なんぞ、いつだって閑職に飛ばせるんじゃぞ！",
 		   NULL, " I could have you demoted on a whim!", Line_WaitForInput);
 	PlaySE(4, "S20/00/saburo44004", 128, 64);
@@ -326,7 +326,7 @@
 //「も、申し訳ございません...＠　お、大石はただいま捜査に出ておりまして、なかなか連絡が付き難く...私が代わって承りますので...＠　ど、どうぞ、おかけください！＠
 	PlaySE(4, "S20/00/442700033", 128, 64);
 	OutputLine(NULL, "「も、申し訳ございません…！",
-		   NULL, "\"I-I sincerely apologize...!", Line_WaitForInput);
+		   NULL, "\"I-I sincerely apologize...!", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　お、大石はただいま捜査に出ておりまして、なかなか連絡が付き難く…私が代わって承りますので…！",
 		   NULL, " O-Ooishi is currently out on investigation, and he's been difficult to contact... I'll take his place and hear you out...!", Line_WaitForInput);
 	PlaySE(4, "S20/00/442700034", 128, 64);
@@ -357,7 +357,7 @@
 		   NULL, "\"Listen here!! The Furude Shrine spent 2600 years under the imperial calendar and 2500 more beyond that! It is sacred! A sanctuary that must never be defiled!!", Line_WaitForInput);
 	PlaySE(4, "S20/00/saburo44008", 128, 64);
 	OutputLine(NULL, "　八百万の神々とオヤシロさまと先祖の霊を祀り、日が昇りてから沈むまで。",
-		   NULL, " The eight hundred thousand gods, Oyashiro-sama, and the spirits of our ancestors are enshrined there.", Line_WaitForInput);
+		   NULL, " The eight hundred thousand gods, Oyashiro-sama, and the spirits of our ancestors are enshrined there.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "月が昇りてから沈むまで雛見沢を見守る尊い神社なのじゃ。",
 		   NULL, " The holy shrine protects Hinamizawa from when the sun comes up to when it sets, and from when the moon rises to when it falls.", Line_WaitForInput);
 	PlaySE(4, "S20/00/saburo44009", 128, 64);
@@ -369,12 +369,12 @@
 //　そもそも信仰の自由は憲法で定められた国民の最も尊い権利であろうが！！＠　それを自らの捜査の怠慢を口実に汚そうという魂胆ッ！！＠　こんなものは断じて許せんぞッ！！＠　聞いておるのか大虚けがッ！！＠　わしを怒らせてただで済むと思わん方がいいぞぉおおぉッ！！！￥
 	PlaySE(4, "S20/00/saburo44010", 128, 64);
 	OutputLine(NULL, "　そもそも信仰の自由は憲法で定められた国民の最も尊い権利であろうが！！！",
-		   NULL, "Besides, the right to religion is the most revered right of the people of this country in the constitution!!!", Line_WaitForInput);
+		   NULL, "Besides, the right to religion is the most revered right of the people of this country in the constitution!!!", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　それを自らの捜査の怠慢を口実に汚そうという魂胆ッ！！！",
 		   NULL, " You dare to be so bold as to sully that using your own investigation's negligence as pretext!!?", Line_WaitForInput);
 	PlaySE(4, "S20/00/saburo44011", 128, 64);
 	OutputLine(NULL, "　こんなものは断じて許せんぞッ！！！",
-		   NULL, " I cannot—I will not allow it!!!", Line_WaitForInput);
+		   NULL, " I cannot—I will not allow it!!!", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　聞いておるのか大虚けがッ！！！",
 		   NULL, " Are you listening, you lying scum?!", Line_WaitForInput);
 	PlaySE(4, "S20/00/saburo44012", 128, 64);
