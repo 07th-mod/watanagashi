@@ -27,7 +27,7 @@
 //「どうです＠　何か手掛かりはありました？＠
 	PlaySE(4, "S20/11/440700160", 128, 64);
 	OutputLine(NULL, "「どうです？",
-		   NULL, "\"How did it go?", Line_WaitForInput);
+		   NULL, "\"How did it go?", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　何か手掛かりはありました？」",
 		   NULL, " Did you find any clues?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
@@ -55,7 +55,7 @@
 //「課長＠若い子から交替で仮眠取らせてあげて下さい＠ここからは長丁場になりますからねぇ＠無理せず、体を休めながらのんびり行きましょ。＠
 	PlaySE(4, "S20/11/440700161", 128, 64);
 	OutputLine(NULL, "「課長。",
-		   NULL, "\"Chief.", Line_WaitForInput);
+		   NULL, "\"Chief.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "若い子から交替で仮眠取らせてあげて下さい。",
 		   NULL, " Let the youngest of us take a nap, and then switch them out.", Line_WaitForInput);
 	PlaySE(4, "S20/11/440700162", 128, 64);
@@ -70,7 +70,7 @@
 //「みんなには交代で休めって言ってるんだけどね＠みんな遠慮してなかなか休んでくれないんだよ＠...大石さんからも言ってくれないか。￥
 	PlaySE(4, "S20/00/442700020", 128, 64);
 	OutputLine(NULL, "「みんなには交代で休めって言ってるんだけどね。",
-		   NULL, "\"I've been telling them to sleep in shifts.", Line_WaitForInput);
+		   NULL, "\"I've been telling them to sleep in shifts.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "みんな遠慮してなかなか休んでくれないんだよ。",
 		   NULL, " Nobody actually seems willing to sleep, though.", Line_WaitForInput);
 	PlaySE(4, "S20/00/442700021", 128, 64);
@@ -84,7 +84,7 @@
 //「ありゃありゃ＠みんな、遠慮しないでいいんですよ＠　小宮山くん＠若い子から順に交代で休ませてあげて下さい。＠
 	PlaySE(4, "S20/11/440700164", 128, 64);
 	OutputLine(NULL, "「ありゃありゃ。",
-		   NULL, "\"Oh my.", Line_WaitForInput);
+		   NULL, "\"Oh my.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "みんな、遠慮しないでいいんですよ？",
 		   NULL, " You don't need to force yourselves.", Line_WaitForInput);
 	PlaySE(4, "S20/11/440700165", 128, 64);
@@ -99,7 +99,7 @@
 //「小宮山さん＠そうしてあげてください。＠
 	PlaySE(4, "S20/00/442700022", 128, 64);
 	OutputLine(NULL, "「小宮山さん。",
-		   NULL, "\"Komiyama-san.", Line_WaitForInput);
+		   NULL, "\"Komiyama-san.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "そうしてあげてください。」",
 		   NULL, " Please do that.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -116,7 +116,7 @@
 //「で、課長＠例の請求なんですけど、まだ駄目そうです？＠
 	PlaySE(4, "S20/11/440700167", 128, 64);
 	OutputLine(NULL, "「で、課長。",
-		   NULL, "\"So, Chief.", Line_WaitForInput);
+		   NULL, "\"So, Chief.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "例の請求なんですけど、まだ駄目そうです？」",
 		   NULL, " Still no good on our request?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -125,7 +125,7 @@
 //「...第一、村人の噂だけなんでしょう＠　もっと具体的な証拠がなければ難しいよ。＠
 	PlaySE(4, "S20/00/442700023", 128, 64);
 	OutputLine(NULL, "「…第一、村人の噂だけなんでしょう？",
-		   NULL, "\"...It's just a rumor among the villagers in the first place, you know?", Line_WaitForInput);
+		   NULL, "\"...It's just a rumor among the villagers in the first place, you know?", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　もっと具体的な証拠がなければ難しいよ。」",
 		   NULL, " It's going to be difficult without more concrete evidence.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -150,7 +150,7 @@
 //「課長～＠ナゾナゾやってるんじゃないですよ＠　死んだ２人を含む４人が綿流しの晩に祭具殿と呼ばれる禁断の蔵に無断で入り込み、それを何者かが見ていた＠　ここまでは信頼できる情報なんです。＠
 	PlaySE(4, "S20/11/440700169", 128, 64);
 	OutputLine(NULL, "「課長〜。",
-		   NULL, "\"Chief~", Line_WaitForInput);
+		   NULL, "\"Chief~", Line_ContinueAfterTyping);
 	OutputLine(NULL, "ナゾナゾやってるんじゃないですよ？",
 		   NULL, " Don't start speaking in riddles to me, now.", Line_WaitForInput);
 	PlaySE(4, "S20/11/440700170", 128, 64);
@@ -179,7 +179,7 @@
 //とにかく、４人は祭具殿の中で何かを見たんです＠　消されるくらいの何かを！＠
 	PlaySE(4, "S20/11/440700173", 128, 64);
 	OutputLine(NULL, "とにかく、４人は祭具殿の中で何かを見たんです！",
-		   NULL, " Anyway, those four saw something inside the storehouse!", Line_WaitForInput);
+		   NULL, " Anyway, those four saw something inside the storehouse!", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　消されるくらいの何かを！」",
 		   NULL, " Something important enough that they'd be erased!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -197,12 +197,12 @@
 		   NULL, "...That's why I'm asking for a warrant to go looking for it in the first place...!", Line_Normal);
 	ClearMessage();
 
-//「園崎家絡みの暴力団関係が有力候補ですなぁ＠トカレフの山か、ケシの密造工場か＠園崎家の隠し資産ってのも捨てがたい辺りです。＠
+//大石「園崎家絡みの闇市場関係が有力候補ですなぁ。拳銃とか、ご禁制の品とか。園崎家の隠し資産ってのも捨てがたいあたりです」
 	PlaySE(4, "S20/11/440700174", 128, 64);
-	OutputLine(NULL, "「園崎家絡みの暴力団関係が有力候補ですなぁ。",
-		   NULL, "\"Anything pointing out the Sonozaki family's connections to violent organizations would be a major contender.", Line_WaitForInput);
-	OutputLine(NULL, "トカレフの山か、ケシの密造工場か。",
-		   NULL, " Like a pile of Tokarevs, or a secret poppy production facility.", Line_WaitForInput);
+	OutputLine(NULL, "「園崎家絡みの闇市場関係が有力候補ですなぁ。",
+		   NULL, "\"Anything pointing out the Sonozaki family's connections to the black market would be a major contender.", Line_WaitForInput);
+	OutputLine(NULL, "拳銃とか、ご禁制の品とか。",
+		   NULL, " Like a guns or contraband.", Line_WaitForInput);
 	PlaySE(4, "S20/11/440700175", 128, 64);
 	OutputLine(NULL, "園崎家の隠し資産ってのも捨てがたい辺りです。」",
 		   NULL, " The secret Sonozaki family fortune would also be pretty difficult to discard.\"", Line_WaitForInput);
