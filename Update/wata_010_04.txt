@@ -2218,7 +2218,7 @@
 
 //「そんなの、俺にとってだってさっぱりです。￥
 	PlaySE(4, "S02/01/130100737", 128, 64);
-	OutputLine(NULL, "「そんなの、俺にとってだってさっぱりです。」",
+	OutputLine(NULL, "「そんなの、俺にだってさっぱりです。」",
 		   NULL, "\"I don't know anything about it either.\"", Line_Normal);
 	ClearMessage();
 
@@ -2577,6 +2577,7 @@
 	PlaySE(4, "S02/11/130700211", 128, 64);
 	OutputLine(NULL, "「私、前原さんが話す気になってくれるまで、毎日来ちゃいますからね？",
 		   NULL, "\"I'll be coming by every day until you feel like talking, all right?", Line_WaitForInput);
+	PlaySE(4, "S02/11/130700212", 128, 64);
 	OutputLine(NULL, "　……取調室で自白を強要っての、もう時代じゃないと思いますんで。」",
 		   NULL, " ...I don't believe forcing you to confess in an interrogation room is really in fashion these days.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
