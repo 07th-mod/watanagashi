@@ -389,13 +389,16 @@ void main()
 		   NULL, " I'd never seen that before.", Line_Normal);
 	ClearMessage();
 
-//「おはようございます＠おはようございます。＠
+//校長「おはようございます。」
 	PlaySE(4, "S02/00/133200001", 128, 64);
-	OutputLine(NULL, "「おはようございます。",
-		   NULL, "\"Good morning.", Line_WaitForInput);
+	OutputLine(NULL, "「おはようございます。」",
+		   NULL, "\"Good morning.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//保護者「おはようございます。」
 	PlaySE(4, "S02/00/Spar0300001", 128, 64);
-	OutputLine(NULL, "おはようございます。」",
-		   NULL, " Good morning.\"", Line_WaitForInput);
+	OutputLine(NULL, "「おはようございます。」",
+		   NULL, "\"Good morning.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
