@@ -3081,7 +3081,7 @@
 
 //「............他の人を拷問する時にはなんのためらいもなかったけど＠......なぜかあんたにはためらいがあるよ。＠
 	PlaySE(4, "S02/03/130300682_1", 128, 64);
-	OutputLine(NULL, "「…………他の人を拷問する時にはなんのためらいもなかったけど。",
+	OutputLine(NULL, "「…………他の人を相手にする時にはなんのためらいもなかったけど。",
 		   NULL, "\"............I didn't hesitate at all when I was torturing the others.", Line_WaitForInput);
 	PlaySE(4, "S02/03/130300683", 128, 64);
 	OutputLine(NULL, "……なぜかあんたにはためらいがあるよ。」",
@@ -3503,7 +3503,7 @@
 	OutputLine(NULL, "本物のスタンガンだよ。",
 		   NULL, " It's a real stun gun.", Line_WaitForInput);
 	PlaySE(4, "S02/03/130300714", 128, 64);
-	OutputLine(NULL, "…違法品なんでかなり出力が上げられるようになってるけどね。」",
+	OutputLine(NULL, "…かなり出力が上げられるようになってるけどね。」",
 		   NULL, " ...It's illegal, and its output has been increased quite a bit.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
@@ -3634,6 +3634,7 @@
 
 	OutputLine(NULL, "…近寄らないでね。",
 		   NULL, " don't come near me.", Line_WaitForInput);
+	PlaySE(4, "S02/03/130300724", 128, 64);
 	OutputLine(NULL, "……それは私の屍に取り憑いた…鬼なんだから。」",
 		   NULL, " ...By then, it will be the demon... that inherited my corpse.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
