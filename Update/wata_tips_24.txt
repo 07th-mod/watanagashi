@@ -28,7 +28,7 @@
 //「あんりゃ、蔵ちゃん。あんたが一番遅いよ～＠　若い人はみんな揃ってる。＠
 	PlaySE(4, "S20/00/master44001", 128, 64);
 	OutputLine(NULL, "「あんりゃ、蔵ちゃん。あんたが一番遅いよ〜？",
-		   NULL, "\"Heya, Kura-chan. You're the last one here~", Line_WaitForInput);
+		   NULL, "\"Heya, Kura-chan. You're the last one here~", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　若い人はみんな揃ってる。」",
 		   NULL, " All the youngsters are here already.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -38,7 +38,7 @@
 //「なっはっはっは...＠じゃあお母さん、すみませんね。＠
 	PlaySE(4, "S20/11/440700179", 128, 64);
 	OutputLine(NULL, "「なっはっはっは…。",
-		   NULL, "\"Na-ha-ha-ha...", Line_WaitForInput);
+		   NULL, "\"Na-ha-ha-ha...", Line_ContinueAfterTyping);
 	OutputLine(NULL, "じゃあお母さん、すみませんね。」",
 		   NULL, " Excuse me, miss.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
@@ -56,7 +56,7 @@
 //「大石さん＠　お疲れさまっす！！＠
 	PlaySE(4, "S20/19/443100036", 128, 64);
 	OutputLine(NULL, "「大石さん！",
-		   NULL, "\"Ooishi-san!", Line_WaitForInput);
+		   NULL, "\"Ooishi-san!", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　お疲れさまっす！！」",
 		   NULL, " Good work today!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -65,7 +65,7 @@
 //「なんだ、みんな真面目に待ってたんですか＠　サンマでもやってりゃ良かったのに。￥
 	PlaySE(4, "S20/11/440700180", 128, 64);
 	OutputLine(NULL, "「なんだ、みんな真面目に待ってたんですか？",
-		   NULL, "\"What, were you all earnestly waiting for me?", Line_WaitForInput);
+		   NULL, "\"What, were you all earnestly waiting for me?", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　サンマでもやってりゃ良かったのに。」",
 		   NULL, " You could've just done three-player.\"", Line_Normal);
 	ClearMessage();
@@ -101,7 +101,7 @@
 //「状況は芳しくありません＠署長が園崎系議員の恫喝に屈したそうです＠
 	PlaySE(4, "S20/11/440700182", 128, 64);
 	OutputLine(NULL, "「状況は芳しくありません。",
-		   NULL, "\"The situation is not looking good.", Line_WaitForInput);
+		   NULL, "\"The situation is not looking good.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "署長が園崎系議員の恫喝に屈したそうです。",
 		   NULL, " The chief appears to have backed down due to Congressman Sonozaki's threats.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -125,10 +125,10 @@
 //　ちなみに、私には来週から警視庁への研修命令が出るそうです＠その後は余った有給を伊豆で消化しろとまで言われてます＠...いやぁ、そういうのも悪くないですねぇ～。＠
 	PlaySE(4, "S20/11/440700184", 128, 64);
 	OutputLine(NULL, "「請求した令状も全て却下されました。",
-		   NULL, "\"All of our requests for warrants were turned down as well.", Line_WaitForInput);
+		   NULL, "\"All of our requests for warrants were turned down as well.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "課長からは園崎家界隈には近付くなとまで言われてます。",
 		   NULL, " I've even been told by our section chief not to go anywhere near the Sonozaki house.", Line_WaitForInput);
-	PlaySE(4, "S20/11/440700184", 128, 64);
+	PlaySE(4, "S20/11/440700185", 128, 64);
 	OutputLine(NULL, "…いやいや、困ったモンです。",
 		   NULL, " ...We're certainly in a bind, that we are.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -136,7 +136,7 @@
 
 	PlaySE(4, "S20/11/440700186", 128, 64);
 	OutputLine(NULL, "　ちなみに、私には来週から警視庁への研修命令が出るそうです。",
-		   NULL, "Incidentally, it looks like I'll be getting orders soon to go to training at the Metropolitan Police Department starting next week.", Line_WaitForInput);
+		   NULL, "Incidentally, it looks like I'll be getting orders soon to go to training at the Metropolitan Police Department starting next week.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "その後は余った有給を伊豆で消化しろとまで言われてます。",
 		   NULL, " After that I've even been told to take a paid vacation in Izu.", Line_WaitForInput);
 	PlaySE(4, "S20/11/440700187", 128, 64);
@@ -155,12 +155,12 @@
 //「いつもそうですが、事件と車のキーの閉じ込めはよく似てます＠開けるためのカギはいつもその中に閉じ込められているんです＠車ならＪＡＦを呼んで扉をこじ開ける＠事件なら＠　熊ちゃん、図面を。＠
 	PlaySE(4, "S20/11/440700188", 128, 64);
 	OutputLine(NULL, "「いつもそうですが、事件と車のキーの閉じ込めはよく似てます。",
-		   NULL, "\"This always happens, but incidents are a lot like locking your keys in the car.", Line_WaitForInput);
+		   NULL, "\"This always happens, but incidents are a lot like locking your keys in the car.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "開けるためのカギはいつもその中に閉じ込められているんです。",
 		   NULL, " The keys you need to unlock the door are always locked inside.", Line_WaitForInput);
 	PlaySE(4, "S20/11/440700189", 128, 64);
-	OutputLine(NULL, "車ならＪＡＦを呼んで扉をこじ開ける。",
-		   NULL, " For cars, you call JAF and they'll pry open your door.", Line_WaitForInput);
+	OutputLine(NULL, "車なら修理業者を呼んで扉をこじ開ける。",
+		   NULL, " For cars, you call the repairman and they'll pry open your door.", Line_WaitForInput);
 	PlaySE(4, "S20/11/440700190", 128, 64);
 	OutputLine(NULL, "事件なら？",
 		   NULL, " For incidents?", Line_WaitForInput);
@@ -180,7 +180,7 @@
 //「私もずーーっとこの商売をやってます＠勘には自信があるつもりですがね、今回ばかりはハズレるかもしれませんよ＠　退職金が惜しい方は私が１０数える間に席を外してください。＠
 	PlaySE(4, "S20/11/440700192", 128, 64);
 	OutputLine(NULL, "「私もずーーっとこの商売をやってます。",
-		   NULL, "\"Now, I've been doing this job for a looong time.", Line_WaitForInput);
+		   NULL, "\"Now, I've been doing this job for a looong time.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "勘には自信があるつもりですがね、今回ばかりはハズレるかもしれませんよ？",
 		   NULL, " I've got a lot of faith in my gut, but this could be the one time it was wrong, no?", Line_WaitForInput);
 	PlaySE(4, "S20/11/440700193", 128, 64);
@@ -229,7 +229,7 @@
 //「各自、手元の資料を確認＠監視カメラの所在と死角を叩き込んでください＠熊ちゃんは指揮車で待機＠非常時は私に代わって指揮をお願いしますよ＠小宮山くんは突入Ａ班＠敦くんは突入Ｂ班を指揮＠監視班は１から８まで所定の位置で監視を＠盆地くんはタイムテーブルを厳守＠署に怪しまれないようローテを管理して下さい＠さて、待機中の班が一番大仕事ですよ＠　課長に私の所在を聞かれたらとぼけて下さい。＠
 	PlaySE(4, "S20/11/440700196", 128, 64);
 	OutputLine(NULL, "「各自、手元の資料を確認。",
-		   NULL, "\"I want everyone to go over their materials.", Line_WaitForInput);
+		   NULL, "\"I want everyone to go over their materials.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "監視カメラの所在と死角を叩き込んでください。",
 		   NULL, " Memorize the locations and blind spots of all the security cameras.", Line_WaitForInput);
 	PlaySE(4, "S20/11/440700197", 128, 64);
@@ -240,7 +240,7 @@
 		   NULL, " If something happens, you'll switch with me and take over.", Line_WaitForInput);
 	PlaySE(4, "S20/11/440700199", 128, 64);
 	OutputLine(NULL, "小宮山くんは突入Ａ班。",
-		   NULL, " Komiyama-kun will head up Infiltration Team A.", Line_WaitForInput);
+		   NULL, " Komiyama-kun will head up Infiltration Team A.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "敦くんは突入Ｂ班を指揮。",
 		   NULL, " Atsushi-kun will lead team B.", Line_WaitForInput);
 	PlaySE(4, "S20/11/440700200", 128, 64);
@@ -254,7 +254,7 @@
 		   NULL, " Control your rotations so HQ doesn't get wise.", Line_WaitForInput);
 	PlaySE(4, "S20/11/440700203", 128, 64);
 	OutputLine(NULL, "さて、待機中の班が一番大仕事ですよ？",
-		   NULL, " Now, the team on standby has the most important job, all right?", Line_WaitForInput);
+		   NULL, " Now, the team on standby has the most important job, all right?", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　課長に私の所在を聞かれたらとぼけて下さい。」",
 		   NULL, " If the section chief asks where I am, play dumb.\"", Line_Normal);
 	ClearMessage();
@@ -271,7 +271,7 @@
 //「ゲストのエスコート役は私がやります＠きっと会場へ連れて行きますので皆さん、気長に待ってください。＠
 	PlaySE(4, "S20/11/440700204", 128, 64);
 	OutputLine(NULL, "「ゲストのエスコート役は私がやります。",
-		   NULL, "\"I'll handle escorting our guest.", Line_WaitForInput);
+		   NULL, "\"I'll handle escorting our guest.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "きっと会場へ連れて行きますので皆さん、気長に待ってください。」",
 		   NULL, " I'll probably take 'em to the venue, so wait patiently, everyone.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -280,7 +280,7 @@
 //「.........落ちるっすかね＠前原圭一は。＠
 	PlaySE(4, "S20/19/443100040", 128, 64);
 	OutputLine(NULL, "「………落ちるっすかね。",
-		   NULL, "\"...Wonder if he'll cave?", Line_WaitForInput);
+		   NULL, "\"...Wonder if he'll cave?", Line_ContinueAfterTyping);
 	OutputLine(NULL, "前原圭一は。」",
 		   NULL, " Keiichi Maebara, that is.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -289,7 +289,7 @@
 //「私の見たとこじゃあ、明日明後日にはイケそうですよ＠もうコロっとね＠んっふっふっふ！￥
 	PlaySE(4, "S20/11/440700205", 128, 64);
 	OutputLine(NULL, "「私の見たとこじゃあ、明日明後日にはイケそうですよ。",
-		   NULL, "\"From what I've seen, we're set for tomorrow or the day after in that regard.", Line_WaitForInput);
+		   NULL, "\"From what I've seen, we're set for tomorrow or the day after in that regard.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "もうコロっとね。",
 		   NULL, " It'll be easy.", Line_WaitForInput);
 	PlaySE(4, "S20/11/440700206", 128, 64);
