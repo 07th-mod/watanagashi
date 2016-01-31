@@ -2828,7 +2828,7 @@
 
 //「......太平洋戦争中は、国民一丸のスローガンが流れながらも、...雛見沢村の人々はさまざまな差別を受け続けました＠......数えだしたらキリがないくらい＠......夫や息子を戦場に送り出し、...銃後の女たちも心が荒んでいたのでしょうね...＠
 	PlaySE(4, "S02/03/130300361_5", 128, 64);
-	OutputLine(NULL, "「……太平洋戦争中は、国民一丸のスローガンが流れながらも、…雛見沢村の人々はさまざまな差別を受け続けました。",
+	OutputLine(NULL, "「……太平洋戦争中は、国民一丸のスローガンが流れながらも、…雛見沢村の人々だけは例外でした。",
 		   NULL, "\"...During the Pacific War, despite the slogans that all the country was acting as one... those from Hinamizawa continued to suffer all manner of discrimination.", Line_WaitForInput);
 	PlaySE(4, "S02/03/130300361_6", 128, 64);
 	OutputLine(NULL, "……数えだしたらキリがないくらい。",
@@ -2904,7 +2904,7 @@
 
 //「宗平は中国大陸に出兵し、ハルピンで食料倉庫の管理をしていたと言い、撤退時に上官や仲間たちと共謀して、軍の缶詰をごっそりと盗み出していたのでした＠......それを瀬戸内海某所に隠し、闇市で高値で売りさばいて大きな富を得たのです。＠
 	PlaySE(4, "S02/03/130300361_8", 128, 64);
-	OutputLine(NULL, "「宗平は中国大陸に出兵し、ハルピンで食料倉庫の管理をしていたと言い、撤退時に上官や仲間たちと共謀して、軍の缶詰をごっそりと盗み出していたのでした。",
+	OutputLine(NULL, "「宗平は中国大陸に出兵した際、食料倉庫の管理をしていて、撤退時に上官や仲間たちと共謀して、軍の缶詰をごっそりと盗み出していたのでした。",
 		   NULL, "\"Sohei said that he managed food warehouses in Harbin after being dispatched to the Chinese mainland. When it was time to pull out, he conspired with his superiors and comrades and stole a great deal of the army's canned goods.", Line_WaitForInput);
 	PlaySE(4, "S02/03/130300361_9", 128, 64);
 	OutputLine(NULL, "……それを瀬戸内海某所に隠し、闇市で高値で売りさばいて大きな富を得たのです。」",
@@ -3001,13 +3001,13 @@
 	OutputLine(NULL, "「…ですが、…昭和３０年頃に、またしても逆風が吹き始めます。",
 		   NULL, "\"...However... around 1955, the wind started blowing in the other direction again...", Line_WaitForInput);
 	PlaySE(4, "S02/03/130300389", 128, 64);
-	OutputLine(NULL, "…それが「人肉缶詰疑惑」でした。」",
+	OutputLine(NULL, "…それが「缶詰疑惑」でした。」",
 		   NULL, " ...because of the 'Canned Flesh Incident.'\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //　人肉缶詰......＠
-	OutputLine(NULL, "　人肉缶詰……。",
+	OutputLine(NULL, "　缶詰……。",
 		   NULL, "Canned flesh......", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
@@ -3021,7 +3021,8 @@
 	PlaySE(4, "S02/03/130300390", 128, 64);
 	OutputLine(NULL, "「祖父、園崎宗平の上官だったと名乗る男が告白したのです。",
 		   NULL, "\"Someone naming himself as my grandfather Sohei Sonozaki's superior confessed...", Line_WaitForInput);
-	OutputLine(NULL, "…あの缶詰は人肉の缶詰だったと。」",
+	PlaySE(4, "S02/03/130300391", 128, 64);
+	OutputLine(NULL, "…彼の調達した缶詰は、実は食材を用いたものではなかったのだと。」",
 		   NULL, " that those canned goods had been human flesh.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
 
@@ -3234,8 +3235,8 @@
 
 //「宗平がいた部隊は、それよりはもっと温情的な研究をしていました＠...それは、戦地での困難な食料調達に関する具体的な手法の研究でした。￥
 	PlaySE(4, "S02/03/130300392", 128, 64);
-	OutputLine(NULL, "「宗平がいた部隊は、それよりはもっと温情的な研究をしていました。",
-		   NULL, "\"The unit Sohei was in did way kinder research than that.", Line_WaitForInput);
+	OutputLine(NULL, "「宗平がいた部隊は、より現実的で、温情的な研究をしていました。",
+		   NULL, "\"The research undertaken by the unit Sohei was more realistic and less harsh than that.", Line_WaitForInput);
 	PlaySE(4, "S02/03/130300393", 128, 64);
 	OutputLine(NULL, "…それは、戦地での困難な食料調達に関する具体的な手法の研究でした。」",
 		   NULL, " ...They were researching concrete methods for reducing the difficulty of delivering food on the battlefield.\"", Line_Normal);
@@ -3315,11 +3316,11 @@
 	OutputLine(NULL, "「……そう。",
 		   NULL, "\"...That's right.", Line_WaitForInput);
 	PlaySE(4, "S02/03/130300396", 128, 64);
-	OutputLine(NULL, "…彼らは、人間を食材として扱う方法を研究していたのです。",
-		   NULL, " ...They were researching ways to handle using humans as food.", Line_WaitForInput);
+	OutputLine(NULL, "…彼らは、通常は食しないものを食材として扱う方法を研究していたのです。",
+		   NULL, " ...They were researching ways to handle using 'ingredients' not ordinarily eaten as food.", Line_WaitForInput);
 	PlaySE(4, "S02/03/130300397", 128, 64);
-	OutputLine(NULL, "…彼らは、時には敵の、時には戦友の血肉を食んででも戦い抜くことが、国に報いる究極の奉仕になる。",
-		   NULL, " ...Fighting onwards, sometimes eating the flesh of enemies and sometimes that of allies, became the ultimate service paid to their country.", Line_WaitForInput);
+	OutputLine(NULL, "…彼らは、時には敵の、時には望まぬ食物を食んででも戦い抜くことが、国に報いる究極の奉仕になる。",
+		   NULL, " ...Fighting onwards, sometimes eating from the most undesirable food-sources, became the ultimate service paid to their country.", Line_WaitForInput);
 	PlaySE(4, "S02/03/130300398", 128, 64);
 	OutputLine(NULL, "…そういう教義を大真面目に組み上げて行ったのです。",
 		   NULL, " ...They were deathly serious about this doctrine.", Line_WaitForInput);
@@ -3327,14 +3328,14 @@
 	OutputLine(NULL, "……滑稽な話ですね。",
 		   NULL, " ...It really is a riot.", Line_WaitForInput);
 	PlaySE(4, "S02/03/130300400", 128, 64);
-	OutputLine(NULL, "祖父を人肉食いと蔑んでおきながら、自分たちはさらにその上を行っていたのですから。",
+	OutputLine(NULL, "祖父を過去のことで蔑んでおきながら、自分たちはさらにその上を行っていたのですから。",
 		   NULL, " My grandfather was despised as someone who ate human flesh, and yet they had gone above and beyond that.", Line_WaitForInput);
 	PlaySE(4, "S02/03/130300401", 128, 64);
 	OutputLine(NULL, "祖父はいつも思っていたそうです。",
 		   NULL, " Apparently he always thought about it, too.", Line_WaitForInput);
 	PlaySE(4, "S02/03/130300402", 128, 64);
-	OutputLine(NULL, "例え自分が卑しい食人鬼だとしても、彼らはそれよりも遥かに醜い鬼なんだと。",
-		   NULL, " Even if he was a vulgar, man-eating demon, they were far more ugly demons than he.", Line_WaitForInput);
+	OutputLine(NULL, "たとえ世間のうわさがどうあれ、彼らはそれよりも遥かに醜い鬼なんだと。",
+		   NULL, " No matter what the rumors of him were, they were far uglier demons than he.", Line_WaitForInput);
 	PlaySE(4, "S02/03/130300403", 128, 64);
 	OutputLine(NULL, "だからいくら蔑まれたって、ちっとも堪えないと。」",
 		   NULL, " So no matter how much he was scorned, he wouldn't put up with it.\"", Line_Normal);
@@ -3409,14 +3410,14 @@
 	OutputLine(NULL, "「……真偽はわかりません。",
 		   NULL, "\"...I don't know if it's true.", Line_WaitForInput);
 	PlaySE(4, "S02/03/130300407", 128, 64);
-	OutputLine(NULL, "晩年まで宗平は人肉であることを否定し続けました。",
+	OutputLine(NULL, "晩年まで宗平は世間の風評を否定し続けました。",
 		   NULL, " Sohei denied it was human flesh up until the day he died.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //　ですが、雛見沢の急激な復興を妬む人々は、人肉を売って財を成した鬼畜と呼び、...村人をまたしても蔑み始めたのです＠......また、子供たちがはやし立てられ、石を投げつけられる時代に戻ってしまったのです。￥
 	PlaySE(4, "S02/03/130300408", 128, 64);
-	OutputLine(NULL, "　ですが、雛見沢の急激な復興を妬む人々は、人肉を売って財を成した鬼畜と呼び、…村人をまたしても蔑み始めたのです。",
+	OutputLine(NULL, "　ですが、雛見沢の急激な復興を妬む人々は、その疑惑を真実のように面白おかしく書き立て、…村人をまたしても蔑み始めたのです。",
 		   NULL, "However, those who begrudged Hinamizawa's sudden revival called him a savage for making a fortune from selling human flesh... and the villagers began to be scorned again.", Line_WaitForInput);
 	PlaySE(4, "S02/03/130300409", 128, 64);
 	OutputLine(NULL, "……また、子供たちがはやし立てられ、石を投げつけられる時代に戻ってしまったのです。」",
