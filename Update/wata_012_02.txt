@@ -2682,15 +2682,18 @@
 	OutputLine(NULL, "「この頃には、…もう鬼ヶ淵村の不可侵性は失われていました。",
 		   NULL, "\"At the time... Onigafuchi Village had already lost its impenetrability.", Line_WaitForInput);
 	PlaySE(4, "S02/03/130300361_2", 128, 64);
-	OutputLine(NULL, "……かつて仙人と崇められた村人たちは、非人扱いを受け…。",
+	OutputLine(NULL, "……かつて仙人と崇められた村人たちは、奇異な目で見下され…。",
 		   NULL, " ...The villagers, once worshipped as transcendents, were now on the receiving end of inhuman treatment...", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 //　...神聖な鬼ヶ淵村は、いつの間にか、業病患者の隔離集落の成れの果てであるという根も葉もないレッテルを貼られ、...苦難の時代を迎えることになったのでした。￥
 	PlaySE(4, "S02/03/130300361_3", 128, 64);
-	OutputLine(NULL, "　…神聖な鬼ヶ淵村は、いつの間にか、業病患者の隔離集落の成れの果てであるという根も葉もないレッテルを貼られ、…苦難の時代を迎えることになったのでした。」",
-		   NULL, "The sacred Onigafuchi Village had been groundlessly labeled an isolated village of those afflicted with incurable diseases, a mere shadow of its former self... and stood on the precipice of an era of hardship.\"", Line_Normal);
+	OutputLine(NULL, "　…神聖な鬼ヶ淵村は、いつの間にか、業病患者の隔離集落の成れの果てであるという根も葉もないレッテルを貼られ、",
+		   NULL, "The sacred Onigafuchi Village had been groundlessly labeled an isolated village of those afflicted with incurable diseases, a mere shadow of its former self...", Line_WaitForInput);
+	PlaySE(4, "S02/03/130300361_4", 128, 64);
+	OutputLine(NULL, "…苦難の時代を迎えることになったのでした。」",
+		   NULL, " and stood on the precipice of an era of hardship.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask( "black", "down", 0, 0, 1300 );
@@ -2763,18 +2766,6 @@
 	DisableWindow();
 	DrawBustshot( 1, "me_si_ma_a2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawSceneWithMask( "bg_035", "up", 0, 0, 200 );
-
-
-//「......裁判も起こしました＠...出身の問題は離婚する重要な理由にはなりえないと訴えて＠...でも敗訴しました＠......出身の虚偽は、結婚の上での重大な詐称行為にあたるのだそうで......。＠
-	OutputLine(NULL, "「……裁判も起こしました。",
-		   NULL, "\"......It even caused trials.", Line_WaitForInput);
-	OutputLine(NULL, "…出身の問題は離婚する重要な理由にはなりえないと訴えて。",
-		   NULL, " ...They would appeal that where one came from wasn't an important enough reason to divorce.", Line_WaitForInput);
-	OutputLine(NULL, "…でも敗訴しました。",
-		   NULL, " ...They would, however, lose their case.", Line_WaitForInput);
-	OutputLine(NULL, "……出身の虚偽は、結婚の上での重大な詐称行為にあたるのだそうで……。」",
-		   NULL, " ...Lying about one's birthplace apparently constitutes a heavy act of misrepresentation in marriage...\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 	DisableWindow();
