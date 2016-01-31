@@ -166,17 +166,17 @@
 	DisableWindow();
 	DrawSceneWithMask( "bg_261", "down", 0, 0, 1300 );
 
-//　...ここは入ってはいけないところなんだろ？＠　やめようぜ＠　カギが掛かっているのを勝手に開けて押し入るなんて、例え物を盗まなくったって犯罪なんだぞ！＠　詩音だって、これが逢引現場じゃないとわかったなら充分だろ？＠　俺はこんなのには全然興味はないんだ＠　こんなところにいる間に梨花ちゃんの演舞が終わっちゃったらどうするんだよ？￥
+//　...ここは入ってはいけないところなんだろ？＠　やめようぜ＠　カギが掛かっているのを勝手に開けて押し入るなんて、例え物を盗まなくったって犯罪なんだぞ！＠　詩音だって、これが密会現場じゃないとわかったなら充分だろ？＠　俺はこんなのには全然興味はないんだ＠　こんなところにいる間に梨花ちゃんの演舞が終わっちゃったらどうするんだよ？￥
 	PlaySE(4, "S02/01/130100944", 128, 64);
 	OutputLine(NULL, "　…ここは入ってはいけないところなんだろ？！",
 		   NULL, "...This isn't somewhere we should be going, is it?!", Line_WaitForInput);
 	PlaySE(4, "S02/01/130100945", 128, 64);
 	OutputLine(NULL, "　やめようぜ！",
-		   NULL, " Let's not!", Line_WaitForInput);
+		   NULL, " Let's not!", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　カギが掛かっているのを勝手に開けて押し入るなんて、例え物を盗まなくったって犯罪なんだぞ！！",
 		   NULL, " It's a crime to force your way into a locked building, even if you don't steal anything!!", Line_WaitForInput);
 	PlaySE(4, "S02/01/130100946", 128, 64);
-	OutputLine(NULL, "　詩音だって、これが逢引現場じゃないとわかったなら充分だろ？！",
+	OutputLine(NULL, "　詩音だって、これが密会現場じゃないとわかったなら充分だろ？！",
 		   NULL, " Shion, now that you know they weren't having some secret rendezvous, you've had enough, right?!", Line_WaitForInput);
 	PlaySE(4, "S02/01/130100947", 128, 64);
 	OutputLine(NULL, "　俺はこんなのには全然興味はないんだ！",
@@ -1965,6 +1965,7 @@
 	PlaySE(4, "S02/11/130700383", 128, 64);
 	OutputLine(NULL, "「では…参りましょうか。",
 		   NULL, "\"Then... let's get going.", Line_WaitForInput);
+	PlaySE(4, "S02/11/130700384", 128, 64);
 	OutputLine(NULL, "お茶菓子でも買って行きます？」",
 		   NULL, " Want to buy some tea biscuits on the way there?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
