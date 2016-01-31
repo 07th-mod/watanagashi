@@ -457,6 +457,7 @@
 	PlaySE(4, "S02/01/130101190", 128, 64);
 	OutputLine(NULL, "「…大石さん、５分ですよ。",
 		   NULL, "\"...Ooishi-san, we only have five minutes.", Line_WaitForInput);
+	PlaySE(4, "S02/01/130101191", 128, 64);
 	OutputLine(NULL, "できればこれが本当に最後の５分にしてほしいものです。",
 		   NULL, " I would like it if these were the last five minutes we ever saw each other.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -464,7 +465,7 @@
 
 
 //　......俺はもう雛見沢とは関係ないし、...ここももう雛見沢じゃない。＠
-	PlaySE(4, "S02/01/130101191", 128, 64);
+	PlaySE(4, "S02/01/130101192", 128, 64);
 	OutputLine(NULL, "　……俺はもう雛見沢とは関係ないし、…ここももう雛見沢じゃない。」",
 		   NULL, "......I don't have any connection to Hinamizawa anymore... and this isn't in Hinamizawa anymore either.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -612,26 +613,23 @@
 	OutputLine(NULL, "「前原さんの好みがわからなかったので、いろいろと持ってきましたよ〜。",
 		   NULL, "\"I didn't know what you were into, Maebara-san, so I brought all sorts of things~", Line_WaitForInput);
 	PlaySE(4, "S02/11/130700415", 128, 64);
-	OutputLine(NULL, "ほぅら、洋物に劇画からかわいらしいのまで色々！",
+	OutputLine(NULL, "ほぅら、より取り見取り野原は黄緑～てなもんです。",
 		   NULL, " See, all sorts of cute-looking ones, from Westerns to comic strips!", Line_WaitForInput);
 	PlaySE(4, "S02/11/130700416", 128, 64);
-	OutputLine(NULL, "　最近はこんな女の子向けみたいなＨマンガもあるんですねぇ〜。」",
+	OutputLine(NULL, "　さぁさ、好きなだけ持って行っちゃってくださいー！",
 		   NULL, " Lately they have this sort of H-manga aimed at girls, too~\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
 
-//「エエエエ、エロ本なんか持ってこないで下さい～！！＠　持って帰って持って帰って！＠　痛ててててて...！！￥
-	PlaySE(4, "S02/01/130101198", 128, 64);
-	OutputLine(NULL, "「エエエエ、エロ本なんか持ってこないで下さい〜！！！",
-		   NULL, "\"D-D-D-D-D-D-D-Don't bring porn in here~!!!", Line_WaitForInput);
-	PlaySE(4, "S02/01/130101199", 128, 64);
-	OutputLine(NULL, "　持って帰って持って帰って！！",
-		   NULL, " Take them away, and go home!!", Line_WaitForInput);
-	PlaySE(4, "S02/01/130101200", 128, 64);
-	OutputLine(NULL, "　痛ててててて…！！」",
-		   NULL, " Ow, ow ow ow ow...!!\"", Line_Normal);
-	ClearMessage();
+//「エエエエ、エロ本なんか持ってこないで下さい～！！＠　持って帰って持って帰って！＠　痛ててててて...！！￥     PlaySE(4,
+"S02/01/130101198", 128, 64);     OutputLine(NULL,
+"「こここ、こんな本なんか持ってこないで下さい～！！！",            NULL, "\"D-D-D-D-D-D-D-Don't bring
+porn in here~!!!", Line_WaitForInput);     PlaySE(4, "S02/01/130101199", 128,
+64);     OutputLine(NULL, "　持って帰って持って帰って！！",            NULL, " Take them
+away, and go home!!", Line_WaitForInput);     PlaySE(4, "S02/01/130101200",
+128, 64);     OutputLine(NULL, "　痛ててててて…！！」",            NULL, " Ow, ow ow ow
+ow...!!\"", Line_Normal);     ClearMessage();
 
 
 //「んっふっふっふ＠　健全な若者がこんな所にずーーーっと閉じ込められてたら、さぞや御入用だと思ったんですけどねぇ＠こんなところにいると看護婦フェチにしかなりませんよぅ＠
@@ -1160,27 +1158,15 @@
 	ClearMessage();
 
 
-//「園崎家は本業の方、!w1000...あぁ、ヤクザ屋さんのことです＠...で、覚醒剤を扱ってるとの噂がありましてね＠...その可能性もあるかなんて思ってたのですが。＠
-	OutputLine(NULL, "「園崎家は本業の方、",
-		   NULL, "\"The Sonozaki family corporates...", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 1000 );
-	SetValidityOfInput( TRUE );
-
-	OutputLine(NULL, "…あぁ、ヤクザ屋さんのことです。",
-		   NULL, " er, the yakuza people.", Line_WaitForInput);
-	OutputLine(NULL, "…で、覚醒剤を扱ってるとの噂がありましてね。",
-		   NULL, " ...Anyway, there's rumors that they deal in psychostimulants.", Line_WaitForInput);
-	OutputLine(NULL, "…その可能性もあるかなんて思ってたのですが。」",
-		   NULL, " ...I was thinking that might have something to do with it, too.\"", Line_WaitForInput);
+	OutputLine(NULL, "園崎家には、色々と黒い噂がまことしやかに囁かれていた。",
+		   NULL, "There were various dark rumors relating to the Sonozaki family.", Line_WaitForInput);
+	OutputLine(NULL, "……その中に、非合法の密売を行っている、などと根も葉もないデマもあった。",
+		   NULL, " ...Among them, there was even baseless speculation that they were selling illegal contraband.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
-
-//「.........梨花ちゃんが、...覚醒剤の常用者だって言うのか...？！￥
-	OutputLine(NULL, "「………梨花ちゃんが、…覚醒剤の常用者だって言うのか…？！」",
-		   NULL, "\".........Are you trying to tell me... that Rika-chan is a drug addict...?!\"", Line_Normal);
+	OutputLine(NULL, "……だとしたら梨花ちゃんも、それに関わっている疑いがある、とでも言いたいのか……？！",
+		   NULL, "...Did Ooishi mean to say that Rika-chan is also suspected in relation to such things?!", Line_Normal);
 	ClearMessage();
 
 //「いえいえ...そうは申してませんよ＠
@@ -1502,6 +1488,7 @@
 
 
 //「......詩音殺しの犯人が魅音だという根拠は、隣人の男の証言によるものなんです＠
+	PlaySE(4, "S02/11/130700492", 128, 64);
 	OutputLine(NULL, "「……詩音殺しの犯人が魅音だという根拠は、隣人の男の証言によるものなんです。",
 		   NULL, "\"...The evidence we have that Mion killed Shion is based on testimony from the man living next door.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1804,7 +1791,7 @@
 	SetSpeedOfMessage( FALSE, 0, );
 
 	OutputLine(NULL, "それじゃ、",
-		   NULL, " But...", Line_Normal);
+		   NULL, " But...", Line_ContinueAfterTyping);
 
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
@@ -2795,6 +2782,7 @@
 	PlaySE(4, "S02/03/130300752", 128, 64);
 	OutputLine(NULL, "　今度はダメぇ。",
 		   NULL, " You don't get any more.", Line_WaitForInput);
+	PlaySE(4, "S02/03/130300753", 128, 64);
 	OutputLine(NULL, "……あっはははははははははははははははははははははははははははははははははははははははははははは！！！」",
 		   NULL, " ......Ah-hahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahaha!!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
