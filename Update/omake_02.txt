@@ -32,7 +32,7 @@ void main()
 
 //「ひぐらしのなく頃に～綿流し編～を、最後までお楽しみいただき、誠にありがとうございました＠　この度のシナリオはいかがだったでしょうか＠　ちょっぴりでもお楽しみいただければ幸いです。￥
 	PlaySE(4, "S20/02/440200174", 128, 64);
-	OutputLine(NULL, "「ひぐらしのなく頃に〜綿流し編〜を、最後までお楽しみいただき、誠にありがとうございました！",
+	OutputLine(NULL, "「『ひぐらしのなく頃に粋』、『綿流し』を最後までお楽しみいただき、誠にありがとうございました！",
 		   NULL, "\"Thank you very much for enjoying Higurashi When They Cry: Watanagashi!", Line_WaitForInput);
 	PlaySE(4, "S20/02/440200175", 128, 64);
 	OutputLine(NULL, "　この度のシナリオはいかがだったでしょうか？",
@@ -142,7 +142,7 @@ void main()
 	OutputLine(NULL, "「ほーら、泣かないで！",
 		   NULL, "\"Now, now, don't cry!", Line_WaitForInput);
 	PlaySE(4, "S20/02/440200177", 128, 64);
-	OutputLine(NULL, "　魅ぃちゃんメインのお話だったように、きっと沙都子ちゃんメインのお話もあるよ。",
+	OutputLine(NULL, "　魅ぃちゃんメインのお話だったように、きっと沙都子ちゃんメインのお話もあるんだから。",
 		   NULL, " There was a story centering around Mii-chan, so there will probably be one that centers around Satoko-chan, too.", Line_WaitForInput);
 	PlaySE(4, "S20/02/440200178", 128, 64);
 	OutputLine(NULL, "今から楽しみだね！」",
@@ -153,8 +153,9 @@ void main()
 	DrawBustshot( 2, "me_se_aw_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「きっと、沙都子がおかしな人たちによってたかって襲われて、虐め殺されちゃう話に違いないね～。＠
-	OutputLine(NULL, "「きっと、沙都子がおかしな人たちによってたかって襲われて、虐め殺されちゃう話に違いないね〜。」",
-		   NULL, "\"Satoko would definitely get attacked by a crowd of weirdo bullies and abused to death~\"", Line_WaitForInput);
+	PlaySE(4, "S20/03/440300308", 128, 64);
+	OutputLine(NULL, "「きっと、沙都子が酷い目にあって、じわりじわりといたぶり回される話に違いないね～。」",
+		   NULL, "\"I'm sure that in that story, Satoko suffers some terrible demise in some slow, deliberate way~\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
@@ -202,7 +203,7 @@ void main()
 	OutputLine(NULL, "「魅ぃ〜ちゃん。",
 		   NULL, "\"Mii~chan.", Line_WaitForInput);
 	PlaySE(4, "S20/02/440200180", 128, 64);
-	OutputLine(NULL, "悪ふざけが過ぎると私も怒るよ〜？」",
+	OutputLine(NULL, "悪ふざけが過ぎるとレナもちょっとだけ、怒るよ～？」",
 		   NULL, " If you joke around too much, you'll make me angry, too~\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
@@ -285,6 +286,7 @@ void main()
 	PlaySE(4, "S20/02/440200183", 128, 64);
 	OutputLine(NULL, "あれ？",
 		   NULL, " Hm?", Line_WaitForInput);
+	PlaySE(4, "S20/02/440200184", 128, 64);
 	OutputLine(NULL, "　鷹野さんと詩音ちゃんはまだですか？」",
 		   NULL, " Where are Takano-san and Shion-chan?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -368,8 +370,8 @@ void main()
 
 //「ってことは...前原くんは相変わらず立ち絵がなくて、早々に次回シナリオの台本読みなんですか...？￥
 	PlaySE(4, "S20/11/440700374", 128, 64);
-	OutputLine(NULL, "「ってことは…前原くんは相変わらず立ち絵がなくて、早々に次回シナリオの台本読みなんですか…？」",
-		   NULL, "\"Which means... Maebara-kun still doesn't have a portrait. So, are we going to read the scripts for the next story immediately...?\"", Line_Normal);
+	OutputLine(NULL, "「ってことは…前原さんは相変わらず収録が終わってなくて、早々に次回シナリオの台本読みなんですか…？」",
+		   NULL, "\"Which means... Maebara-san is as busy as ever recording the script. Has he already started recording the script for the next story...?\"", Line_Normal);
 	ClearMessage();
 
 //＜大石
@@ -458,7 +460,7 @@ void main()
 
 //「アダルトな方々にはアルコールもありますよ。んっふっふっふ！＠
 	PlaySE(4, "S20/11/440700375", 128, 64);
-	OutputLine(NULL, "「アダルトな方々にはアルコールもありますよ。んっふっふっふ！」",
+	OutputLine(NULL, "「大人の皆さんにはアルコールもありますよ。んっふっふっふ！」",
 		   NULL, "\"There's alcohol for the adults, too. Nfu-fu-fu!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
@@ -471,7 +473,7 @@ void main()
 
 //「梨花ちゃんは何を飲むかい＠　コーラ＠　ジュース？＠
 	PlaySE(4, "S20/08/440800102", 128, 64);
-	OutputLine(NULL, "「梨花ちゃんは何を飲むかい？",
+	OutputLine(NULL, "「梨花ちゃんは何を飲む？",
 		   NULL, "\"Rika-chan, what will you have?", Line_WaitForInput);
 	PlaySE(4, "S20/08/440800103", 128, 64);
 	OutputLine(NULL, "　ぶどうジュース？",
@@ -506,7 +508,7 @@ void main()
 	PlaySE(4, "S20/02/440200187", 128, 64);
 	OutputLine(NULL, "「こぉら！",
 		   NULL, "\"Hey!", Line_WaitForInput);
-	PlaySE(4, "S20/02/440200187", 128, 64);
+	PlaySE(4, "S20/02/440200188", 128, 64);
 	OutputLine(NULL, "　梨花ちゃんはお酒は、だぁめ！」",
 		   NULL, " Rika-chan, you're not allowed to drink!\"", Line_Normal);
 	ClearMessage();
@@ -563,7 +565,7 @@ void main()
 	OutputLine(NULL, "「では…こほん！",
 		   NULL, "\"Then... ahem!", Line_WaitForInput);
 	PlaySE(4, "S20/02/440200190", 128, 64);
-	OutputLine(NULL, "　みんな、『綿流し編』終了、お疲れさまでした〜！！」",
+	OutputLine(NULL, "　みんな、『綿流し』終了、お疲れさまでした〜！！」",
 		   NULL, " Everyone, excellent work—the Watanagashi chapter is now over~!!\"", Line_WaitForInput);
 
 //＜レナ
@@ -627,6 +629,7 @@ void main()
 	DrawBustshot( 3, "sa_se_aw_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 400, TRUE );
 
 //「意見も何も...、今回のシナリオで解明編なのではありませんことー＠　犯人は魅音さん＠　諸悪の根源はぜ～んぶ園崎家＠　それで決着でございませんの。＠
+	PlaySE(4, "S20/04/440400179", 128, 64);
 	OutputLine(NULL, "「意見も何も…、今回のシナリオで解明編なのではありませんことー？",
 		   NULL, "\"An honest opinion... was the story this time not an answer chapter?", Line_WaitForInput);
 	PlaySE(4, "S20/04/440400180", 128, 64);
@@ -708,7 +711,7 @@ void main()
 
 //「じゃあ...、...これで『ひぐらしのなく頃に』のメインシナリオはほとんど終わり...なのかな...＠　全ての元凶は魅ぃちゃんの園崎家で...決まり...？＠
 	PlaySE(4, "S20/02/440200196", 128, 64);
-	OutputLine(NULL, "「じゃあ…、…これで『ひぐらしのなく頃に』のメインシナリオはほとんど終わり…なのかな…？",
+	OutputLine(NULL, "「じゃあ…、…これで『ひぐらしのなく頃に粋』のメインシナリオはほとんど終わり…なのかな…？",
 		   NULL, "\"Then... does that mean... the main Higurashi When They Cry scenario is pretty much over...?", Line_WaitForInput);
 	PlaySE(4, "S20/02/440200197", 128, 64);
 	OutputLine(NULL, "　全ての元凶は魅ぃちゃんの園崎家で…決まり…？」",
@@ -739,7 +742,7 @@ void main()
 
 //「あ、三四さんと意見が合いましたね＠私も同じ意見＠...私は祟りなんか信じないけど＠でも少なくとも、園崎家が真犯人である確率は薄くなったと思ってるね。￥
 	PlaySE(4, "S20/03/440300315", 128, 64);
-	OutputLine(NULL, "「あ、三四さんと意見が合いましたね。",
+	OutputLine(NULL, "「あ、鷹野さんと意見が合いましたね。",
 		   NULL, "\"Oh, you had the same opinion, Miyo-san.", Line_WaitForInput);
 	PlaySE(4, "S20/03/440300316", 128, 64);
 	OutputLine(NULL, "私も同じ意見。",
@@ -986,7 +989,7 @@ void main()
 	OutputLine(NULL, "「そうそう。",
 		   NULL, "\"That's right.", Line_WaitForInput);
 	PlaySE(4, "S20/02/440200205", 128, 64);
-	OutputLine(NULL, "私も沙都子ちゃんも、何かが取り憑いて悪いことをしてるって意見だったもんね。",
+	OutputLine(NULL, "レナも沙都子ちゃんも、何かが取り憑いて悪いことをしてるって意見だったもんね。",
 		   NULL, " Satoko-chan and I both thought that she was doing bad things because she was possessed by something.", Line_WaitForInput);
 	PlaySE(4, "S20/02/440200206", 128, 64);
 	OutputLine(NULL, "じゃあ…やっぱり私たちの説は正しかったのかな？！」",
@@ -1262,8 +1265,8 @@ void main()
 
 //「梨花ちゃん、それいい意見＠つまり、園崎魅音が表舞台からいなくなるのは彼女らのシナリオの一部だと思うわけです＠だからラストで、魅音はポンポンと過去の事件の罪を被るんですよ＠全部の事件の責任を一身に引き受けて退場！￥
 	PlaySE(4, "S20/06/440600091", 128, 64);
-	OutputLine(NULL, "「梨花ちゃん、それいい意見。",
-		   NULL, "\"Rika-chan, that's a good thought.", Line_WaitForInput);
+	OutputLine(NULL, "「梨花ちゃま、それいい意見。",
+		   NULL, "\"Rika-chama, that's a good thought.", Line_WaitForInput);
 	PlaySE(4, "S20/06/440600092", 128, 64);
 	OutputLine(NULL, "つまり、園崎魅音が表舞台からいなくなるのは彼女らのシナリオの一部だと思うわけです。",
 		   NULL, " That means we should consider that Mion Sonozaki leaving the stage was part of their plan.", Line_WaitForInput);
@@ -1397,7 +1400,7 @@ void main()
 	OutputLine(NULL, "「そういうことです。",
 		   NULL, "\"That's right.", Line_WaitForInput);
 	PlaySE(4, "S20/03/440300348", 128, 64);
-	OutputLine(NULL, "前回のシナリオに名前だけ登場した「監督」ってのがかなり怪しいかな！」",
+	OutputLine(NULL, "『鬼隠し』のシナリオで名前だけ登場した『監督』ってのがかなり怪しいかな！」",
 		   NULL, " The site foreman only appeared in name in the last story—pretty suspicious, if you ask me!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
@@ -1413,7 +1416,7 @@ void main()
 	OutputLine(NULL, "「……すごいです。",
 		   NULL, "\"......Amazing.", Line_WaitForInput);
 	PlaySE(4, "S20/05/440500116", 128, 64);
-	OutputLine(NULL, "実につじつまが合いますですよ。」",
+	OutputLine(NULL, "実につじつまが合いますのですよ。」",
 		   NULL, " It really does all add up.\"", Line_WaitForInput);
 	OutputLine(NULL, "ぱちぱちぱち。",
 		   NULL, " Clap clap clap.", Line_Normal);
@@ -1499,7 +1502,7 @@ void main()
 	OutputLine(NULL, "「あれあれ？",
 		   NULL, "\"Wait, what?", Line_WaitForInput);
 	PlaySE(4, "S20/02/440200216", 128, 64);
-	OutputLine(NULL, "　何だか梨花ちゃんにも意見がありそうね。",
+	OutputLine(NULL, "　何だか梨花ちゃんにも意見がありそうだね。",
 		   NULL, " It looks like Rika-chan has an opinion too.", Line_WaitForInput);
 	PlaySE(4, "S20/02/440200217", 128, 64);
 	OutputLine(NULL, "梨花ちゃんもどうぞ！」",
@@ -1543,7 +1546,7 @@ void main()
 
 //「こうして思い返すと、前回のシナリオでも死んだ富竹くんと鷹野さんの死も、きっと祭具殿に忍び込んだせいなんでしょうなぁ＠.....................ありゃ？￥
 	PlaySE(4, "S20/11/440700388", 128, 64);
-	OutputLine(NULL, "「こうして思い返すと、前回のシナリオでも死んだ富竹くんと鷹野さんの死も、きっと祭具殿に忍び込んだせいなんでしょうなぁ。",
+	OutputLine(NULL, "「こうして思い返すと、他のシナリオでも死んだ富竹さんと鷹野さんの死も、きっと祭具殿に忍び込んだせいってことなんでしょうなぁ。",
 		   NULL, "\"Thinking back on it now, Tomitake-kun and Takano-san probably died in the previous story because they snuck into that storehouse, eh?", Line_WaitForInput);
 	PlaySE(4, "S20/11/440700389", 128, 64);
 	OutputLine(NULL, "…………………ありゃ？」",
@@ -1607,7 +1610,7 @@ void main()
 	OutputLine(NULL, "「……そうなのです。",
 		   NULL, "\"...That's right.", Line_WaitForInput);
 	PlaySE(4, "S20/05/440500122", 128, 64);
-	OutputLine(NULL, "…前回のシナリオでは、圭一は祭具殿には忍び込んでいないのに命を狙われているのです。」",
+	OutputLine(NULL, "…たとえば『鬼隠し』のシナリオでは、圭一は祭具殿には忍び込んでいないのに命を狙われているのです。」",
 		   NULL, " ...In the previous scenario, they were after Keiichi's life even though he didn't sneak into the ritual storehouse.\"", Line_Normal);
 	ClearMessage();
 
@@ -1659,7 +1662,7 @@ void main()
 	OutputLine(NULL, "どう見ても、両親に危機が迫っていたようには見えないね。",
 		   NULL, " No matter how you look at it, though, his parents never seemed to be in much danger.", Line_WaitForInput);
 	PlaySE(4, "S20/03/440300352", 128, 64);
-	OutputLine(NULL, "今回も前回も。」",
+	OutputLine(NULL, "今回だけでなく、他のシナリオでも。」",
 		   NULL, " Either this time or the last.\"", Line_Normal);
 	ClearMessage();
 
@@ -1702,7 +1705,7 @@ void main()
 	OutputLine(NULL, "「もう一息で解明できそうだったけど…、",
 		   NULL, "\"With a little more, we would have had it...", Line_WaitForInput);
 	PlaySE(4, "S20/02/440200221", 128, 64);
-	OutputLine(NULL, "やっぱり謎はたくさん残ってるみたいね…。」",
+	OutputLine(NULL, "やっぱり謎はたくさん残ってるみたいだね…。」",
 		   NULL, " There are still a lot of mysteries remaining...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
@@ -1721,9 +1724,9 @@ void main()
 	OutputLine(NULL, "圭一くん以外の人の死には何かしら理由が見つけられるんだけど、…圭一くんだけなぜかいつも曖昧。",
 		   NULL, " We can find some kind of reason for everyone but Keiichi-kun to die... but for some reason, Keiichi-kun's death is always vague.", Line_WaitForInput);
 	PlaySE(4, "S20/09/440900118", 128, 64);
-	OutputLine(NULL, "…前回と今回。",
-		   NULL, " ...Both this time and last time.", Line_WaitForInput);
-	PlaySE(4, "S20/09/440900119", 128, 64);
+	OutputLine(NULL, "…『鬼隠し』でも、今回の『綿流し』でも。",
+		   NULL, " ...Both last time in Onikakushi, and this time in Watanagashi.", Line_WaitForInput);
+	PlaySE(4, "S02/00/440900118_2", 128, 64);
 	OutputLine(NULL, "祭具殿に踏み入るのとは無関係に狙われてる。」",
 		   NULL, " He was being targeted regardless of whether he went into the ritual storehouse.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
