@@ -45,7 +45,12 @@
 //「...う～ん＠...どうなんでございましょうねぇ...＠いるやらいないやら...。＠
 	PlaySE(4, "S20/04/440400028", 128, 64);
 	OutputLine(NULL, "「…う〜ん。",
-		   NULL, "\"...Hmmm.", Line_WaitForInput);
+		   NULL, "\"...Hmmm.", Line_ContinueAfterTyping);
+
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+
 	OutputLine(NULL, "…どうなんでございましょうねぇ…。",
 		   NULL, " ...I wonder...", Line_WaitForInput);
 	PlaySE(4, "S20/04/440400029", 128, 64);
@@ -315,7 +320,12 @@
 //　え、と.........、う、うん＠いるよ...。＠
 	PlaySE(4, "S20/03/440300056", 128, 64);
 	OutputLine(NULL, "　え、と………、う、うん。",
-		   NULL, " Um, well...... y-yeah.", Line_WaitForInput);
+		   NULL, " Um, well...... y-yeah.", Line_ContinueAfterTyping);
+
+	SetValidityOfInput( FALSE );
+	Wait( 2200 );
+	SetValidityOfInput( TRUE );
+
 	OutputLine(NULL, "いるよ…。」",
 		   NULL, " I do...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
