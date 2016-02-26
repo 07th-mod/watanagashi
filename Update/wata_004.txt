@@ -3953,7 +3953,7 @@
 //　...おいおい、そう言えば詩音、今バイト中じゃないのか＠　俺とずっと話をして油を売ってていいのかよ￥
 	PlaySE(4, "S19/01/HR_KEI16680_01", 128, 64);
 	OutputLine(NULL, "　…おいおい、そう言えば詩音、今バイト中じゃないのか？",
-		   NULL, "...Hey, hey, speaking of that, wasn't Shion in the middle of a shift?", Line_WaitForInput);
+		   NULL, "...Hey, hey, speaking of that, wasn't Shion in the middle of a shift?", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　俺とずっと話をして油を売ってていいのかよ。",
 		   NULL, " She's just been slacking off while talking to me.", Line_Normal);
 	ClearMessage();
@@ -4496,7 +4496,7 @@
 		   NULL, "\"The whole story with the dam apparently started before I was born.", Line_WaitForInput);
 	PlaySE(4, "S19/06/500600113", 128, 64);
 	OutputLine(NULL, "最初は候補地調査とか砂防のための小さいダムとか、そんな程度の話だったんですよ。」",
-		   NULL, " At first, the proposal was only for exploratory purposes, or a small dam to control erosion.", Line_WaitForInput);
+		   NULL, " At first, the proposal was only for exploratory purposes, or a small dam to control erosion.\"", Line_WaitForInput);
 
 	DisableWindow();
 	FadeOutBGM( 1, 1000, TRUE );
@@ -5017,7 +5017,7 @@
 //「あ、ハイ！　今すぐ...！＠
 	PlaySE(4, "S19/06/500600149", 128, 64);
 	OutputLine(NULL, "「あ、ハイ！　今すぐ…！」",
-		   NULL, "\"Ah, yes! Right away!", Line_WaitForInput);
+		   NULL, "\"Ah, yes! Right away!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
