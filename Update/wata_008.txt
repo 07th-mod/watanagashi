@@ -3772,6 +3772,8 @@
 	DisableWindow();
 	FadeBustshotWithFiltering( 1, "right", 1, FALSE, 0, 0, 1300, TRUE );
 
+	FadeOutBGM( 1, 1000, TRUE );
+
 //　低く重い、よく響く音を立て、...外界と完全に遮断されると...シンシンとした闇が蝕んできた＠...鷹野さんのランタンだけが頼りだ￥
 	OutputLine(NULL, "　低く重い、よく響く音を立て、…外界と完全に遮断されると…シンシンとした闇が蝕んできた。",
 		   NULL, "There was a low, heavy, and loud noise... and we were completely cut off from the outside world... and covered in silent darkness.", Line_WaitForInput);
@@ -5046,7 +5048,7 @@
 //「平たく言えば、鬼たちによる誘拐行為よ＠鬼ヶ淵村の村人たちが人里に押し寄せ、哀れな生贄を無理やり力尽くでさらったんですって。￥
 	PlaySE(4, "S02/09/130900109", 128, 64);
 	OutputLine(NULL, "「平たく言えば、鬼たちによる誘拐行為よ。」",
-		   NULL, "\"Broadly speaking, it's when an demon kidnaps someone; when a person is 'demoned away.'\"", Line_WaitForInput);
+		   NULL, "\"Broadly speaking, it's when a demon kidnaps someone; when a person is 'demoned away.'\"", Line_WaitForInput);
 
 //　鷹野さんの説明はあまりに簡素だったが...それは想像すると...とてつもなく恐ろしいものだった＠
 	OutputLine(NULL, "　鷹野さんの説明はあまりに簡素だったが…それは想像すると…とてつもなく恐ろしいものだった。",
@@ -5387,7 +5389,7 @@
 		   NULL, "...Even though she worked so hard to practice for today......", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	PlayBGM( 1, "msys13", 128, 0 );
+	FadeOutBGM( 1, 1000, TRUE );
 	DrawBustshot( 3, "night/si_si_ma_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 	StopSE( 3 );
@@ -6170,7 +6172,7 @@
 		   NULL, " ...They don't have anything to do with the people living in Hinamizawa right now.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	PlayBGM( 1, "msys13", 128, 0 );
+	FadeOutBGM( 1, 1000, TRUE );
 	DrawBustshot( 1, "night/ta_si_wa_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「前原くんは、本当に雛見沢が好きなのね...。＠
@@ -6431,9 +6433,9 @@
 
 
 	OutputLine(NULL, "　被害者は、すぐには殺されなかったのだろう。",
-		   NULL, " The victim surely wansn't allowed to go peacefully.", Line_WaitForInput);
+		   NULL, " The victim surely wasn't allowed to go peacefully.", Line_WaitForInput);
 	OutputLine(NULL, "　むしろ、……自分が殺される過程すら目の当たりにしながら、……命を絶たれたのかもしれない。",
-		   NULL, " To the contrary, they most likely had to watch the whole process... before finally being extinguished.", Line_WaitForInput);
+		   NULL, " On the contrary, they most likely had to watch the whole process... before finally being extinguished.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	OutputLine(NULL, "もし、……それが自分だったら……？",
@@ -6501,13 +6503,13 @@
 
 //　この、一見すると拷問の末に虐め殺したような死体...＠
 	OutputLine(NULL, "　この、一見すると拷問の末に虐め殺したような死体…。",
-		   NULL, "This corpse, which, at a glance, had been brutally killed after a period of torture...", Line_WaitForInput);
+		   NULL, "This corpse, at a glance, appeared to have been brutally killed after a period of torture...", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
 
 
 //　だが実は...それは...人食いの恐ろしい宴の哀れな犠牲者の残骸...＠......喰い残しだと言うのか...￥
 	OutputLine(NULL, "　だが実は…それは…人食いの恐ろしい宴の哀れな犠牲者の残骸…。",
-		   NULL, "In actuality, however... it was... the pitiful sacrificial remains of the man-eaters' terrifying feast...", Line_WaitForInput);
+		   NULL, "In actuality, however... it was the pitiful sacrificial remains of the man-eaters' terrifying feast...", Line_WaitForInput);
 	OutputLine(NULL, "……喰い残しだと言うのか…。",
 		   NULL, " ......The corpse was just leftovers...", Line_Normal);
 	ClearMessage();
@@ -6561,7 +6563,7 @@
 	OutputLine(NULL, "…終戦直後に騒ぎになった",
 		   NULL, " ...Like with the uproar around the post-war", Line_ContinueAfterTyping);
 
-	PlayBGM( 1, "msys13", 128, 0 );
+	FadeOutBGM( 1, 1000, TRUE );
 
 //人肉缶詰事件、!w1200......あ、ごめんなさい＠この話はタブーだったわよね...？￥
 	OutputLine(NULL, "缶詰疑惑、",
