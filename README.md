@@ -8,7 +8,6 @@ This patch aims to combine the efforts of the ps3 voice patch and the ps3 sprite
   1. [Prerequisites](https://github.com/higurashi-mod/watanagashi#prerequisites)
   2. [Releases](https://github.com/higurashi-mod/watanagashi#releases)
   3. [Installing the patch](https://github.com/higurashi-mod/watanagashi#installing-the-patch)
-  4. [Building a symlink (optional)](https://github.com/higurashi-mod/watanagashi#creating-a-symlink)
 2. Development
     * [Known issues](https://github.com/higurashi-mod/watanagashi#known-issues)
     * [Developing with us](https://github.com/higurashi-mod/watanagashi#developing-with-us)
@@ -30,32 +29,7 @@ This repository is in constant change. Sometimes new releases might get on hold 
 
 # Installing the patch
 
-> Use the previous detailed tutorial to install the patch. See [here](https://github.com/higurashi-mod/onikakushi#installation).
-
-In this patch we will only use the voice folders s02 (HigurashiPS3-Voices02.zip), s19 and s20 (HigurashiPS3-Voices01.zip). If you already have the first game with the patch installed, you don't need to download or copy the s19 and s20 folders. You can save your time creating a symbolic link.
-
-### Creating a symlink
-
-###### On Windows:
-1. find your SteamLibrary common folder (usually \SteamLibrary\steamapps\common)
-2. hold shift and right click on an empty space
-3. click on "Open a command line window here" (or similar)
-4. run the following commands on the cmd:
-```
-mklink /J ".\Higurashi 02 - Watanagashi\HigurashiEp02_Data\StreamingAssets\SE\s19" ".\Higurashi When They Cry\HigurashiEp01_Data\StreamingAssets\SE\S19"
-
-mklink /J ".\Higurashi 02 - Watanagashi\HigurashiEp02_Data\StreamingAssets\SE\s20" ".\Higurashi When They Cry\HigurashiEp01_Data\StreamingAssets\SE\S20"
-```
-
-
-###### On Linux/OSX:
-Use the ln -s command on terminal
-```
-ln -s /path/to/original /path/to/symlink
-```
->Where /path/to/original is ./Higurashi When They Cry/HigurashiEp01_Data/StreamingAssets/SE/S19 and /path/to/symlink should be ./Higurashi 02 - Watanagashi/HigurashiEp02_Data/StreamingAssets/SE/s19
-
-Repeat the command for the s20 folder.
+> The tutorial has been [moved to our wiki](https://github.com/07th-mod/guide/wiki/Getting-started).
 
 # Known issues
 
