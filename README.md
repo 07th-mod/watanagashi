@@ -18,7 +18,7 @@ This patch aims to combine the efforts of the ps3 voice patch and the ps3 sprite
 
 * Higurashi When They Cry Hou - Ch.2 Watanagashi ([Steam](http://store.steampowered.com/app/410890) or [MangaGamer](https://www.mangagamer.com/detail.php?goods_type=1&product_code=154))
 * [HigurashiPS3-Voices01.zip](https://github.com/07th-mod/resources/releases/download/Nipah/HigurashiPS3-Voices01.zip) + [HigurashiPS3-Voices02.zip](https://github.com/07th-mod/resources/releases/download/Nipah/HigurashiPS3-Voices02.zip) [(or create a symlink using your EP1 files)](https://github.com/higurashi-mod/watanagashi#creating-a-symlink)
-* [Graphics mod](https://mega.nz/#!lVsAzJwT!N95pjWZ6ampV8pBLNqm8lT7DkojRtWhKLK1wCiDou9w)
+* [Graphics mod](https://gitlab.com/07th-mod/watanagashi-graphics/repository/archive.zip?ref=master)
 * [Voice patch](https://github.com/07th-mod/watanagashi/releases)
 
 # Releases
