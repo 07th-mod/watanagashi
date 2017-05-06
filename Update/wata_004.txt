@@ -1,4 +1,4 @@
-﻿void main()
+void main()
 {
 
 ////*Watanagasi_day4
@@ -338,7 +338,7 @@
 
 	DisableWindow();
 	FadeBustshotWithFiltering( 1, "right", 1, FALSE, 0, 0, 300, TRUE );
-	DrawBustshot( 1, "me_ta_de_a2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 400, TRUE );
+	DrawBustshot( 1, "me_ta_de_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 400, TRUE );
 
 //「そっか＠じゃあ仕方ないな＠全員揃わないなら仕方ない＠...今日は各人、のんびりしようかね！￥
 	PlaySE(4, "s19/03/500300113", 128, 64);
@@ -602,7 +602,7 @@
 
 
 	DisableWindow();
-	DrawBustshot( 1, "me_ta_de_a2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	DrawBustshot( 1, "me_ta_de_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「そういうこと＠巫女さんが布団をお祓いする一連のセレモニーを奉納演舞って呼ぶんだけどね＠それの練習なんだよ＠......結構、大変なんだなこれが。＠
 	PlaySE(4, "s19/03/500300125", 128, 64);
@@ -1330,7 +1330,7 @@
 	ClearMessage();
 	DisableWindow();
 	DrawBustshot( 1, "ri_se_ni_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 1000, FALSE );
-	DrawScene( "bg_109", 1000 );
+	DrawScene( "bg_108", 1000 );
 
 //　次に、沙都子の隣で漢字ドリルを頑張っている梨花ちゃんを見る＠
 	OutputLine(NULL, "　次に、沙都子の隣で漢字ドリルを頑張っている梨花ちゃんを見る。",
@@ -1437,7 +1437,7 @@
 	ClearMessage();
 	DisableWindow();
 	DrawBustshot( 1, "ri_se_ni_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
-	DrawScene( "bg_109", 1000 );
+	DrawScene( "bg_108", 1000 );
 
 	DrawBustshot( 1, "ri_se_wa_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
@@ -1960,7 +1960,7 @@
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 	PlayBGM( 1, "msys05", 128, 0 );
-	DrawSceneWithMask( "bg_040", "right", 0, 0, 300 );
+	DrawSceneWithMask( "bg_039", "right", 0, 0, 300 );
 
 //　いつもののんびりとした帰り道だった＠
 	OutputLine(NULL, "　いつもののんびりとした帰り道だった。",
@@ -1972,7 +1972,7 @@
 		   NULL, "Digging around my pocket on a whim, I noticed something that should have been there was missing.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "me_se_de_a2", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "me_se_de_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「どうしたの圭ちゃん。＠
 	PlaySE(4, "s19/03/500300153", 128, 64);
@@ -2330,7 +2330,7 @@
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask( "white", "c", 0, 0, 1300 );
-	DrawSceneWithMask( "bg_124", "left", 0, 0, 1300 );
+	DrawSceneWithMask( "bg_123", "left", 0, 0, 1300 );
 	PlayBGM( 2, "lsys20", 128, 0 );
 
 //　急な坂を一気に越えると視界が開ける。もうそこは駅前だった￥
@@ -2702,7 +2702,7 @@
 	ClearMessage();
 	DisableWindow();
 	DrawScene( "white", 200 );
-	DrawScene( "bg_124", 200 );
+	DrawScene( "bg_123", 200 );
 
 //「黙ってンなごらぁああぁああッ！！＠　しゃあっすぞおらぁッ！！！＠
 	PlaySE(4, "s19/00/bada50004", 128, 64);
@@ -2761,7 +2761,7 @@
 		   NULL, "...That voice was a short distance away.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "bg_124", 400 );
+	DrawScene( "bg_123", 400 );
 	PlayBGM( 2, "lsys20", 128, 0 );
 
 //　俺の襟首を掴んだまま、３人は後ろへ振り返る￥
@@ -2913,7 +2913,7 @@
 	ClearMessage();
 	DisableWindow();
 //	FadeBustshot( 2, FALSE, 0, 0, 0, 0, 200, TRUE );
-	DrawSceneWithMask( "bg_124", "right", 0, 0, 300 );
+	DrawSceneWithMask( "bg_123", "right", 0, 0, 300 );
 
 	FadeOutBGM( 1, 1000, TRUE );
 
@@ -3103,7 +3103,7 @@
 	FadeOutBGM( 0, 1000, FALSE );
 	FadeOutBGM( 1, 1000, FALSE );
 	FadeOutBGM( 2, 1000, TRUE );
-//	DrawSceneWithMask( "bg_124", "right", 0, 0, 300 );
+//	DrawSceneWithMask( "bg_123", "right", 0, 0, 300 );
 
 //「ハイハイハイハイ、どうしたのかなぁ、どうしたのかなぁ！！＠
 	PlaySE(4, "s19/00/polia50001", 128, 64);
@@ -3231,7 +3231,7 @@
 	ClearMessage();
 	DisableWindow();
 	DrawBustshot( 3, "oi_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
-	DrawSceneWithMask( "bg_124", "right", 0, 0, 300 );
+	DrawSceneWithMask( "bg_123", "right", 0, 0, 300 );
 
 //「大丈夫ですか＠　お怪我はありませんか？＠
 	PlaySE(4, "s19/11/500700001", 128, 64);
@@ -3688,7 +3688,7 @@
 
 	DisableWindow();
 	FadeOutBGM( 1, 1000, TRUE );
-	DrawSceneWithMask( "bg_161", "down", 0, 0, 1300 );
+	DrawSceneWithMask( "bg_163", "down", 0, 0, 1300 );
 	PlayBGM( 1, "msys02", 128, 0 );
 
 //　店内の涼しい空気に冷やされ少しずつ緊張が覚めてきた＠
@@ -4517,7 +4517,7 @@
 		   NULL, "If it were completed it would have been the biggest dam in Japan. Not just Hinamizawa, but several villages upstream would have been submerged as well.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "bg_047", 1000 );
+	DrawScene( "bg_048", 1000 );
 
 //　住民運動が直ちに始まった＠
 	OutputLine(NULL, "　住民運動が直ちに始まった。",
@@ -4647,7 +4647,7 @@
 		   NULL, " We went on the offensive.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "bg_182", 1000 );
+	DrawScene( "bg_180", 1000 );
 
 //　まず法に訴えるため、ダム建設の中止の仮処分を裁判所に申請＠
 	OutputLine(NULL, "　まず法に訴えるため、ダム建設の中止の仮処分を裁判所に申請。",
@@ -4689,7 +4689,7 @@
 		   NULL, " Following that, the SWAT teams had their hands cuffed.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "bg_124", 1000 );
+	DrawScene( "bg_123", 1000 );
 
 //　連日のように署名活動やデモ、街宣等で運動をアピールする＠
 	OutputLine(NULL, "　連日のように署名活動やデモ、街宣等で運動をアピールする。",
@@ -4860,7 +4860,7 @@
 		   NULL, " I was acutely aware of those feelings as they gradually welled up inside of me.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_161", "right", 0, 0, 300 );
+	DrawSceneWithMask( "bg_163", "right", 0, 0, 300 );
 
 //「園崎さ～ん＠店長がホール入ってほしいそうです。＠
 	PlaySE(4, "s19/00/waita50001", 128, 64);
@@ -5076,7 +5076,7 @@
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
-	DrawScene( "bg_118", 1000 );
+	DrawScene( "night/bg_117", 1000 );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );

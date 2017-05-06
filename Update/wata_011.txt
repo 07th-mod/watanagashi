@@ -10,7 +10,7 @@ void main()
 
 	DisableWindow();
 	DrawScene( "white", 1000 );
-	DrawScene( "bg_082", 3000 );
+	DrawScene( "bg_081", 3000 );
 	PlayBGM( 1, "msys06", 128, 0 );
 
 //　......見慣れた天井＠
@@ -460,7 +460,7 @@ void main()
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
 	PlaySE( 3, "wa_020", 128, 64 );
-	DrawSceneWithMask( "bg_109", "left", 0, 0, 200 );
+	DrawSceneWithMask( "bg_108", "left", 0, 0, 200 );
 	DrawBustshot( 1, "Tie_def", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, FALSE );
 	PlayBGM( 1, "msys12", 128, 0 );
 
@@ -495,7 +495,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	DrawSceneWithMask( "bg_109", "left", 0, 0, 200 );
+	DrawSceneWithMask( "bg_108", "left", 0, 0, 200 );
 
 //　咳払いをしてから、校長が壇上に上がった￥
 	OutputLine(NULL, "　咳払いをしてから、校長が壇上に上がった。",
@@ -654,7 +654,7 @@ void main()
 		   NULL, "......I had to laugh at her curry bento—which was just a rumor until now—but there was nobody to laugh with me.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_109", "left", 0, 0, 300 );
+	DrawSceneWithMask( "bg_108", "left", 0, 0, 300 );
 
 //　レナが自分のイスと弁当箱を持って俺の席へやって来る＠
 	OutputLine(NULL, "　レナが自分のイスと弁当箱を持って俺の席へやって来る。",
@@ -966,7 +966,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawScene( "black", 1000 );
-	DrawScene( "bg_124", 1000 );
+	DrawScene( "bg_123", 1000 );
 
 //　町でか...＠
 	OutputLine(NULL, "　町でか…。",
@@ -990,7 +990,7 @@ void main()
 		   NULL, "......I had no basis for thinking that... just a gut feeling.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "bg_094", 1000 );
+	DrawScene( "bg_095", 1000 );
 	DrawBustshot( 2, "ri_se_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //　俺はあの日、恐らくとても重要なことを梨花ちゃんに打ち明けた＠
@@ -1798,7 +1798,7 @@ void main()
 	PlayBGM( 1, "msys15", 128, 0 );
 	DisableWindow();
 	DrawBustshot( 2, "re_se_na_b1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "bg_094", "down", 0, 0, 1300 );
+	DrawSceneWithMask( "bg_095", "down", 0, 0, 1300 );
 
 //「でも、...すでにこの時点でおかしいの＠食事ってね、突然やってきた人に振舞えるほど、多めに作るものじゃないんだよ。＠
 	PlaySE(4, "s02/02/130200367", 128, 64);

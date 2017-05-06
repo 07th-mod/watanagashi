@@ -1,4 +1,4 @@
-﻿void main()
+void main()
 {
 
 //＜綿流し編＞
@@ -771,7 +771,7 @@
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask( "white", "c", 0, 0, 1300 );
-	DrawScene( "bg_124", 1000 );
+	DrawScene( "bg_123", 1000 );
 
 //　視界が開ければそこは興宮の駅前だ￥
 	OutputLine(NULL, "　視界が開ければそこは興宮の駅前だ。",
@@ -841,7 +841,7 @@
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 3, "me_si_de_a2", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "me_si_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「ゲーセン通いなんて、圭ちゃん不良だねぇ～＠　今度来た時に案内してあげるよ＠結構台数をそろえた、いい店があるから。￥
 	PlaySE(4, "s19/03/990300390", 128, 64);
@@ -1155,7 +1155,7 @@
 	ClearMessage();
 	DisableWindow();
 	DrawScene( "black", 1000 );
-	DrawSceneWithMask( "bg_154", "left", 0, 0, 1300 );
+	DrawSceneWithMask( "bg_155", "left", 0, 0, 1300 );
 
 //　おもちゃ屋の中には、比較的、俺に年の近い男子が１０人くらいたむろしていた＠
 	OutputLine(NULL, "　おもちゃ屋の中には、比較的、俺に年の近い男子が１０人くらいたむろしていた。",
@@ -1256,7 +1256,7 @@
 		   NULL, "Rena was innocently happy about being able to play with so many people, but my expression grew noticeably stern.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_154", "left", 0, 0, 300 );
+	DrawSceneWithMask( "bg_155", "left", 0, 0, 300 );
 	DrawBustshot( 2, "sa_si_ak_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「......圭一さんの考えてること、手に取るようにわかりましてよ。＠
@@ -1380,7 +1380,7 @@
 		   NULL, "Looking at where her finger directed me...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_157", "left", 0, 0, 300 );
+	DrawSceneWithMask( "bg_156", "left", 0, 0, 300 );
 
 //「......何だありゃ。＠
 	PlaySE(4, "s19/01/hr_kei09040", 128, 64);
@@ -1437,7 +1437,7 @@
 	ClearMessage();
 	DisableWindow();
 	PlayBGM( 1, "msys04", 128, 0 );
-	DrawSceneWithMask( "bg_154", "left", 0, 0, 300 );
+	DrawSceneWithMask( "bg_155", "left", 0, 0, 300 );
 	DrawBustshotWithFiltering( 3, "re_si_ka_b1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「きょ、今日は楽しくなりそうだね＠　頑張るよ～＠　はぅ～～～～！！＠
@@ -1540,7 +1540,7 @@
 	DisableWindow();
 	FadeOutBGM( 1, 1000, TRUE );
 	FadeOutBGM( 2, 1000, TRUE );
-	DrawSceneWithMask( "bg_154", "left", 0, 0, 300 );
+	DrawSceneWithMask( "bg_155", "left", 0, 0, 300 );
 	DrawBustshot( 2, "me_si_wa_a2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「......ん＠　何、圭ちゃん＠私の顔に、/
@@ -1665,7 +1665,7 @@
 		   NULL, "I definitely didn't want to fight her, if possible.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_157", "left", 0, 0, 300 );
+	DrawSceneWithMask( "bg_156", "left", 0, 0, 300 );
 	DrawBustshotWithFiltering( 1, "ri_si_ni_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「梨花ちゃんガンバレー！＠　僕たちも応援してるよ～～！！！＠
@@ -1881,7 +1881,7 @@
 	ClearMessage();
 	DisableWindow();
 	DrawScene( "black", 400 );
-	DrawScene( "bg_157", 1000 );
+	DrawScene( "bg_156", 1000 );
 	PlayBGM( 1, "msys02", 128, 0 );
 
 //　店内を包む漆黒の瘴気...＠
@@ -1992,7 +1992,7 @@
 		   NULL, "Each winner in the first stage would advance to the next in order to compete in the final.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "me_si_de_a2", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "me_si_de_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「さて。各卓の競技方法なんだけど＠これは各卓で好きに決めていいよ＠このお店にあるゲームなら何を使ってもＯＫ！＠
 	PlaySE(4, "s19/03/990300413", 128, 64);
@@ -2294,7 +2294,7 @@
 		   NULL, "...I'll crush all your petty tricks!!", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "bg_157", 1000 );
+	DrawScene( "bg_156", 1000 );
 
 //　さて、俺の対戦相手はどこだ＠
 	OutputLine(NULL, "　さて、俺の対戦相手はどこだ。",
@@ -2490,7 +2490,7 @@
 	DisableWindow();
 	DrawScene( "black", 1000 );
 	PlayBGM( 1, "msys04", 128, 0 );
-	DrawScene( "bg_157", 1000 );
+	DrawScene( "bg_156", 1000 );
 
 //「１・２・３・４＠出産祝いをもらう＠全員から５０００＄もらう＠...悪いね！＠
 	PlaySE(4, "s19/01/hr_kei09350", 128, 64);
@@ -2685,7 +2685,7 @@
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask( "black", "right", 0, 0, 1300 );
-	DrawSceneWithMask( "bg_157", "right", 0, 0, 300 );
+	DrawSceneWithMask( "bg_156", "right", 0, 0, 300 );
 
 //　じゃあ、レナの卓はどうだ...？＠　ギャラリーがかなり騒いでいるぞ？￥
 	OutputLine(NULL, "　じゃあ、レナの卓はどうだ…？！",
@@ -2746,7 +2746,7 @@
 		   NULL, "BAAAAAAM!!!!", Line_ContinueAfterTyping);
 	DisableWindow();
 	DrawSceneWithMask( "white", "c", 0, 0, 300 );
-	DrawScene( "bg_157", 400 );
+	DrawScene( "bg_156", 400 );
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
 	ClearMessage();
@@ -2943,7 +2943,7 @@
 		   NULL, " The tension on his face relaxed.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_157", "left", 0, 0, 300 );
+	DrawSceneWithMask( "bg_156", "left", 0, 0, 300 );
 
 //「ふん＠......決まったな。＠
 	PlaySE(4, "s19/01/hr_kei09390", 128, 64);
@@ -3621,7 +3621,7 @@
 		   NULL, "The table sunk into silence.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_154", "left", 0, 0, 300 );
+	DrawSceneWithMask( "bg_155", "left", 0, 0, 300 );
 	DrawBustshot( 1, "tomita1_Def", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, FALSE );
 	DrawBustshot( 3, "oka1_Def", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
@@ -3680,7 +3680,7 @@
 
 
 	DisableWindow();
-	DrawScene( "bg_157", 400 );
+	DrawScene( "bg_156", 400 );
 	PlayBGM( 1, "msys04", 128, 0 );
 //!sd
 
@@ -4116,7 +4116,7 @@
 	DisableWindow();
 	DrawScene( "black", 1000 );
 	FadeOutBGM( 1, 1000, TRUE );
-	DrawScene( "bg_157", 1000 );
+	DrawScene( "bg_156", 1000 );
 	PlayBGM( 1, "msys02", 128, 0 );
 
 //「......じゃあ、いいな＠　行くぞ＠.........せーの、＠
@@ -4361,7 +4361,7 @@
 		   NULL, "Do they really think they can win against Keiichi Maebara when he gets serious?!?!", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_154", "left", 0, 0, 300 );
+	DrawSceneWithMask( "bg_155", "left", 0, 0, 300 );
 
 //「魅音＠......失敗だったなぁ＠...お前はさっき、俺に「助言」すべきじゃなかったぜぇ...？＠
 	PlaySE(4, "s19/01/hr_kei10000", 128, 64);
@@ -4466,7 +4466,7 @@
 	ClearMessage();
 	DisableWindow();
 	DrawBustshot( 1, "me_si_fu_a2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
-	DrawSceneWithMask( "bg_154", "left", 0, 0, 300 );
+	DrawSceneWithMask( "bg_155", "left", 0, 0, 300 );
 
 
 //「今日の勝負を、部長、園崎魅音が預からせてもらうよ＠勝負方法と日時は未定＠...ギャラリーは多い方がいいね＠雛見沢も興宮も、全ての人間の目の前で＠

@@ -1,4 +1,4 @@
-﻿void main()
+void main()
 {
 
 ////*Watanagasi_Ep1
@@ -118,7 +118,7 @@
 	SetValidityOfInput( TRUE );
 	ClearMessage();
 
-	DrawScene( "bg_179", 1000 );
+	DrawScene( "bg_176", 1000 );
 
 	PlayBGM( 2, "lsys24", 128, 0 );
 //　失踪者たちを殺害したと思われる園崎邸内の離れ地下奥、拷問室からは、失踪者４人（園崎お魎・公由喜一郎・古手梨花・北条沙都子）の毛髪、皮膚片、血液などを発見。
@@ -692,7 +692,7 @@
 
 	DisableWindow();
 	DrawScene( "white", 1000 );
-	DrawScene( "bg_040", 400 );
+	DrawScene( "bg_039", 400 );
 
 //　俺の人生にとって＠
 	OutputLine(NULL, "　俺の人生にとって、",
@@ -807,7 +807,7 @@
 	DisableWindow();
 	DrawScene( "black", 1000 );
 	PlayBGM( 1, "msys13", 128, 0 );
-	DrawScene( "bg_082", 1000 );
+	DrawScene( "bg_081", 1000 );
 
 //　今でも、......夜の１０時になると...詩音、いや魅音から電話が掛かってくる気がする＠
 	OutputLine(NULL, "　今でも、……夜の１０時になると…詩音、いや魅音から電話が掛かってくる気がする。",
@@ -989,7 +989,7 @@
 
 //setwindow 31,16,22,16,26,26,0,2,20,1,1,#ffffff,0,0,639,479
 	DisableWindow();
-	DrawScene( "bg_118", 1000 );
+	DrawScene( "night/bg_117", 1000 );
 	SetValidityOfInput( FALSE );
 	Wait( 5000 );
 	SetValidityOfInput( TRUE );
@@ -1063,7 +1063,7 @@
 
 
 	DisableWindow();
-	DrawScene( "bg_082", 400 );
+	DrawScene( "bg_081", 400 );
 
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
 
@@ -1121,7 +1121,7 @@
 		   NULL, "In the light at the gate... despite it being so late, I saw someone.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "bg_118", 400 );
+	DrawScene( "night/bg_117", 400 );
 
 //　それは砂利を拾い上げると、...この窓に向けて投げつけていた＠...それが窓に当たり、コツンという音を立てる＠
 	OutputLine(NULL, "　それは砂利を拾い上げると、…この窓に向けて投げつけていた。",
@@ -1316,7 +1316,7 @@
 	ClearMessage();
 
 	DisableWindow();
-	DrawSceneWithMask( "bg_118", "left", 0, 0, 300 );
+	DrawSceneWithMask( "night/bg_117", "left", 0, 0, 300 );
 
 //「......はぁ、!w700......はぁ、!w700......魅音...！＠
 	PlaySE(4, "s02/01/130101175", 128, 64);
@@ -1430,7 +1430,7 @@
 
 
 	DisableWindow();
-	DrawBustshot( 2, "night/me_si_de_a2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	DrawBustshot( 2, "night/me_si_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「...最後にお話したかったから。＠
 	PlaySE(4, "s02/03/130300730", 128, 64);
@@ -1944,7 +1944,7 @@
 		   NULL, " ......The demon.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_118", "up", 0, 0, 1300 );
+	DrawSceneWithMask( "night/bg_117", "up", 0, 0, 1300 );
 	DrawBustshot( 2, "night/me_si_him_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, TRUE );
 //	FadeBustshotWithFiltering( 5, "up", 1, FALSE, 0, 0, 300, TRUE );
 //	FadeFilm( 1000, TRUE );
