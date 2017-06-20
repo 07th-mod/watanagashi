@@ -9,7 +9,6 @@ void main()
 //	FadeOutBGM( 1, 1000, FALSE );
 //	FadeOutBGM( 2, 1000, TRUE );
 	PlayBGM( 1, "msys19", 128, 0 );
-	SetSpeedOfMessage( TRUE, 100, );
 	SetDrawingPointOfMessage( 0, 4 );
 	SetStyleOfMessageSwinging( 1 );
 	SetValidityOfTextFade(FALSE);
@@ -19,11 +18,10 @@ void main()
 		   NULL, "June 28, 1983.", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 2, 10, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
-	PlayBGM( 2, "lsys24", 128, 0 );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+	PlayBGM( 2, "lsys24", 128, 0 );
 
 	SetStyleOfMessageSwinging( 0 );
 //　ＸＸ県鹿骨市雛見沢村で、傷害事件が発生。
@@ -32,9 +30,7 @@ void main()
 
 
 	FadeOutBGM( 2, 10, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
 	DrawScene( "bg_119", 1000 );
 	PlayBGM( 2, "lsys24", 128, 0 );
@@ -47,12 +43,10 @@ void main()
 
 
 	FadeOutBGM( 2, 10, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
-	PlayBGM( 2, "lsys24", 128, 0 );
-
+	OutputLineAll(NULL, "", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　午前２時ごろ、自宅を訪れた、先の事件の容疑者（園崎魅音）に腹部を刃物のようなもので刺され重傷。
 	OutputLine(NULL, "　午前２時ごろ、自宅を訪れた、先の事件の容疑者（園崎魅音）に腹部を刃物のようなもので刺され重傷。",
@@ -60,12 +54,10 @@ void main()
 
 
 	FadeOutBGM( 2, 10, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
-	PlayBGM( 2, "lsys24", 128, 0 );
-
+	OutputLineAll(NULL, "", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　起き出して来た家人に発見され、診療所へ搬送。/
 	OutputLine(NULL, "　起き出して来た家人に発見され、診療所へ搬送。",
@@ -73,9 +65,8 @@ void main()
 
 
 	FadeOutBGM( 2, 10, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //一命を取り留めた。
@@ -84,12 +75,10 @@ void main()
 
 
 	FadeOutBGM( 2, 10, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
-	PlayBGM( 2, "lsys24", 128, 0 );
-
+	OutputLineAll(NULL, "", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　犯人は逃走。
 	OutputLine(NULL, "　犯人は逃走。",
@@ -97,9 +86,7 @@ void main()
 
 
 	FadeOutBGM( 2, 10, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 4000 );
-	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
 	DrawScene( "bg_127", 1000 );
 //locate 7,4
@@ -113,12 +100,11 @@ void main()
 
 
 	FadeOutBGM( 2, 10, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
 	PlayBGM( 2, "lsys24", 128, 0 );
 	SetStyleOfMessageSwinging( 0 );
-	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
 
 
 //　ＸＸ県鹿骨市上一色のマンションで、転落事故が発生。
@@ -127,12 +113,10 @@ void main()
 
 
 	FadeOutBGM( 2, 10, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
-	PlayBGM( 2, "lsys24", 128, 0 );
-
+	OutputLineAll(NULL, "", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　被害者は先の連続失踪事件の被害者でもある、園崎詩音。
 	OutputLine(NULL, "　被害者は先の連続失踪事件の被害者でもある、園崎詩音。",
@@ -140,9 +124,7 @@ void main()
 
 
 	FadeOutBGM( 2, 10, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
 	PlayBGM( 2, "lsys24", 128, 0 );
 
@@ -154,12 +136,10 @@ void main()
 
 
 	FadeOutBGM( 2, 10, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
-	PlayBGM( 2, "lsys24", 128, 0 );
-
+	OutputLineAll(NULL, "", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　管理人が合鍵を使って室内に入り、８階のベランダから転落死した被害者を発見した。
 	OutputLine(NULL, "　管理人が合鍵を使って室内に入り、８階のベランダから転落死した被害者を発見した。",
@@ -167,9 +147,7 @@ void main()
 
 
 	FadeOutBGM( 2, 10, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 4000 );
-	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
 	DrawScene( "black", 1000 );
 	PlayBGM( 2, "lsys24", 128, 0 );
@@ -180,11 +158,10 @@ void main()
 
 
 	FadeOutBGM( 2, 10, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
-	PlayBGM( 2, "lsys24", 128, 0 );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+	PlayBGM( 2, "lsys24", 128, 0 );
 
 
 //　隣人は園崎家に古くから出入りのある人間で、当時の騒動を姉妹喧嘩にそっくりで、互いに罵りあう声を聞いたと証言する。
@@ -193,11 +170,10 @@ void main()
 
 
 	FadeOutBGM( 2, 10, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
-	PlayBGM( 2, "lsys24", 128, 0 );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+	PlayBGM( 2, "lsys24", 128, 0 );
 
 
 //　先の事件の容疑者による、同日に発生した雛見沢村での傷害事件との関連性があると見て、/
@@ -206,9 +182,8 @@ void main()
 
 
 	FadeOutBGM( 2, 10, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //室内を徹底的に捜索したが、被害者以外の人間がいたことを示す痕跡は発見することができなかった。
@@ -217,9 +192,7 @@ void main()
 
 
 	FadeOutBGM( 2, 10, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 4000 );
-	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
 	PlayBGM( 2, "lsys24", 128, 0 );
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -231,9 +204,8 @@ void main()
 
 
 	FadeOutBGM( 2, 10, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //首の骨を折り即死。
@@ -242,11 +214,10 @@ void main()
 
 
 	FadeOutBGM( 2, 10, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
-	PlayBGM( 2, "lsys24", 128, 0 );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+	PlayBGM( 2, "lsys24", 128, 0 );
 
 
 //　着衣には乱れがあり、取っ組み合いをした形跡も見られた。
@@ -255,11 +226,10 @@ void main()
 
 
 	FadeOutBGM( 2, 10, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
-	PlayBGM( 2, "lsys24", 128, 0 );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+	PlayBGM( 2, "lsys24", 128, 0 );
 
 
 //　...だが、事件後の被害者の特殊な精神状態から、錯乱による自殺ではないかとも見られている。
@@ -268,11 +238,10 @@ void main()
 
 
 	FadeOutBGM( 2, 10, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
-	PlayBGM( 2, "lsys24", 128, 0 );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　自殺と事件の両面から、慎重な捜査が行なわれている...。
 	OutputLine(NULL, "　自殺と事件の両面から、慎重な捜査が行なわれている…。",
@@ -280,11 +249,8 @@ void main()
 
 	SetValidityOfTextFade( TRUE );
 	FadeOutBGM( 2, 10, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 4000 );
-	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
-	SetSpeedOfMessage( FALSE, 0, );
 //!sd
 //＜別に幕間とかはないにゃ～☆
 
