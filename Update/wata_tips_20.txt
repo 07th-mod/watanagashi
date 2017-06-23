@@ -1,5 +1,13 @@
 void main()
 {
+	int AdvMode;
+	AdvMode = 1;
+	int Line_ModeSpecific;
+	if (AdvMode) {
+		Line_ModeSpecific = Line_Normal;
+	} else {
+		Line_ModeSpecific = Line_WaitForInput;
+	}
 
 //１０深■園崎家の老当主は？
 //（深夜の車中のイメージ）
@@ -17,24 +25,28 @@ void main()
 
 //「はい。郵便局員も目撃してないそうです＠...園崎本家は、郵便受けにハンコが吊るしてあるそうで、書留も宅急便も勝手にハンコを押して投函していい事になってるんだそうっす。＠
 	PlaySE(4, "s20/19/443100030", 128, 64);
+	ClearMessage();
+	if (AdvMode) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「はい。郵便局員も目撃してないそうです。",
 		   NULL, "\"Yes. The postal worker hasn't seen anything either.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "…園崎本家は、郵便受けにハンコが吊るしてあるそうで、書留も宅急便も勝手にハンコを押して投函していい事になってるんだそうっす。」",
-		   NULL, " ...The Sonozaki main house has their seal hanging from their mailbox so that anyone can stamp their mail or parcels with it and drop it in.\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " ...The Sonozaki main house has their seal hanging from their mailbox so that anyone can stamp their mail or parcels with it and drop it in.\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「なっはっは、そりゃ無用心ですねぇ＠...ってことは、最後の目撃はいつになるんです？＠
 	PlaySE(4, "s20/11/440700154", 128, 64);
+	if (AdvMode) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「なっはっは、そりゃ無用心ですねぇ。",
 		   NULL, "\"Na-ha-ha, that's rather careless of them.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "…ってことは、最後の目撃はいつになるんです？」",
-		   NULL, " ...So when was she last seen?\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " ...So when was she last seen?\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「綿流しの開会式でした挨拶が最後です＠その後すぐに帰宅したらしいっすから。￥
 	PlaySE(4, "s20/19/443100031", 128, 64);
+	if (AdvMode) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「綿流しの開会式でした挨拶が最後です。",
 		   NULL, "\"She was last seen at the Watanagashi opening ceremony greetings.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "その後すぐに帰宅したらしいっすから。」",
@@ -43,34 +55,38 @@ void main()
 
 //「高齢ですからねぇ＠...話じゃ、週に何回かお稽古事で外出してるそうじゃないですか＠そっちはどうです？＠
 	PlaySE(4, "s20/11/440700155", 128, 64);
+	if (AdvMode) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「高齢ですからねぇ。",
 		   NULL, "\"Well, she is pretty old.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "…話じゃ、週に何回かお稽古事で外出してるそうじゃないですか。",
 		   NULL, " ...From what I've heard, she goes out a few times a week to take lessons, right?", Line_WaitForInput);
 	PlaySE(4, "s20/11/440700156", 128, 64);
 	OutputLine(NULL, "そっちはどうです？」",
-		   NULL, " Have you found anything out about that?\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " Have you found anything out about that?\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「毎週月曜に集会所で大正琴を習ってるんですが、今週は休んだそうです。＠
 	PlaySE(4, "s20/00/442500008", 128, 64);
+	if (AdvMode) { OutputLine("<color=#f5e6d3>小宮山</color>", NULL, "<color=#f5e6d3>Komiyama</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「毎週月曜に集会所で大正琴を習ってるんですが、今週は休んだそうです。」",
-		   NULL, "\"Every Monday she goes to the assembly hall to practice the taishougoto, but she didn't go this week.\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "\"Every Monday she goes to the assembly hall to practice the taishougoto, but she didn't go this week.\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「欠席の電話とかは＠　それを誰かが確認したとかは？＠
 	PlaySE(4, "s20/11/440700157", 128, 64);
+	if (AdvMode) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「欠席の電話とかは？",
 		   NULL, "\"Any calls to say she wasn't going to be there?", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　それを誰かが確認したとかは？」",
-		   NULL, " Has anyone confirmed it?\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " Has anyone confirmed it?\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「いえ、誰も＠ただ、たまに休むことがあったらしいので誰も不審には思わなかったようです。￥
 	PlaySE(4, "s20/00/442500009", 128, 64);
+	if (AdvMode) { OutputLine("<color=#f5e6d3>小宮山</color>", NULL, "<color=#f5e6d3>Komiyama</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「いえ、誰も。",
 		   NULL, "\"No, nobody.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "ただ、たまに休むことがあったらしいので誰も不審には思わなかったようです。」",
@@ -79,61 +95,71 @@ void main()
 
 //「明日さ、１０時くらいになったら市役所のふりして電話してみましょうかね＠在宅を確認してみて下さい。＠
 	PlaySE(4, "s20/11/440700158", 128, 64);
+	if (AdvMode) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「明日さ、１０時くらいになったら市役所のふりして電話してみましょうかね。",
 		   NULL, "\"Tomorrow, why don't we pretend we're the town hall and call around ten o'clock?", Line_ContinueAfterTyping);
 	OutputLine(NULL, "在宅を確認してみて下さい。」",
-		   NULL, " Please figure out whether she's at home.\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " Please figure out whether she's at home.\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「１０時ですね。了解っす！￥
 	PlaySE(4, "s20/19/443100032", 128, 64);
+	if (AdvMode) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「１０時ですね。了解っす！」",
 		   NULL, "\"Ten o'clock? Got it!\"", Line_Normal);
 	ClearMessage();
 
 //　雛見沢の古い因習が関わっている気配が濃厚になった頃から、御三家をこっそりと監視していた＠
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　雛見沢の古い因習が関わっている気配が濃厚になった頃から、御三家をこっそりと監視していた。",
-		   NULL, "Ever since it started to seem more and more like ancient Hinamizawa traditions had something to do with all this, he'd been keeping a careful eye on the Three Families.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "Ever since it started to seem more and more like ancient Hinamizawa traditions had something to do with all this, he'd been keeping a careful eye on the Three Families.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　今日までに御三家の公由家の当主と、古手家の当主が消えた￥
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　今日までに御三家の公由家の当主と、古手家の当主が消えた。",
 		   NULL, "At this point, the leader of the Kimiyoshi family and the leader of the Furude family had disappeared.", Line_Normal);
 	ClearMessage();
 
 //　残る当主は１人＠
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　残る当主は１人。",
-		   NULL, "There was only one leader left.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "There was only one leader left.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　園崎家当主の園崎お魎。（そのざきおりょう＠
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　園崎家当主の園崎お魎。（そのざきおりょう）",
-		   NULL, "Oryou Sonozaki, the leader of the Sonozaki family.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "Oryou Sonozaki, the leader of the Sonozaki family.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　高齢の婆さまらしい＠
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　高齢の婆さまらしい。",
-		   NULL, "She was apparently a pretty old woman.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+		   NULL, "She was apparently a pretty old woman.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 //　威厳は衰えないものの、人前に姿を現すことは稀だそうで、確認がなかなか取れなかった＠
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　威厳は衰えないものの、人前に姿を現すことは稀だそうで、確認がなかなか取れなかった。",
-		   NULL, "Her dignity hasn't waned, but she still only appeared before people rarely, so it was difficult to confirm where she was at any given time.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "Her dignity hasn't waned, but she still only appeared before people rarely, so it was difficult to confirm where she was at any given time.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　...その最後の当主も、綿流しの日に目撃されたのを最後に、誰からも目撃されていない＠
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…その最後の当主も、綿流しの日に目撃されたのを最後に、誰からも目撃されていない。",
-		   NULL, "...She, the last leader, hadn't been seen since the day of Watanagashi.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+		   NULL, "...She, the last leader, hadn't been seen since the day of Watanagashi.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 //　園崎本家の中にいて今も健在なのか＠　...それとも......もう￥
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　園崎本家の中にいて今も健在なのか？",
 		   NULL, "Was she still alive and well within the Sonozaki main house?", Line_WaitForInput);
 	OutputLine(NULL, "　…それとも……もう？",
@@ -142,41 +168,47 @@ void main()
 
 //「園崎魅音が言うには、体調を崩して寝込んでるんだそうです。＠
 	PlaySE(4, "s20/19/443100033", 128, 64);
+	if (AdvMode) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「園崎魅音が言うには、体調を崩して寝込んでるんだそうです。」",
-		   NULL, "\"According to Mion Sonozaki, she had fallen ill and was sleeping it off.\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "\"According to Mion Sonozaki, she had fallen ill and was sleeping it off.\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「本当に寝込んでるのかなぁ＠顔と脈を見てみたいですねぇ...。＠
 	PlaySE(4, "s20/11/440700159", 128, 64);
+	if (AdvMode) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「本当に寝込んでるのかなぁ。",
 		   NULL, "\"I wonder if she's really sleeping.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "顔と脈を見てみたいですねぇ…。」",
-		   NULL, " I'd like to take a look at her face—and her pulse...\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " I'd like to take a look at her face—and her pulse...\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「..................まったくっす。￥
 	PlaySE(4, "s20/19/443100034", 128, 64);
+	if (AdvMode) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「………………まったくっす。」",
 		   NULL, "\"............You can say that again.\"", Line_Normal);
 	ClearMessage();
 
 //　２人してタバコの煙を大きく吐き出す...￥
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　２人してタバコの煙を大きく吐き出す…。",
 		   NULL, "The two of them breathed out a big puff of cigarette smoke...", Line_Normal);
 	ClearMessage();
 
 //「大石さん、...園崎本家と古手神社の捜査令状＠申請、通ると思います？＠
 	PlaySE(4, "s20/19/443100035", 128, 64);
+	if (AdvMode) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「大石さん、…園崎本家と古手神社の捜査令状。",
 		   NULL, "\"Ooishi-san... About the search warrants for the Sonozaki main house and the Furude shrine.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "申請、通ると思います？」",
-		   NULL, " Do you think we'll get them?\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+		   NULL, " Do you think we'll get them?\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 //　大石は特に答えず、再び紫煙を吐き出して、文字通り煙に巻いていた...￥
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　大石は特に答えず、再び紫煙を吐き出して、文字通り煙に巻いていた…。",
 		   NULL, "Ooishi didn't respond, exhaled another cloud of tobacco smoke, his surroundings now as foggy as his mind...", Line_Normal);
 	ClearMessage();
