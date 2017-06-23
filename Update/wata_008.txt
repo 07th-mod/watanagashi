@@ -1417,10 +1417,11 @@ void main()
 		   NULL, "\"Right.", Line_WaitForInput);
 	PlaySE(4, "s02/01/130100042", 128, 64);
 	OutputLine(NULL, "それが本物のたこ焼きだ。",
-		   NULL, " That was a bona fide takoyaki...", Line_WaitForInput);
+		   NULL, " That was a bona fide takoyaki... ", Line_ModeSpecific);
 	PlaySE(4, "s02/01/130100043", 128, 64);
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "……それ以外のたこ焼きは…",
-		   NULL, " ...and as for the other ones...", Line_ContinueAfterTyping);
+		   NULL, "...And as for the other ones...", Line_ContinueAfterTyping);
 
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );

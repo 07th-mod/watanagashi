@@ -57,10 +57,14 @@ void main()
 
 	PlayBGM( 2, "lsys24", 128, 0 );
 //　容疑者は６月１９日から２１日までの間に雛見沢村住民５人（園崎お魎・園崎詩音・公由喜一郎・古手梨花・北条沙都子）を拉致、監禁して殺害した疑い。
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　容疑者は６月１９日から２１日までの間に雛見沢村住民５人（園崎お魎・園崎詩音・公由喜一郎・古手梨花・北条沙都子）を拉致、監禁して殺害した疑い。",
-		   NULL, "She is suspected to have kidnapped five Hinamizawa residents between June 19 and June 21 (Oryou Sonozaki, Shion Sonozaki, Kiichirou Kimiyoshi, Rika Furude, and Satoko Houjou), imprisoned them, and killed them.", Line_ContinueAfterTyping);
-
+	if (AdvMode) {
+		if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+		OutputLine(NULL, "　容疑者は６月１９日から２１日までの間に雛見沢村住民５人（園崎お魎・園崎詩音・公由喜一郎・古手梨花・北条沙都子）を拉致、監禁して殺害した疑い。",
+			   NULL, "<size=-2>She is suspected to have kidnapped five Hinamizawa residents between June 19 and June 21 (Oryou Sonozaki, Shion Sonozaki, Kiichirou Kimiyoshi, Rika Furude, and Satoko Houjou), imprisoned them, and killed them.</size>", Line_ContinueAfterTyping);
+	} else {
+		OutputLine(NULL, "　容疑者は６月１９日から２１日までの間に雛見沢村住民５人（園崎お魎・園崎詩音・公由喜一郎・古手梨花・北条沙都子）を拉致、監禁して殺害した疑い。",
+			   NULL, "She is suspected to have kidnapped five Hinamizawa residents between June 19 and June 21 (Oryou Sonozaki, Shion Sonozaki, Kiichirou Kimiyoshi, Rika Furude, and Satoko Houjou), imprisoned them, and killed them.", Line_ContinueAfterTyping);
+	}
 
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", Line_Normal);

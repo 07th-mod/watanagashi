@@ -4649,13 +4649,13 @@ void main()
 		   NULL, " I will absolutely not allow it to be put in the same category as onigiri.", Line_WaitForInput);
 	PlaySE(4, "s19/22/501400050", 128, 64);
 	OutputLine(NULL, "いいですか？",
-		   NULL, " You hear me?", Line_WaitForInput);
+		   NULL, " You hear me? ", Line_ModeSpecific);
 //!s0
 	SetSpeedOfMessage( TRUE, 120, );
 
 	PlaySE(4, "s19/22/501400051", 128, 64);
 	OutputLine(NULL, "カ",
-		   NULL, " Curry", Line_ContinueAfterTyping);
+		   NULL, "Curry", Line_ContinueAfterTyping);
 
 	OutputLine(NULL, "レ",
 		   NULL, " Was", Line_ContinueAfterTyping);

@@ -198,7 +198,7 @@ void main()
 	PlaySE(4, "s20/11/440700172", 128, 64);
 	if (AdvMode) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「そりゃまぁ、４人が頬かむりして忍び込む写真はありませんがねぇ。",
-		   NULL, "\"Well, it's true that we don't have any pictures of the four of them sneaking in with cloth tied around their heads.", Line_WaitForInput);
+		   NULL, "\"Well, it's true that we don't have any pictures of the four of them sneaking in with cloth tied around their heads. ", Line_ModeSpecific);
 
 	DisableWindow();
 	DrawBustshot( 3, "oi_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
@@ -206,7 +206,7 @@ void main()
 //とにかく、４人は祭具殿の中で何かを見たんです＠　消されるくらいの何かを！＠
 	PlaySE(4, "s20/11/440700173", 128, 64);
 	OutputLine(NULL, "とにかく、４人は祭具殿の中で何かを見たんです！",
-		   NULL, " Anyway, those four saw something inside the storehouse!", Line_ContinueAfterTyping);
+		   NULL, "Anyway, those four saw something inside the storehouse!", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　消されるくらいの何かを！」",
 		   NULL, " Something important enough that they'd be erased!\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -402,6 +402,18 @@ void main()
 	OutputLine(NULL, "「良いかッ？！　古手神社はそもそも皇暦２６００年に継ぐ２５００年の歴史を有する、神聖にして侵すべからずの聖地なのじゃ！！",
 		   NULL, "\"Listen here!! The Furude Shrine spent 2600 years under the imperial calendar and 2500 more beyond that! It is sacred! A sanctuary that must never be defiled!! ", Line_ModeSpecific);
 	PlaySE(4, "s20/00/saburo44008", 128, 64);
+	if (AdvMode) { OutputLine("<color=#f5e6d3>園崎県議</color>", NULL, "<color=#f5e6d3>Sonozaki Representative</color>", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) {
+		OutputLine(NULL, "　八百万の神々とオヤシロさまと先祖の霊を祀り、日が昇りてから沈むまで。",
+			   NULL, "<size=-2>The eight hundred thousand gods, Oyashiro-sama, and the spirits of our ancestors are enshrined there.</size>", Line_ContinueAfterTyping);
+		OutputLine(NULL, "月が昇りてから沈むまで雛見沢を見守る尊い神社なのじゃ。",
+			   NULL, "<size=-2> The holy shrine protects Hinamizawa from when the sun comes up to when it sets, and from when the moon rises to when it falls.</size>", Line_ModeSpecific);
+	} else {
+		OutputLine(NULL, "　八百万の神々とオヤシロさまと先祖の霊を祀り、日が昇りてから沈むまで。",
+			   NULL, "The eight hundred thousand gods, Oyashiro-sama, and the spirits of our ancestors are enshrined there.", Line_ContinueAfterTyping);
+		OutputLine(NULL, "月が昇りてから沈むまで雛見沢を見守る尊い神社なのじゃ。",
+			   NULL, " The holy shrine protects Hinamizawa from when the sun comes up to when it sets, and from when the moon rises to when it falls. ", Line_ModeSpecific);
+	}
 	if (AdvMode) { OutputLine("<color=#f5e6d3>園崎県議</color>", NULL, "<color=#f5e6d3>Sonozaki Representative</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　八百万の神々とオヤシロさまと先祖の霊を祀り、日が昇りてから沈むまで。",
 		   NULL, "The eight hundred thousand gods, Oyashiro-sama, and the spirits of our ancestors are enshrined there.", Line_ContinueAfterTyping);

@@ -2844,15 +2844,15 @@ void main()
 
 	PlaySE(4, "s19/01/hr_kei11180", 128, 64);
 	OutputLine(NULL, "さくらって言ったらあの有名な口紅の商品名『Ｓａｋｕｒａ』だろおおお！",
-		   NULL, "Sakura can only mean that famous lipstick brand 'Sakura', right!?!?", Line_WaitForInput);
+		   NULL, "Sakura can only mean that famous lipstick brand 'Sakura', right!?!? ", Line_ModeSpecific);
 	PlaySE(4, "s19/01/hr_kei11190", 128, 64);
-	OutputLine(NULL, "　ほら、新色が出たってＴＶでも言ってたし、ワイドショーでも特集組んでたじゃん！",
-		   NULL, " You know, the one in a new color they've been talking about on TV, they even did a special on it!", Line_ContinueAfterTyping);
-	OutputLine(NULL, "　女としてはチェック入れるんじゃないのか？",
-		   NULL, "Don't you check these things out, as ladies? ", Line_ModeSpecific);
 	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ほら、新色が出たってＴＶでも言ってたし、ワイドショーでも特集組んでたじゃん！",
+		   NULL, "You know, the one in a new color they've been talking about on TV, they even did a special on it!", Line_ContinueAfterTyping);
+	OutputLine(NULL, "　女としてはチェック入れるんじゃないのか？",
+		   NULL, " Don't you check these things out, as ladies?", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　俺だって知ってるぐらいなんだからぁああぁあぁあッ！！！！」",
-		   NULL, "Even I've seheheeen iiiiiiiiit!!!!\"", Line_Normal);
+		   NULL, " Even I've seheheeen iiiiiiiiit!!!!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawBustshotWithFiltering( 3, "me_se_th_a1", "right", 7, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 200, TRUE );

@@ -1190,18 +1190,18 @@ void main()
 	PlaySE(4, "s02/06/130600464", 128, 64);
 	if (AdvMode) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……公由のお爺ちゃん、…怒らなかった。",
-		   NULL, "\"...Old man Kimiyoshi... didn't get angry.", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, "\"...Old man Kimiyoshi... didn't get angry.", Line_WaitForInput);
 
 
 //　......そして、にっこり笑って、詩音ちゃんがちゃんと反省してるなら、鬼隠しになんかなるものか、...って＠...本当に......笑いながら......任せなさい...って.........。!w1500......ぅぅ...ッ！！＠
 	PlaySE(4, "s02/06/130600465", 128, 64);
 	if (AdvMode) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……そして、にっこり笑って、詩音ちゃんがちゃんと反省してるなら、鬼隠しになんかなるものか、…って。",
-		   NULL, "......He smiled, then told me that if I was properly sorry about it, there was no way I'd be demoned away...", Line_WaitForInput);
+		   NULL, "......He smiled, then told me that if I was properly sorry about it, there was no way I'd be demoned away... ", Line_ModeSpecific);
 	PlaySE(4, "s02/06/130600466", 128, 64);
+	if (AdvMode) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…本当に……笑いながら……任せなさい…って………。",
-		   NULL, " ...He was really... smiling... and he told me to leave it to... him......", Line_ContinueAfterTyping);
+		   NULL, "...He was really... smiling... and he told me to leave it to... him......", Line_ContinueAfterTyping);
 
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );

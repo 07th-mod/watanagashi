@@ -2082,15 +2082,11 @@ void main()
 		   NULL, "\"...Old man Kimiyoshi... didn't get angry.", Line_WaitForInput);
 	PlaySE(4, "s02/06/130600424", 128, 64);
 	OutputLine(NULL, "……そして、にっこり笑って、詩音ちゃんがちゃんと反省してるなら、鬼隠しになんかなるものか、…って。",
-		   NULL, " ......He smiled, then told me that if I was properly sorry about it, there was no way I'd be demoned away...", Line_WaitForInput);
-
-	SetValidityOfInput( FALSE );
-	Wait( 800 );
-	SetValidityOfInput( TRUE );
-
+		   NULL, " ......He smiled, then told me that if I was properly sorry about it, there was no way I'd be demoned away...", Line_ModeSpecific);
 	PlaySE(4, "s02/06/130600425", 128, 64);
+	if (AdvMode) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…本当に",
-		   NULL, " ...He was really...", Line_ContinueAfterTyping);
+		   NULL, "...He was really...", Line_ContinueAfterTyping);
 
 
 	SetValidityOfInput( FALSE );

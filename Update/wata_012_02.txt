@@ -2340,10 +2340,11 @@ void main()
 		   NULL, "...I can't believe you'd figure out everything, down to the phone conversation... just from what was inside the fridge...", Line_WaitForInput);
 	PlaySE(4, "s02/03/130300336", 128, 64);
 	OutputLine(NULL, "………あははははははは。",
-		   NULL, " ......Ahahahahahahaha.", Line_WaitForInput);
+		   NULL, " ......Ahahahahahahaha. ", Line_ModeSpecific);
 	PlaySE(4, "s02/03/130300337", 128, 64);
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…参ったな。",
-		   NULL, " ...You've got me there.", Line_WaitForInput);
+		   NULL, "...You've got me there.", Line_WaitForInput);
 	PlaySE(4, "s02/03/130300338", 128, 64);
 	OutputLine(NULL, "……参った",
 		   NULL, " ...You've got me,", Line_WaitForInput);
@@ -4359,10 +4360,11 @@ void main()
 	PlaySE(4, "s02/03/130300434", 128, 64);
 	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…私が直接関わったものもあるし、間接的に関わったものもある。",
-		   NULL, "...I was directly related to some of them, and indirectly to others.", Line_WaitForInput);
+		   NULL, "...I was directly related to some of them, and indirectly to others. ", Line_ModeSpecific);
 	PlaySE(4, "s02/03/130300435", 128, 64);
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "いくつかは園崎家だけでなく、他の御三家の、公由家や古手家が関わっているものもあるけど、",
-		   NULL, " Some were not the Sonozaki family, but were rather related to the others, the Kimiyoshi family and the Furude family.", Line_ContinueAfterTyping);
+		   NULL, "Some were not the Sonozaki family, but were rather related to the others, the Kimiyoshi family and the Furude family.", Line_ContinueAfterTyping);
 
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );

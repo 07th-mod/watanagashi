@@ -1437,9 +1437,10 @@ void main()
 //　...でも...喉を掻き破って自殺とか...、山中で灯油を浴びせられて焼死とか...＠...これだけ異常な死が並べられると......とても偶然だと決め付けることはできない￥
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…でも…喉を掻き破って自殺とか…、山中で灯油を浴びせられて焼死とか…。",
-		   NULL, "...Instead... he clawed out his own throat... and she burned to death, drowned in oil, in the mountains...", Line_WaitForInput);
+		   NULL, "...Instead... he clawed out his own throat... and she burned to death, drowned in oil, in the mountains... ", Line_ModeSpecific);
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…これだけ異常な死が並べられると……とても偶然だと決め付けることはできない。",
-		   NULL, " ...The two deaths were so out-of-the-ordinary... that I couldn't possibly dismiss it as mere coincidence.", Line_Normal);
+		   NULL, "...The two deaths were so out-of-the-ordinary... that I couldn't possibly dismiss it as mere coincidence.", Line_Normal);
 	ClearMessage();
 
 //　まるで...、祭具殿に忍び込んだことに対し＠見せしめにするような......そんな残酷な意思が働いているとしか思えない＠
@@ -1595,10 +1596,10 @@ void main()
 		   NULL, " ...Before, I said how the villagers could be the ones carrying out Oyashiro-sama's curse.", Line_WaitForInput);
 	PlaySE(4, "s02/06/130600275", 128, 64);
 	OutputLine(NULL, "……つまりそういうことなんです。",
-		   NULL, " ...That's what I mean.", Line_WaitForInput);
+		   NULL, " ...That's what I mean. ", Line_ModeSpecific);
 	PlaySE(4, "s02/06/130600276", 128, 64);
 	OutputLine(NULL, "…この雛見沢では、毎年、綿流しの夜に、オヤシロさまの祟りということにして誰かを殺してもいい土壌が、",
-		   NULL, " ...At some point, a tradition was created here in Hinamizawa...", Line_ContinueAfterTyping);
+		   NULL, "...At some point, a tradition was created here in Hinamizawa...", Line_ContinueAfterTyping);
 
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
