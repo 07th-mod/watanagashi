@@ -4241,6 +4241,7 @@ void main()
 
 
 //　ここで打ち明けなきゃ......!w1000もう時間がないもんな＠......会合が終わった後、村長は帰宅途中で失踪するんだから。＠
+	PlaySE(4, "s02/01/130100927", 128, 64);
 	OutputLine(NULL, "　ここで打ち明けなきゃ……",
 		   NULL, "If you didn't...", Line_ContinueAfterTyping);
 
@@ -4250,8 +4251,9 @@ void main()
 
 	OutputLine(NULL, "もう時間がないもんな。",
 		   NULL, " then there wouldn't have been any time left.", Line_WaitForInput);
-	OutputLine(NULL, "……会合が終わった後、村長は帰宅途中で失踪するんだから。」",
-		   NULL, " ...After the meeting was over, the mayor disappeared on his way home.\"", Line_WaitForInput);
+	PlaySE(4, "s02/01/130100928", 128, 64);
+	OutputLine(NULL, "村長は帰宅途中で失踪するんだから。」",
+		   NULL, " The mayor disappeared on his way home.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
 
 //　...詩音は会合に出たんだよな...＠
