@@ -1212,7 +1212,7 @@ void main()
 		   NULL, " Why a maid outfit of all things!?!?\"", Line_ContinueAfterTyping);
 
 	ShakeScreen( 1, 50, 20, 5, 0, );
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "", Line_Normal);
 
 	ClearMessage();
 	DisableWindow();
@@ -1762,7 +1762,7 @@ void main()
 		   NULL, "'Homework'.", Line_ContinueAfterTyping);
 
 	PlayBGM( 1, "msys12", 128, 0 );
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "", Line_Normal);
 
 	ClearMessage();
 	DisableWindow();
@@ -1970,7 +1970,7 @@ void main()
 		   NULL, "'Sushi'.", Line_ContinueAfterTyping);
 
 	PlayBGM( 1, "msys12", 128, 0 );
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "", Line_Normal);
 
 	ClearMessage();
 
@@ -2078,7 +2078,7 @@ void main()
 	PlaySE( 3, "wa_007", 128, 64 );
 	Wait( 700 );
 
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "", Line_Normal);
 
 	ClearMessage();
 	DisableWindow();
@@ -2802,7 +2802,7 @@ void main()
 
 	PlaySE( 3, "wa_006", 128, 64 );
 	ShakeScreen( 1, 50, 20, 3, 0, );
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "", Line_Normal);
 
 	ClearMessage();
 	DisableWindow();
@@ -3387,7 +3387,7 @@ void main()
 
 	DisableWindow();
 	FadeBustshotWithFiltering( 2, "left", 1, FALSE, 0, 0, 300, TRUE );
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "", Line_Normal);
 
 	ClearMessage();
 

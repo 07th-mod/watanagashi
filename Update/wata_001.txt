@@ -2589,7 +2589,7 @@ void main()
 
 	PlaySE( 3, "wa_007", 128, 64 );
 	Wait( 1000 );
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "", Line_Normal);
 
 	ClearMessage();
 
@@ -2747,7 +2747,7 @@ void main()
 	DisableWindow();
 	DrawSceneWithMask( "white", "c", 0, 0, 300 );
 	DrawScene( "bg_156", 400 );
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "", Line_Normal);
 
 	ClearMessage();
 
@@ -4141,7 +4141,7 @@ void main()
 
 	PlaySE( 3, "wa_007", 128, 64 );
 	ShakeScreen( 0, 50, 20, 3, 0, );
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "", Line_Normal);
 
 	ClearMessage();
 
