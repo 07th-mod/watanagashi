@@ -998,7 +998,7 @@ void main()
 
 //「イチゴ＠「メロン＠「宇治金時＠「イチゴ＠「イチゴ＠
 	PlaySE(4, "s19/02/990200466", 128, 64);
-	if (AdvMode) { OutputLine("<color=#f5e6d3>部活メンバー</color>", NULL, "<color=#f5e6d3>Club Member</color>", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#f5e6d3>部活メンバー</color>", NULL, "<color=#f5e6d3>Club Members</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「イチゴ」",
 		   NULL, "\"Strawberry.\"", Line_WaitForInput);
 	PlaySE(4, "s19/01/hr_kei10840_01", 128, 64);
@@ -1338,7 +1338,7 @@ void main()
 		   NULL, " Why a maid outfit of all things!?!?\"", Line_ContinueAfterTyping);
 
 	ShakeScreen( 1, 50, 20, 5, 0, );
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "", Line_Normal);
 
 	ClearMessage();
 	DisableWindow();
@@ -1808,7 +1808,7 @@ void main()
 
 //「夏祭り＠「夏祭り＠「花火＠「蚊取り線香￥
 	PlaySE(4, "s19/02/990200482", 128, 64);
-	if (AdvMode) { OutputLine("<color=#f5e6d3>部活メンバー</color>", NULL, "<color=#f5e6d3>Club Member</color>", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#f5e6d3>部活メンバー</color>", NULL, "<color=#f5e6d3>Club Members</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「夏祭り」",
 		   NULL, "\"Summer Festival\"", Line_WaitForInput);
 	PlaySE(4, "s19/03/990300567", 128, 64);
@@ -1943,7 +1943,7 @@ void main()
 		   NULL, "'Homework'.", Line_ContinueAfterTyping);
 
 	PlayBGM( 1, "msys12", 128, 0 );
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "", Line_Normal);
 
 	ClearMessage();
 	DisableWindow();
@@ -2174,7 +2174,7 @@ void main()
 		   NULL, "'Sushi'.", Line_ContinueAfterTyping);
 
 	PlayBGM( 1, "msys12", 128, 0 );
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "", Line_Normal);
 
 	ClearMessage();
 
@@ -2291,7 +2291,7 @@ void main()
 	PlaySE( 3, "wa_007", 128, 64 );
 	Wait( 700 );
 
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "", Line_Normal);
 
 	ClearMessage();
 	DisableWindow();
@@ -3077,7 +3077,7 @@ void main()
 
 	PlaySE( 3, "wa_006", 128, 64 );
 	ShakeScreen( 1, 50, 20, 3, 0, );
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "", Line_Normal);
 
 	ClearMessage();
 	DisableWindow();
@@ -3715,7 +3715,7 @@ void main()
 
 	DisableWindow();
 	FadeBustshotWithFiltering( 2, "left", 1, FALSE, 0, 0, 300, TRUE );
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "", Line_Normal);
 
 	ClearMessage();
 

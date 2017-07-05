@@ -1286,7 +1286,7 @@ void main()
 	OutputLine(NULL, "　…実は何だか雰囲気が落ち着かない…。",
 		   NULL, "...It didn't feel relaxing in here at all...", Line_WaitForInput);
 	OutputLine(NULL, "何しろ…店内の熱気が異常なのだ。",
-		   NULL, " Probably because the fervor inside the restaurant was clearly abnormal.", Line_ModeSpecific);
+		   NULL, " Probably because the fervor inside the restaurant was clearly abnormal.", Line_Normal);
 	ClearMessage();
 
 
@@ -3609,7 +3609,7 @@ void main()
 
 	PlaySE( 3, "wa_004", 128, 64 );
 
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "", Line_Normal);
 
 	ClearMessage();
 
@@ -7182,7 +7182,7 @@ void main()
 		   NULL, "\"Ahahaha!", Line_WaitForInput);
 	PlaySE(4, "s19/03/500300187", 128, 64);
 	OutputLine(NULL, "　圭ちゃんには一番似合わないのが出てきちゃったねぇ！」",
-		   NULL, " Kei-chan got the one that fits him the least!\"", Line_WaitForInput);
+		   NULL, " Kei-chan got the one that fits him the least!\"", Line_Normal);
 
 	ClearMessage();
 
