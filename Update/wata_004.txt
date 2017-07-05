@@ -491,7 +491,7 @@ void main()
 //　そう言えば...お袋が夕飯の時、そんな話をしていたような気がする￥
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そう言えば…お袋が夕飯の時、そんな話をしていたような気がする。",
-		   NULL, "Come to think of it, I have a feeling Mom did say something about it during dinner the other day.", Line_ModeSpecific);
+		   NULL, "Come to think of it, I have a feeling Mom did say something about it during dinner the other day.", Line_Normal);
 	ClearMessage();
 
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -500,7 +500,7 @@ void main()
 
 	PlaySE(4, "s19/01/hr_kei15130_02", 128, 64);
 	OutputLine(NULL, "「なるほどな。確か、布団とかどてらの供養だって言ってたよな。…じゃあ、あれか？　演舞か何かで、中に入ってる綿を取り出したりするのか？」",
-		   NULL, " I see, Mom did say that futons, padded cloaks and stuff are made as offerings. ...So, does that mean the cotten stuffing gets pulled out during a dance or something?\"", Line_ModeSpecific);
+		   NULL, " I see, Mom did say that futons, padded cloaks and stuff are made as offerings. ...So, does that mean the cotten stuffing gets pulled out during a dance or something?\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawBustshot( 1, "me_ta_wi_a2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
@@ -1342,7 +1342,7 @@ void main()
 		   NULL, " *CLANK*", Line_ContinueAfterTyping);
 
 	ShakeScreen( 1, 50, 20, 3, 0, );
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "", Line_Normal);
 
 	ClearMessage();
 
