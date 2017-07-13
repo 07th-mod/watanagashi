@@ -3879,24 +3879,17 @@ void main()
 	ClearMessage();
 
 //「ロリ！/
-	PlaySE(4, "s19/01/hr_kei09760", 128, 64);
+	PlaySE(4, "s19/01/hr_kei09770", 128, 64);
 	OutputLine(NULL, "「ロリ！",
 		   NULL, "\"Lolis!", Line_ContinueAfterTyping);
-
 	PlaySE( 3, "wa_010", 128, 64 );
-	SetValidityOfInput( FALSE );
-	Wait( 800 );
-	SetValidityOfInput( TRUE );
 
 //!w800萌え！/
-	PlaySE(4, "s19/01/hr_kei09770", 128, 64);
 	OutputLine(NULL, "萌え！",
 		   NULL, " Moe!", Line_ContinueAfterTyping);
 
 	PlaySE( 3, "wa_014", 128, 64 );
-	SetValidityOfInput( FALSE );
-	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 
 
 //!w800美少女！！/
@@ -3905,9 +3898,7 @@ void main()
 		   NULL, " Pretty girls!!", Line_ContinueAfterTyping);
 
 	PlaySE( 3, "wa_011", 128, 64 );
-	SetValidityOfInput( FALSE );
-	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 
 
 //!w800男の垂涎、/
@@ -3926,9 +3917,7 @@ void main()
 		   NULL, " what men dream about!!", Line_ContinueAfterTyping);
 
 	PlaySE( 3, "wa_029", 128, 64 );
-	SetValidityOfInput( FALSE );
-	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 
 
 //!w800例えるなら永遠にたどり着けないエデンの園ッ！！/
