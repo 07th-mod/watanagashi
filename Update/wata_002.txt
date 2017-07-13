@@ -1325,12 +1325,8 @@ void main()
 	OutputLine(NULL, "「ななッ！！！",
 		   NULL, "\"Wh-Wh—!!!", Line_ContinueAfterTyping);
 
-	SetValidityOfInput( FALSE );
-	Wait( 1000 );
-	SetValidityOfInput( TRUE );
-
-
 	PlaySE( 3, "wa_006", 128, 64 );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 
 //　なぜにメイド服ーーーッ！！！！！」/
 	PlaySE(4, "s19/01/hr_kei10890", 128, 64);
@@ -2265,7 +2261,7 @@ void main()
 		   NULL, "'Dolphin'.", Line_ContinueAfterTyping);
 
 	PlaySE( 3, "wa_005", 128, 64 );
-	Wait( 400 );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 
 //「クジラ」/
 	PlaySE(4, "s19/02/990200489", 128, 64);
@@ -2273,7 +2269,7 @@ void main()
 		   NULL, " 'Whale'.", Line_ContinueAfterTyping);
 
 	PlaySE( 3, "wa_005", 128, 64 );
-	Wait( 400 );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 
 //「水族館」/
 	PlaySE(4, "s19/05/990500117", 128, 64);
@@ -2281,7 +2277,7 @@ void main()
 		   NULL, " 'Aquarium'.", Line_ContinueAfterTyping);
 
 	PlaySE( 3, "wa_006", 128, 64 );
-	Wait( 500 );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 
 //「水族館」/
 	PlaySE(4, "s19/04/990400245", 128, 64);
@@ -2289,8 +2285,6 @@ void main()
 		   NULL, " 'Aquarium'.", Line_ContinueAfterTyping);
 
 	PlaySE( 3, "wa_007", 128, 64 );
-	Wait( 700 );
-
 	OutputLineAll(NULL, "", Line_Normal);
 
 	ClearMessage();
@@ -2841,6 +2835,7 @@ void main()
 
 	PlaySE( 3, "wa_006", 128, 64 );
 	PlayBGM( 1, "msys03", 128, 0 );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 
 	PlaySE(4, "s19/01/hr_kei11180", 128, 64);
 	OutputLine(NULL, "さくらって言ったらあの有名な口紅の商品名『Ｓａｋｕｒａ』だろおおお！",
@@ -4528,6 +4523,7 @@ void main()
 		   NULL, ".... Aah...", Line_ContinueAfterTyping);
 
 	PlaySE( 3, "wa_029", 128, 64 );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 
 //トイレ行ってくる...。￥
 	PlaySE(4, "s19/00/662600079", 128, 64);

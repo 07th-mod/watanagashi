@@ -4121,9 +4121,8 @@ void main()
 	PlaySE(4, "s19/01/hr_kei14470", 128, 64);
 	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「カレーもおにぎりも……同じ米食文化の…",
-		   NULL, "\"Curry and onigiri... are both the results of...", Line_ContinueAfterTyping);
+		   NULL, "\"Curry and onigiri... are both the results of...", Line_WaitForInput);
 
-	Wait( 3000 );
 	PlaySE( 3, "wa_015", 128, 64 );
 	Wait( 200 );
 	PlaySE( 3, "wa_015", 128, 64 );

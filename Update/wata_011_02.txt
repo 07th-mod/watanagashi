@@ -900,7 +900,7 @@ void main()
 	SetSpeedOfMessage( TRUE, 0, );
 
 	OutputLine(NULL, "……………………",
-		   NULL, " ............", Line_ContinueAfterTyping);
+		   NULL, " ............", Line_WaitForInput);
 //!sd
 	SetSpeedOfMessage( FALSE, 0, );
 
@@ -4804,11 +4804,7 @@ void main()
 	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "………実は会合に出…、」",
-		   NULL, " Actually, with the meeting, I...\"", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 2500 );
-	SetValidityOfInput( TRUE );
+		   NULL, " Actually, with the meeting, I...\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //「あの日、詩音が行くと言ったバイトすら、君は欠勤してるんだ＠......もっと端的に言おう＠......君は、...俺と一緒に行った図書館以降、誰にも目撃されていない。＠
@@ -4999,7 +4995,7 @@ void main()
 	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…",
-		   NULL, " ...", Line_ContinueAfterTyping);
+		   NULL, " ...", Line_WaitForInput);
 
 //!s0く!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!w15け!sd
 
