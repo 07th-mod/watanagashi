@@ -26,7 +26,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小宮山</color>", NULL, "<color=#f5e6d3>Komiyama</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/00/442500001", 128);
 	OutputLine(NULL, "「おいおい、今日のうちからへばっててどうすんだよ。",
-		   NULL, "\"Hey! Are you worn out already?", Line_ContinueAfterTyping);
+		   NULL, "\"Hey! Are you worn out already?", Line_Continue);
 	OutputLine(NULL, "本番は明日だぞー？",
 		   NULL, " Tomorrow's the real thing!", Line_WaitForInput);
 	PlayVoice(4, "s20/00/442500002", 128);
@@ -40,7 +40,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/19/443100010", 128);
 	OutputLine(NULL, "「ぅおっす！",
-		   NULL, "\"Got it!", Line_ContinueAfterTyping);
+		   NULL, "\"Got it!", Line_Continue);
 	OutputLine(NULL, "　気合い入れてきまっす！」",
 		   NULL, " I'll give it everything I've got!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -51,7 +51,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小宮山</color>", NULL, "<color=#f5e6d3>Komiyama</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/00/442500003", 128);
 	OutputLine(NULL, "「わっはっは！",
-		   NULL, "\"Wa-ha-ha!", Line_ContinueAfterTyping);
+		   NULL, "\"Wa-ha-ha!", Line_Continue);
 	OutputLine(NULL, "　よぉーし！　若さが一番だ！」",
 		   NULL, " All right, then! Youth is the greatest!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -62,7 +62,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>刑事</color>", NULL, "<color=#f5e6d3>Detective</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/00/keijib44001", 128);
 	OutputLine(NULL, "「みんな、お疲れさん！",
-		   NULL, "\"Good work, everyone!", Line_ContinueAfterTyping);
+		   NULL, "\"Good work, everyone!", Line_Continue);
 	OutputLine(NULL, "　綿流しはいよいよ明日だからなぁ。",
 		   NULL, " Tomorrow is Watanagashi at last.", Line_WaitForInput);
 	PlayVoice(4, "s20/00/keijib44002", 128);
@@ -106,7 +106,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>刑事</color>", NULL, "<color=#f5e6d3>Detective</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/00/keijib44003", 128);
 	OutputLine(NULL, "「そりゃあ決まってるだろ！",
-		   NULL, "\"You sure as hell know why!", Line_ContinueAfterTyping);
+		   NULL, "\"You sure as hell know why!", Line_Continue);
 	OutputLine(NULL, "　全部終わった後のビールがうまいからだよ。」",
 		   NULL, " Because the beer after everything's over is the best damn beer you'll ever have.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -163,7 +163,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/11/440700110", 128);
 	OutputLine(NULL, "「はいはい、皆さん、お疲れさまですねぇ。",
-		   NULL, "\"Hello, everyone. Excellent work out there.", Line_ContinueAfterTyping);
+		   NULL, "\"Hello, everyone. Excellent work out there.", Line_Continue);
 	OutputLine(NULL, "あぁ、そのままで結構ですよ。」",
 		   NULL, " Ah, you can be at ease.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -171,9 +171,9 @@ void main()
 
 
 //「「「お疲れさまです！！」」＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>刑事たち</color>", NULL, "<color=#f5e6d3>Detectives</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/00/442500005", 128);
 	PlayVoice(5, "s20/00/keijib44004", 128);
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>刑事たち</color>", NULL, "<color=#f5e6d3>Detectives</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(6, "s20/19/443100012", 128);
 	OutputLine(NULL, "「「「お疲れさまです！！」」」",
 		   NULL, "\"\"\"Thank you, sir!!\"\"\"", GetGlobalFlag(GLinemodeSp));
@@ -247,7 +247,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/11/440700112", 128);
 	OutputLine(NULL, "「昨年発生したように、連続事件を期待する愉快犯の出現が濃厚に危惧されます。",
-		   NULL, "\"We're on heavy alert for any thrill-seeking criminals expecting another incident like last year.", Line_ContinueAfterTyping);
+		   NULL, "\"We're on heavy alert for any thrill-seeking criminals expecting another incident like last year.", Line_Continue);
 	Wait ( 6000 );
 	OutputLine(NULL, "各員、一層気を引き締め、犯罪の抑止のために任務を全うして下さい。」",
 		   NULL, " I need all of you to focus your energy as much as possible in your mission to prevent any crimes from happening.\"", GetGlobalFlag(GLinemodeSp));
@@ -255,9 +255,9 @@ void main()
 
 
 //「「「ぅおっす！」」￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>刑事たち</color>", NULL, "<color=#f5e6d3>Detectives</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/00/442500006", 128);
 	PlayVoice(5, "s20/00/keijib44005", 128);
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>刑事たち</color>", NULL, "<color=#f5e6d3>Detectives</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(6, "s20/19/443100013", 128);
 	OutputLine(NULL, "「「「ぅおっす！」」」",
 		   NULL, "\"\"\"Yes, sir!\"\"\"", Line_Normal);
@@ -270,7 +270,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(6, "s20/11/440700113", 128);
 	OutputLine(NULL, "「何も起こらなければ一番いいんですがねぇ。",
-		   NULL, "\"Of course, it would be best if nothing happened.", Line_ContinueAfterTyping);
+		   NULL, "\"Of course, it would be best if nothing happened.", Line_Continue);
 	OutputLine(NULL, "…ですが皆さん。",
 		   NULL, " ...However, everyone.", Line_WaitForInput);
 	PlayVoice(6, "s20/11/440700114", 128);
@@ -279,7 +279,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(6, "s20/11/440700115", 128);
 	OutputLine(NULL, "抑止が一番ですが、まぁ多分無理でしょ。",
-		   NULL, "Prevention is number one, but it probably won't be enough.", Line_ContinueAfterTyping);
+		   NULL, "Prevention is number one, but it probably won't be enough.", Line_Continue);
 	OutputLine(NULL, "今年も誰かが死んで誰かが消えます。",
 		   NULL, " This year, too, someone will die, and someone will disappear.", Line_WaitForInput);
 	PlayVoice(4, "s20/11/440700116", 128);
@@ -303,7 +303,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>高杉</color>", NULL, "<color=#f5e6d3>Takasugi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(6, "s20/00/442700018", 128);
 	OutputLine(NULL, "「大石さん、…そんなんじゃ困るよ！",
-		   NULL, "\"Ooishi-san... that won't do!", Line_ContinueAfterTyping);
+		   NULL, "\"Ooishi-san... that won't do!", Line_Continue);
 	OutputLine(NULL, "　もっと真剣にやってくれなきゃ…、」",
 		   NULL, " We need to be more serious about this...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -316,13 +316,13 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/11/440700118", 128);
 	OutputLine(NULL, "「肝心なのは祭りの夜を越すことじゃないんです。",
-		   NULL, "\"The important part isn't to get past the night of the festival.", Line_ContinueAfterTyping);
+		   NULL, "\"The important part isn't to get past the night of the festival.", Line_Continue);
 	OutputLine(NULL, "…明日の夜、起こった何かに迅速かつ徹底的にどこまでも食いついていくこと。",
 		   NULL, " ...It's to be able to quickly, swiftly, and aggressively pursue whatever does happen tomorrow night. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/11/440700119", 128);
 	OutputLine(NULL, "気合い入れてくよ？！",
-		   NULL, "I won't tolerate anything less than your best!!", Line_ContinueAfterTyping);
+		   NULL, "I won't tolerate anything less than your best!!", Line_Continue);
 	OutputLine(NULL, "　カブトの緒引き締めてけッ！！",
 		   NULL, " Clench those cheeks!!", Line_WaitForInput);
 	PlayVoice(4, "s20/11/440700120", 128);
@@ -333,9 +333,9 @@ void main()
 
 
 //「「「うおぉぉおおぉおぉすッッ！！！」」￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>刑事たち</color>", NULL, "<color=#f5e6d3>Detectives</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/00/442500007", 128);
 	PlayVoice(5, "s20/00/keijib44006", 128);
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>刑事たち</color>", NULL, "<color=#f5e6d3>Detectives</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(6, "s20/19/443100014", 128);
 	OutputLine(NULL, "「「「うおぉぉおおぉおぉすッッ！！！」」」",
 		   NULL, "\"\"\"Yeaaaaahhh!!!\"\"\"", Line_Normal);

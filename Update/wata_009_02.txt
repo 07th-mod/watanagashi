@@ -514,11 +514,11 @@ void main()
 		   NULL, " .........I mean, if you already know, then it's not something that bears repeating.", Line_WaitForInput);
 	PlayVoice(4, "s02/06/130600212", 128);
 	OutputLine(NULL, "……その、",
-		   NULL, " ...Umm...", Line_ContinueAfterTyping);
+		   NULL, " ...Umm...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……知ってますか？」",
 		   NULL, " ...Do you already know?\"", GetGlobalFlag(GLinemodeSp));
@@ -553,11 +553,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s02/06/130600213", 128);
 	OutputLine(NULL, "「…………ってことは、",
-		   NULL, "\"......So that means...", Line_ContinueAfterTyping);
+		   NULL, "\"......So that means...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…知らないみたいですね。」",
 		   NULL, " ...you don't know.\"", GetGlobalFlag(GLinemodeSp));
@@ -581,11 +581,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s02/06/130600214", 128);
 	OutputLine(NULL, "「実は、",
-		   NULL, "\"Actually,", Line_ContinueAfterTyping);
+		   NULL, "\"Actually,", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…昨日の綿流しのお祭りの晩なんですけど。」",
 		   NULL, " ...It's about last night, during the Watanagashi Festival.\"", GetGlobalFlag(GLinemodeSp));
@@ -859,7 +859,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s02/06/130600233", 128);
 	OutputLine(NULL, "「昨夜、鷹野さんと富竹さんが死んだんだそうです。",
-		   NULL, "\"Apparently, last night, Takano-san and Tomitake-san died.", Line_ContinueAfterTyping);
+		   NULL, "\"Apparently, last night, Takano-san and Tomitake-san died.", Line_Continue);
 
 	PlaySE( 3, "wa_027", 128, 64 );
 	OutputLineAll(NULL, "", Line_WaitForInput);
@@ -1307,11 +1307,11 @@ void main()
 		   NULL, "\"...I don't think anyone's been confirmed missing yet.", Line_WaitForInput);
 	PlayVoice(4, "s02/06/130600263", 128);
 	OutputLine(NULL, "…多分、２人が失踪するのは、",
-		   NULL, " ...I think that those two people,", Line_ContinueAfterTyping);
+		   NULL, " ...I think that those two people,", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…これからじゃないかと思うんです…。」",
 		   NULL, " ...have yet to disappear...\"", GetGlobalFlag(GLinemodeSp));
@@ -1327,11 +1327,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s02/01/130100389", 128);
 	OutputLine(NULL, "「これから…２人が、",
-		   NULL, "\"Two people... have yet to,", Line_ContinueAfterTyping);
+		   NULL, "\"Two people... have yet to,", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……失踪する……？」",
 		   NULL, " disappear......?\"", GetGlobalFlag(GLinemodeSp));
@@ -1591,11 +1591,11 @@ void main()
 		   NULL, " ...That's what I mean. ", GetGlobalFlag(GLinemodeSp));
 	PlayVoice(4, "s02/06/130600276", 128);
 	OutputLine(NULL, "…この雛見沢では、毎年、綿流しの夜に、オヤシロさまの祟りということにして誰かを殺してもいい土壌が、",
-		   NULL, "...At some point, a tradition was created here in Hinamizawa...", Line_ContinueAfterTyping);
+		   NULL, "...At some point, a tradition was created here in Hinamizawa...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……いつの間にか作り上げられているんです。」",
 		   NULL, " where every year, you're allowed to kill someone on the night of Watanagashi under the guise of it being Oyashiro-sama's curse.\"", Line_Normal);
@@ -1777,11 +1777,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s02/06/130600284", 128);
 	OutputLine(NULL, "…それでも毎年、必ず誰かが死んで、誰かが消えていく！」",
-		   NULL, "...Yet, every year, someone always dies, and someone always disappears!\"", Line_ContinueAfterTyping);
+		   NULL, "...Yet, every year, someone always dies, and someone always disappears!\"", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1500 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 

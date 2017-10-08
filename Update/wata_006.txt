@@ -118,18 +118,18 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s19/02/500200326", 128);
 	OutputLine(NULL, "「えーっと",
-		   NULL, "\"Ummm...", Line_ContinueAfterTyping);
+		   NULL, "\"Ummm...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……その、",
-		   NULL, " ...That is...", Line_ContinueAfterTyping);
+		   NULL, " ...That is...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "………災難だったみたいだね。",
 		   NULL, " ...It looks like it was a disaster.", Line_WaitForInput);
@@ -275,12 +275,12 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s19/01/hr_kei21090", 128);
 	OutputLine(NULL, "「……うーん",
-		   NULL, "\"...Okay...", Line_ContinueAfterTyping);
+		   NULL, "\"...Okay...", Line_Continue);
 //!s500
 	SetSpeedOfMessage( TRUE, 0, );
 
 	OutputLine(NULL, "……",
-		   NULL, " ...", Line_ContinueAfterTyping);
+		   NULL, " ...", Line_Continue);
 //!sd
 	SetSpeedOfMessage( FALSE, 0, );
 
@@ -398,11 +398,11 @@ void main()
 		   NULL, " I'm sorry, Keiichi-kun, but just for today, can you go home by yourself?", Line_WaitForInput);
 	PlayVoice(4, "s19/02/500200345", 128);
 	OutputLine(NULL, "明日からは元通りだから今日だけ。",
-		   NULL, " It'll all be back to normal by tomorrow, so just for today.", Line_ContinueAfterTyping);
+		   NULL, " It'll all be back to normal by tomorrow, so just for today.", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…ね。」",
 		   NULL, " ...Okay?\"", GetGlobalFlag(GLinemodeSp));

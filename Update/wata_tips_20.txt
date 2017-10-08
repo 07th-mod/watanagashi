@@ -20,7 +20,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/19/443100030", 128);
 	OutputLine(NULL, "「はい。郵便局員も目撃してないそうです。",
-		   NULL, "\"Yes. The postal worker hasn't seen anything either.", Line_ContinueAfterTyping);
+		   NULL, "\"Yes. The postal worker hasn't seen anything either.", Line_Continue);
 	OutputLine(NULL, "…園崎本家は、郵便受けにハンコが吊るしてあるそうで、書留も宅急便も勝手にハンコを押して投函していい事になってるんだそうっす。」",
 		   NULL, " ...The Sonozaki main house has their seal hanging from their mailbox so that anyone can stamp their mail or parcels with it and drop it in.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -30,7 +30,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/11/440700154", 128);
 	OutputLine(NULL, "「なっはっは、そりゃ無用心ですねぇ。",
-		   NULL, "\"Na-ha-ha, that's rather careless of them.", Line_ContinueAfterTyping);
+		   NULL, "\"Na-ha-ha, that's rather careless of them.", Line_Continue);
 	OutputLine(NULL, "…ってことは、最後の目撃はいつになるんです？」",
 		   NULL, " ...So when was she last seen?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -40,7 +40,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/19/443100031", 128);
 	OutputLine(NULL, "「綿流しの開会式でした挨拶が最後です。",
-		   NULL, "\"She was last seen at the Watanagashi opening ceremony greetings.", Line_ContinueAfterTyping);
+		   NULL, "\"She was last seen at the Watanagashi opening ceremony greetings.", Line_Continue);
 	OutputLine(NULL, "その後すぐに帰宅したらしいっすから。」",
 		   NULL, " She apparently returned home right after that.\"", Line_Normal);
 	ClearMessage();
@@ -49,7 +49,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/11/440700155", 128);
 	OutputLine(NULL, "「高齢ですからねぇ。",
-		   NULL, "\"Well, she is pretty old.", Line_ContinueAfterTyping);
+		   NULL, "\"Well, she is pretty old.", Line_Continue);
 	OutputLine(NULL, "…話じゃ、週に何回かお稽古事で外出してるそうじゃないですか。",
 		   NULL, " ...From what I've heard, she goes out a few times a week to take lessons, right?", Line_WaitForInput);
 	PlayVoice(4, "s20/11/440700156", 128);
@@ -70,7 +70,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/11/440700157", 128);
 	OutputLine(NULL, "「欠席の電話とかは？",
-		   NULL, "\"Any calls to say she wasn't going to be there?", Line_ContinueAfterTyping);
+		   NULL, "\"Any calls to say she wasn't going to be there?", Line_Continue);
 	OutputLine(NULL, "　それを誰かが確認したとかは？」",
 		   NULL, " Has anyone confirmed it?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -80,7 +80,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小宮山</color>", NULL, "<color=#f5e6d3>Komiyama</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/00/442500009", 128);
 	OutputLine(NULL, "「いえ、誰も。",
-		   NULL, "\"No, nobody.", Line_ContinueAfterTyping);
+		   NULL, "\"No, nobody.", Line_Continue);
 	OutputLine(NULL, "ただ、たまに休むことがあったらしいので誰も不審には思わなかったようです。」",
 		   NULL, " She apparently takes days off once in a while, though, so no one thought it was strange.\"", Line_Normal);
 	ClearMessage();
@@ -89,7 +89,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/11/440700158", 128);
 	OutputLine(NULL, "「明日さ、１０時くらいになったら市役所のふりして電話してみましょうかね。",
-		   NULL, "\"Tomorrow, why don't we pretend we're the town hall and call around ten o'clock?", Line_ContinueAfterTyping);
+		   NULL, "\"Tomorrow, why don't we pretend we're the town hall and call around ten o'clock?", Line_Continue);
 	OutputLine(NULL, "在宅を確認してみて下さい。」",
 		   NULL, " Please figure out whether she's at home.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -170,7 +170,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/11/440700159", 128);
 	OutputLine(NULL, "「本当に寝込んでるのかなぁ。",
-		   NULL, "\"I wonder if she's really sleeping.", Line_ContinueAfterTyping);
+		   NULL, "\"I wonder if she's really sleeping.", Line_Continue);
 	OutputLine(NULL, "顔と脈を見てみたいですねぇ…。」",
 		   NULL, " I'd like to take a look at her face—and her pulse...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -193,7 +193,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/19/443100035", 128);
 	OutputLine(NULL, "「大石さん、…園崎本家と古手神社の捜査令状。",
-		   NULL, "\"Ooishi-san... About the search warrants for the Sonozaki main house and the Furude shrine.", Line_ContinueAfterTyping);
+		   NULL, "\"Ooishi-san... About the search warrants for the Sonozaki main house and the Furude shrine.", Line_Continue);
 	OutputLine(NULL, "申請、通ると思います？」",
 		   NULL, " Do you think we'll get them?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }

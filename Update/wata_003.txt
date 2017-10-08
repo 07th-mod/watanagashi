@@ -480,11 +480,11 @@ void main()
 		   NULL, " ...I'll tell you what Kei-chan is thinking right now.", Line_WaitForInput);
 	PlayVoice(4, "s19/03/500300012", 128);
 	OutputLine(NULL, "……魅音はきっと料理が下手に違いない。",
-		   NULL, " ...'Mion is definitely bad at cooking.'", Line_ContinueAfterTyping);
+		   NULL, " ...'Mion is definitely bad at cooking.'", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…でしょ〜？」",
 		   NULL, " ...Am I right~?\"", GetGlobalFlag(GLinemodeSp));
@@ -669,11 +669,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s19/02/500200011", 128);
 	OutputLine(NULL, "「う〜ん、",
-		   NULL, "\"Hmmm,", Line_ContinueAfterTyping);
+		   NULL, "\"Hmmm,", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 900 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 
 	OutputLine(NULL, "ひょっとすると……沙都子ちゃんは何もお手伝いをしないのが、一番のお手伝いなのかもね☆」",
@@ -1235,11 +1235,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a17d6b>富田</color>", NULL, "<color=#a17d6b>Tomita</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s19/24/502400003", 128);
 	OutputLine(NULL, "「ま、前原さん、",
-		   NULL, "\"Ma-Maebara-san,", Line_ContinueAfterTyping);
+		   NULL, "\"Ma-Maebara-san,", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 
 	OutputLine(NULL, "…それ、ほとんど恐喝です。",
@@ -1261,11 +1261,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s19/01/hr_kei13600", 128);
 	OutputLine(NULL, "「む、たくましいヤツらだな！",
-		   NULL, "\"Hmph, quite bold of you guys!", Line_ContinueAfterTyping);
+		   NULL, "\"Hmph, quite bold of you guys!", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…まぁ当然だ。",
 		   NULL, " ...Well, that's to be expected.", Line_WaitForInput);
@@ -1278,7 +1278,7 @@ void main()
 //俺が勝てたら、沙都子＆梨花ちゃんグループのカレーを食わせてやる＠これならどうだ？＠
 	PlayVoice(4, "s19/01/hr_kei13620", 128);
 	OutputLine(NULL, "俺が勝てたら、沙都子＆梨花ちゃんグループのカレーを食わせてやる。",
-		   NULL, " If I win, I'll let you eat the curry that Satoko and Rika-chan's group makes.", Line_ContinueAfterTyping);
+		   NULL, " If I win, I'll let you eat the curry that Satoko and Rika-chan's group makes.", Line_Continue);
 	OutputLine(NULL, "これならどうだ？」",
 		   NULL, " How about that?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1288,18 +1288,18 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a17d6b>富田</color>", NULL, "<color=#a17d6b>Tomita</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s19/24/502400005", 128);
 	OutputLine(NULL, "「え、",
-		   NULL, "\"Eh,", Line_ContinueAfterTyping);
+		   NULL, "\"Eh,", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 700 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…あ、",
-		   NULL, " ...Ah.", Line_ContinueAfterTyping);
+		   NULL, " ...Ah.", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 700 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……ど、どうしようかな……。」",
 		   NULL, " ...I-I don't know about that...\"", GetGlobalFlag(GLinemodeSp));
@@ -1818,8 +1818,8 @@ void main()
 
 
 //「「お待ち申し上げておりまッす！！」￥
-	PlayVoice(4, "s19/24/502400009", 128);
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a17d6b>富田</color>＆<color=#7a7e7d>岡村</color>", NULL, "<color=#a17d6b>Tomita</color> & <color=#7a7e7d>Okamura</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s19/24/502400009", 128);
 	PlayVoice(5, "s19/25/502500008", 128);
 	OutputLine(NULL, "「「お待ち申し上げておりまッす！！」」",
 		   NULL, "\"\"We shall be eagerly awaiting your victory!!\"\"", Line_Normal);
@@ -3298,12 +3298,12 @@ void main()
 
 	PlayVoice(4, "s19/01/hr_kei14110", 128);
 	OutputLine(NULL, "…………むむむ……",
-		   NULL, " ......Hmmmm...", Line_ContinueAfterTyping);
+		   NULL, " ......Hmmmm...", Line_Continue);
 //!s0
 	SetSpeedOfMessage( TRUE, 0, );
 
 	OutputLine(NULL, "かぁああぁあぁあッ！！！！」",
-		   NULL, " AaaaaAAaaaaAah!!!!\"", Line_ContinueAfterTyping);
+		   NULL, " AaaaaAAaaaaAah!!!!\"", Line_Continue);
 //!sd
 	SetSpeedOfMessage( FALSE, 0, );
 
@@ -3316,9 +3316,9 @@ void main()
 	DrawScene( "white", 10 );
 	PlaySE( 3, "wa_007", 128, 64 );
 	DrawBustshot( 5, "furiker_b", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 400, TRUE );
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 300 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	DrawScene( "black", 400 );
 ////setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,639,479
 
@@ -3359,8 +3359,8 @@ void main()
 
 
 //「「うぉっす！　了解です！！」＠
-	PlayVoice(5, "s19/24/502400011", 128);
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a17d6b>富田</color>＆<color=#7a7e7d>岡村</color>", NULL, "<color=#a17d6b>Tomita</color> & <color=#7a7e7d>Okamura</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(5, "s19/24/502400011", 128);
 	PlayVoice(6, "s19/25/502500011", 128);
 	OutputLine(NULL, "「「うぉっす！　了解です！！」」",
 		   NULL, "\"\"Okay! Gotcha!!\"\"", GetGlobalFlag(GLinemodeSp));
@@ -3448,12 +3448,12 @@ void main()
 		   NULL, "\"Hearing you say that is very reassuring!!!", Line_WaitForInput);
 	PlayVoice(4, "s19/01/hr_kei14190", 128);
 	OutputLine(NULL, "　じゃあレナ！",
-		   NULL, " Well then, Rena!", Line_ContinueAfterTyping);
+		   NULL, " Well then, Rena!", Line_Continue);
 //s300
 	SetSpeedOfMessage( TRUE, 0, );
 
 	OutputLine(NULL, "……",
-		   NULL, " ......", Line_ContinueAfterTyping);
+		   NULL, " ......", Line_Continue);
 //!sd
 	SetSpeedOfMessage( FALSE, 0, );
 
@@ -3530,7 +3530,7 @@ void main()
 //　メシ抜きだっぁあぁああぁああッ！！！」/
 	PlayVoice(4, "s19/01/hr_kei14250", 128);
 	OutputLine(NULL, "　メシ抜きだっぁあぁああぁああッ！！！」",
-		   NULL, " Nothing for you to eaaaaAAAaat!!!\"", Line_ContinueAfterTyping);
+		   NULL, " Nothing for you to eaaaaAAAaat!!!\"", Line_Continue);
 
 	ShakeScreen( 1, 50, 20, 4, 0, );
 
@@ -3697,7 +3697,7 @@ void main()
 		   NULL, " ...I'll listen to your complaints after that!", Line_WaitForInput);
 	PlayVoice(4, "s19/01/hr_kei14320", 128);
 	OutputLine(NULL, "　…これが…俺の料理だぁああぁあぁああッ！！！！」",
-		   NULL, " ...This is... My cookiiiIIiiiiiing!!!!\"", Line_ContinueAfterTyping);
+		   NULL, " ...This is... My cookiiiIIiiiiiing!!!!\"", Line_Continue);
 
 	PlaySE( 3, "wa_007", 128, 64 );
 	ShakeScreen( 1, 50, 20, 3, 0, );
@@ -4074,12 +4074,12 @@ void main()
 		   NULL, "\"It's actually very simple.", Line_WaitForInput);
 	PlayVoice(4, "s19/01/hr_kei14460", 128);
 	OutputLine(NULL, "…カレーもおにぎりも、",
-		   NULL, " ...Both curry and onigiri...", Line_ContinueAfterTyping);
+		   NULL, " ...Both curry and onigiri...", Line_Continue);
 // !s0
 
 
 	OutputLine(NULL, "…お米をおいしく食べるための知恵なんですッ！！！！」",
-		   NULL, " are things made to let you enjoy eating rice!!!!\"", Line_ContinueAfterTyping);
+		   NULL, " are things made to let you enjoy eating rice!!!!\"", Line_Continue);
 //sd<
 
 	PlaySE( 3, "wa_006", 128, 64 );
@@ -4124,7 +4124,7 @@ void main()
 //結晶なのですッ！！！！！」/
 	PlayVoice(4, "s19/01/hr_kei14480", 128);
 	OutputLine(NULL, "結晶なのですッ！！！！！」",
-		   NULL, " Rice Culture!!!!!\"", Line_ContinueAfterTyping);
+		   NULL, " Rice Culture!!!!!\"", Line_Continue);
 	DisableWindow();
 	DrawScene( "white", 10 );
 	DrawBustshot( 5, "furiker_b", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 50, TRUE );
@@ -4351,8 +4351,8 @@ void main()
 
 
 //「「ま、前原さん！！　やったぁあぁあぁあああッ！！！」￥
-	PlayVoice(4, "s19/24/502400013", 128);
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a17d6b>富田</color>＆<color=#7a7e7d>岡村</color>", NULL, "<color=#a17d6b>Tomita</color> & <color=#7a7e7d>Okamura</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s19/24/502400013", 128);
 	PlayVoice(5, "s19/25/502500012", 128);
 	OutputLine(NULL, "「「ま、前原さん！！　やったぁあぁあぁあああッ！！！」」",
 		   NULL, "\"\"Ma-Maebara-san!! We did iiiiiIIIIiiiiiiIIIiiit!!!\"\"", Line_Normal);
@@ -4574,11 +4574,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Chie</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s19/22/501400047", 128);
 	OutputLine(NULL, "「前原くん、さっきはああいう場だったので満点ということにしましたが……、",
-		   NULL, "\"Maebara-kun, because of the circumstances, I had to give you a perfect score, but...", Line_ContinueAfterTyping);
+		   NULL, "\"Maebara-kun, because of the circumstances, I had to give you a perfect score, but...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "わかっていますね？」",
 		   NULL, " You understand, right?\"", GetGlobalFlag(GLinemodeSp));
@@ -4646,184 +4646,184 @@ void main()
 
 	PlayVoice(4, "s19/22/501400051", 128);
 	OutputLine(NULL, "カ",
-		   NULL, "Curry", Line_ContinueAfterTyping);
+		   NULL, "Curry", Line_Continue);
 
 	OutputLine(NULL, "レ",
-		   NULL, " Was", Line_ContinueAfterTyping);
+		   NULL, " Was", Line_Continue);
 
 	OutputLine(NULL, "ー",
-		   NULL, " Created", Line_ContinueAfterTyping);
+		   NULL, " Created", Line_Continue);
 
 	OutputLine(NULL, "は",
-		   NULL, " In", Line_ContinueAfterTyping);
+		   NULL, " In", Line_Continue);
 
 	OutputLine(NULL, "四",
-		   NULL, " Ancient", Line_ContinueAfterTyping);
+		   NULL, " Ancient", Line_Continue);
 
 	OutputLine(NULL, "大",
-		   NULL, " India", Line_ContinueAfterTyping);
+		   NULL, " India", Line_Continue);
 
 	OutputLine(NULL, "河",
-		   NULL, " One", Line_ContinueAfterTyping);
+		   NULL, " One", Line_Continue);
 
 	OutputLine(NULL, "川",
-		   NULL, " Of", Line_ContinueAfterTyping);
+		   NULL, " Of", Line_Continue);
 
 	OutputLine(NULL, "文",
-		   NULL, " The", Line_ContinueAfterTyping);
+		   NULL, " The", Line_Continue);
 
 	OutputLine(NULL, "明",
-		   NULL, " Four", Line_ContinueAfterTyping);
+		   NULL, " Four", Line_Continue);
 
 	OutputLine(NULL, "に",
-		   NULL, " Great", Line_ContinueAfterTyping);
+		   NULL, " Great", Line_Continue);
 
 	OutputLine(NULL, "匹",
-		   NULL, " River", Line_ContinueAfterTyping);
+		   NULL, " River", Line_Continue);
 
 	OutputLine(NULL, "敵",
-		   NULL, " Valley", Line_ContinueAfterTyping);
+		   NULL, " Valley", Line_Continue);
 
 	OutputLine(NULL, "す",
-		   NULL, " Civilizations", Line_ContinueAfterTyping);
+		   NULL, " Civilizations", Line_Continue);
 
 	OutputLine(NULL, "る",
-		   NULL, " And", Line_ContinueAfterTyping);
+		   NULL, " And", Line_Continue);
 
 	OutputLine(NULL, "第",
-		   NULL, " Was", Line_ContinueAfterTyping);
+		   NULL, " Was", Line_Continue);
 
 	OutputLine(NULL, "五",
-		   NULL, " Raved", Line_ContinueAfterTyping);
+		   NULL, " Raved", Line_Continue);
 
 	OutputLine(NULL, "の",
-		   NULL, " About", Line_ContinueAfterTyping);
+		   NULL, " About", Line_Continue);
 
 	OutputLine(NULL, "文",
-		   NULL, " During", Line_ContinueAfterTyping);
+		   NULL, " During", Line_Continue);
 
 	OutputLine(NULL, "明",
-		   NULL, " The", Line_ContinueAfterTyping);
+		   NULL, " The", Line_Continue);
 
 	OutputLine(NULL, "と",
-		   NULL, " Reign", Line_ContinueAfterTyping);
+		   NULL, " Reign", Line_Continue);
 
 	OutputLine(NULL, "し",
-		   NULL, " Of", Line_ContinueAfterTyping);
+		   NULL, " Of", Line_Continue);
 
 	OutputLine(NULL, "て",
-		   NULL, " King", Line_ContinueAfterTyping);
+		   NULL, " King", Line_Continue);
 
 	OutputLine(NULL, "古",
-		   NULL, " Ashoka", Line_ContinueAfterTyping);
+		   NULL, " Ashoka", Line_Continue);
 
 	OutputLine(NULL, "代",
-		   NULL, " In", Line_ContinueAfterTyping);
+		   NULL, " In", Line_Continue);
 
 	OutputLine(NULL, "イ",
-		   NULL, " Kapilavastu", Line_ContinueAfterTyping);
+		   NULL, " Kapilavastu", Line_Continue);
 
 	OutputLine(NULL, "ン",
-		   NULL, " For", Line_ContinueAfterTyping);
+		   NULL, " For", Line_Continue);
 
 	OutputLine(NULL, "ド",
-		   NULL, " The", Line_ContinueAfterTyping);
+		   NULL, " The", Line_Continue);
 
 	OutputLine(NULL, "に",
-		   NULL, " Birth", Line_ContinueAfterTyping);
+		   NULL, " Birth", Line_Continue);
 
 	OutputLine(NULL, "生",
-		   NULL, " Of", Line_ContinueAfterTyping);
+		   NULL, " Of", Line_Continue);
 
 	OutputLine(NULL, "ま",
-		   NULL, " The", Line_ContinueAfterTyping);
+		   NULL, " The", Line_Continue);
 
 	OutputLine(NULL, "れ",
-		   NULL, " Shakya", Line_ContinueAfterTyping);
+		   NULL, " Shakya", Line_Continue);
 
 	OutputLine(NULL, "、",
-		   NULL, " At", Line_ContinueAfterTyping);
+		   NULL, " At", Line_Continue);
 
 	OutputLine(NULL, "ア",
-		   NULL, " The", Line_ContinueAfterTyping);
+		   NULL, " The", Line_Continue);
 
 	OutputLine(NULL, "シ",
-		   NULL, " International", Line_ContinueAfterTyping);
+		   NULL, " International", Line_Continue);
 
 	OutputLine(NULL, "ョ",
-		   NULL, " Food", Line_ContinueAfterTyping);
+		   NULL, " Food", Line_Continue);
 
 	OutputLine(NULL, "カ",
-		   NULL, " Expo", Line_ContinueAfterTyping);
+		   NULL, " Expo", Line_Continue);
 
 	OutputLine(NULL, "王",
-		   NULL, " Michelin", Line_ContinueAfterTyping);
+		   NULL, " Michelin", Line_Continue);
 
 	OutputLine(NULL, "の",
-		   NULL, " Twirly", Line_ContinueAfterTyping);
+		   NULL, " Twirly", Line_Continue);
 
 	OutputLine(NULL, "時",
-		   NULL, " Twirly", Line_ContinueAfterTyping);
+		   NULL, " Twirly", Line_Continue);
 
 	OutputLine(NULL, "代",
-		   NULL, " Even", Line_ContinueAfterTyping);
+		   NULL, " Even", Line_Continue);
 
 	OutputLine(NULL, "に",
-		   NULL, " The", Line_ContinueAfterTyping);
+		   NULL, " The", Line_Continue);
 
 	OutputLine(NULL, "カ",
-		   NULL, " Eiffel", Line_ContinueAfterTyping);
+		   NULL, " Eiffel", Line_Continue);
 
 	OutputLine(NULL, "ピ",
-		   NULL, " Tower", Line_ContinueAfterTyping);
+		   NULL, " Tower", Line_Continue);
 
 	OutputLine(NULL, "ラ",
-		   NULL, " Was", Line_ContinueAfterTyping);
+		   NULL, " Was", Line_Continue);
 
 	OutputLine(NULL, "城",
-		   NULL, " Pickled", Line_ContinueAfterTyping);
+		   NULL, " Pickled", Line_Continue);
 
 	OutputLine(NULL, "で",
-		   NULL, " In", Line_ContinueAfterTyping);
+		   NULL, " In", Line_Continue);
 
 	OutputLine(NULL, "シ",
-		   NULL, " Simmering", Line_ContinueAfterTyping);
+		   NULL, " Simmering", Line_Continue);
 
 	OutputLine(NULL, "ャ",
-		   NULL, " Curry", Line_ContinueAfterTyping);
+		   NULL, " Curry", Line_Continue);
 
 	OutputLine(NULL, "カ",
-		   NULL, " Turmeric", Line_ContinueAfterTyping);
+		   NULL, " Turmeric", Line_Continue);
 
 	OutputLine(NULL, "の",
-		   NULL, " Whether", Line_ContinueAfterTyping);
+		   NULL, " Whether", Line_Continue);
 
 	OutputLine(NULL, "生",
-		   NULL, " You", Line_ContinueAfterTyping);
+		   NULL, " You", Line_Continue);
 
 	OutputLine(NULL, "誕",
-		   NULL, " Are", Line_ContinueAfterTyping);
+		   NULL, " Are", Line_Continue);
 
 	OutputLine(NULL, "に",
-		   NULL, " Asleep", Line_ContinueAfterTyping);
+		   NULL, " Asleep", Line_Continue);
 
 	OutputLine(NULL, "万",
-		   NULL, " Or", Line_ContinueAfterTyping);
+		   NULL, " Or", Line_Continue);
 
 	OutputLine(NULL, "国",
-		   NULL, " Awake", Line_ContinueAfterTyping);
+		   NULL, " Awake", Line_Continue);
 
 	OutputLine(NULL, "食",
-		   NULL, " Curry", Line_ContinueAfterTyping);
+		   NULL, " Curry", Line_Continue);
 
 	OutputLine(NULL, "文",
-		   NULL, " Curry", Line_ContinueAfterTyping);
+		   NULL, " Curry", Line_Continue);
 
 	OutputLine(NULL, "化",
-		   NULL, " Curry", Line_ContinueAfterTyping);
+		   NULL, " Curry", Line_Continue);
 
 	OutputLine(NULL, "博",
-		   NULL, " Curry", Line_ContinueAfterTyping);
+		   NULL, " Curry", Line_Continue);
 
 //line
 
@@ -4831,199 +4831,199 @@ void main()
 	{
 
 	OutputLine(NULL, "覧",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "会",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "が",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "絶",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "賛",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "し",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "て",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "ミ",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "シ",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "ュ",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "ラ",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "ン",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "ぐ",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "る",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "ぐ",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "る",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "エ",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "ッ",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "フ",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "ェ",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "ル",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "塔",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "す",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "ら",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "も",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "カ",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "レ",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "ー",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "漬",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "け",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "を",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "ぐ",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "つ",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "ぐ",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "つ",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "煮",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "込",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "ん",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "で",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "タ",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "ー",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "メ",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "リ",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "ッ",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "ク",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "が",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "寝",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "て",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "も",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "覚",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "め",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "て",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "も",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "カ",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "レ",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "ー",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "カ",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "レ",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "ー",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "カ",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "レ",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "ー",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "カ",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "レ",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	OutputLine(NULL, "ー",
-		   NULL, " ", Line_ContinueAfterTyping);
+		   NULL, " ", Line_Continue);
 
 	}
 
@@ -5712,11 +5712,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s19/06/500600001", 128);
 	OutputLine(NULL, "「…ど、どうもこんにちはー…って？！",
-		   NULL, "\"...G-Good afternoon... huh!?", Line_ContinueAfterTyping);
+		   NULL, "\"...G-Good afternoon... huh!?", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "　圭ちゃん、何やってんですかー？！」",
 		   NULL, " Kei-chan, what're you doing!?\"", GetGlobalFlag(GLinemodeSp));
@@ -5824,11 +5824,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s19/06/500600005", 128);
 	OutputLine(NULL, "「ありゃ…、",
-		   NULL, "\"Oh my...", Line_ContinueAfterTyping);
+		   NULL, "\"Oh my...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……図星を突かれちゃって何だかがっかりですけど、これ。」",
 		   NULL, " ...It's somehow disappointing that you hit the nail right on the head, but here.\"", GetGlobalFlag(GLinemodeSp));
@@ -6022,11 +6022,11 @@ void main()
 		   NULL, "\"Well then, I'll take my leave.", Line_WaitForInput);
 	PlayVoice(4, "s19/06/500600018", 128);
 	OutputLine(NULL, "…………………あ、",
-		   NULL, " .........Ah...", Line_ContinueAfterTyping);
+		   NULL, " .........Ah...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……あと最後に…、」",
 		   NULL, " ...One last thing...\"", GetGlobalFlag(GLinemodeSp));
@@ -6096,11 +6096,11 @@ void main()
 		   NULL, "\"...Yes.", Line_WaitForInput);
 	PlayVoice(4, "s19/06/500600023", 128);
 	OutputLine(NULL, "…それ、",
-		   NULL, " ...I think,", Line_ContinueAfterTyping);
+		   NULL, " ...I think,", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……お姉きっと喜ぶと思います。",
 		   NULL, " ...my sister will be very happy to hear that.", Line_WaitForInput);
@@ -6213,18 +6213,18 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s19/01/hr_kei15020", 128);
 	OutputLine(NULL, "「……詩音、",
-		   NULL, "\"...Shion,", Line_ContinueAfterTyping);
+		   NULL, "\"...Shion,", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 900 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……いや…魅音、",
-		   NULL, " ...No... Mion,", Line_ContinueAfterTyping);
+		   NULL, " ...No... Mion,", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "俺が空腹で死にそうって言ってたの聞いて、大急ぎで持って来てくれたのか。」",
 		   NULL, " when she heard I was so hungry I could die, she brought this over to me.\"", GetGlobalFlag(GLinemodeSp));

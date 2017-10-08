@@ -194,7 +194,7 @@ void main()
 		   NULL, "...This isn't somewhere we should be going, is it?!", Line_WaitForInput);
 	PlayVoice(4, "s02/01/130100945", 128);
 	OutputLine(NULL, "　やめようぜ！",
-		   NULL, " Let's not!", Line_ContinueAfterTyping);
+		   NULL, " Let's not!", Line_Continue);
 	OutputLine(NULL, "　カギが掛かっているのを勝手に開けて押し入るなんて、例え物を盗まなくったって犯罪なんだぞ！！",
 		   NULL, " It's a crime to force your way into a locked building, even if you don't steal anything!! ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -464,11 +464,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s02/02/130200396", 128);
 	OutputLine(NULL, "「あ、それから、",
-		   NULL, "\"Oh, and...", Line_ContinueAfterTyping);
+		   NULL, "\"Oh, and...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 700 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…これ。",
 		   NULL, " Here.", Line_WaitForInput);
@@ -512,11 +512,11 @@ void main()
 		   NULL, "\"............The police are looking as best they can, too.", Line_WaitForInput);
 	PlayVoice(4, "s02/02/130200401", 128);
 	OutputLine(NULL, "…きっと、",
-		   NULL, " ...They'll...", Line_ContinueAfterTyping);
+		   NULL, " ...They'll...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……見つかるから。",
 		   NULL, " find them for sure.", Line_WaitForInput);
@@ -546,11 +546,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s02/01/130100955", 128);
 	OutputLine(NULL, "「…………レナは、",
-		   NULL, "\".........Rena, you're...", Line_ContinueAfterTyping);
+		   NULL, "\".........Rena, you're...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……………俺を問い詰めないんだな。」",
 		   NULL, " ...not going to question me?\"", GetGlobalFlag(GLinemodeSp));
@@ -583,11 +583,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s02/02/130200405", 128);
 	OutputLine(NULL, "「祭具殿に忍び込んだこと、",
-		   NULL, "\"Do you mean...", Line_ContinueAfterTyping);
+		   NULL, "\"Do you mean...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 600 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……かな。」",
 		   NULL, " ...when you snuck into the ritual storehouse?\"", GetGlobalFlag(GLinemodeSp));
@@ -1006,11 +1006,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s02/01/130100971", 128);
 	OutputLine(NULL, "「………………………なんだ、",
-		   NULL, "\"............What...", Line_ContinueAfterTyping);
+		   NULL, "\"............What...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……これ…。」",
 		   NULL, " is this...\"", GetGlobalFlag(GLinemodeSp));
@@ -1066,11 +1066,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s02/01/130100972", 128);
 	OutputLine(NULL, "「…………醤油をもらいに行くなら、",
-		   NULL, "\".........If you need some soy sauce...", Line_ContinueAfterTyping);
+		   NULL, "\".........If you need some soy sauce...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 700 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……園崎家へ、か。",
 		   NULL, " then you would go to the Sonozaki house.", Line_WaitForInput);
@@ -1762,11 +1762,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s02/02/130200440", 128);
 	OutputLine(NULL, "「…………大石さんって、",
-		   NULL, "\".........Ooishi-san...", Line_ContinueAfterTyping);
+		   NULL, "\".........Ooishi-san...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…ひょっとして。」",
 		   NULL, " Could you be...\"", GetGlobalFlag(GLinemodeSp));
@@ -1891,11 +1891,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s02/11/130700364", 128);
 	OutputLine(NULL, "「……………いやいや、",
-		   NULL, "\".........My, my.", Line_ContinueAfterTyping);
+		   NULL, "\".........My, my.", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……こりゃあ、とんだところに名探偵がいたもんです。",
 		   NULL, " ...It seems we have an incredible detective on our hands.", Line_WaitForInput);

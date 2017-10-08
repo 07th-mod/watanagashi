@@ -18,7 +18,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/04/440400027", 128);
 	OutputLine(NULL, "「は？",
-		   NULL, "\"Huh?", Line_ContinueAfterTyping);
+		   NULL, "\"Huh?", Line_Continue);
 	OutputLine(NULL, "　魅音さんの家族？」",
 		   NULL, " Mion-san's family?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -29,7 +29,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/01/440100057", 128);
 	OutputLine(NULL, "「あぁ。",
-		   NULL, "\"Yeah.", Line_ContinueAfterTyping);
+		   NULL, "\"Yeah.", Line_Continue);
 	OutputLine(NULL, "もっと平たく言えば、あいつに兄弟とかいないのかなーって思ってさ。」",
 		   NULL, " More broadly, I was just wondering if she had any brothers or anything.\"", Line_Normal);
 	ClearMessage();
@@ -50,11 +50,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/04/440400028", 128);
 	OutputLine(NULL, "「…う〜ん。",
-		   NULL, "\"...Hmmm.", Line_ContinueAfterTyping);
+		   NULL, "\"...Hmmm.", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…どうなんでございましょうねぇ…。",
 		   NULL, " ...I wonder...", Line_WaitForInput);
@@ -94,7 +94,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/04/440400030", 128);
 	OutputLine(NULL, "「えぇ。",
-		   NULL, "\"Yes.", Line_ContinueAfterTyping);
+		   NULL, "\"Yes.", Line_Continue);
 	OutputLine(NULL, "お婆さん以外にはありませんですわ。」",
 		   NULL, " I've never seen any of her relatives except for her grandmother.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -112,7 +112,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/04/440400031", 128);
 	OutputLine(NULL, "「そういうのは梨花が詳しいですわよ。",
-		   NULL, "\"Rika would know more than I.", Line_ContinueAfterTyping);
+		   NULL, "\"Rika would know more than I.", Line_Continue);
 	OutputLine(NULL, "梨花に聞いて御覧なさいですわ。」",
 		   NULL, " You would do well to ask her.\"", Line_Normal);
 	ClearMessage();
@@ -132,7 +132,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/04/440400032", 128);
 	OutputLine(NULL, "「梨花ぁ。",
-		   NULL, "\"Rika!", Line_ContinueAfterTyping);
+		   NULL, "\"Rika!", Line_Continue);
 	OutputLine(NULL, "魅音さんのご家族のことをご存知ですの？」",
 		   NULL, " Do you know anything about Mion-san's family?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -181,7 +181,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/05/440500020", 128);
 	OutputLine(NULL, "「……詩ぃですか？",
-		   NULL, "\"......You mean Shii?", Line_ContinueAfterTyping);
+		   NULL, "\"......You mean Shii?", Line_Continue);
 	OutputLine(NULL, "　詩音はいますですよ。」",
 		   NULL, " Shion exists.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -210,7 +210,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/04/440400033", 128);
 	OutputLine(NULL, "「ふ〜ん？",
-		   NULL, "\"Hmm?", Line_ContinueAfterTyping);
+		   NULL, "\"Hmm?", Line_Continue);
 	OutputLine(NULL, "　よく似た名前ですのね。",
 		   NULL, " Their names are quite similar, you know.", Line_WaitForInput);
 	PlayVoice(4, "s20/04/440400034", 128);
@@ -258,7 +258,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/04/440400035", 128);
 	OutputLine(NULL, "「お家も興宮なのかもしれませんわよ。",
-		   NULL, "\"She may live there, too.", Line_ContinueAfterTyping);
+		   NULL, "\"She may live there, too.", Line_Continue);
 	OutputLine(NULL, "だって、魅音さん自身、家族とは別でお婆さんと暮らしてるわけですから。」",
 		   NULL, " Mion-san herself lives apart from her family with her grandmother, after all.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -292,7 +292,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/04/440400036", 128);
 	OutputLine(NULL, "「親類の数が多いらしいですから。",
-		   NULL, "\"She seems to have many relatives.", Line_ContinueAfterTyping);
+		   NULL, "\"She seems to have many relatives.", Line_Continue);
 	OutputLine(NULL, "きっといろいろと都合があるに違いないのですわ。」",
 		   NULL, " There are doubtless many different circumstances.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -312,7 +312,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/03/440300054", 128);
 	OutputLine(NULL, "「お、３人揃って何の話だい？",
-		   NULL, "\"Oh, what are the three of you talking about?", Line_ContinueAfterTyping);
+		   NULL, "\"Oh, what are the three of you talking about?", Line_Continue);
 	OutputLine(NULL, "　おじさんも混ぜてよー。」",
 		   NULL, " Let this old man in on it!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -326,7 +326,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/04/440400037", 128);
 	OutputLine(NULL, "「あら、魅音さん、いいところへ〜！",
-		   NULL, "\"Oh, Mion-san, you've come at a good time~!", Line_ContinueAfterTyping);
+		   NULL, "\"Oh, Mion-san, you've come at a good time~!", Line_Continue);
 	OutputLine(NULL, "　魅音さんに双子の妹さんがいるってのは本当でございますのー？」",
 		   NULL, " Might it be true that you have a younger twin sister?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -353,11 +353,11 @@ void main()
 //　え、と.........、う、うん＠いるよ...。＠
 	PlayVoice(4, "s20/03/440300056", 128);
 	OutputLine(NULL, "　え、と………、う、うん。",
-		   NULL, " Um, well...... y-yeah.", Line_ContinueAfterTyping);
+		   NULL, " Um, well...... y-yeah.", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 2200 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "いるよ…。」",
 		   NULL, " I do...\"", GetGlobalFlag(GLinemodeSp));
@@ -385,7 +385,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/04/440400038", 128);
 	OutputLine(NULL, "「あら〜！",
-		   NULL, "\"Oh, my~!", Line_ContinueAfterTyping);
+		   NULL, "\"Oh, my~!", Line_Continue);
 	OutputLine(NULL, "　それは知らなかったですわ〜！",
 		   NULL, " I had no idea~!", Line_WaitForInput);
 	PlayVoice(4, "s20/04/440400039", 128);
@@ -404,7 +404,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/03/440300057", 128);
 	OutputLine(NULL, "「会わない方がいいよ！",
-		   NULL, "\"You shouldn't bother!", Line_ContinueAfterTyping);
+		   NULL, "\"You shouldn't bother!", Line_Continue);
 	OutputLine(NULL, "　ぜ、全然可愛くないし！",
 		   NULL, " Sh-She's not cute at all!", Line_WaitForInput);
 	PlayVoice(4, "s20/03/440300058", 128);

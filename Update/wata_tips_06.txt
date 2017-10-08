@@ -18,7 +18,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/06/440600001", 128);
 	OutputLine(NULL, "「…だから初めましてじゃないですって！",
-		   NULL, "\"...Stop saying 'it's been a while'!", Line_ContinueAfterTyping);
+		   NULL, "\"...Stop saying 'it's been a while'!", Line_Continue);
 	OutputLine(NULL, "　昨日まで毎日、お会いしてたじゃないですか。」",
 		   NULL, " We've seen each other every day up until yesterday, haven't we?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -29,7 +29,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/01/440100084", 128);
 	OutputLine(NULL, "「……もういい。",
-		   NULL, "\"...Whatever.", Line_ContinueAfterTyping);
+		   NULL, "\"...Whatever.", Line_Continue);
 	OutputLine(NULL, "お前がそうだって言うならそういうことでいい。」",
 		   NULL, " If you say so, we'll go with that.\"", Line_Normal);
 	ClearMessage();
@@ -67,7 +67,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/01/440100085", 128);
 	OutputLine(NULL, "「しかし……そっくりだなぁ。",
-		   NULL, "\"Still... you two look so alike.", Line_ContinueAfterTyping);
+		   NULL, "\"Still... you two look so alike.", Line_Continue);
 	OutputLine(NULL, "魅音みたいに髪を後ろで結んだら、やっぱり魅音そっくりになるのか？」",
 		   NULL, " If you tied your hair back like Mion does, would you look exactly like her?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -80,7 +80,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/06/440600002", 128);
 	OutputLine(NULL, "「さぁ。",
-		   NULL, "\"Who knows?", Line_ContinueAfterTyping);
+		   NULL, "\"Who knows?", Line_Continue);
 	OutputLine(NULL, "試せばそうなるんじゃないですか？",
 		   NULL, " That's probably what would happen.", Line_WaitForInput);
 	PlayVoice(4, "s20/06/440600003", 128);
@@ -107,7 +107,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/06/440600006", 128);
 	OutputLine(NULL, "「なぁに、葛西。",
-		   NULL, "\"What's wrong, Kasai?", Line_ContinueAfterTyping);
+		   NULL, "\"What's wrong, Kasai?", Line_Continue);
 	OutputLine(NULL, "そのふかーいため息は。」",
 		   NULL, " That was a pretty deep sigh.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -118,7 +118,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/15/441500001", 128);
 	OutputLine(NULL, "「失礼しました。",
-		   NULL, "\"Excuse me.", Line_ContinueAfterTyping);
+		   NULL, "\"Excuse me.", Line_Continue);
 	OutputLine(NULL, "……昔から変わられないなぁと思っただけですよ。」",
 		   NULL, " ...I was just thinking that you haven't changed.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -137,7 +137,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/06/440600007", 128);
 	OutputLine(NULL, "「それより、圭ちゃんの家ってこっちでいいんですか？",
-		   NULL, "\"Anyway, Kei-chan, your house was around here, right?", Line_ContinueAfterTyping);
+		   NULL, "\"Anyway, Kei-chan, your house was around here, right?", Line_Continue);
 	OutputLine(NULL, "　葛西は園崎本家への道以外は雛見沢をよく知らないから。",
 		   NULL, " Kasai doesn't know much about Hinamizawa aside from the road that goes to the Sonozaki main house. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -152,7 +152,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/01/440100086", 128);
 	OutputLine(NULL, "「そ、そりゃ困る！",
-		   NULL, "\"I-I don't want that!", Line_ContinueAfterTyping);
+		   NULL, "\"I-I don't want that!", Line_Continue);
 	OutputLine(NULL, "　…すみません、次の右に入る細い道のところで停めてください。",
 		   NULL, " ...Excuse me, could you stop at the narrow road at the next right?", Line_WaitForInput);
 	PlayVoice(4, "s20/01/440100087", 128);
@@ -181,7 +181,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/01/440100088", 128);
 	OutputLine(NULL, "「あ、…どうもすみません。",
-		   NULL, "\"Ah... Sorry about that.", Line_ContinueAfterTyping);
+		   NULL, "\"Ah... Sorry about that.", Line_Continue);
 	OutputLine(NULL, "今日は送ってもらってありがとうございます…。」",
 		   NULL, " Thank you very much for showing me home today...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -195,7 +195,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/15/441500002", 128);
 	OutputLine(NULL, "「圭一さんでしたか、",
-		   NULL, "\"Was it Kei-san?", Line_ContinueAfterTyping);
+		   NULL, "\"Was it Kei-san?", Line_Continue);
 	OutputLine(NULL, "お名前。」",
 		   NULL, " Your name, that is.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -270,7 +270,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/06/440600009", 128);
 	OutputLine(NULL, "「じゃあね圭ちゃん！　また会いましょうね。",
-		   NULL, "\"Bye, Kei-chan! We'll see each other again soon.", Line_ContinueAfterTyping);
+		   NULL, "\"Bye, Kei-chan! We'll see each other again soon.", Line_Continue);
 	OutputLine(NULL, "姉にもよろしくお伝え下さい。",
 		   NULL, " Say hi to my sister for me, too.", Line_WaitForInput);
 	PlayVoice(4, "s20/06/440600010", 128);
@@ -284,7 +284,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/01/440100091", 128);
 	OutputLine(NULL, "「絶対に来るな。",
-		   NULL, "\"Don't you dare.", Line_ContinueAfterTyping);
+		   NULL, "\"Don't you dare.", Line_Continue);
 	OutputLine(NULL, "詩音が転校して来たら、俺が興宮の学校に転校するから。」",
 		   NULL, " If you transferred in, I'll transfer out to a school in Okinomiya.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

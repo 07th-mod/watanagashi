@@ -611,13 +611,13 @@ void main()
 	PlayBGM( 1, "msys01", 128, 0 );
 
 //「「「お疲れさまでした～～～ッ！！！！」」＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>全員</color>", NULL, "<color=#f5e6d3>Everyone</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/03/440300314", 128);
 	PlayVoice(5, "s20/06/440600075", 128);
 	PlayVoice(6, "s20/04/440400178", 128);
 	PlayVoice(7, "s20/05/440500111", 128);
 	PlayVoice(8, "s20/08/440800105", 128);
 	PlayVoice(9, "s20/11/440700376", 128);
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>全員</color>", NULL, "<color=#f5e6d3>Everyone</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(3, "s20/09/440900102", 128);
 	OutputLine(NULL, "「「「お疲れさまでした〜〜〜ッ！！！！」」」",
 		   NULL, "\"Thank you~~~!!!!\"", GetGlobalFlag(GLinemodeSp));
@@ -1743,11 +1743,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/08/440800118", 128);
 	OutputLine(NULL, "「それはきっと……、",
-		   NULL, "\"Well, that's because...", Line_ContinueAfterTyping);
+		   NULL, "\"Well, that's because...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "ほら！",
 		   NULL, " Yeah!", Line_WaitForInput);
@@ -2093,7 +2093,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/01/440100205", 128);
 	OutputLine(NULL, "「むがーーーーーッ！！！！",
-		   NULL, "\"Mgaaahhhhhh!!!!", Line_ContinueAfterTyping);
+		   NULL, "\"Mgaaahhhhhh!!!!", Line_Continue);
 
 	ShakeScreen( 1, 50, 20, 4, 0, );
 	OutputLineAll(NULL, "", Line_WaitForInput);

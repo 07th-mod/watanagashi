@@ -30,7 +30,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/11/440700160", 128);
 	OutputLine(NULL, "「どうです？",
-		   NULL, "\"How did it go?", Line_ContinueAfterTyping);
+		   NULL, "\"How did it go?", Line_Continue);
 	OutputLine(NULL, "　何か手掛かりはありました？」",
 		   NULL, " Did you find any clues?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -62,7 +62,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/11/440700161", 128);
 	OutputLine(NULL, "「課長。",
-		   NULL, "\"Chief.", Line_ContinueAfterTyping);
+		   NULL, "\"Chief.", Line_Continue);
 	OutputLine(NULL, "若い子から交替で仮眠取らせてあげて下さい。",
 		   NULL, " Let the youngest of us take a nap, and then switch them out.", Line_WaitForInput);
 	PlayVoice(4, "s20/11/440700162", 128);
@@ -78,7 +78,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>高杉</color>", NULL, "<color=#f5e6d3>Takasugi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/00/442700020", 128);
 	OutputLine(NULL, "「みんなには交代で休めって言ってるんだけどね。",
-		   NULL, "\"I've been telling them to sleep in shifts.", Line_ContinueAfterTyping);
+		   NULL, "\"I've been telling them to sleep in shifts.", Line_Continue);
 	OutputLine(NULL, "みんな遠慮してなかなか休んでくれないんだよ。",
 		   NULL, " Nobody actually seems willing to sleep, though.", Line_WaitForInput);
 	PlayVoice(4, "s20/00/442700021", 128);
@@ -93,7 +93,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/11/440700164", 128);
 	OutputLine(NULL, "「ありゃありゃ。",
-		   NULL, "\"Oh my.", Line_ContinueAfterTyping);
+		   NULL, "\"Oh my.", Line_Continue);
 	OutputLine(NULL, "みんな、遠慮しないでいいんですよ？",
 		   NULL, " You don't need to force yourselves.", Line_WaitForInput);
 	PlayVoice(4, "s20/11/440700165", 128);
@@ -109,7 +109,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>高杉</color>", NULL, "<color=#f5e6d3>Takasugi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/00/442700022", 128);
 	OutputLine(NULL, "「小宮山さん。",
-		   NULL, "\"Komiyama-san.", Line_ContinueAfterTyping);
+		   NULL, "\"Komiyama-san.", Line_Continue);
 	OutputLine(NULL, "そうしてあげてください。」",
 		   NULL, " Please do that.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -128,7 +128,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/11/440700167", 128);
 	OutputLine(NULL, "「で、課長。",
-		   NULL, "\"So, Chief.", Line_ContinueAfterTyping);
+		   NULL, "\"So, Chief.", Line_Continue);
 	OutputLine(NULL, "例の請求なんですけど、まだ駄目そうです？」",
 		   NULL, " Still no good on our request?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -138,7 +138,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>高杉</color>", NULL, "<color=#f5e6d3>Takasugi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/00/442700023", 128);
 	OutputLine(NULL, "「…第一、村人の噂だけなんでしょう？",
-		   NULL, "\"...It's just a rumor among the villagers in the first place, you know?", Line_ContinueAfterTyping);
+		   NULL, "\"...It's just a rumor among the villagers in the first place, you know?", Line_Continue);
 	OutputLine(NULL, "　もっと具体的な証拠がなければ難しいよ。」",
 		   NULL, " It's going to be difficult without more concrete evidence.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -166,7 +166,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/11/440700169", 128);
 	OutputLine(NULL, "「課長〜。",
-		   NULL, "\"Chief~", Line_ContinueAfterTyping);
+		   NULL, "\"Chief~", Line_Continue);
 	OutputLine(NULL, "ナゾナゾやってるんじゃないですよ？",
 		   NULL, " Don't start speaking in riddles to me, now.", Line_WaitForInput);
 	PlayVoice(4, "s20/11/440700170", 128);
@@ -198,7 +198,7 @@ void main()
 //とにかく、４人は祭具殿の中で何かを見たんです＠　消されるくらいの何かを！＠
 	PlayVoice(4, "s20/11/440700173", 128);
 	OutputLine(NULL, "とにかく、４人は祭具殿の中で何かを見たんです！",
-		   NULL, "Anyway, those four saw something inside the storehouse!", Line_ContinueAfterTyping);
+		   NULL, "Anyway, those four saw something inside the storehouse!", Line_Continue);
 	OutputLine(NULL, "　消されるくらいの何かを！」",
 		   NULL, " Something important enough that they'd be erased!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -235,7 +235,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>高杉</color>", NULL, "<color=#f5e6d3>Takasugi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/00/442700027", 128);
 	OutputLine(NULL, "「…大石さん、気持ちはわかるけど！",
-		   NULL, "\"...Look, Ooishi-san, I know how you feel!", Line_ContinueAfterTyping);
+		   NULL, "\"...Look, Ooishi-san, I know how you feel!", Line_Continue);
 	OutputLine(NULL, "　あの祭具殿ってのは古手神社にある神聖な建物で、地元の人間への相当の配慮が必要な建物なんだよ。」",
 		   NULL, " However, that storehouse is a sacred building belonging to the Furude Shrine, and we need to have proper consideration for the locals when dealing with it.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -253,7 +253,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>高杉</color>", NULL, "<color=#f5e6d3>Takasugi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/00/442700028", 128);
 	OutputLine(NULL, "「とにかく！",
-		   NULL, "\"Anyway!", Line_ContinueAfterTyping);
+		   NULL, "\"Anyway!", Line_Continue);
 	OutputLine(NULL, "　相当の証拠がない限り、祭具殿の捜査令状は取れないよ。",
 		   NULL, " As long as we don't have suitable evidence, we won't get a search warrant for the storehouse.", Line_WaitForInput);
 	PlayVoice(4, "s20/00/442700029", 128);
@@ -276,7 +276,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/11/440700176", 128);
 	OutputLine(NULL, "「……調整がいるってんなら、私、直接乗り込んで付けてきてもいいですよ？",
-		   NULL, "\"...If you say you need preparations, then why don't you just let me talk with them directly?", Line_ContinueAfterTyping);
+		   NULL, "\"...If you say you need preparations, then why don't you just let me talk with them directly?", Line_Continue);
 	OutputLine(NULL, "　四課長はシゲちゃんでしょ？",
 		   NULL, " Shige-chan is the head of Section 4, right?", Line_WaitForInput);
 	PlayVoice(4, "s20/11/440700177", 128);
@@ -295,7 +295,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小宮山</color>", NULL, "<color=#f5e6d3>Komiyama</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/00/442500010", 128);
 	OutputLine(NULL, "「か、課長にお客様です…！",
-		   NULL, "\"C-Chief, you have a visitor...!", Line_ContinueAfterTyping);
+		   NULL, "\"C-Chief, you have a visitor...!", Line_Continue);
 	OutputLine(NULL, "　えっと、…ぅわ！」",
 		   NULL, " Um... yikes!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -317,7 +317,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>園崎県議</color>", NULL, "<color=#f5e6d3>Sonozaki Representative</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/00/saburo44001", 128);
 	OutputLine(NULL, "「わしは議員の園崎じゃ！！",
-		   NULL, "\"I am Congressman Sonozaki!!", Line_ContinueAfterTyping);
+		   NULL, "\"I am Congressman Sonozaki!!", Line_Continue);
 	OutputLine(NULL, "　責任者を出さんかッ！！！",
 		   NULL, " I demand to know who's responsible for this!!!", Line_WaitForInput);
 	PlayVoice(4, "s20/00/saburo44002", 128);
@@ -331,7 +331,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>高杉</color>", NULL, "<color=#f5e6d3>Takasugi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/00/442700032", 128);
 	OutputLine(NULL, "「ど、どうも…！",
-		   NULL, "\"H-Hello...!", Line_ContinueAfterTyping);
+		   NULL, "\"H-Hello...!", Line_Continue);
 	OutputLine(NULL, "　私が課長の高杉でございます！！」",
 		   NULL, " I am the division chief, Takasugi!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -342,7 +342,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>園崎県議</color>", NULL, "<color=#f5e6d3>Sonozaki Representative</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/00/saburo44003", 128);
 	OutputLine(NULL, "「お前の名刺なぞ要らんわ！！",
-		   NULL, "\"I don't need YOUR name!!", Line_ContinueAfterTyping);
+		   NULL, "\"I don't need YOUR name!!", Line_Continue);
 	OutputLine(NULL, "　お前なんぞ、いつだって閑職に飛ばせるんじゃぞ！",
 		   NULL, " I could have you demoted on a whim!", Line_WaitForInput);
 	PlayVoice(4, "s20/00/saburo44004", 128);
@@ -361,7 +361,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>高杉</color>", NULL, "<color=#f5e6d3>Takasugi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/00/442700033", 128);
 	OutputLine(NULL, "「も、申し訳ございません…！",
-		   NULL, "\"I-I sincerely apologize...!", Line_ContinueAfterTyping);
+		   NULL, "\"I-I sincerely apologize...!", Line_Continue);
 	OutputLine(NULL, "　お、大石はただいま捜査に出ておりまして、なかなか連絡が付き難く…私が代わって承りますので…！",
 		   NULL, " O-Ooishi is currently out on investigation, and he's been difficult to contact... I'll take his place and hear you out...!", Line_WaitForInput);
 	PlayVoice(4, "s20/00/442700034", 128);
@@ -397,7 +397,7 @@ void main()
 	PlayVoice(4, "s20/00/saburo44008", 128);
 	if (GetGlobalFlag(GADVMode)) {
 		OutputLine(NULL, "　八百万の神々とオヤシロさまと先祖の霊を祀り、日が昇りてから沈むまで。",
-			   NULL, "<size=-2>The eight hundred thousand gods, Oyashiro-sama, and the spirits of our ancestors are enshrined there.</size>", Line_ContinueAfterTyping);
+			   NULL, "<size=-2>The eight hundred thousand gods, Oyashiro-sama, and the spirits of our ancestors are enshrined there.</size>", Line_Continue);
 		OutputLine(NULL, "月が昇りてから沈むまで雛見沢を見守る尊い神社なのじゃ。",
 			   NULL, "<size=-2> The holy shrine protects Hinamizawa from when the sun comes up to when it sets, and from when the moon rises to when it falls.</size>", GetGlobalFlag(GLinemodeSp));
 	} else {
@@ -422,13 +422,13 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>園崎県議</color>", NULL, "<color=#f5e6d3>Sonozaki Representative</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/00/saburo44010", 128);
 	OutputLine(NULL, "　そもそも信仰の自由は憲法で定められた国民の最も尊い権利であろうが！！！",
-		   NULL, "Besides, the right to religion is the most revered right of the people of this country in the constitution!!!", Line_ContinueAfterTyping);
+		   NULL, "Besides, the right to religion is the most revered right of the people of this country in the constitution!!!", Line_Continue);
 	OutputLine(NULL, "　それを自らの捜査の怠慢を口実に汚そうという魂胆ッ！！！",
 		   NULL, " You dare to be so bold as to sully that using your own investigation's negligence as pretext!!? ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>園崎県議</color>", NULL, "<color=#f5e6d3>Sonozaki Representative</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/00/saburo44011", 128);
 	OutputLine(NULL, "　こんなものは断じて許せんぞッ！！！",
-		   NULL, "I cannot—I will not allow it!!!", Line_ContinueAfterTyping);
+		   NULL, "I cannot—I will not allow it!!!", Line_Continue);
 	OutputLine(NULL, "　聞いておるのか大虚けがッ！！！",
 		   NULL, " Are you listening, you lying scum?!", Line_WaitForInput);
 	PlayVoice(4, "s20/00/saburo44012", 128);

@@ -568,7 +568,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s02/02/130200589", 128);
 	OutputLine(NULL, "「………………………………………",
-		   NULL, "\"............", Line_ContinueAfterTyping);
+		   NULL, "\"............", Line_Continue);
 //!sd
 	SetSpeedOfMessage( FALSE, 0, );
 
@@ -576,11 +576,11 @@ void main()
 		   NULL, "I'll be lonely.", Line_WaitForInput);
 	PlayVoice(4, "s02/02/130200590", 128);
 	OutputLine(NULL, "…私一人しか、",
-		   NULL, " ...I'm the only one...", Line_ContinueAfterTyping);
+		   NULL, " ...I'm the only one...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…残らない。」",
 		   NULL, " left.\"", GetGlobalFlag(GLinemodeSp));
@@ -1434,18 +1434,18 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s02/01/130101175", 128);
 	OutputLine(NULL, "「……はぁ、",
-		   NULL, "\"...Hah...", Line_ContinueAfterTyping);
+		   NULL, "\"...Hah...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 700 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……はぁ、",
-		   NULL, " Hah......", Line_ContinueAfterTyping);
+		   NULL, " Hah......", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……魅音…！」",
 		   NULL, " Mion...!\"", GetGlobalFlag(GLinemodeSp));
@@ -1490,11 +1490,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s02/01/130101176", 128);
 	OutputLine(NULL, "「……お前、",
-		   NULL, "\"...Are you...", Line_ContinueAfterTyping);
+		   NULL, "\"...Are you...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……こんなところをうろついてて……大丈夫なのか…？！」",
 		   NULL, " all right... hanging around this place...?!\"", GetGlobalFlag(GLinemodeSp));
@@ -1591,25 +1591,25 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s02/03/130300731", 128);
 	OutputLine(NULL, "「………私ね、",
-		   NULL, "\"......Well, I...", Line_ContinueAfterTyping);
+		   NULL, "\"......Well, I...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 700 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……えへへへ、",
-		   NULL, " ehehehe...", Line_ContinueAfterTyping);
+		   NULL, " ehehehe...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……もう、",
-		   NULL, " I can't...", Line_ContinueAfterTyping);
+		   NULL, " I can't...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……ここにはいられない…。」",
 		   NULL, " stay for any longer...\"", GetGlobalFlag(GLinemodeSp));
@@ -1642,18 +1642,18 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s02/03/130300732", 128);
 	OutputLine(NULL, "「…今日まで……がが、……がんばってきたけど…、",
-		   NULL, "\"...I tried... s-s... so hard until now...", Line_ContinueAfterTyping);
+		   NULL, "\"...I tried... s-s... so hard until now...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 700 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "あははは、",
-		   NULL, " Ahahaha...", Line_ContinueAfterTyping);
+		   NULL, " Ahahaha...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…自分でわかるの。",
 		   NULL, " but I can tell.", Line_WaitForInput);
@@ -1665,12 +1665,12 @@ void main()
 		   NULL, " ...I'm done... this is my limit...", Line_WaitForInput);
 	PlayVoice(4, "s02/03/130300734", 128);
 	OutputLine(NULL, "私のお迎えは",
-		   NULL, " They're...", Line_ContinueAfterTyping);
+		   NULL, " They're...", Line_Continue);
 // !s400
 	SetSpeedOfMessage( TRUE, 0, );
 
 	OutputLine(NULL, "……",
-		   NULL, " ...", Line_ContinueAfterTyping);
+		   NULL, " ...", Line_Continue);
 // !sd
 	SetSpeedOfMessage( FALSE, 0, );
 
@@ -1700,32 +1700,32 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s02/03/130300736", 128);
 	OutputLine(NULL, "「あ…はははは、",
-		   NULL, "\"Ah... hahaha...", Line_ContinueAfterTyping);
+		   NULL, "\"Ah... hahaha...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 600 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…はは……は、",
-		   NULL, " haha... ha...", Line_ContinueAfterTyping);
+		   NULL, " haha... ha...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 700 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……はぁ",
-		   NULL, " hah......", Line_ContinueAfterTyping);
+		   NULL, " hah......", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 400 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "………はぁ",
-		   NULL, " hah......", Line_ContinueAfterTyping);
+		   NULL, " hah......", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 400 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "………はぁ…！」",
 		   NULL, " hah...!\"", GetGlobalFlag(GLinemodeSp));
@@ -1956,19 +1956,19 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s02/03/130300737", 128);
 	OutputLine(NULL, "「け、",
-		   NULL, "\"Hee.....", Line_ContinueAfterTyping);
+		   NULL, "\"Hee.....", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……けけけ…",
-		   NULL, " heeheehee...", Line_ContinueAfterTyping);
+		   NULL, " heeheehee...", Line_Continue);
 //!s100
 	SetSpeedOfMessage( TRUE, 120, );
 
 	OutputLine(NULL, "けけけけけけけけけけけけけけけけけ",
-		   NULL, " heeheeheeheeheeheeheeheeheeheeheeheeheehee", Line_ContinueAfterTyping);
+		   NULL, " heeheeheeheeheeheeheeheeheeheeheeheeheehee", Line_Continue);
 //!sd
 	SetSpeedOfMessage( FALSE, 0, );
 
@@ -1987,7 +1987,7 @@ void main()
 
 	PlayVoice(4, "s02/03/130300740", 128);
 	OutputLine(NULL, "くけけけけけけけけけけけけけけけけけけ",
-		   NULL, " Huheeheeheeheeheeheeheeheeheeheeheeheeheeheeheeheehee", Line_ContinueAfterTyping);
+		   NULL, " Huheeheeheeheeheeheeheeheeheeheeheeheeheeheeheeheehee", Line_Continue);
 	OutputLine(NULL, "！！！」",
 		   NULL, " !!!\"", GetGlobalFlag(GLinemodeSp));
 //!sd
@@ -2110,18 +2110,18 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s02/01/130101185", 128);
 	OutputLine(NULL, "「…み、",
-		   NULL, "\"...Mi......", Line_ContinueAfterTyping);
+		   NULL, "\"...Mi......", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 900 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "………魅、",
-		   NULL, " Mi...............", Line_ContinueAfterTyping);
+		   NULL, " Mi...............", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…………………音………………、」",
 		   NULL, " on............\"", GetGlobalFlag(GLinemodeSp));

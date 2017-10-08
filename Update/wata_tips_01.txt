@@ -23,7 +23,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/03/440300045", 128);
 	OutputLine(NULL, "「うん。",
-		   NULL, "\"Yep.", Line_ContinueAfterTyping);
+		   NULL, "\"Yep.", Line_Continue);
 	OutputLine(NULL, "ごめん。",
 		   NULL, " Sorry.", Line_WaitForInput);
 	PlayVoice(4, "s20/03/440300046", 128);
@@ -111,7 +111,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/01/440100046", 128);
 	OutputLine(NULL, "「……やめとく。",
-		   NULL, "\"...Nah, we shouldn't.", Line_ContinueAfterTyping);
+		   NULL, "\"...Nah, we shouldn't.", Line_Continue);
 	OutputLine(NULL, "俺がいじったら、ロッカーの中身がドサドサーッて溢れてきそうな気がするよ。」",
 		   NULL, " I get the feeling that if I mess around in that locker, everything inside will come tumbling down on me.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -124,7 +124,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/03/440300050", 128);
 	OutputLine(NULL, "「あっはっはっは！",
-		   NULL, "\"Ah-ha-ha-ha!", Line_ContinueAfterTyping);
+		   NULL, "\"Ah-ha-ha-ha!", Line_Continue);
 	OutputLine(NULL, "　う〜ん、そうだねぇ。",
 		   NULL, " Yeah, I guess you're right.", Line_WaitForInput);
 	PlayVoice(4, "s20/03/440300051", 128);
@@ -146,7 +146,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/05/440500010", 128);
 	OutputLine(NULL, "「……魅ぃ。",
-		   NULL, "\"......Mii.", Line_ContinueAfterTyping);
+		   NULL, "\"......Mii.", Line_Continue);
 	OutputLine(NULL, "先生が体育倉庫のカギを探してますですよ。",
 		   NULL, " The teacher is looking for the key to the gym storehouse.", Line_WaitForInput);
 	PlayVoice(4, "s20/05/440500011", 128);
@@ -162,7 +162,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/03/440300052", 128);
 	OutputLine(NULL, "「はれ？",
-		   NULL, "\"Eh?", Line_ContinueAfterTyping);
+		   NULL, "\"Eh?", Line_Continue);
 	OutputLine(NULL, "　…私、職員室に返さなかったっけ？」",
 		   NULL, " ...Did I not return it to the teachers' lounge?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -189,7 +189,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/04/440400018", 128);
 	OutputLine(NULL, "「ほぅらやっぱり魅音さんですのよ〜！",
-		   NULL, "\"I knew you had it, Mion-san~!", Line_ContinueAfterTyping);
+		   NULL, "\"I knew you had it, Mion-san~!", Line_Continue);
 	OutputLine(NULL, "　私、絶対絶対ぜーったいそうだと確信してたでございますわー！」",
 		   NULL, " I knew beyond a shadow of a doubt that you simply must have been the one who had it!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -202,7 +202,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/05/440500012", 128);
 	OutputLine(NULL, "「……ボクも大正解なのですよ。",
-		   NULL, "\"......I was right, too.", Line_ContinueAfterTyping);
+		   NULL, "\"......I was right, too.", Line_Continue);
 	OutputLine(NULL, "沙都子と一緒に大正解なのです。」",
 		   NULL, " Satoko and I were both right.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -254,7 +254,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/01/440100047", 128);
 	OutputLine(NULL, "「あ、そうだ。",
-		   NULL, "\"Oh, right.", Line_ContinueAfterTyping);
+		   NULL, "\"Oh, right.", Line_Continue);
 	OutputLine(NULL, "二人とも聞いたか？",
 		   NULL, " Have you two heard?", Line_WaitForInput);
 	PlayVoice(4, "s20/01/440100048", 128);
@@ -270,7 +270,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/04/440400019", 128);
 	OutputLine(NULL, "「あら、そうなんですの？！",
-		   NULL, "\"Oh, is that so?!", Line_ContinueAfterTyping);
+		   NULL, "\"Oh, is that so?!", Line_Continue);
 	OutputLine(NULL, "　それはつまらないでございますわね。」",
 		   NULL, " That's so very droll of her.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -316,7 +316,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/01/440100049", 128);
 	OutputLine(NULL, "「魅音ってバイトをやってるんだよな。",
-		   NULL, "\"So Mion's got a part-time job.", Line_ContinueAfterTyping);
+		   NULL, "\"So Mion's got a part-time job.", Line_Continue);
 	OutputLine(NULL, "…あいつ、一体何のバイトをしてるんだ？」",
 		   NULL, " ...I wonder what she's doing, anyway?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -395,7 +395,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/01/440100051", 128);
 	OutputLine(NULL, "「あー…、なるほどな。",
-		   NULL, "\"Ah... I get it.", Line_ContinueAfterTyping);
+		   NULL, "\"Ah... I get it.", Line_Continue);
 	OutputLine(NULL, "そう言えば、叔父さんのとこでバイトなんて話。",
 		   NULL, " Now that you mention it, her having a job at her uncle's place...", Line_WaitForInput);
 	PlayVoice(4, "s20/01/440100052", 128);
@@ -428,7 +428,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/04/440400021", 128);
 	OutputLine(NULL, "「あら、圭一さんはご存知ありませんの？",
-		   NULL, "\"Oh, you were unaware, Keiichi-san?", Line_ContinueAfterTyping);
+		   NULL, "\"Oh, you were unaware, Keiichi-san?", Line_Continue);
 	OutputLine(NULL, "　興宮には魅音さんの親戚の方がやってるお店って結構いっぱいありますのよ？」",
 		   NULL, " There are many relatives of Mion-san's in Okinomiya who run their own stores.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -439,7 +439,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/01/440100053", 128);
 	OutputLine(NULL, "「へー…。",
-		   NULL, "\"Huh...", Line_ContinueAfterTyping);
+		   NULL, "\"Huh...", Line_Continue);
 	OutputLine(NULL, "そりゃ知らなかった。",
 		   NULL, " I didn't know that.", Line_WaitForInput);
 	PlayVoice(4, "s20/01/440100054", 128);
@@ -455,7 +455,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/04/440400022", 128);
 	OutputLine(NULL, "「えぇ。",
-		   NULL, "\"Yes.", Line_ContinueAfterTyping);
+		   NULL, "\"Yes.", Line_Continue);
 	OutputLine(NULL, "パン屋さんとか八百屋さんとかラーメン屋さんとか。",
 		   NULL, " There's a bakery, a produce market, a ramen shop,", Line_WaitForInput);
 	PlayVoice(4, "s20/04/440400023", 128);
@@ -480,7 +480,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/01/440100055", 128);
 	OutputLine(NULL, "「…魅音の一族って何気に商才があるんじゃないのか？",
-		   NULL, "\"...Is Mion's family blessed with some kind of crazy business sense?", Line_ContinueAfterTyping);
+		   NULL, "\"...Is Mion's family blessed with some kind of crazy business sense?", Line_Continue);
 	OutputLine(NULL, "　それだけいろいろあるってのも何だかすごいよな！」",
 		   NULL, " They run so many different things, it's kind of amazing!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -493,7 +493,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/05/440500016", 128);
 	OutputLine(NULL, "「……他にも、金融業とか、不動産業とか、アパレル産業とか、アミューズメント産業とか。",
-		   NULL, "\"...There are others, like a financial business, a real estate agent, an apparel business, and in the amusement industry.", Line_ContinueAfterTyping);
+		   NULL, "\"...There are others, like a financial business, a real estate agent, an apparel business, and in the amusement industry.", Line_Continue);
 	OutputLine(NULL, "いろいろやってると言ってますです。」",
 		   NULL, " I heard they do lots of things.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -524,7 +524,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/05/440500017", 128);
 	OutputLine(NULL, "「……魅ぃに百億兆者ゲームを借りたことをコロリと忘れてしまったら、",
-		   NULL, "\"......Once, I completely forgot to give Mii back the Billionaire game I borrowed from her,", Line_ContinueAfterTyping);
+		   NULL, "\"......Once, I completely forgot to give Mii back the Billionaire game I borrowed from her,", Line_Continue);
 	OutputLine(NULL, "リアルで百億兆者ゲームをプレイさせたるどーと凄まれましたのです。」",
 		   NULL, " and she threatened to force me to play a real-life Billionaire game.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -580,7 +580,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/04/440400026", 128);
 	OutputLine(NULL, "「…？！",
-		   NULL, "\"...!?", Line_ContinueAfterTyping);
+		   NULL, "\"...!?", Line_Continue);
 	OutputLine(NULL, "　…な、なぜ撫でられるんですの？！　…？！」",
 		   NULL, " ...W-Why are you petting me!? ...!?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

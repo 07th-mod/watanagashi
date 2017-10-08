@@ -274,11 +274,11 @@ void main()
 		   NULL, " Russian!?", Line_WaitForInput);
 	PlayVoice(4, "s19/03/990300364", 128);
 	OutputLine(NULL, "　だずびだーにゃ",
-		   NULL, " Dasvidaniya...", Line_ContinueAfterTyping);
+		   NULL, " Dasvidaniya...", Line_Continue);
 //!s200
 	SetSpeedOfMessage( TRUE, 0, );
 	OutputLine(NULL, "……………",
-		   NULL, " .........", Line_ContinueAfterTyping);
+		   NULL, " .........", Line_Continue);
 //!sd
 	SetSpeedOfMessage( FALSE, 0, );
 
@@ -357,7 +357,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s19/03/990300373", 128);
 	OutputLine(NULL, "「おー！",
-		   NULL, "\"Oooh!", Line_ContinueAfterTyping);
+		   NULL, "\"Oooh!", Line_Continue);
 	OutputLine(NULL, "　圭ちゃんも我が部のことがわかってきたねぇ！",
 		   NULL, " It looks like Kei-chan has come to understand our club!", Line_WaitForInput);
 	PlayVoice(4, "s19/03/990300374", 128);
@@ -824,8 +824,8 @@ void main()
 
 
 //「「おおーーーーッ！！」￥
-	PlayVoice(4, "s19/02/990200381", 128);
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>＆<color=#5ec69a>魅音</color>", NULL, "<color=#f0953d>Rena</color> & <color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s19/02/990200381", 128);
 	PlayVoice(5, "s19/03/990300389", 128);
 	OutputLine(NULL, "「「おおーーーーッ！！」」",
 		   NULL, "\"\"Yeaaaaah!!\"\"", Line_Normal);
@@ -1721,7 +1721,7 @@ void main()
 		   NULL, " What is it, Kei-chan?", Line_WaitForInput);
 	PlayVoice(4, "s19/03/990300410", 128);
 	OutputLine(NULL, "私の顔に、",
-		   NULL, " Is there...", Line_ContinueAfterTyping);
+		   NULL, " Is there...", Line_Continue);
 
 	PlaySE( 3, "wa_027", 128, 64 );
 
@@ -1730,11 +1730,11 @@ void main()
 
 	SetSpeedOfMessage( TRUE, 0, );
 	OutputLine(NULL, "…ナニカ憑イテル…？",
-		   NULL, " something on my face...?", Line_ContinueAfterTyping);
+		   NULL, " something on my face...?", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 //!sd
 	SetSpeedOfMessage( FALSE, 0, );
 
@@ -1850,9 +1850,9 @@ void main()
 	DrawBustshotWithFiltering( 1, "ri_si_ni_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「梨花ちゃんガンバレー！＠　僕たちも応援してるよ～～！！！＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>ギャラリー</color>", NULL, "<color=#f5e6d3>Gallery</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s19/00/yaji99001", 128);
 	PlayVoice(5, "s19/00/yaji99001_1", 128);
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>ギャラリー</color>", NULL, "<color=#f5e6d3>Gallery</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(6, "s19/00/yaji99001_2", 128);
 	OutputLine(NULL, "「梨花ちゃんガンバレー！！",
 		   NULL, "\"Rika-chan, do your best!!", Line_WaitForInput);
@@ -3033,12 +3033,12 @@ void main()
 		   NULL, "\"Then, I'll read it out~.", Line_WaitForInput);
 	PlayVoice(4, "s19/00/mas99002", 128);
 	OutputLine(NULL, "…『犬も歩けばくたびれる』〜。」",
-		   NULL, " ...'The dog gets tired on a walk'~.\"", Line_ContinueAfterTyping);
+		   NULL, " ...'The dog gets tired on a walk'~.\"", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1500 );
-	SetValidityOfInput( TRUE );
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	// (backup) SetValidityOfInput( TRUE );
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_Continue); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 //setwindow 31,16,22,16,26,26,0,2,20,1,1,#ffffff,0,0,639,479
@@ -3056,9 +3056,9 @@ void main()
 
 
 //　スパーーーーーーーンッ！！！！/
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "　スパーーーーーーーンッ！！！！",
-		   NULL, "BAAAAAAM!!!!", Line_ContinueAfterTyping);
+		   NULL, "BAAAAAAM!!!!", Line_Continue);
 	DisableWindow();
 	DrawSceneWithMask( "white", "c", 0, 0, 300 );
 	DrawScene( "bg_156", 400 );
@@ -3889,11 +3889,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s19/01/hr_kei09520", 128);
 	OutputLine(NULL, "「お、",
-		   NULL, "\"H-", Line_ContinueAfterTyping);
+		   NULL, "\"H-", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…おい、魅…、」",
 		   NULL, " Hey, Mi—\"", GetGlobalFlag(GLinemodeSp));
@@ -4230,11 +4230,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s19/01/hr_kei09660", 128);
 	OutputLine(NULL, "「くくくく…、小せぇ",
-		   NULL, "\"Hehehe... that's petty.", Line_ContinueAfterTyping);
+		   NULL, "\"Hehehe... that's petty.", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "小せぇ。",
 		   NULL, " So petty.", Line_WaitForInput);
@@ -4289,7 +4289,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s19/01/hr_kei09710", 128);
 	OutputLine(NULL, "「まず富田くん。",
-		   NULL, "\"First of all, Tomita-kun.", Line_ContinueAfterTyping);
+		   NULL, "\"First of all, Tomita-kun.", Line_Continue);
 	OutputLine(NULL, "君は沙都子萌えだよな？",
 		   NULL, " You like Satoko, right?", Line_WaitForInput);
 	PlayVoice(4, "s19/01/hr_kei09720", 128);
@@ -4322,12 +4322,12 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s19/01/hr_kei09770", 128);
 	OutputLine(NULL, "「ロリ！",
-		   NULL, "\"Lolis!", Line_ContinueAfterTyping);
+		   NULL, "\"Lolis!", Line_Continue);
 	PlaySE( 3, "wa_010", 128, 64 );
 
 //!w800萌え！/
 	OutputLine(NULL, "萌え！",
-		   NULL, " Moe!", Line_ContinueAfterTyping);
+		   NULL, " Moe!", Line_Continue);
 
 	PlaySE( 3, "wa_014", 128, 64 );
 	OutputLineAll(NULL, "", Line_WaitForInput);
@@ -4336,7 +4336,7 @@ void main()
 //!w800美少女！！/
 	PlayVoice(4, "s19/01/hr_kei09760", 128);
 	OutputLine(NULL, "美少女！！",
-		   NULL, " Pretty girls!!", Line_ContinueAfterTyping);
+		   NULL, " Pretty girls!!", Line_Continue);
 
 	PlaySE( 3, "wa_011", 128, 64 );
 	OutputLineAll(NULL, "", Line_WaitForInput);
@@ -4345,17 +4345,17 @@ void main()
 //!w800男の垂涎、/
 	PlayVoice(4, "s19/01/hr_kei09780", 128);
 	OutputLine(NULL, "男の垂涎、",
-		   NULL, " What men covet,", Line_ContinueAfterTyping);
+		   NULL, " What men covet,", Line_Continue);
 
 	PlaySE( 3, "wa_012", 128, 64 );
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 
 //!w800男の浪漫！！/
 	OutputLine(NULL, "男の浪漫！！",
-		   NULL, " what men dream about!!", Line_ContinueAfterTyping);
+		   NULL, " what men dream about!!", Line_Continue);
 
 	PlaySE( 3, "wa_029", 128, 64 );
 	OutputLineAll(NULL, "", Line_WaitForInput);
@@ -4364,12 +4364,12 @@ void main()
 //!w800例えるなら永遠にたどり着けないエデンの園ッ！！/
 	PlayVoice(4, "s19/01/hr_kei09790", 128);
 	OutputLine(NULL, "例えるなら永遠にたどり着けないエデンの園ッ！！",
-		   NULL, " It's like an unreachable Garden of Eden!!", Line_ContinueAfterTyping);
+		   NULL, " It's like an unreachable Garden of Eden!!", Line_Continue);
 
 	PlaySE( 3, "wa_007", 128, 64 );
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
 
@@ -4436,8 +4436,8 @@ void main()
 	ClearMessage();
 
 //「「そそ、そんなこと......そんな、あのあのあの...ッ！！！！」＠
-	PlayVoice(4, "s19/24/992400013", 128);
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a17d6b>富田</color>＆<color=#7a7e7d>岡村</color>", NULL, "<color=#a17d6b>Tomita</color> & <color=#7a7e7d>Okamura</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s19/24/992400013", 128);
 	PlayVoice(5, "s19/25/992500010", 128);
 	OutputLine(NULL, "「「そそ、そんなこと……そんな、あのあのあの…ッ！！！！」」",
 		   NULL, "\"\"Th-th-that... That... Uhhhhhhhhhh......!!!!!\"\"", GetGlobalFlag(GLinemodeSp));
@@ -4459,9 +4459,9 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s19/01/hr_kei09880", 128);
 	OutputLine(NULL, "　前原先輩のわがままの犠牲者なだけ！！",
-		   NULL, "You two are simply sacrifices to Maebara-senpai's whims!!", Line_ContinueAfterTyping);
+		   NULL, "You two are simply sacrifices to Maebara-senpai's whims!!", Line_Continue);
 	OutputLine(NULL, "　いやいやでいいんだよ！！",
-		   NULL, " You can pretend to be against it!!", Line_ContinueAfterTyping);
+		   NULL, " You can pretend to be against it!!", Line_Continue);
 	OutputLine(NULL, "　わかってるッ！！！お前たちの胸の内は全部わかってるッ！！！！」",
 		   NULL, " I understand!!! I know everything that your hearts desire!!!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -4503,11 +4503,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s19/01/hr_kei09900_03", 128);
 	OutputLine(NULL, "　自分に素直になれッ！！！",
-		   NULL, "Be honest with yourselves!!!", Line_ContinueAfterTyping);
+		   NULL, "Be honest with yourselves!!!", Line_Continue);
 	OutputLine(NULL, "夢を追え！！",
-		   NULL, " Chase your dreams!!", Line_ContinueAfterTyping);
+		   NULL, " Chase your dreams!!", Line_Continue);
 	OutputLine(NULL, "そしてかなえろ！！！",
-		   NULL, " Fulfill them!!!", Line_ContinueAfterTyping);
+		   NULL, " Fulfill them!!!", Line_Continue);
 	OutputLine(NULL, "俺がかなえてやるッ！！！",
 		   NULL, " I'll fulfill them for you!!!", Line_WaitForInput);
 
@@ -4535,8 +4535,8 @@ void main()
 
 
 //「「ま、前原さぁあぁあぁあぁぁぁぁぁぁあああんッ！！！！！！」￥
-	PlayVoice(4, "s19/24/992400014", 128);
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a17d6b>富田</color>＆<color=#7a7e7d>岡村</color>", NULL, "<color=#a17d6b>Tomita</color> & <color=#7a7e7d>Okamura</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s19/24/992400014", 128);
 	PlayVoice(5, "s19/25/992500011", 128);
 	OutputLine(NULL, "「「ま、前原さぁあぁあぁあぁぁぁぁぁぁあああんッ！！！！！！」」",
 		   NULL, "\"\"Ma-Maebara-saaaaAAAaaaaaAAAaan!!!!!!\"\"", Line_Normal);
@@ -4581,12 +4581,12 @@ void main()
 
 
 //「「「ゲーム終了ぉぉおおぉおッ！」」」/
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>＆<color=#a17d6b>富田</color>＆<color=#7a7e7d>岡村</color>", NULL, "<color=#956f6e>Keiichi</color> & <color=#a17d6b>Tomita</color> & <color=#7a7e7d>Okamura</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s19/24/992400015", 128);
 	PlayVoice(5, "s19/25/992500012", 128);
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>＆<color=#a17d6b>富田</color>＆<color=#7a7e7d>岡村</color>", NULL, "<color=#956f6e>Keiichi</color> & <color=#a17d6b>Tomita</color> & <color=#7a7e7d>Okamura</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(6, "s19/01/hr_kei09930_01", 128);
 	OutputLine(NULL, "「「「ゲーム終了ぉぉおおぉおッ！」」」",
-		   NULL, "\"\"\"Game oveeeer!\"\"\"", Line_ContinueAfterTyping);
+		   NULL, "\"\"\"Game oveeeer!\"\"\"", Line_Continue);
 
 	PlaySE( 3, "wa_007", 128, 64 );
 	ShakeScreen( 0, 50, 20, 3, 0, );
@@ -4659,8 +4659,8 @@ void main()
 	FadeBustshotWithFiltering( 1, "left", 1, FALSE, 0, 0, 300, TRUE );
 
 //「「ぅおおおぉーーすッ！！！！」＠
-	PlayVoice(4, "s19/24/992400016", 128);
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a17d6b>富田</color>＆<color=#7a7e7d>岡村</color>", NULL, "<color=#a17d6b>Tomita</color> & <color=#7a7e7d>Okamura</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s19/24/992400016", 128);
 	PlayVoice(5, "s19/25/992500013", 128);
 	OutputLine(NULL, "「「ぅおおおぉーーすッ！！！！」」",
 		   NULL, "\"\"YESSIR!!!!\"\"", GetGlobalFlag(GLinemodeSp));
@@ -5079,8 +5079,8 @@ void main()
 	ClearMessage();
 
 //「「前原さぁああん！！＠　絶対優勝して下さいよぉおぉおッ！！！」＠
-	PlayVoice(4, "s19/24/992400017", 128);
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a17d6b>富田</color>＆<color=#7a7e7d>岡村</color>", NULL, "<color=#a17d6b>Tomita</color> & <color=#7a7e7d>Okamura</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s19/24/992400017", 128);
 	PlayVoice(5, "s19/25/992500014", 128);
 	OutputLine(NULL, "「「前原さぁああん！！！",
 		   NULL, "\"\"Maebara-saaaaaan!!!", Line_WaitForInput);
@@ -5190,18 +5190,18 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s19/03/990300451", 128);
 	OutputLine(NULL, "「あ、ごめん圭ちゃん、",
-		   NULL, "\"Oh, sorry, Kei-chan.", Line_ContinueAfterTyping);
+		   NULL, "\"Oh, sorry, Kei-chan.", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 700 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "私、",
-		   NULL, " Right now,", Line_ContinueAfterTyping);
+		   NULL, " Right now,", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 700 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "これからバイトー…☆」",
 		   NULL, " I've got to get to my part-time job☆.\"", GetGlobalFlag(GLinemodeSp));

@@ -1220,14 +1220,14 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s02/01/130101020", 128);
 	OutputLine(NULL, "「いいよいいよ、",
-		   NULL, "\"It's okay, it's okay.", Line_ContinueAfterTyping);
+		   NULL, "\"It's okay, it's okay.", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "別にお茶を飲みに来たわけじゃないし……、」",
-		   NULL, " We didn't really come here to drink tea anyway...\"", Line_ContinueAfterTyping);
+		   NULL, " We didn't really come here to drink tea anyway...\"", Line_Continue);
 
 	FadeOutBGM( 1, 1000, TRUE );
 
@@ -1526,11 +1526,11 @@ void main()
 		   NULL, "\"............Mion.", Line_WaitForInput);
 	PlayVoice(4, "s02/01/130101026", 128);
 	OutputLine(NULL, "……まず、",
-		   NULL, " ...First.........", Line_ContinueAfterTyping);
+		   NULL, " ...First.........", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……………謝ることがある。」",
 		   NULL, " I have something to apologize for.\"", GetGlobalFlag(GLinemodeSp));
@@ -1566,11 +1566,11 @@ void main()
 		   NULL, "\"...Well, on the night of Watanagashi.", Line_WaitForInput);
 	PlayVoice(4, "s02/01/130101028", 128);
 	OutputLine(NULL, "………俺は、神社の…祭具殿に、",
-		   NULL, " ......The... ritual storehouse behind the shrine...", Line_ContinueAfterTyping);
+		   NULL, " ......The... ritual storehouse behind the shrine...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…入ったんだ。」",
 		   NULL, " I went in there.\"", GetGlobalFlag(GLinemodeSp));
@@ -2002,25 +2002,25 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s02/02/130200518", 128);
 	OutputLine(NULL, "「……そして魅ぃちゃんは、",
-		   NULL, "\"...Then, Mii-chan, you...", Line_ContinueAfterTyping);
+		   NULL, "\"...Then, Mii-chan, you...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……梨花ちゃんを………、",
-		   NULL, " Rika-chan......", Line_ContinueAfterTyping);
+		   NULL, " Rika-chan......", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……………消、",
-		   NULL, " You era............", Line_ContinueAfterTyping);
+		   NULL, " You era............", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "………………隠してしまった。」",
 		   NULL, " you hid her.\"", GetGlobalFlag(GLinemodeSp));
@@ -2311,11 +2311,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s02/03/130300333", 128);
 	OutputLine(NULL, "「………………………………これは、",
-		   NULL, "\"............That's...", Line_ContinueAfterTyping);
+		   NULL, "\"............That's...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……あははははは。",
 		   NULL, " Ahahahahaha.", Line_WaitForInput);
@@ -2682,11 +2682,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s02/01/130101048", 128);
 	OutputLine(NULL, "「………………本当に、",
-		   NULL, "\"............It's really......", Line_ContinueAfterTyping);
+		   NULL, "\"............It's really......", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "………何を尋ねてもいいんだな…。」",
 		   NULL, " all right if we ask anything, then...?\"", GetGlobalFlag(GLinemodeSp));
@@ -2752,11 +2752,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s02/02/130200541", 128);
 	OutputLine(NULL, "「…どうして、",
-		   NULL, "\"...Why............", Line_ContinueAfterTyping);
+		   NULL, "\"...Why............", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…………こんなことを…ッ？！？！」",
 		   NULL, " would you do this...?!?!\"", GetGlobalFlag(GLinemodeSp));
@@ -3242,7 +3242,7 @@ void main()
 //「宗平は中国大陸に出兵し、ハルピンで食料倉庫の管理をしていたと言い、撤退時に上官や仲間たちと共謀して、軍の缶詰をごっそりと盗み出していたのでした＠......それを瀬戸内海某所に隠し、闇市で高値で売りさばいて大きな富を得たのです。＠
 	PlayVoice(4, "s02/03/130300361_8", 128);
 	if (GetGlobalFlag(GADVMode)) {
-		OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping);
+		OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_Continue);
 		OutputLine(NULL, "「宗平は中国大陸に出兵した際、食料倉庫の管理をしていて、撤退時に上官や仲間たちと共謀して、軍の缶詰をごっそりと盗み出していたのでした。",
 			   NULL, "<size=-2>\"Sohei said that he managed food warehouses in Harbin after being dispatched to the Chinese mainland. When it was time to pull out, he conspired with his superiors and comrades and stole a great deal of the army's canned goods. </size>", GetGlobalFlag(GLinemodeSp));
 	} else {
@@ -4111,11 +4111,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s02/02/130200549", 128);
 	OutputLine(NULL, "「………………………それで、",
-		   NULL, "\"............Is that...", Line_ContinueAfterTyping);
+		   NULL, "\"............Is that...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……オヤシロさまの祟りを起こすことになったの…？」",
 		   NULL, " why Oyashiro-sama's curse happens...?\"", Line_Normal);
@@ -4356,11 +4356,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s02/03/130300435", 128);
 	OutputLine(NULL, "いくつかは園崎家だけでなく、他の御三家の、公由家や古手家が関わっているものもあるけど、",
-		   NULL, "Some were not the Sonozaki family, but were rather related to the others, the Kimiyoshi family and the Furude family.", Line_ContinueAfterTyping);
+		   NULL, "Some were not the Sonozaki family, but were rather related to the others, the Kimiyoshi family and the Furude family.", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……その全ての中心に私がいたと思う。」",
 		   NULL, " ...I think I was at the center of all of them.\"", Line_Normal);
@@ -4420,11 +4420,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s02/03/130300440", 128);
 	OutputLine(NULL, "　……この百年で、一番平和な雛見沢を見ながら引退できるのは、",
-		   NULL, "...Being able to retire with Hinamizawa at the most peaceful it's been in a hundred years...", Line_ContinueAfterTyping);
+		   NULL, "...Being able to retire with Hinamizawa at the most peaceful it's been in a hundred years...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……ひょっとすると歴代の園崎家の当主で、一番の幸せなのかもしれないし。」",
 		   NULL, " could be the happiest thing that's ever happened to any of the Sonozaki leaders of past generations.\"", GetGlobalFlag(GLinemodeSp));
@@ -4485,12 +4485,12 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s02/02/130200552", 128);
 	OutputLine(NULL, "「でも、…魅ぃちゃんは梨花ちゃんと沙都子ちゃんを、",
-		   NULL, "\"But... Rika-chan and Satoko-chan", Line_ContinueAfterTyping);
+		   NULL, "\"But... Rika-chan and Satoko-chan", Line_Continue);
 // !s400
 	SetSpeedOfMessage( TRUE, 0, );
 
 	OutputLine(NULL, "…………………………………",
-		   NULL, "...................................", Line_ContinueAfterTyping);
+		   NULL, "...................................", Line_Continue);
 // !sd
 	SetSpeedOfMessage( FALSE, 0, );
 
@@ -4865,11 +4865,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s02/03/130300457", 128);
 	OutputLine(NULL, "「圭ちゃんは、",
-		   NULL, "\"Kei-chan...", Line_ContinueAfterTyping);
+		   NULL, "\"Kei-chan...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 700 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……何も悪くないよ。」",
 		   NULL, " You're not at fault.\"", GetGlobalFlag(GLinemodeSp));
@@ -5137,11 +5137,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s02/02/130200566", 128);
 	OutputLine(NULL, "「自首、",
-		   NULL, "\"Please...", Line_ContinueAfterTyping);
+		   NULL, "\"Please...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…しよ。」",
 		   NULL, " turn yourself in.\"", GetGlobalFlag(GLinemodeSp));
@@ -5198,11 +5198,11 @@ void main()
 		   NULL, "\"I'm well aware... of how serious my own crimes are.", Line_WaitForInput);
 	PlayVoice(4, "s02/03/130300483", 128);
 	OutputLine(NULL, "……例え自首が認められても、",
-		   NULL, " ...Even if they accept me turning myself in...", Line_ContinueAfterTyping);
+		   NULL, " ...Even if they accept me turning myself in...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……多分、もうここに帰ってくることもないと思う。」",
 		   NULL, " I'll probably never be able to come back here.\"", GetGlobalFlag(GLinemodeSp));
@@ -5330,11 +5330,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s02/03/130300491", 128);
 	OutputLine(NULL, "……相容れることなんて、…オヤシロさまが実在して、仲介してくれない限り、",
-		   NULL, "...For us to be compatible... as long as Oyashiro-sama doesn't exist to mediate...", Line_ContinueAfterTyping);
+		   NULL, "...For us to be compatible... as long as Oyashiro-sama doesn't exist to mediate...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…絶対にない。」",
 		   NULL, " simply isn't possible.\"", Line_Normal);
@@ -5572,11 +5572,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s02/02/130200579", 128);
 	OutputLine(NULL, "「…………魅ぃちゃんを、",
-		   NULL, "\".........Take care...", Line_ContinueAfterTyping);
+		   NULL, "\".........Take care...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…よろしくね。」",
 		   NULL, " of Mii-chan.\"", GetGlobalFlag(GLinemodeSp));

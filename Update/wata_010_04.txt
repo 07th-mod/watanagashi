@@ -186,11 +186,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s02/01/130100702", 128);
 	OutputLine(NULL, "「…………俺が、",
-		   NULL, "\"......I...", Line_ContinueAfterTyping);
+		   NULL, "\"......I...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……全部、悪いんだ。",
 		   NULL, " ...This is all my fault.", Line_WaitForInput);
@@ -1861,11 +1861,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s02/01/130100726", 128);
 	OutputLine(NULL, "「……別に、",
-		   NULL, "\"...I don't...", Line_ContinueAfterTyping);
+		   NULL, "\"...I don't...", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……用なんかないです。」",
 		   NULL, " ...I don't need anything.\"", GetGlobalFlag(GLinemodeSp));
@@ -2153,7 +2153,7 @@ void main()
 		   NULL, "\"What did they call it? A ritual storehouse?", Line_WaitForInput);
 	PlayVoice(4, "s02/11/130700146", 128);
 	OutputLine(NULL, "…あそこの鍵を簡易なものに付け替えたから賊に入られたんだって言うケチがついてるらしいんですよ。」",
-		   NULL, " ...They're saying it was bad luck—the lock to it had been replaced by a simpler one, which made it easier for thieves to get inside.\"", Line_ContinueAfterTyping);
+		   NULL, " ...They're saying it was bad luck—the lock to it had been replaced by a simpler one, which made it easier for thieves to get inside.\"", Line_Continue);
 
 	PlaySE( 3, "wa_022", 128, 64 );
 
@@ -2281,11 +2281,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s02/01/130100731", 128);
 	OutputLine(NULL, "「…ど、どう思うって、",
-		   NULL, "\"...Wh-What do I think?", Line_ContinueAfterTyping);
+		   NULL, "\"...Wh-What do I think?", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……その一部の村人ってのもよくわからないし…、」",
 		   NULL, " ...I don't really know what you mean by 'certain members of the village'...\"", Line_Normal);
@@ -2321,25 +2321,25 @@ void main()
 		   NULL, "\"The Three Families are the three oldest families in Hinamizawa.", Line_WaitForInput);
 	PlayVoice(4, "s02/11/130700163", 128);
 	OutputLine(NULL, "具体的に言うと、",
-		   NULL, " To give actual names—", Line_ContinueAfterTyping);
+		   NULL, " To give actual names—", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "公由家、",
-		   NULL, " the Kimiyoshi family,", Line_ContinueAfterTyping);
+		   NULL, " the Kimiyoshi family,", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "園崎家、",
-		   NULL, " the Sonozaki family,", Line_ContinueAfterTyping);
+		   NULL, " the Sonozaki family,", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "古手家の３つのことです。",
 		   NULL, " and the Furude family.", Line_WaitForInput);
@@ -2824,18 +2824,18 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s02/11/130700205", 128);
 	OutputLine(NULL, "「一昨日、",
-		   NULL, "\"The night before last,", Line_ContinueAfterTyping);
+		   NULL, "\"The night before last,", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "昨日、",
-		   NULL, " last night,", Line_ContinueAfterTyping);
+		   NULL, " last night,", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "そして今日。",
 		   NULL, " and now today.", Line_WaitForInput);
