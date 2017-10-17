@@ -1,0 +1,42 @@
+void main()
+{
+}
+
+void dialog000()
+{
+}
+
+void dialog001()
+{
+	PlayVoice(4, "s19/04/990400171", 128);
+	OutputLine(NULL, "「圭々がいじめたぁあぁあ！！！",
+		   NULL, "\"Kei-kei is bullying meeeeeEEeee!!!", Line_WaitForInput);
+}
+
+void dialog002()
+{
+	PlayVoice(4, "s19/03/990300412", 128);
+	OutputLine(NULL, "　傾注傾注～！！」",
+		   NULL, " Listen close now~!!\"", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog003()
+{
+	OutputLine(NULL, "俺がかなえてやるッ！！！",
+		   NULL, " I'll fulfill them for you!!!", Line_Continue);
+	OutputLine(NULL, "俺がだぁああぁあぁあッ！！！！」",
+		   NULL, " I wiiiiilllllll!!!!\"", Line_ContinueAfterTyping);
+}
+
+void dialog004()
+{
+	PlayVoice(4, "s19/03/990300473", 128);
+	OutputLine(NULL, "「圭ちゃんが持ってたら、確実に明日から変態扱いだね。うん！」",
+		   NULL, "\"If you walked around with it, then you'd be treated like a weirdo starting tomorrow. Definitely!\"", Line_Normal);
+}
+
+void dialog005()
+{
+	OutputLine(NULL, "　百万長者ゲーム。",
+		   NULL, "It was a game called 'Billionaire'.", GetGlobalFlag(GLinemodeSp));
+}

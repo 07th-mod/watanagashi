@@ -1,0 +1,89 @@
+void main()
+{
+}
+
+void dialog000()
+{
+}
+
+void dialog001()
+{
+	PlayVoice(4, "s19/03/990300552", 128);
+	OutputLine(NULL, "　カチューシャからガーターベルトにショーツまで…ぜ〜んぶ揃ってるんだからねぇ！！」",
+		   NULL, "From the headband to the garter belt, even the underwear... I've got it aaaaall prepared for you!!\"", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog002()
+{
+
+	PlayVoice(4, "s19/05/990500123", 128);
+	OutputLine(NULL, "「……メイドさん衣装、カチューシャ、ガーターベルト付きで１位の人の荷物を運ぶのですよ。」",
+		   NULL, "\"Dressing up as a maid, complete with hairband and garter belt, while carrying around the winner's stuff.\"", GetGlobalFlag(GLinemodeSp));
+
+}
+
+void dialog003()
+{
+	PlayVoice(4, "s19/01/hr_kei11480", 128);
+	OutputLine(NULL, "「男がガーターベルトのつけ方を習って、人生のどこで役に立つってーんだよぉおおぉ！！！」",
+		   NULL, "\"How the bloody hell will a man knowing how to put on a garter belt be usefuuuuuUUul!!!\"", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog004()
+{
+	PlayVoice(4, "s19/02/990200507", 128);
+	OutputLine(NULL, "大騒ぎしたら……",
+		   NULL, " If you cause a scene here...", Line_Continue);
+
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 800 );
+	// (backup) SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "そ、その",
+		   NULL, " Th-They'll...", Line_Continue);
+
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	// (backup) SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "……ぱ、ぱんつまで女の子のだって…バ、バレちゃうよ？」",
+		   NULL, " find out that I'm wearing women's clothing right down to the unmentionables?\"", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog005()
+{
+	PlayVoice(4, "s19/03/990300623", 128);
+	OutputLine(NULL, "男の人ってガーターベルトとかって好きなんだよねぇ〜。",
+		   NULL, " Men like things like garter belts, right~?", Line_WaitForInput);
+}
+
+void dialog006()
+{
+	PlayVoice(4, "s19/03/990300625", 128);
+	OutputLine(NULL, "「きゅっとするでしょ。",
+		   NULL, "\"It's tight, isn't it?", Line_WaitForInput);
+	PlayVoice(4, "s19/03/990300626", 128);
+	OutputLine(NULL, "歩く度に肌を擦るの…ちゃんと感じてる〜？」",
+		   NULL, " Can you feel it rub against your skin as you walk?\"", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog007()
+{
+	PlayVoice(4, "s19/01/hr_kei11570", 128);
+	OutputLine(NULL, "　ぜってーに俺が圧勝して、路上羞恥プレイに処してやるー！」",
+		   NULL, " I'll achieve an overwhelming victory, then condemn you to a public shaming!\"", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog008()
+{
+	PlayVoice(4, "s19/01/hr_kei11830", 128);
+	OutputLine(NULL, "「魅音って結構、胸があるから今にもこぼれそうだよなー。",
+		   NULL, "\"Mion, you have pretty big breasts, it seems like they're ready to spill out even right now...", Line_WaitForInput);
+}
+
+void dialog009()
+{
+	PlayVoice(4, "s19/01/hr_kei12100", 128);
+	OutputLine(NULL, "「詩音はウェイトレスの仕事、初めてなのか？",
+		   NULL, "\"Shion, is this your first time being a waitress?", Line_WaitForInput);
+}

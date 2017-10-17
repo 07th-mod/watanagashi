@@ -1,0 +1,128 @@
+void main()
+{
+}
+
+void dialog000()
+{
+}
+
+void dialog001()
+{
+	PlayVoice(4, "s19/03/990300509", 128);
+	OutputLine(NULL, "「はーい！！　みんな傾聴傾聴〜！",
+		   NULL, "\"Alright! Everybody pay attention~!", Line_WaitForInput);
+}
+
+void dialog002()
+{
+	PlayVoice(4, "s19/01/vt0_keiichi0004", 128);
+	OutputLine(NULL, "荷物持ちだ！",
+		   NULL, " Schlepping!\"", Line_Normal);
+}
+
+void dialog003()
+{
+
+	PlayVoice(4, "s19/05/990500121", 128);
+	OutputLine(NULL, "「………『口紅』って書いてありますです。」",
+		   NULL, "\"...It says 'lipstick' .\"", Line_Normal);
+
+}
+
+void dialog004()
+{
+}
+
+void dialog005()
+{
+	PlayVoice(4, "s19/01/hr_kei11180", 128);
+	OutputLine(NULL, "さくらって言ったらあの有名な口紅の商品名『Ｓａｋｕｒａ』だろおおお！",
+		   NULL, "Sakura can only mean that famous lipstick brand 'Sakura', right!?!? ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s19/01/hr_kei11190", 128);
+	OutputLine(NULL, "　ほら、新色が出たってＴＶでも言ってたし、ワイドショーでも特集組んでたじゃん！",
+		   NULL, "You know, the one in a new color they've been talking about on TV, they even did a special on it!", Line_Continue);
+	OutputLine(NULL, "　女としてはチェック入れるんじゃないのか？",
+		   NULL, " Don't you check these things out, as ladies?", Line_Continue);
+	OutputLine(NULL, "　俺だって知ってるぐらいなんだからぁああぁあぁあッ！！！！」",
+		   NULL, " Even I've seheheeen iiiiiiiiit!!!!\"", Line_Normal);
+}
+
+void dialog006()
+{
+	PlayVoice(4, "s19/03/990300597", 128);
+	OutputLine(NULL, "なんかコーヒー飲んでもカップに付かないってやつでしょ？",
+		   NULL, " It's the one that doesn't stick to the cup even if you're drinking coffee, right?", Line_WaitForInput);
+}
+
+void dialog007()
+{
+	PlayVoice(4, "s19/02/990200496", 128);
+	OutputLine(NULL, "「うんうん。",
+		   NULL, "\"Yup, yup.", Line_Continue);
+	OutputLine(NULL, "とってもかぁいい色してるんだよね！",
+		   NULL, " It's a really kyute color, isn't it!", Line_WaitForInput);
+	PlayVoice(4, "s19/02/990200497", 128);
+	OutputLine(NULL, "　レナも薬局の化粧品売り場で見たよ。",
+		   NULL, " I saw it in the makeup section at the drug store.", Line_WaitForInput);
+	PlayVoice(4, "s19/02/990200498", 128);
+	OutputLine(NULL, "　薄いピンク色で、お持ち帰りしようかと思っちゃった～」",
+		   NULL, " That pink color made me want to take it home~\"", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog008()
+{
+	PlayVoice(4, "s19/04/990400252", 128);
+	OutputLine(NULL, "「そ、そうですわね。",
+		   NULL, "\"I-indeed.", Line_WaitForInput);
+	PlayVoice(4, "s19/04/990400253", 128);
+	OutputLine(NULL, "女性としては一通りチェックを入れるのは常識ですわよねぇ！」",
+		   NULL, " It's only common sense for a lady to keep up on these matters!\"", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog009()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s19/05/990500122", 128);
+	OutputLine(NULL, "「沙都子はどちらかというと、特売のティッシュの方に興味があったみたいなのです。」",
+		   NULL, "\"I thought you were more interested in the bargain-sale tissues, Satoko.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s19/04/990400254", 128);
+	OutputLine(NULL, "「し、失礼ですわね！　ちゃんと新製品のチェックぐらい入れてましてよっ！」",
+		   NULL, "\"How rude of you! I make sure to keep an eye on the newest products!\"", Line_Normal);
+}
+
+void dialog010()
+{
+
+//魅音「まあ、それはいいんだけどさ、“さくら”って聞いて発想がそっちに行っちゃうってのは……」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s19/03/990300599", 128);
+	OutputLine(NULL, "「まあ、それはいいんだけどさ、“さくら”って聞いて発想がそっちに行っちゃうってのは……」",
+		   NULL, "\"That aside, it's just a bit surprising that's the first thing you think of when you hear 'Sakura'...", Line_Normal);
+
+//圭一rvS19/01/HR_KEI11200.「な、なんでだよおおお！kvS19/01/HR_KEI11210.　女の立場になって考えてみただけだろおおおお！」
+	PlayVoice(4, "s19/01/hr_kei11200", 128);
+	OutputLine(NULL, "「な、なんでだよおおお！",
+		   NULL, "\"Wh- whaaaat?", Line_WaitForInput);
+	PlayVoice(4, "s19/01/hr_kei11210", 128);
+	OutputLine(NULL, "　女の立場になって考えてみただけだろおおおお！」",
+		   NULL, " I was just thinking from a ladies perspective!!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+//圭一rvS19/01/HR_KEI11220.「女に生まれたからには当然美しく装うのがデフォ！kvS19/01/HR_KEI11230.　そう考えるのが正しいんだよぉおおおぉおぉおーー…ッ！！kvS19/01/HR_KEI11240.　そうじゃなきゃダメなんだよぉおおおぉおぉおーー…ッ！！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s19/01/hr_kei11220", 128);
+	OutputLine(NULL, "「女に生まれたからには当然美しく装うのがデフォ！",
+		   NULL, "\"Being born as a lady, obviously it's normal to maintain a beautiful image!", Line_WaitForInput);
+	PlayVoice(4, "s19/01/hr_kei11230", 128);
+	OutputLine(NULL, "　そう考えるのが正しいんだよぉおおおぉおぉおーー…ッ！！",
+		   NULL, " It's right to think thaaaaaaat!!", Line_WaitForInput);
+	PlayVoice(4, "s19/01/hr_kei11240", 128);
+	OutputLine(NULL, "　そうじゃなきゃダメなんだよぉおおおぉおぉおーー…ッ！！！」",
+		   NULL, " That's how it has to beeeeeeeee!!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+}
