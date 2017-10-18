@@ -436,6 +436,14 @@ void main()
 		   NULL, " Is Rika-chan training for a competition or something??\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 3){ModCallScriptSection("zwata_004_vm0x_n01","dialog001");}
+	if(GetGlobalFlag(GCensor) <= 2){ModCallScriptSection("zwata_004_vm00_n01","dialog001");}
+	//VoiceMatchingEnd
+	
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "me_ta_th_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	
 //「あれ＠　圭ちゃん家には回覧板とか行ってない＠　書いてなかった＠　今度の日曜に綿流しのお祭りがあるって。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s19/03/500300117", 128);
@@ -453,24 +461,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //圭一「いや、お祭りの話は前に魅音たちからも聞いたけどさ。……確か梨花ちゃん、お祭りの実行委員なんだよな。それと関係あるのか？」
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/01/hr_kei15130_01", 128);
-	OutputLine(NULL, "「いや、お祭りの話は前に魅音たちからも聞いたけどさ。……確か梨花ちゃん、お祭りの実行委員なんだよな。それと関係あるのか？」",
-		   NULL, "\"You guys did tell me about the festival before. That's right, Rika-chan is on the festival comittee, isn't she? Does it have something to do with that?\"", Line_Normal);
 
-
-	DisableWindow();
-	DrawBustshotWithFiltering( 3, "re_ta_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
-
-//「梨花ちゃんは綿流しの巫女さんだから、奉納の演舞をすることになっててね＠その練習なの。＠
-	PlayVoice(4, "s19/02/500200081", 128);
-	OutputLine(NULL, "「梨花ちゃんは綿流しの巫女さんだから、奉納の演舞をすることになっててね。",
-		   NULL, "\"Rika-chan is a shrine maiden for the Watanagashi, so she has to perform a ritual dance. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/02/500200082", 128);
-	OutputLine(NULL, "その練習なの。」",
-		   NULL, "It's practice for that.\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 3){ModCallScriptSection("zwata_004_vm0x_n01","dialog002");}
+	if(GetGlobalFlag(GCensor) <= 2){ModCallScriptSection("zwata_004_vm00_n01","dialog002");}
+	//VoiceMatchingEnd
 
 
 //　...あれ＠
@@ -481,18 +476,12 @@ void main()
 
 
 //　そう言えば...お袋が夕飯の時、そんな話をしていたような気がする￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　そう言えば…お袋が夕飯の時、そんな話をしていたような気がする。",
-		   NULL, "Come to think of it, I have a feeling Mom did say something about it during dinner the other day.", Line_Normal);
-	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "つまり梨花ちゃんがその巫女役をつとめるってことか。",
-		   NULL, " So, Rika-chan plays the part of a shrine maiden?", Line_Normal);
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 3){ModCallScriptSection("zwata_004_vm0x_n01","dialog003");}
+	if(GetGlobalFlag(GCensor) <= 2){ModCallScriptSection("zwata_004_vm00_n01","dialog003");}
+	//VoiceMatchingEnd
 
-	PlayVoice(4, "s19/01/hr_kei15130_02", 128);
-	OutputLine(NULL, "「なるほどな。確か、布団とかどてらの供養だって言ってたよな。…じゃあ、あれか？　演舞か何かで、中に入ってる綿を取り出したりするのか？」",
-		   NULL, " I see, Mom did say that futons, padded cloaks and stuff are made as offerings. ...So, does that mean the cotten stuffing gets pulled out during a dance or something?\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawBustshot( 1, "me_ta_wi_a2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
@@ -511,46 +500,19 @@ void main()
 	DrawBustshot( 3, "re_ta_ha_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //レナrvS19/02/500200087.「…祭壇にもお布団を積み上げているし
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/02/500200087", 128);
-	OutputLine(NULL, "　…祭壇にもお布団を積み上げているし。」",
-		   NULL, " ...They also pile futons up on the altar.\"", Line_Normal);
-	ClearMessage();
+
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 3){ModCallScriptSection("zwata_004_vm0x_n01","dialog004");}
+	if(GetGlobalFlag(GCensor) <= 2){ModCallScriptSection("zwata_004_vm00_n01","dialog004");}
+	//VoiceMatchingEnd
 
 //「綿流しはね、毎年６月の日曜日に神社でやるお祭りなの＠とってもにぎわうんだよ！＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/02/500200083", 128);
-	OutputLine(NULL, "「綿流しはね、毎年６月の日曜日に神社でやるお祭りなの。",
-		   NULL, "The Watanagashi is a festival that happens at the shrine on a Sunday every June.", Line_WaitForInput);
-	PlayVoice(4, "s19/02/500200084", 128);
-	OutputLine(NULL, "とってもにぎわうんだよ！」",
-		   NULL, " It's very lively!\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-//そう言って魅音とレナがちょっと感心したように、にっこりと笑いながらうなずき返す。
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "そう言って魅音とレナがちょっと感心したように、にっこりと笑いながらうなずき返す。",
-		   NULL, "Mion and Rena nodded back at me, looking a bit impressed.", Line_WaitForInput);
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 3){ModCallScriptSection("zwata_004_vm0x_n01","dialog005");}
+	if(GetGlobalFlag(GCensor) <= 2){ModCallScriptSection("zwata_004_vm00_n01","dialog005");}
+	//VoiceMatchingEnd
 
-//どうやら今度の想像は当たっていたようだ。kまぁ、はじめに聞いたときは布団を沢に積み上げるイメージが真っ先に思い浮かんだけど、k……それだと流れも堰き止められるし、なにより後始末が大変だしな。
-	OutputLine(NULL, "どうやら今度の想像は当たっていたようだ。",
-		   NULL, " It seemed that my observations were on mark.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "まぁ、はじめに聞いたときは布団を沢に積み上げるイメージが真っ先に思い浮かんだけど、",
-		   NULL, " Although, when I first heard about it, I imagined piling futons up in the swamp.", Line_WaitForInput);
-	OutputLine(NULL, "……それだと流れも堰き止められるし、なにより後始末が大変だしな。",
-		   NULL, " ...but that'd block the river, and be a real pain to clear up after.", Line_Normal);
-
-//圭一「……それにしてもご先祖様とか戦没者とか、針とか包丁とかの供養ってのは聞いたことあるけど。布団の供養っては初耳だな。どんな謂れがあるんだ？」
-	PlayVoice(4, "s19/01/hr_kei15130_03", 128);
-	OutputLine(NULL, "「……それにしてもご先祖様とか戦没者とか、針とか包丁とかの供養ってのは聞いたことあるけど。",
-		   NULL, "\"I've heard of people leaving offerings of things like needles or kitchen knives to their ancestors or to casualties of war...", Line_Continue);
-	OutputLine(NULL, "布団の供養っては初耳だな。",
-		   NULL, " But an offering of futons is a first for me.", Line_Continue);
-	OutputLine(NULL, "どんな謂れがあるんだ？」",
-		   NULL, " What's the history behind that?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -3174,9 +3136,12 @@ void main()
 
 //「クソ女がぁあぁぁあぁああ！！＠　ッくぞンにゃろぉおおおぉおお！！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不良</color>", NULL, "<color=#f5e6d3>Delinquent</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/00/badb50006", 128);
-	OutputLine(NULL, "「ンだこの女ぁあぁぁあぁああ！！！",
-		   NULL, "\"Ye fookin biiiiitch!!", Line_WaitForInput);
+
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_004_vm0x_n01","dialog006");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_004_vm00_n01","dialog006");}
+	//VoiceMatchingEnd
+
 	PlayVoice(4, "s19/00/badb50007", 128);
 	OutputLine(NULL, "　ッくぞンにゃろぉおおおぉおお！！」",
 		   NULL, " I'll fookin bash yer ead in!!\"", GetGlobalFlag(GLinemodeSp));
@@ -3912,10 +3877,12 @@ void main()
 	PlayVoice(4, "s19/00/womb50003", 128);
 	OutputLine(NULL, "　最近の町モンは物騒なんだから！",
 		   NULL, " City kids these days are pretty unruly! ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>女</color>", NULL, "<color=#f5e6d3>Woman</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/00/womb50004", 128);
-	OutputLine(NULL, "　はぁ…まったく！」",
-		   NULL, "*sigh*... honestly!\"", GetGlobalFlag(GLinemodeSp));
+
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_004_vm0x_n01","dialog007");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_004_vm00_n01","dialog007");}
+	//VoiceMatchingEnd
+
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -4826,9 +4793,12 @@ void main()
 	PlayVoice(4, "s19/06/500600093", 128);
 	OutputLine(NULL, "「それよりもさっきのあれ。",
 		   NULL, "\"More importantly, just now...", Line_WaitForInput);
-	PlayVoice(4, "s19/06/500600094", 128);
-	OutputLine(NULL, "……驚きましたか？",
-		   NULL, " Were you surprised?", GetGlobalFlag(GLinemodeSp));
+
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_004_vm0x_n01","dialog008");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_004_vm00_n01","dialog008");}
+	//VoiceMatchingEnd
+
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 

@@ -1,0 +1,135 @@
+void main()
+{
+}
+
+void dialog000()
+{
+}
+
+void dialog001()
+{
+	PlayVoice(4, "s19/00/otae50002", 128);
+	OutputLine(NULL, "次のイベントは要注意でござる…！！」",
+		   NULL, " We'll have to pay heed at the next event...!!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//オタク「そうそう、今度あの大手フィギュアメーカーが商品化を決めたそうであります！　発売日は要チェックなのであります…！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s19/00/otaf50001", 128);
+	OutputLine(NULL, "「そうそう、今度あの大手フィギュアメーカーが商品化を決めたそうであります！",
+		   NULL, "\"Speaking of which, that major figure maker decided to bring out the line!", Line_WaitForInput);
+	PlayVoice(4, "s19/00/otaf50002", 128);
+	OutputLine(NULL, "　発売日は要チェックなのであります…！」",
+		   NULL, " We must confirm the release date ...!\"", Line_Normal);
+	ClearMessage();
+
+//オタク「しかし大人買いするには種類が多すぎるのでごわすな……。普通のファミレス制服のフィギュアなら１０種類程度でごわすのに……今度のはシークレットポーズ差分込みでざっと１００種類！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s19/00/otag50001", 128);
+	OutputLine(NULL, "「しかし大人買いするには種類が多すぎるのでごわすな……。",
+		   NULL, "\"'The problem is, there's too many variations to bulk buy them ... ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s19/00/otag50002", 128);
+	OutputLine(NULL, "　普通のファミレス制服のフィギュアなら１０種類程度でごわすのに……今度のはシークレットポーズ差分込みでざっと１００種類！！",
+		   NULL, "If it were just a normal set of family restaurant uniforms, there'd only be around ten types... But, including the secret set with different poses that are planned, there's 100 or so!!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//オタク「ダブった時は誰かトレードしてもらいたいでおじゃる～。　ファンとしては即日コンプは義務！　いや君とボクとのデスティニーでおじゃるよ～！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s19/00/otah50001", 128);
+	OutputLine(NULL, "「ダブった時は誰かトレードしてもらいたいでおじゃる～。",
+		   NULL, "\"Someone, trade with me when I get a double~☆", Line_WaitForInput);
+	PlayVoice(4, "s19/00/otah50002", 128);
+	OutputLine(NULL, "　ファンとしては即日コンプは義務！",
+		   NULL, " It's my duty as a fan to complete the collection right away!", Line_Continue);
+	OutputLine(NULL, "　いや君とボクとのデスティニーでおじゃるよ～！！」",
+		   NULL, " No, this is destiny between us~!!\"", Line_Normal);
+}
+
+void dialog002()
+{
+	PlayVoice(4, "s19/01/hr_kei18070", 128);
+	OutputLine(NULL, "「やかましいぞ重量オーバー！",
+		   NULL, "\"Shut up, you greasy fatass!", Line_WaitForInput);
+}
+
+void dialog003()
+{
+	PlayVoice(4, "s19/00/otae50008", 128);
+	OutputLine(NULL, "そのスタッフが余のおズボンに粗相をしたのでござるよ？",
+		   NULL, " Yonder waitress was the one who wet mine pants!", Line_WaitForInput);
+}
+
+void dialog004()
+{
+	PlayVoice(4, "s19/01/hr_kei18350", 128);
+	OutputLine(NULL, "「…それについては返す言葉がない。」",
+		   NULL, "\"...There's nothing I can say to that.\"", Line_Normal);
+}
+
+void dialog005()
+{
+	PlayVoice(4, "s19/00/otad50007", 128);
+	OutputLine(NULL, "オープンでなくクローズドの方でござる！",
+		   NULL, " Not a nyamber one, but a nyamber two!", Line_WaitForInput);
+}
+
+void dialog006()
+{
+	PlayVoice(4, "s19/00/otae50021", 128);
+	OutputLine(NULL, "　緊急発進スクランブルにょ～！！！」",
+		   NULL, " Urine for it now!!!\"", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog007()
+{
+	PlayVoice(4, "s19/00/otae50023", 128);
+	OutputLine(NULL, "「はぁはぁ…背に腹は代えられぬ～～！！！！！」",
+		   NULL, "\"*pant pant*... Women's toilets are the best~~!!!!!\"", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog008()
+{
+	PlayVoice(4, "s19/00/otad50014", 128);
+	OutputLine(NULL, "　このままじゃ集団デフコン１状態にゃりん～！！」",
+		   NULL, " At this rate it'll end up becoming group enema purray~~!!\"", Line_Normal);
+}
+
+void dialog009()
+{
+	PlayVoice(4, "s19/01/hr_kei18710", 128);
+	OutputLine(NULL, "「悪人ども…！！",
+		   NULL, "\"Listen up, you tubs of lard!!", Line_WaitForInput);
+}
+
+void dialog010()
+{
+	PlayVoice(4, "s19/02/500200241", 128);
+	OutputLine(NULL, "「け、圭一くん……はぅ。」",
+		   NULL, "\"Ke-Keiichi-kun... Hau...\"", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog011()
+{
+	PlayVoice(4, "s19/03/500300188", 128);
+	OutputLine(NULL, "「圭ちゃんが持ってたら、確実に明日からアレな趣味の人扱いだね。うん！」",
+		   NULL, "\"If you walked around with it, then you'd be treated like a weirdo starting tomorrow. Definitely!\"", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog012()
+{
+}
+
+void dialog013()
+{
+}
+
+void dialog014()
+{
+}
+
+void dialog015()
+{
+}

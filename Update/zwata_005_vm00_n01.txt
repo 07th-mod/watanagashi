@@ -1,0 +1,137 @@
+void main()
+{
+}
+
+void dialog000()
+{
+}
+
+void dialog001()
+{
+	PlayVoice(4, "s19/00/otae50002", 128);
+	OutputLine(NULL, "ＷＦは要注意でござる…！！」",
+		   NULL, " We'll have to pay heed at the next Wonder Festival...!!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//「アキバの××××４Ｆでエンジェルモートの使用済み制服が売ってたらしいナリ！＠　でも２８万もしてたニョー...。￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "「アキバの××××４Ｆでエンジェルモートの使用済み制服が売ってたらしいナリ！！",
+		   NULL, "\"Theys sell used Angel Mort uniforms on the 4th floor of [redacted] in Akiba!!", Line_WaitForInput);
+	OutputLine(NULL, "　でも２８万もしてたニョー…。」",
+		   NULL, " But theys cost 280,000...\"", Line_Normal);
+	ClearMessage();
+
+//「凄まじいレートでござるな＠　アンミュラで８万、閉店後のブロバで１２万が相場でござるのに...！！（使用済みの場合でござるよ。コピー品は半額以下でござる！）＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "「凄まじいレートでござるな！",
+		   NULL, "\"'Tis an absurd price!", Line_WaitForInput);
+	OutputLine(NULL, "　アンミュラで８万、閉店後のブロバで１２万が相場でござるのに…！！（使用済みの場合でござるよ。コピー品は半額以下でござる！）」",
+		   NULL, " AnnMull cost 80,000; when BroBa closed down the going rate for theirs was 12,000. (That's the price for used ones. Knock-offs are less than half of that!)\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//「×××でコピー品でいいから衣装販売してくれないか尿～＠　そしたら我輩が××××××××でン十万で買った等身大フィギュアに着せ着せするです尿～＠　毎朝毎朝、エンジェルの制服を見上げて目を覚ますでおじゃるよ～！！！￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "「×××でコピー品でいいから衣装販売してくれないか尿〜☆",
+		   NULL, "\"A knock-off from [redacted] is fine with me, I wonder if they'll start selling them~☆", Line_WaitForInput);
+	OutputLine(NULL, "　そしたら我輩が××××××××でン十万で買った等身大フィギュアに着せ着せするです尿〜☆",
+		   NULL, " Then I'll put it on mine life-size figure I did buy off of [redacted] for several hundred thousand~☆ ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　毎朝毎朝、エンジェルの制服を見上げて目を覚ますでおじゃるよ〜！！！」",
+		   NULL, "If I can wake up every day to an angel from Angel, that'll really get my gears going~!!!\"", Line_Normal);
+}
+
+void dialog002()
+{
+	PlayVoice(4, "s19/01/hr_kei18070", 128);
+	OutputLine(NULL, "「やかましいぞ脂デブ！",
+		   NULL, "\"Shut up, you greasy fatass!", Line_WaitForInput);
+}
+
+void dialog003()
+{
+	PlayVoice(4, "s19/00/otae50008", 128);
+	OutputLine(NULL, "そのウェイトレスが余のおズボンに粗相をしたのでござるよ？",
+		   NULL, " Yonder waitress was the one who wet mine pants!", Line_WaitForInput);
+}
+
+void dialog004()
+{
+	PlayVoice(4, "s19/01/hr_kei18350", 128);
+	OutputLine(NULL, "「…それに関しては言い返すことはない。」",
+		   NULL, "\"...There's nothing I can say to that.\"", Line_Normal);
+}
+
+void dialog005()
+{
+	PlayVoice(4, "s19/00/otad50007", 128);
+	OutputLine(NULL, "スモールでなくビッグの方でござる！",
+		   NULL, " Not a nyamber one, but a nyamber two!", Line_WaitForInput);
+}
+
+void dialog006()
+{
+	PlayVoice(4, "s19/00/otae50021", 128);
+	OutputLine(NULL, "　レッツ尿〜！！！」",
+		   NULL, " Urine for it now!!!\"", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog007()
+{
+	PlayVoice(4, "s19/00/otae50023", 128);
+	OutputLine(NULL, "「はぁはぁ…女子便最高〜〜！！！！！」",
+		   NULL, "\"*pant pant*... Women's toilets are the best~~!!!!!\"", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog008()
+{
+	PlayVoice(4, "s19/00/otad50014", 128);
+	OutputLine(NULL, "　このままじゃ集団浣腸プレイ状態にゃりん〜！！」",
+		   NULL, " At this rate it'll end up becoming group enema purray~~!!\"", Line_Normal);
+}
+
+void dialog009()
+{
+	PlayVoice(4, "s19/01/hr_kei18710", 128);
+	OutputLine(NULL, "「脂デブども…！！",
+		   NULL, "\"Listen up, you tubs of lard!!", Line_WaitForInput);
+}
+
+void dialog010()
+{
+	PlayVoice(4, "s19/02/500200241", 128);
+	OutputLine(NULL, "「け、圭一くん……Ｈなんだぁ…。」",
+		   NULL, "\"Ke-Keiichi-kun... was a pervert...\"", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog011()
+{
+	PlayVoice(4, "s19/03/500300188", 128);
+	OutputLine(NULL, "「圭ちゃんが持ってたら、確実に明日から変態扱いだね。うん！」",
+		   NULL, "\"If you walked around with it, then you'd be treated like a weirdo starting tomorrow. Definitely!\"", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog012()
+{
+	OutputLine(NULL, "「ぅごッ！！」",
+		   NULL, " \"Unf!!\"", Line_Continue);
+}
+
+void dialog013()
+{
+	OutputLine(NULL, "「ぬわんとぉッ？！？！」",
+		   NULL, " \"Hwaaa!?!?\"", Line_Continue);
+}
+
+void dialog014()
+{
+		OutputLine(NULL, "「……これは。」",
+		   NULL, " \"...This is...\"", Line_Continue);
+}
+
+void dialog015()
+{
+	OutputLine(NULL, "「……ぅごぉ、」",
+		   NULL, " \"...Urk...\"", Line_Continue);
+}
