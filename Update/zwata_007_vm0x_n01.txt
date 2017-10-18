@@ -1,0 +1,116 @@
+void main()
+{
+}
+
+void dialog000()
+{
+}
+
+void dialog001()
+{
+	PlayVoice(4, "s19/01/hr_kei34750", 128);
+	OutputLine(NULL, "「プロポーション最上級。",
+		   NULL, "\"One with a model class body line,", Line_Continue);
+	OutputLine(NULL, "アイドル真っ青のルックスと、俺の言うことなんでも確実に聞く器量よしで頼む。」",
+		   NULL, " the looks of an innocent young idol, and the patience to see to my every whim.\"", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog002()
+{
+	PlayVoice(4, "s19/08/500800037", 128);
+	OutputLine(NULL, "「やあ、圭一くん。",
+		   NULL, "\"Hey there, Keiichi-kun.", Line_WaitForInput);
+}
+
+void dialog003()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s19/01/hr_kei35230", 128);
+	OutputLine(NULL, "　「いえ、それほどでも……詩音とも知り合いなんですか？」",
+		   NULL, "\"It was nothing... Do you know Shion, too?\"", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog004()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s19/08/500800039", 128);
+	OutputLine(NULL, "　「あっははは、まあね。",
+		   NULL, "\"Ha ha ha! Indeed I do.", Line_WaitForInput);
+	PlayVoice(4, "s19/08/500800040", 128);
+	OutputLine(NULL, "毎年ここに来てるからね。",
+		   NULL, " I come every year, after all.", Line_WaitForInput);
+	PlayVoice(4, "s19/08/500800041", 128);
+	OutputLine(NULL, "といっても髪形変わったら、まだどっちがどっちなのか区別できないけど」",
+		   NULL, " Still, if they changed hair styles, I still wouldn't be able to tell them apart.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "sunset/me_si_th_a2", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//魅音「一緒にしないでください、こんなやつと」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s19/03/500300801", 128);
+	OutputLine(NULL, "　「一緒にしないでください、こんなやつと。」",
+		   NULL, "\"Don't lump me in with someone like her.\"", Line_Normal);
+}
+
+void dialog005()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s19/01/hr_kei35240", 128);
+	OutputLine(NULL, "「あ、えっと……」",
+		   NULL, "\"Ah, err...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+//「じゃあ私はわかるかしら...？＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>女性</color>", NULL, "<color=#f5e6d3>Woman</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s19/09/500900004", 128);
+	OutputLine(NULL, "「こんばんは。私はわかるかしら…？」",
+		   NULL, "\"Good evening. Do you recognize me...?\"", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog006()
+{
+	PlayVoice(4, "s19/08/500800042", 128);
+	OutputLine(NULL, "「いやあ、一卵性双生児とは聞いてたけど、並んで見ると壮観だね。",
+		   NULL, "\"Wow, I'd heard you two were identical twins, but it really is quite something to see you side-by-side.", Line_WaitForInput);
+}
+
+void dialog007()
+{
+	PlayVoice(4, "s19/09/500900031", 128);
+	OutputLine(NULL, "下界との交流を『格が落ちる』として忌み嫌ったそうなの。」",
+		   NULL, "They believed that interaction with the lower world would sully their souls.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　......だから、村に下界の人間が来ると穢れてオヤシロさまのバチが当たると強く信じ、何者も近寄らせなかったそうよ。￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s19/09/500900032", 128);
+	OutputLine(NULL, "　……だから、村に下界の人間が来ると不純が混じってオヤシロさまのバチが当たると強く信じ、何者も近寄らせなかったそうよ。」",
+		   NULL, "......So everyone believed that if one from the lower world came to the village, they would be sullied and suffer the wrath of Oyashiro-sama. Apparently that kept everyone away.\"", Line_Normal);
+}
+
+void dialog008()
+{
+	PlayVoice(4, "s19/08/500800072", 128);
+	OutputLine(NULL, "「よそ者を嫌う村、ってよく推理小説に出てくるだろ。",
+		   NULL, "\"Villages that hate outsiders come up all the time in mystery novels.", Line_WaitForInput);
+}
+
+void dialog009()
+{
+}
+
+void dialog010()
+{
+	PlayVoice(4, "s19/08/500800078", 128);
+	OutputLine(NULL, "「バラバラ殺人だよ。",
+		   NULL, "\"The construction manager was murdered and dismembered.", Line_Normal);
+}
+
+void dialog011()
+{
+	OutputLine(NULL, "じゃあ、……その時にも誰かが、……『消えた』？",
+		   NULL, " So... at that time, someone else... \"vanished\"?", GetGlobalFlag(GLinemodeSp));
+}

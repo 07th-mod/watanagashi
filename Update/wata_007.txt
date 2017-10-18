@@ -498,11 +498,12 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/01/hr_kei34750", 128);
-	OutputLine(NULL, "「プロポーション最上級。",
-		   NULL, "\"One with a model class body line,", Line_Continue);
-	OutputLine(NULL, "アイドル真っ青のルックスと、俺の言うことなんでも確実に聞く器量よしで頼む。」",
-		   NULL, " the looks of an innocent young idol, and the patience to see to my every whim.\"", GetGlobalFlag(GLinemodeSp));
+
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_007_vm0x_n01","dialog001");}
+	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_007_vm00_n01","dialog001");}
+	//VoiceMatchingEnd
+
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1636,9 +1637,12 @@ void main()
 
 //「君が噂の転校生、前原圭一くんだね＠　今日は張り切って仕事してたね！　感心したよ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/08/500800037", 128);
-	OutputLine(NULL, "「やあ、圭一くん。",
-		   NULL, "\"Hey there, Keiichi-kun.", Line_WaitForInput);
+
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 3){ModCallScriptSection("zwata_007_vm0x_n01","dialog002");}
+	if(GetGlobalFlag(GCensor) <= 2){ModCallScriptSection("zwata_007_vm00_n01","dialog002");}
+	//VoiceMatchingEnd
+
 	PlayVoice(4, "s19/08/500800038", 128);
 	OutputLine(NULL, "　今日は張り切って仕事してたね！　感心したよ。」",
 		   NULL, " You really did a bang-up job today! I'm impressed.\"", GetGlobalFlag(GLinemodeSp));
@@ -1646,47 +1650,31 @@ void main()
 
 
 //圭一「いえ、それほどでも……詩音とも知り合いなんですか？」
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/01/hr_kei35230", 128);
-	OutputLine(NULL, "　「いえ、それほどでも……詩音とも知り合いなんですか？」",
-		   NULL, "\"It was nothing... Do you know Shion, too?\"", GetGlobalFlag(GLinemodeSp));
+
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 3){ModCallScriptSection("zwata_007_vm0x_n01","dialog003");}
+	if(GetGlobalFlag(GCensor) <= 2){ModCallScriptSection("zwata_007_vm00_n01","dialog003");}
+	//VoiceMatchingEnd
+
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //富竹「あっははは、まあね。毎年ここに来てるからね。といっても髪形変わったら、まだどっちがどっちなのか区別できないけど」
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/08/500800039", 128);
-	OutputLine(NULL, "　「あっははは、まあね。",
-		   NULL, "\"Ha ha ha! Indeed I do.", Line_WaitForInput);
-	PlayVoice(4, "s19/08/500800040", 128);
-	OutputLine(NULL, "毎年ここに来てるからね。",
-		   NULL, " I come every year, after all.", Line_WaitForInput);
-	PlayVoice(4, "s19/08/500800041", 128);
-	OutputLine(NULL, "といっても髪形変わったら、まだどっちがどっちなのか区別できないけど」",
-		   NULL, " Still, if they changed hair styles, I still wouldn't be able to tell them apart.\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	DisableWindow();
-	DrawBustshotWithFiltering( 1, "sunset/me_si_th_a2", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 3){ModCallScriptSection("zwata_007_vm0x_n01","dialog004");}
+	if(GetGlobalFlag(GCensor) <= 2){ModCallScriptSection("zwata_007_vm00_n01","dialog004");}
+	//VoiceMatchingEnd
 
-//魅音「一緒にしないでください、こんなやつと」
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/03/500300801", 128);
-	OutputLine(NULL, "　「一緒にしないでください、こんなやつと。」",
-		   NULL, "\"Don't lump me in with someone like her.\"", Line_Normal);
 
 	DisableWindow();
 	DrawBustshotWithFiltering( 1, "sunset/ta_si_de_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
-	PlayVoice(4, "s19/01/hr_kei35240", 128);
-	OutputLine(NULL, "「あ、えっと……」",
-		   NULL, "\"Ah, err...\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-//「じゃあ私はわかるかしら...？＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>女性</color>", NULL, "<color=#f5e6d3>Woman</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/09/500900004", 128);
-	OutputLine(NULL, "「こんばんは。私はわかるかしら…？」",
-		   NULL, "\"Good evening. Do you recognize me...?\"", GetGlobalFlag(GLinemodeSp));
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_007_vm0x_n01","dialog005");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_007_vm00_n01","dialog005");}
+	//VoiceMatchingEnd
+
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1746,9 +1734,12 @@ void main()
 
 //「話には聞いていたけど、一卵性双生児ってのは初めて見たよ＠本当にそっくりなんだなぁ！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/08/500800042", 128);
-	OutputLine(NULL, "「いやあ、一卵性双生児とは聞いてたけど、並んで見ると壮観だね。",
-		   NULL, "\"Wow, I'd heard you two were identical twins, but it really is quite something to see you side-by-side.", Line_WaitForInput);
+
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_007_vm0x_n01","dialog006");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_007_vm00_n01","dialog006");}
+	//VoiceMatchingEnd
+
 	PlayVoice(4, "s19/08/500800043", 128);
 	OutputLine(NULL, "本当にそっくりなんだなぁ！」",
 		   NULL, " You really do look exactly alike!\"", GetGlobalFlag(GLinemodeSp));
@@ -2805,17 +2796,12 @@ void main()
 
 //下界との交流を「穢れ（ケガレ）」として忌み嫌ったそうなの＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/09/500900031", 128);
-	OutputLine(NULL, "下界との交流を『格が落ちる』として忌み嫌ったそうなの。」",
-		   NULL, "They believed that interaction with the lower world would sully their souls.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_007_vm0x_n01","dialog007");}
+	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_007_vm00_n01","dialog007");}
+	//VoiceMatchingEnd
 
-//　......だから、村に下界の人間が来ると穢れてオヤシロさまのバチが当たると強く信じ、何者も近寄らせなかったそうよ。￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/09/500900032", 128);
-	OutputLine(NULL, "　……だから、村に下界の人間が来ると不純が混じってオヤシロさまのバチが当たると強く信じ、何者も近寄らせなかったそうよ。」",
-		   NULL, "......So everyone believed that if one from the lower world came to the village, they would be sullied and suffer the wrath of Oyashiro-sama. Apparently that kept everyone away.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawBustshot( 1, "sunset/tm_si_de_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 400, FALSE );
@@ -2823,9 +2809,12 @@ void main()
 
 //「よそ者を嫌う村、ってよく金田一の小説に出てくるだろ＠典型的なそういう村だったらしいんだよ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/08/500800072", 128);
-	OutputLine(NULL, "「よそ者を嫌う村、ってよく推理小説に出てくるだろ。",
-		   NULL, "\"Villages that hate outsiders come up all the time in mystery novels.", Line_WaitForInput);
+
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_007_vm0x_n01","dialog008");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_007_vm00_n01","dialog008");}
+	//VoiceMatchingEnd
+
 	PlayVoice(4, "s19/08/500800073", 128);
 	OutputLine(NULL, "典型的なそういう村だったらしいんだよ。」",
 		   NULL, " This was once a classic example of a xenophobic village.\"", GetGlobalFlag(GLinemodeSp));
@@ -2947,15 +2936,25 @@ void main()
 
 
 	PlayBGM( 1, "msys07", 128, 0 );
+	
+
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zwata_007_vm0x_n01","dialog009");}
+	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("zwata_007_vm00_n01","dialog009");}
+	//VoiceMatchingEnd
+
 
 	DisableWindow();
 	DrawBustshot( 1, "sunset/tm_si_ko_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「バラバラ殺人だよ＠ひところ流行ったろ。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/08/500800078", 128);
-	OutputLine(NULL, "「バラバラ殺人だよ。",
-		   NULL, "\"The construction manager was murdered and dismembered.", Line_Normal);
+
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_007_vm0x_n01","dialog010");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_007_vm00_n01","dialog010");}
+	//VoiceMatchingEnd
+
 	ClearMessage();
 
 //　......なんとも凄惨な事件...＠
@@ -4054,8 +4053,12 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "じゃあ、……その時にも誰かが、……『消えた』？",
-		   NULL, " So... at that time, someone else... \"vanished\"?", GetGlobalFlag(GLinemodeSp));
+
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_007_vm0x_n01","dialog011");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_007_vm00_n01","dialog011");}
+	//VoiceMatchingEnd
+
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
