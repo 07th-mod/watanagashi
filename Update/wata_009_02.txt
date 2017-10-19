@@ -2087,25 +2087,12 @@ void main()
 
 //「前原さんの御宅でしょうか＠夜分遅くに失礼いたします...＠公由と申します＠ご主人でいらっしゃいますか？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s02/36/132900001", 128);
-	OutputLine(NULL, "「前原さんの御宅でしょうか。",
-		   NULL, "\"Is this the Maebara residence?", Line_WaitForInput);
-	PlayVoice(4, "s02/36/132900002", 128);
-	OutputLine(NULL, "夜分遅くに失礼いたします…。",
-		   NULL, " Excuse me for the late call...", Line_WaitForInput);
-	PlayVoice(4, "s02/36/132900003", 128);
-	OutputLine(NULL, "公由と申します。",
-		   NULL, " I'm Kimiyoshi.", Line_WaitForInput);
-	PlayVoice(4, "s02/36/132900004", 128);
-	OutputLine(NULL, "ご主人でいらっしゃいますか？」",
-		   NULL, " Is this the head of the household?\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 1){ModCallScriptSection("zwata_009_02_vm0x_n01","dialog001");}
+	if(GetGlobalFlag(GCensor) <= 0){ModCallScriptSection("zwata_009_02_vm00_n01","dialog001");}
+	//VoiceMatchingEnd
 
-//　中年の男性の声＠......一気に失望する￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　詩音とは明らかに違う女の子の声。",
-		   NULL, "It was the voice of a girl who clearly wasn't Shion.", Line_WaitForInput);
 	OutputLine(NULL, "……一気に失望する。",
 		   NULL, " ...All my hopes rushed out of me.", Line_Normal);
 	ClearMessage();
@@ -2129,12 +2116,12 @@ void main()
 
 //「あ、いえいえ、お忙しければ結構なんです＠...実は恐縮なんですが...ウチのお爺ちゃんがお邪魔してませんでしょうか。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f3cfb5>公由</color>", NULL, "<color=#f3cfb5>Kimiyoshi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s02/36/132900005", 128);
-	OutputLine(NULL, "「あ、いえいえ、お忙しければ結構なんです。",
-		   NULL, "\"Oh, no no, if he's busy, then it's fine.", Line_WaitForInput);
-	PlayVoice(4, "s02/36/132900006", 128);
-	OutputLine(NULL, "…実は恐縮なんですが…ウチのお爺ちゃんがお邪魔してませんでしょうか。」",
-		   NULL, " ...This may be a strange question, but... is my old man paying you a visit?\"", GetGlobalFlag(GLinemodeSp));
+
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 1){ModCallScriptSection("zwata_009_02_vm0x_n01","dialog002");}
+	if(GetGlobalFlag(GCensor) <= 0){ModCallScriptSection("zwata_009_02_vm00_n01","dialog002");}
+	//VoiceMatchingEnd
+
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -2148,15 +2135,12 @@ void main()
 
 //「そうですか＠　夜分遅くに申し訳ありませんでした＠失礼いたします......。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f3cfb5>公由</color>", NULL, "<color=#f3cfb5>Kimiyoshi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s02/36/132900007", 128);
-	OutputLine(NULL, "「そうですか！",
-		   NULL, "\"I see!", Line_WaitForInput);
-	PlayVoice(4, "s02/36/132900008", 128);
-	OutputLine(NULL, "　夜分遅くに申し訳ありませんでした。",
-		   NULL, " Again, I apologize for calling you so late at night.", Line_WaitForInput);
-	PlayVoice(4, "s02/36/132900009", 128);
-	OutputLine(NULL, "失礼いたします……。」",
-		   NULL, " Good-bye......\"", Line_Normal);
+
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 1){ModCallScriptSection("zwata_009_02_vm0x_n01","dialog003");}
+	if(GetGlobalFlag(GCensor) <= 0){ModCallScriptSection("zwata_009_02_vm00_n01","dialog003");}
+	//VoiceMatchingEnd
+
 	ClearMessage();
 
 //　ガチャン￥

@@ -1003,35 +1003,12 @@ void main()
 	DisableWindow();
 	DrawBustshot( 2, "me_se_wi_b2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
-//それで...チョイっと。￥
-	PlayVoice(4, "s02/03/130300101", 128);
-	OutputLine(NULL, "それで…実はエンドレスに突入しちゃって。」",
-		   NULL, " And well... things dragged on a while.\"", Line_Normal);
-	ClearMessage();
 
-//　チョイっと＠
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　エンドレス。",
-		   NULL, "Things dragged on?", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_009_vm0x_n01","dialog001");}
+	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_009_vm00_n01","dialog001");}
+	//VoiceMatchingEnd
 
-
-//　コップを傾けるようなジェスチャー＠......ってことはお前、風邪なんじゃなくて...￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　日本語に直すと連続。",
-		   NULL, "So, you mean to say...", Line_WaitForInput);
-	OutputLine(NULL, "……ってことはお前、風邪なんじゃなくて…、",
-		   NULL, " ...You didn't have a cold or anything...", Line_Normal);
-	ClearMessage();
-
-//「ふ、二日酔いかよー？＠　お前、歳はいくつだー！！＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s02/01/130100233", 128);
-	OutputLine(NULL, "「つまりホントに、寝不足なのかよー？！",
-		   NULL, "\"So you really are just tired?!", Line_WaitForInput);
-	PlayVoice(4, "s02/01/130100234", 128);
-	OutputLine(NULL, "　徹夜明けならそうと言え、まぎらわしい……」",
-		   NULL, " If you were up all night, just say so! That was confusing...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1056,8 +1033,12 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…確かに体調が悪いのは同じだろうが。",
 		   NULL, "...I suppose she'd be feeling lousy either way.", Line_WaitForInput);
-	OutputLine(NULL, "風邪と徹夜明けじゃ、その扱いは全然違うぞ。",
-		   NULL, " Still, you treat colds and sleep deprivation in completely different ways.", Line_Normal);
+
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_009_vm0x_n01","dialog002");}
+	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_009_vm00_n01","dialog002");}
+	//VoiceMatchingEnd
+
 	ClearMessage();
 
 //「心配して損したぞ＠ったく...魅音らしいというか何というか...。＠
@@ -1080,10 +1061,12 @@ void main()
 
 //　...確かに具合は悪そうだが、二日酔いだとわかればそんなに心配はいらない＠時間と共に快調に向かうんだからな￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　…確かに具合は悪そうだが、寝不足だとわかればそんなに心配はいらない。",
-		   NULL, "...She didn't seem to be feeling well, but now that I knew the cause, I didn't need to worry too much.", Line_WaitForInput);
-	OutputLine(NULL, "ちょっと休めば快調に向かうんだからな。",
-		   NULL, " It would go away with a little rest, after all.", Line_Normal);
+
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_009_vm0x_n01","dialog003");}
+	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_009_vm00_n01","dialog003");}
+	//VoiceMatchingEnd
+
 	ClearMessage();
 	DisableWindow();
 	DrawBustshot( 2, "me_se_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
@@ -2155,8 +2138,12 @@ void main()
 
 //　...姉は二日酔いだったのに、妹の方はケロッとしている￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　…姉は徹夜明けで眠そうだったのに、妹の方はケロッとしている。",
-		   NULL, "...The older sister shattered from an all nighter, but the younger seemed fine.", Line_Normal);
+
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_009_vm0x_n01","dialog004");}
+	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_009_vm00_n01","dialog004");}
+	//VoiceMatchingEnd
+
 	ClearMessage();
 
 //「詩音か＠魅音と同じで、今日は二日酔いで寝込んでるんじゃないかと思ったぜ。＠
@@ -2164,9 +2151,12 @@ void main()
 	PlayVoice(4, "s02/01/130100267", 128);
 	OutputLine(NULL, "「詩音か。",
 		   NULL, "\"Shion?", Line_WaitForInput);
-	PlayVoice(4, "s02/01/130100268", 128);
-	OutputLine(NULL, "魅音と同じで、今日は徹夜明けで寝込んでるんじゃないかと思ったぜ。」",
-		   NULL, " I thought you'd be catching up on your sleep today, same as Mion.\"", GetGlobalFlag(GLinemodeSp));
+
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_009_vm0x_n01","dialog005");}
+	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_009_vm00_n01","dialog005");}
+	//VoiceMatchingEnd
+
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -2175,9 +2165,12 @@ void main()
 	PlayVoice(4, "s02/06/130600153", 128);
 	OutputLine(NULL, "「え？",
 		   NULL, "\"What?", Line_WaitForInput);
-	PlayVoice(4, "s02/06/130600154", 128);
-	OutputLine(NULL, "　それじゃお姉、今日はズル休みですか？",
-		   NULL, " Is Mion playing truant today?", Line_WaitForInput);
+
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_009_vm0x_n01","dialog006");}
+	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_009_vm00_n01","dialog006");}
+	//VoiceMatchingEnd
+
 	PlayVoice(4, "s02/06/130600155", 128);
 	OutputLine(NULL, "　あっはははははは！　お姉らし〜〜！」",
 		   NULL, " Ah-hahahaha! That's so like her~~!\"", GetGlobalFlag(GLinemodeSp));
@@ -2416,8 +2409,12 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　詩音も、何となくふらふらなような。",
 		   NULL, "Shion seemed a little unsteady too.", Line_WaitForInput);
-	OutputLine(NULL, "…こいつも魅音同様、今日は徹夜明けだな？",
-		   NULL, " ...She was up all night with Mion, wasn't she?", Line_Normal);
+
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_009_vm0x_n01","dialog007");}
+	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_009_vm00_n01","dialog007");}
+	//VoiceMatchingEnd
+
 	ClearMessage();
 
 //「お前も昨夜は飲んだだろ＠隠しても無駄だぞー＠で、学校を早退したに違いない。＠
@@ -3271,12 +3268,12 @@ void main()
 
 //「園崎家はこの地域一帯を牛耳ってるヤクザ屋さんです＠ちなみに彼女のお父さんは、××組系のヤクザの大幹部さんです＠ご存知でした？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s02/11/130700020", 128);
-	OutputLine(NULL, "「園崎家はこの地域一帯を牛耳ってる暴力団です。",
-		   NULL, "\"The Sonozakis are a syndicate with this entire region under their thumb.", Line_WaitForInput);
-	PlayVoice(4, "s02/11/130700021", 128);
-	OutputLine(NULL, "ちなみに彼女のお父さんは、関東でも有名な暴力団グループの大幹部さんです。",
-		   NULL, " Incidentally, her father is a high-ranked executive in a syndicate association that's well known even in the Kanto region. ", GetGlobalFlag(GLinemodeSp));
+
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_009_vm0x_n01","dialog008");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_009_vm00_n01","dialog008");}
+	//VoiceMatchingEnd
+
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s02/11/130700022", 128);
 	OutputLine(NULL, "ご存知でした？」",
@@ -3304,9 +3301,12 @@ void main()
 
 //　高い塀に有刺鉄線と監視カメラで守られた、典型的なヤクザの組長宅ですよ＠今度ぜひ遊びに行ってみてください。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s02/11/130700024", 128);
-	OutputLine(NULL, "　高い塀に有刺鉄線と監視カメラで守られた、典型的な暴力団の組長宅ですよ。",
-		   NULL, "It's the very picture of a gang boss's house, protected by high walls, barbed-wire fence, and security cameras.", Line_WaitForInput);
+
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_009_vm0x_n01","dialog009");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_009_vm00_n01","dialog009");}
+	//VoiceMatchingEnd
+
 	PlayVoice(4, "s02/11/130700025", 128);
 	OutputLine(NULL, "今度ぜひ遊びに行ってみてください。」",
 		   NULL, " If you have the chance, you should go and visit her.\"", GetGlobalFlag(GLinemodeSp));
@@ -3322,8 +3322,12 @@ void main()
 
 //　魅音は跡継ぎだとか言ってたけど......まさか...そのヤクザの...￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　魅音は跡継ぎだとか言ってたけど……まさか…その暴力団の…？",
-		   NULL, "She'd mentioned Mion being a successor...... but... to a crime syndicate...?", Line_Normal);
+
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_009_vm0x_n01","dialog011");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_009_vm00_n01","dialog011");}
+	//VoiceMatchingEnd
+
 	ClearMessage();
 	DisableWindow();
 	DrawBustshot( 2, "oi_si_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
@@ -3336,9 +3340,12 @@ void main()
 	PlayVoice(4, "s02/11/130700027", 128);
 	OutputLine(NULL, "まさかまさか。",
 		   NULL, " Not at all, not at all.", Line_WaitForInput);
-	PlayVoice(4, "s02/11/130700028", 128);
-	OutputLine(NULL, "園崎魅音さんが継ぐのはそんなチンケな暴力団組織だけじゃありません。",
-		   NULL, " A boring old syndicate isn't the only thing Mion Sonozaki-san will inherit.", Line_WaitForInput);
+
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_009_vm0x_n01","dialog010");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_009_vm00_n01","dialog010");}
+	//VoiceMatchingEnd
+
 	PlayVoice(4, "s02/11/130700029", 128);
 	OutputLine(NULL, "彼女が継ぐのは園崎家そのものですよ。",
 		   NULL, " She's inheriting the Sonozaki family itself. ", GetGlobalFlag(GLinemodeSp));

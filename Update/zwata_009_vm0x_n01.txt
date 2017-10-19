@@ -1,0 +1,110 @@
+void main()
+{
+}
+
+void dialog000()
+{
+}
+
+void dialog001()
+{
+//それで...チョイっと。￥
+	PlayVoice(4, "s02/03/130300101", 128);
+	OutputLine(NULL, "それで…実はエンドレスに突入しちゃって。」",
+		   NULL, " And well... things dragged on a while.\"", Line_Normal);
+	ClearMessage();
+
+//　チョイっと＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　エンドレス。",
+		   NULL, "Things dragged on?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　コップを傾けるようなジェスチャー＠......ってことはお前、風邪なんじゃなくて...￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　日本語に直すと連続。",
+		   NULL, "So, you mean to say...", Line_WaitForInput);
+	OutputLine(NULL, "……ってことはお前、風邪なんじゃなくて…、",
+		   NULL, " ...You didn't have a cold or anything...", Line_Normal);
+	ClearMessage();
+
+//「ふ、二日酔いかよー？＠　お前、歳はいくつだー！！＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s02/01/130100233", 128);
+	OutputLine(NULL, "「つまりホントに、寝不足なのかよー？！",
+		   NULL, "\"So you really are just tired?!", Line_WaitForInput);
+	PlayVoice(4, "s02/01/130100234", 128);
+	OutputLine(NULL, "　徹夜明けならそうと言え、まぎらわしい……」",
+		   NULL, " If you were up all night, just say so! That was confusing...\"", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog002()
+{
+	OutputLine(NULL, "風邪と徹夜明けじゃ、その扱いは全然違うぞ。",
+		   NULL, " Still, you treat colds and sleep deprivation in completely different ways.", Line_Normal);
+}
+
+void dialog003()
+{
+	OutputLine(NULL, "　…確かに具合は悪そうだが、寝不足だとわかればそんなに心配はいらない。",
+		   NULL, "...She didn't seem to be feeling well, but now that I knew the cause, I didn't need to worry too much.", Line_WaitForInput);
+	OutputLine(NULL, "ちょっと休めば快調に向かうんだからな。",
+		   NULL, " It would go away with a little rest, after all.", Line_Normal);
+}
+
+void dialog004()
+{
+	OutputLine(NULL, "　…姉は徹夜明けで眠そうだったのに、妹の方はケロッとしている。",
+		   NULL, "...The older sister shattered from an all nighter, but the younger seemed fine.", Line_Normal);
+}
+
+void dialog005()
+{
+	PlayVoice(4, "s02/01/130100268", 128);
+	OutputLine(NULL, "魅音と同じで、今日は徹夜明けで寝込んでるんじゃないかと思ったぜ。」",
+		   NULL, " I thought you'd be catching up on your sleep today, same as Mion.\"", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog006()
+{
+	PlayVoice(4, "s02/06/130600154", 128);
+	OutputLine(NULL, "　それじゃお姉、今日はズル休みですか？",
+		   NULL, " Is Mion playing truant today?", Line_WaitForInput);
+}
+
+void dialog007()
+{
+	OutputLine(NULL, "…こいつも魅音同様、今日は徹夜明けだな？",
+		   NULL, " ...She was up all night with Mion, wasn't she?", Line_Normal);
+}
+
+void dialog008()
+{
+	PlayVoice(4, "s02/11/130700020", 128);
+	OutputLine(NULL, "「園崎家はこの地域一帯を牛耳ってる暴力団です。",
+		   NULL, "\"The Sonozakis are a syndicate with this entire region under their thumb.", Line_WaitForInput);
+	PlayVoice(4, "s02/11/130700021", 128);
+	OutputLine(NULL, "ちなみに彼女のお父さんは、関東でも有名な暴力団グループの大幹部さんです。",
+		   NULL, " Incidentally, her father is a high-ranked executive in a syndicate association that's well known even in the Kanto region. ", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog009()
+{
+	PlayVoice(4, "s02/11/130700024", 128);
+	OutputLine(NULL, "　高い塀に有刺鉄線と監視カメラで守られた、典型的な暴力団の組長宅ですよ。",
+		   NULL, "It's the very picture of a gang boss's house, protected by high walls, barbed-wire fence, and security cameras.", Line_WaitForInput);
+}
+
+void dialog010()
+{
+	PlayVoice(4, "s02/11/130700028", 128);
+	OutputLine(NULL, "園崎魅音さんが継ぐのはそんなチンケな暴力団組織だけじゃありません。",
+		   NULL, " A boring old syndicate isn't the only thing Mion Sonozaki-san will inherit.", Line_WaitForInput);
+}
+
+void dialog011()
+{
+	OutputLine(NULL, "　魅音は跡継ぎだとか言ってたけど……まさか…その暴力団の…？",
+		   NULL, "She'd mentioned Mion being a successor...... but... to a crime syndicate...?", Line_Normal);
+}
