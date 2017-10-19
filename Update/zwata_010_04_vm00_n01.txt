@@ -1,0 +1,35 @@
+void main()
+{
+}
+
+void dialog000()
+{
+}
+
+void dialog001()
+{
+	PlayVoice(4, "s02/11/130700106", 128);
+	OutputLine(NULL, "…自分のおしっこを自分で飲んでるみたいな気分ですよ。なっはっはっは…！」",
+		   NULL, " ...It's like we're drinking our own piss. Na-ha-ha-ha-ha...!\"", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog002()
+{
+	PlayVoice(4, "s02/11/130700161", 128);
+	OutputLine(NULL, "　綿流しのお祭りの開会式典で、各家の代表がそれぞれ挨拶をなさっているでしょう。",
+		   NULL, " Representatives from each of them gave short addresses at the Watanagashi festival's opening ceremony.", Line_WaitForInput);
+	OutputLine(NULL, "見ていません？」",
+		   NULL, " Did you see them?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	PlayVoice(4, "s02/01/130100733", 128);
+	OutputLine(NULL, "「……祭りには…途中から来たから…よくは…。」",
+		   NULL, "\"...I came... partway through the festival... so I don't really...\"", Line_Normal);
+}
+
+void dialog003()
+{
+	PlayVoice(4, "s02/01/130100737", 128);
+	OutputLine(NULL, "「そんなの、俺にとってだってさっぱりです。」",
+		   NULL, "\"I don't know anything about it either.\"", Line_Normal);
+}

@@ -142,6 +142,12 @@ void main()
 
 //圭一「……うん。…学校に」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_010_vm0x_n01","dialog001");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_010_vm00_n01","dialog001");}
+	//VoiceMatchingEnd
+
 	PlayVoice(4, "s02/01/130100430", 128);
 	OutputLine(NULL, "　……うん。",
 		   NULL, " ...Yeah.", Line_WaitForInput);
@@ -233,8 +239,12 @@ void main()
 
 //　...昨日、二日酔いで早退した魅音だが、今朝も具合は優れないのだろうか＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　…昨日、徹夜明けで早退した魅音だが、今朝も具合は優れないのだろうか。",
-		   NULL, "...Mion had gone home early yesterday with sleep deprivation, but she didn't look too good this morning, either.", GetGlobalFlag(GLinemodeSp));
+
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_010_vm0x_n01","dialog002");}
+	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_010_vm00_n01","dialog002");}
+	//VoiceMatchingEnd
+
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -262,9 +272,11 @@ void main()
 
 //「さ、３時ぃ？＠　おいおい、...夜更かしにも限度ってもんがあるぞ？＠　大方、漫画の単行本が面白くなっちゃって、１巻から読破してしまったんだろう＠うんうん、俺にも経験があるぞ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s02/01/130100434", 128);
-	OutputLine(NULL, "「さ、３時ぃ？！　昨日に続いてか？！",
-		   NULL, "\"Th-Three?! Right after yesterday?!", Line_WaitForInput);
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_010_vm0x_n01","dialog003");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_010_vm00_n01","dialog003");}
+	//VoiceMatchingEnd
+
 	PlayVoice(4, "s02/01/130100435", 128);
 	OutputLine(NULL, "　おいおい、…夜更かしにも限度ってもんがあるぞ？！",
 		   NULL, " Hey, now... You can't keep staying up late!", Line_WaitForInput);
@@ -1536,9 +1548,12 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s02/02/130200129", 128);
-	OutputLine(NULL, "「りりりり、梨花ちゃんの、大あくび～～～！！　はぅ～～～～！！！！」",
-		   NULL, "\"R-R-R-R-Rika-chan's giant yawn~~~! Hau~~~~!!!!\"", GetGlobalFlag(GLinemodeSp));
+
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_010_vm0x_n01","dialog004");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_010_vm00_n01","dialog004");}
+	//VoiceMatchingEnd
+
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1576,9 +1591,12 @@ void main()
 	PlayVoice(4, "s02/02/130200130", 128);
 	OutputLine(NULL, "「りりり梨花ちゃんのだけじゃなく、沙都子ちゃんのもかぁいいと思うぉ〜！！",
 		   NULL, "\"I-I-I-I think Satoko-chan is kyute, not only R-Rika-chan~!!", Line_WaitForInput);
-	PlaySE(4, "s02/02/130200131", 128, 64)
-	OutputLine(NULL, "　お～お～あ～く～び～！！！」",
-		   NULL, " Giaaant~~yaaaawn~~!!!\"", GetGlobalFlag(GLinemodeSp));
+
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_010_vm0x_n01","dialog005");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_010_vm00_n01","dialog005");}
+	//VoiceMatchingEnd
+
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1605,15 +1623,12 @@ void main()
 	PlayVoice(4, "s02/02/130200133", 128);
 	OutputLine(NULL, "　ちらっと見えた、かぁいいの見えた！！",
 		   NULL, " I got a glimpse! It was so kyute!!", Line_WaitForInput);
-	PlayVoice(4, "s02/02/130200134", 128);
-	OutputLine(NULL, "　沙都子ちゃんのあくびもかぁいい、お持ち帰り～～！！！！」",
-		   NULL, " Satoko-chan's is kyute too! I'm gonna take you home~~!!!!\"", Line_Normal);
-	ClearMessage();
 
-//　...レナが沙都子の首根っこを締め上げて、喉の奥を覗き込もうとしている...＠
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　…レナが沙都子の首根っこを締め上げる。それはもうあくびとは言えないと思うが…。",
-		   NULL, "...Rena was strangling Satoko. I don't think that counts as yawning...", GetGlobalFlag(GLinemodeSp));
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_010_vm0x_n01","dialog006");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_010_vm00_n01","dialog006");}
+	//VoiceMatchingEnd
+
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　...レナって!s400......!sd口に出しては言えないが...札付きの...○○○○だよな...（汗￥

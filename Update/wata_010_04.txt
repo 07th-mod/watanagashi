@@ -1390,9 +1390,12 @@ void main()
 	PlayVoice(4, "s02/11/130700105", 128);
 	OutputLine(NULL, "「私たちだって税金払ってるんですけどねぇ。",
 		   NULL, "\"We're taxpayers too, you know.", Line_WaitForInput);
-	PlayVoice(4, "s02/11/130700106", 128);
-	OutputLine(NULL, "…ソバ屋さんが自分のつくったソバ食ってるみたいな気分ですよ。なっはっはっは…！」",
-		   NULL, " ...I feel like a soba noodle chef eating my own soba. Na-ha-ha-ha-ha...!\"", GetGlobalFlag(GLinemodeSp));
+
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_010_04_vm0x_n01","dialog001");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_010_04_vm00_n01","dialog001");}
+	//VoiceMatchingEnd
+
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　...とても笑える気分ではなかった＠馬鹿笑いしたのは大石さんだけだ￥
@@ -2298,20 +2301,12 @@ void main()
 	PlayVoice(4, "s02/11/130700160", 128);
 	OutputLine(NULL, "「御三家ってご存知ですかな？",
 		   NULL, "\"Are you familiar with the Three Families?", Line_WaitForInput);
-	PlayVoice(4, "s02/11/130700161", 128);
-	OutputLine(NULL, "　綿流しのお祭りの開会式典で、各家の代表がそれぞれ挨拶をなさっているでしょう。",
-		   NULL, " Representatives from each of them gave short addresses at the Watanagashi festival's opening ceremony.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-
-//「......祭りには...途中から来たから...よくは...。￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s02/01/130100732", 128);
-	OutputLine(NULL, "見ていません。」",
-		   NULL, "\"I didn't see them.", Line_WaitForInput);
-	PlayVoice(4, "s02/01/130100733", 128);
-	OutputLine(NULL, "「……祭りには…途中から来たから…よくは…。」",
-		   NULL, " ...I came... partway through the festival... so I don't really...\"", Line_Normal);
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_010_04_vm0x_n01","dialog002");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_010_04_vm00_n01","dialog002");}
+	//VoiceMatchingEnd
+	
 	ClearMessage();
 
 //「御三家ってのは雛見沢の旧家の３つの家のことなんです＠具体的に言うと、!w800公由家、!w1000園崎家、!w1000古手家の３つのことです＠...本当に古い家筋らしくてね＠
@@ -2498,9 +2493,12 @@ void main()
 
 //「そんなの、俺にとってだってさっぱりです。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s02/01/130100737", 128);
-	OutputLine(NULL, "「そんなの、俺にだってさっぱりです。」",
-		   NULL, "\"I don't know anything about it either.\"", Line_Normal);
+
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_010_04_vm0x_n01","dialog003");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_010_04_vm00_n01","dialog003");}
+	//VoiceMatchingEnd
+
 	ClearMessage();
 
 //「ですからですから＠...公由家、古手家の当主が消えたんですから、次は園崎家の当主が消えるんじゃないかな＠/

@@ -1,0 +1,22 @@
+void main()
+{
+}
+
+void dialog000()
+{
+}
+
+void dialog001()
+{
+	OutputLine(NULL, "で、様々な嫌がらせや妨害をやってのけたんです。」",
+		   NULL, " Then she played all sorts of tricks on them and just generally got in their way.\"", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog002()
+{
+	PlayVoice(4, "s02/06/130600370", 128);
+	OutputLine(NULL, "「…今は何だかのんびりした雰囲気だから想像も付かないでしょうが。",
+		   NULL, "\"...Now she's pretty laid-back, so it might be hard to imagine.", Line_WaitForInput);
+	OutputLine(NULL, "器物破損から脅迫、暴行まで一通りこなして、何度も補導されたんですよ。",
+		   NULL, " They put her in charge of everything, from property damage to threats and even acts of violence. ", GetGlobalFlag(GLinemodeSp));
+}

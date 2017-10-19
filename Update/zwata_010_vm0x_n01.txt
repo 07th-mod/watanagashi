@@ -1,0 +1,51 @@
+void main()
+{
+}
+
+void dialog000()
+{
+}
+
+void dialog001()
+{
+}
+
+void dialog002()
+{
+	OutputLine(NULL, "　…昨日、徹夜明けで早退した魅音だが、今朝も具合は優れないのだろうか。",
+		   NULL, "...Mion had gone home early yesterday with sleep deprivation, but she didn't look too good this morning, either.", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog003()
+{
+	PlayVoice(4, "s02/01/130100434", 128);
+	OutputLine(NULL, "「さ、３時ぃ？！　昨日に続いてか？！",
+		   NULL, "\"Th-Three?! Right after yesterday?!", Line_WaitForInput);
+}
+
+void dialog004()
+{
+	PlayVoice(4, "s02/02/130200129", 128);
+	OutputLine(NULL, "「りりりり、梨花ちゃんの、大あくび～～～！！　はぅ～～～～！！！！」",
+		   NULL, "\"R-R-R-R-Rika-chan's giant yawn~~~! Hau~~~~!!!!\"", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog005()
+{
+	PlaySE(4, "s02/02/130200131", 128, 64)
+	OutputLine(NULL, "　お～お～あ～く～び～！！！」",
+		   NULL, " Giaaant~~yaaaawn~~!!!\"", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog006()
+{
+	PlayVoice(4, "s02/02/130200134", 128);
+	OutputLine(NULL, "　沙都子ちゃんのあくびもかぁいい、お持ち帰り～～！！！！」",
+		   NULL, " Satoko-chan's is kyute too! I'm gonna take you home~~!!!!\"", Line_Normal);
+	ClearMessage();
+
+//　...レナが沙都子の首根っこを締め上げて、喉の奥を覗き込もうとしている...＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…レナが沙都子の首根っこを締め上げる。それはもうあくびとは言えないと思うが…。",
+		   NULL, "...Rena was strangling Satoko. I don't think that counts as yawning...", GetGlobalFlag(GLinemodeSp));
+}

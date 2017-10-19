@@ -1176,6 +1176,12 @@ void main()
 	PlayVoice(4, "s02/06/130600368", 128);
 	OutputLine(NULL, "…年少のお姉でも、若いガラの悪いのを何人も従えることができました。」",
 		   NULL, " ...Even when she was little, my sister managed to subjugate a bunch of young street rats.", GetGlobalFlag(GLinemodeSp));
+
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zwata_010_02_vm0x_n01","dialog001");}
+	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("zwata_010_02_vm00_n01","dialog001");}
+	//VoiceMatchingEnd
+
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1188,9 +1194,12 @@ void main()
 
 //「...今は何だかのんびりした雰囲気だから想像も付かないでしょうが＠器物破損から脅迫、暴行まで一通りこなして、何度も補導されたんですよ＠...子供ですから、すぐに釈放してもらえたみたいですけどね＠...お姉は、自分の年齢が武器になることを知ってたみたいです。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s02/06/130600370", 128);
-	OutputLine(NULL, "何度も補導されたんですよ…今は何だかのんびりした雰囲気だから想像も付かないでしょうが。",
-		   NULL, " She was detained several times... although she's pretty laid-back now, so it might be hard to imagine.", Line_WaitForInput);
+	
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zwata_010_02_vm0x_n01","dialog002");}
+	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("zwata_010_02_vm00_n01","dialog002");}
+	//VoiceMatchingEnd
+	
 	PlayVoice(4, "s02/06/130600372", 128);
 	OutputLine(NULL, "…子供ですから、すぐに釈放してもらえたみたいですけどね。",
 		   NULL, " ...Though since she was a kid, they could get her released pretty easily. ", GetGlobalFlag(GLinemodeSp));

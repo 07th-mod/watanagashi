@@ -1,0 +1,53 @@
+void main()
+{
+}
+
+void dialog000()
+{
+}
+
+void dialog001()
+{
+	OutputLine(NULL, "「…お出掛け？",
+		   NULL, "\"...Going somewhere?", Line_WaitForInput);
+}
+
+void dialog002()
+{
+	OutputLine(NULL, "　…昨日、二日酔いで早退した魅音だが、今朝も具合は優れないのだろうか。",
+		   NULL, "...Mion had gone home early yesterday with a hangover, but she didn't look too good this morning, either.", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog003()
+{
+	PlayVoice(4, "s02/01/130100434", 128);
+	OutputLine(NULL, "「さ、３時ぃ？！",
+		   NULL, "\"Th-Three?!", Line_WaitForInput);
+}
+
+void dialog004()
+{
+	PlayVoice(4, "s02/02/130200129", 128);
+	OutputLine(NULL, "「ののののの、のどちん、ゆらゆら〜〜〜！　はぅ〜〜〜〜！！！！」",
+		   NULL, "\"H-H-H-H-H-Her throat, the thing in her throat, all wobbly~~~! Hau~~~~!!!!\"", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog005()
+{
+	PlaySE(4, "s02/02/130200131", 128, 64)
+	OutputLine(NULL, "　の〜ど〜ち〜んん〜〜！！！」",
+		   NULL, " U~vu~la~~!!!\"", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog006()
+{
+	PlayVoice(4, "s02/02/130200134", 128);
+	OutputLine(NULL, "　沙都子ちゃんのもかぁいい、お持ち帰り〜〜！！！！」",
+		   NULL, " Satoko-chan's is kyute too! I'm gonna take you home~~!!!!\"", Line_Normal);
+	ClearMessage();
+
+//　...レナが沙都子の首根っこを締め上げて、喉の奥を覗き込もうとしている...＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…レナが沙都子の首根っこを締め上げて、喉の奥を覗き込もうとしている…。",
+		   NULL, "...Rena was squeezing her hands around Satoko's neck and was trying to get a look into her throat...", GetGlobalFlag(GLinemodeSp));
+}
