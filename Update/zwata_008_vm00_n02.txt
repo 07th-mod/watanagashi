@@ -1,0 +1,533 @@
+void main()
+{
+}
+
+void dialog000()
+{
+}
+
+void dialog001()
+{
+	OutputLine(NULL, "「穢れ（ケガレ）」を持ち込むから立入禁止の不可侵領域。",
+		   NULL, " ...they bring 'impurity' into it, so absolutely no one is allowed a single step inside it.", Line_WaitForInput);
+}
+
+void dialog002()
+{
+	PlayVoice(4, "s02/09/130900069", 128);
+	OutputLine(NULL, "「残念だけど、このお話には桃太郎もスーパーマンも登場しないわ。」",
+		   NULL, "\"Unfortunately, there is no Momotarou or Superman in this fairy tale.\"", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog003()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "「人食い鬼だから。",
+		   NULL, "\"Well, they eat people.", Line_WaitForInput);
+	OutputLine(NULL, "何十年かに一度、どうしても人肉が食べたくて仕方がなくなる周期があるんですって。",
+		   NULL, " They say that every decade or so, they can't help but want to feast on human flesh.", Line_WaitForInput);
+	OutputLine(NULL, "だからって村人同士で共食いするわけにはいかない。",
+		   NULL, " The villagers can't eat other villagers... ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "……だから彼らはその度に人里へ降り、『鬼隠し』をしたと伝えられてるわ。」",
+		   NULL, "So when this happens, it's said that they descended on the human villages and conducted Onikakushi.\"", Line_Normal);
+}
+
+void dialog004()
+{
+	OutputLine(NULL, "鬼ヶ淵村の村人たちが人里に押し寄せ、哀れな生贄を無理やり力尽くでさらったんですって。」",
+		   NULL, " They say that the villagers of Onigafuchi would overwhelm unfortunate human villages, in order to kidnap sacrifices.\"", Line_Normal);
+	ClearMessage();
+}
+
+void dialog005()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ほとんどの場合は１人か２人だったって記されてるわね。」",
+		   NULL, "In the texts, it's usually one or two people.\"", Line_Normal);
+}
+
+void dialog006()
+{
+	PlayVoice(4, "s02/09/130900115", 128);
+	OutputLine(NULL, "…哀れな犠牲者を美味しく頂くため、『綿流し』の儀式が開かれたというわ。」",
+		   NULL, " they would feast on their kidnapped sacrifices, which is why the nights came to be known as 'Watanagashi.'\"", Line_Normal);
+}
+
+void dialog007()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "哀れな食材をさらってきた夜にだけ開かれた……凄惨な人食いの宴のことだったの。」",
+		   NULL, "It used to be a ghastly, cannibalistic feast... held on the night the villagers had collected their unfortunate dinner.\"", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog008()
+{
+//「前原くんはさっき、綿流しは布団を清める儀式だと言ったわね＠ワタが詰まった布団って、何を意味してると思うかしら？＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "「前原くんはさっき、綿流しは布団を清める儀式だと言ったわね。",
+		   NULL, "\"Maebara-kun, you said that Watanagashi is a ritual about purifying futons, right?", Line_WaitForInput);
+	OutputLine(NULL, "ワタが詰まった布団って、何を意味してると思うかしら？」",
+		   NULL, " What do you think the futons, filled with cotton—with 'wata'—represent?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//「布団は布団だろ？＠　寝具＠　寝るための道具だよ＠　他に何の意味があるんだよ？！￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "「布団は布団だろ？！",
+		   NULL, "\"Futons are futons!!", Line_WaitForInput);
+	OutputLine(NULL, "　寝具！",
+		   NULL, " They're beds!", Line_WaitForInput);
+	OutputLine(NULL, "　寝るための道具だよ！",
+		   NULL, " They're things for sleeping in!", Line_WaitForInput);
+	OutputLine(NULL, "　他に何の意味があるんだよ？！」",
+		   NULL, " What else could they possibly represent?!\"", Line_Normal);
+	ClearMessage();
+
+//　...自分のうわべは、鷹野さんの言うおぞましい『綿流し』を否定しようと必死にまくし立てる＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…自分のうわべは、鷹野さんの言うおぞましい『綿流し』を否定しようと必死にまくし立てる。",
+		   NULL, "I was rattling on, desperately attempting to deny the horrible festival that Takano-san was describing...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　...だが、心の奥底は...鷹野さんの言った意味をよく理解してしまっていた￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…だが、心の奥底は…鷹野さんの言った意味をよく理解してしまっていた。",
+		   NULL, "Deep down, however... I found myself understanding all too well what she meant.", Line_Normal);
+	ClearMessage();
+
+//　ワタの詰まった布団＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ワタの詰まった布団。",
+		   NULL, "Futons, stuffed with cotton.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　ワタは腸（はらわた）を意味するものなのだとしたら、腸の詰まった布団というのは...人間のことに他ならない￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ワタは腸（はらわた）を意味するものなのだとしたら、腸の詰まった布団というのは…人間のことに他ならない。",
+		   NULL, "If the cotton represented entrails in both pronunciation and meaning, then entrail-filled futons... would have to be humans.", Line_Normal);
+	ClearMessage();
+}
+
+void dialog009()
+{
+	PlayVoice(4, "s02/09/130900125", 128);
+	OutputLine(NULL, "…もう薄々は気付いてると思うけど、あれは田畑を耕す鍬ではなくて。",
+		   NULL, " ...You've probably realized it already, but that's not a hoe for plowing fields.", Line_WaitForInput);
+}
+
+void dialog010()
+{
+	OutputLine(NULL, "…人間の腹をこじ開けるための解剖道具なのよ。」",
+		   NULL, " ...It's a tool for dissecting human bodies.\"", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog011()
+{
+//「平たく言えば、魚のワタを取り出して三角コーナーに捨てるのを、仰々しく儀式仕立にしたってことね＠...それで儀式はおしまい＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "「平たく言えば、魚のワタを取り出して三角コーナーに捨てるのを、仰々しく儀式仕立にしたってことね。",
+		   NULL, "\"Broadly speaking, it was quite the bombastic ceremony, where they'd rip out the guts and throw them into a basin.", Line_WaitForInput);
+	OutputLine(NULL, "…それで儀式はおしまい。",
+		   NULL, " ...And then the ritual was over.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　そのあとは、それぞれの役割を持った村人たちが、各々に肉を解体して美味しく頂いたって考えられてるわね＠...くすくす。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そのあとは、それぞれの役割を持った村人たちが、各々に肉を解体して美味しく頂いたって考えられてるわね。",
+		   NULL, "It's thought that afterwards, the villagers, each with a different role, dismantled the flesh piece-by-piece and feasted upon it.", Line_WaitForInput);
+	OutputLine(NULL, "…くすくす。」",
+		   NULL, " ...Heehee.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+}
+
+void dialog012()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "「こういうのはね。",
+		   NULL, "\"These sorts of things...", Line_WaitForInput);
+	OutputLine(NULL, "医学の本場、ドイツの文献の方がリアルに掲載されてるわよ。」",
+		   NULL, " They're printed realistically in the literature of Germany, capital of the medical world.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog013()
+{
+//「もっと怖い言い方をするなら、調理道具と言ったところかしらね＠...くすくす。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "「もっと怖い言い方をするなら、調理道具と言ったところかしらね。",
+		   NULL, "\"If you want a scarier way of looking at it, think of them as cooking utensils.", Line_WaitForInput);
+	OutputLine(NULL, "…くすくす。」",
+		   NULL, " ...Heehee.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog014()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "「…ほら。」",
+		   NULL, "\"...Look.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog015()
+{
+//「多分、...まな板じゃないかしら＠犠牲者を拘束してこの台の上でお料理をしたんだと思うわね。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "「多分、…まな板じゃないかしら。",
+		   NULL, "\"It's probably... a chopping block.", Line_WaitForInput);
+	OutputLine(NULL, "犠牲者を拘束してこの台の上でお料理をしたんだと思うわね。」",
+		   NULL, " I think you'd strap the sacrifice down to prep them for eating.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　まな板という言葉にぞくりとする......￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　まな板という言葉にぞくりとする……。",
+		   NULL, "The words 'chopping block' sent a jolt through my body......", Line_Normal);
+	ClearMessage();
+}
+
+void dialog016()
+{
+//「魔女狩りで有名な火刑、火あぶりなんかはすぐに死んじゃうのよ＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "「魔女狩りで有名な火刑、火あぶりなんかはすぐに死んじゃうのよ。",
+		   NULL, "\"Burning at the stake, the famous method of execution for witches, will kill the person immediately.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　全身の皮膚が広範囲にわたって重度の火傷を負うと、組織の分解産物で中毒症状を引き起こし、重度なショックを併発しちゃうから＠...まぁ確かに、それに至るまでが、ギロチンなんかに比べれば遥かに長いところに残虐性があるんだけど。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　全身の皮膚が広範囲にわたって重度の火傷を負うと、組織の分解産物で中毒症状を引き起こし、重度なショックを併発しちゃうから。",
+		   NULL, "When the body suffers extreme burns on the skin all over, the decomposition of the skin's chemical makeup produces poison-like symptoms and causes an immense shock to the victim. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…まぁ確かに、それに至るまでが、ギロチンなんかに比べれば遥かに長いところに残虐性があるんだけど。」",
+		   NULL, "...Though I suppose it's still very cruel—compared to the guillotine, you have to wait far longer for that to happen.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+}
+
+void dialog017()
+{
+//「ところがね＠ローマの時代の処刑方法にね、網焼きというものがあったの＠バーベキューと同じにね＠金網で挟みつけて、炭火でじっくりと焼いたんですって。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "「ところがね。",
+		   NULL, "\"Oh, and also.", Line_WaitForInput);
+	OutputLine(NULL, "ローマの時代の処刑方法にね、網焼きというものがあったの。",
+		   NULL, " There was a method of execution in ancient Rome where they would grill the person.", Line_WaitForInput);
+	OutputLine(NULL, "バーベキューと同じにね。",
+		   NULL, " Just like a barbecue.", Line_WaitForInput);
+	OutputLine(NULL, "金網で挟みつけて、炭火でじっくりと焼いたんですって。」",
+		   NULL, " They would cover the person in wire netting and slowly cook them over a charcoal fire.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　家族でデイキャンプに行った時の思い出が...こんな時に限って鮮明に蘇る...￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　家族でデイキャンプに行った時の思い出が…こんな時に限って鮮明に蘇る…。",
+		   NULL, "To think the memories of when I went to a day camp with my family... would come rushing back now, of all times, so vividly...", Line_Normal);
+	ClearMessage();
+
+//「...これだとね＠どういうわけか、なかなか死なないらしいのよ＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "「…これだとね。",
+		   NULL, "\"...That's what it was like.", Line_WaitForInput);
+	OutputLine(NULL, "どういうわけか、なかなか死なないらしいのよ。",
+		   NULL, " Apparently they wouldn't die too easily for some reason.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　ものの本によると、一昼夜かけて片側が炭化するくらいこんがり焼いても、まだ意識があって流暢に話をした、なんて記述も出てくるから。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ものの本によると、一昼夜かけて片側が炭化するくらいこんがり焼いても、まだ意識があって流暢に話をした、なんて記述も出てくるから。」",
+		   NULL, "According to one source, even if they roasted one side of a person to a crisp for an entire night, they would still be conscious and able to speak fluently.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　...そんな...丸一日火あぶりにしても...、まだ意識があるなんて......￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…そんな…丸一日火あぶりにしても…、まだ意識があるなんて……。",
+		   NULL, "...That's insane... You'd grill someone the whole day... and they'd still be conscious......", Line_Normal);
+	ClearMessage();
+
+//　死刑がひとつの見世物だったローマの時代には、いかにして死を長引かせるかに主眼を置いた処刑方法がいろいろと考案されたという...￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　死刑がひとつの見世物だったローマの時代には、いかにして死を長引かせるかに主眼を置いた処刑方法がいろいろと考案されたという…。",
+		   NULL, "It's said that ancient Rome, famous for their executions, thought of plenty of ways to execute someone while having the victim stay alive as long as possible...", Line_Normal);
+	ClearMessage();
+
+//「その中にね＠お腹を開いて、腸をウィンナーみたいに引っ張り出して、ウィンチで引っ張り上げてさらし者にする刑があったんですって。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "「その中にね。",
+		   NULL, "\"Among them...", Line_WaitForInput);
+	OutputLine(NULL, "お腹を開いて、腸をウィンナーみたいに引っ張り出して、ウィンチで引っ張り上げてさらし者にする刑があったんですって。」",
+		   NULL, " there was one method where they would open the gut, pull out the intestines like sausages, pull them up with a winch, and put them on public display.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//	DisableWindow();
+//	DrawBustshot( 3, "si_si_yw_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//　詩音が俺の背中に、しがみ付くようにくっついてくる＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　詩音が俺の背中に、しがみ付くようにくっついてくる。",
+		   NULL, "Shion was behind me, clinging to me.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　......それは怖いからだけじゃない＠...お腹をかばっているのだ...￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……それは怖いからだけじゃない。",
+		   NULL, "...Not just because she was scared.", Line_WaitForInput);
+	OutputLine(NULL, "…お腹をかばっているのだ…。",
+		   NULL, " ...She was protecting her stomach...", Line_Normal);
+	ClearMessage();
+
+//「臓物を引っ張り出すなんて、聞いただけでもすぐに死んじゃいそうでしょう＠　でもね＠...丁寧にやさしくやるとね＠意識がはっきりとした状態のまま、ハラワタを引きずりだすことって可能らしいのよ。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "「臓物を引っ張り出すなんて、聞いただけでもすぐに死んじゃいそうでしょう？",
+		   NULL, "\"You would think someone with their intestines pulled out would die instantly, right?", Line_WaitForInput);
+	OutputLine(NULL, "　でもね。",
+		   NULL, " Actually...", Line_WaitForInput);
+	OutputLine(NULL, "…丁寧にやさしくやるとね。",
+		   NULL, " ...As long as you do it tenderly and thoroughly... ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "意識がはっきりとした状態のまま、ハラワタを引きずりだすことって可能らしいのよ。」",
+		   NULL, "It's apparently possible to pull them all out while the person is still conscious.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　お腹の内側に、嫌な感触を感じる...＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　お腹の内側に、嫌な感触を感じる…。",
+		   NULL, "I felt a sick feeling in my stomach...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　まるで、鷹野さんが目線だけで...俺の内臓をこね回しているかのようだった...￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　まるで、鷹野さんが目線だけで…俺の内臓をこね回しているかのようだった…。",
+		   NULL, "It was like my organs were coiling up... just from Takano-san's stare...", Line_Normal);
+	ClearMessage();
+//	DisableWindow();
+//	DrawBustshot( 1, "ta_si_wa_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+
+//「ウィンチで引っ張り出すっていうのは何だか大仰な方法だけど＠もっと野蛮に、裂いた腹から臓物を、千切っては投げ千切っては投げという...!w1000そんな恐ろしい刑もあったんじゃないかって充分に考えられない＠　でも処刑者には意識があるの＠...それは痛い以上に...恐ろしい体験なんでしょうね...。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "「ウィンチで引っ張り出すっていうのは何だか大仰な方法だけど。",
+		   NULL, "\"Though pulling them out with a winch was a rather... exaggerated method.", Line_WaitForInput);
+	OutputLine(NULL, "もっと野蛮に、裂いた腹から臓物を、千切っては投げ千切っては投げという…",
+		   NULL, " In a more barbaric way, they might slice open the gut, then cut the intestines out and throw them everywhere...", Line_ContinueAfterTyping);
+
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "そんな恐ろしい刑もあったんじゃないかって充分に考えられない？",
+		   NULL, " It's quite imaginable that they did dreadful things like that too, isn't it? ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　でも処刑者には意識があるの。",
+		   NULL, "However, those being put to death are conscious.", Line_WaitForInput);
+	OutputLine(NULL, "…それは痛い以上に…恐ろしい体験なんでしょうね…。」",
+		   NULL, " ...It must be far more terrifying than painful...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　まるで、どこかで観光してきたかのように楽しく語る＠...耳元で、詩音が何度も唾を飲み込む音がした......￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　まるで、どこかで観光してきたかのように楽しく語る。",
+		   NULL, "She spoke with pleasure, as if she had come here on a sightseeing trip.", Line_WaitForInput);
+	OutputLine(NULL, "…耳元で、詩音が何度も唾を飲み込む音がした……。",
+		   NULL, " ...I heard Shion gulping multiple times near my ears......", Line_Normal);
+	ClearMessage();
+//	DisableWindow();
+//	DrawBustshot( 1, "ta_si_de_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+
+//「雛見沢の、いえ、鬼ヶ淵村の綿流しもそんな感じだったのかしらね＠......ほら＠耳を澄ませば......聞こえてくるような気がしない？＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "「雛見沢の、いえ、鬼ヶ淵村の綿流しもそんな感じだったのかしらね。",
+		   NULL, "\"Perhaps Hinamizawa—or, rather, Onigafuchi Village—did something like that for the Watanagashi Festival.", Line_WaitForInput);
+	OutputLine(NULL, "……ほら。",
+		   NULL, " ......Listen.", Line_WaitForInput);
+	OutputLine(NULL, "耳を澄ませば……聞こえてくるような気がしない？」",
+		   NULL, " If you try hard...... can't you hear it?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　何も聞きたくないとこれほどにも強く思うのに...＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　何も聞きたくないとこれほどにも強く思うのに…、",
+		   NULL, "I wanted nothing more than to not hear anything at all...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　なぜこんな時ばかり、聞こえないはずの音まで聞こえるようになってしまうのか...￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　なぜこんな時ばかり、聞こえないはずの音まで聞こえるようになってしまうのか…。",
+		   NULL, "So why? Why only at times like these do I begin to hear things I shouldn't be able to...", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+}
+
+void dialog018()
+{
+//「ヨーロッパの拷問道具に、こう言った鳥篭がたくさん登場するわね＠日本にもあったなんて驚きだわ。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "「ヨーロッパの拷問道具に、こう言った鳥篭がたくさん登場するわね。",
+		   NULL, "\"There are many of these sorts of bird cages among European torture devices.", Line_WaitForInput);
+	OutputLine(NULL, "日本にもあったなんて驚きだわ。」",
+		   NULL, " I'm surprised to see them in Japan as well.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "night/si_si_bi_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「け、......圭ちゃん、!w800......あれ、中に入ってない？＠　人＠　ミイラ？！＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "「け、……圭ちゃん、",
+		   NULL, "\"Ke...... Kei-chan,", Line_ContinueAfterTyping);
+
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "……あれ、中に入ってない？！",
+		   NULL, " ......Is there... something in there?!", Line_WaitForInput);
+	OutputLine(NULL, "　人？",
+		   NULL, " A person?", Line_WaitForInput);
+	OutputLine(NULL, "　ミイラ？！」",
+		   NULL, " A mummy?!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//「え？！　ど、どれ...？！￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "「え？！　ど、どれ…？！」",
+		   NULL, "\"Eh?! Wh-Where...?!\"", Line_Normal);
+	ClearMessage();
+
+//　いくつもぶら下がっている人間鳥篭の中のひとつを、詩音は懸命に指差すが、どれのことを言っているのかわからない＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　いくつもぶら下がっている人間鳥篭の中のひとつを、詩音は懸命に指差すが、どれのことを言っているのかわからない。",
+		   NULL, "Shion desperately pointed to one of the many human-sized bird cages hanging from the ceiling, but I couldn't tell which one she meant.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　...それに、この暗がりで、中に何かが入っているのかどうなのか、わかるわけがない￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…それに、この暗がりで、中に何かが入っているのかどうなのか、わかるわけがない。",
+		   NULL, "...Being that dark, there wasn't any way you could tell if something was there in the first place.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawBustshot( 3, "night/ta_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, TRUE );
+
+//「......私には何も見えないけど＠見間違いじゃないの？＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "「……私には何も見えないけど。",
+		   NULL, "\"...I don't see anything.", Line_WaitForInput);
+	OutputLine(NULL, "見間違いじゃないの？」",
+		   NULL, " You sure you're not seeing things?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	DisableWindow();
+	FadeAllBustshots( 400, TRUE );
+//	DrawBustshot( 2, "si_si_yw_b1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	DrawBustshot( 2, "night/si_si_yw_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+
+//「...................................................。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "「……………………………………………。」",
+		   NULL, "\"...............\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　詩音は納得できないようだったが...、確かめる術がなく、途方に暮れるしかなかった￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　詩音は納得できないようだったが…、確かめる術がなく、途方に暮れるしかなかった。",
+		   NULL, "Shion didn't seem convinced... but without a means to confirm for ourselves, we couldn't do much but wonder.", Line_Normal);
+	ClearMessage();
+}
+
+void dialog019()
+{
+	OutputLine(NULL, "生贄なら…鬼ヶ淵の沼に生きたまま沈められちゃうのかしら？",
+		   NULL, " If it's the sacrifice... then will I be thrown into the Onigafuchi Swamp while still alive?", Line_WaitForInput);
+}
+
+void dialog020()
+{
+	DisableWindow();
+	DrawBustshot( 2, "night/ta_si_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+
+//「被害者は生きながらにして全身の皮を剥がれ、あらゆる拷問を受けて虐め殺されたんですって＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "「被害者は生きながらにして全身の皮を剥がれ、あらゆる拷問を受けて虐め殺されたんですって。",
+		   NULL, "\"The victim was skinned while still alive, underwent all kinds of torture, and was killed brutally...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　......そして死後にもさらに遺体を分解・解剖と残虐の限りを尽くしたのではないか、って筆者は見ているはね＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……そして死後にもさらに遺体を分解・解剖と残虐の限りを尽くしたのではないか、って筆者は見ているはね。",
+		   NULL, "...The author here also thinks that even after death, the remains were divided and dissected even further—the epitome of inhumanity.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	DisableWindow();
+	DrawBustshot( 2, "night/ta_si_aw_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+
+//　......私は、どの工程も『生きている』!w900内にやったんじゃないか、って思ってるんだけどね＠前原くんはどう思うかしら？＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……私は、どの工程も『生きている』",
+		   NULL, "......I'm of the opinion that the entire 'process'", Line_ContinueAfterTyping);
+
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "内にやったんじゃないか、って思ってるんだけどね。",
+		   NULL, " was performed while the person was still alive, though.", Line_WaitForInput);
+	OutputLine(NULL, "前原くんはどう思うかしら？」",
+		   NULL, " What do you think, Maebara-kun?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　...彼女がもっともっと残酷な想像を掻き立てるようなことを言ったが...＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…彼女がもっともっと残酷な想像を掻き立てるようなことを言ったが…。",
+		   NULL, "...She spoke in a way intended to make me imagine even more vicious things...", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog021()
+{
+	OutputLine(NULL, "人肉缶詰事件、",
+		   NULL, " canned flesh incident,", Line_Continue);
+}
+
+void dialog022()
+{
+	PlayVoice(4, "s02/01/130100162", 128);
+	OutputLine(NULL, "　人肉缶詰って…、」",
+		   NULL, " Canned flesh...?\"", Line_Normal);
+}
+
+void dialog023()
+{
+	PlayVoice(4, "s02/09/130900207", 128);
+	OutputLine(NULL, "「あら、ジロウさんも見たくて我慢できなくなったかしら？",
+		   NULL, "\"Oh, Jirou-san, could you not resist seeing inside?", Line_WaitForInput);
+	OutputLine(NULL, "　……ここ、素敵な拷問道具の宝庫よ。」",
+		   NULL, " ...This is a splendid treasure trove of torture devices.\"", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog024()
+{
+	PlayVoice(4, "s02/09/130900218", 128);
+	OutputLine(NULL, "いついかなる時でもフィルムを残しておかないとピューリッツァーなんか取れないわよ？",
+		   NULL, " You won't win any Pulitzer Prizes by not stocking enough film for any occasion, you know.", Line_WaitForInput);
+}

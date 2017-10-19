@@ -1,0 +1,93 @@
+void main()
+{
+}
+
+void dialog000()
+{
+}
+
+void dialog001()
+{
+	PlayVoice(4, "s02/03/130300008", 128);
+	OutputLine(NULL, "　ありゃ、公由分家の寝たきり爺さんまで来てるじゃない！",
+		   NULL, "Huh? The bedridden old man from the Kimiyoshi branch family is here too!", Line_WaitForInput);
+	PlayVoice(4, "s02/03/130300009", 128);
+	OutputLine(NULL, "　あの爺さん、去年の綿流し以降、ずーっと布団の中で過ごしてたんじゃないかなぁ。」",
+		   NULL, " I think that old guy went home from Watanagashi last year and stayed in bed ever since.\"", Line_Normal);
+}
+
+void dialog002()
+{
+	PlayVoice(4, "s02/03/130300025", 128);
+	OutputLine(NULL, "「さー、ミシュラン雛見沢の北条沙都子審査員のご感想をどうぞー！」",
+		   NULL, "\"Now, it's time for the Hinamizawa Michelin, Judge Satoko Houjou, to give her impressions!\"", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog003()
+{
+	PlayVoice(4, "s02/05/130500015_1", 128);
+	OutputLine(NULL, "「……秋葉原駅の入口なんかでやるとウケそうですよ。」",
+		   NULL, "\"......You would go over well at the entrance of Akihabara Station.\"", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog004()
+{
+	PlayVoice(4, "s02/04/130400019", 128);
+	OutputLine(NULL, "「…梨花、秋葉原ってドコですの？」",
+		   NULL, "\"...Rika, I have never heard of this 'Akihabara.' Where is it?\"", Line_Normal);
+}
+
+void dialog005()
+{
+	PlayVoice(4, "s02/02/130200055", 128);
+	OutputLine(NULL, "「圭一くんＨだ…、鼻血出てるよ…。」",
+		   NULL, "\"Keiichi-kun, you're a pervert... Your nose is bleeding...\"", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog006()
+{
+	PlayVoice(4, "s02/05/130500018", 128);
+	OutputLine(NULL, "「……ボクの平らなお胸ではどうなのです？」",
+		   NULL, "\"......What about my flat chest?\"", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog007()
+{
+	PlayVoice(4, "s02/06/130600033", 128);
+	OutputLine(NULL, "（逢引の生現場に決まってるじゃないですか〜。",
+		   NULL, "(We're right at the scene of a rendezvous, of course~.", Line_Continue);
+}
+
+void dialog008()
+{
+	PlayVoice(4, "s02/08/130800002", 128);
+	OutputLine(NULL, "　こんな所で逢引かい？",
+		   NULL, " Having a secret date in a place like this?", Line_WaitForInput);
+}
+
+void dialog009()
+{
+	OutputLine(NULL, "　逢引してたのはそっちだろうがー！！",
+		   NULL, "You're the ones who were meeting up secretly!!", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog010()
+{
+	PlayVoice(4, "s02/06/130600038", 128);
+	OutputLine(NULL, "「ってことは富竹さんたちは、逢引してたってわけじゃないみたいですね。」",
+		   NULL, "\"Wait, so you two weren't having a little rendezvous, then?\"", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog011()
+{
+	PlayVoice(4, "s02/09/130900006", 128);
+	OutputLine(NULL, "残念だけど、貴方たちが覗き見したくなるような逢引現場じゃないのよ。",
+		   NULL, " Unfortunately, this wasn't the location of a rendezvous either of you would want to see.", Line_WaitForInput);
+}
+
+void dialog012()
+{
+	PlayVoice(4, "s02/06/130600040", 128);
+	OutputLine(NULL, "逢引現場じゃなかったら、何してるんですか？",
+		   NULL, " If this wasn't a rendezvous, then what were you doing?", Line_WaitForInput);
+}
