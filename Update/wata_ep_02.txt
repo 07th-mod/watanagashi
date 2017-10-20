@@ -631,21 +631,12 @@ void main()
 	PlayVoice(4, "s02/11/130700414", 128);
 	OutputLine(NULL, "「前原さんの好みがわからなかったので、いろいろと持ってきましたよ〜。",
 		   NULL, "\"I didn't know what you were into, Maebara-san, so I brought all sorts of things~", Line_WaitForInput);
-	PlayVoice(4, "s02/11/130700415", 128);
-	OutputLine(NULL, "ほぅら、より取り見取り野原は黄緑～てなもんです。",
-		   NULL, " See, all sorts of cute-looking ones, from Westerns to comic strips!", Line_WaitForInput);
-	PlayVoice(4, "s02/11/130700416", 128);
-	OutputLine(NULL, "　さぁさ、好きなだけ持って行っちゃってくださいー！",
-		   NULL, " Lately they have this sort of H-manga aimed at girls, too~\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_ep_02_vm0x_n01","dialog001");}
+	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_ep_02_vm00_n01","dialog001");}
+	//VoiceMatchingEnd
 
-
-//「エエエエ、エロ本なんか持ってこないで下さい～！！＠　持って帰って持って帰って！＠　痛ててててて...！！￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s02/01/130101198", 128);
-	OutputLine(NULL, "「エエエエ、エロ本なんか持ってこないで下さい〜！！！",
-		   NULL, "\"D-D-D-D-D-D-D-Don't bring porn in here~!!!", Line_WaitForInput);
 	PlayVoice(4, "s02/01/130101199", 128);
 	OutputLine(NULL, "　持って帰って持って帰って！！",
 		   NULL, " Take them away, and go home!!", Line_WaitForInput);
@@ -1231,17 +1222,12 @@ void main()
 	ClearMessage();
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "園崎家には、色々と黒い噂がまことしやかに囁かれていた。",
-		   NULL, "There were various dark rumors relating to the Sonozaki family.", Line_WaitForInput);
-	OutputLine(NULL, "……その中に、非合法の密売を行っている、などと根も葉もないデマもあった。",
-		   NULL, " ...Among them, there was even baseless speculation that they were selling illegal contraband.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zwata_ep_02_vm0x_n01","dialog002");}
+	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("zwata_ep_02_vm00_n01","dialog002");}
+	//VoiceMatchingEnd
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "……だとしたら梨花ちゃんも、それに関わっている疑いがある、とでも言いたいのか……？！",
-		   NULL, "...Did Ooishi mean to say that Rika-chan is also suspected in relation to such things?!", Line_Normal);
 	ClearMessage();
 
 //「いえいえ...そうは申してませんよ＠
