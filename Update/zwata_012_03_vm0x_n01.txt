@@ -1,0 +1,35 @@
+void main()
+{
+}
+
+void dialog000()
+{
+}
+
+void dialog001()
+{
+	PlayVoice(4, "s02/06/130600585", 128);
+	OutputLine(NULL, "「……園崎詩音は………魅音姉さまの足元にも及ばない、醜く情け知らずな愚か者でございます…。",
+		   NULL, "\"...Shion Sonozaki...... is a lowly, worthless sow not fit to even lick her big sister Mion's feet... ", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog002()
+{
+	PlayVoice(4, "s02/03/130300674", 128);
+	OutputLine(NULL, "　この拷問はね、とてもシンプル。",
+		   NULL, " This method of torture is very simple.", Line_Normal);
+}
+
+void dialog003()
+{
+	PlayVoice(4, "s02/03/130300682_1", 128);
+	OutputLine(NULL, "「…………他の人を相手にする時にはなんのためらいもなかったけど。",
+		   NULL, "\"............I didn't hesitate at all when I was torturing the others.", Line_WaitForInput);
+}
+
+void dialog004()
+{
+	PlayVoice(4, "s02/03/130300714", 128);
+	OutputLine(NULL, "…かなり出力が上げられるようになってるけどね。」",
+		   NULL, " ...It's illegal, and its output has been increased quite a bit.\"", GetGlobalFlag(GLinemodeSp));
+}

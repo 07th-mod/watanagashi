@@ -2278,9 +2278,12 @@ void main()
 
 //「......園崎詩音は.........魅音姉さまの足元にも及ばない、下賤で卑しい雌豚でございます...＠...身の程をわきまえず...お姉さまに働いた...か、数々の無礼を、お、思えば......、!w800ぅっく......、＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s02/06/130600585", 128);
-	OutputLine(NULL, "「……園崎詩音は………魅音姉さまの足元にも及ばない、醜く情け知らずな愚か者でございます…。",
-		   NULL, "\"...Shion Sonozaki...... is a lowly, worthless sow not fit to even lick her big sister Mion's feet... ", GetGlobalFlag(GLinemodeSp));
+
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_012_03_vm0x_n01","dialog001");}
+	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_012_03_vm00_n01","dialog001");}
+	//VoiceMatchingEnd
+
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s02/06/130600586", 128);
 	OutputLine(NULL, "…身の程をわきまえず…お姉さまに働いた…か、数々の無礼を、お、思えば……、",
@@ -3413,9 +3416,12 @@ void main()
 	PlayVoice(4, "s02/03/130300673", 128);
 	OutputLine(NULL, "「……じゃあそろそろいい？",
 		   NULL, "\"...Can I start now, then?", Line_WaitForInput);
-	PlayVoice(4, "s02/03/130300674", 128);
-	OutputLine(NULL, "　この拷問はね、とてもシンプル。",
-		   NULL, " This method of torture is very simple.", Line_Normal);
+
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zwata_012_03_vm0x_n01","dialog002");}
+	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("zwata_012_03_vm00_n01","dialog002");}
+	//VoiceMatchingEnd
+
 	ClearMessage();
 
 //　魅音が釘の先端を俺の、左手の小指に当てる＠
@@ -3433,9 +3439,12 @@ void main()
 
 //「............他の人を拷問する時にはなんのためらいもなかったけど＠......なぜかあんたにはためらいがあるよ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s02/03/130300682_1", 128);
-	OutputLine(NULL, "「…………他の人を相手にする時にはなんのためらいもなかったけど。",
-		   NULL, "\"............I didn't hesitate at all when I was torturing the others.", Line_WaitForInput);
+
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zwata_012_03_vm0x_n01","dialog003");}
+	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("zwata_012_03_vm00_n01","dialog003");}
+	//VoiceMatchingEnd
+
 	PlayVoice(4, "s02/03/130300683", 128);
 	OutputLine(NULL, "……なぜかあんたにはためらいがあるよ。」",
 		   NULL, " ...Why do I hesitate now?\"", GetGlobalFlag(GLinemodeSp));
@@ -3900,9 +3909,12 @@ void main()
 	PlayVoice(4, "s02/03/130300713", 128);
 	OutputLine(NULL, "本物のスタンガンだよ。",
 		   NULL, " It's a real stun gun.", Line_WaitForInput);
-	PlayVoice(4, "s02/03/130300714", 128);
-	OutputLine(NULL, "…かなり出力が上げられるようになってるけどね。」",
-		   NULL, " ...It's illegal, and its output has been increased quite a bit.\"", GetGlobalFlag(GLinemodeSp));
+
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zwata_012_03_vm0x_n01","dialog004");}
+	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("zwata_012_03_vm00_n01","dialog004");}
+	//VoiceMatchingEnd
+
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
