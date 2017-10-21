@@ -2836,8 +2836,8 @@ void main()
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
 	// (backup) SetValidityOfInput( TRUE );
-	
-	
+
+
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_002_vm0x_n01","dialog004");}
 	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_002_vm00_n01","dialog004");}
@@ -3037,12 +3037,12 @@ void main()
 
 //「......メイドさん衣装、カチューシャ、ガーターベルト付きで１位の人の荷物を運ぶのですよ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	
+
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_002_vm0x_n02","dialog002");}
 	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_002_vm00_n02","dialog002");}
 	//VoiceMatchingEnd
-	
+
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -3263,7 +3263,7 @@ void main()
 
 //「男がガーターベルトのつけ方を習って、人生のどこで役に立つってーんだよぉおおぉ！！！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	
+
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_002_vm0x_n02","dialog003");}
 	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_002_vm00_n02","dialog003");}

@@ -2171,12 +2171,12 @@ void main()
 	PlayVoice(4, "s19/03/990300411", 128);
 	OutputLine(NULL, "「みんないいかな〜？！",
 		   NULL, "\"Is everybody ready~?!", Line_WaitForInput);
-		   
+
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_001_vm0x_n01","dialog002");}
 	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_001_vm00_n01","dialog002");}
 	//VoiceMatchingEnd
-	
+
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 

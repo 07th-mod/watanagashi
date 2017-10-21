@@ -1194,12 +1194,12 @@ void main()
 
 //「...今は何だかのんびりした雰囲気だから想像も付かないでしょうが＠器物破損から脅迫、暴行まで一通りこなして、何度も補導されたんですよ＠...子供ですから、すぐに釈放してもらえたみたいですけどね＠...お姉は、自分の年齢が武器になることを知ってたみたいです。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	
+
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zwata_010_02_vm0x_n01","dialog002");}
 	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("zwata_010_02_vm00_n01","dialog002");}
 	//VoiceMatchingEnd
-	
+
 	PlayVoice(4, "s02/06/130600372", 128);
 	OutputLine(NULL, "…子供ですから、すぐに釈放してもらえたみたいですけどね。",
 		   NULL, " ...Though since she was a kid, they could get her released pretty easily. ", GetGlobalFlag(GLinemodeSp));

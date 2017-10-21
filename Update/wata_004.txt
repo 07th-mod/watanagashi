@@ -440,10 +440,10 @@ void main()
 	if(GetGlobalFlag(GCensor) >= 3){ModCallScriptSection("zwata_004_vm0x_n01","dialog001");}
 	if(GetGlobalFlag(GCensor) <= 2){ModCallScriptSection("zwata_004_vm00_n01","dialog001");}
 	//VoiceMatchingEnd
-	
+
 	DisableWindow();
 	DrawBustshotWithFiltering( 1, "me_ta_th_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
-	
+
 //「あれ＠　圭ちゃん家には回覧板とか行ってない＠　書いてなかった＠　今度の日曜に綿流しのお祭りがあるって。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s19/03/500300117", 128);
@@ -2712,7 +2712,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) {
 		OutputLineAll("", NULL, Line_ContinueAfterTyping);
 		OutputLine(NULL, "　３人が踵を踏み潰した浅い靴をべたべたと言わせながら迫ってくるのを、どこか遠い世界の出来事のように呆然と見てしまう…。",
-			   NULL, "<size=-2>The three of them beelined towards me, the worn-down heels of their thin-soled shoes slapping noisily against the pavement. I could only stare listlessly, as if I were watching some far-off event that didn't concern me at all.</size>", Line_Normal);
+			   NULL, "<size=-2>The three of them beelined towards me, the worn-down heels of their thin-soled shoes slapping noisily against the pavement. I could only stare listlessly, as if I were watching some far-off event that didn't concern me at all.", Line_Normal);
 	} else {
 		OutputLine(NULL, "　３人が踵を踏み潰した浅い靴をべたべたと言わせながら迫ってくるのを、どこか遠い世界の出来事のように呆然と見てしまう…。",
 			   NULL, "The three of them beelined towards me, the worn-down heels of their thin-soled shoes slapping noisily against the pavement. I could only stare listlessly, as if I were watching some far-off event that didn't concern me at all.", Line_Normal);
@@ -5175,7 +5175,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) {
 		OutputLineAll("", NULL, Line_ContinueAfterTyping);
 		OutputLine(NULL, "　県議会、市議会にも強力に働きかけ、地域住民を無視したダム建設を容認した県知事の罷免を要求。徹底的に糾弾した。",
-			   NULL, "<size=-2>They pressured the prefectural and municipal assemblies, saying that the prefectural governor ignored his constituents when he approved the project, and demanded his resignation. They completely and thoroughly denounced him.</size>", Line_Normal);
+			   NULL, "<size=-2>They pressured the prefectural and municipal assemblies, saying that the prefectural governor ignored his constituents when he approved the project, and demanded his resignation. They completely and thoroughly denounced him.", Line_Normal);
 	} else {
 		OutputLine(NULL, "　県議会、市議会にも強力に働きかけ、地域住民を無視したダム建設を容認した県知事の罷免を要求。徹底的に糾弾した。",
 			   NULL, "They pressured the prefectural and municipal assemblies, saying that the prefectural governor ignored his constituents when he approved the project, and demanded his resignation. They completely and thoroughly denounced him.", Line_Normal);

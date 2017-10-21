@@ -2936,7 +2936,7 @@ void main()
 
 
 	PlayBGM( 1, "msys07", 128, 0 );
-	
+
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zwata_007_vm0x_n01","dialog009");}
@@ -4375,7 +4375,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) {
 		OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_Continue);
 		OutputLine(NULL, "　だから一連の事件も、犯人は誰かってことよりも、事件の存在自体が、古い因習がまだ根深く残ってることの証拠だって思って面白がってるくらい…。」",
-			   NULL, "<size=-2>So even for this string of incidents, it's not so much finding out who the culprit is, but enjoying thinking about how the old traditions displayed by the incidents themselves still seems to have some pretty deep roots around here...\"</size>", GetGlobalFlag(GLinemodeSp));
+			   NULL, "<size=-2>So even for this string of incidents, it's not so much finding out who the culprit is, but enjoying thinking about how the old traditions displayed by the incidents themselves still seems to have some pretty deep roots around here...\"", GetGlobalFlag(GLinemodeSp));
 	} else {
 		OutputLine(NULL, "　だから一連の事件も、犯人は誰かってことよりも、事件の存在自体が、古い因習がまだ根深く残ってることの証拠だって思って面白がってるくらい…。」",
 			   NULL, "So even for this string of incidents, it's not so much finding out who the culprit is, but enjoying thinking about how the old traditions displayed by the incidents themselves still seems to have some pretty deep roots around here...\"", GetGlobalFlag(GLinemodeSp));

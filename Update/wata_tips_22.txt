@@ -397,9 +397,9 @@ void main()
 	PlayVoice(4, "s20/00/saburo44008", 128);
 	if (GetGlobalFlag(GADVMode)) {
 		OutputLine(NULL, "　八百万の神々とオヤシロさまと先祖の霊を祀り、日が昇りてから沈むまで。",
-			   NULL, "<size=-2>The eight hundred thousand gods, Oyashiro-sama, and the spirits of our ancestors are enshrined there.</size>", Line_Continue);
+			   NULL, "<size=-2>The eight hundred thousand gods, Oyashiro-sama, and the spirits of our ancestors are enshrined there.", Line_Continue);
 		OutputLine(NULL, "月が昇りてから沈むまで雛見沢を見守る尊い神社なのじゃ。",
-			   NULL, "<size=-2> The holy shrine protects Hinamizawa from when the sun comes up to when it sets, and from when the moon rises to when it falls.</size>", GetGlobalFlag(GLinemodeSp));
+			   NULL, "<size=-2> The holy shrine protects Hinamizawa from when the sun comes up to when it sets, and from when the moon rises to when it falls.", GetGlobalFlag(GLinemodeSp));
 	} else {
 		OutputLine(NULL, "　八百万の神々とオヤシロさまと先祖の霊を祀り、日が昇りてから沈むまで。",
 			   NULL, "The eight hundred thousand gods, Oyashiro-sama, and the spirits of our ancestors are enshrined there.", Line_ContinueAfterTyping);
