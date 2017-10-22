@@ -8,33 +8,71 @@ void dialog000()
 
 void dialog001()
 {
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
+
 	PlayVoice(4, "s19/04/990400171", 128);
 	OutputLine(NULL, "「圭一さんがぶったぁあぁあ！！！",
 		   NULL, "\"Keiichi-san hit meeeeeEEeee!!!", Line_WaitForInput);
+
+	PlayVoice(4, "s19/04/990400172", 128);
+	OutputLine(NULL, "　わぁああぁああぁあああぁあんッ！！！」",
+		   NULL, " WaaaaaaAAaaaAAAaaa!!!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog002()
 {
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s19/03/990300411", 128);
+	OutputLine(NULL, "「みんないいかな〜？！",
+		   NULL, "\"Is everybody ready~?!", Line_WaitForInput);
+
 	PlayVoice(4, "s19/03/990300412", 128);
 	OutputLine(NULL, "　傾聴傾聴～！！」",
 		   NULL, " Listen close now~!!\"", GetGlobalFlag(GLinemodeSp));
+
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog003()
 {
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s19/01/hr_kei09900_03", 128);
+	OutputLine(NULL, "　自分に素直になれッ！！！",
+		   NULL, "Be honest with yourselves!!!", Line_Continue);
+	OutputLine(NULL, "夢を追え！！",
+		   NULL, " Chase your dreams!!", Line_Continue);
+	OutputLine(NULL, "そしてかなえろ！！！",
+		   NULL, " Fulfill them!!!", Line_Continue);
+
 	OutputLine(NULL, "俺がかなえてやるッ！！！",
 		   NULL, " I'll fulfill them for you!!!", Line_WaitForInput);
+
+	PlaySE( 3, "wa_006", 128, 64 );
+	ShakeScreen( 1, 50, 20, 4, 0, );
+
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
+
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 }
 
 void dialog004()
 {
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+
 	PlayVoice(4, "s19/03/990300473", 128);
 	OutputLine(NULL, "「圭ちゃんが持ってたら、確実に明日からアレな趣味の人扱いだね。うん！」",
 		   NULL, "\"If you walked around with it, then you'd be treated like a weirdo starting tomorrow. Definitely!\"", Line_Normal);
+
+	ClearMessage();
 }
 
 void dialog005()
 {
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+
 	OutputLine(NULL, "　百億兆者ゲーム。",
 		   NULL, "It was a game called 'Billionaire'.", GetGlobalFlag(GLinemodeSp));
+
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }

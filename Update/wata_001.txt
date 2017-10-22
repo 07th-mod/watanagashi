@@ -1176,17 +1176,12 @@ void main()
 	DrawBustshot( 2, "sa_si_na_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「圭々がいじめたぁあぁあ！！＠　わぁああぁああぁあああぁあんッ！！！＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_001_vm0x_n01","dialog001");}
 	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_001_vm00_n01","dialog001");}
 	//VoiceMatchingEnd
 
-	PlayVoice(4, "s19/04/990400172", 128);
-	OutputLine(NULL, "　わぁああぁああぁあああぁあんッ！！！」",
-		   NULL, " WaaaaaaAAaaaAAAaaa!!!\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	DisableWindow();
@@ -2167,17 +2162,11 @@ void main()
 	DrawBustshot( 2, "me_si_wi_a2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「みんないいかな～？＠　傾注傾注～！！＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/03/990300411", 128);
-	OutputLine(NULL, "「みんないいかな〜？！",
-		   NULL, "\"Is everybody ready~?!", Line_WaitForInput);
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_001_vm0x_n01","dialog002");}
 	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_001_vm00_n01","dialog002");}
 	//VoiceMatchingEnd
-
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　魅音がおもちゃ屋のおじさんに代わって開会の挨拶し、今日のゲーム大会のルールを説明し始める￥
@@ -2716,14 +2705,11 @@ void main()
 
 
 //　百万長者ゲーム＠
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_001_vm0x_n01","dialog005");}
 	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_001_vm00_n01","dialog005");}
 	//VoiceMatchingEnd
-
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　...ずいぶんと懐かしいのが出てきたな￥
@@ -4510,26 +4496,11 @@ void main()
 
 
 //　自分に素直になれッ！！＠夢を追え！＠そしてかなえろ！！＠俺がかなえてやるッ！！＠俺がだぁああぁあぁあッ！！！！」/
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/01/hr_kei09900_03", 128);
-	OutputLine(NULL, "　自分に素直になれッ！！！",
-		   NULL, "Be honest with yourselves!!!", Line_Continue);
-	OutputLine(NULL, "夢を追え！！",
-		   NULL, " Chase your dreams!!", Line_Continue);
-	OutputLine(NULL, "そしてかなえろ！！！",
-		   NULL, " Fulfill them!!!", Line_Continue);
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_001_vm0x_n01","dialog003");}
 	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_001_vm00_n01","dialog003");}
 	//VoiceMatchingEnd
-
-	PlaySE( 3, "wa_006", 128, 64 );
-	ShakeScreen( 1, 50, 20, 4, 0, );
-
-	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
-
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　......男たちが世代を超えて価値観を共有した...瞬間だった￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -5600,14 +5571,11 @@ void main()
 	DrawBustshot( 2, "me_si_wi_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「圭ちゃんが持ってたら、確実に明日から変態扱いだね。うん！￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_001_vm0x_n01","dialog004");}
 	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_001_vm00_n01","dialog004");}
 	//VoiceMatchingEnd
-
-	ClearMessage();
 
 //　...魅音に嫌味を言われるまでもない＠これは男の俺の持ち物ではない＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
