@@ -497,15 +497,10 @@ void main()
 		   NULL, " Keiichi-kun, what kind of Rena would you want to meet?\"", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_007_vm0x_n01","dialog001");}
 	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_007_vm00_n01","dialog001");}
 	//VoiceMatchingEnd
-
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
 
 	DisableWindow();
 	DrawBustshot( 3, "re_se_ha_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
@@ -1636,18 +1631,11 @@ void main()
 	DrawBustshotWithFiltering( 3, "sunset/tm_si_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「君が噂の転校生、前原圭一くんだね＠　今日は張り切って仕事してたね！　感心したよ。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 3){ModCallScriptSection("zwata_007_vm0x_n01","dialog002");}
 	if(GetGlobalFlag(GCensor) <= 2){ModCallScriptSection("zwata_007_vm00_n01","dialog002");}
 	//VoiceMatchingEnd
-
-	PlayVoice(4, "s19/08/500800038", 128);
-	OutputLine(NULL, "　今日は張り切って仕事してたね！　感心したよ。」",
-		   NULL, " You really did a bang-up job today! I'm impressed.\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
 
 //圭一「いえ、それほどでも……詩音とも知り合いなんですか？」
 
@@ -1655,8 +1643,6 @@ void main()
 	if(GetGlobalFlag(GCensor) >= 3){ModCallScriptSection("zwata_007_vm0x_n01","dialog003");}
 	if(GetGlobalFlag(GCensor) <= 2){ModCallScriptSection("zwata_007_vm00_n01","dialog003");}
 	//VoiceMatchingEnd
-
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //富竹「あっははは、まあね。毎年ここに来てるからね。といっても髪形変わったら、まだどっちがどっちなのか区別できないけど」
 
@@ -1674,9 +1660,6 @@ void main()
 	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_007_vm0x_n01","dialog005");}
 	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_007_vm00_n01","dialog005");}
 	//VoiceMatchingEnd
-
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
 
 //「............すみません、覚えがないです。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -1733,18 +1716,11 @@ void main()
 	DrawBustshotWithFiltering( 1, "sunset/tm_si_wa_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「話には聞いていたけど、一卵性双生児ってのは初めて見たよ＠本当にそっくりなんだなぁ！＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_007_vm0x_n01","dialog006");}
 	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_007_vm00_n01","dialog006");}
 	//VoiceMatchingEnd
-
-	PlayVoice(4, "s19/08/500800043", 128);
-	OutputLine(NULL, "本当にそっくりなんだなぁ！」",
-		   NULL, " You really do look exactly alike!\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
 
 	DisableWindow();
 	DrawBustshot( 3, "sunset/si_si_wa_b1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 400, TRUE );
@@ -2795,7 +2771,6 @@ void main()
 
 
 //下界との交流を「穢れ（ケガレ）」として忌み嫌ったそうなの＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_007_vm0x_n01","dialog007");}
@@ -2808,18 +2783,11 @@ void main()
 	DrawScene( "sunset/bg_075", 1000 );
 
 //「よそ者を嫌う村、ってよく金田一の小説に出てくるだろ＠典型的なそういう村だったらしいんだよ。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_007_vm0x_n01","dialog008");}
 	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_007_vm00_n01","dialog008");}
 	//VoiceMatchingEnd
-
-	PlayVoice(4, "s19/08/500800073", 128);
-	OutputLine(NULL, "典型的なそういう村だったらしいんだよ。」",
-		   NULL, " This was once a classic example of a xenophobic village.\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
 
 	DisableWindow();
 	DrawBustshotWithFiltering( 3, "sunset/si_si_de_b1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
@@ -2948,7 +2916,6 @@ void main()
 	DrawBustshot( 1, "sunset/tm_si_ko_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「バラバラ殺人だよ＠ひところ流行ったろ。￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_007_vm0x_n01","dialog010");}
@@ -4052,15 +4019,11 @@ void main()
 		   NULL, " She was killed.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_007_vm0x_n01","dialog011");}
 	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_007_vm00_n01","dialog011");}
 	//VoiceMatchingEnd
-
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
 
 	DisableWindow();
 	DrawBustshot( 3, "sunset/si_si_ma_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );

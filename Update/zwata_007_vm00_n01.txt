@@ -8,18 +8,26 @@ void dialog000()
 
 void dialog001()
 {
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s19/01/hr_kei34750", 128);
 	OutputLine(NULL, "「バスト９０以上。",
 		   NULL, "\"One with a bust size of at least 90.", Line_Continue);
 	OutputLine(NULL, "お触りＯＫのボインボイン。」",
 		   NULL, " Huge knockers that you're okay with me touching.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog002()
 {
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s19/08/500800037", 128);
 	OutputLine(NULL, "「君が噂の転校生、前原圭一くんだね？",
 		   NULL, "\"So you're that transfer student I've been hearing about—Keiichi Maebara-kun, right?", Line_WaitForInput);
+	PlayVoice(4, "s19/08/500800038", 128);
+	OutputLine(NULL, "　今日は張り切って仕事してたね！　感心したよ。」",
+		   NULL, " You really did a bang-up job today! I'm impressed.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
 }
 
 void dialog003()
@@ -33,6 +41,7 @@ void dialog003()
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「えー…っと、どこかでお会いしてますよね？」",
 		   NULL, "\"Umm... Have we met before?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog004()
@@ -56,17 +65,24 @@ void dialog005()
 	PlayVoice(4, "s19/09/500900004", 128);
 	OutputLine(NULL, "「じゃあ私はわかるかしら…？」",
 		   NULL, "\"Then do you recognize me...?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog006()
 {
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s19/08/500800042", 128);
 	OutputLine(NULL, "「話には聞いていたけど、一卵性双生児ってのは初めて見たよ。",
 		   NULL, "\"I've heard about them, but this is the first time I've actually seen a pair of identical twins.", Line_WaitForInput);
+	PlayVoice(4, "s19/08/500800043", 128);
+	OutputLine(NULL, "本当にそっくりなんだなぁ！」",
+		   NULL, " You really do look exactly alike!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog007()
 {
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s19/09/500900031", 128);
 	OutputLine(NULL, "下界との交流を「穢れ（ケガレ）」として忌み嫌ったそうなの。",
 		   NULL, "They believed that interaction with the lower world would sully their souls.", GetGlobalFlag(GLinemodeSp));
@@ -82,9 +98,14 @@ void dialog007()
 
 void dialog008()
 {
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s19/08/500800072", 128);
 	OutputLine(NULL, "「よそ者を嫌う村、ってよく金田一の小説に出てくるだろ。",
 		   NULL, "\"Villages that hate outsiders come up all the time in Kindaichi novels.", Line_WaitForInput);
+	PlayVoice(4, "s19/08/500800073", 128);
+	OutputLine(NULL, "典型的なそういう村だったらしいんだよ。」",
+		   NULL, " This was once a classic example of a xenophobic village.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog009()
@@ -97,6 +118,7 @@ void dialog009()
 
 void dialog010()
 {
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s19/08/500800078", 128);
 	OutputLine(NULL, "「バラバラ殺人だよ。",
 		   NULL, "\"One of those dismemberment homicides.", Line_WaitForInput);
@@ -106,6 +128,8 @@ void dialog010()
 
 void dialog011()
 {
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "……この事件でも誰かが消え、」",
 		   NULL, " ......And the same way, someone disa—\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
