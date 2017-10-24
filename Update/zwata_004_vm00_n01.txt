@@ -91,13 +91,22 @@ void dialog005()
 		   NULL, " But an offering of futons is a first for me.", Line_WaitForInput);
 	OutputLine(NULL, "どんな謂れがあるんだ？」",
 		   NULL, " What's the history behind that?\"", GetGlobalFlag(GLinemodeSp));
+
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog006()
 {
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不良</color>", NULL, "<color=#f5e6d3>Delinquent</color>", NULL, Line_ContinueAfterTyping); }
+
 	PlayVoice(4, "s19/00/badb50006", 128);
 	OutputLine(NULL, "「クソ女がぁあぁぁあぁああ！！！",
 		   NULL, "\"Ye fookin biiiiitch!!", Line_WaitForInput);
+
+	PlayVoice(4, "s19/00/badb50007", 128);
+	OutputLine(NULL, "　ッくぞンにゃろぉおおおぉおお！！」",
+		   NULL, " I'll fookin bash yer ead in!!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog007()
@@ -110,9 +119,16 @@ void dialog007()
 
 void dialog008()
 {
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s19/06/500600093", 128);
+	OutputLine(NULL, "「それよりもさっきのあれ。",
+		   NULL, "\"More importantly, just now...", Line_WaitForInput);
+
 	PlayVoice(4, "s19/06/500600094", 128);
 	OutputLine(NULL, "……驚きましたか？",
 		   NULL, " Were you surprised?", Line_WaitForInput);
 	OutputLine(NULL, "　みんながどんどん集まってきて。」",
 		   NULL, " When everybody kept on showing up.\"", GetGlobalFlag(GLinemodeSp));
+
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }

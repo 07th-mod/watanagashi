@@ -1352,10 +1352,6 @@ void main()
 	ClearMessage();
 
 //「エンジェルモートのフィギュアが今度発売されるらしいでござるな＠ＷＦは要注意でござる...！！＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/00/otae50001", 128);
-	OutputLine(NULL, "「エンジェルモートのフィギュアが今度発売されるらしいでござるな。",
-		   NULL, "\"I heard they're planning on selling Angel Mort figures.", Line_WaitForInput);
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_005_vm0x_n01","dialog001");}
@@ -1905,17 +1901,12 @@ void main()
 
 
 //「やかましいぞ脂デブ＠　俺の目が黒い内に出て失せろ。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_005_vm0x_n01","dialog002");}
 	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_005_vm00_n01","dialog002");}
 	//VoiceMatchingEnd
 
-	PlayVoice(4, "s19/01/hr_kei18080", 128);
-	OutputLine(NULL, "　俺の目が黒い内に出て失せろ。」",
-		   NULL, " Get out of here before I get angry.\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　詩音の肩をぐっと掴み、後ろへ下がらせる￥
@@ -1935,20 +1926,12 @@ void main()
 
 
 //「わかっておらんでござるな＠そのウェイトレスが余のおズボンに粗相をしたのでござるよ＠　これはお仕置きなのでござる～！！＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/00/otae50007", 128);
-	OutputLine(NULL, "「わかっておらんでござるな。",
-		   NULL, "\"It seems you don't understand.", Line_WaitForInput);
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_005_vm0x_n01","dialog003");}
 	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_005_vm00_n01","dialog003");}
 	//VoiceMatchingEnd
 
-	PlayVoice(4, "s19/00/otae50009", 128);
-	OutputLine(NULL, "　これはお仕置きなのでござる〜！！」",
-		   NULL, " This is her punishment!!\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	PlaySE( 3, "wa_010", 128, 64 );
@@ -2961,7 +2944,6 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_005_vm0x_n01","dialog004");}
@@ -3560,35 +3542,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //「ぎゃッ？！」/
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/00/otaa50004", 128);
-	OutputLine(NULL, "「ぎゃッ？！」",
-		   NULL, "\"Gya!?\"", Line_Continue);
-
-	PlaySE( 3, "wa_002", 128, 64 );
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
-	// (backup) SetValidityOfInput( TRUE );
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_005_vm0x_n01","dialog012");}
 	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_005_vm00_n01","dialog012");}
 	//VoiceMatchingEnd
-
-	PlaySE( 3, "wa_003", 128, 64 );
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
-	// (backup) SetValidityOfInput( TRUE );
-
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_005_vm0x_n01","dialog013");}
-	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_005_vm00_n01","dialog013");}
-	//VoiceMatchingEnd
-
-
-	PlaySE( 3, "wa_004", 128, 64 );
-
-	OutputLineAll(NULL, "", Line_Normal);
 
 	ClearMessage();
 
@@ -3924,37 +3882,11 @@ void main()
 	DrawSceneWithMask( "bg_163", "right", 0, 0, 200 );
 
 //「む...。」/
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/00/otac50006", 128);
-	OutputLine(NULL, "「む…。」",
-		   NULL, "\"Hrngh...\"", Line_Continue);
-
-	PlaySE( 3, "wa_011", 128, 64 );
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
-	// (backup) SetValidityOfInput( TRUE );
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_005_vm0x_n01","dialog014");}
 	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_005_vm00_n01","dialog014");}
 	//VoiceMatchingEnd
-
-
-	PlaySE( 3, "wa_011", 128, 64 );
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
-	// (backup) SetValidityOfInput( TRUE );
-
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_005_vm0x_n01","dialog015");}
-	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_005_vm00_n01","dialog015");}
-	//VoiceMatchingEnd
-
-	PlaySE( 3, "wa_011", 128, 64 );
-	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
-
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
-
 
 //　...異変は数瞬を置かずに起こり始める￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -4090,38 +4022,17 @@ void main()
 
 
 //「僕もにゃりんよ＠スモールでなくビッグの方でござる＠　要リプレイ外しにゃりん！＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/00/otad50006", 128);
-	OutputLine(NULL, "「僕もにゃりんよ。",
-		   NULL, "\"Mew too.", Line_WaitForInput);
-
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_005_vm0x_n01","dialog005");}
 	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_005_vm00_n01","dialog005");}
 	//VoiceMatchingEnd
 
-	PlayVoice(4, "s19/00/otad50008", 128);
-	OutputLine(NULL, "　要リプレイ外しにゃりん！」",
-		   NULL, " I need to cash out meow!\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
 
 //「おトイレはどこにゃー？＠　見つけたにゃー＠　レッツ尿～！！！＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/00/otae50019", 128);
-	OutputLine(NULL, "「おトイレはどこにゃー？！",
-		   NULL, "\"Where's da toilet!?", Line_WaitForInput);
-	PlayVoice(4, "s19/00/otae50020", 128);
-	OutputLine(NULL, "　見つけたにゃー！",
-		   NULL, " I found eeeet!", Line_WaitForInput);
-
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_005_vm0x_n01","dialog006");}
 	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_005_vm00_n01","dialog006");}
 	//VoiceMatchingEnd
-
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
-
 
 //　...沙都子がヤツらのデザートにどんな細工をしたのか、考えるだけでも野暮だな￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -4301,15 +4212,11 @@ void main()
 
 
 //「はぁはぁ...女子便最高～～！！！！！＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", NULL, Line_ContinueAfterTyping); }
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_005_vm0x_n01","dialog007");}
 	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_005_vm00_n01","dialog007");}
 	//VoiceMatchingEnd
-
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
-
 
 //　な、なんてたくましいヤツらだッ！￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -4517,13 +4424,6 @@ void main()
 
 
 //「それは助かるにゃりん！＠　さぁさぁ！＠　このままじゃ集団浣腸プレイ状態にゃりん～！！￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/00/otad50012", 128);
-	OutputLine(NULL, "「それは助かるにゃりん！！",
-		   NULL, "\"That would be purrfect!!", Line_WaitForInput);
-	PlayVoice(4, "s19/00/otad50013", 128);
-	OutputLine(NULL, "　さぁさぁ！！",
-		   NULL, " Purrease, purrease!!", Line_WaitForInput);
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_005_vm0x_n01","dialog008");}
@@ -4614,17 +4514,10 @@ void main()
 
 
 //「脂デブども...！＠　この扉から一歩外へ出ることがどういうことになるか、わかってるんだろうな？！＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_005_vm0x_n01","dialog009");}
 	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_005_vm00_n01","dialog009");}
 	//VoiceMatchingEnd
-
-	PlayVoice(4, "s19/01/hr_kei18720", 128);
-	OutputLine(NULL, "　この扉から一歩外へ出ることがどういうことになるか、わかってるんだろうな？！」",
-		   NULL, " You know what happens if you even set one foot outside this door, right!?\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「それはどういう意味にゃー！！！￥
@@ -5024,14 +4917,11 @@ void main()
 	DrawBustshot( 1, "re_si_ha_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「け、圭一くん......Ｈなんだぁ...。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_005_vm0x_n01","dialog010");}
 	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_005_vm00_n01","dialog010");}
 	//VoiceMatchingEnd
 
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「いやその......わははははははは...！！！￥
@@ -7210,15 +7100,10 @@ void main()
 	DrawBustshot( 2, "me_si_wi_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「圭ちゃんが持ってたら、確実に明日から変態扱いだね。うん！＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_005_vm0x_n01","dialog011");}
 	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_005_vm00_n01","dialog011");}
 	//VoiceMatchingEnd
-
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
-
 
 //　...魅音の、小馬鹿にするようないつもの口調￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

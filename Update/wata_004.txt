@@ -513,8 +513,6 @@ void main()
 	if(GetGlobalFlag(GCensor) <= 2){ModCallScriptSection("zwata_004_vm00_n01","dialog005");}
 	//VoiceMatchingEnd
 
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
 
 //　魅音がうーんと小首をひねりだす￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -3135,17 +3133,11 @@ void main()
 	ClearMessage();
 
 //「クソ女がぁあぁぁあぁああ！！＠　ッくぞンにゃろぉおおおぉおお！！＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不良</color>", NULL, "<color=#f5e6d3>Delinquent</color>", NULL, Line_ContinueAfterTyping); }
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_004_vm0x_n01","dialog006");}
 	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_004_vm00_n01","dialog006");}
 	//VoiceMatchingEnd
-
-	PlayVoice(4, "s19/00/badb50007", 128);
-	OutputLine(NULL, "　ッくぞンにゃろぉおおおぉおお！！」",
-		   NULL, " I'll fookin bash yer ead in!!\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　やめろ魅音...、こいつらは狂犬みたいなヤツらだぞ＠　はったりも何も通用しない￥
@@ -3882,8 +3874,6 @@ void main()
 	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_004_vm0x_n01","dialog007");}
 	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_004_vm00_n01","dialog007");}
 	//VoiceMatchingEnd
-
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　割烹着のお婆さんにも注意される￥
@@ -4789,17 +4779,11 @@ void main()
 	ClearMessage();
 
 //「それよりもさっきのあれ＠......驚きましたか＠　みんながどんどん集まってきて。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/06/500600093", 128);
-	OutputLine(NULL, "「それよりもさっきのあれ。",
-		   NULL, "\"More importantly, just now...", Line_WaitForInput);
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_004_vm0x_n01","dialog008");}
 	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_004_vm00_n01","dialog008");}
 	//VoiceMatchingEnd
-
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「そりゃー驚いたよ＠　レナや沙都子が駆けつけてくれるならともかく＠あんなに老若男女がいろいろと集まってくるんだからな＠.........あれ全部、雛見沢の人なんだろ？￥
