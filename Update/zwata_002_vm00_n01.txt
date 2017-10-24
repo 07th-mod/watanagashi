@@ -8,13 +8,33 @@ void dialog000()
 
 void dialog001()
 {
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+
 	PlayVoice(4, "s19/03/990300509", 128);
 	OutputLine(NULL, "「はーい！！　みんな傾注傾注〜！",
 		   NULL, "\"Alright! Everybody pay attention~!", Line_WaitForInput);
+
+	PlayVoice(4, "s19/03/990300510", 128);
+	OutputLine(NULL, "　ルールを説明するよ〜！！」",
+		   NULL, " I'm going to explain the rules~!!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
 }
 
 void dialog002()
 {
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s19/01/vt0_keiichi0002", 128);
+	OutputLine(NULL, "　……小学校の頃…罰ゲームってのがあったら……うん。",
+		   NULL, "\"...When I was in elementary school... there was a penalty game... yeah.", Line_WaitForInput);
+	PlayVoice(4, "s19/01/vt0_keiichi0003", 128);
+	OutputLine(NULL, "やっぱりアレだよな。",
+		   NULL, " It can only be -that-.", Line_WaitForInput);
+
+	PlaySE( 3, "wa_010", 128, 64 );
+
+//荷物持ち￥
+
 	PlayVoice(4, "s19/01/vt0_keiichi0004", 128);
 	OutputLine(NULL, "荷物持ち！",
 		   NULL, " Schlepping!\"", Line_Normal);
@@ -22,6 +42,7 @@ void dialog002()
 
 void dialog003()
 {
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 
 	PlayVoice(4, "s19/05/990500121", 128);
 	OutputLine(NULL, "「………『カードマスターさくら』って書いてありますです。」",
@@ -31,12 +52,32 @@ void dialog003()
 
 void dialog004()
 {
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s19/01/hr_kei11170", 128);
+	OutputLine(NULL, "「さ、",
+		   NULL, "\"Sa--", Line_Continue);
+
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 500 );
+	// (backup) SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "ささッ、",
+		   NULL, " Sa-Sa--", Line_Continue);
+
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 800 );
+	// (backup) SetValidityOfInput( TRUE );
+
+
 	OutputLine(NULL, "さ",
 		   NULL, " Sa-", Line_Continue);
-}
 
-void dialog005()
-{
+
+	PlaySE( 3, "wa_006", 128, 64 );
+	PlayBGM( 1, "msys03", 128, 0 );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+
 	OutputLine(NULL, "くらって言ったら『カードマスターさくら』だろーッ？！？！",
 		   NULL, "kura can only mean 'Card Master Sakura,' can't it!?!?", Line_WaitForInput);
 	OutputLine(NULL, "　国営放送で毎週放送中の大人気アニメ！！！",
@@ -52,28 +93,57 @@ void dialog005()
 		   NULL, " No, you've definitely seen it, even I've seheheeen iiiiiiiiit!!!!\"", Line_Normal);
 }
 
+void dialog005()
+{
+}
+
 void dialog006()
 {
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s19/03/990300596", 128);
+	OutputLine(NULL, "「……いやそんな、力説しなくてもよく知ってるよ。",
+		   NULL, "\"...Um yeah, even without the forced explanation, I know about it.", Line_WaitForInput);
+
 	OutputLine(NULL, "あの毎週、違うコスチュームで戦うヤツでしょ？",
 		   NULL, " It's that thingy where she fights in a different costume every week, right?", Line_WaitForInput);
+
+	PlayVoice(4, "s19/03/990300598", 128);
+	OutputLine(NULL, "　うん。",
+		   NULL, " Yeah.", Line_Continue);
+
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 800 );
+	// (backup) SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "知ってる知ってる。」",
+		   NULL, " I know, I know.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog007()
 {
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
+
 	OutputLine(NULL, "「うんうん。",
 		   NULL, "\"Yup, yup.", Line_WaitForInput);
 	OutputLine(NULL, "かぁいいんだよね！",
 		   NULL, " It's kyute, isn't it!", Line_WaitForInput);
 	OutputLine(NULL, "　レナもたまに立ち読みでストーリーちゃんと追ってるよ☆」",
 		   NULL, " Rena sometimes browses through it at the magazine stand to keep up with the story☆.\"", GetGlobalFlag(GLinemodeSp));
+
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog008()
 {
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
+
 	OutputLine(NULL, "「最近、見始めましたわ。",
 		   NULL, "\"I saw it for the first time recently.", Line_WaitForInput);
 	OutputLine(NULL, "さくらが元気一杯でカッコイイんですの！」",
 		   NULL, " Sakura is cool and so cheerful all the time!\"", GetGlobalFlag(GLinemodeSp));
+
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog009()
