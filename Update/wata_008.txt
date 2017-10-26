@@ -294,7 +294,6 @@ void main()
 
 
 //　ありゃ、公由分家の寝たきり爺さんまで来てるじゃない＠　あの爺さん、去年の綿流し以降、ずーっと布団の中で過ごしてたんじゃないかなぁ。￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_008_vm0x_n01","dialog001");}
@@ -862,15 +861,11 @@ void main()
 	ClearMessage();
 
 //「さー、ミシュラン雛見沢の北条沙都子審査員のご感想をどうぞー！＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_008_vm0x_n01","dialog002");}
 	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_008_vm00_n01","dialog002");}
 	//VoiceMatchingEnd
-
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
 
 	DisableWindow();
 	DrawBustshot( 1, "sa_si_bi_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
@@ -1679,21 +1674,15 @@ void main()
 	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
 	DrawBustshotWithFiltering( 3, "ri_mk_wa_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_008_vm0x_n01","dialog003");}
 	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_008_vm00_n01","dialog003");}
 	//VoiceMatchingEnd
 
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-
 	DisableWindow();
 	DrawBustshot( 2, "sa_si_ak_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //沙都子「…アヤしい万能包丁とか売りつける仕事に向いてそうですわねえ」
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_008_vm0x_n01","dialog004");}
@@ -2195,9 +2184,6 @@ void main()
 	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_008_vm00_n01","dialog005");}
 	//VoiceMatchingEnd
 
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-
 //「トコロテンを押したら、にゅ～って出てくるだろ＠　あれと同じだ＠これは抗いようのない現象なんだよ...。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s02/01/130100079", 128);
@@ -2293,14 +2279,11 @@ void main()
 	DrawBustshotWithFiltering( 3, "ri_mk_wa_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「......ボクの平らなお胸ではどうなのです？＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_008_vm0x_n01","dialog006");}
 	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_008_vm00_n01","dialog006");}
 	//VoiceMatchingEnd
-
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
 	DrawBustshotWithFiltering( 3, "ri_mk_wa_a1_zoom", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
@@ -3230,19 +3213,12 @@ void main()
 
 
 //（逢引の生現場に決まってるじゃないですか～＠ほらほら、よく見て下さい＠あれ、誰だかわかります？￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_008_vm0x_n01","dialog007");}
 	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_008_vm00_n01","dialog007");}
 	//VoiceMatchingEnd
 
-	Wait ( 3000 );
-	OutputLine(NULL, "ほらほら、よく見て下さい。",
-		   NULL, " See, look closely.", Line_Continue);
-	Wait ( 2000 );
-	OutputLine(NULL, "あれ、誰だかわかります？）",
-		   NULL, " Can you tell who they are?)", Line_Normal);
 	ClearMessage();
 
 //　詩音に言われ、暗がりに目を凝らす＠
@@ -3381,31 +3357,20 @@ void main()
 	DrawBustshotWithFiltering( 3, "night/tm_si_wa_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「おやおや......、圭一くんも隅に置けないねぇ＠　こんな所で逢引かい＠　だとしたら、僕たち、とんでもないお邪魔をしちゃったかな。あっはっはっは！！＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s02/08/130800001", 128);
-	OutputLine(NULL, "「おやおや……、圭一くんも隅に置けないねぇ！",
-		   NULL, "\"What's this...? Keiichi-kun, you sure are smart, you know that?", Line_WaitForInput);
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_008_vm0x_n01","dialog008");}
 	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_008_vm00_n01","dialog008");}
 	//VoiceMatchingEnd
 
-	PlayVoice(4, "s02/08/130800003", 128);
-	OutputLine(NULL, "　だとしたら、僕たち、とんでもないお邪魔をしちゃったかな。あっはっはっは！！」",
-		   NULL, " Then I guess we accidentally interrupted something important. A-ha-ha-ha!!\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 //　逢引してたのはそっちだろうがー！＠
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_008_vm0x_n01","dialog009");}
 	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_008_vm00_n01","dialog009");}
 	//VoiceMatchingEnd
-
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　勝手に笑い合う富竹さんと鷹野さんが何だか腹立たしい￥
@@ -3415,15 +3380,11 @@ void main()
 	ClearMessage();
 
 //「ってことは富竹さんたちは、逢引してたってわけじゃないみたいですね。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_008_vm0x_n01","dialog010");}
 	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_008_vm00_n01","dialog010");}
 	//VoiceMatchingEnd
-
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
 
 	DisableWindow();
 	DrawBustshot( 3, "night/tm_si_ko_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
@@ -3448,38 +3409,24 @@ void main()
 	DrawBustshot( 1, "night/ta_si_wa_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「くすくす...＠残念だけど、貴方たちが覗き見したくなるような逢引現場じゃないのよ＠期待に添えなくて申し訳ないわね。￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s02/09/130900005", 128);
-	OutputLine(NULL, "「くすくす…。",
-		   NULL, "\"Heehee...", Line_WaitForInput);
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_008_vm0x_n01","dialog011");}
 	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_008_vm00_n01","dialog011");}
 	//VoiceMatchingEnd
 
-	PlayVoice(4, "s02/09/130900007", 128);
-	OutputLine(NULL, "期待に添えなくて申し訳ないわね。」",
-		   NULL, " Sorry for not living up to your expectations.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
 	DrawBustshotWithFiltering( 3, "night/si_si_aw_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「ふーん＠逢引現場じゃなかったら、何してるんですか＠　富竹さん、今、扉の南京錠をいじってませんでした？￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s02/06/130600039", 128);
-	OutputLine(NULL, "「ふーん。",
-		   NULL, "\"Hmm.", Line_WaitForInput);
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_008_vm0x_n01","dialog012");}
 	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_008_vm00_n01","dialog012");}
 	//VoiceMatchingEnd
 
-	PlayVoice(4, "s02/06/130600041", 128);
-	OutputLine(NULL, "　富竹さん、今、扉の南京錠をいじってませんでした？」",
-		   NULL, " Tomitake-san, were you messing around with the padlock on the door just now?\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	FadeAllBustshots( 400, TRUE );
@@ -3648,25 +3595,10 @@ void main()
 
 
 //　もちろん、古手家の人間以外は/
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s02/09/130900016", 128);
-	OutputLine(NULL, "　もちろん、古手家の人間以外は",
-		   NULL, "Of course, if anyone but the Furude family enters...", Line_Continue);
-
-	PlaySE( 3, "wa_024", 128, 64 );
-
-//「穢れ（ケガレ）」を持ち込むから立入禁止の不可侵領域＠......聖域なの。＠
-
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_008_vm0x_n02","dialog001");}
 	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_008_vm00_n02","dialog001");}
 	//VoiceMatchingEnd
-
-	PlayVoice(4, "s02/09/130900017", 128);
-	OutputLine(NULL, "……聖域なの。」",
-		   NULL, " ......It's a sanctuary.\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
-
 
 //　そんな場所、ますます踏み込んじゃいけないんじゃないのか？￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -4897,14 +4829,11 @@ void main()
 	DrawBustshot( 2, "night/ta_si_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「残念だけど、このお話には桃太郎もスーパーマンも登場しないわ。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_008_vm0x_n02","dialog002");}
 	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_008_vm00_n02","dialog002");}
 	//VoiceMatchingEnd
 
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「じゃあ...村をあげて戦うわけですか？￥
@@ -5628,10 +5557,6 @@ void main()
 	DrawBustshot( 2, "night/ta_si_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「平たく言えば、鬼たちによる誘拐行為よ＠鬼ヶ淵村の村人たちが人里に押し寄せ、哀れな生贄を無理やり力尽くでさらったんですって。￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s02/09/130900109", 128);
-	OutputLine(NULL, "「平たく言えば、鬼たちによる誘拐行為よ。」",
-		   NULL, "\"Broadly speaking, it's when a demon kidnaps someone; when a person is 'demoned away.'\"", Line_WaitForInput);
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zwata_008_vm0x_n02","dialog004");}
@@ -5713,10 +5638,6 @@ void main()
 	StopSE( 3 );
 
 //「そうして生贄をさらってきた夜にはね＠...哀れな犠牲者を美味しく頂くため、『綿流し』の儀式が開かれたというわ。￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s02/09/130900114", 128);
-	OutputLine(NULL, "「そうして生贄をさらってきた夜にはね。",
-		   NULL, "\"So on the nights when they stole away villagers...", Line_WaitForInput);
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zwata_008_vm0x_n02","dialog006");}
@@ -5875,6 +5796,7 @@ void main()
 
 
 //「では、梨花ちゃんがやった奉納演舞を思い出してちょうだい＠梨花ちゃんがあそこで何をしていたか、!w1000...わかってくる？＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s02/09/130900122", 128);
 	OutputLine(NULL, "「では、梨花ちゃんがやった奉納演舞を思い出してちょうだい。",
 		   NULL, "\"Why don't you think back to the offertory dance Rika-chan performed?", Line_WaitForInput);
@@ -5925,26 +5847,11 @@ void main()
 	DrawBustshot( 1, "night/ta_si_aw_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「梨花ちゃんが持っていた祭事用の鍬＠...もう薄々は気付いてると思うけど、あれは田畑を耕す鍬ではなくて＠/
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s02/09/130900124", 128);
-	OutputLine(NULL, "「梨花ちゃんが持っていた祭事用の鍬。",
-		   NULL, "\"Rika-chan was carrying a festival hoe.", Line_WaitForInput);
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zwata_008_vm0x_n02","dialog009");}
 	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("zwata_008_vm00_n02","dialog009");}
 	//VoiceMatchingEnd
-
-
-	PlaySE( 3, "wa_023", 128, 64 );
-
-
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zwata_008_vm0x_n02","dialog010");}
-	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("zwata_008_vm00_n02","dialog010");}
-	//VoiceMatchingEnd
-
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 //　最後まで演舞を見なかったので、梨花ちゃんがあの後、どのような演舞をしたのかはわからない＠
@@ -7035,24 +6942,11 @@ void main()
 	DrawBustshot( 1, "night/ta_si_wa_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //　祟りなら、今年はどんな死に方をさせられちゃうのかしら＠生贄なら...鬼ヶ淵の沼に生きたまま沈められちゃうのかしら＠......そう言えば今夜よね＠オヤシロさまの祟りがある夜は。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s02/09/130900183", 128);
-	OutputLine(NULL, "　祟りなら、今年はどんな死に方をさせられちゃうのかしら。",
-		   NULL, "If it's the curse, then I wonder what kind of death it'll be this year?", Line_WaitForInput);
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zwata_008_vm0x_n02","dialog019");}
 	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("zwata_008_vm00_n02","dialog019");}
 	//VoiceMatchingEnd
-
-	PlayVoice(4, "s02/09/130900185", 128);
-	OutputLine(NULL, "……そう言えば今夜よね。",
-		   NULL, " ......It is tonight, you know.", Line_WaitForInput);
-	PlayVoice(4, "s02/09/130900186", 128);
-	OutputLine(NULL, "オヤシロさまの祟りがある夜は。」",
-		   NULL, " The night of Oyashiro-sama's curse,\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
-
 
 //　額がぶつかりそうになるくらい、鷹野さんは顔を寄せて...そう言った＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -7250,7 +7144,6 @@ void main()
 	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("zwata_008_vm00_n02","dialog020");}
 	//VoiceMatchingEnd
 
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //　俺の脳のキャパシティはとっくに限界で、それ以上の凄惨な想像などできるはずもなかった￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -7369,26 +7262,6 @@ void main()
 	DrawBustshot( 2, "night/ta_si_de_a1_zoom", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「たったよ＠...たった百年前のことよ＠それにね＠昭和に入ってからだって、あるんだから＠...終戦直後に騒ぎになった/
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s02/09/130900201", 128);
-	OutputLine(NULL, "「たったよ。",
-		   NULL, "\"That's all.", Line_WaitForInput);
-	PlayVoice(4, "s02/09/130900202", 128);
-	OutputLine(NULL, "…たった百年前のことよ。",
-		   NULL, " ...Only a hundred years ago.", Line_WaitForInput);
-	PlayVoice(4, "s02/09/130900203", 128);
-	OutputLine(NULL, "それにね。",
-		   NULL, " Besides.", Line_WaitForInput);
-	PlayVoice(4, "s02/09/130900204", 128);
-	OutputLine(NULL, "昭和に入ってからだって、あるんだから。",
-		   NULL, " It kept happening even after the beginning of the Showa period.", Line_WaitForInput);
-	PlayVoice(4, "s02/09/130900205", 128);
-	OutputLine(NULL, "…終戦直後に騒ぎになった",
-		   NULL, " ...Like with the uproar around the post-war", Line_Continue);
-
-	FadeOutBGM( 1, 1000, TRUE );
-
-//人肉缶詰事件、!w1200......あ、ごめんなさい＠この話はタブーだったわよね...？￥
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zwata_008_vm0x_n02","dialog021");}
@@ -7396,12 +7269,6 @@ void main()
 	//VoiceMatchingEnd
 
 
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 1200 );
-	// (backup) SetValidityOfInput( TRUE );
-
-	OutputLine(NULL, "……あ、ごめんなさい。",
-		   NULL, " ......Oh, I apologize. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s02/09/130900206", 128);
 	OutputLine(NULL, "この話はタブーだったわよね…？」",
@@ -7422,13 +7289,6 @@ void main()
 	ClearMessage();
 
 //「......え＠　今、鷹野さん、何て言いました＠　人肉缶詰って...、￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s02/01/130100160", 128);
-	OutputLine(NULL, "「……え？",
-		   NULL, "\"......Huh?", Line_WaitForInput);
-	PlayVoice(4, "s02/01/130100161", 128);
-	OutputLine(NULL, "　今、鷹野さん、何て言いました？",
-		   NULL, " Takano-san, what did you just say?", Line_WaitForInput);
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zwata_008_vm0x_n02","dialog022");}
@@ -7482,15 +7342,11 @@ void main()
 	DrawBustshotWithFiltering( 3, "night/ta_si_wa_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「あら、ジロウさんも見たくて我慢できなくなったかしら＠　......ここ、素敵な拷問道具の宝庫よ。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zwata_008_vm0x_n02","dialog023");}
 	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("zwata_008_vm00_n02","dialog023");}
 	//VoiceMatchingEnd
-
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
 
 	DisableWindow();
 	DrawBustshot( 1, "night/tm_si_ko_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
@@ -7918,20 +7774,11 @@ void main()
 
 
 //「...もう＠いついかなる時でもフィルムを残しておかないとピューリッツァーなんか取れないわよ＠　...仕方ないわね...。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s02/09/130900217", 128);
-	OutputLine(NULL, "「…もう。",
-		   NULL, "\"...Geez.", Line_WaitForInput);
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_008_vm0x_n02","dialog024");}
 	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_008_vm00_n02","dialog024");}
 	//VoiceMatchingEnd
-
-	PlayVoice(4, "s02/09/130900219", 128);
-	OutputLine(NULL, "　…仕方ないわね…。」",
-		   NULL, " ...I suppose that's it, then...\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　富竹さんが申し訳なさそうに頭を掻く＠
