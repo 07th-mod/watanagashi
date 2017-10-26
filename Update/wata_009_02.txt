@@ -2086,15 +2086,12 @@ void main()
 	ClearMessage();
 
 //「前原さんの御宅でしょうか＠夜分遅くに失礼いたします...＠公由と申します＠ご主人でいらっしゃいますか？＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 1){ModCallScriptSection("zwata_009_02_vm0x_n01","dialog001");}
 	if(GetGlobalFlag(GCensor) <= 0){ModCallScriptSection("zwata_009_02_vm00_n01","dialog001");}
 	//VoiceMatchingEnd
 
-	OutputLine(NULL, "……一気に失望する。",
-		   NULL, " ...All my hopes rushed out of me.", Line_Normal);
 	ClearMessage();
 
 //「いえ、違いますけど＠...親父に用なら呼んで来ます。＠
@@ -2115,15 +2112,11 @@ void main()
 	ClearMessage();
 
 //「あ、いえいえ、お忙しければ結構なんです＠...実は恐縮なんですが...ウチのお爺ちゃんがお邪魔してませんでしょうか。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f3cfb5>公由</color>", NULL, "<color=#f3cfb5>Kimiyoshi</color>", NULL, Line_ContinueAfterTyping); }
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 1){ModCallScriptSection("zwata_009_02_vm0x_n01","dialog002");}
 	if(GetGlobalFlag(GCensor) <= 0){ModCallScriptSection("zwata_009_02_vm00_n01","dialog002");}
 	//VoiceMatchingEnd
-
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
 
 //「...いえ、誰も来てませんけど。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -2134,7 +2127,6 @@ void main()
 
 
 //「そうですか＠　夜分遅くに申し訳ありませんでした＠失礼いたします......。￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f3cfb5>公由</color>", NULL, "<color=#f3cfb5>Kimiyoshi</color>", NULL, Line_ContinueAfterTyping); }
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 1){ModCallScriptSection("zwata_009_02_vm0x_n01","dialog003");}

@@ -8,6 +8,7 @@ void dialog000()
 
 void dialog001()
 {
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s02/36/132900001", 128);
 	OutputLine(NULL, "「前原さんの御宅でしょうか。",
 		   NULL, "\"Is this the Maebara residence?", Line_WaitForInput);
@@ -27,20 +28,25 @@ void dialog001()
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　詩音とは明らかに違う女の子の声。",
 		   NULL, "It was the voice of a girl who clearly wasn't Shion.", Line_WaitForInput);
+	OutputLine(NULL, "……一気に失望する。",
+		   NULL, " ...All my hopes rushed out of me.", Line_Normal);
 }
 
 void dialog002()
 {
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f3cfb5>公由</color>", NULL, "<color=#f3cfb5>Kimiyoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s02/36/132900005", 128);
 	OutputLine(NULL, "「あ、いえいえ、お忙しければ結構なんです。",
 		   NULL, "\"Oh, no no, if he's busy, then it's fine.", Line_WaitForInput);
 	PlayVoice(4, "s02/36/132900006", 128);
 	OutputLine(NULL, "…実は恐縮なんですが…ウチのお爺ちゃんがお邪魔してませんでしょうか。」",
 		   NULL, " ...This may be a strange question, but... is my old man paying you a visit?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog003()
 {
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f3cfb5>公由</color>", NULL, "<color=#f3cfb5>Kimiyoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s02/36/132900007", 128);
 	OutputLine(NULL, "「そうですか！",
 		   NULL, "\"I see!", Line_WaitForInput);

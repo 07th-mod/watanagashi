@@ -8,6 +8,17 @@ void dialog000()
 
 void dialog001()
 {
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s02/03/130300099", 128);
+	OutputLine(NULL, "「ん？",
+		   NULL, "\"Hm?", Line_WaitForInput);
+	PlayVoice(4, "s02/03/130300100", 128);
+	OutputLine(NULL, "　…あはははは、実は内緒なんだけど…、昨日はお祭りのあとで親族の宴会に巻き込まれちゃってさ。",
+		   NULL, " ...Ahahahaha. Actually, this is a secret, but... after the festival yesterday, I got wrapped up in the party my relatives were having.", Line_WaitForInput);
+
+	DisableWindow();
+	DrawBustshot( 2, "me_se_wi_b2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+
 //それで...チョイっと。￥
 	PlayVoice(4, "s02/03/130300101", 128);
 	OutputLine(NULL, "それで…実はエンドレスに突入しちゃって。」",
@@ -37,16 +48,21 @@ void dialog001()
 	PlayVoice(4, "s02/01/130100234", 128);
 	OutputLine(NULL, "　徹夜明けならそうと言え、まぎらわしい……」",
 		   NULL, " If you were up all night, just say so! That was confusing...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog002()
 {
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…確かに体調が悪いのは同じだろうが。",
+		   NULL, "...I suppose she'd be feeling lousy either way.", Line_WaitForInput);
 	OutputLine(NULL, "風邪と徹夜明けじゃ、その扱いは全然違うぞ。",
 		   NULL, " Still, you treat colds and sleep deprivation in completely different ways.", Line_Normal);
 }
 
 void dialog003()
 {
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…確かに具合は悪そうだが、寝不足だとわかればそんなに心配はいらない。",
 		   NULL, "...She didn't seem to be feeling well, but now that I knew the cause, I didn't need to worry too much.", Line_WaitForInput);
 	OutputLine(NULL, "ちょっと休めば快調に向かうんだからな。",
@@ -55,32 +71,50 @@ void dialog003()
 
 void dialog004()
 {
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…姉は徹夜明けで眠そうだったのに、妹の方はケロッとしている。",
 		   NULL, "...The older sister shattered from an all nighter, but the younger seemed fine.", Line_Normal);
 }
 
 void dialog005()
 {
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s02/01/130100267", 128);
+	OutputLine(NULL, "「詩音か。",
+		   NULL, "\"Shion?", Line_WaitForInput);
 	PlayVoice(4, "s02/01/130100268", 128);
 	OutputLine(NULL, "魅音と同じで、今日は徹夜明けで寝込んでるんじゃないかと思ったぜ。」",
 		   NULL, " I thought you'd be catching up on your sleep today, same as Mion.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog006()
 {
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s02/06/130600153", 128);
+	OutputLine(NULL, "「え？",
+		   NULL, "\"What?", Line_WaitForInput);
 	PlayVoice(4, "s02/06/130600154", 128);
 	OutputLine(NULL, "　それじゃお姉、今日はズル休みですか？",
 		   NULL, " Is Mion playing truant today?", Line_WaitForInput);
+	PlayVoice(4, "s02/06/130600155", 128);
+	OutputLine(NULL, "　あっはははははは！　お姉らし〜〜！」",
+		   NULL, " Ah-hahahaha! That's so like her~~!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 }
 
 void dialog007()
 {
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　詩音も、何となくふらふらなような。",
+		   NULL, "Shion seemed a little unsteady too.", Line_WaitForInput);
 	OutputLine(NULL, "…こいつも魅音同様、今日は徹夜明けだな？",
 		   NULL, " ...She was up all night with Mion, wasn't she?", Line_Normal);
 }
 
 void dialog008()
 {
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s02/11/130700020", 128);
 	OutputLine(NULL, "「園崎家はこの地域一帯を牛耳ってる暴力団です。",
 		   NULL, "\"The Sonozakis are a syndicate with this entire region under their thumb.", Line_WaitForInput);
@@ -91,20 +125,36 @@ void dialog008()
 
 void dialog009()
 {
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s02/11/130700024", 128);
 	OutputLine(NULL, "　高い塀に有刺鉄線と監視カメラで守られた、典型的な暴力団の組長宅ですよ。",
 		   NULL, "It's the very picture of a gang boss's house, protected by high walls, barbed-wire fence, and security cameras.", Line_WaitForInput);
+	PlayVoice(4, "s02/11/130700025", 128);
+	OutputLine(NULL, "今度ぜひ遊びに行ってみてください。」",
+		   NULL, " If you have the chance, you should go and visit her.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog010()
 {
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s02/11/130700026", 128);
+	OutputLine(NULL, "「いえいえいえいえいえ。",
+		   NULL, "\"No, no, no, no, no.", Line_WaitForInput);
+	PlayVoice(4, "s02/11/130700027", 128);
+	OutputLine(NULL, "まさかまさか。",
+		   NULL, " Not at all, not at all.", Line_WaitForInput);
 	PlayVoice(4, "s02/11/130700028", 128);
 	OutputLine(NULL, "園崎魅音さんが継ぐのはそんなチンケな暴力団組織だけじゃありません。",
 		   NULL, " A boring old syndicate isn't the only thing Mion Sonozaki-san will inherit.", Line_WaitForInput);
+	PlayVoice(4, "s02/11/130700029", 128);
+	OutputLine(NULL, "彼女が継ぐのは園崎家そのものですよ。",
+		   NULL, " She's inheriting the Sonozaki family itself. ", GetGlobalFlag(GLinemodeSp));
 }
 
 void dialog011()
 {
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　魅音は跡継ぎだとか言ってたけど……まさか…その暴力団の…？",
 		   NULL, "She'd mentioned Mion being a successor...... but... to a crime syndicate...?", Line_Normal);
 }
