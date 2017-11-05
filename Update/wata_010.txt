@@ -141,19 +141,12 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //圭一「……うん。…学校に」
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_010_vm0x_n01","dialog001");}
 	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_010_vm00_n01","dialog001");}
 	//VoiceMatchingEnd
 
-	PlayVoice(4, "s02/01/130100430", 128);
-	OutputLine(NULL, "　……うん。",
-		   NULL, " ...Yeah.", Line_WaitForInput);
-	PlayVoice(4, "s02/01/130100431", 128);
-	OutputLine(NULL, "…学校に。」",
-		   NULL, " ...To school.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	FadeOutBGM( 1, 1000, TRUE );
@@ -238,15 +231,11 @@ void main()
 
 
 //　...昨日、二日酔いで早退した魅音だが、今朝も具合は優れないのだろうか＠
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_010_vm0x_n01","dialog002");}
 	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_010_vm00_n01","dialog002");}
 	//VoiceMatchingEnd
-
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
 
 //　いつもの明るい雰囲気は、すっかり影を潜めていた￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -271,18 +260,12 @@ void main()
 
 
 //「さ、３時ぃ？＠　おいおい、...夜更かしにも限度ってもんがあるぞ？＠　大方、漫画の単行本が面白くなっちゃって、１巻から読破してしまったんだろう＠うんうん、俺にも経験があるぞ。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_010_vm0x_n01","dialog003");}
 	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_010_vm00_n01","dialog003");}
 	//VoiceMatchingEnd
 
-	PlayVoice(4, "s02/01/130100435", 128);
-	OutputLine(NULL, "　おいおい、…夜更かしにも限度ってもんがあるぞ？！",
-		   NULL, " Hey, now... You can't keep staying up late!", Line_WaitForInput);
-	PlayVoice(4, "s02/01/130100436", 128);
-	OutputLine(NULL, "　大方、漫画の単行本が面白くなっちゃって、１巻から読破してしまったんだろう。",
-		   NULL, " You probably read the first volume of a manga, thought it was interesting, then read the entire series, didn't you? ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s02/01/130100437", 128);
 	OutputLine(NULL, "うんうん、俺にも経験があるぞ。」",
@@ -1547,15 +1530,10 @@ void main()
 		   NULL, " ...It's more of a 'gwahh,' and she opens her mouth really wide so you can see the back of her throat...?\"", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_010_vm0x_n01","dialog004");}
 	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_010_vm00_n01","dialog004");}
 	//VoiceMatchingEnd
-
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
 
 //　こういう時、レナって重宝なヤツだ...＠やっと、俺も心の底から笑うことができた￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1587,19 +1565,11 @@ void main()
 	ClearMessage();
 
 //「りりり梨花ちゃんのだけじゃなく、沙都子ちゃんのもかぁいいと思うぉ～！＠　の～ど～ち～んん～～！！！＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s02/02/130200130", 128);
-	OutputLine(NULL, "「りりり梨花ちゃんのだけじゃなく、沙都子ちゃんのもかぁいいと思うぉ〜！！",
-		   NULL, "\"I-I-I-I think Satoko-chan is kyute, not only R-Rika-chan~!!", Line_WaitForInput);
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_010_vm0x_n01","dialog005");}
 	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_010_vm00_n01","dialog005");}
 	//VoiceMatchingEnd
-
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-
 
 	DisableWindow();
 	DrawBustshot( 1, "sa_se_hn_b1_zoom", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
@@ -1616,20 +1586,11 @@ void main()
 
 
 //「は、はぅ～～！＠　ちらっと見えた、かぁいいの見えた！＠　沙都子ちゃんのもかぁいい、お持ち帰り～～！！！！￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s02/02/130200132", 128);
-	OutputLine(NULL, "「は、はぅ〜〜！！",
-		   NULL, "\"H-Hau~~!!", Line_WaitForInput);
-	PlayVoice(4, "s02/02/130200133", 128);
-	OutputLine(NULL, "　ちらっと見えた、かぁいいの見えた！！",
-		   NULL, " I got a glimpse! It was so kyute!!", Line_WaitForInput);
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_010_vm0x_n01","dialog006");}
 	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_010_vm00_n01","dialog006");}
 	//VoiceMatchingEnd
-
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　...レナって!s400......!sd口に出しては言えないが...札付きの...○○○○だよな...（汗￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
