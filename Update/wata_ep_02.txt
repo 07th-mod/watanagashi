@@ -627,22 +627,12 @@ void main()
 	DrawBustshot( 2, "oi_si_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「前原さんの好みがわからなかったので、いろいろと持ってきましたよ～＠ほぅら、洋物に劇画からかわいらしいのまで色々＠　最近はこんな女の子向けみたいなＨマンガもあるんですねぇ～。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s02/11/130700414", 128);
-	OutputLine(NULL, "「前原さんの好みがわからなかったので、いろいろと持ってきましたよ〜。",
-		   NULL, "\"I didn't know what you were into, Maebara-san, so I brought all sorts of things~", Line_WaitForInput);
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_ep_02_vm0x_n01","dialog001");}
 	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_ep_02_vm00_n01","dialog001");}
 	//VoiceMatchingEnd
 
-	PlayVoice(4, "s02/01/130101199", 128);
-	OutputLine(NULL, "　持って帰って持って帰って！！",
-		   NULL, " Take them away, and go home!!", Line_WaitForInput);
-	PlayVoice(4, "s02/01/130101200", 128);
-	OutputLine(NULL, "　痛ててててて…！！」",
-		   NULL, " Ow, ow ow ow ow...!!\"", Line_Normal);
 	ClearMessage();
 
 

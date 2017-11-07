@@ -2979,10 +2979,6 @@ void main()
 	DrawBustshotWithFiltering( 3, "me_si_si_a1", "left", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「この頃には、...もう鬼ヶ淵村の不可侵性は失われていました＠......かつて仙人と崇められた村人たちは、非人扱いを受け...＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s02/03/130300361_1", 128);
-	OutputLine(NULL, "「この頃には、…もう鬼ヶ淵村の不可侵性は失われていました。",
-		   NULL, "\"At the time... Onigafuchi Village had already lost its impenetrability.", Line_WaitForInput);
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_012_02_vm0x_n01","dialog001");}
@@ -3151,16 +3147,12 @@ void main()
 	DrawScene( "bg_045", 400 );
 
 //「......太平洋戦争中は、国民一丸のスローガンが流れながらも、...雛見沢村の人々はさまざまな差別を受け続けました＠......数えだしたらキリがないくらい＠......夫や息子を戦場に送り出し、...銃後の女たちも心が荒んでいたのでしょうね...＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_012_02_vm0x_n01","dialog003");}
 	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_012_02_vm00_n01","dialog003");}
 	//VoiceMatchingEnd
 
-	PlayVoice(4, "s02/03/130300361_6", 128);
-	OutputLine(NULL, "……数えだしたらキリがないくらい。",
-		   NULL, " ...There were too many ways to count. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s02/03/130300361_7", 128);
 	OutputLine(NULL, "……夫や息子を戦場に送り出し、…銃後の女たちも心が荒んでいたのでしょうね…。",
@@ -3351,19 +3343,11 @@ void main()
 	DrawSceneWithMask( "black", "down", 0, 0, 300 );
 
 //「...ですが、...昭和３０年頃に、またしても逆風が吹き始めます＠...それが「人肉缶詰疑惑」でした。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s02/03/130300388", 128);
-	OutputLine(NULL, "「…ですが、…昭和３０年頃に、またしても逆風が吹き始めます。",
-		   NULL, "\"...However... around 1955, the wind started blowing in the other direction again...", Line_WaitForInput);
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zwata_012_02_vm0x_n01","dialog005");}
 	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("zwata_012_02_vm00_n01","dialog005");}
 	//VoiceMatchingEnd
-
-
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
 
 //　...聞いただけでもおぞましくなる、...嫌な響きがあった￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -3372,17 +3356,11 @@ void main()
 	ClearMessage();
 
 //「祖父、園崎宗平の上官だったと名乗る男が告白したのです＠...あの缶詰は人肉の缶詰だったと。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s02/03/130300390", 128);
-	OutputLine(NULL, "「祖父、園崎宗平の上官だったと名乗る男が告白したのです。",
-		   NULL, "\"Someone naming himself as my grandfather Sohei Sonozaki's superior confessed...", Line_WaitForInput);
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zwata_012_02_vm0x_n01","dialog006");}
 	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("zwata_012_02_vm00_n01","dialog006");}
 	//VoiceMatchingEnd
-
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　人肉を食らう鬼の住む村、雛見沢＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -3622,16 +3600,12 @@ void main()
 	ClearMessage();
 
 //「宗平がいた部隊は、それよりはもっと温情的な研究をしていました＠...それは、戦地での困難な食料調達に関する具体的な手法の研究でした。￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zwata_012_02_vm0x_n01","dialog007");}
 	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("zwata_012_02_vm00_n01","dialog007");}
 	//VoiceMatchingEnd
 
-	PlayVoice(4, "s02/03/130300393", 128);
-	OutputLine(NULL, "…それは、戦地での困難な食料調達に関する具体的な手法の研究でした。」",
-		   NULL, " ...They were researching concrete methods for reducing the difficulty of delivering food on the battlefield.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawScene( "black", 400 );
@@ -3713,42 +3687,12 @@ void main()
 	DrawBustshot( 3, "me_si_ma_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「......そう＠...彼らは、人間を食材として扱う方法を研究していたのです＠...彼らは、時には敵の、時には戦友の血肉を食んででも戦い抜くことが、国に報いる究極の奉仕になる＠...そういう教義を大真面目に組み上げて行ったのです＠......滑稽な話ですね＠祖父を人肉食いと蔑んでおきながら、自分たちはさらにその上を行っていたのですから＠祖父はいつも思っていたそうです＠例え自分が卑しい食人鬼だとしても、彼らはそれよりも遥かに醜い鬼なんだと＠だからいくら蔑まれたって、ちっとも堪えないと。￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s02/03/130300395", 128);
-	OutputLine(NULL, "「……そう。",
-		   NULL, "\"...That's right.", Line_WaitForInput);
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zwata_012_02_vm0x_n01","dialog008");}
 	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("zwata_012_02_vm00_n01","dialog008");}
 	//VoiceMatchingEnd
 
-	PlayVoice(4, "s02/03/130300398", 128);
-	OutputLine(NULL, "…そういう教義を大真面目に組み上げて行ったのです。",
-		   NULL, " ...They were deathly serious about this doctrine.", Line_WaitForInput);
-	PlayVoice(4, "s02/03/130300399", 128);
-	OutputLine(NULL, "……滑稽な話ですね。",
-		   NULL, " ...It really is a riot. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zwata_012_02_vm0x_n01","dialog009");}
-	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("zwata_012_02_vm00_n01","dialog009");}
-	//VoiceMatchingEnd
-
-	PlayVoice(4, "s02/03/130300401", 128);
-	OutputLine(NULL, "祖父はいつも思っていたそうです。",
-		   NULL, " Apparently he always thought about it, too. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zwata_012_02_vm0x_n01","dialog010");}
-	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("zwata_012_02_vm00_n01","dialog010");}
-	//VoiceMatchingEnd
-
-	PlayVoice(4, "s02/03/130300403", 128);
-	OutputLine(NULL, "だからいくら蔑まれたって、ちっとも堪えないと。」",
-		   NULL, " So no matter how much he was scorned, he wouldn't put up with it.\"", Line_Normal);
 	ClearMessage();
 
 //　...やがて、試作品がいくつも作られた＠...だが、人肉であることを知る彼らは誰も食さなかった＠
@@ -3824,20 +3768,12 @@ void main()
 	DrawBustshot( 3, "me_si_si_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「......真偽はわかりません＠晩年まで宗平は人肉であることを否定し続けました＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s02/03/130300406", 128);
-	OutputLine(NULL, "「……真偽はわかりません。",
-		   NULL, "\"...I don't know if it's true.", Line_WaitForInput);
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zwata_012_02_vm0x_n01","dialog011");}
 	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("zwata_012_02_vm00_n01","dialog011");}
 	//VoiceMatchingEnd
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s02/03/130300409", 128);
-	OutputLine(NULL, "……また、子供たちがはやし立てられ、石を投げつけられる時代に戻ってしまったのです。」",
-		   NULL, "...They returned to a time where children would be jeered at and have rocks thrown at them.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawScene( "black", 400 );
