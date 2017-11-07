@@ -616,7 +616,6 @@ void main()
 
 
 //　...覚醒剤なんかの薬物中毒を疑っているんですが検出はされませんでした。￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zwata_011_02_vm0x_n01","dialog001");}
@@ -679,15 +678,11 @@ void main()
 	PlayVoice(4, "s02/11/130700240", 128);
 	OutputLine(NULL, "「ですが、犯行時間は概ね、お祭りが終わった直後だろうと見ています。",
 		   NULL, "\"Nonetheless, the times when the incidents occurred have been generally placed right after the festival ended. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_011_02_vm0x_n01","dialog002");}
 	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_011_02_vm00_n01","dialog002");}
 	//VoiceMatchingEnd
-
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
 
 //「......どうして、わざわざ遠くの山まで死体を運んだんでしょう＠...富竹さんも同じように遠くへ運べばよかったのに...。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -1592,20 +1587,11 @@ void main()
 	ClearMessage();
 
 //「口封じをされるような、とんでもない物が隠してあったんじゃないですか＠　...例えば、覚醒剤の山とか＠ケシの秘密工場があったとか＠あるいはソ連か中国辺りの拳銃が山ほど積まれていたと＠不審な木箱やコンテナが山積みされてませんでしたか？＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s02/11/130700281", 128);
-	OutputLine(NULL, "「口封じをされるような、とんでもない物が隠してあったんじゃないですか？",
-		   NULL, "\"There was nothing terrible in there that would make you keep silent?", Line_WaitForInput);
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zwata_011_02_vm0x_n01","dialog003");}
 	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("zwata_011_02_vm00_n01","dialog003");}
 	//VoiceMatchingEnd
-
-	PlayVoice(4, "s02/11/130700285", 128);
-	OutputLine(NULL, "不審な木箱やコンテナが山積みされてませんでしたか？」",
-		   NULL, " There weren't any suspicious wooden boxes or containers packed in there?\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　大石さんが期待するような、...そんな大仰なものは一切なかったが＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
