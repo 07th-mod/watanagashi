@@ -1,0 +1,21 @@
+void main()
+{
+}
+
+void dialog000()
+{
+}
+
+void dialog001()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/11/440700119", 128);
+	OutputLine(NULL, "気合い入れてくよ？！",
+		   NULL, "I won't tolerate anything less than your best!!", Line_Continue);
+	OutputLine(NULL, "　カブトの緒引き締めてけッ！！",
+		   NULL, " Clench those cheeks!!", Line_WaitForInput);
+	PlayVoice(4, "s20/11/440700120", 128);
+	OutputLine(NULL, "　オヤシロさまの祟りのバケの皮を完璧に引っぺがしてやるぞぉおぉッ！！！」",
+		   NULL, "We're gonna rip all the skin off the ghost of Oyashiro-sama's curse!!!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}

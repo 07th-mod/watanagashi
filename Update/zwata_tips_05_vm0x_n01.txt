@@ -1,0 +1,36 @@
+void main()
+{
+}
+
+void dialog000()
+{
+}
+
+void dialog001()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/11/440700099", 128);
+	OutputLine(NULL, "「熊ちゃん。",
+		   NULL, "\"Kuma-chan.", Line_Continue);
+
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	// (backup) SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "ゲート車に同行してバイク持ってきてあげて。",
+		   NULL, " Go with the truck and bring the bikes back.", Line_WaitForInput);
+	PlayVoice(4, "s20/11/440700100", 128);
+	OutputLine(NULL, "ごつい赤いヤツと、テールランプの右側が割れたヤツ。",
+		   NULL, " Get the tough-looking red one, the one with the broken right tail light,", Line_WaitForInput);
+	PlayVoice(4, "s20/11/440700101", 128);
+	OutputLine(NULL, "あとシートにガムテ貼ってあった白いヤツ。",
+		   NULL, " and the white one that had the packing tape stuck to the seat.", Line_WaitForInput);
+	PlayVoice(4, "s20/11/440700102", 128);
+	OutputLine(NULL, "それだろ？",
+		   NULL, " It's those ones. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/11/440700103", 128);
+	OutputLine(NULL, "　兄さんたちのバイク。」",
+		   NULL, "They belong to you, right?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
