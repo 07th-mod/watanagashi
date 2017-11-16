@@ -4010,15 +4010,6 @@ void main()
 	ClearMessage();
 
 //「その翌年には...何だっけ、ダム推進派の男の弟夫婦の奥さんだっけ＠　が殺されたんだよな＠......この事件でも誰かが消え、＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/08/500800106", 128);
-	OutputLine(NULL, "「その翌年には…何だっけ、ダム推進派の男の弟夫婦の奥さんだっけ？",
-		   NULL, "\"And the next year... what was it, the dam proponent's sister-in-law?", Line_WaitForInput);
-	PlayVoice(4, "s19/08/500800107", 128);
-	OutputLine(NULL, "　が殺されたんだよな。」",
-		   NULL, " She was killed.\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_007_vm0x_n01","dialog011");}
