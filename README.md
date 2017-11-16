@@ -26,10 +26,7 @@ This repository is in constant change. Sometimes new releases might get on hold 
 
 > In wata_005.txt, the scene in Angel Mort was almost completely edited in the PS3 version. Some lines won't have voices and the flow of text/voice might get weird because of that. Later scenes in this chapters were also substantially increased in the PS3 version, this content might be translated and added later.
 
-> In wata_008.txt, several graphic scenes were cut in the PS3 version. Because of that, some scenes are lacking voices.
-
 >In wata_010.txt, [line 241](https://github.com/higurashi-mod/watanagashi/blob/master/Update/wata_010.txt#L241) the dialogue said in the text and the voice file diverge. In the original text, Keiichi only asks confirmation about the hour (3:00). In the sound file, he adds "昨日に続いてか？" asking about the day before.
-
 
 > Some voiced lines might end early if you are a slow header or playing with auto mode. There are too many cases of split lines (PS3 and PC version share the same script, but the reading is different) to fix manually. Some extreme cases may be fixed if you take your time to open an Issue.
 
