@@ -38,15 +38,15 @@ void main()
 
 //「大石さん、こっちは検死入りました＠　じい様もさっき到着です！＠　俺もスタンバイＯＫしました！＠　このまま岐阜へ直行します！！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s20/19/443100015", 128);
+	ModPlayVoiceLS(4, 19, "s20/19/443100015", 128);
 	OutputLine(NULL, "「大石さん、こっちは検死入りました！",
 		   NULL, "\"Ooishi-san, I've got the autopsy results!", Line_Continue);
 	OutputLine(NULL, "　じい様もさっき到着です！！",
 		   NULL, " The court physician just got here!!", Line_WaitForInput);
-	PlayVoice(4, "s20/19/443100016", 128);
+	ModPlayVoiceLS(4, 19, "s20/19/443100016", 128);
 	OutputLine(NULL, "　俺もスタンバイＯＫしました！！",
 		   NULL, " I'm ready to go, sir!!", Line_WaitForInput);
-	PlayVoice(4, "s20/19/443100017", 128);
+	ModPlayVoiceLS(4, 19, "s20/19/443100017", 128);
 	OutputLine(NULL, "　このまま岐阜へ直行します！！」",
 		   NULL, " I'll head straight for Gifu!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -54,11 +54,11 @@ void main()
 
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 3, "oi_si_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	ModDrawCharacterWithFiltering(3, 11, "oi_si_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「熊ちゃん、ちょっと話がややこしくなりました＠向こうは身元の判別が非常に困難な状態だそうです。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s20/11/440700121", 128);
+	ModPlayVoiceLS(4, 11, "s20/11/440700121", 128);
 	OutputLine(NULL, "「熊ちゃん、ちょっと話がややこしくなりました。",
 		   NULL, "\"Kuma-chan, things have gotten a bit complicated.", Line_Continue);
 	OutputLine(NULL, "向こうは身元の判別が非常に困難な状態だそうです。」",
@@ -75,14 +75,14 @@ void main()
 
 //「いぃえぇ＠/
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s20/11/440700122", 128);
+	ModPlayVoiceLS(4, 11, "s20/11/440700122", 128);
 	OutputLine(NULL, "「いぃえぇ。",
 		   NULL, "\"Nope.", Line_WaitForInput);
 
 	PlaySE( 3, "wa_023", 128, 64 );
 
 //こんがりといい感じだそうで。＠
-	PlayVoice(4, "s20/11/440700123", 128);
+	ModPlayVoiceLS(4, 11, "s20/11/440700123", 128);
 	OutputLine(NULL, "こんがりといい感じだそうで。」",
 		   NULL, " Cooked to a nice, light brown.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -105,7 +105,7 @@ void main()
 
 //「頭のてっぺんからまるまる...？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s20/19/443100019", 128);
+	ModPlayVoiceLS(4, 19, "s20/19/443100019", 128);
 	OutputLine(NULL, "「頭のてっぺんからまるまる…？」",
 		   NULL, "\"All the way? Head to toe...?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -145,7 +145,7 @@ void main()
 
 //「今、小宮山くんたちが興宮の歯科医を根こそぎ夜襲してます＠カルテで歯型照合するしかないでしょ＠...ごめん＠　誰かウルトラマイルド、２箱くらい買ってきてくれません？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s20/11/440700125", 128);
+	ModPlayVoiceLS(4, 11, "s20/11/440700125", 128);
 	OutputLine(NULL, "「今、小宮山くんたちが興宮の歯科医を根こそぎ夜襲してます。",
 		   NULL, "\"Komiyama-kun and a few others are performing a thorough night raid on the dentist in Okinomiya.", Line_WaitForInput);
 	OutputLine(NULL, "カルテで歯型照合するしかないでしょ。",
@@ -173,11 +173,11 @@ void main()
 	//VoiceMatchingEnd
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 1,"oi_si_de_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	ModDrawCharacterWithFiltering(1, 11, "oi_si_de_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「なら埋めればいいじゃないですか＠重り付けて日本海でも琵琶湖でもいいですねぇ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s20/11/440700128", 128);
+	ModPlayVoiceLS(4, 11, "s20/11/440700128", 128);
 	OutputLine(NULL, "「なら埋めればいいじゃないですか。",
 		   NULL, "\"Then why not bury them,", Line_Continue);
 	OutputLine(NULL, "重り付けて日本海でも琵琶湖でもいいですねぇ。」",
@@ -188,7 +188,7 @@ void main()
 
 //「...でもどうして＠...１人死んで１人消えるのがこれまでのパターンじゃないすか。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s20/19/443100021", 128);
+	ModPlayVoiceLS(4, 19, "s20/19/443100021", 128);
 	OutputLine(NULL, "「…でもどうして。",
 		   NULL, "\"...Why, though?", Line_Continue);
 	OutputLine(NULL, "…１人死んで１人消えるのがこれまでのパターンじゃないすか。」",
@@ -198,12 +198,12 @@ void main()
 
 //「熊ちゃん。仏は拘束なしでドラム缶の中でこんがりでしょ＠多分、シメられた後にわざわざ焼いたんじゃないかと思うんですよ＠見つかることを覚悟の上でです。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s20/11/440700129", 128);
+	ModPlayVoiceLS(4, 11, "s20/11/440700129", 128);
 	OutputLine(NULL, "「熊ちゃん。仏は拘束なしでドラム缶の中でこんがりでしょ。",
 		   NULL, "\"Kuma-chan, the corpse was inside an oil drum, unrestrained, and cooked.", Line_Continue);
 	OutputLine(NULL, "多分、シメられた後にわざわざ焼いたんじゃないかと思うんですよ。",
 		   NULL, " They probably burned them after strangling them.", Line_WaitForInput);
-	PlayVoice(4, "s20/11/440700130", 128);
+	ModPlayVoiceLS(4, 11, "s20/11/440700130", 128);
 	OutputLine(NULL, "見つかることを覚悟の上でです。」",
 		   NULL, " They knew it would be found.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -212,14 +212,14 @@ void main()
 
 //「じゃあつまり...、今年は消す気は初めからなかったってことすか？￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s20/19/443100022", 128);
+	ModPlayVoiceLS(4, 19, "s20/19/443100022", 128);
 	OutputLine(NULL, "「じゃあつまり…、今年は消す気は初めからなかったってことすか？」",
 		   NULL, "\"So what you mean is... from the beginning, they didn't want a person to disappear this year?\"", Line_Normal);
 	ClearMessage();
 
 //「消す気がないってよりは、これはそれとはまったく別のものでしょうねぇ＠消すどころか、主張しているようにすら感じられますよ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s20/11/440700131", 128);
+	ModPlayVoiceLS(4, 11, "s20/11/440700131", 128);
 	OutputLine(NULL, "「消す気がないってよりは、これはそれとはまったく別のものでしょうねぇ。",
 		   NULL, "\"Not so much that as they just aren't related.", Line_Continue);
 	OutputLine(NULL, "消すどころか、主張しているようにすら感じられますよ。」",
@@ -229,7 +229,7 @@ void main()
 
 //「つまり...見せしめの意味があるってことすか？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s20/19/443100023", 128);
+	ModPlayVoiceLS(4, 19, "s20/19/443100023", 128);
 	OutputLine(NULL, "「つまり…見せしめの意味があるってことすか？」",
 		   NULL, "\"You mean... it could be a warning?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -242,13 +242,13 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshot( 1, "oi_si_wa_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	ModDrawCharacter(1, 11, "oi_si_wa_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	StopSE( 3 );
 
 //「それを市内でやってくれりゃあ、その線もあるんですがねぇ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s20/11/440700132", 128);
+	ModPlayVoiceLS(4, 11, "s20/11/440700132", 128);
 	OutputLine(NULL, "「それを市内でやってくれりゃあ、その線もあるんですがねぇ。",
 		   NULL, "\"That might have been the case had it happened in town.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -256,7 +256,7 @@ void main()
 
 //　...こんな遠くまで運んで焼いちゃったら、下手したらわかんないでしょ＠見せしめにするなら雛見沢の近くでやるべきなんですよ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s20/11/440700133", 128);
+	ModPlayVoiceLS(4, 11, "s20/11/440700133", 128);
 	OutputLine(NULL, "　…こんな遠くまで運んで焼いちゃったら、下手したらわかんないでしょ。",
 		   NULL, "...If they'd messed up, taking the victim far away and burning them alive wouldn't have been noticed.", Line_Continue);
 	OutputLine(NULL, "見せしめにするなら雛見沢の近くでやるべきなんですよ。",
@@ -266,13 +266,13 @@ void main()
 
 //......殺したことを主張したいのに、場所は演出効果の確実じゃない遠方＠主張したいのか隠したいのか＠.........今年はなぁに考えてるのかなぁ、オヤシロさまは～。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s20/11/440700134", 128);
+	ModPlayVoiceLS(4, 11, "s20/11/440700134", 128);
 	OutputLine(NULL, "……殺したことを主張したいのに、場所は演出効果の確実じゃない遠方。",
 		   NULL, "...They wanted to emphasize the fact that they killed the victim, but instead of doing it somewhere for dramatic effect, they did it outside the prefecture.", Line_Continue);
 	OutputLine(NULL, "主張したいのか隠したいのか。",
 		   NULL, " Did they want to emphasize it or hide it? ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s20/11/440700135", 128);
+	ModPlayVoiceLS(4, 11, "s20/11/440700135", 128);
 	OutputLine(NULL, "………今年はなぁに考えてるのかなぁ、オヤシロさまは〜。」",
 		   NULL, "......Boy, I do wonder what Oyashiro-sama is up to this year~\"", Line_Normal);
 	ClearMessage();
@@ -295,26 +295,26 @@ void main()
 
 //「大石さん＠　小宮山さんです！＠　出ました＠　興宮のデンタルクリニックで３年前に親知らずの治療をしてます！！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>刑事</color>", NULL, "<color=#f5e6d3>Detective</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s20/00/keijia44001", 128);
+	ModPlayVoiceLS(4, 0, "s20/00/keijia44001", 128);
 	OutputLine(NULL, "「大石さん！",
 		   NULL, "\"Ooishi-san!", Line_Continue);
 	OutputLine(NULL, "　小宮山さんです！！",
 		   NULL, " It's Komiyama!!", Line_WaitForInput);
-	PlayVoice(4, "s20/00/keijia44002", 128);
+	ModPlayVoiceLS(4, 0, "s20/00/keijia44002", 128);
 	OutputLine(NULL, "　出ました！",
 		   NULL, " They have it!", Line_WaitForInput);
-	PlayVoice(4, "s20/00/keijia44003", 128);
+	ModPlayVoiceLS(4, 0, "s20/00/keijia44003", 128);
 	OutputLine(NULL, "　興宮のデンタルクリニックで３年前に親知らずの治療をしてます！！」",
 		   NULL, " The dental clinic in Okinomiya fixed the wisdom tooth three years ago!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 3, "oi_si_ma_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	ModDrawCharacterWithFiltering(3, 11, "oi_si_ma_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「カルテは？！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s20/11/440700136", 128);
+	ModPlayVoiceLS(4, 11, "s20/11/440700136", 128);
 	OutputLine(NULL, "「カルテは？！」",
 		   NULL, "\"What about the records?!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -323,17 +323,17 @@ void main()
 
 //「レントゲン付きでばっちりと！￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>刑事</color>", NULL, "<color=#f5e6d3>Detective</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s20/00/keijia44004", 128);
+	ModPlayVoiceLS(4, 0, "s20/00/keijia44004", 128);
 	OutputLine(NULL, "「レントゲン付きでばっちりと！」",
 		   NULL, "\"Complete with X-rays!\"", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshot( 3, "oi_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 11, "oi_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「いやぁ...、こんな明け方前に歯医者さんには申し訳ないなぁ＠熊ちゃん、小宮山くんからカルテ受け取ったらすぐに出発して下さい。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s20/11/440700137", 128);
+	ModPlayVoiceLS(4, 11, "s20/11/440700137", 128);
 	OutputLine(NULL, "「いやぁ…、こんな明け方前に歯医者さんには申し訳ないなぁ。",
 		   NULL, "\"Well... I feel bad for waking up the dentist before dawn.", Line_Continue);
 	OutputLine(NULL, "熊ちゃん、小宮山くんからカルテ受け取ったらすぐに出発して下さい。」",
@@ -344,7 +344,7 @@ void main()
 
 //「了解っすッ！！￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s20/19/443100024", 128);
+	ModPlayVoiceLS(4, 19, "s20/19/443100024", 128);
 	OutputLine(NULL, "「了解っすッ！！」",
 		   NULL, "\"Will do!!\"", Line_Normal);
 	ClearMessage();
@@ -352,7 +352,7 @@ void main()
 
 //「あ、課長です！＠　夜分、お疲れさまです！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>刑事</color>", NULL, "<color=#f5e6d3>Detective</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s20/00/keijia44005", 128);
+	ModPlayVoiceLS(4, 0, "s20/00/keijia44005", 128);
 	OutputLine(NULL, "「あ、課長です！！",
 		   NULL, "\"Oh, it's the Chief!!", Line_Continue);
 	OutputLine(NULL, "　夜分、お疲れさまです！」",
@@ -363,7 +363,7 @@ void main()
 
 //「大石さん、遅くなって申し訳ない＠状況は？！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>高杉</color>", NULL, "<color=#f5e6d3>Takasugi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s20/00/442700019", 128);
+	ModPlayVoiceLS(4, 0, "s20/00/442700019", 128);
 	OutputLine(NULL, "「大石さん、遅くなって申し訳ない。",
 		   NULL, "\"Ooishi-san, my apologies for my lateness.", Line_Continue);
 	OutputLine(NULL, "状況は？！」",
@@ -372,25 +372,25 @@ void main()
 
 
 	DisableWindow();
-	DrawBustshot( 3, "oi_si_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 11, "oi_si_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「う～ん、...やっと面白くなって来たってとこですかねぇ＠燃えてきたぞぅ＠　わぁ～お♪！！￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s20/11/440700138", 128);
+	ModPlayVoiceLS(4, 11, "s20/11/440700138", 128);
 	OutputLine(NULL, "「う〜ん、…やっと面白くなって来たってとこですかねぇ。",
 		   NULL, "\"Hmm... Well, it's just getting good, you see.", Line_Continue);
 	OutputLine(NULL, "燃えてきたぞぅ！",
 		   NULL, " We're all getting fired up!", Line_WaitForInput);
-	PlayVoice(4, "s20/11/440700139", 128);
+	ModPlayVoiceLS(4, 11, "s20/11/440700139", 128);
 	OutputLine(NULL, "　わぁ〜お♪！！」",
 		   NULL, " Waa~o♪!!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	SetValidityOfInput( FALSE );
-	DrawBustshotWithFiltering( 6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
-	DrawBustshot( 7, "Title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	ModDrawCharacterWithFiltering(6, 0, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	ModDrawCharacter(7, 0, "Title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
 	Wait( 2000 );
-	DrawBustshot( 5, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	ModDrawCharacter(5, 0, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
 	Wait( 1000 );
 	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
 	DrawScene( "black", 1000 );

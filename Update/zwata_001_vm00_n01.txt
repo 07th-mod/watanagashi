@@ -10,11 +10,11 @@ void dialog001()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 
-	PlayVoice(4, "s19/04/990400171", 128);
+	ModPlayVoiceLS(4, 4, "s19/04/990400171", 128);
 	OutputLine(NULL, "「圭々がいじめたぁあぁあ！！！",
 		   NULL, "\"Kei-kei is bullying meeeeeEEeee!!!", Line_WaitForInput);
 
-	PlayVoice(4, "s19/04/990400172", 128);
+	ModPlayVoiceLS(4, 4, "s19/04/990400172", 128);
 	OutputLine(NULL, "　わぁああぁああぁあああぁあんッ！！！」",
 		   NULL, " WaaaaaaAAaaaAAAaaa!!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -23,11 +23,11 @@ void dialog001()
 void dialog002()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/03/990300411", 128);
+	ModPlayVoiceLS(4, 3, "s19/03/990300411", 128);
 	OutputLine(NULL, "「みんないいかな〜？！",
 		   NULL, "\"Is everybody ready~?!", Line_WaitForInput);
 
-	PlayVoice(4, "s19/03/990300412", 128);
+	ModPlayVoiceLS(4, 3, "s19/03/990300412", 128);
 	OutputLine(NULL, "　傾注傾注～！！」",
 		   NULL, " Listen close now~!!\"", GetGlobalFlag(GLinemodeSp));
 
@@ -37,7 +37,7 @@ void dialog002()
 void dialog003()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/01/hr_kei09900_03", 128);
+	ModPlayVoiceLS(4, 1, "s19/01/hr_kei09900_03", 128);
 	OutputLine(NULL, "　自分に素直になれッ！！！",
 		   NULL, "Be honest with yourselves!!!", Line_Continue);
 	OutputLine(NULL, "夢を追え！！",
@@ -62,7 +62,7 @@ void dialog004()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 
-	PlayVoice(4, "s19/03/990300473", 128);
+	ModPlayVoiceLS(4, 3, "s19/03/990300473", 128);
 	OutputLine(NULL, "「圭ちゃんが持ってたら、確実に明日から変態扱いだね。うん！」",
 		   NULL, "\"If you walked around with it, then you'd be treated like a weirdo starting tomorrow. Definitely!\"", Line_Normal);
 

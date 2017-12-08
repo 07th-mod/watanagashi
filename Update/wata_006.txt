@@ -42,11 +42,11 @@ void main()
 	DisableWindow();
 	DrawSceneWithMask( "black", "left", 0, 0, 1300 );
 	DrawSceneWithMask( "bg_108", "left", 0, 0, 1300 );
-	DrawBustshotWithFiltering( 3, "sa_se_ak_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	ModDrawCharacterWithFiltering(3, 4, "sa_se_ak_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「......今日の魅音さん、...徹底的にヘンですわね。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/04/500400114", 128);
+	ModPlayVoiceLS(4, 4, "s19/04/500400114", 128);
 	OutputLine(NULL, "「……今日の魅音さん、…徹底的にヘンですわね。」",
 		   NULL, "\"...Mion-san... She's acting totally strange today.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -54,21 +54,21 @@ void main()
 
 //「一部始終を知ってはいるんだが......何とも説明しづらい...。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/01/hr_kei21000", 128);
+	ModPlayVoiceLS(4, 1, "s19/01/hr_kei21000", 128);
 	OutputLine(NULL, "「一部始終を知ってはいるんだが……何とも説明しづらい…。」",
 		   NULL, "\"I know the whole story... but it's hard to explain...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "ri_se_de_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	ModDrawCharacterWithFiltering(1, 5, "ri_se_de_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「......女の子には不安定になる時もあるのです＠放っておいてあげるのが一番なのですよ。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/05/500500067", 128);
+	ModPlayVoiceLS(4, 5, "s19/05/500500067", 128);
 	OutputLine(NULL, "「……女の子には不安定になる時もあるのです。",
 		   NULL, "\"...There are times when girls are emotionally unstable.", Line_WaitForInput);
-	PlayVoice(4, "s19/05/500500068", 128);
+	ModPlayVoiceLS(4, 5, "s19/05/500500068", 128);
 	OutputLine(NULL, "放っておいてあげるのが一番なのですよ。」",
 		   NULL, " It's best to just leave her alone.\"", Line_Normal);
 	ClearMessage();
@@ -89,12 +89,12 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawScene( "black", 400 );
-	DrawBustshot( 3, "re_se_ko_b1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	ModDrawCharacter(3, 2, "re_se_ko_b1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawSceneWithMask( "bg_093", "right", 0, 0, 300 );
 
 //「圭一くん、こっちこっち。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/02/500200325", 128);
+	ModPlayVoiceLS(4, 2, "s19/02/500200325", 128);
 	OutputLine(NULL, "「圭一くん、こっちこっち。」",
 		   NULL, "\"Keiichi-kun, over here, over here.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -102,21 +102,21 @@ void main()
 
 //「何だよ、こんなとこに呼んで＠内緒話か？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/01/hr_kei21010", 128);
+	ModPlayVoiceLS(4, 1, "s19/01/hr_kei21010", 128);
 	OutputLine(NULL, "「何だよ、こんなとこに呼んで。",
 		   NULL, "\"What is it, calling me over like this?", Line_WaitForInput);
-	PlayVoice(4, "s19/01/hr_kei21020", 128);
+	ModPlayVoiceLS(4, 1, "s19/01/hr_kei21020", 128);
 	OutputLine(NULL, "内緒話か？」",
 		   NULL, " Is it a secret?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	DisableWindow();
-	DrawBustshot( 3, "re_se_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 2, "re_se_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「えーっと!w1000......その、!w1000.........災難だったみたいだね＠/
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/02/500200326", 128);
+	ModPlayVoiceLS(4, 2, "s19/02/500200326", 128);
 	OutputLine(NULL, "「えーっと",
 		   NULL, "\"Ummm...", Line_Continue);
 
@@ -135,10 +135,10 @@ void main()
 		   NULL, " ...It looks like it was a disaster.", Line_WaitForInput);
 
 	DisableWindow();
-	DrawBustshot( 3, "re_se_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 2, "re_se_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //...あははははは。＠
-	PlayVoice(4, "s19/02/500200327", 128);
+	ModPlayVoiceLS(4, 2, "s19/02/500200327", 128);
 	OutputLine(NULL, "…あははははは。」",
 		   NULL, " ...Ahahahahaha.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -146,14 +146,14 @@ void main()
 
 //「う、......う～......ん...。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/01/hr_kei21030", 128);
+	ModPlayVoiceLS(4, 1, "s19/01/hr_kei21030", 128);
 	OutputLine(NULL, "「う、……う〜……ん…。」",
 		   NULL, "\"Uh... Yea~h.\"", Line_Normal);
 	ClearMessage();
 
 //「魅ぃちゃん、かなり壊れてたけど、...何とか直しておいたから。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/02/500200328", 128);
+	ModPlayVoiceLS(4, 2, "s19/02/500200328", 128);
 	OutputLine(NULL, "「魅ぃちゃん、かなり壊れてたけど、…何とか直しておいたから。」",
 		   NULL, "\"Mii-chan seemed pretty broken, but I somehow got her working again.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -161,22 +161,22 @@ void main()
 
 //「よく直せたな...＠一体どうやって...。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/01/hr_kei21040", 128);
+	ModPlayVoiceLS(4, 1, "s19/01/hr_kei21040", 128);
 	OutputLine(NULL, "「よく直せたな…。",
 		   NULL, "\"I'm surprised you managed it...", Line_WaitForInput);
-	PlayVoice(4, "s19/01/hr_kei21050", 128);
+	ModPlayVoiceLS(4, 1, "s19/01/hr_kei21050", 128);
 	OutputLine(NULL, "一体どうやって…。」",
 		   NULL, " How did you exactly...?", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 3, "re_se_wa_b1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 2, "re_se_wa_b1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「うん。テレビと同じ＠斜め４５度くらいの角度でえい！えい！って。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/02/500200329", 128);
+	ModPlayVoiceLS(4, 2, "s19/02/500200329", 128);
 	OutputLine(NULL, "「うん。テレビと同じ。",
 		   NULL, "\"Same way I do with the television.", Line_WaitForInput);
-	PlayVoice(4, "s19/02/500200330", 128);
+	ModPlayVoiceLS(4, 2, "s19/02/500200330", 128);
 	OutputLine(NULL, "斜め４５度くらいの角度でえい！えい！って。」",
 		   NULL, " Just come at it from a 45 degree angle and HIYAAAA!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -195,14 +195,14 @@ void main()
 		   NULL, "...You know I can't tell if you're joking or not, right?", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 3, "re_se_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 2, "re_se_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「明日からは大丈夫だから＠だけど圭一くんにもお願いしたいことがあるの。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/02/500200331", 128);
+	ModPlayVoiceLS(4, 2, "s19/02/500200331", 128);
 	OutputLine(NULL, "「明日からは大丈夫だから。",
 		   NULL, "\"She'll be fine by tomorrow.", Line_WaitForInput);
-	PlayVoice(4, "s19/02/500200332", 128);
+	ModPlayVoiceLS(4, 2, "s19/02/500200332", 128);
 	OutputLine(NULL, "だけど圭一くんにもお願いしたいことがあるの。」",
 		   NULL, " Also, there's something I want you to do, Keiichi-kun.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -210,10 +210,10 @@ void main()
 
 //「......悪気はないんだが、なぜか罪の意識もある＠...何でも聞くぞ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/01/hr_kei21060", 128);
+	ModPlayVoiceLS(4, 1, "s19/01/hr_kei21060", 128);
 	OutputLine(NULL, "「……悪気はないんだが、なぜか罪の意識もある。",
 		   NULL, "\"...I didn't meant to do anything wrong, but I still feel guilty.", Line_WaitForInput);
-	PlayVoice(4, "s19/01/hr_kei21070", 128);
+	ModPlayVoiceLS(4, 1, "s19/01/hr_kei21070", 128);
 	OutputLine(NULL, "…何でも聞くぞ。」",
 		   NULL, " ...I'm listening.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -221,10 +221,10 @@ void main()
 
 //「うん。助かる＠......魅ぃちゃんはね、昨日までの数日間のこと、なかったことにするから。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/02/500200333", 128);
+	ModPlayVoiceLS(4, 2, "s19/02/500200333", 128);
 	OutputLine(NULL, "「うん。助かる。",
 		   NULL, "\"Thanks.", Line_WaitForInput);
-	PlayVoice(4, "s19/02/500200334", 128);
+	ModPlayVoiceLS(4, 2, "s19/02/500200334", 128);
 	OutputLine(NULL, "……魅ぃちゃんはね、昨日までの数日間のこと、なかったことにするから。」",
 		   NULL, " ...You see, Mii-chan is just going to pretend the last few days never happened.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -240,13 +240,13 @@ void main()
 
 //「だからね＠　圭一くんもなかったことにしてあげて＠それで魅ぃちゃん、いつも通りだから。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/02/500200335", 128);
+	ModPlayVoiceLS(4, 2, "s19/02/500200335", 128);
 	OutputLine(NULL, "「だからね！",
 		   NULL, "\"So, you see...", Line_WaitForInput);
-	PlayVoice(4, "s19/02/500200336", 128);
+	ModPlayVoiceLS(4, 2, "s19/02/500200336", 128);
 	OutputLine(NULL, "　圭一くんもなかったことにしてあげて。",
 		   NULL, " Keiichi-kun, could you pretend too?", Line_WaitForInput);
-	PlayVoice(4, "s19/02/500200337", 128);
+	ModPlayVoiceLS(4, 2, "s19/02/500200337", 128);
 	OutputLine(NULL, "それで魅ぃちゃん、いつも通りだから。」",
 		   NULL, " Then Mii-chan can go back to normal.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -254,18 +254,18 @@ void main()
 
 //「そ、そんな簡単なことで...本当に大丈夫なのか...？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/01/hr_kei21080", 128);
+	ModPlayVoiceLS(4, 1, "s19/01/hr_kei21080", 128);
 	OutputLine(NULL, "「そ、そんな簡単なことで…本当に大丈夫なのか…？」",
 		   NULL, "\"J-Just doing something as simple as that... is it really going to be okay...?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	DisableWindow();
-	DrawBustshot( 3, "re_se_na_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 2, "re_se_na_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「お願いだから魅ぃちゃんの心の整理が付くまでそっとしておいてあげてよ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/02/500200338", 128);
+	ModPlayVoiceLS(4, 2, "s19/02/500200338", 128);
 	OutputLine(NULL, "「お願いだから魅ぃちゃんの心の整理が付くまでそっとしておいてあげてよ。」",
 		   NULL, "\"Please, until Mii-chan gets her feelings in order, just go with it.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -273,7 +273,7 @@ void main()
 
 //「......うーん!s500......!sdわかったよ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/01/hr_kei21090", 128);
+	ModPlayVoiceLS(4, 1, "s19/01/hr_kei21090", 128);
 	OutputLine(NULL, "「……うーん",
 		   NULL, "\"...Okay...", Line_Continue);
 //!s500
@@ -319,14 +319,14 @@ void main()
 		   NULL, "Seeing me stomping the ground impatiently, Rena giggled.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 3, "re_se_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 2, "re_se_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「でも、圭一くんもわかったでしょ＠魅ぃちゃんにもかわいいところがあるんだ、って。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/02/500200339", 128);
+	ModPlayVoiceLS(4, 2, "s19/02/500200339", 128);
 	OutputLine(NULL, "「でも、圭一くんもわかったでしょ。",
 		   NULL, "\"But Keiichi-kun, you knew as well.", Line_WaitForInput);
-	PlayVoice(4, "s19/02/500200340", 128);
+	ModPlayVoiceLS(4, 2, "s19/02/500200340", 128);
 	OutputLine(NULL, "魅ぃちゃんにもかわいいところがあるんだ、って。」",
 		   NULL, " That Mii-chan has some cute things about her.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -340,10 +340,10 @@ void main()
 
 //「.........あぁ＠退屈しないヤツだということがわかった。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/01/hr_kei21100", 128);
+	ModPlayVoiceLS(4, 1, "s19/01/hr_kei21100", 128);
 	OutputLine(NULL, "「………あぁ。",
 		   NULL, "\"......Yeah.", Line_WaitForInput);
-	PlayVoice(4, "s19/01/hr_kei21110", 128);
+	ModPlayVoiceLS(4, 1, "s19/01/hr_kei21110", 128);
 	OutputLine(NULL, "退屈しないヤツだということがわかった。」",
 		   NULL, " I know that she'll never let it be boring.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -351,7 +351,7 @@ void main()
 
 //「...よかった。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/02/500200341", 128);
+	ModPlayVoiceLS(4, 2, "s19/02/500200341", 128);
 	OutputLine(NULL, "「…よかった。」",
 		   NULL, "\"...Good.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -367,7 +367,7 @@ void main()
 
 //「圭一くんがそれに気付いてくれれば、この数日間の出来事はすぐに笑い話になるんだよ。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/02/500200342", 128);
+	ModPlayVoiceLS(4, 2, "s19/02/500200342", 128);
 	OutputLine(NULL, "「圭一くんがそれに気付いてくれれば、この数日間の出来事はすぐに笑い話になるんだよ。」",
 		   NULL, "\"As long as you realize that, Keiichi-kun, these past few days will soon be nothing more than a story to laugh about.\"", Line_Normal);
 	ClearMessage();
@@ -385,18 +385,18 @@ void main()
 		   NULL, "The clear sky towered into the distance.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 3, "re_se_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	ModDrawCharacter(3, 2, "re_se_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawScene( "bg_093", 1000 );
 
 //「今日は部活も何にもなし＠今日だけは申し訳ないけど圭一くん、下校はひとりでいいかな＠明日からは元通りだから今日だけ。!w1000...ね。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/02/500200343", 128);
+	ModPlayVoiceLS(4, 2, "s19/02/500200343", 128);
 	OutputLine(NULL, "「今日は部活も何にもなし。",
 		   NULL, "\"There's no club activities or anything today.", Line_WaitForInput);
-	PlayVoice(4, "s19/02/500200344", 128);
+	ModPlayVoiceLS(4, 2, "s19/02/500200344", 128);
 	OutputLine(NULL, "今日だけは申し訳ないけど圭一くん、下校はひとりでいいかな。",
 		   NULL, " I'm sorry, Keiichi-kun, but just for today, can you go home by yourself?", Line_WaitForInput);
-	PlayVoice(4, "s19/02/500200345", 128);
+	ModPlayVoiceLS(4, 2, "s19/02/500200345", 128);
 	OutputLine(NULL, "明日からは元通りだから今日だけ。",
 		   NULL, " It'll all be back to normal by tomorrow, so just for today.", Line_Continue);
 
@@ -417,30 +417,30 @@ void main()
 
 //「わかったよ＠.........魅音に面と向かって言えないから、レナに言っとく＠......何だか、申し訳ないな。謝る...。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/01/hr_kei21120", 128);
+	ModPlayVoiceLS(4, 1, "s19/01/hr_kei21120", 128);
 	OutputLine(NULL, "「わかったよ。",
 		   NULL, "\"Got it.", Line_WaitForInput);
-	PlayVoice(4, "s19/01/hr_kei21130", 128);
+	ModPlayVoiceLS(4, 1, "s19/01/hr_kei21130", 128);
 	OutputLine(NULL, "………魅音に面と向かって言えないから、レナに言っとく。",
 		   NULL, " ...I can't say it directly to Mion, so I'll say it to you.", Line_WaitForInput);
-	PlayVoice(4, "s19/01/hr_kei21140", 128);
+	ModPlayVoiceLS(4, 1, "s19/01/hr_kei21140", 128);
 	OutputLine(NULL, "……何だか、申し訳ないな。謝る…。」",
 		   NULL, " ...I still feel kind of guilty about it. So I want to apologize...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	DisableWindow();
-	DrawBustshot( 3, "re_se_wa_b1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 2, "re_se_wa_b1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「...う～ん＠　元はと言えば、圭一くんが無神経なことを言うからいけなかったんだよね＠これに懲りて、少しはデリカシーってものを身に付けるんだよ？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/02/500200346", 128);
+	ModPlayVoiceLS(4, 2, "s19/02/500200346", 128);
 	OutputLine(NULL, "「…う〜ん！",
 		   NULL, "\"...Ah, no!", Line_WaitForInput);
-	PlayVoice(4, "s19/02/500200347", 128);
+	ModPlayVoiceLS(4, 2, "s19/02/500200347", 128);
 	OutputLine(NULL, "　元はと言えば、圭一くんが無神経なことを言うからいけなかったんだよね。",
 		   NULL, " The root of the problem was Keiichi-kun saying something insensitive, right?", Line_WaitForInput);
-	PlayVoice(4, "s19/02/500200348", 128);
+	ModPlayVoiceLS(4, 2, "s19/02/500200348", 128);
 	OutputLine(NULL, "これに懲りて、少しはデリカシーってものを身に付けるんだよ？」",
 		   NULL, " So if you learned anything from this, you need to look a bit into gaining a sense of delicacy.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -448,7 +448,7 @@ void main()
 
 //「へいへーい、努力しまーす。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/01/hr_kei21150", 128);
+	ModPlayVoiceLS(4, 1, "s19/01/hr_kei21150", 128);
 	OutputLine(NULL, "「へいへーい、努力しまーす。」",
 		   NULL, "\"Right, right. I'll try.\"", Line_Normal);
 	ClearMessage();
@@ -512,11 +512,11 @@ void main()
 		   NULL, "As I let out a sigh in my ashen mood, Rika-chan came over and patted me on the head.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "ri_se_wa_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	ModDrawCharacterWithFiltering(1, 5, "ri_se_wa_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「......圭一も魅ぃもいっぱいいっぱいお勉強しましたですね。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/05/500500069", 128);
+	ModPlayVoiceLS(4, 5, "s19/05/500500069", 128);
 	OutputLine(NULL, "「……圭一も魅ぃもいっぱいいっぱいお勉強しましたですね。」",
 		   NULL, "\"...Both Keiichi and Mii learned a whole lot.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -539,10 +539,10 @@ void main()
 
 //「......きっと圭一は素敵な大人になれますですよ。＠...なでなで＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/05/500500070", 128);
+	ModPlayVoiceLS(4, 5, "s19/05/500500070", 128);
 	OutputLine(NULL, "「……きっと圭一は素敵な大人になれますですよ。」",
 		   NULL, "\"...I'm sure that Keiichi will grow up to be a wonderful adult.\"", Line_WaitForInput);
-	PlayVoice(4, "s19/05/500500071", 128);
+	ModPlayVoiceLS(4, 5, "s19/05/500500071", 128);
 	OutputLine(NULL, "…なでなで。",
 		   NULL, " ...*pat pat*", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -550,10 +550,10 @@ void main()
 
 //「...ふーん＠...梨花ちゃんはお勉強家だからすごい素敵な大人になれそうだな？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/01/hr_kei21160", 128);
+	ModPlayVoiceLS(4, 1, "s19/01/hr_kei21160", 128);
 	OutputLine(NULL, "「…ふーん。",
 		   NULL, "\"...Hmmm.", Line_WaitForInput);
-	PlayVoice(4, "s19/01/hr_kei21170", 128);
+	ModPlayVoiceLS(4, 1, "s19/01/hr_kei21170", 128);
 	OutputLine(NULL, "…梨花ちゃんはお勉強家だからすごい素敵な大人になれそうだな？」",
 		   NULL, " ...Rika-chan is the studious type, so maybe you'll grow up to be an amazingly wonderful adult?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -561,39 +561,39 @@ void main()
 
 //「......もちろんなのですよ＠ボクは大人になったらスゴイスゴイのです。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/05/500500072", 128);
+	ModPlayVoiceLS(4, 5, "s19/05/500500072", 128);
 	OutputLine(NULL, "「……もちろんなのですよ。",
 		   NULL, "\"...Of course.", Line_WaitForInput);
-	PlayVoice(4, "s19/05/500500073", 128);
+	ModPlayVoiceLS(4, 5, "s19/05/500500073", 128);
 	OutputLine(NULL, "ボクは大人になったらスゴイスゴイのです。」",
 		   NULL, " When I grow up I'll be super amazing.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 3, "sa_se_aw_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	ModDrawCharacterWithFiltering(3, 4, "sa_se_aw_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「あぁら、私も大人になったらすごいレディーになるんですのよ～？￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/04/500400115", 128);
+	ModPlayVoiceLS(4, 4, "s19/04/500400115", 128);
 	OutputLine(NULL, "「あぁら、私も大人になったらすごいレディーになるんですのよ〜？」",
 		   NULL, "\"My, when I grow up I'll be an amazing lady, you know?\"", Line_Normal);
 	ClearMessage();
 
 //「沙都子はいくつになってもお子様だと思うぞ。賭けてもいい。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/01/hr_kei21180", 128);
+	ModPlayVoiceLS(4, 1, "s19/01/hr_kei21180", 128);
 	OutputLine(NULL, "「沙都子はいくつになってもお子様だと思うぞ。賭けてもいい。」",
 		   NULL, "\"No matter how old you get, you'll still be a brat. You can put money on it.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	DisableWindow();
-	DrawBustshot( 3, "sa_se_bi_b1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 4, "sa_se_bi_b1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「なななな、なんですってぇえぇええええぇ？！？！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/04/500400116", 128);
+	ModPlayVoiceLS(4, 4, "s19/04/500400116", 128);
 	OutputLine(NULL, "「なななな、なんですってぇえぇええええぇ？！？！」",
 		   NULL, "\"Wha-Wha-Wha-What did you saaaaaaaaaAAaaaaay!?!?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -620,10 +620,10 @@ void main()
 
 //「いってぇええぇえぇ...＠何しやがんだ沙都子ぉおおぉおぉ！！！！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/01/hr_kei21190", 128);
+	ModPlayVoiceLS(4, 1, "s19/01/hr_kei21190", 128);
 	OutputLine(NULL, "「いってぇええぇえぇ…。",
 		   NULL, "\"Owwwwwww....", Line_WaitForInput);
-	PlayVoice(4, "s19/01/hr_kei21200", 128);
+	ModPlayVoiceLS(4, 1, "s19/01/hr_kei21200", 128);
 	OutputLine(NULL, "何しやがんだ沙都子ぉおおぉおぉ！！！！」",
 		   NULL, " What do you think you're doing SatokooooooooOooo!!!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -657,10 +657,10 @@ void main()
 	DisableWindow();
 	SetValidityOfInput( FALSE );
 //	Wait( 1000 );
-	DrawBustshotWithFiltering( 6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
-	DrawBustshot( 7, "Title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	ModDrawCharacterWithFiltering(6, 0, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	ModDrawCharacter(7, 0, "Title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
 	Wait( 2000 );
-	DrawBustshot( 5, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	ModDrawCharacter(5, 0, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
 	Wait( 1000 );
 	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
 	DrawScene( "black", 1000 );
