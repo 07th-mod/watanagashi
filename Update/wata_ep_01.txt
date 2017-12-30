@@ -531,7 +531,7 @@ void main()
 	DrawScene( "black", 3000 );
 	PlayBGM( 1, "msys11", 128, 0 );
 	DrawSceneWithMask( "sunset/bg_051", "left", 0, 0, 3000 );
-	ModDrawCharacter(2, 2, "sunset/re_se_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 2, "character/sunset/re1a_defA1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「......そっか＠......引っ越しちゃうんだね＠......いつ？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -559,7 +559,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ModDrawCharacter(2, 2, "sunset/re_se_ko_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 2, "character/sunset/re1a_komaruA1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「!s200.............................................!sd寂しくなるね＠...私一人しか、!w1000...残らない。＠
 //!s200
@@ -1277,7 +1277,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ModDrawCharacter(2, 3, "night/me_si_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 3, "character/night/me2_DefA1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //　み...見間違いなんかじゃない＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1454,7 +1454,7 @@ void main()
 
 
 	DisableWindow();
-	ModDrawCharacter(2, 3, "night/me_si_wi_a2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 3, "character/night/me2_WinkA1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「あはははは、お久しぶり～＠...どう＠　元気にしてた？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -1503,7 +1503,7 @@ void main()
 
 
 	DisableWindow();
-	ModDrawCharacter(2, 3, "night/me_si_wa_a2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 3, "character/night/me2_WaraiA1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「............本当はいけないよ＠...えへへへ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -1552,7 +1552,7 @@ void main()
 
 
 	DisableWindow();
-	ModDrawCharacter(2, 3, "night/me_si_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 3, "character/night/me2_DefA1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「...最後にお話したかったから。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -2047,7 +2047,7 @@ void main()
 	ClearMessage();
 	SetSpeedOfMessage( FALSE, 0, );
 	DisableWindow();
-	ModDrawCharacter(5, 0, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 1000, TRUE );
+	DrawBustshot( 5, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 1000, TRUE );
 
 //　...あの日、魅音が俺に残した最後の言葉が...蘇￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2058,7 +2058,7 @@ void main()
 	DisableWindow();
 //	DrawFilm( 2, 170, 0, 0, 255, 0, 1000, TRUE );
 //	DrawScene( "wata_mion01", 1000 );
-	ModDrawCharacter(2, 3, "me_si_si_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, TRUE );
+	ModDrawCharacter(2, 3, "character/me2_SinmyouA1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, TRUE );
 
 //「......今日を境に魅音が戻ってくることはもうない。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -2101,7 +2101,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask( "night/bg_117", "up", 0, 0, 1300 );
-	ModDrawCharacter(2, 3, "night/me_si_him_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, TRUE );
+	ModDrawCharacter(2, 3, "character/night/me2_Hig_MajiA1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, TRUE );
 //	FadeBustshotWithFiltering( 5, "up", 1, FALSE, 0, 0, 300, TRUE );
 //	FadeFilm( 1000, TRUE );
 //print 6
