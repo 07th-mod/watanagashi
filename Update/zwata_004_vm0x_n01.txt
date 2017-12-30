@@ -13,21 +13,21 @@ void dialog001()
 void dialog002()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "s19/01/hr_kei15130_01", 128);
+	ModPlayVoiceLS(4, 1, "s19/01/hr_kei15130_01", 128, TRUE);
 	OutputLine(NULL, "「いや、お祭りの話は前に魅音たちからも聞いたけどさ。……確か梨花ちゃん、お祭りの実行委員なんだよな。それと関係あるのか？」",
 		   NULL, "\"You guys did tell me about the festival before. That's right, Rika-chan is on the festival comittee, isn't she? Does it have something to do with that?\"", Line_Normal);
 
 
 	DisableWindow();
-	ModDrawCharacterWithFiltering(3, 2, "character/re3a_defA1_", "0", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	ModDrawCharacterWithFiltering(3, 2, "character/normal/re3a_defA1_", "0", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「梨花ちゃんは綿流しの巫女さんだから、奉納の演舞をすることになっててね＠その練習なの。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "s19/02/500200081", 128);
+	ModPlayVoiceLS(4, 2, "s19/02/500200081", 128, TRUE);
 	OutputLine(NULL, "「梨花ちゃんは綿流しの巫女さんだから、奉納の演舞をすることになっててね。",
 		   NULL, "\"Rika-chan is a shrine maiden for the Watanagashi, so she has to perform a ritual dance. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "s19/02/500200082", 128);
+	ModPlayVoiceLS(4, 2, "s19/02/500200082", 128, TRUE);
 	OutputLine(NULL, "その練習なの。」",
 		   NULL, "It's practice for that.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -45,7 +45,7 @@ void dialog003()
 		   NULL, " So, Rika-chan plays the part of a shrine maiden?", Line_Normal);
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "s19/01/hr_kei15130_02", 128);
+	ModPlayVoiceLS(4, 1, "s19/01/hr_kei15130_02", 128, TRUE);
 	OutputLine(NULL, "「なるほどな。確か、布団とかどてらの供養だって言ってたよな。…じゃあ、あれか？　演舞か何かで、中に入ってる綿を取り出したりするのか？」",
 		   NULL, "\"I see, Mom did say that futons, padded cloaks and stuff are made as offerings. ...So, does that mean the cotten stuffing gets pulled out during a dance or something?\"", Line_Normal);
 }
@@ -53,17 +53,17 @@ void dialog003()
 void dialog004()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "s19/02/500200087", 128);
+	ModPlayVoiceLS(4, 2, "s19/02/500200087", 128, TRUE);
 	OutputLine(NULL, "「祭壇にもお布団を積み上げているし。",
 		   NULL, "\"They also pile futons up on the altar.", Line_WaitForInput);
 }
 
 void dialog005()
 {
-	ModPlayVoiceLS(4, 2, "s19/02/500200083", 128);
+	ModPlayVoiceLS(4, 2, "s19/02/500200083", 128, TRUE);
 	OutputLine(NULL, "綿流しはね、毎年６月の日曜日に神社でやるお祭りなの。",
 		   NULL, "The Watanagashi is a festival that happens at the shrine on a Sunday every June.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "s19/02/500200084", 128);
+	ModPlayVoiceLS(4, 2, "s19/02/500200084", 128, TRUE);
 	OutputLine(NULL, "とってもにぎわうんだよ！」",
 		   NULL, "It's very lively!\"", Line_Normal);
 //	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -86,7 +86,7 @@ void dialog005()
 
 //圭一「……それにしてもご先祖様とか戦没者とか、針とか包丁とかの供養ってのは聞いたことあるけど。布団の供養っては初耳だな。どんな謂れがあるんだ？」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "s19/01/hr_kei15130_03", 128);
+	ModPlayVoiceLS(4, 1, "s19/01/hr_kei15130_03", 128, TRUE);
 	OutputLine(NULL, "「……それにしてもご先祖様とか戦没者とか、針とか包丁とかの供養ってのは聞いたことあるけど。",
 		   NULL, "\"I've heard of people leaving offerings of things like needles or kitchen knives to their ancestors or to casualties of war...", Line_Continue);
 	OutputLine(NULL, "布団の供養っては初耳だな。",
@@ -101,11 +101,11 @@ void dialog006()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不良</color>", NULL, "<color=#f5e6d3>Delinquent</color>", NULL, Line_ContinueAfterTyping); }
 
-	ModPlayVoiceLS(4, 0, "s19/00/badb50006", 128);
+	ModPlayVoiceLS(4, 0, "s19/00/badb50006", 128, TRUE);
 	OutputLine(NULL, "「ンだこの女ぁあぁぁあぁああ！！！",
 		   NULL, "\"Ye fookin biiiiitch!!", Line_WaitForInput);
 
-	ModPlayVoiceLS(4, 0, "s19/00/badb50007", 128);
+	ModPlayVoiceLS(4, 0, "s19/00/badb50007", 128, TRUE);
 	OutputLine(NULL, "　ッくぞンにゃろぉおおおぉおお！！」",
 		   NULL, " I'll fookin bash yer ead in!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -114,7 +114,7 @@ void dialog006()
 void dialog007()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>女</color>", NULL, "<color=#f5e6d3>Woman</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "s19/00/womb50004", 128);
+	ModPlayVoiceLS(4, 0, "s19/00/womb50004", 128, TRUE);
 	OutputLine(NULL, "　はぁ…まったく！」",
 		   NULL, "*sigh*... honestly!\"", GetGlobalFlag(GLinemodeSp));
 
@@ -124,11 +124,11 @@ void dialog007()
 void dialog008()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "s19/06/500600093", 128);
+	ModPlayVoiceLS(4, 6, "s19/06/500600093", 128, TRUE);
 	OutputLine(NULL, "「それよりもさっきのあれ。",
 		   NULL, "\"More importantly, just now...", Line_WaitForInput);
 
-	ModPlayVoiceLS(4, 6, "s19/06/500600094", 128);
+	ModPlayVoiceLS(4, 6, "s19/06/500600094", 128, TRUE);
 	OutputLine(NULL, "……驚きましたか？」",
 		   NULL, " Were you surprised?\"", GetGlobalFlag(GLinemodeSp));
 

@@ -535,13 +535,13 @@ void main()
 
 //「......そっか＠......引っ越しちゃうんだね＠......いつ？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "s02/02/130200586", 128);
+	ModPlayVoiceLS(4, 2, "s02/02/130200586", 128, TRUE);
 	OutputLine(NULL, "「……そっか。",
 		   NULL, "\"...I see.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "s02/02/130200587", 128);
+	ModPlayVoiceLS(4, 2, "s02/02/130200587", 128, TRUE);
 	OutputLine(NULL, "……引っ越しちゃうんだね。",
 		   NULL, " ...You're moving, huh?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "s02/02/130200588", 128);
+	ModPlayVoiceLS(4, 2, "s02/02/130200588", 128, TRUE);
 	OutputLine(NULL, "……いつ？」",
 		   NULL, " ...When?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -550,10 +550,10 @@ void main()
 
 //「来月の終わり＠............雛見沢には結局、半年もいつかなかったことになるな。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "s02/01/130101171", 128);
+	ModPlayVoiceLS(4, 1, "s02/01/130101171", 128, TRUE);
 	OutputLine(NULL, "「来月の終わり。",
 		   NULL, "\"At the end of next month.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "s02/01/130101172", 128);
+	ModPlayVoiceLS(4, 1, "s02/01/130101172", 128, TRUE);
 	OutputLine(NULL, "…………雛見沢には結局、半年もいつかなかったことになるな。」",
 		   NULL, " ......I won't even have been in Hinamizawa for half a year.\"", Line_Normal);
 	ClearMessage();
@@ -566,7 +566,7 @@ void main()
 	SetSpeedOfMessage( TRUE, 0, );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "s02/02/130200589", 128);
+	ModPlayVoiceLS(4, 2, "s02/02/130200589", 128, TRUE);
 	OutputLine(NULL, "「………………………………………",
 		   NULL, "\"............", Line_Continue);
 //!sd
@@ -574,7 +574,7 @@ void main()
 
 	OutputLine(NULL, "寂しくなるね。",
 		   NULL, "I'll be lonely.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "s02/02/130200590", 128);
+	ModPlayVoiceLS(4, 2, "s02/02/130200590", 128, TRUE);
 	OutputLine(NULL, "…私一人しか、",
 		   NULL, " ...I'm the only one...", Line_Continue);
 
@@ -605,7 +605,7 @@ void main()
 
 //「..................こう考えることがあるんだ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "s02/01/130101173", 128);
+	ModPlayVoiceLS(4, 1, "s02/01/130101173", 128, TRUE);
 	OutputLine(NULL, "「………………こう考えることがあるんだ。」",
 		   NULL, "\"............Here's something to think about.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1234,7 +1234,7 @@ void main()
 
 //「............あ、........................ッ！￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "s02/01/130101174", 128);
+	ModPlayVoiceLS(4, 1, "s02/01/130101174", 128, TRUE);
 	OutputLine(NULL, "「…………あ、……………………ッ！」",
 		   NULL, "\"............Ah............!\"", Line_Normal);
 	ClearMessage();
@@ -1432,7 +1432,7 @@ void main()
 
 //「......はぁ、!w700......はぁ、!w700......魅音...！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "s02/01/130101175", 128);
+	ModPlayVoiceLS(4, 1, "s02/01/130101175", 128, TRUE);
 	OutputLine(NULL, "「……はぁ、",
 		   NULL, "\"...Hah...", Line_Continue);
 
@@ -1458,13 +1458,13 @@ void main()
 
 //「あはははは、お久しぶり～＠...どう＠　元気にしてた？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "s02/03/130300725", 128);
+	ModPlayVoiceLS(4, 3, "s02/03/130300725", 128, TRUE);
 	OutputLine(NULL, "「あはははは、お久しぶり〜。",
 		   NULL, "\"Ahahahaha, it's been a while~", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "s02/03/130300726", 128);
+	ModPlayVoiceLS(4, 3, "s02/03/130300726", 128, TRUE);
 	OutputLine(NULL, "…どう？",
 		   NULL, " ...How are you?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "s02/03/130300727", 128);
+	ModPlayVoiceLS(4, 3, "s02/03/130300727", 128, TRUE);
 	OutputLine(NULL, "　元気にしてた？」",
 		   NULL, " Been doing all right?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1488,7 +1488,7 @@ void main()
 
 //「......お前、!w700......こんなところをうろついてて......大丈夫なのか...？！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "s02/01/130101176", 128);
+	ModPlayVoiceLS(4, 1, "s02/01/130101176", 128, TRUE);
 	OutputLine(NULL, "「……お前、",
 		   NULL, "\"...Are you...", Line_Continue);
 
@@ -1507,10 +1507,10 @@ void main()
 
 //「............本当はいけないよ＠...えへへへ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "s02/03/130300728", 128);
+	ModPlayVoiceLS(4, 3, "s02/03/130300728", 128, TRUE);
 	OutputLine(NULL, "「…………本当はいけないよ。",
 		   NULL, "\".........I really shouldn't be.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "s02/03/130300729", 128);
+	ModPlayVoiceLS(4, 3, "s02/03/130300729", 128, TRUE);
 	OutputLine(NULL, "…えへへへ。」",
 		   NULL, " ...Ehehehe.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1541,10 +1541,10 @@ void main()
 
 //「それより......どうしたんだよ＠こんな時間に。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "s02/01/130101177", 128);
+	ModPlayVoiceLS(4, 1, "s02/01/130101177", 128, TRUE);
 	OutputLine(NULL, "「それより……どうしたんだよ。",
 		   NULL, "\"Anyway... what's wrong?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "s02/01/130101178", 128);
+	ModPlayVoiceLS(4, 1, "s02/01/130101178", 128, TRUE);
 	OutputLine(NULL, "こんな時間に。」",
 		   NULL, " What do you need at this hour?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1556,7 +1556,7 @@ void main()
 
 //「...最後にお話したかったから。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "s02/03/130300730", 128);
+	ModPlayVoiceLS(4, 3, "s02/03/130300730", 128, TRUE);
 	OutputLine(NULL, "「…最後にお話したかったから。」",
 		   NULL, "\"...I wanted to talk to you one last time.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1589,7 +1589,7 @@ void main()
 
 //「.........私ね、!w700......えへへへ、!w800......もう、!w1000......ここにはいられない...。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "s02/03/130300731", 128);
+	ModPlayVoiceLS(4, 3, "s02/03/130300731", 128, TRUE);
 	OutputLine(NULL, "「………私ね、",
 		   NULL, "\"......Well, I...", Line_Continue);
 
@@ -1628,10 +1628,10 @@ void main()
 
 //「だ、大丈夫か...＠どこか具合でも...、＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "s02/01/130101179", 128);
+	ModPlayVoiceLS(4, 1, "s02/01/130101179", 128, TRUE);
 	OutputLine(NULL, "「だ、大丈夫か…。",
 		   NULL, "\"A-Are you all right...?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "s02/01/130101180", 128);
+	ModPlayVoiceLS(4, 1, "s02/01/130101180", 128, TRUE);
 	OutputLine(NULL, "どこか具合でも…、」",
 		   NULL, " Are you not feeling well...?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1640,7 +1640,7 @@ void main()
 
 //「...今日まで......がが、......がんばってきたけど...、!w700あははは、!w800...自分でわかるの＠/
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "s02/03/130300732", 128);
+	ModPlayVoiceLS(4, 3, "s02/03/130300732", 128, TRUE);
 	OutputLine(NULL, "「…今日まで……がが、……がんばってきたけど…、",
 		   NULL, "\"...I tried... s-s... so hard until now...", Line_Continue);
 
@@ -1660,10 +1660,10 @@ void main()
 
 
 //......もうだめ...もう限界...＠私のお迎えは!s400......!sdもう、すぐ後ろまで来てる...＠あははは.........。＠
-	ModPlayVoiceLS(4, 3, "s02/03/130300733", 128);
+	ModPlayVoiceLS(4, 3, "s02/03/130300733", 128, TRUE);
 	OutputLine(NULL, "……もうだめ…もう限界…。",
 		   NULL, " ...I'm done... this is my limit...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "s02/03/130300734", 128);
+	ModPlayVoiceLS(4, 3, "s02/03/130300734", 128, TRUE);
 	OutputLine(NULL, "私のお迎えは",
 		   NULL, " They're...", Line_Continue);
 // !s400
@@ -1676,7 +1676,7 @@ void main()
 
 	OutputLine(NULL, "もう、すぐ後ろまで来てる…。",
 		   NULL, " about to come up behind me to take me away...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "s02/03/130300735", 128);
+	ModPlayVoiceLS(4, 3, "s02/03/130300735", 128, TRUE);
 	OutputLine(NULL, "あははは………。」",
 		   NULL, " Ahahaha......\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1698,7 +1698,7 @@ void main()
 
 //「あ...はははは、!w600...はは......は、!w700......はぁ!w400.........はぁ!w400.........はぁ...！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "s02/03/130300736", 128);
+	ModPlayVoiceLS(4, 3, "s02/03/130300736", 128, TRUE);
 	OutputLine(NULL, "「あ…はははは、",
 		   NULL, "\"Ah... hahaha...", Line_Continue);
 
@@ -1748,16 +1748,16 @@ void main()
 
 //「大丈夫かよ...＠　もう無理するな...＠あ、...そうだ＠...俺、魅音に、＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "s02/01/130101181", 128);
+	ModPlayVoiceLS(4, 1, "s02/01/130101181", 128, TRUE);
 	OutputLine(NULL, "「大丈夫かよ…！",
 		   NULL, "\"Are you okay...?!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "s02/01/130101182", 128);
+	ModPlayVoiceLS(4, 1, "s02/01/130101182", 128, TRUE);
 	OutputLine(NULL, "　もう無理するな…。",
 		   NULL, " Don't force yourself...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "s02/01/130101183", 128);
+	ModPlayVoiceLS(4, 1, "s02/01/130101183", 128, TRUE);
 	OutputLine(NULL, "あ、…そうだ。",
 		   NULL, " Oh... that's right.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "s02/01/130101184", 128);
+	ModPlayVoiceLS(4, 1, "s02/01/130101184", 128, TRUE);
 	OutputLine(NULL, "…俺、魅音に、」",
 		   NULL, " ...I had something—\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1954,7 +1954,7 @@ void main()
 
 //「け、!w1000......けけけ...!s100けけけけけけけけけけけけけけけけけ!sd...＠　間に合った...＠...間に合った...＠　...!s100くけけけけけけけけけけけけけけけけけけ!sd！！！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "s02/03/130300737", 128);
+	ModPlayVoiceLS(4, 3, "s02/03/130300737", 128, TRUE);
 	OutputLine(NULL, "「け、",
 		   NULL, "\"Hee.....", Line_Continue);
 
@@ -1974,10 +1974,10 @@ void main()
 
 	OutputLine(NULL, "…！",
 		   NULL, " ...!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "s02/03/130300738", 128);
+	ModPlayVoiceLS(4, 3, "s02/03/130300738", 128, TRUE);
 	OutputLine(NULL, "　間に合った…。",
 		   NULL, " I made it...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "s02/03/130300739", 128);
+	ModPlayVoiceLS(4, 3, "s02/03/130300739", 128, TRUE);
 	OutputLine(NULL, "…間に合った…！",
 		   NULL, " ...I made it...!", Line_WaitForInput);
 	OutputLine(NULL, "　…",
@@ -1985,7 +1985,7 @@ void main()
 //!s100
 	SetSpeedOfMessage( TRUE, 120, );
 
-	ModPlayVoiceLS(4, 3, "s02/03/130300740", 128);
+	ModPlayVoiceLS(4, 3, "s02/03/130300740", 128, TRUE);
 	OutputLine(NULL, "くけけけけけけけけけけけけけけけけけけ",
 		   NULL, " Huheeheeheeheeheeheeheeheeheeheeheeheeheeheeheeheehee", Line_Continue);
 	OutputLine(NULL, "！！！」",
@@ -2024,22 +2024,22 @@ void main()
 	SetSpeedOfMessage( TRUE, 120, );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "s02/03/130300741", 128);
+	ModPlayVoiceLS(4, 3, "s02/03/130300741", 128, TRUE);
 	OutputLine(NULL, "「げげげげげげげげげげげげげげげげげげげげげげげげげげげげげ！！",
 		   NULL, "\"Geegeegeegeegeegeegeegeegeegeegeegeegeegeegeegeegeegeegee!!", Line_WaitForInput);
 //!sd
 	SetSpeedOfMessage( FALSE, 0, );
 
-	ModPlayVoiceLS(4, 3, "s02/03/130300742", 128);
+	ModPlayVoiceLS(4, 3, "s02/03/130300742", 128, TRUE);
 	OutputLine(NULL, "　出来た、全部出来た！",
 		   NULL, " I've done it! I've done it all!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "s02/03/130300743", 128);
+	ModPlayVoiceLS(4, 3, "s02/03/130300743", 128, TRUE);
 	OutputLine(NULL, "　私が殺したいヤツは…これで全員…！！！",
 		   NULL, " That's everyone... I wanted to kill...!!!", Line_WaitForInput);
 //!s100
 	SetSpeedOfMessage( TRUE, 120, );
 
-	ModPlayVoiceLS(4, 3, "s02/03/130300744", 128);
+	ModPlayVoiceLS(4, 3, "s02/03/130300744", 128, TRUE);
 	OutputLine(NULL, "げげげげげげげげげげげげげげげげげげげげげげげげげげげげげげげげげげげ.！！」",
 		   NULL, " Gegeegeegeegeegeegeegeegeegeegeegeegeegeegeegeegeegee!!\"", Line_Normal);
 //!sd
@@ -2058,11 +2058,11 @@ void main()
 	DisableWindow();
 //	DrawFilm( 2, 170, 0, 0, 255, 0, 1000, TRUE );
 //	DrawScene( "wata_mion01", 1000 );
-	ModDrawCharacter(2, 3, "character/me2_SinmyouA1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, TRUE );
+	ModDrawCharacter(2, 3, "character/normal/me2_SinmyouA1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, TRUE );
 
 //「......今日を境に魅音が戻ってくることはもうない。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "s02/03/130300745", 128);
+	ModPlayVoiceLS(4, 3, "s02/03/130300745", 128, TRUE);
 	OutputLine(NULL, "「……今日を境に魅音が戻ってくることはもうない。」",
 		   NULL, "\"...After today, Mion will never come back.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -2108,7 +2108,7 @@ void main()
 
 //「...み、!w900.........魅、!w800.....................音..................、＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "s02/01/130101185", 128);
+	ModPlayVoiceLS(4, 1, "s02/01/130101185", 128, TRUE);
 	OutputLine(NULL, "「…み、",
 		   NULL, "\"...Mi......", Line_Continue);
 
