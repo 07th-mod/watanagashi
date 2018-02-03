@@ -1749,6 +1749,7 @@ void main()
 	DrawBustshotWithFiltering( 1, "re_se_ik_a1", "right", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「...魅ぃちゃん＠圭一くんはちゃんと真面目に謝ってるんだよ＠...魅ぃちゃんも真剣に応えてあげるべきじゃないのかな。...かな。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s02/02/130200501", 128);
 	OutputLine(NULL, "「…魅ぃちゃん。",
 		   NULL, "\"...Mii-chan.", Line_WaitForInput);
