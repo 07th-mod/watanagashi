@@ -1451,18 +1451,18 @@ void main()
 
 
 //「圭一くん＠お味噌汁のお豆腐って、本当に最後の最後に入れるんだよ＠
-	PlaySE(4, "s02/02/130200325", 128, 64)
+	PlayVoice(4, "s02/02/130200325", 128);
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「圭一くん。",
 		   NULL, "\"Keiichi-kun.", Line_WaitForInput);
-	PlaySE(4, "s02/02/130200326", 128, 64)
+	PlayVoice(4, "s02/02/130200326", 128);
 	OutputLine(NULL, "お味噌汁のお豆腐って、本当に最後の最後に入れるんだよ。",
 		   NULL, " When you make miso soup, you put the tofu in last.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　つまり、お料理してた梨花ちゃんかもしくは沙都子ちゃんは、お夕飯の時間の直前まであそこに立って料理をしていたことになるの。￥
-	PlaySE(4, "s02/02/130200327", 128, 64)
+	PlayVoice(4, "s02/02/130200327", 128);
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　つまり、お料理してた梨花ちゃんかもしくは沙都子ちゃんは、お夕飯の時間の直前まであそこに立って料理をしていたことになるの。」",
 		   NULL, "That means that Rika-chan, or Satoko-chan, whoever was cooking, was standing there making it up until right before dinnertime.\"", Line_Normal);
@@ -1473,7 +1473,7 @@ void main()
 	PlaySE( 3, "wa_023", 128, 64 );
 
 //「夕食の時間の...!w1000直前まで...？！＠
-	PlaySE(4, "s02/01/130100785", 128, 64)
+	PlayVoice(4, "s02/01/130100785", 128);
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「夕食の時間の…",
 		   NULL, "\"Right up until...", Line_ContinueAfterTyping);
@@ -1511,7 +1511,7 @@ void main()
 	ClearMessage();
 
 //「......それってつまり、!w1000......沙都子に関しては、遊びに行かず、!w800...夕食の準備をしてたってことなのか...？！」/
-	PlaySE(4, "s02/01/130100786", 128, 64)
+	PlayVoice(4, "s02/01/130100786", 128);
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……それってつまり、",
 		   NULL, "\"...So that means...", Line_ContinueAfterTyping);
