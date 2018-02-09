@@ -8,9 +8,9 @@ void main()
 	FadeOutBGM( 0, 1000, FALSE );
 	FadeOutBGM( 1, 1000, FALSE );
 	FadeOutBGM( 2, 1000, TRUE );
-	DrawScene( "black", 1000 );
+	DrawScene("black", 1000 );
 	PlayBGM( 2, "lsys11", 128, 0 );
-	DrawSceneWithMask( "sunset/bg_052", "down", 0, 0, 300 );
+	DrawSceneWithMask("background/m_y2_02", "down", 0, 0, 300 );
 
 //　自宅への帰り道＠
 	ClearMessage();
@@ -45,7 +45,7 @@ void main()
 		   NULL, "Exhausted from the slow climb towards Hinamizawa... without even noticing, I'd gotten off my bicycle and was pushing it uphill.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "sunset/bg_147", "left", 0, 0, 300 );
+	DrawSceneWithMask("background/sora2", "left", 0, 0, 300 );
 	PlayBGM( 1, "msys17", 128, 0 );
 
 //「................。＠
@@ -276,22 +276,22 @@ void main()
 //■詩音からの電話
 
 	DisableWindow();
-	DrawScene( "black", 1000 );
+	DrawScene("black", 1000 );
 //setwindow 31,16,22,16,26,26,0,2,20,1,1,#ffffff,0,0,639,479
-	DrawScene( "night/bg_147", 1000 );
+	DrawScene("background/sora_01", 1000 );
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	DrawScene( "night/bg_117", 1000 );
+	DrawScene("background/ma2", 1000 );
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 //setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,639,479
-	DrawScene( "black", 1000 );
+	DrawScene("black", 1000 );
 	FadeOutBGM( 1, 1000, TRUE );
 	FadeOutBGM( 2, 1000, TRUE );
 //!sd
-	DrawScene( "bg_081", 1000 );
+	DrawScene("background/ma_j3_01", 1000 );
 	PlayBGM( 1, "msys13", 128, 0 );
 
 //　夕飯はあまり箸が進まず、早々にご馳走様をして、自室に戻っていた￥
@@ -357,8 +357,8 @@ void main()
 		   NULL, " ...Shion had said she'd call tonight...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "black", "up", 0, 0, 300 );
-	DrawSceneWithMask( "bg_210", "up", 0, 0, 300 );
+	DrawSceneWithMask("black", "up", 0, 0, 300 );
+	DrawSceneWithMask("background/ma_s1", "up", 0, 0, 300 );
 	PlayBGM( 1, "msys06", 128, 0 );
 
 
@@ -832,7 +832,7 @@ void main()
 	DisableWindow();
 	FadeOutBGM( 1, 1000, TRUE );
 	FadeOutBGM( 2, 1000, TRUE );
-	DrawScene( "black", 400 );
+	DrawScene("black", 400 );
 
 //　...昨夜、鷹野さんと富竹さんが死んだんだそうです￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -841,7 +841,7 @@ void main()
 		   NULL, "...Apparently, last night, Takano-san and Tomitake-san died.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "bg_210", 400 );
+	DrawScene("background/ma_s1", 400 );
 
 //「......ごめん、詩音＠...今、何て言った？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -880,7 +880,7 @@ void main()
 		   NULL, "...I heard my dad talking to a relative on the phone about it...\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "bg_252", 1000 );
+	DrawScene("background/m_y4", 1000 );
 	PlayBGM( 1, "msys13", 128, 0 );
 
 //　昨夜の深夜＠
@@ -916,7 +916,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	FadeOutBGM( 1, 1000, TRUE );
-	DrawScene( "bg_210", 400 );
+	DrawScene("background/ma_s1", 400 );
 	PlayBGM( 1, "msys08", 128, 0 );
 
 //「な、なんだよ、喉を掻き毟っての自殺って...＠あ、あの明るそうな富竹さんが自殺？＠　何かの間違いだろ？！＠
@@ -967,7 +967,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	FadeOutBGM( 1, 1000, TRUE );
-	DrawScene( "black", 400 );
+	DrawScene("black", 400 );
 	PlayBGM( 1, "msys13", 128, 0 );
 
 //　親に聞かれたくなかったので、子機に持ち替え、自分の部屋へ駆け上った￥
@@ -976,7 +976,7 @@ void main()
 		   NULL, "I didn't want my parents to hear me, so I switched to the cordless phone and ran up to my own room.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_081", "right", 0, 0, 300 );
+	DrawSceneWithMask("background/ma_j3_01", "right", 0, 0, 300 );
 
 //「......大声出してごめん＠...で＠　鷹野さんも...自殺なのか？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -999,9 +999,9 @@ void main()
 		   NULL, "\"In her case... it's a little unclear......\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "black", 400 );
+	DrawScene("black", 400 );
 	DrawFilm( 2, 153, 153, 153, 255, 0, 1000, TRUE );
-	DrawScene( "bg_142", 400 );
+	DrawScene("background/mo2", 400 );
 	FadeOutBGM( 1, 1000, TRUE );
 	FadeOutBGM( 2, 1000, TRUE );
 	PlayBGM( 2, "lsys25", 128, 0 );
@@ -1050,9 +1050,9 @@ void main()
 		   NULL, "The cause of death wasn't confirmed, but it was highly likely to have been a homicide, since she was in her undergarments, and her clothes were nowhere in the area.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "black", 400 );
+	DrawScene("black", 400 );
 	FadeFilm( 1000, TRUE );
-	DrawScene( "bg_081", 400 );
+	DrawScene("background/ma_j3_01", 400 );
 	FadeOutBGM( 2, 1000, TRUE );
 	PlayBGM( 1, "msys08", 128, 0 );
 
@@ -1418,7 +1418,7 @@ void main()
 		   NULL, " ...That, though, was such an incredibly difficult and selfish request.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "black", 1000 );
+	DrawScene("black", 1000 );
 
 //　富竹さんと鷹野さんの死が、例えば、ドライブ中の事故とか、ありがちなものなら、偶然だと決め付けることもできる＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1467,7 +1467,7 @@ void main()
 	DisableWindow();
 	StopSE( 3 );
 	FadeOutBGM( 1, 1000, TRUE );
-	DrawScene( "bg_081", 1000 );
+	DrawScene("background/ma_j3_01", 1000 );
 	PlayBGM( 1, "msys08", 128, 0 );
 
 //「だ、...第一そんなの...新聞に出てないぞ？＠　そんなに奇ッ怪な事件なら絶対に新聞やテレビで報道するはずだろ？＠　雑誌記者とかだって、面白がって大勢来るに決まってる...！！＠
@@ -1660,8 +1660,8 @@ void main()
 		   NULL, "...That's all it turns into.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "black", 1000 );
-	DrawScene( "bg_180", 1000 );
+	DrawScene("black", 1000 );
+	DrawScene("background/simen3", 1000 );
 
 //　最初のバラバラ殺人は犯人が特定され、ほとんどは逮捕された＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1758,8 +1758,8 @@ void main()
 		   NULL, "None of the incidents had any relation to another, and each was independently resolved...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "black", 1000 );
-	DrawSceneWithMask( "bg_081", "down", 0, 0, 300 );
+	DrawScene("black", 1000 );
+	DrawSceneWithMask("background/ma_j3_01", "down", 0, 0, 300 );
 	PlayBGM( 1, "msys13", 128, 0 );
 
 //「なのになぜか、毎年、綿流しの晩に不幸な「偶然」が起こる＠...連続事件にしたくても、連続にならないんです＠/
@@ -1942,7 +1942,7 @@ void main()
 		   NULL, " Hey, are you listeni......... agh!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "black", 50 );
+	DrawScene("black", 50 );
 	FadeOutBGM( 1, 1000, TRUE );
 	FadeOutBGM( 2, 1000, TRUE );
 
@@ -2108,7 +2108,7 @@ void main()
 //　そう言って、受話器を置こうとすると、先方は慌てた声で言った￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そう言って、受話器を置こうとすると、先方は慌てた声で言った。",
-		   NULL, "I went to put the receiver back down, but the man stopped me hurriedly.", Line_Normal);
+		   NULL, "I went to put the receiver back down, but the caller stopped me hurriedly.", Line_Normal);
 	ClearMessage();
 
 //「あ、いえいえ、お忙しければ結構なんです＠...実は恐縮なんですが...ウチのお爺ちゃんがお邪魔してませんでしょうか。＠
@@ -2144,7 +2144,7 @@ void main()
 //　...誰だか知らないが、今の電話のせいで詩音の電話がつながらなかったらどうするんだよ？！...そういう自己中心的な怒りに囚われる＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…誰だか知らないが、今の電話のせいで詩音の電話がつながらなかったらどうするんだよ？！…そういう自己中心的な怒りに囚われる。",
-		   NULL, "...I don't know who that was, but what if Shion tried to call while I was talking to him?! ...I thought, bubbling with egotistic anger.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "...I don't know who that was, but what if Shion tried to call while I was on the phone?! ...I thought, bubbling with egotistic anger.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　おいおい......＠いい加減にしろよ前原圭一＠
@@ -2229,23 +2229,23 @@ void main()
 	DisableWindow();
 	SetValidityOfInput( FALSE );
 	Wait( 3000 );
-	DrawBustshotWithFiltering( 6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 3000, TRUE );
-	DrawBustshot( 7, "Title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
 	Wait( 2000 );
 //	DrawBustshot( 5, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
 	Wait( 1000 );
 //	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
-	DrawScene( "black", 3000 );
+	DrawScene("black", 3000 );
 
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 
-	DrawSceneWithMask( "wata009_02", "mask_1900", 7, 0, 300 );
+	DrawSceneWithMask("text/wata009_02", "mask_1900", 7, 0, 300 );
 	SetValidityOfInput( FALSE );
 	Wait( 5000 );
 	SetValidityOfInput( TRUE );
-	DrawSceneWithMask( "black", "mask_1900", 7, 0, 300 );
+	DrawSceneWithMask("black", "mask_1900", 7, 0, 300 );
 
 
 

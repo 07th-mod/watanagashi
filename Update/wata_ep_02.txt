@@ -35,7 +35,7 @@ void main()
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
-	DrawScene( "bg_119", 1000 );
+	DrawScene("background/ma3", 1000 );
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -95,7 +95,7 @@ void main()
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
-	DrawScene( "bg_127", 1000 );
+	DrawScene("background/mati7", 1000 );
 //locate 7,4
 	if (GetGlobalFlag(GADVMode) == 0) { SetDrawingPointOfMessage( 0, 4 ); }
 	SetStyleOfMessageSwinging( 1 );
@@ -161,7 +161,7 @@ void main()
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
-	DrawScene( "black", 1000 );
+	DrawScene("black", 1000 );
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //　室内は荒れはて、争った形跡のようにも見えた。
@@ -278,13 +278,13 @@ void main()
 	DisableWindow();
 	SetValidityOfInput( FALSE );
 //	Wait( 3000 );
-	DrawBustshotWithFiltering( 6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
-	DrawBustshot( 7, "Title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
 	Wait( 2000 );
-	DrawBustshot( 5, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	DrawBustshot(5, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
 	Wait( 1000 );
 	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
-	DrawScene( "black", 3000 );
+	DrawScene("black", 3000 );
 	SetValidityOfInput( TRUE );
 	FadeOutBGM( 1, 1000, TRUE );
 	FadeOutBGM( 2, 1000, TRUE );
@@ -298,7 +298,7 @@ void main()
 	SetValidityOfInput( FALSE );
 //	Wait( 2000 );
 	SetValidityOfInput( TRUE );
-	DrawScene( "bg_hosp", 1000 );
+	DrawScene("background/byo_01", 1000 );
 //setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,639,479
 //!sd
 
@@ -336,7 +336,7 @@ void main()
 		   NULL, "The door opened... and as I expected, Ooishi-san came in.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(2, 11, "character/normal/oisi1_2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 11, "sprite/normal/oisi1_2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	PlayBGM( 1, "msys06", 128, 0 );
 
 //「どうもどうも前原さん＠ご無沙汰しておりますね＠その後、お加減はいかがですか。＠
@@ -378,7 +378,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ModDrawCharacter(2, 11, "character/normal/oisi1_1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 11, "sprite/normal/oisi1_1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「すみません、お母さん＠ほんのしばらく圭一くんとお話する時間をいただいてもよろしいですか？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
@@ -433,7 +433,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ModDrawCharacter(2, 11, "character/normal/oisi1_2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 11, "sprite/normal/oisi1_2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「個室なんていい身分ですねぇ＠　うちの婆さまなんか、いっつも相部屋ですよ＠　そりゃーもう賑やかなことで＠ああいうところじゃ、病気の重さがひとつのステータスになるらしいんですよ＠より重病な患者ほど偉いというか威張っているというか...。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
@@ -511,7 +511,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ModDrawCharacter(2, 11, "character/normal/oisi1_1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 11, "sprite/normal/oisi1_1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「転院はいつ頃になりそうですか？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
@@ -624,7 +624,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ModDrawCharacter(2, 11, "character/normal/oisi1_2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 11, "sprite/normal/oisi1_2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「前原さんの好みがわからなかったので、いろいろと持ってきましたよ～＠ほぅら、洋物に劇画からかわいらしいのまで色々＠　最近はこんな女の子向けみたいなＨマンガもあるんですねぇ～。＠
 
@@ -699,7 +699,7 @@ void main()
 
 	DisableWindow();
 	PlayBGM( 1, "msys12", 128, 0 );
-	ModDrawCharacter(2, 11, "character/normal/oisi1_1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 11, "sprite/normal/oisi1_1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「...............詩音さんの件は本当にお気の毒でした。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
@@ -849,7 +849,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ModDrawCharacter(2, 11, "character/normal/oisi1_2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 11, "sprite/normal/oisi1_2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「それだけじゃない＠園崎家の例の地下＠...隠し井戸も見つかったんですよ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
@@ -903,7 +903,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawScene( "bg_196", 1000 );
+	DrawScene("background/so_k1", 1000 );
 
 //「あの地下に、実に巧妙に隠されてましてね＠いやいや、まさに死角中の死角でした＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
@@ -932,8 +932,8 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ModDrawCharacter(2, 11, "character/normal/oisi1_2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, FALSE );
-	DrawScene( "bg_hosp", 1000 );
+	ModDrawCharacter(2, 11, "sprite/normal/oisi1_2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, FALSE );
+	DrawScene("background/byo_01", 1000 );
 
 //「.........過去の園崎家の当主が作らせた、秘密の逃げ道だったんでしょうね。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -983,7 +983,7 @@ void main()
 
 
 	DisableWindow();
-	ModDrawCharacter(2, 11, "character/normal/oisi1_1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 11, "sprite/normal/oisi1_1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「はい＠...逃げ道の通路よりもさらに下に、コールタール状の泥水が溜まってまして＠そこに無造作に投げ込まれていました＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
@@ -1178,9 +1178,9 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawSceneWithMask( "black", "down", 0, 0, 300 );
+	DrawSceneWithMask("black", "down", 0, 0, 300 );
 	DrawFilm( 2, 170, 170, 170, 255, 0, 100, TRUE );
-	ModDrawCharacterWithFiltering(1, 5, "character/normal/ri1_DefA1_", "0", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	ModDrawCharacterWithFiltering(1, 5, "sprite/normal/ri1_def_a1_", "0", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「実は、彼女のスカートのポッケからですね＠/
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
@@ -1251,10 +1251,10 @@ void main()
 		   NULL, " ...I feel sick..............", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "black", 1000 );
+	DrawScene("black", 1000 );
 	FadeFilm( 1000, TRUE );
-	DrawScene( "bg_hosp", 1000 );
-	ModDrawCharacterWithFiltering(2, 11, "character/normal/oisi1_1_", "0", "left", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawScene("background/byo_01", 1000 );
+	ModDrawCharacterWithFiltering(2, 11, "sprite/normal/oisi1_1_", "0", "left", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	StopSE( 3 );
 
@@ -1369,7 +1369,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ModDrawCharacter(2, 11, "character/normal/oisi1_2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 11, "sprite/normal/oisi1_2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「ありゃぁ＠　無駄話が過ぎましたか＠...まいったなぁ！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
@@ -1420,7 +1420,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ModDrawCharacter(2, 11, "character/normal/oisi1_1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 11, "sprite/normal/oisi1_1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「............日を改めた方が良さそうですねぇ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
@@ -1476,7 +1476,7 @@ void main()
 		   NULL, "\"......What is it?\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(2, 11, "character/normal/oisi1_2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 11, "sprite/normal/oisi1_2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「.....................本当に真面目に答えて下さいよ＠...これ、いい加減なこと言っちゃうと、場合によっては捜査撹乱と見られて告発される場合もありますからね。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
@@ -1502,7 +1502,7 @@ void main()
 		   NULL, "...What the hell did he want?", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(2, 11, "character/normal/oisi1_1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 11, "sprite/normal/oisi1_1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「......前原さん＠...詩音さんを突き落とした犯人は誰だと思います？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
@@ -1594,7 +1594,7 @@ void main()
 		   NULL, "It seems he's a veteran leader in that vein, and was like a parent to the Sonozaki sisters growing up.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "black", "down", 0, 0, 1300 );
+	DrawSceneWithMask("black", "down", 0, 0, 1300 );
 
 //　...この男はこう証言した＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1668,8 +1668,8 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ModDrawCharacter(2, 11, "character/normal/oisi1_1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "bg_hosp", "down", 0, 0, 200 );
+	ModDrawCharacter(2, 11, "sprite/normal/oisi1_1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask("background/byo_01", "down", 0, 0, 200 );
 
 
 //「...つまり、壁越しに聞いたというだけなんです＠しかもこのマンション、組の関係で住人がほとんどいないんです＠ですからこの騒ぎを聞いてたのも彼らだけ＠......重ねて言えば、園崎魅音を目撃した者は誰一人いないんです。＠
@@ -1699,7 +1699,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ModDrawCharacter(2, 11, "character/normal/oisi1_2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 11, "sprite/normal/oisi1_2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「まぁまぁ＠...だからつまりですね＠...あなただけがあの晩、確かに園崎魅音を目撃した唯一の人間ってことになるんです＠もう一人の目撃者の詩音さんは生きておられませんからね。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
@@ -1758,7 +1758,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ModDrawCharacter(2, 11, "character/normal/oisi1_1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 11, "sprite/normal/oisi1_1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「.........あなた、本当に園崎魅音に刺されたんですか？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
@@ -1806,7 +1806,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawScene( "black", 400 );
+	DrawScene("black", 400 );
 	FadeOutBGM( 1, 1000, FALSE );
 	FadeOutBGM( 2, 1000, TRUE );
 
@@ -1881,7 +1881,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawScene( "bg_196", 400 );
+	DrawScene("background/so_k1", 400 );
 
 //「あの日、前原さんを気絶させた後、園崎魅音は隠し井戸から外へ逃れようとして...＠......足を踏み外して死んだのです＠
 //　...まるで、底に突き落とした他の犠牲者の死体に呼び寄せられるようにね。＠
@@ -1979,7 +1979,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawScene( "black", 400 );
+	DrawScene("black", 400 );
 
 //「じゃ、!w800......じゃあ、!w600......だ、誰が俺と詩音を襲ったんですか...＠　誰が...！！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -2058,7 +2058,7 @@ void main()
 
 	DisableWindow();
 	DrawFilm( 2, 170, 170, 170, 255, 0, 1000, TRUE );
-	ModDrawCharacterWithFiltering(3, 9, "character/normal/ta1_def_", "0", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	ModDrawCharacterWithFiltering(3, 9, "sprite/normal/ta1_def_", "0", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「あれは絞殺された後に焼かれたことがわかってます＠......検死したのは岐阜県警さんなんですけどね＠これがちょっとおかしいんですよ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
@@ -2260,10 +2260,10 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawScene( "black", 1000 );
+	DrawScene("black", 1000 );
 	FadeFilm( 1000, TRUE );
-	ModDrawCharacter(2, 11, "character/normal/oisi1_1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "bg_hosp", "up", 0, 0, 300 );
+	ModDrawCharacter(2, 11, "sprite/normal/oisi1_1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask("background/byo_01", "up", 0, 0, 300 );
 
 
 
@@ -2366,7 +2366,7 @@ void main()
 		   NULL, " My business card is in those souvenirs from before. ", GetGlobalFlag(GLinemodeSp));
 
 	DisableWindow();
-	ModDrawCharacter(2, 11, "character/normal/oisi1_2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 11, "sprite/normal/oisi1_2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //...その時はまた素敵なおみやげを持ってお見舞いに来ますよ＠んっふっふっふ！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
@@ -2432,7 +2432,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawScene( "cg_107a", 1000 );
+	DrawScene("scene/107a", 1000 );
 
 //　俺にとっての事件を終わらせようと思って...＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2480,24 +2480,24 @@ void main()
 	FadeOutBGM( 1, 1000, TRUE );
 	FadeOutBGM( 2, 1000, TRUE );
 	DisableWindow();
-	DrawScene( "black", 0 );
-	DrawScene( "toketu1a", 300 );
+	DrawScene("black", 0 );
+	DrawScene("toketu1a", 300 );
 	PlaySE( 1, "wa_035", 128, 64 );
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
-	DrawScene( "toketu1b", 300 );
+	DrawScene("toketu1b", 300 );
 	PlaySE( 1, "wa_035", 128, 64 );
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
-	DrawScene( "toketu1c", 300 );
+	DrawScene("toketu1c", 300 );
 	PlaySE( 1, "wa_035", 128, 64 );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
 
-	DrawScene( "cg_107b", 1000 );
+	DrawScene("scene/107b", 1000 );
 
 
 //　.........その時、ぬぅっと、...鮮血をこびり付かせた腕が、!w600...ベッドの下から生えてきた＠
@@ -2858,7 +2858,7 @@ void main()
 
 //＜眩い光。まるで手術台の上に固定され、眩しい光を当てられているかのよう！
 	DisableWindow();
-	DrawSceneWithMask( "white", "c", 0, 0, 300 );
+	DrawSceneWithMask("white", "c", 0, 0, 300 );
 
 	FadeOutBGM( 1, 1000, TRUE );
 	FadeOutBGM( 2, 1000, TRUE );
@@ -2877,7 +2877,7 @@ void main()
 		   NULL, "I felt... a crooked nail press against my left pinky fingertip.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	DrawScene( "cg_107c", 1000 );
+	DrawScene("scene/107c", 1000 );
 
 
 //　...額を割った魅音が...血をこびり付かせた顔で...にやりと笑いながら...、!w1000鼻がぶつかるくらいの...目の前に...￥
@@ -2895,7 +2895,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	PlayBGM( 1, "msys11", 128, 0 );
-	DrawScene( "black", 1000 );
+	DrawScene("black", 1000 );
 
 //　......何も終わってない＠......何も終わってない＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -2970,7 +2970,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawScene( "cg_107c", 1000 );
+	DrawScene("scene/107c", 1000 );
 
 
 
@@ -3025,9 +3025,9 @@ void main()
 	Wait( 1500 );
 
 //if %kaisou_mode = 1 goto *kaisou_mode
-	DrawScene( "white", 50 );
+	DrawScene("white", 50 );
 	PlaySE( 3, "wa_036", 128, 64 );
-	DrawScene( "end_2", 4000 );
+	DrawScene("end_2", 4000 );
 //lsph 21,":c;bmp\Efe\End_2.bmp",0,0
 //vsp 21,1
 //setwindow 8,16,23,16,26,26,0,2,20,1,1,#ffffff,0,0,639,479
@@ -3035,22 +3035,22 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	DrawBustshot( 5, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 4000, TRUE );
+	DrawBustshot(5, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 4000, TRUE );
 //csp -1
-	DrawScene( "black", 400 );
+	DrawScene("black", 400 );
 
 //mov %Omake,1
 //mov %Watanagasi_END,1
 //mov %NEW_bg,2
 
 //bg ":c;BMP\Efe\Omake_Haikei.bmp",18,1500,":c;BMP\Efe\4.bmp"
-	DrawSceneWithMask( "s_jump_back", "4", 0, 0, 1000 );
+	DrawSceneWithMask("s_jump_back", "4", 0, 0, 1000 );
 	PlaySE( 3, "wa_041", 128, 64 );
-	DrawSceneWithMask( "ex_otsu_wata", "5", 0, 0, 1000 );
+	DrawSceneWithMask("ex_otsu_wata", "5", 0, 0, 1000 );
 //bg ":c;BMP\Efe\Omake_Otukaresama2.bmp",18,1500,":c;BMP\Efe\5.bmp"
 	Wait( 10000 );
 
-	DrawScene( "black", 1000 );
+	DrawScene("black", 1000 );
 
 //reset
 }

@@ -8,12 +8,12 @@ void main()
 	FadeOutBGM( 1, 1000, FALSE );
 	FadeOutBGM( 2, 1000, TRUE );
 	DisableWindow();
-	DrawScene( "black", 3000 );
+	DrawScene("black", 3000 );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
 	PlayBGM( 1, "msys13", 128, 0 );
-	DrawSceneWithMask( "bg_081", "up", 0, 0, 3000 );
+	DrawSceneWithMask("background/ma_j3_01", "up", 0, 0, 3000 );
 
 //　食後はテレビを見る気力もなく、...部屋で布団に潜りながら...陰鬱な考えに頭をめぐらせていた...＠
 	ClearMessage();
@@ -184,7 +184,7 @@ void main()
 		   NULL, " Good evening.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_081", "left", 0, 0, 300 );
+	DrawSceneWithMask("background/ma_j3_01", "left", 0, 0, 300 );
 
 //　がばっと跳ね起きる＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -694,10 +694,10 @@ void main()
 		   NULL, "\"All right.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "black", 1000 );
+	DrawScene("black", 1000 );
 	FadeOutBGM( 1, 1000, TRUE );
 	FadeOutBGM( 2, 1000, TRUE );
-	DrawScene( "bg_081", 1000 );
+	DrawScene("background/ma_j3_01", 1000 );
 	PlayBGM( 1, "msys13", 128, 0 );
 
 //「...では、圭ちゃんの方では何か私に話すことはありませんか？＠
@@ -853,8 +853,8 @@ void main()
 	DisableWindow();
 	FadeOutBGM( 1, 1000, TRUE );
 	FadeOutBGM( 2, 1000, TRUE );
-	DrawScene( "black", 1000 );
-	DrawSceneWithMask( "bg_004", "down", 0, 0, 300 );
+	DrawScene("black", 1000 );
+	DrawSceneWithMask("background/damu4", "down", 0, 0, 300 );
 	PlayBGM( 1, "msys09", 128, 0 );
 
 //「......雛見沢のダム闘争の時、リーダーシップを期待された神主が、あまりに日和見だったので、園崎本家が主謀格になって決起したんです＠...戦いの歴史についてはお姉から聞いてますよね？＠
@@ -901,7 +901,7 @@ void main()
 		   NULL, "\"......They were acting illegally...?\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "bg_239", 400 );
+	DrawScene("background/y_damu2", 400 );
 
 //「例えば、夜中に建設現場に忍び込み、機材を盗んだり、壊したり、建設重機のガソリンタンクに角砂糖を入れたりとか。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -984,7 +984,7 @@ void main()
 		   NULL, "\"K-Kidnapped?!?!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_081", "right", 0, 0, 300 );
+	DrawSceneWithMask("background/ma_j3_01", "right", 0, 0, 300 );
 	PlayBGM( 1, "msys15", 128, 0 );
 
 //「えぇ＠建設省の雛見沢ダムを担当する偉い人の子供が、神隠しにあったんですよ＠......で、ある日、突然、雛見沢のもっと上流の、高津戸の山中で保護されまして＠
@@ -1021,8 +1021,8 @@ void main()
 		   NULL, "\"...That's... wow, that's... sort of bad, isn't it...?\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "black", 1000 );
-	DrawScene( "bg_180", 400 );
+	DrawScene("black", 1000 );
+	DrawScene("background/simen3", 400 );
 
 //「そんな最中だったんですよ＠...第一の事件＠...現場監督のバラバラ殺人があったのは＠...園崎家が主犯格の男を買収したのではと囁かれてますが、...何しろ今日も逃走中ですからね。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -1076,8 +1076,8 @@ void main()
 		   NULL, " ...That the Sonozaki main house, where Mion lives, has done all those bad things... you're telling me to believe it...?\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "black", 1000 );
-	DrawSceneWithMask( "bg_081", "up", 0, 0, 300 );
+	DrawScene("black", 1000 );
+	DrawSceneWithMask("background/ma_j3_01", "up", 0, 0, 300 );
 
 //「圭ちゃんが信じなくても、村人たちは信じてます＠...自分たちがキレイな抵抗運動をする影で、園崎家が汚い抵抗運動をしてくれた＠...自分たちの矢面に立って戦ってくれたんだってみんな思ってます＠...ですから、ちょっとしたダークヒーローとして崇められているんですよね。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -1144,10 +1144,10 @@ void main()
 		   NULL, "...Unlike Shion, her older twin, Mion, was deeply involved with everything... and that was not a fun thought to entertain...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "black", "down", 0, 0, 300 );
+	DrawSceneWithMask("black", "down", 0, 0, 300 );
 	DrawFilm( 2, 153, 153, 153, 255, 0, 1000, TRUE );
 	PlayBGM( 1, "msys16", 128, 0 );
-	ModDrawCharacter(2, 3, "character/normal/me1a_DefA1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 3, "sprite/normal/me1a_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「そういった、違法な抵抗運動の中心として、年少ながら活躍したのがお姉でした。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -1216,9 +1216,9 @@ void main()
 		   NULL, "Even back then, she had already been known for her craftiness...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "black", 400 );
+	DrawScene("black", 400 );
 	FadeFilm( 1000, TRUE );
-	DrawScene( "bg_081", 400 );
+	DrawScene("background/ma_j3_01", 400 );
 	PlayBGM( 1, "msys13", 128, 0 );
 
 //「笑い事じゃないです！＠　真剣になってください！！＠
@@ -1980,7 +1980,7 @@ void main()
 		   NULL, " Don't lose heart so easily...\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "black", "down", 0, 0, 300 );
+	DrawSceneWithMask("black", "down", 0, 0, 300 );
 
 //　.........詩音は返事をしなかった＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2008,7 +2008,7 @@ void main()
 		   NULL, "...Shion must have been thinking the same thing...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_081", "up", 0, 0, 300 );
+	DrawSceneWithMask("background/ma_j3_01", "up", 0, 0, 300 );
 
 //「......村長さんに＠......私、あの晩＠祭具殿に忍び込んだこと......打ち明けたんです＠...誰かにそれを見られてて、......私たちを狙っている人がいるって。＠
 
@@ -2426,7 +2426,7 @@ void main()
 	DisableWindow();
 	DrawSprite( 5, "black", NULL, -320, -240, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 32, 100, TRUE );
 	FadeFilm( 0, TRUE );
-	DrawBG( "black", 0, TRUE );
+	DrawBG("black", 0, TRUE );
 	FadeSprite( 5, 0, TRUE );
 
 
@@ -2525,7 +2525,7 @@ void main()
 
 	DisableWindow();
 	DrawFilm( 2, 153, 153, 153, 255, 0, 1000, TRUE );
-	ModDrawCharacter(2, 5, "character/normal/ri1_DefA1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 5, "sprite/normal/ri1_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //　......猫さんの心配し過ぎなのです＠ボクがきっと、何とかしてあげますですよ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2535,7 +2535,7 @@ void main()
 		   NULL, " I'll do something about it for sure.", GetGlobalFlag(GLinemodeSp));
 
 	DisableWindow();
-	ModDrawCharacter(2, 5, "character/normal/ri1_WaraiA1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 5, "sprite/normal/ri1_warai_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
@@ -2552,10 +2552,10 @@ void main()
 		   NULL, "...She smiled, just like the missing mayor had when he encouraged Shion...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "black", 1000 );
+	DrawScene("black", 1000 );
 	FadeOutBGM( 2, 1000, TRUE );
 	FadeFilm( 1000, TRUE );
-	DrawScene( "bg_081", 400 );
+	DrawScene("background/ma_j3_01", 400 );
 	PlayBGM( 1, "msys13", 128, 0 );
 
 //「......ご、ごめん詩音＠　お、俺...俺、...ちょっと...梨花ちゃんのことが心配になっちゃって...！！＠
@@ -2674,22 +2674,22 @@ void main()
 	DisableWindow();
 	SetValidityOfInput( FALSE );
 	Wait( 3000 );
-	DrawBustshotWithFiltering( 6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 3000, TRUE );
-	DrawBustshot( 7, "Title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
 	Wait( 2000 );
 //	DrawBustshot( 5, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
 	Wait( 1000 );
 //	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
-	DrawScene( "black", 3000 );
+	DrawScene("black", 3000 );
 
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 
-	DrawSceneWithMask( "wata010_02", "mask_1900", 7, 0, 300 );
+	DrawSceneWithMask("text/wata010_02", "mask_1900", 7, 0, 300 );
 	SetValidityOfInput( FALSE );
 	Wait( 5000 );
 	SetValidityOfInput( TRUE );
-	DrawSceneWithMask( "black", "mask_1900", 7, 0, 300 );
+	DrawSceneWithMask("black", "mask_1900", 7, 0, 300 );
 
 }

@@ -57,7 +57,7 @@ void dialog005()
 	ModPlayVoiceLS(4, 2, "s02/02/130200130", 128, TRUE);
 	OutputLine(NULL, "「りりり梨花ちゃんのだけじゃなく、沙都子ちゃんのもかぁいいと思うぉ〜！！",
 		   NULL, "\"I-I-I-I think Satoko-chan is kyute, not only R-Rika-chan~!!", Line_WaitForInput);
-	PlaySE(4, "s02/02/130200131", 128, 64)
+	ModPlayVoiceLS(4, 2, "s02/02/130200131", 128, TRUE);
 	OutputLine(NULL, "　の〜ど〜ち〜んん〜〜！！！」",
 		   NULL, " U~vu~la~~!!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

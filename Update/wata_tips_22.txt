@@ -10,9 +10,9 @@ void main()
 	FadeOutBGM( 1, 1000, FALSE );
 	FadeOutBGM( 2, 1000, TRUE );
 	DisableWindow();
-	DrawScene( "black", 1000 );
+	DrawScene("black", 1000 );
 	PlayBGM( 1, "msys12", 128, 0 );
-	DrawSceneWithMask( "bg_192", "left", 0, 0, 1300 );
+	DrawSceneWithMask("background/ke_s2", "left", 0, 0, 1300 );
 
 //「あ、お疲れさまです！！＠
 	ClearMessage();
@@ -24,7 +24,7 @@ void main()
 
 
 	DisableWindow();
-	ModDrawCharacterWithFiltering(3, 11, "character/normal/oisi1_1_", "0", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	ModDrawCharacterWithFiltering(3, 11, "sprite/normal/oisi1_1_", "0", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「どうです＠　何か手掛かりはありました？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
@@ -87,7 +87,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ModDrawCharacter(3, 11, "character/normal/oisi1_2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 11, "sprite/normal/oisi1_2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「ありゃありゃ＠みんな、遠慮しないでいいんですよ＠　小宮山くん＠若い子から順に交代で休ませてあげて下さい。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
@@ -122,7 +122,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ModDrawCharacter(3, 11, "character/normal/oisi1_1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 11, "sprite/normal/oisi1_1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「で、課長＠例の請求なんですけど、まだ駄目そうです？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
@@ -160,7 +160,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ModDrawCharacter(3, 11, "character/normal/oisi1_2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 11, "sprite/normal/oisi1_2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「課長～＠ナゾナゾやってるんじゃないですよ＠　死んだ２人を含む４人が綿流しの晩に祭具殿と呼ばれる禁断の蔵に無断で入り込み、それを何者かが見ていた＠　ここまでは信頼できる情報なんです。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
@@ -193,7 +193,7 @@ void main()
 		   NULL, "\"Well, it's true that we don't have any pictures of the four of them sneaking in with cloth tied around their heads. ", GetGlobalFlag(GLinemodeSp));
 
 	DisableWindow();
-	ModDrawCharacter(3, 11, "character/normal/oisi1_1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 11, "sprite/normal/oisi1_1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //とにかく、４人は祭具殿の中で何かを見たんです＠　消されるくらいの何かを！＠
 	ModPlayVoiceLS(4, 11, "s20/11/440700173", 128, TRUE);
@@ -264,7 +264,7 @@ void main()
 
 
 	DisableWindow();
-	ModDrawCharacter(3, 11, "character/normal/oisi1_2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 11, "sprite/normal/oisi1_2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「......調整がいるってんなら、私、直接乗り込んで付けてきてもいいですよ＠　四課長はシゲちゃんでしょ＠　暴対は山海さん＠隣の雀荘で話した方が早そうな面子ですねぇ。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
@@ -305,7 +305,7 @@ void main()
 
 
 	DisableWindow();
-	DrawScene( "black", 400 );
+	DrawScene("black", 400 );
 
 //「わしは議員の園崎じゃ！＠　責任者を出さんかッ！！＠　早ぅせいッ！！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>園崎県議</color>", NULL, "<color=#f5e6d3>Sonozaki Representative</color>", NULL, Line_ContinueAfterTyping); }
@@ -380,7 +380,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawSceneWithMask( "bg_172", "left", 0, 0, 300 );
+	DrawSceneWithMask("background/ke2", "left", 0, 0, 300 );
 
 //「良いかッ？！　古手神社はそもそも皇暦２６００年に継ぐ２５００年の歴史を有する、神聖にして侵すべからずの聖地なのじゃ！＠　八百万の神々とオヤシロさまと先祖の霊を祀り、日が昇りてから沈むまで＠月が昇りてから沈むまで雛見沢を見守る尊い神社なのじゃ＠それを土足で踏みにじろうという馬鹿がいるッッ！！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>園崎県議</color>", NULL, "<color=#f5e6d3>Sonozaki Representative</color>", NULL, Line_ContinueAfterTyping); }
@@ -431,13 +431,13 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	SetValidityOfInput( FALSE );
-	DrawBustshotWithFiltering( 6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
-	DrawBustshot( 7, "Title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
 	Wait( 2000 );
-	DrawBustshot( 5, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	DrawBustshot(5, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
 	Wait( 1000 );
 	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
-	DrawScene( "black", 1000 );
+	DrawScene("black", 1000 );
 	SetValidityOfInput( TRUE );
 
 

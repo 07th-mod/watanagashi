@@ -10,7 +10,7 @@ void main()
 	FadeOutBGM( 1, 1000, FALSE );
 	FadeOutBGM( 2, 1000, TRUE );
 	DisableWindow();
-	DrawScene( "black", 1000 );
+	DrawScene("black", 1000 );
 	PlayBGM( 1, "msys13", 128, 0 );
 
 //『本日は貸切です。～雀荘「鈴」～￥
@@ -57,7 +57,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawSceneWithMask( "bg_071", "up", 0, 0, 1300 );
+	DrawSceneWithMask("background/jansou", "up", 0, 0, 1300 );
 
 //「大石さん＠　お疲れさまっす！！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
@@ -331,13 +331,13 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	SetValidityOfInput( FALSE );
-	DrawBustshotWithFiltering( 6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
-	DrawBustshot( 7, "Title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
 	Wait( 2000 );
-	DrawBustshot( 5, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	DrawBustshot(5, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
 	Wait( 1000 );
 	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
-	DrawScene( "black", 1000 );
+	DrawScene("black", 1000 );
 	SetValidityOfInput( TRUE );
 
 }

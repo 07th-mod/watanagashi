@@ -73,7 +73,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	DrawScene( "bg_198", 1000 );
+	DrawScene("background/so1", 1000 );
 	PlayBGM( 2, "lsys24", 128, 0 );
 
 //２３日午前中、園崎邸前を巡回していた警邏車両は邸内よりの悲鳴を聞き、緊急措置として邸内へ突入。
@@ -86,7 +86,7 @@ void main()
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	DrawScene( "bg_199", 1000 );
+	DrawScene("background/so2", 1000 );
 	PlayBGM( 2, "lsys24", 128, 0 );
 //　失踪中の容疑者の妹（園崎詩音）とクラスメート２名（前原圭一・竜宮礼奈）を保護した。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -108,7 +108,7 @@ void main()
 	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "bg_176", 1000 );
+	DrawScene("background/saiguden_01", 1000 );
 
 	PlayBGM( 2, "lsys24", 128, 0 );
 //　失踪者たちを殺害したと思われる園崎邸内の離れ地下奥、拷問室からは、失踪者４人（園崎お魎・公由喜一郎・古手梨花・北条沙都子）の毛髪、皮膚片、血液などを発見。
@@ -200,7 +200,7 @@ void main()
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
-	DrawScene( "bg_203", 1000 );
+	DrawScene("background/sora5", 1000 );
 
 	PlayBGM( 2, "lsys24", 128, 0 );
 //　地域に詳しい地元警察の見解では、雛見沢村内の信仰に対する冒涜行為を巡る、内部懲罰、リンチ事件ではないかと見ている。
@@ -222,7 +222,7 @@ void main()
 	FadeOutBGM( 2, 10, TRUE );
 	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
-	DrawScene( "bg_191", 1000 );
+	DrawScene("background/sinryou_soto3", 1000 );
 
 	PlayBGM( 2, "lsys24", 128, 0 );
 //　容疑者の妹で、もっとも監禁期間の長いと思われる失踪者（園崎詩音）から重要な手掛かりを得られるのではないかと期待したが、
@@ -258,7 +258,7 @@ void main()
 //■エピローグ...
 	FadeOutBGM( 1, 1000, TRUE );
 	DisableWindow();
-	DrawScene( "black", 1000 );
+	DrawScene("black", 1000 );
 //!sd
 
 	PlayBGM( 1, "msys12", 128, 0 );
@@ -300,7 +300,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawScene( "bg_203", 400 );
+	DrawScene("background/sora5", 400 );
 
 //　......俺は病院で検査を受けながら、...大石さんにあれやこれやと質問を受けたが＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -397,9 +397,9 @@ void main()
 		   NULL, "Wherever she was living... even now, Shion was spending her days in fear of Mion's shadow...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "black", 400 );
+	DrawScene("black", 400 );
 	DrawFilm( 2, 170, 170, 170, 255, 0, 1000, TRUE );
-	DrawSceneWithMask( "bg_196", "down", 0, 0, 300 );
+	DrawSceneWithMask("background/so_k1", "down", 0, 0, 300 );
 
 //　警察は今もあの園崎家の地下祭具殿を調べている＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -482,10 +482,10 @@ void main()
 		   NULL, ".........I never wanted to go back there again.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "black", 200 );
+	DrawScene("black", 200 );
 	FadeFilm( 1000, TRUE );
-	DrawScene( "white", 400 );
-	DrawScene( "bg_119", 400 );
+	DrawScene("white", 400 );
+	DrawScene("background/ma3", 400 );
 
 //　自宅には連日、興宮の園崎家、つまりヤクザの大幹部でもある魅音と詩音の両親が、大勢の子分を連れて謝罪にやって来た￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -528,10 +528,10 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawScene( "black", 3000 );
+	DrawScene("black", 3000 );
 	PlayBGM( 1, "msys11", 128, 0 );
-	DrawSceneWithMask( "sunset/bg_051", "left", 0, 0, 3000 );
-	ModDrawCharacter(2, 2, "character/sunset/re1a_defA1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	DrawSceneWithMask("background/hi5_01", "left", 0, 0, 3000 );
+	ModDrawCharacter(2, 2, "sprite/sunset/re1a_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「......そっか＠......引っ越しちゃうんだね＠......いつ？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -559,7 +559,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ModDrawCharacter(2, 2, "character/sunset/re1a_komaruA1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 2, "sprite/sunset/re1a_komaru_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「!s200.............................................!sd寂しくなるね＠...私一人しか、!w1000...残らない。＠
 //!s200
@@ -601,7 +601,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawScene( "bg_204", 1000 );
+	DrawScene("background/sora6", 1000 );
 
 //「..................こう考えることがあるんだ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -701,11 +701,11 @@ void main()
 
 
 	DisableWindow();
-	DrawScene( "black", 400 );
+	DrawScene("black", 400 );
 	FadeOutBGM( 1, 1000, TRUE );
 	FadeOutBGM( 2, 1000, TRUE );
 	PlayBGM( 1, "msys17", 128, 0 );
-	DrawSceneWithMask( "bg_180", "left", 0, 0, 300 );
+	DrawSceneWithMask("background/simen3", "left", 0, 0, 300 );
 
 //　園崎家が必死に隠していた事件も、わずかなほころびから雑誌社にすっぱ抜かれることになった￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -713,7 +713,7 @@ void main()
 		   NULL, "The incidents the Sonozaki family had been trying so hard to hide, too, were exposed to the magazines from this single tiny seam.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_223", "left", 0, 0, 300 );
+	DrawSceneWithMask("background/ke5", "left", 0, 0, 300 );
 
 //　芋づる的に近年の連続怪死事件が取り上げられ、...テレビのワイドショーは連日、このニュースを取り上げた￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -735,8 +735,8 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawScene( "white", 1000 );
-	DrawScene( "bg_039", 400 );
+	DrawScene("white", 1000 );
+	DrawScene("background/m_hi3", 400 );
 
 //　俺の人生にとって＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -851,7 +851,7 @@ void main()
 		   NULL, "The real summer... was just before our eyes.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "white", 3000 );
+	DrawScene("white", 3000 );
 
 
 //■深夜
@@ -859,9 +859,9 @@ void main()
 //gosub *Ch_mi_si
 
 	DisableWindow();
-	DrawScene( "black", 1000 );
+	DrawScene("black", 1000 );
 	PlayBGM( 1, "msys13", 128, 0 );
-	DrawScene( "bg_081", 1000 );
+	DrawScene("background/ma_j3_01", 1000 );
 
 //　今でも、......夜の１０時になると...詩音、いや魅音から電話が掛かってくる気がする＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -942,7 +942,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawSceneWithMask( "black", "down", 0, 0, 1300 );
+	DrawSceneWithMask("black", "down", 0, 0, 1300 );
 
 //　消灯する￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1015,7 +1015,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawScene( "bg_153", 1000 );
+	DrawScene("background/mati_o1", 1000 );
 
 //　事件から解放されて、...俺が最初に行ったのが、あのおもちゃ屋だった＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1038,7 +1038,7 @@ void main()
 		   NULL, "...I was refused once when they said they wouldn't sell the display products... but when they realized I was Survivor A from 'that incident,' they immediately consented.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "black", 400 );
+	DrawScene("black", 400 );
 
 //　...だが、買っても渡す機会は、......もう永遠に訪れないかもしれない＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1064,12 +1064,12 @@ void main()
 
 //setwindow 31,16,22,16,26,26,0,2,20,1,1,#ffffff,0,0,639,479
 	DisableWindow();
-	DrawScene( "night/bg_117", 1000 );
+	DrawScene("background/ma2", 1000 );
 	SetValidityOfInput( FALSE );
 	Wait( 5000 );
 	SetValidityOfInput( TRUE );
 //setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,639,479
-	DrawScene( "black", 1000 );
+	DrawScene("black", 1000 );
 //!sd
 //＜夜の間を示す、そんな時間の間を演出して下さいにゃ～♪
 
@@ -1148,7 +1148,7 @@ void main()
 
 
 	DisableWindow();
-	DrawScene( "bg_081", 400 );
+	DrawScene("background/ma_j3_01", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
@@ -1214,7 +1214,7 @@ void main()
 		   NULL, "In the light at the gate... despite it being so late, I saw someone.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "night/bg_117", 400 );
+	DrawScene("background/ma2", 400 );
 
 //　それは砂利を拾い上げると、...この窓に向けて投げつけていた＠...それが窓に当たり、コツンという音を立てる＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1277,7 +1277,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ModDrawCharacter(2, 3, "character/night/me2_DefA1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 3, "sprite/night/me2_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //　み...見間違いなんかじゃない＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1337,7 +1337,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawSceneWithMask( "black", "left", 0, 0, 300 );
+	DrawSceneWithMask("black", "left", 0, 0, 300 );
 
 //　............階段を降りる直前に急ブレーキ￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1367,7 +1367,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawSceneWithMask( "bg_081", "right", 0, 0, 300 );
+	DrawSceneWithMask("background/ma_j3_01", "right", 0, 0, 300 );
 
 //　だから部屋へ一度戻り、.........あの人形を手に取った＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1397,8 +1397,8 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawSceneWithMask( "black", "left", 0, 0, 300 );
-	DrawSceneWithMask( "bg_021", "left", 0, 0, 300 );
+	DrawSceneWithMask("black", "left", 0, 0, 300 );
+	DrawSceneWithMask("background/ma_g2", "left", 0, 0, 300 );
 
 //　サンダルを履き、!w800カギを開け、!w800チェーンを開け...、!w800表へ飛び出る￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1428,7 +1428,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawSceneWithMask( "night/bg_117", "left", 0, 0, 300 );
+	DrawSceneWithMask("background/ma2", "left", 0, 0, 300 );
 
 //「......はぁ、!w700......はぁ、!w700......魅音...！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -1454,7 +1454,7 @@ void main()
 
 
 	DisableWindow();
-	ModDrawCharacter(2, 3, "character/night/me2_WinkA1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 3, "sprite/night/me2_wink_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「あはははは、お久しぶり～＠...どう＠　元気にしてた？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -1503,7 +1503,7 @@ void main()
 
 
 	DisableWindow();
-	ModDrawCharacter(2, 3, "character/night/me2_WaraiA1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 3, "sprite/night/me2_warai_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「............本当はいけないよ＠...えへへへ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -1552,7 +1552,7 @@ void main()
 
 
 	DisableWindow();
-	ModDrawCharacter(2, 3, "character/night/me2_DefA1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 3, "sprite/night/me2_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「...最後にお話したかったから。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -1585,7 +1585,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawSceneWithMask( "black", "down", 0, 0, 300 );
+	DrawSceneWithMask("black", "down", 0, 0, 300 );
 
 //「.........私ね、!w700......えへへへ、!w800......もう、!w1000......ここにはいられない...。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -1809,18 +1809,18 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawScene( "black", 200 );
-	DrawScene( "toketu1a", 300 );
+	DrawScene("black", 200 );
+	DrawScene("toketu1a", 300 );
 	PlaySE( 1, "wa_035", 128, 64 );
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
-	DrawScene( "toketu1b", 300 );
+	DrawScene("toketu1b", 300 );
 	PlaySE( 1, "wa_035", 128, 64 );
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
-	DrawScene( "toketu1c", 300 );
+	DrawScene("toketu1c", 300 );
 	PlaySE( 1, "wa_035", 128, 64 );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
@@ -1862,7 +1862,7 @@ void main()
 		   NULL, " is burning.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "bg_122", 1000 );
+	DrawScene("background/moon", 1000 );
 
 //　.........魅音が!w1000......肉厚の...ナイフのような包丁のような...刃物を、!w1200...突き立てて......＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2047,7 +2047,7 @@ void main()
 	ClearMessage();
 	SetSpeedOfMessage( FALSE, 0, );
 	DisableWindow();
-	DrawBustshot( 5, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 1000, TRUE );
+	DrawBustshot(5, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 1000, TRUE );
 
 //　...あの日、魅音が俺に残した最後の言葉が...蘇￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2058,7 +2058,7 @@ void main()
 	DisableWindow();
 //	DrawFilm( 2, 170, 0, 0, 255, 0, 1000, TRUE );
 //	DrawScene( "wata_mion01", 1000 );
-	ModDrawCharacter(2, 3, "character/normal/me2_SinmyouA1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, TRUE );
+	ModDrawCharacter(2, 3, "sprite/normal/me2_sinmyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, TRUE );
 
 //「......今日を境に魅音が戻ってくることはもうない。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -2100,8 +2100,8 @@ void main()
 		   NULL, " ......The demon.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "night/bg_117", "up", 0, 0, 1300 );
-	ModDrawCharacter(2, 3, "character/night/me2_Hig_MajiA1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, TRUE );
+	DrawSceneWithMask("background/ma2", "up", 0, 0, 1300 );
+	ModDrawCharacter(2, 3, "sprite/night/me2_hig_maji_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, TRUE );
 //	FadeBustshotWithFiltering( 5, "up", 1, FALSE, 0, 0, 300, TRUE );
 //	FadeFilm( 1000, TRUE );
 //print 6
@@ -2130,7 +2130,7 @@ void main()
 
 
 	SetValidityOfWindowDisablingWhenGraphicsControl( FALSE );
-	DrawScene( "black", 1000 );
+	DrawScene("black", 1000 );
 //	DrawScene( "wata_mion02", 1000 );
 //	DrawFilm( 2, 170, 170, 170, 255, 0, 1000, TRUE );
 //print 2
@@ -2236,7 +2236,7 @@ void main()
 	DisableWindow();
 //	DrawScene( "black", 1000 );
 //	FadeFilm( 1000, TRUE );
-	DrawScene( "bg_122", 1000 );
+	DrawScene("background/moon", 1000 );
 
 //　もう一度だけ魅音に会わせてくれた幸運と＠......それを目の前で引き裂いてくれた不運と＠......感謝すればいいのか、呪えばいいのか＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2456,7 +2456,7 @@ void main()
 
 	ClearMessage();
 	DisableWindow();
-	DrawScene( "black", 6000 );
+	DrawScene("black", 6000 );
 	SetSpeedOfMessage( FALSE, 0, );
 //if %kaisou_mode = 1 goto *kaisou_mode
 

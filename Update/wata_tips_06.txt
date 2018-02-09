@@ -10,7 +10,7 @@ void main()
 	FadeOutBGM( 1, 1000, FALSE );
 	FadeOutBGM( 2, 1000, TRUE );
 	DisableWindow();
-	DrawScene( "black", 1000 );
+	DrawScene("black", 1000 );
 	PlayBGM( 1, "msys02", 128, 0 );
 
 //「...だから初めましてじゃないですって＠　昨日まで毎日、お会いしてたじゃないですか。＠
@@ -47,7 +47,7 @@ void main()
 		   NULL, "I had initially refused, but Shion insisted, and so both my bicycle and I ended up stuffed in the car.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "bg_103", "up", 0, 0, 1300 );
+	DrawSceneWithMask("background/kuruma4", "up", 0, 0, 1300 );
 
 //　車は今、一路、雛見沢へのでこぼこした道を走っている最中だ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -160,8 +160,8 @@ void main()
 		   NULL, " I'll walk from there.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask( "black", "down", 0, 0, 1300 );
-	DrawScene( "bg_249", 400 );
+	DrawSceneWithMask("black", "down", 0, 0, 1300 );
+	DrawScene("background/m_y1", 400 );
 
 //　望みどおりの場所で車を停まる＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -188,7 +188,7 @@ void main()
 
 
 	DisableWindow();
-	ModDrawCharacter(2, 15, "character/night/kasa_1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 15, "sprite/night/kasa_1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 
 //「圭一さんでしたか＠お名前。＠
@@ -210,7 +210,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ModDrawCharacter(2, 15, "character/night/kasa_2_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 15, "sprite/night/kasa_2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 
 
@@ -236,7 +236,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ModDrawCharacter(2, 15, "character/night/kasa_1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 15, "sprite/night/kasa_1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 
 //「ですが、魅音さんと同じで、根はやさしい方なんですよ。＠
@@ -264,7 +264,7 @@ void main()
 		   NULL, " ...Hey, back me up here.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(2, 6, "character/night/si1a_WinkA1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 6, "sprite/night/si1a_wink_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「じゃあね圭ちゃん！　また会いましょうね＠姉にもよろしくお伝え下さい＠私も明日から雛見沢の学校に通おうかな。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -291,7 +291,7 @@ void main()
 
 
 	DisableWindow();
-	ModDrawCharacter(2, 6, "character/night/si1b_WaraiB1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 6, "sprite/night/si1b_warai_b1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「わ、それはすごくひどいことですよ、圭ちゃん...！￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -332,13 +332,13 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	SetValidityOfInput( FALSE );
-	DrawBustshotWithFiltering( 6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
-	DrawBustshot( 7, "Title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
 	Wait( 2000 );
-	DrawBustshot( 5, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	DrawBustshot(5, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
 	Wait( 1000 );
 	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
-	DrawScene( "black", 1000 );
+	DrawScene("black", 1000 );
 	SetValidityOfInput( TRUE );
 
 
