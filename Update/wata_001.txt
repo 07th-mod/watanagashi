@@ -3801,10 +3801,10 @@ void main()
 	PlayVoice(4, "s19/01/hr_kei09510", 128);
 	OutputLine(NULL, "　イカサマがあるとしたら何だよ！",
 		   NULL, "How am I supposed to cheat?", Line_Continue);
-			 Wait (1200);
+	Wait (1200);
 	OutputLine(NULL, "　二人に目をつぶって百数えてもらって、その隙にルーレットに細工でもするのかッ？！",
 		   NULL, " Tell those two to close their eyes and count to a hundred while I rig the wheel?!", Line_Continue);
-			 Wait (3500);
+	Wait (3500);
 	OutputLine(NULL, "……そんなの、出来るわけねぇだろッ？！？！」",
 		   NULL, " ...You know there's no way I can do that!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
