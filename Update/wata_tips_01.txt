@@ -37,7 +37,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/01/440100045", 128);
 	OutputLine(NULL, "「なんだなんだ。",
-		   NULL, "\"What's that?", Line_WaitForInput);
+		   NULL, "\"What's that?", Line_Continue);
+	Wait (500);
 	OutputLine(NULL, "じゃあ今日の部活はお流れってわけか。」",
 		   NULL, " No club today then?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -67,7 +68,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/03/440300048", 128);
 	OutputLine(NULL, "「そんなに部活がやりたかったら、おじさん抜きでやってもいいけど？",
-		   NULL, "\"If you really want to do club today, then you can always do it without this old man.", Line_WaitForInput);
+		   NULL, "\"If you really want to do club today, then you can always do it without this old man.", Line_Continue);
+	Wait (3500);
 	OutputLine(NULL, "　部活ロッカーにゲームがいっぱい入ってるからさ。",
 		   NULL, " The club locker is stuffed full with games.", Line_WaitForInput);
 	PlayVoice(4, "s20/03/440300049", 128);

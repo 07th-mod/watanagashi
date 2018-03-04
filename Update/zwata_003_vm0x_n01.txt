@@ -1,0 +1,18 @@
+void main()
+{
+}
+
+void dialog001()
+{
+	PlayVoice(4, "s19/03/500300003", 128);
+	OutputLine(NULL, "　そりゃもう、熱中的なくらいに！！」",
+		NULL, " Oh, passionately so!!\"", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog002()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s19/03/500300064", 128);
+	OutputLine(NULL, "「かつてフランスからある高名なシェフが来日した時、ホテルの人たちが様々な材料をフランスから空輸したんだそうです。",
+		NULL, "\"There's a story about how when a famous chef from France came to Japan, the people from the hotel he was staying at had a whole bunch of ingredients from France imported. ", GetGlobalFlag(GLinemodeSp));
+}

@@ -20,7 +20,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s19/03/990300488", 128);
 	OutputLine(NULL, "「……午後の授業ってさ、どーしてこー眠いんだろーねぇ。」",
-		   NULL, "\"I wonder why afternoons always make you feel sleepy like this.\"", GetGlobalFlag(GLinemodeSp));
+		NULL, "\"I wonder why afternoons always make you feel sleepy like this.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1026,7 +1026,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s19/01/hr_kei10870", 128);
 	OutputLine(NULL, "　おいレナ、かき氷でイチゴなんか頼むかよ？！",
-		   NULL, "Hey Rena, would you actually order strawberry shaved ice!?", Line_WaitForInput);
+		   NULL, "Hey Rena, would you actually order strawberry shaved ice!?", Line_Continue);
+	Wait (2000);
 	OutputLine(NULL, "　夏祭りで一番早く売り切れるのはメロンって決まってるんだぜ？！？！」",
 		   NULL, " The first thing that always sells out at summer festivals is always melon, isn't it!?!?\"", Line_Normal);
 	ClearMessage();
@@ -2403,21 +2404,21 @@ void main()
 		   NULL, " Don't say my something like my soul is destituuuuuuuuUUuuuuuuuuuute!!", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 2400 );
 	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "　大体、魅音とレナの答えは何だよ！",
 		   NULL, " Besides, what's with Mion and Rena's answers, anyways!", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 500 );
+	Wait( 1600 );
 	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "　魚類じゃないぞそれ！",
 		   NULL, " Those aren't even fish!", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 500 );
+	Wait( 600 );
 	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "　哺乳類だしッ！！」",
@@ -3448,11 +3449,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s19/03/990300641", 128);
-	OutputLine(NULL, "　こ〜れで股間にでっかいのが付いてなきゃ本物の女の子なのにな〜〜！！」",
-		   NULL, "If o~nly you didn't have this big thing dangling between your legs you'd be a real girl~~!!\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_002_vm0x_n01","dialog011");}
+	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_002_vm00_n01","dialog011");}
+	//VoiceMatchingEnd
 
 
 //　そういって俺のスカートをめくろうとする！＠　わぁあぁ！＠　今だけはダメだ！＠　絶対に魅音たちには見せられない男の事情がぁあぁあぁああッ！￥
