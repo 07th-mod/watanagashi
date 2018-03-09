@@ -13,6 +13,25 @@ void main()
 	FadeOutBGM( 2, 1000, TRUE );
 
 	DisableWindow();
+	DrawScene( "text/monologue_wata1", 1000 );
+	PlayVoice(3, "s00/n/wata001", 256);
+	Wait( 4000 );
+	PlayVoice(3, "s00/n/wata002", 256);
+	Wait( 4000 );
+	PlayVoice(3, "s00/n/wata003", 256);
+	Wait( 6500 );
+	DrawScene( "text/monologue_wata2", 1000 );
+	PlayVoice(3, "s00/n/wata004", 256);
+	Wait( 8500 );
+	DrawScene( "text/title_wata", 1000 );
+	PlayVoice(3, "s00/n/wata006", 256);
+	Wait( 1500 );
+	DrawScene( "text/monologue_wata3", 1000 );
+	PlayVoice(3, "s00/n/wata007", 256);
+	Wait( 5000 );
+	PlayVoice(3, "s00/n/wata008", 256);
+	Wait( 4500 );
+	
 	DrawSceneWithMask( "white", "c", 0, 0, 300 );
 	DrawSceneWithMask( "sunset/bg_038", "m1", 0, 0, 1300 );
 	PlayBGM( 1, "msys01", 128, 0 );
