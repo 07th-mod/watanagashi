@@ -158,3 +158,10 @@ void dialog011()
 	OutputLine(NULL, "　魅音は跡継ぎだとか言ってたけど……まさか…そのヤクザの…？",
 		   NULL, "She'd mentioned Mion being a successor...... but... to a yakuza group...?", Line_Normal);
 }
+
+void dialog012()
+{
+	PlayVoice(4, "s02/01/130100231", 128);
+	OutputLine(NULL, "「…魅音、風邪の方はいいのかよ。",
+		NULL, "\"...Mion, how is your cold doing?", Line_WaitForInput);
+}
