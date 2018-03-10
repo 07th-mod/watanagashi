@@ -50,3 +50,11 @@ void dialog004()
 		   NULL, " ...It could be that the people who disappeared in past years were scattered outside the prefecture like this too.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
+
+void dialog005()
+{
+	PlayVoice(4, "s20/19/443100017", 128);
+	OutputLine(NULL, "　このまま岐阜へ直行します！！」",
+	NULL, " I'll head straight for Gifu!!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}

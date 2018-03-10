@@ -46,11 +46,10 @@ void main()
 	PlayVoice(4, "s20/19/443100016", 128);
 	OutputLine(NULL, "　俺もスタンバイＯＫしました！！",
 		   NULL, " I'm ready to go, sir!!", Line_WaitForInput);
-	PlayVoice(4, "s20/19/443100017", 128);
-	OutputLine(NULL, "　このまま岐阜へ直行します！！」",
-		   NULL, " I'll head straight for Gifu!!\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_tips_13_vm0x_n01","dialog005");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_tips_13_vm00_n01","dialog005");}
+	//VoiceMatchingEnd
 
 
 	DisableWindow();
@@ -147,9 +146,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/11/440700125", 128);
 	OutputLine(NULL, "「今、小宮山くんたちが興宮の歯科医を根こそぎ夜襲してます。",
-		   NULL, "\"Komiyama-kun and a few others are performing a thorough night raid on the dentist in Okinomiya.", Line_WaitForInput);
+		NULL, "\"Komiyama-kun and a few others are performing a thorough night raid on the dentist in Okinomiya.", Line_Continue);
+	Wait( 4000 );
 	OutputLine(NULL, "カルテで歯型照合するしかないでしょ。",
-		   NULL, " All we can do is hope a tooth matches some medical records.", GetGlobalFlag(GLinemodeSp));
+		NULL, " All we can do is hope a tooth matches some medical records.", GetGlobalFlag(GLinemodeSp));
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_tips_13_vm0x_n01","dialog003");}
