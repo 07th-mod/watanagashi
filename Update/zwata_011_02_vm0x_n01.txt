@@ -34,3 +34,11 @@ void dialog003()
 		   NULL, " There weren't any suspicious wooden boxes or containers packed in there?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 }
+
+void dialog004()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s02/11/130700237", 128);
+	OutputLine(NULL, "　…管轄がお隣の県警さんでね。",
+		NULL, "...That one falls under the neighbouring Prefecture's police department.", Line_WaitForInput);
+}
