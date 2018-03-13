@@ -507,14 +507,7 @@ void main()
 	OutputLine(NULL, "「…………………警察も必死に探してくれてる。",
 		   NULL, "\"............The police are looking as best they can, too.", Line_WaitForInput);
 	PlayVoice(4, "s02/02/130200401", 128);
-	OutputLine(NULL, "…きっと、",
-		   NULL, " ...They'll...", Line_Continue);
-
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 1000 );
-	// (backup) SetValidityOfInput( TRUE );
-
-	OutputLine(NULL, "……見つかるから。",
+	OutputLine(NULL, "…きっと見つかるから。",
 		   NULL, " find them for sure.", Line_WaitForInput);
 	PlayVoice(4, "s02/02/130200402", 128);
 	OutputLine(NULL, "待ってよ。",
@@ -582,7 +575,7 @@ void main()
 		   NULL, "\"Do you mean...", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 600 );
+	Wait( 2400 );
 	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……かな。」",
@@ -1005,7 +998,7 @@ void main()
 		   NULL, "\"............What...", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 1000 );
+	Wait( 400 );
 	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……これ…。」",

@@ -226,7 +226,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/11/440700194", 128);
 	OutputLine(NULL, "「９、１０！！",
-		   NULL, "\"Nine, ten!!", Line_WaitForInput);
+		   NULL, "\"Nine, ten!!", Line_Continue);
+	Wait ( 7000 );
 	OutputLine(NULL, "　あ〜あ〜、誰も出てかないよ。",
 		   NULL, " Ah, no one's leaving.", Line_WaitForInput);
 	PlayVoice(4, "s20/11/440700195", 128);
