@@ -18,3 +18,12 @@ void dialog001()
 	OutputLine(NULL, "車ならＪＡＦを呼んで扉をこじ開ける。",
 		   NULL, " For cars, you call the JAF and they'll pry open your door. ", GetGlobalFlag(GLinemodeSp));
 }
+
+void dialog002()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/11/440700183", 128);
+	OutputLine(NULL, "　近日中に鷹野殺しは岐阜県警に譲り、村長たちの失踪は行方不明扱いで生活課に委ねるようです。」",
+		   NULL, "In the coming days, we'll hand off Takano's murder to the Gifu Police, and give the missing persons case of the disappearance of the mayor and the others to the community division.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+}
