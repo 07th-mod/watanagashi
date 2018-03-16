@@ -14,7 +14,7 @@ void dialog001()
 		   NULL, "\"At the time... Onigafuchi Village had already lost its impenetrability.", Line_WaitForInput);
 	PlayVoice(4, "s02/03/130300361_2", 128);
 	OutputLine(NULL, "……かつて仙人と崇められた村人たちは、奇異な目で見下され…。",
-		   NULL, " ...The villagers, once worshipped as transcendents, were now on the receiving end of inhuman treatment...", GetGlobalFlag(GLinemodeSp));
+		   NULL, " ...The villagers, once worshipped as transcendents, were now looked down upon as freaks...", GetGlobalFlag(GLinemodeSp));
 
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
@@ -22,8 +22,8 @@ void dialog001()
 //　...神聖な鬼ヶ淵村は、いつの間にか、業病患者の隔離集落の成れの果てであるという根も葉もないレッテルを貼られ、...苦難の時代を迎えることになったのでした。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s02/03/130300361_3", 128);
-	OutputLine(NULL, "　…神聖な鬼ヶ淵村は、いつの間にか、業病患者の隔離集落の成れの果てであるという根も葉もないレッテルを貼られ、",
-		   NULL, "The sacred Onigafuchi Village had been groundlessly labeled an isolated village of those afflicted with incurable diseases, a mere shadow of its former self...", Line_WaitForInput);
+	OutputLine(NULL, "　…神聖な鬼ヶ淵村は、いつの間にか、およそ真実とはかけ離れた根も葉もないレッテルを貼られ、",
+		   NULL, "Far from the truth, the sacred Onigafuchi Village had been groundlessly labelled...", Line_WaitForInput);
 	PlayVoice(4, "s02/03/130300361_4", 128);
 	OutputLine(NULL, "…苦難の時代を迎えることになったのでした。」",
 		   NULL, " and stood on the precipice of an era of hardship.\"", Line_Normal);
