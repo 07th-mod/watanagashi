@@ -318,7 +318,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "s20/06/440600070", 128, TRUE);
 	OutputLine(NULL, "「もちろん来てますよ。",
-		   NULL, "\"They're coming, of course.", Line_WaitForInput);
+		   NULL, "\"They're coming, of course.", Line_Continue);
+	Wait ( 1800 );
 	OutputLine(NULL, "今日はお招きいただき、ありがとうございますね。",
 		   NULL, " Thank you for inviting us today.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "s20/06/440600071", 128, TRUE);
@@ -669,10 +670,11 @@ void main()
 	ModDrawCharacter(3, 4, "sprite/normal/sa1a_akuwarai_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 400, TRUE );
 
 //「意見も何も...、今回のシナリオで解明編なのではありませんことー＠　犯人は魅音さん＠　諸悪の根源はぜ～んぶ園崎家＠　それで決着でございませんの。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 4, "s20/04/440400179", 128, TRUE);
-	OutputLine(NULL, "「意見も何も…、今回のシナリオで解明編なのではありませんことー？",
-		   NULL, "\"An honest opinion... was the story this time not an answer chapter?", Line_WaitForInput);
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zomake_02_vm0x_n01","dialog000");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zomake_02_vm00_n01","dialog000");}
+	//VoiceMatchingEnd
+
 	ModPlayVoiceLS(4, 4, "s20/04/440400180", 128, TRUE);
 	OutputLine(NULL, "　犯人は魅音さん！",
 		   NULL, " The criminal was Mion-san!", Line_WaitForInput);
