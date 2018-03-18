@@ -979,9 +979,10 @@ void main()
 
 //「...魅音、風邪の方はいいのかよ＠眠いのは寝不足じゃなくて、風邪薬の副作用なんだろ？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "s02/01/130100231", 128, TRUE);
-	OutputLine(NULL, "「…魅音、風邪の方はいいのかよ。",
-		   NULL, "\"...Mion, how is your cold doing?", Line_WaitForInput);
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_009_vm0x_n01","dialog012");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_009_vm00_n01","dialog012");}
+	//VoiceMatchingEnd
 	ModPlayVoiceLS(4, 1, "s02/01/130100232", 128, TRUE);
 	OutputLine(NULL, "眠いのは寝不足じゃなくて、風邪薬の副作用なんだろ？」",
 		   NULL, " You're sleepy because of the medicine, not from lack of sleep, right?\"", GetGlobalFlag(GLinemodeSp));

@@ -2340,7 +2340,7 @@ void main()
 		   NULL, "...You've got me there.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "s02/03/130300338", 128, TRUE);
 	OutputLine(NULL, "……参った",
-		   NULL, " ...You've got me,", Line_WaitForInput);
+		   NULL, " ...You've got me,", Line_Continue);
 
 	SetValidityOfInput( FALSE );
 	Wait( 400 );
@@ -4298,7 +4298,7 @@ void main()
 		   NULL, "Some were not the Sonozaki family, but were rather related to the others, the Kimiyoshi family and the Furude family.", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 1000 );
+	Wait( 8000 );
 	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……その全ての中心に私がいたと思う。」",

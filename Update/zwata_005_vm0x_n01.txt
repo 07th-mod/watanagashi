@@ -210,4 +210,9 @@ void dialog014()
 
 void dialog015()
 {
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "s19/00/otaa50002", 128, TRUE);
+	OutputLine(NULL, "「今度はミーのおズボンにぶっかけさせて、一層念入りにフキフキしてもらうニョリ！！」",
+			 NULL, "\"This time we'll have her spill everything on my pants, and have her give an especially thorough wipey-wipey!!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 }

@@ -194,3 +194,12 @@ void dialog010()
 		   NULL, " That's how it has to beeeeeeeee!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
+
+void dialog011()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "s19/03/990300641", 128, TRUE);
+	OutputLine(NULL, "　こ〜れである一部分を除けば、本物の女の子なのにな〜〜！！」",
+	NULL, "If o~nly you didn't have that one body part, you'd be a real girl~~!!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+}

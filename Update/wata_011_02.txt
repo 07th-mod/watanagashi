@@ -646,11 +646,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-//　...管轄が岐阜県さんでね＠あちらさん、自分たちの縄張りの事件だからって、あんまり協力的じゃないんですよ＠/
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "s02/11/130700237", 128, TRUE);
-	OutputLine(NULL, "　…管轄が岐阜県さんでね。",
-		   NULL, "...That one falls under the Gifu Prefecture's police department.", Line_WaitForInput);
+//　...管轄が岐阜県さんでね＠あちらさん、自分たちの縄張りの事件だからって、あんまり協力的じゃないんですよ
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_011_02_vm0x_n01","dialog004");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_011_02_vm00_n01","dialog004");}
+	//VoiceMatchingEnd
 	ModPlayVoiceLS(4, 11, "s02/11/130700238", 128, TRUE);
 	OutputLine(NULL, "あちらさん、自分たちの縄張りの事件だからって、あんまり協力的じゃないんですよ。",
 		   NULL, " They haven't been very cooperative, even though it happened in our territory.", Line_WaitForInput);
@@ -1742,28 +1742,28 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "s02/11/130700298", 128, TRUE);
 	OutputLine(NULL, "「なははは、",
-		   NULL, "\"Na-ha-ha-ha.", Line_Continue);
+		NULL, "\"Na-ha-ha-ha.", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 1000 );
+	Wait( 2200 );
 	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…ですから、",
-		   NULL, " ...I'm saying,", Line_Continue);
+		NULL, " ...I'm saying,", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 1200 );
 	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "あなただけが、",
-		   NULL, " that you alone", Line_Continue);
+		NULL, " that you alone", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 1600 );
 	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "最後の生き残りなんじゃないですか。",
-		   NULL, " have been left alive, right?", Line_Continue);
+		NULL, " have been left alive, right?", Line_Continue);
 	StopSE( 3 );
 	PlaySE( 3, "wa_023", 128, 64 );
 	OutputLineAll(NULL, "", Line_WaitForInput);
@@ -1801,14 +1801,14 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "s02/11/130700300", 128, TRUE);
 	OutputLine(NULL, "「あの晩に、富竹ジロウさんと鷹野三四さんが死に、",
-		   NULL, "\"Jirou Tomitake-san and Miyo Takano-san died that night,", Line_Continue);
+		NULL, "\"Jirou Tomitake-san and Miyo Takano-san died that night,", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 1500 );
+	Wait( 4000 );
 	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "翌日、園崎詩音さんが失踪しました。",
-		   NULL, " and Shion Sonozaki disappeared the next day.", Line_WaitForInput);
+		NULL, " and Shion Sonozaki disappeared the next day.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 11, "s02/11/130700301", 128, TRUE);
 	OutputLine(NULL, "…あなただけが、無事に今日までを過ごしてるんです。",
 		   NULL, " ...Only you are still safe and sound at this point.", Line_WaitForInput);
@@ -4175,9 +4175,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "s02/06/130600521", 128, TRUE);
 	OutputLine(NULL, "　…一緒に入った鷹野さんたちは、その後すぐに殺されてしまいました…。",
-		   NULL, "...Takano-san and Tomitake-san, who went in with us, were killed shortly afterward...", Line_WaitForInput);
+		NULL, "...Takano-san and Tomitake-san, who went in with us, were killed shortly afterward...", Line_Continue);
+	Wait ( 4000 );
 	OutputLine(NULL, "それも…あんな惨い最期を……。",
-		   NULL, " They met such... miserable ends......", GetGlobalFlag(GLinemodeSp));
+		NULL, " They met such... miserable ends......", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　あの日から、...いつ私も襲われるのではないかと...怯えています...＠
@@ -4192,16 +4193,17 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "s02/06/130600523", 128, TRUE);
 	OutputLine(NULL, "　……公由のお爺ちゃんしか助けてくれる人がいません…。",
-		   NULL, "...There was nobody except old man Kimiyoshi who would help me...", Line_WaitForInput);
+		NULL, "...There was nobody except old man Kimiyoshi who would help me...", Line_Continue);
+	Wait ( 3000 );
 	OutputLine(NULL, "……だからお爺ちゃん、",
-		   NULL, " ...So I...", Line_ContinueAfterTyping);
+		NULL, " ...So I...", Line_ContinueAfterTyping);
 
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……助けて、って………。",
-		   NULL, " I asked him to save me......", Line_Normal);
+		NULL, " I asked him to save me......", Line_Normal);
 	ClearMessage();
 
 //「......公由のお爺ちゃん、...怒らなかった＠......そして、にっこり笑って、詩音ちゃんがちゃんと反省してるなら、鬼隠しになんかなるものか、...って＠...本当に......笑いながら!w1000......任せなさい...って.........。!w800......ぅぅ...ッ！！＠
@@ -4991,7 +4993,7 @@ void main()
 
 //!s0
 	SetSpeedOfMessage( TRUE, 127, );
-	ModPlayVoiceLS(4, 6, "s02/06/130600546", 128, TRUE);
+
 	OutputLine(NULL, "く",
 		   NULL, " Hu...", Line_Continue);
 
@@ -5008,7 +5010,7 @@ void main()
 	DrawScene("scene/003", 100 );
 
 	PlaySE( 3, "wa_027", 128, 64 );
-
+	ModPlayVoiceLS(4, 6, "s02/06/130600546", 128, TRUE);
 	OutputLine(NULL, "け",
 		   NULL, " Hee", Line_Continue);
 
@@ -5020,7 +5022,6 @@ void main()
 
 	OutputLine(NULL, "けけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけ」",
 		   NULL, " hee hee hee hee hee hee hee hee hee hee hee hee hee hee hee hee hee hee hee hee hee hee hee hee hee hee hee hee hee hee hee hee hee hee hee hee hee hee\"", Line_Normal);
-
 
 	SetSpeedOfMessage( FALSE, 0, );
 	ClearMessage();
@@ -5096,7 +5097,7 @@ void main()
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 
-	DrawSceneWithMask("text/wata011_02", "mask_1900", 7, 0, 300 );
+	DrawSceneWithMask("tips/wata011_02", "mask_1900", 7, 0, 300 );
 	SetValidityOfInput( FALSE );
 	Wait( 5000 );
 	SetValidityOfInput( TRUE );

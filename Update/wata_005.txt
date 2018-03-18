@@ -3390,11 +3390,10 @@ void main()
 
 
 //「今度はミーのおズボンにぶっかけさせて、ぱんつの中までフキフキしてもらうニョリ！！＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "s19/00/otaa50002", 128, TRUE);
-	OutputLine(NULL, "「今度はミーのおズボンにぶっかけさせて、ぱんつの中までフキフキしてもらうニョリ！！」",
-		   NULL, "\"This time we'll have her spill everything on my pants, and have her wipey-wipey right down to my underwear!!\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+//VoiceMatching
+if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_005_vm0x_n01","dialog015");}
+if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_005_vm00_n01","dialog015");}
+//VoiceMatchingEnd
 
 
 //　ほんの小一時間前に起こったフキフキ騒動...＠それを今度は自分が再現しようと...穢れた男たちの欲望が襲い掛かろうとしてるッ...！！￥
@@ -8560,7 +8559,7 @@ void main()
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 
-	DrawSceneWithMask("text/wata005", "mask_1900", 7, 0, 300 );
+	DrawSceneWithMask("tips/wata005", "mask_1900", 7, 0, 300 );
 	SetValidityOfInput( FALSE );
 	Wait( 5000 );
 	SetValidityOfInput( TRUE );

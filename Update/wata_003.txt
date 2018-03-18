@@ -158,9 +158,10 @@ void main()
 	ModPlayVoiceLS(4, 3, "s19/03/500300002", 128, TRUE);
 	OutputLine(NULL, "…どういうわけかカレーにだけはうるさいんだよ！",
 		   NULL, " ...for some unfathomable reason is a stickler for curry!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "s19/03/500300003", 128, TRUE);
-	OutputLine(NULL, "　偏執的なくらいに！！」",
-		   NULL, " Unyieldingly so!!\"", GetGlobalFlag(GLinemodeSp));
+		//VoiceMatching
+		if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_003_vm0x_n01","dialog001");}
+		if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_003_vm00_n01","dialog001");}
+		//VoiceMatchingEnd
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -4206,11 +4207,10 @@ void main()
 	DrawSceneWithMask("background/g1", "right", 0, 0, 200 );
 	ModDrawCharacter(3, 3, "sprite/normal/me1b_def_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 400, TRUE );
 
-//「かつてフランスからミシュランの三ツ星シェフが来日した時、ホテルの人たちが様々な材料をフランスから空輸したんだそうです＠でもそのシェフはそれらに見向きもしませんでした。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "s19/03/500300064", 128, TRUE);
-	OutputLine(NULL, "「かつてフランスからミシュランの三ツ星シェフが来日した時、ホテルの人たちが様々な材料をフランスから空輸したんだそうです。",
-		   NULL, "\"There's a story about how when a Michelin 3-star chef from France came to Japan, the people from the hotel he was staying at had a whole bunch of ingredients from France imported. ", GetGlobalFlag(GLinemodeSp));
+	//VoiceMatching
+		if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_003_vm0x_n01","dialog002");}
+		if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_003_vm00_n01","dialog002");}
+	//VoiceMatchingEnd
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "s19/03/500300065", 128, TRUE);
 	OutputLine(NULL, "でもそのシェフはそれらに見向きもしませんでした。」",
@@ -6268,7 +6268,7 @@ void main()
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 
-	DrawSceneWithMask("text/wata003", "mask_1900", 7, 0, 300 );
+	DrawSceneWithMask("tips/wata003", "mask_1900", 7, 0, 300 );
 	SetValidityOfInput( FALSE );
 	Wait( 5000 );
 	SetValidityOfInput( TRUE );
