@@ -1601,7 +1601,7 @@ void main()
 	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "…………、」",
-		   NULL, " \"\"\"Wipey-wipey!", GetGlobalFlag(GLinemodeSp));
+		   NULL, " ...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1609,7 +1609,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "s19/00/otall50002", 128, TRUE);
 	OutputLine(NULL, "「「「フキフキ！",
-		   NULL, "Wipey-wipey!!", Line_Continue);
+		   NULL, "\"\"\"Wipey-wipey!", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
@@ -3376,7 +3376,7 @@ void main()
 //　不安定な詩音はそれをバランスよく運ぶのに精一杯で足元に注意はまったく払われていない...￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　不安定な詩音はそれをバランスよく運ぶのに精一杯で足元に注意はまったく払われていない…。",
-		   NULL, "For Shion to carry all five  parfaits without wobbling took so much effort that she didn't have the breathing room to pay attention to her feet...", Line_Normal);
+		   NULL, "For Shion to carry all five parfaits without wobbling took so much effort that she didn't have the breathing room to pay attention to her feet...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask("background/res5", "right", 0, 0, 200 );
@@ -3390,10 +3390,10 @@ void main()
 
 
 //「今度はミーのおズボンにぶっかけさせて、ぱんつの中までフキフキしてもらうニョリ！！＠
-//VoiceMatching
-if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_005_vm0x_n01","dialog015");}
-if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_005_vm00_n01","dialog015");}
-//VoiceMatchingEnd
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_005_vm0x_n01","dialog015");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_005_vm00_n01","dialog015");}
+	//VoiceMatchingEnd
 
 
 //　ほんの小一時間前に起こったフキフキ騒動...＠それを今度は自分が再現しようと...穢れた男たちの欲望が襲い掛かろうとしてるッ...！！￥
