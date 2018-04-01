@@ -3954,7 +3954,11 @@ void main()
 		   NULL, " ...I know you're all low on sleep, but please, do your best!\"", Line_Normal);
 	ClearMessage();
 
-	ModPlayVoiceLS(4, 0, "s02/00/all03001a-e", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "s02/00/all03001a", 128, TRUE);
+	ModPlayVoiceLS(5, 0, "s02/00/all03001b", 128, TRUE);
+	ModPlayVoiceLS(6, 0, "s02/00/all03001c", 128, TRUE);
+	ModPlayVoiceLS(7, 0, "s02/00/all03001d", 128, TRUE);
+	ModPlayVoiceLS(8, 0, "s02/00/all03001e", 128, TRUE);
 //「「「おぉうッ！！！」」＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「「「おぉうッ！！！」」」",
