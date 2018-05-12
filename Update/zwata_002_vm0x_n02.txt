@@ -11,7 +11,7 @@ void dialog001()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 
 	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300552", 128, TRUE);
-	OutputLine(NULL, "　カチューシャからそりゃもう何から何まで…ぜ～んぶ揃ってるんだからねぇ！！」",
+	OutputLine(NULL, "　カチューシャからそりゃもう何から何まで…ぜ〜んぶ揃ってるんだからねぇ！！」",
 		   NULL, "From the headband to the finer details... I've got it aaaaall prepared for you!!\"", GetGlobalFlag(GLinemodeSp));
 
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -61,7 +61,7 @@ void dialog004()
 	Wait( 1000 );
 	// (backup) SetValidityOfInput( TRUE );
 
-	OutputLine(NULL, "『個性的な』趣味の人だって…勘ぐられちゃうよ？」",
+	OutputLine(NULL, "「個性的な」趣味の人だって…勘ぐられちゃうよ？」",
 		   NULL, " discover you're a person with... 'unique' tastes.\"", GetGlobalFlag(GLinemodeSp));
 
 
@@ -78,7 +78,7 @@ void dialog005()
 		   NULL, "\"That's right.", Line_WaitForInput);
 
 	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300623", 128, TRUE);
-	OutputLine(NULL, "男の人ってフリフリとかって好きなんだよねぇ～。",
+	OutputLine(NULL, "男の人ってフリフリとかって好きなんだよねぇ〜。",
 		   NULL, " Men enjoy frilly clothing, after all.", Line_WaitForInput);
 
 	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300624", 128, TRUE);
@@ -95,7 +95,7 @@ void dialog006()
 	OutputLine(NULL, "「きゅっとするでしょ。",
 		   NULL, "\"Makes your heart jump, doesn't it?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300626", 128, TRUE);
-	OutputLine(NULL, "歩く度に足元スースーするの…ちゃんと感じてる～？」",
+	OutputLine(NULL, "歩く度に足元スースーするの…ちゃんと感じてる〜？」",
 		   NULL, " Can you feel the air on your legs as you walk?\"", GetGlobalFlag(GLinemodeSp));
 
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }

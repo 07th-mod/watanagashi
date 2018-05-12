@@ -816,7 +816,7 @@ void main()
 	OutputLine(NULL, "…そうですわね。",
 		   NULL, " ...Let's see here...", Line_WaitForInput);
 	ModPlayVoiceLS(4, 4, "ps3/s19/04/990400228", 128, TRUE);
-	OutputLine(NULL, "例えば『プリン』とか。」",
+	OutputLine(NULL, "例えば「プリン」とか。」",
 		   NULL, " 'Pudding' or something.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
@@ -825,7 +825,7 @@ void main()
 //「ＯＫ！　だったら沙都子は手元のメモに『プリン』って書くわけ＠で、全員でいっせーのせ！で答えを公開し合う＠で、プリンって書いた人が２人以上いれば得点＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300517", 128, TRUE);
-	OutputLine(NULL, "「ＯＫ！　だったら沙都子は手元のメモに『プリン』って書くわけ。",
+	OutputLine(NULL, "「ＯＫ！　だったら沙都子は手元のメモに「プリン」って書くわけ。",
 		   NULL, "\"Ok! In that case, Satoko, you would write down 'pudding' on your memo pad.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300518", 128, TRUE);
 	OutputLine(NULL, "で、全員でいっせーのせ！で答えを公開し合う。",
@@ -863,13 +863,13 @@ void main()
 
 //　このゲームで大事なのは、この『みんなと同じ答えになるように』考える点だ￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　このゲームで大事なのは、この『みんなと同じ答えになるように』考える点だ。",
+	OutputLine(NULL, "　このゲームで大事なのは、この「みんなと同じ答えになるように」考える点だ。",
 		   NULL, "The point of this game was to think in a way so that you have the same answer as everybody else.", Line_Normal);
 	ClearMessage();
 
 //　例えば...自分はデザートと言われて真っ先に『イチゴ汁粉！』と思いついたとしても＠...他のみんなと一致しない答えでは得点できないわけだ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　例えば…自分はデザートと言われて真っ先に『イチゴ汁粉！』と思いついたとしても。",
+	OutputLine(NULL, "　例えば…自分はデザートと言われて真っ先に「イチゴ汁粉！」と思いついたとしても。",
 		   NULL, "For example... even if you heard the word 'dessert' and immediately thought of 'strawberry sundae'...", Line_WaitForInput);
 	OutputLine(NULL, "…他のみんなと一致しない答えでは得点できないわけだ。",
 		   NULL, " ...If your answer doesn't match up with everybody else you don't get any points.", GetGlobalFlag(GLinemodeSp));
@@ -934,7 +934,7 @@ void main()
 	PlaySE( 3, "wa_012", 128, 64 );
 
 //『かき氷』ッ！！！＠
-	OutputLine(NULL, "『かき氷』ッ！！！」",
+	OutputLine(NULL, "「かき氷」ッ！！！」",
 		   NULL, " 'Shaved Ice'!!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
@@ -1734,7 +1734,7 @@ void main()
 	PlaySE( 3, "wa_012", 128, 64 );
 
 //『夏休み』！！￥
-	OutputLine(NULL, "『夏休み』！！」",
+	OutputLine(NULL, "「夏休み」！！」",
 		   NULL, " 'Summer Break'!!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
@@ -1915,7 +1915,7 @@ void main()
 
 //『宿題』/
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "『宿題』",
+	OutputLine(NULL, "「宿題」",
 		   NULL, "'Homework'.", Line_ContinueAfterTyping);
 
 	PlayBGM( 1, "msys12", 128, 0 );
@@ -2090,7 +2090,7 @@ void main()
 	PlaySE( 3, "wa_012", 128, 64 );
 
 //『魚』！！！￥
-	OutputLine(NULL, "『魚』！！！」",
+	OutputLine(NULL, "「魚」！！！」",
 		   NULL, " 'Fish'!!!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
@@ -2107,7 +2107,7 @@ void main()
 
 //　ちなみに俺は、赤身のマグロよりはヒラメなどを好む『通』なのだったりする＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　ちなみに俺は、赤身のマグロよりはヒラメなどを好む『通』なのだったりする！",
+	OutputLine(NULL, "　ちなみに俺は、赤身のマグロよりはヒラメなどを好む「通」なのだったりする！",
 		   NULL, "By the way, rather than lean tuna, I'm quite the connoisseur on things like flounder!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
@@ -2146,7 +2146,7 @@ void main()
 
 //『お寿司』/
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "『お寿司』",
+	OutputLine(NULL, "「お寿司」",
 		   NULL, "'Sushi'.", Line_ContinueAfterTyping);
 
 	PlayBGM( 1, "msys12", 128, 0 );
@@ -2480,7 +2480,7 @@ void main()
 	PlaySE( 3, "wa_011", 128, 64 );
 
 //『さくら』！￥
-	OutputLine(NULL, "『さくら』！」",
+	OutputLine(NULL, "「さくら」！」",
 		   NULL, " 'Sakura'!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
@@ -2619,7 +2619,7 @@ void main()
 	OutputLine(NULL, "　レナね、今度は圭一くんと合うようにね、男の子の身になって考えたんだよ。",
 		   NULL, " You see this time, Rena thought like a boy so I could match up with your answer.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s19/02/990200495", 128, TRUE);
-	OutputLine(NULL, "えへへ〜…『さくら餅』☆」",
+	OutputLine(NULL, "えへへ〜…「さくら餅」☆」",
 		   NULL, " Ehehe~... 'Sakura Mochi'☆\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
@@ -2669,7 +2669,7 @@ void main()
 //「では圭一さんは私と同じではございませんこと？『お花見』ですのよ！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "ps3/s19/04/990400251", 128, TRUE);
-	OutputLine(NULL, "「では圭一さんは私と同じではございませんこと？『お花見』ですのよ！」",
+	OutputLine(NULL, "「では圭一さんは私と同じではございませんこと？「お花見」ですのよ！」",
 		   NULL, "\"Well then, did Keiichi-san write the same answer as me? I put down 'Hanami'!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
@@ -2693,7 +2693,7 @@ void main()
 
 //　魅音と沙都子の答えは『お花見』！!w1000　...お、お花見だとぉおぉおおッ？！？￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　魅音と沙都子の答えは『お花見』！",
+	OutputLine(NULL, "　魅音と沙都子の答えは「お花見」！",
 		   NULL, "Mion and Satoko's response was 'Hanami'!", Line_ContinueAfterTyping);
 
 	SetValidityOfInput( FALSE );
@@ -3962,7 +3962,7 @@ void main()
 
 //　ファミレスらしいコミカルなロゴで、ファミレス『エンジェルモート』と書かれていた＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　ファミレスらしいコミカルなロゴで、ファミレス『エンジェルモート』と書かれていた。",
+	OutputLine(NULL, "　ファミレスらしいコミカルなロゴで、ファミレス「エンジェルモート」と書かれていた。",
 		   NULL, "The words \"Angel Mort\" were written on a very family restaurant-esque cartoonish logo.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 

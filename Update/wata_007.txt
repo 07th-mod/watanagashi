@@ -604,7 +604,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　神社には…普段の雛見沢からは想像も付かないくらいの大勢の人たちが集まり、",
 		   NULL, "At the shrine... There were more people than you'd imagine even live in Hinamizawa there,", Line_WaitForInput);
-	OutputLine(NULL, "ラインを引いたりテントの骨組みを組み立てたりと、にぎやかにしていた。",
+	OutputLine(NULL, "ラインを引いたりテントの骨組みを組み立てたりと、賑やかにしていた。",
 		   NULL, " all cordoning off areas and setting up tent frameworks, chatting amongst themselves as they did so.", Line_Normal);
 	ClearMessage();
 
@@ -1179,7 +1179,7 @@ void main()
 
 //　さっきまでのにぎやかだった境内は、今度は逆に寂しくなり、夕方の涼しい風の通り道となっていた＠.........風が心地いい￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　さっきまでのにぎやかだった境内は、今度は逆に寂しくなり、夕方の涼しい風の通り道となっていた。",
+	OutputLine(NULL, "　さっきまでの賑やかだった境内は、今度は逆に寂しくなり、夕方の涼しい風の通り道となっていた。",
 		   NULL, "The shrine grounds, on the other hand, had turned into a lonely road tickled by the cool evening breeze, despite being so festive just a little while ago.", Line_WaitForInput);
 	OutputLine(NULL, "………風が心地いい。",
 		   NULL, " ...The wind felt good.", Line_Normal);
@@ -1680,7 +1680,7 @@ void main()
 	OutputLine(NULL, "圭ちゃんはまだ風邪とかで診療所のお世話にはなってない？",
 		   NULL, " Do you remember when you were at the doctor's office when you still had a cold, Kei-chan?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s19/03/500300804", 128, TRUE);
-	OutputLine(NULL, "　三四さんは診療所で看護婦さんをやってるんだよ。」",
+	OutputLine(NULL, "　三四さんは診療所で看護師さんをやってるんだよ。」",
 		   NULL, " Miyo-san is one of the nurses who works there.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
@@ -4609,7 +4609,7 @@ void main()
 	OutputLine(NULL, "どうせ俺たちのことだ。",
 		   NULL, " I mean, it's us we're talking about, after all.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei35780", 128, TRUE);
-	OutputLine(NULL, "にぎやかにやってるに決まってる。」",
+	OutputLine(NULL, "賑やかにやってるに決まってる。」",
 		   NULL, " We'll be making so much trouble it'll be hard for you not to find us.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();

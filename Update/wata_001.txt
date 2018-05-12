@@ -1945,7 +1945,7 @@ void main()
 
 //『あんたら、今頃気付いたの...？！』、そう目が無言で語る...＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "『あんたら、今頃気付いたの…？！』、そう目が無言で語る…。",
+	OutputLine(NULL, "「あんたら、今頃気付いたの…？！」、そう目が無言で語る…。",
 		   NULL, "Her eyes silently conveyed the message: \"You guys just figured that out now?!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
@@ -2078,7 +2078,7 @@ void main()
 
 //　...どんな仕掛けかわからないが、沙都子と緒戦を戦っていたら、『魅音と戦うよりも絶対確実に』負けさせられたッ！！￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　…どんな仕掛けかわからないが、沙都子と緒戦を戦っていたら、『魅音と戦うよりも絶対確実に』負けさせられたッ！！！",
+	OutputLine(NULL, "　…どんな仕掛けかわからないが、沙都子と緒戦を戦っていたら、「魅音と戦うよりも絶対確実に」負けさせられたッ！！！",
 		   NULL, "...I don't know what she had up her sleeve, but if I fought with Satoko during the opening round, my loss would be more certain than if I went against Mion!!!", Line_Normal);
 	ClearMessage();
 	DisableWindow();
@@ -2985,7 +2985,7 @@ void main()
 
 //『魅音と同じ卓に着いた』それ以上のどんな敗因があるってんだッ？￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "『魅音と同じ卓に着いた』それ以上のどんな敗因があるってんだッ？！",
+	OutputLine(NULL, "「魅音と同じ卓に着いた」それ以上のどんな敗因があるってんだッ？！",
 		   NULL, "Was there any reason for their defeat other than 'they sat at the same table as Mion'?!", Line_Normal);
 	ClearMessage();
 	DisableWindow();
@@ -3028,7 +3028,7 @@ void main()
 	OutputLine(NULL, "「じゃあ、読みますよ〜。",
 		   NULL, "\"Then, I'll read it out~.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/mas99002", 128, TRUE);
-	OutputLine(NULL, "…『犬も歩けばくたびれる』〜。」",
+	OutputLine(NULL, "…「犬も歩けばくたびれる」〜。」",
 		   NULL, " ...'The dog gets tired on a walk'~.\"", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );

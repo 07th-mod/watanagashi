@@ -817,7 +817,7 @@ void main()
 
 //『デザートフェスタ開催・本日招待客さま貸切です＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "『デザートフェスタ開催・本日招待客さま貸切です』",
+	OutputLine(NULL, "「デザートフェスタ開催・本日招待客さま貸切です」",
 		   NULL, "『Dessert Festa today - Admittance by reservation only.』", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
@@ -1381,7 +1381,7 @@ void main()
 	OutputLine(NULL, "「お待たせしました〜。",
 		   NULL, "\"Sorry to keep you waiting~.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/waitb50002", 128, TRUE);
-	OutputLine(NULL, "次のデザートは『南国風シナモンのアバンチュール』でございます。……？",
+	OutputLine(NULL, "次のデザートは「南国風シナモンのアバンチュール」でございます。……？",
 		   NULL, " The next dessert is 『Tropical Cinnamon Love Affair』. ...?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/waitb50003", 128, TRUE);
 	OutputLine(NULL, "　どうかなさいましたか？」",
@@ -8244,7 +8244,7 @@ void main()
 
 //　『詩音』はそう言って、かわいらしく頬を膨らませた...￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　『詩音』はそう言って、かわいらしく頬を膨らませた…。",
+	OutputLine(NULL, "　「詩音」はそう言って、かわいらしく頬を膨らませた…。",
 		   NULL, "'Shion', saying that, pouted cutely...", Line_Normal);
 	ClearMessage();
 	DisableWindow();

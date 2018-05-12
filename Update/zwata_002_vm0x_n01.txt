@@ -46,7 +46,7 @@ void dialog003()
 
 	//VoiceMatching
 	ModPlayVoiceLS(4, 5, "ps3/s19/05/990500121", 128, TRUE);
-	OutputLine(NULL, "「………『口紅』って書いてありますです。」",
+	OutputLine(NULL, "「………「口紅」って書いてありますです。」",
 		   NULL, "\"...It says 'lipstick' .\"", Line_Normal);
 	//VoiceMatchingEnd
 
@@ -76,7 +76,7 @@ void dialog004()
 
 
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11180", 128, TRUE);
-	OutputLine(NULL, "さくらって言ったらあの有名な口紅の商品名『Ｓａｋｕｒａ』だろおおお！",
+	OutputLine(NULL, "さくらって言ったらあの有名な口紅の商品名「Ｓａｋｕｒａ」だろおおお！",
 		   NULL, "Sakura can only mean that famous lipstick brand 'Sakura', right!?!? ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11190", 128, TRUE);
@@ -129,7 +129,7 @@ void dialog007()
 	OutputLine(NULL, "　レナも薬局の化粧品売り場で見たよ。",
 		   NULL, " I saw it in the makeup section at the drug store.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s19/02/990200498", 128, TRUE);
-	OutputLine(NULL, "　薄いピンク色で、お持ち帰りしようかと思っちゃった～」",
+	OutputLine(NULL, "　薄いピンク色で、お持ち帰りしようかと思っちゃった〜」",
 		   NULL, " That pink color made me want to take it home~\"", GetGlobalFlag(GLinemodeSp));
 
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

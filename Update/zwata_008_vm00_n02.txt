@@ -49,7 +49,7 @@ void dialog003()
 		   NULL, " The villagers can't eat other villagers... ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps2/09/130900108", 240, TRUE);
-	OutputLine(NULL, "……だから彼らはその度に人里へ降り、『鬼隠し』をしたと伝えられてるわ。」",
+	OutputLine(NULL, "……だから彼らはその度に人里へ降り、「鬼隠し」をしたと伝えられてるわ。」",
 		   NULL, "So when this happens, it's said that they descended on the human villages and conducted Onikakushi.\"", Line_Normal);
 }
 
@@ -80,7 +80,7 @@ void dialog006()
 	OutputLine(NULL, "「そうして生贄をさらってきた夜にはね。",
 		   NULL, "\"So on the nights when they stole away villagers...", Line_WaitForInput);
 	ModPlayVoiceLS(4, 9, "ps2/09/130900115", 240, TRUE);
-	OutputLine(NULL, "…哀れな犠牲者を美味しく頂くため、『綿流し』の儀式が開かれたというわ。」",
+	OutputLine(NULL, "…哀れな犠牲者を美味しく頂くため、「綿流し」の儀式が開かれたというわ。」",
 		   NULL, " they would feast on their kidnapped sacrifices, which is why the nights came to be known as 'Watanagashi.'\"", Line_Normal);
 }
 
@@ -123,7 +123,7 @@ void dialog008()
 
 //　...自分のうわべは、鷹野さんの言うおぞましい『綿流し』を否定しようと必死にまくし立てる＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　…自分のうわべは、鷹野さんの言うおぞましい『綿流し』を否定しようと必死にまくし立てる。",
+	OutputLine(NULL, "　…自分のうわべは、鷹野さんの言うおぞましい「綿流し」を否定しようと必死にまくし立てる。",
 		   NULL, "I was rattling on, desperately attempting to deny the horrible festival that Takano-san was describing...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
@@ -587,7 +587,7 @@ void dialog020()
 //　......私は、どの工程も『生きている』!w900内にやったんじゃないか、って思ってるんだけどね＠前原くんはどう思うかしら？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps2/09/130900197", 240, TRUE);
-	OutputLine(NULL, "　……私は、どの工程も『生きている』",
+	OutputLine(NULL, "　……私は、どの工程も「生きている」",
 		   NULL, "......I'm of the opinion that the entire 'process'", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );

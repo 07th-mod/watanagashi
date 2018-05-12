@@ -34,7 +34,7 @@ void main()
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s20/02/440200174", 128, TRUE);
-	OutputLine(NULL, "「『ひぐらしのなく頃に粋』、『綿流し』を最後までお楽しみいただき、誠にありがとうございました！",
+	OutputLine(NULL, "「「ひぐらしのなく頃に粋」、「綿流し」を最後までお楽しみいただき、誠にありがとうございました！",
 		   NULL, "\"Thank you very much for enjoying Higurashi When They Cry: Watanagashi!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s20/02/440200175", 128, TRUE);
 	OutputLine(NULL, "　この度のシナリオはいかがだったでしょうか？",
@@ -164,7 +164,7 @@ void main()
 //「きっと、沙都子がおかしな人たちによってたかって襲われて、虐め殺されちゃう話に違いないね～。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300308", 128, TRUE);
-	OutputLine(NULL, "「きっと、沙都子が酷い目にあって、じわりじわりといたぶり回される話に違いないね～。」",
+	OutputLine(NULL, "「きっと、沙都子が酷い目にあって、じわりじわりといたぶり回される話に違いないね〜。」",
 		   NULL, "\"I'm sure that in that story, Satoko suffers some terrible demise in some slow, deliberate way~\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
@@ -215,7 +215,7 @@ void main()
 	OutputLine(NULL, "「魅ぃ〜ちゃん。",
 		   NULL, "\"Mii~chan.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s20/02/440200180", 128, TRUE);
-	OutputLine(NULL, "悪ふざけが過ぎるとレナもちょっとだけ、怒るよ～？」",
+	OutputLine(NULL, "悪ふざけが過ぎるとレナもちょっとだけ、怒るよ〜？」",
 		   NULL, " If you joke around too much, you'll make me angry, too~\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
@@ -602,7 +602,7 @@ void main()
 	OutputLine(NULL, "「では…こほん！",
 		   NULL, "\"Then... ahem!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s20/02/440200190", 128, TRUE);
-	OutputLine(NULL, "　みんな、『綿流し』終了、お疲れさまでした〜！！」",
+	OutputLine(NULL, "　みんな、「綿流し」終了、お疲れさまでした〜！！」",
 		   NULL, " Everyone, excellent work—the Watanagashi chapter is now over~!!\"", GetGlobalFlag(GLinemodeSp));
 
 //＜レナ
@@ -759,7 +759,7 @@ void main()
 //「じゃあ...、...これで『ひぐらしのなく頃に』のメインシナリオはほとんど終わり...なのかな...＠　全ての元凶は魅ぃちゃんの園崎家で...決まり...？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s20/02/440200196", 128, TRUE);
-	OutputLine(NULL, "「じゃあ…、…これで『ひぐらしのなく頃に粋』のメインシナリオはほとんど終わり…なのかな…？",
+	OutputLine(NULL, "「じゃあ…、…これで「ひぐらしのなく頃に粋」のメインシナリオはほとんど終わり…なのかな…？",
 		   NULL, "\"Then... does that mean... the main Higurashi When They Cry scenario is pretty much over...?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s20/02/440200197", 128, TRUE);
 	OutputLine(NULL, "　全ての元凶は魅ぃちゃんの園崎家で…決まり…？」",
@@ -778,7 +778,7 @@ void main()
 	OutputLine(NULL, "「そうかしら？",
 		   NULL, "\"I wonder?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900104", 128, TRUE);
-	OutputLine(NULL, "　私はむしろ、…これで『園崎家犯人説』はなくなったと思ってるくらいだけれど？」",
+	OutputLine(NULL, "　私はむしろ、…これで「園崎家犯人説」はなくなったと思ってるくらいだけれど？」",
 		   NULL, " In fact... I think that this all means the theory of the Sonozakis being the guilty party has been disproven.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
@@ -1501,7 +1501,7 @@ void main()
 	OutputLine(NULL, "「そういうことです。",
 		   NULL, "\"That's right.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300348", 128, TRUE);
-	OutputLine(NULL, "『鬼隠し』のシナリオで名前だけ登場した『監督』ってのがかなり怪しいかな！」",
+	OutputLine(NULL, "「鬼隠し」のシナリオで名前だけ登場した「監督」ってのがかなり怪しいかな！」",
 		   NULL, " The manager who only appeared by name in the last story is pretty suspicious, if you ask me!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
@@ -1724,7 +1724,7 @@ void main()
 	OutputLine(NULL, "「……そうなのです。",
 		   NULL, "\"...That's right.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500122", 128, TRUE);
-	OutputLine(NULL, "…たとえば『鬼隠し』のシナリオでは、圭一は祭具殿には忍び込んでいないのに命を狙われているのです。」",
+	OutputLine(NULL, "…たとえば「鬼隠し」のシナリオでは、圭一は祭具殿には忍び込んでいないのに命を狙われているのです。」",
 		   NULL, " ...In the previous scenario, they were after Keiichi's life even though he didn't sneak into the ritual storehouse.\"", Line_Normal);
 	ClearMessage();
 
@@ -1846,7 +1846,7 @@ void main()
 	OutputLine(NULL, "圭一くん以外の人の死には何かしら理由が見つけられるんだけど、…圭一くんだけなぜかいつも曖昧。",
 		   NULL, " We can find some kind of reason for everyone but Keiichi-kun to die... but for some reason, Keiichi-kun's death is always vague.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s20/09/440900118", 128, TRUE);
-	OutputLine(NULL, "…『鬼隠し』でも『たらいまわし』でも、そして今回の『綿流し』でも。",
+	OutputLine(NULL, "…「鬼隠し」でも「たらいまわし」でも、そして今回の「綿流し」でも。",
 		   NULL, " ...Last time in Onikakushi and Taraimawashi. And now in Watanagashi. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900119", 128, TRUE);
@@ -2177,10 +2177,10 @@ void main()
 //「私は『鬼』の仕業だとずーっと思ってますのよ！＠　全ての現象とトリックは、全て『鬼』で説明がつきますのよー！！！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400208", 128, TRUE);
-	OutputLine(NULL, "「私は『鬼』の仕業だとずーっと思ってますのよ！！",
+	OutputLine(NULL, "「私は「鬼」の仕業だとずーっと思ってますのよ！！",
 		   NULL, "\"I will always think it was the doing of a demon!!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400209", 128, TRUE);
-	OutputLine(NULL, "　全ての現象とトリックは、全て『鬼』で説明がつきますのよー！！！」",
+	OutputLine(NULL, "　全ての現象とトリックは、全て「鬼」で説明がつきますのよー！！！」",
 		   NULL, " All of the events and tricks can be explained with a demon!!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
@@ -2220,7 +2220,7 @@ void main()
 //「まだまだ先は長いですけど、頑張ってくださいね～！」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300356", 128, TRUE);
-	OutputLine(NULL, "「まだまだ先は長いですけど、頑張ってくださいね～！」",
+	OutputLine(NULL, "「まだまだ先は長いですけど、頑張ってくださいね〜！」",
 		   NULL, "\"There's still a way to go, but do your best~!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
@@ -2229,7 +2229,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s20/02/440200229", 128, TRUE);
-	OutputLine(NULL, "「それでは引き続き、『ひぐらしのなく頃に粋』をお楽しみ下さい。」",
+	OutputLine(NULL, "「それでは引き続き、「ひぐらしのなく頃に粋」をお楽しみ下さい。」",
 		   NULL, "\"With that, please look forward to the rest of the Higurashi series.\"",  Line_Normal);
 	ClearMessage();
 

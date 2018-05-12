@@ -96,7 +96,7 @@ void dialog007()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s19/09/500900031", 128, TRUE);
-	OutputLine(NULL, "下界との交流を『格が落ちる』として忌み嫌ったそうなの。",
+	OutputLine(NULL, "下界との交流を「格が落ちる」として忌み嫌ったそうなの。",
 		   NULL, "They believed that interaction with the lower world would sully their souls.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
@@ -144,7 +144,7 @@ void dialog011()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "じゃあ、……その時にも誰かが、……『消えた』？",
+	OutputLine(NULL, "じゃあ、……その時にも誰かが、……「消えた」？",
 		   NULL, " So... at that time, someone else... \"vanished\"?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }

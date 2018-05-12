@@ -3602,7 +3602,7 @@ void main()
 
 //　大人たちは唸って返事をすると、どかどかと階下へ降りて行った￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　大人たちは唸って返事をすると、どかどかと階下へ降りて行った。",
+	OutputLine(NULL, "　大人たちは唸って返事をすると、どかどかと階下へ下りて行った。",
 		   NULL, "The adults all roared in reply and pounded back down the stairs below.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
@@ -3768,7 +3768,7 @@ void main()
 
 //　そうしてる内に外がにぎやかになった＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　そうしてる内に外がにぎやかになった。",
+	OutputLine(NULL, "　そうしてる内に外が賑やかになった。",
 		   NULL, "As we were searching, it got noisy outside.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 

@@ -17,7 +17,7 @@ void dialog001()
 
 //「穢れ（ケガレ）」を持ち込むから立入禁止の不可侵領域＠......聖域なの。＠
 
-	OutputLine(NULL, "『不浄』を持ち込むから立入禁止の不可侵領域。",
+	OutputLine(NULL, "「不浄」を持ち込むから立入禁止の不可侵領域。",
 		   NULL, " ...they bring 'impurity' into it, so absolutely no one is allowed a single step inside it.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 9, "ps3/s02/09/130900017", 128, TRUE);
 	OutputLine(NULL, "……聖域なの。」",
@@ -38,10 +38,10 @@ void dialog002()
 void dialog003()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "……鷹野さんが言うには、鬼の血を引く者たちは周期的に『狩猟者』としての本能が目覚め、獲物を求めて人里に姿を現すのだという。",
+	OutputLine(NULL, "……鷹野さんが言うには、鬼の血を引く者たちは周期的に「狩猟者」としての本能が目覚め、獲物を求めて人里に姿を現すのだという。",
 		   NULL, "...As Takano-san explained it, those with demon blood in them periodically awaken to their instincts as 'hunters'. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "そして、その際に行われるのが『鬼隠し』だそうだ。",
+	OutputLine(NULL, "そして、その際に行われるのが「鬼隠し」だそうだ。",
 		   NULL, "So when this happens, it's said that they descended on the human villages looking for prey and conducted Onikakushi.", Line_Normal);
 }
 
@@ -65,7 +65,7 @@ void dialog006()
 	OutputLine(NULL, "「そうして生贄をさらってきた夜にはね。",
 		   NULL, "\"So on the nights when they stole away villagers...", Line_WaitForInput);
 	ModPlayVoiceLS(4, 9, "ps3/s02/09/130900115", 128, TRUE);
-	OutputLine(NULL, "『綿流し』の儀式が開かれたというわ。」",
+	OutputLine(NULL, "「綿流し」の儀式が開かれたというわ。」",
 		   NULL, " this ritual became known as the 'Watanagashi.'\"", Line_Normal);
 }
 
@@ -87,7 +87,7 @@ void dialog008()
 		   NULL, "...My fun memories from just a short while earlier swirled and blurred into noise, ...as if vanishing into a sandstorm. ", GetGlobalFlag(GLinemodeSp));
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "『綿流し』の名前に隠されたどす黒く陰惨な響きが、全身にまるで痺れのような圧迫となって……",
+	OutputLine(NULL, "「綿流し」の名前に隠されたどす黒く陰惨な響きが、全身にまるで痺れのような圧迫となって……",
 		   NULL, "It felt like the name of the 'Watanagashi' had taken on a sticky dark, shadowy aura and was pressing down on my whole being, numbing my senses.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -109,7 +109,7 @@ void dialog009()
 	PlaySE( 3, "wa_023", 128, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "鷹野さんはそこで言葉を区切って、にやりと笑う。……つまり、『鍬』といっても鋭利な『刃物』としての道具とでもいいたいのだろうか……。",
+	OutputLine(NULL, "鷹野さんはそこで言葉を区切って、にやりと笑う。……つまり、「鍬」といっても鋭利な「刃物」としての道具とでもいいたいのだろうか……。",
 		   NULL, " Takano-san cut off with a smirk... Did she mean to say that despite being a hoe, it actually serves as a sharp bladed tool...?", GetGlobalFlag(GLinemodeSp));
 
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
