@@ -54,6 +54,7 @@ void dialog003()
 void dialog004()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400025", 128, TRUE);
 	OutputLine(NULL, "「お風呂に沈められて溺れ死ぬなんて、おマヌケにもほどがありますわね〜！」",
 		   NULL, "\"Dying by being thrown on the ground must be the silliest form of death I've ever heard of~!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
