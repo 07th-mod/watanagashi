@@ -29,7 +29,7 @@ void dialog002()
 		   NULL, "\"...When I was in elementary school... there was a penalty game... yeah.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/vt0_keiichi0003", 128, TRUE);
 	OutputLine(NULL, "やっぱりアレだよな。",
-		   NULL, " It can only be -that-.", Line_WaitForInput);
+		   NULL, " It can only be 'that.'", Line_WaitForInput);
 
 	PlaySE( 3, "wa_010", 128, 64 );
 
@@ -47,7 +47,7 @@ void dialog003()
 	//VoiceMatching
 	ModPlayVoiceLS(4, 5, "ps3/s19/05/990500121", 128, TRUE);
 	OutputLine(NULL, "「………「口紅」って書いてありますです。」",
-		   NULL, "\"...It says 'lipstick' .\"", Line_Normal);
+		   NULL, "\"...It says 'lipstick.'\"", Line_Normal);
 	//VoiceMatchingEnd
 
 }
@@ -77,7 +77,7 @@ void dialog004()
 
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11180", 128, TRUE);
 	OutputLine(NULL, "さくらって言ったらあの有名な口紅の商品名「Ｓａｋｕｒａ」だろおおお！",
-		   NULL, "Sakura can only mean that famous lipstick brand 'Sakura', right!?!? ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Sakura can only mean that famous lipstick brand 'Sakura,' right!?!? ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11190", 128, TRUE);
 	OutputLine(NULL, "　ほら、新色が出たってＴＶでも言ってたし、ワイドショーでも特集組んでたじゃん！",
