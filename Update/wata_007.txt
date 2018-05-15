@@ -318,7 +318,7 @@ void main()
 		   NULL, " There's a lot of building tents and setting up chairs.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s19/02/500200918", 128, TRUE);
 	OutputLine(NULL, "結構重労働って聞いてるよ。」",
-		   NULL, " I hear it's pretty hard physical labor!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " I heard it was pretty hard physical labor!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -797,7 +797,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei34890_01", 128, TRUE);
 	OutputLine(NULL, "　大丈夫っすよ、俺、こう見えても結構力あるんすから…！",
-		   NULL, "Nah, I'm good! I may look scrawny, but I'm actually pretty strong...!", Line_WaitForInput);
+		   NULL, "\"Nah, I'm good! I may look scrawny, but I'm actually pretty strong...!", Line_WaitForInput);
 
 	PlaySE( 3, "wa_003", 128, 64 );
 	ShakeScreen( 1, 50, 20, 2, 0, );
@@ -805,7 +805,7 @@ void main()
 //　ぅおッ？！？＠
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei34890_02", 128, TRUE);
 	OutputLine(NULL, "　ぅおッ？！？！",
-		   NULL, " Whoa!?!?", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Whoa!?!?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -822,7 +822,7 @@ void main()
 		   NULL, "\"That's why I told you to have someone help!!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/olda50016", 128, TRUE);
 	OutputLine(NULL, "　ほれほれ。」",
-		   NULL, " Come on,\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Come on.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -986,7 +986,7 @@ void main()
 //　と、その御姿をうやうやしく拝んでいた￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　と、その御姿をうやうやしく拝んでいた。",
-		   NULL, "and just like that, began to respectfully pray to her.", Line_Normal);
+		   NULL, "And just like that, began to respectfully pray to her.", Line_Normal);
 	ClearMessage();
 
 //　.........あれ＠
@@ -1357,7 +1357,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei35070", 128, TRUE);
 	OutputLine(NULL, "「げほげほげほ…ッ！！",
-		   NULL, "\"*cough* *cough* *hack*...!!", Line_WaitForInput);
+		   NULL, "\"*Cough* *cough* *hack*...!!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei35080", 128, TRUE);
 	OutputLine(NULL, "　今度はどっちだ？！",
 		   NULL, " Which one is it this time!?", Line_WaitForInput);
@@ -1541,7 +1541,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei35100", 128, TRUE);
 	OutputLine(NULL, "「………魅音って、…詩音には頭上がらないのか？」",
-		   NULL, "\"......Mion, ...You can't hold your own against Shion?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"......Mion ...You can't hold your own against Shion?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1592,6 +1592,7 @@ void main()
 	ModDrawCharacter(1, 9, "sprite/sunset/ta1_warai_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「こんばんは＠......あら、詩音ちゃん＠　珍しいわね、こっちへ来るなんて。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>女性</color>", NULL, "<color=#f5e6d3>Woman</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s19/09/500900001", 128, TRUE);
 	OutputLine(NULL, "「こんばんは。",
 		   NULL, "\"Good evening.", Line_WaitForInput);
@@ -1787,7 +1788,7 @@ void main()
 		   NULL, "\"They were even more alike when they were little.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 9, "ps3/s19/09/500900009", 128, TRUE);
 	OutputLine(NULL, "ご両親でもどっちがどっちかわからなくて手を焼いていたそうよ。」",
-		   NULL, " I hear even their parents had a hard time telling which was which.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " I heard even their parents had a hard time telling which was which.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -2468,14 +2469,14 @@ void main()
 		   NULL, "\"...Mm-hmm.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 9, "ps3/s19/09/500900023", 128, TRUE);
 	OutputLine(NULL, "それに、祟りを信じるかどうかは、話を最後まで聞いてからゆっくり考えればいいことなんだから。」",
-		   NULL, " Besides, you can take all the time you need to decide whether to believe in curses after you've heard us through,\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Besides, you can take all the time you need to decide whether to believe in curses after you've heard us through.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　そう言って鷹野さんはくすりと笑った＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そう言って鷹野さんはくすりと笑った。",
-		   NULL, "said Takano-san, giving a little smile.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Said Takano-san, giving a little smile.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -2732,7 +2733,7 @@ void main()
 		   NULL, "\"There's research into whether worshipping Oyashiro-sama is a manifestation of a kind of elitism, too.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 9, "ps3/s19/09/500900029", 128, TRUE);
 	OutputLine(NULL, "選民思想って言葉、わかるかしら？」",
-		   NULL, " What I mean is that the worshippers might think of themselves as 'chosen people'.\"", Line_Normal);
+		   NULL, " What I mean is that the worshippers might think of themselves as 'chosen people.'\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawScene("background/hi1_01", 1000 );
@@ -2838,9 +2839,9 @@ void main()
 //　正解＠そう言って鷹野さんはくすりと微笑む＠......頭の悪い人は嫌いなタイプなんだろうなと思った￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　正解。",
-		   NULL, "\"Correct,\"", Line_WaitForInput);
+		   NULL, "\"Correct.\"", Line_WaitForInput);
 	OutputLine(NULL, "そう言って鷹野さんはくすりと微笑む。",
-		   NULL, " smiled Takano, pleased.", Line_WaitForInput);
+		   NULL, " Smiled Takano, pleased.", Line_WaitForInput);
 	OutputLine(NULL, "……頭の悪い人は嫌いなタイプなんだろうなと思った。",
 		   NULL, " ...She must dislike stupid people.", Line_Normal);
 	ClearMessage();
@@ -3014,7 +3015,7 @@ void main()
 		   NULL, "\"...This may sound a little rude, but the old priest was kind of a wait-and-see type.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s19/06/500600488", 128, TRUE);
 	OutputLine(NULL, "　村中が反ダムで盛り上がってるのに、神主さんは放っておけ、みたいな感じで。」",
-		   NULL, " The whole village was in an uproar about the dam, but he just kind of didn't seem to want to bother.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " The whole village was in an uproar about the dam, but he just kind of didn't seem to want to bother.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -3022,11 +3023,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s19/06/500600489", 128, TRUE);
 	OutputLine(NULL, "「抵抗運動の象徴である神社の神主さんがそんな感じなんだからね。",
-		   NULL, "\"The shrine was the symbol of the opposition movement, and its priest—well, his attitude worked against him. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "The shrine was the symbol of the opposition movement, and its priest—well, his attitude worked against him. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s19/06/500600490", 128, TRUE);
 	OutputLine(NULL, "…リーダーシップを期待していた当時の村人たちは失望し、中には怒りを抱く人たちもいたそうよ。」",
-		   NULL, "...The villagers at the time had hoped for a leader, but their hopes were betrayed. Some people were apparently pretty angry, too.\"", Line_Normal);
+		   NULL, "...The villagers at the time had hoped for a leader, but their hopes were betrayed. Some people were apparently pretty angry, too.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	ModDrawCharacter(1, 6, "sprite/sunset/si1a_majime_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
@@ -3035,10 +3036,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s19/06/500600491", 128, TRUE);
 	OutputLine(NULL, "「だから当時、年寄り連中はみんな言ったんです。",
-		   NULL, "\"So at the time, all the older people were like:", Line_WaitForInput);
+		   NULL, "So at the time, all the older people were like:", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s19/06/500600492", 128, TRUE);
 	OutputLine(NULL, "これはオヤシロさまの祟りだ、",
-		   NULL, " This is Oyashiro-sama's curse.", Line_Continue);
+		   NULL, " 'This is Oyashiro-sama's curse.'", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
@@ -3365,7 +3366,7 @@ void main()
 //　そう鷹野さんに詰め寄られ、思わず苦笑してしまった￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そう鷹野さんに詰め寄られ、思わず苦笑してしまった。",
-		   NULL, "pressed Takano-san. I smiled bitterly in spite of myself.", Line_Normal);
+		   NULL, "Pressed Takano-san. I smiled bitterly in spite of myself.", Line_Normal);
 	ClearMessage();
 
 //　ついさっきまで祟りなんかあるはずがない、と思っていたのに＠人間の仕業だと詰め寄られると、人間のはずもあるわけがない...なんて思ってしまったからだ￥
@@ -4140,7 +4141,7 @@ void main()
 //　魅音は雛見沢のことやその武勇伝をとても楽しそうに語った＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　魅音は雛見沢のことやその武勇伝をとても楽しそうに語った。",
-		   NULL, "Mion enjoyed talking about Hinamizawa and its 'epic tales'.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mion enjoyed talking about Hinamizawa and its 'epic tales.'", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -4180,7 +4181,7 @@ void main()
 //　かつて、見間違えるくらいにそっくりだと思っていた詩音だが＠...こうして話を聞いていると、魅音とはまったく異なる個性を持っていることを強く意識させられるのだった...￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　かつて、見間違えるくらいにそっくりだと思っていた詩音だが、",
-		   NULL, "Once upon a time, they looked so alike you could mistake one for the other,", Line_WaitForInput);
+		   NULL, "Once upon a time, they looked so alike you could mistake one for the other", Line_WaitForInput);
 	OutputLine(NULL, "…こうして話を聞いていると、魅音とはまったく異なる個性を持っていることを強く意識させられるのだった…。",
 		   NULL, " ...but talking to her now, I was getting a powerful feeling that Shion had a completely different personality than Mion.", Line_Normal);
 	ClearMessage();
@@ -4465,7 +4466,7 @@ void main()
 //　そう言って、ペロっと舌を出してはにかむ鷹野さんの様子には、先ほどまでの薄気味悪さはなかった￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そう言って、ペロっと舌を出してはにかむ鷹野さんの様子には、先ほどまでの薄気味悪さはなかった。",
-		   NULL, "said Takano-san, sticking out her tongue bashfully. The strangeness in her expression was nowhere to be found.", Line_Normal);
+		   NULL, "Said Takano-san, sticking out her tongue bashfully. The strangeness in her expression was nowhere to be found.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	ModDrawCharacter(3, 8, "sprite/sunset/tomi1_def_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
@@ -4618,7 +4619,7 @@ void main()
 //　詩音と２人で富竹さんたちに別れの会釈をする＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　詩音と２人で富竹さんたちに別れの会釈をする。",
-		   NULL, "Shion and I said our good-byes to Tomitake-san and Takano-san.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Shion and I said our goodbyes to Tomitake-san and Takano-san.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -4717,7 +4718,7 @@ void main()
 //　もう一度会釈してから駆け出す＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　もう一度会釈してから駆け出す。",
-		   NULL, "They say good-bye again and run off.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "They say goodbye again and run off.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -4766,7 +4767,7 @@ void main()
 //　鷹野さんや詩音に聞かされた、薄気味悪い話の印象の方が勝っていた￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　鷹野さんや詩音に聞かされた、薄気味悪い話の印象の方が勝っていた。",
-		   NULL, "...wasn't enough to triumph over the impression Takano-san and Shion's uncanny story left on me.", Line_Normal);
+		   NULL, "...Wasn't enough to triumph over the impression Takano-san and Shion's uncanny story left on me.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask("background/m_y7", "right", 0, 0, 300 );
