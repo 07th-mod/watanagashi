@@ -39,7 +39,7 @@ void dialog003()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "……鷹野さんが言うには、鬼の血を引く者たちは周期的に「狩猟者」としての本能が目覚め、獲物を求めて人里に姿を現すのだという。",
-		   NULL, "...As Takano-san explained it, those with demon blood in them periodically awaken to their instincts as 'hunters'. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "...As Takano-san explained it, those with demon blood in them periodically awaken to their instincts as 'hunters.' ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "そして、その際に行われるのが「鬼隠し」だそうだ。",
 		   NULL, "So when this happens, it's said that they descended on the human villages looking for prey and conducted Onikakushi.", Line_Normal);
@@ -84,7 +84,7 @@ void dialog008()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "……さっきまでの、楽しかったひとときの記憶がノイズまじりに乱れ、ぼやけて、……砂嵐の中へと消え去ってゆく。",
-		   NULL, "...My fun memories from just a short while earlier swirled and blurred into noise, ...as if vanishing into a sandstorm. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "...My fun memories from just a short while earlier swirled and blurred into noise ...as if vanishing into a sandstorm. ", GetGlobalFlag(GLinemodeSp));
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「綿流し」の名前に隠されたどす黒く陰惨な響きが、全身にまるで痺れのような圧迫となって……",
@@ -162,7 +162,7 @@ void dialog019()
 		   NULL, " ......It is tonight, you know.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 9, "ps3/s02/09/130900186", 128, TRUE);
 	OutputLine(NULL, "オヤシロさまの祟りがある夜は。」",
-		   NULL, " The night of Oyashiro-sama's curse,\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " The night of Oyashiro-sama's curse.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 }
 
@@ -206,7 +206,7 @@ void dialog021()
 
 //人肉缶詰事件、!w1200......あ、ごめんなさい＠この話はタブーだったわよね...？￥
 	OutputLine(NULL, "缶詰疑惑、",
-		   NULL, " canned flesh incident,", Line_Continue);
+		   NULL, " canned flesh incident", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1200 );
 	// (backup) SetValidityOfInput( TRUE );
