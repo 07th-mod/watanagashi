@@ -166,7 +166,7 @@ void main()
 		   NULL, "\"I'm surprised you managed it...", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei21050", 128, TRUE);
 	OutputLine(NULL, "一体どうやって…。」",
-		   NULL, " How did you exactly...?", Line_Normal);
+		   NULL, " How did you exactly...?\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	ModDrawCharacter(3, 2, "sprite/normal/re1b_warai_b1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
@@ -212,7 +212,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei21060", 128, TRUE);
 	OutputLine(NULL, "「……悪気はないんだが、なぜか罪の意識もある。",
-		   NULL, "\"...I didn't meant to do anything wrong, but I still feel guilty.", Line_WaitForInput);
+		   NULL, "\"...I didn't mean to do anything wrong, but I still feel guilty.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei21070", 128, TRUE);
 	OutputLine(NULL, "…何でも聞くぞ。」",
 		   NULL, " ...I'm listening.\"", GetGlobalFlag(GLinemodeSp));
@@ -541,10 +541,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 5, "ps3/s19/05/500500070", 128, TRUE);
 	OutputLine(NULL, "「……きっと圭一は素敵な大人になれますですよ。」",
-		   NULL, "\"...I'm sure that Keiichi will grow up to be a wonderful adult.\"", Line_WaitForInput);
+		   NULL, "\"...I'm sure that Keiichi will grow up to be a wonderful adult.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 5, "ps3/s19/05/500500071", 128, TRUE);
 	OutputLine(NULL, "…なでなで。",
-		   NULL, " ...*pat pat*", GetGlobalFlag(GLinemodeSp));
+		   NULL, " ...*pat pat*\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -641,7 +641,7 @@ void main()
 //　どったんばったん！＠　つねったりひっかいたり...！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　どったんばったん！！",
-		   NULL, "*bang* *smash*", Line_WaitForInput);
+		   NULL, "*Bang* *smash*", Line_WaitForInput);
 	OutputLine(NULL, "　つねったりひっかいたり…！！",
 		   NULL, " *pinch* *squeeze*", Line_WaitForInput);
 
