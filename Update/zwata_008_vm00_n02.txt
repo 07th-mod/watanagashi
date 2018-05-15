@@ -187,7 +187,7 @@ void dialog011()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps2/09/130900129", 240, TRUE);
 	OutputLine(NULL, "　そのあとは、それぞれの役割を持った村人たちが、各々に肉を解体して美味しく頂いたって考えられてるわね。",
-		   NULL, "It's thought that afterwards, the villagers, each with a different role, dismantled the flesh piece-by-piece and feasted upon it.", Line_WaitForInput);
+		   NULL, "It's thought that afterwards, the villagers, each with a different role, dismantled the flesh piece by piece and feasted upon it.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 9, "ps2/09/130900130", 240, TRUE);
 	OutputLine(NULL, "…くすくす。」",
 		   NULL, " ...Heehee.\"", GetGlobalFlag(GLinemodeSp));
@@ -244,7 +244,7 @@ void dialog015()
 //　まな板という言葉にぞくりとする......￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　まな板という言葉にぞくりとする……。",
-		   NULL, "The words 'chopping block' sent a jolt through my body......", Line_Normal);
+		   NULL, "The words \"chopping block\" sent a jolt through my body......", Line_Normal);
 	ClearMessage();
 }
 
@@ -472,7 +472,7 @@ void dialog018()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps2/06/130600089", 240, TRUE);
 	OutputLine(NULL, "「け、……圭ちゃん、",
-		   NULL, "\"Ke...... Kei-chan,", Line_Continue);
+		   NULL, "\"Ke...... Kei-chan", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
@@ -556,7 +556,7 @@ void dialog019()
 		   NULL, " ......It is tonight, you know.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 9, "ps3/s02/09/130900186", 128, TRUE);
 	OutputLine(NULL, "オヤシロさまの祟りがある夜は。」",
-		   NULL, " The night of Oyashiro-sama's curse,\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " The night of Oyashiro-sama's curse.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 }
 
@@ -632,7 +632,7 @@ void dialog021()
 
 //人肉缶詰事件、!w1200......あ、ごめんなさい＠この話はタブーだったわよね...？￥
 	OutputLine(NULL, "人肉缶詰事件、",
-		   NULL, " canned flesh incident,", Line_Continue);
+		   NULL, " canned flesh incident", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1200 );
 	// (backup) SetValidityOfInput( TRUE );
