@@ -196,6 +196,7 @@ void main()
 	ModDrawCharacter(3, 11, "sprite/normal/oisi1_1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //とにかく、４人は祭具殿の中で何かを見たんです＠　消されるくらいの何かを！＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700173", 128, TRUE);
 	OutputLine(NULL, "とにかく、４人は祭具殿の中で何かを見たんです！",
 		   NULL, "Anyway, those four saw something inside the storehouse!", Line_Continue);
@@ -400,11 +401,6 @@ void main()
 		OutputLine(NULL, "月が昇りてから沈むまで雛見沢を見守る尊い神社なのじゃ。",
 			   NULL, " The holy shrine protects Hinamizawa from when the sun comes up to when it sets, and from when the moon rises to when it falls. ", GetGlobalFlag(GLinemodeSp));
 	}
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>園崎県議</color>", NULL, "<color=#f5e6d3>Sonozaki Representative</color>", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　八百万の神々とオヤシロさまと先祖の霊を祀り、日が昇りてから沈むまで。",
-		   NULL, "The eight hundred thousand gods, Oyashiro-sama, and the spirits of our ancestors are enshrined there.", Line_ContinueAfterTyping);
-	OutputLine(NULL, "月が昇りてから沈むまで雛見沢を見守る尊い神社なのじゃ。",
-		   NULL, " The holy shrine protects Hinamizawa from when the sun comes up to when it sets, and from when the moon rises to when it falls. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>園崎県議</color>", NULL, "<color=#f5e6d3>Sonozaki Representative</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/saburo44009", 128, TRUE);
 	OutputLine(NULL, "それを土足で踏みにじろうという馬鹿がいるッッ！！！",
