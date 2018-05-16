@@ -581,7 +581,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600214", 128, TRUE);
 	OutputLine(NULL, "「実は、",
-		   NULL, "\"Actually,", Line_Continue);
+		   NULL, "\"Actually", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
@@ -827,7 +827,7 @@ void main()
 		   NULL, "\"Thank you for answering me honestly.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600232", 128, TRUE);
 	OutputLine(NULL, "…じゃあ、…言いますね。」",
-		   NULL, " ...Okay, then... I'll tell you.\"", Line_Normal);
+		   NULL, " ...Okay, then... I'll tell you.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	FadeOutBGM( 1, 1000, TRUE );
@@ -838,7 +838,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600233", 128, TRUE);
 	OutputLine(NULL, "　…昨夜、鷹野さんと富竹さんが死んだんだそうです。",
-		   NULL, "...Apparently, last night, Takano-san and Tomitake-san died.", Line_Normal);
+		   NULL, "...Apparently, last night, Takano-san and Tomitake-san died.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawScene("background/ma_s1", 400 );
@@ -1307,7 +1307,7 @@ void main()
 		   NULL, "\"...I don't think anyone's been confirmed missing yet.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600263", 128, TRUE);
 	OutputLine(NULL, "…多分、２人が失踪するのは、",
-		   NULL, " ...I think that those two people,", Line_Continue);
+		   NULL, " ...I think that those two people", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
@@ -1327,7 +1327,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100389", 128, TRUE);
 	OutputLine(NULL, "「これから…２人が、",
-		   NULL, "\"Two people... have yet to,", Line_Continue);
+		   NULL, "\"Two people... have yet to", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
@@ -1589,6 +1589,7 @@ void main()
 	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600275", 128, TRUE);
 	OutputLine(NULL, "……つまりそういうことなんです。",
 		   NULL, " ...That's what I mean. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600276", 128, TRUE);
 	OutputLine(NULL, "…この雛見沢では、毎年、綿流しの夜に、オヤシロさまの祟りということにして誰かを殺してもいい土壌が、",
 		   NULL, "...At some point, a tradition was created here in Hinamizawa...", Line_Continue);
@@ -1650,7 +1651,7 @@ void main()
 		   NULL, "After all, the incidents always get resolved individually.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600279", 128, TRUE);
 	OutputLine(NULL, "…「連続事件」という形にならないんですよ。",
-		   NULL, " ...It doesn't end up being a 'string of incidents', you know?", Line_WaitForInput);
+		   NULL, " ...It doesn't end up being a 'string of incidents,' you know?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600280", 128, TRUE);
 	OutputLine(NULL, "たまたま毎年、綿流しの晩に不幸なことが起こる。",
 		   NULL, " It just so happens that something unfortunate happens on the night of Watanagashi every year. ", GetGlobalFlag(GLinemodeSp));
@@ -1917,7 +1918,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100416", 128, TRUE);
 	OutputLine(NULL, "　圭ちゃんは見ておく必要があるとか何とか、思わせぶりなことを言って中に引き込んだんだッ！！！",
-		   NULL, "You were all, 'Kei-chan, you need to see what's inside', and you convinced me and then pulled me in!!!", Line_WaitForInput);
+		   NULL, "You were all, 'Kei-chan, you need to see what's inside,' and you convinced me and then pulled me in!!!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100417", 128, TRUE);
 	OutputLine(NULL, "　どうしてくれるんだよ？！？！",
 		   NULL, " Why the hell did you do that?!?!", Line_WaitForInput);
@@ -2042,7 +2043,7 @@ void main()
 //　......受話器を戻し、詩音がもう一度電話をかけ直してくれることを...ただひたすらに祈った＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……受話器を戻し、詩音がもう一度電話をかけ直してくれることを…ただひたすらに祈った。",
-		   NULL, "......I return the receiver to its stand, and I simply prayed... that Shion would call me back again.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "......I returned the receiver to its stand, and I simply prayed... that Shion would call me back again.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
