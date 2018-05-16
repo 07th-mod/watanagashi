@@ -451,7 +451,7 @@ void main()
 //　おはよぅございます＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　おはよぅございます！",
-		   NULL, "Good morning!", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"Good morning!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -641,14 +641,14 @@ void main()
 //　...時間が経てば時間が経つほど＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…時間が経てば時間が経つほど。",
-		   NULL, "...and the more time passed...", GetGlobalFlag(GLinemodeSp));
+		   NULL, "...And the more time passed...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　......頭をもたげて来るのが...、!w1000......祟り＠「鬼隠し」の噂だ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……頭をもたげて来るのが…、",
-		   NULL, "...the only thing that came to mind was...", Line_ContinueAfterTyping);
+		   NULL, "...The only thing that came to mind was...", Line_ContinueAfterTyping);
 
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
@@ -728,7 +728,7 @@ void main()
 //　富竹さんと鷹野さんが怪死した以上...、次は俺と詩音の番で当然のはずなのに......￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　富竹さんと鷹野さんが怪死した以上…、次は俺と詩音の番で当然のはずなのに……。",
-		   NULL, "If Tomitake-san and Takano-san had suffered mysterious deaths... then it should have been mine and Shion's turn next......", Line_Normal);
+		   NULL, "If Tomitake-san and Takano-san had suffered mysterious deaths... then it should have been my and Shion's turn next......", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawScene("background/gk1", 400 );
@@ -1023,7 +1023,7 @@ void main()
 
 
 	DisableWindow();
-	ModDrawCharacterWithFiltering(3, 2, "portrait/normal/re1a_warai_a1_", "2", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	ModDrawCharacter(3, 2, "portrait/normal/re1a_warai_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「あははは...、あれ、それ、カボチャのコロッケだよ＠　大丈夫？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -1043,7 +1043,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "ps3/s02/04/130400046", 128, TRUE);
 	OutputLine(NULL, "「……んぐぐ……、…え、…えぇ！",
-		   NULL, "\"......Nggh......, ...Y-Yes!", Line_WaitForInput);
+		   NULL, "\"......Nggh...... ...Y-Yes!", Line_WaitForInput);
 
 	DisableWindow();
 	ModDrawCharacter(1, 4, "portrait/normal/sa1a_warai_a1_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
@@ -1101,7 +1101,7 @@ void main()
 
 
 	DisableWindow();
-	ModDrawCharacterWithFiltering(3, 4, "portrait/normal/sa1b_odoroki_b1_", "1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	ModDrawCharacterWithFiltering(3, 4, "portrait/normal/sa1b_odoroki_b1_", "1", "right", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「あ、あんまりにもおいしいので、ぜひ圭一さんにも召し上がってほしいですわね...！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
@@ -1201,7 +1201,7 @@ void main()
 //　レナも箸を伸ばし、...ようやくいつものお昼の雰囲気が戻ってくる＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　レナも箸を伸ばし、…ようやくいつものお昼の雰囲気が戻ってくる。",
-		   NULL, "Rena reached out with her chopsticks, ...and at last, the usual lunchtime atmosphere began to return.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Rena reached out with her chopsticks ...and at last, the usual lunchtime atmosphere began to return.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1518,7 +1518,7 @@ void main()
 
 
 	DisableWindow();
-	ModDrawCharacterWithFiltering(1, 4, "portrait/normal/sa1a_akireru_a1_", "0", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	ModDrawCharacter(1, 4, "portrait/normal/sa1a_akireru_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「......そんなに可愛いものとは思いませんけど＠...ぐわぁーって、喉の奥まで覗けるくらいの大あくびでしてよ...？￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
@@ -1869,7 +1869,7 @@ void main()
 //　これで終わり＠　と思った瞬間に、先生のカレー菜園の水やりも思い出す￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　これで終わり！",
-		   NULL, "That should about do it!", Line_WaitForInput);
+		   NULL, "That should do it!", Line_WaitForInput);
 	OutputLine(NULL, "　と思った瞬間に、先生のカレー菜園の水やりも思い出す。",
 		   NULL, " No sooner had I thought that than I remembered that I had to water the teacher's curry vegetable garden too.", Line_Normal);
 	ClearMessage();
@@ -1993,7 +1993,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 5, "ps3/s02/05/130500028", 128, TRUE);
 	OutputLine(NULL, "「……ぅっく、",
-		   NULL, "\"......*hic*", Line_Continue);
+		   NULL, "\"......*Hic*", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
@@ -2003,7 +2003,7 @@ void main()
 		   NULL, " ...N-No.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 5, "ps3/s02/05/130500029", 128, TRUE);
 	OutputLine(NULL, "…違うのです。」",
-		   NULL, " ...That isn't it,\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " ...That isn't it.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -2213,7 +2213,7 @@ void main()
 //　......そして今度は梨花ちゃんに聞かれる......＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……そして今度は梨花ちゃんに聞かれる……。",
-		   NULL, "...and now Rika-chan was asking me...", GetGlobalFlag(GLinemodeSp));
+		   NULL, "...And now Rika-chan was asking me...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　あの晩の出来事は...誰にも知られていないどころか......、!w1000誰もが知っている...？￥
@@ -2252,7 +2252,7 @@ void main()
 //　...だって、...富竹さんと鷹野さんが死んだのが何よりもの証拠じゃないか￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…だって、…富竹さんと鷹野さんが死んだのが何よりもの証拠じゃないか。",
-		   NULL, "...After all... don't Tomitake-san's and Takano-san's deaths prove it?", Line_Normal);
+		   NULL, "...After all... don't Tomitake-san and Takano-san's deaths prove it?", Line_Normal);
 	ClearMessage();
 
 //nega 0
@@ -2342,7 +2342,7 @@ void main()
 //いつもの笑顔で、にっこりと笑いながら言った￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　いつもの笑顔で、にっこりと笑いながら言った。",
-		   NULL, "she said, smiling her usual smile.", Line_Normal);
+		   NULL, "She said, smiling her usual smile.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	FadeBustshotWithFiltering( 2, "left", 1, FALSE, 0, 0, 300, TRUE );
@@ -3248,7 +3248,7 @@ void main()
 //　言葉に詰まる＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　言葉に詰まる。",
-		   NULL, "", GetGlobalFlag(GLinemodeSp));
+		   NULL, "...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -3358,7 +3358,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 5, "ps3/s02/05/130500080", 128, TRUE);
 	OutputLine(NULL, "「……どんな死に方をしても、それは圭一とは関係のないことなのです。」",
-		   NULL, "\"......No matter how they died, it has nothing to do with you, Keiichi,\"", Line_Normal);
+		   NULL, "\"......No matter how they died, it has nothing to do with you, Keiichi.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawBustshotWithFiltering(5, "black", "down", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 1300, TRUE );
@@ -3823,7 +3823,7 @@ void main()
 //　その日、梨花ちゃんは何となく気乗りしないと言って、部活をやめようと言った＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その日、梨花ちゃんは何となく気乗りしないと言って、部活をやめようと言った。",
-		   NULL, "That day, Rika-chan said she wasn't feeling up for club activities that day, so she suggested we not bother.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "That day, Rika-chan said she wasn't feeling up for club activities, so she suggested we do not bother.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　気乗りしない時は拒否もある＠......レナたちはとても残念そうだった...￥
@@ -3837,7 +3837,7 @@ void main()
 //　...姉猫はとても機嫌が悪いのです＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…姉猫はとても機嫌が悪いのです。",
-		   NULL, "...The big sister cat is not in a good mood.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"...The big sister cat is not in a good mood.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
