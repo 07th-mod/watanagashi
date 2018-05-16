@@ -486,7 +486,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200086", 128, TRUE);
 	OutputLine(NULL, "「……魅ぃちゃん、",
-		   NULL, "\"......Mii-chan,", Line_Continue);
+		   NULL, "\"......Mii-chan", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
@@ -863,7 +863,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100227", 128, TRUE);
 	OutputLine(NULL, "「あ、",
-		   NULL, "\"Uh,", Line_Continue);
+		   NULL, "\"Uh", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
@@ -1178,7 +1178,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300111", 128, TRUE);
 	OutputLine(NULL, "「あ、…そうそう、圭ちゃん。」",
-		   NULL, "\"Oh, ...One more thing, Kei-chan.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"Oh ...One more thing, Kei-chan.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -2608,7 +2608,7 @@ void main()
 //　魅音なら、国際商社のバリバリ社員とか、とにかく世界を縦横無尽に駆け巡る派手な職業を希望するに違いない＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　魅音なら、国際商社のバリバリ社員とか、とにかく世界を縦横無尽に駆け巡る派手な職業を希望するに違いない。",
-		   NULL, "Mion would definitely want to be an hardworking employee for an international trading company, or some other crazy job that involved her running all around the world.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mion would definitely want to be a hardworking employee for an international trading company, or some other crazy job that involved her running all around the world.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -2686,7 +2686,7 @@ void main()
 //　...結局、ひと気のない休憩コーナーでお喋りをすることになった￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…結局、ひと気のない休憩コーナーでお喋りをすることになった。",
-		   NULL, "...We ended up going to the lounge area, which was vacant, and continuing the conversation.", Line_Normal);
+		   NULL, "...We ended up going to the lounge area, which was vacant, and continued the conversation.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	ModDrawCharacterWithFiltering(3, 6, "sprite/normal/si1a_warai_a1_", "2", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
@@ -2752,7 +2752,7 @@ void main()
 		   NULL, "\"Kei-chan, you just moved here, right?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600186", 128, TRUE);
 	OutputLine(NULL, "…自分で言うのも何ですけど、園崎家って、ここいらじゃ結構、名士なんですよ？」",
-		   NULL, " ...This will sound like I'm boasting, but we of the Sonozaki family are kind of personages around here.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " ...This will sound like I'm boasting, but we of the Sonozaki family are kind of personages around here.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -2766,7 +2766,7 @@ void main()
 //　魅音や詩音の、あまりに気さくな雰囲気からは、とても名士という言葉とは結びつかない＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　魅音や詩音の、あまりに気さくな雰囲気からは、とても名士という言葉とは結びつかない。",
-		   NULL, "The word 'personage' didn't really match the extremely sociable air that Mion and Shion gave off.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "The word \"personage\" didn't really match the extremely sociable air that Mion and Shion gave off.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　詩音が言うには、...園崎家というのは元々、雛見沢の旧家だったが、戦後にいろいろな事業で成功して大きく勢力を伸ばしたのだと言う￥
@@ -2808,7 +2808,7 @@ void main()
 		   NULL, "\"If you ever go for a walk through Okinomiya, pay attention to the signboards and stuff.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600190", 128, TRUE);
 	OutputLine(NULL, "園崎の親族が経営してるお店ってとても多いんですよ。」",
-		   NULL, " There's a ton of shops that are managed by members of the Sonozaki family.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " There's a ton of shops that are managed by members of the Sonozaki family.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -3550,7 +3550,7 @@ void main()
 //　...あっけらかんとした口調でそう答えた￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…あっけらかんとした口調でそう答えた。",
-		   NULL, "...he answered in an absent tone of voice.", Line_Normal);
+		   NULL, "...He answered in an absent tone of voice.", Line_Normal);
 	ClearMessage();
 
 //「...何かの事件で魅音を疑っていて、その友人の俺に何か聞きに来た＠...そういうことですか？＠
@@ -3947,7 +3947,7 @@ void main()
 //　.........カラカラカラ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　………カラカラカラ。",
-		   NULL, "......*clatter* *clatter* *clatter*", GetGlobalFlag(GLinemodeSp));
+		   NULL, "......*Clatter* *clatter* *clatter*", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　...何の音かと見下ろすと、俺が両手で握り締めているカップの中の溶け残った氷が音を立てていた＠
