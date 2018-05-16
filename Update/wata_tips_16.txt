@@ -41,10 +41,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f3cfb5>公由</color>", NULL, "<color=#f3cfb5>Kimiyoshi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44006", 128, TRUE);
 	OutputLine(NULL, "…ウチのお爺ちゃんがお邪魔してないかと思いまして。",
-		   NULL, "but I was wondering if our old man was visiting you at the moment.", Line_WaitForInput);
+		   NULL, "But I was wondering if our old man was visiting you at the moment.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44007", 128, TRUE);
 	OutputLine(NULL, "………ですよねぇ！",
-		   NULL, " ......You've got that right!", Line_WaitForInput);
+		   NULL, " ......You've got that right!", Line_Continue);
 	OutputLine(NULL, "　はい！",
 		   NULL, " Yes!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44008", 128, TRUE);
@@ -55,7 +55,7 @@ void main()
 		   NULL, " I'm very sorry for calling so late.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44010", 128, TRUE);
 	OutputLine(NULL, "ごめんください……。」",
-		   NULL, " Good-bye.\"", Line_Normal);
+		   NULL, " Goodbye.\"", Line_Normal);
 	ClearMessage();
 
 
@@ -95,7 +95,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>女性</color>", NULL, "<color=#f5e6d3>Woman</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimif44002", 128, TRUE);
 	OutputLine(NULL, "「囲碁の人の家は全部、電話したんでしょ？」",
-		   NULL, "\"You called everyone he plays Go with, didn't you?", Line_Normal);
+		   NULL, "\"You called everyone he plays Go with, didn't you?\"", Line_Normal);
 	ClearMessage();
 
 	FadeOutBGM( 1, 1000, TRUE );
