@@ -71,14 +71,14 @@ void main()
 	OutputLine(NULL, "（聞くところでは、魅音と詩音は酷似した外見を持ちながらも、才能のほとんどは魅音が持つと聞く。",
 		   NULL, "(From what I've heard, despite the two of them looking exactly the same on the outside, the talent lies solely with Mion.", Line_WaitForInput);
 	OutputLine(NULL, "…私の知る両者のイメージではそんな偏りは感じられない。）",
-		   NULL, " ...My own observations of the two of them don't leave me with that impression).", GetGlobalFlag(GLinemodeSp));
+		   NULL, " ...My own observations of the two of them didn't leave me with that impression).", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 //　伝承では、園崎家の当主は「鬼を継ぐ」と称して、背中に立派な鬼の刺青を彫るという＠しきたりに従い、魅音にはこの刺青が入れられている可能性が極めて高い￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　伝承では、園崎家の当主は「鬼を継ぐ」と称して、背中に立派な鬼の刺青を彫るという。",
-		   NULL, "Tradition dicates that the leader of the Sonozaki family is said to 'inherit a demon,' and they tattoo a magnificent one onto his or her back. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Tradition dictates that the leader of the Sonozaki family is said to 'inherit a demon,' and they tattoo a magnificent one onto his or her back. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "しきたりに従い、魅音にはこの刺青が入れられている可能性が極めて高い。",
 		   NULL, "In accordance with the tradition, there is an extremely high possibility that Mion has such a tattoo on her back.", Line_Normal);
