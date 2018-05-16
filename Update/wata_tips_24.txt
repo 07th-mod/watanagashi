@@ -98,7 +98,7 @@ void main()
 	ModPlayVoiceLS(5, 0, "ps3/s20/00/keijib44008", 128, TRUE);
 	ModPlayVoiceLS(6, 19, "ps3/s20/19/443100037", 128, TRUE);
 	OutputLine(NULL, "「「「ぅおおっす！！」」」",
-		   NULL, "\"\"\"Thank you!!\"\"\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"Thank you!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -130,7 +130,7 @@ void main()
 //　...あの若造署長が＠ベテランたちが吐き捨てる￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…あの若造署長が。",
-		   NULL, "...That damn upstart chief.", Line_WaitForInput);
+		   NULL, "\"...That damn upstart chief.\"", Line_WaitForInput);
 	OutputLine(NULL, "ベテランたちが吐き捨てる。",
 		   NULL, " The veterans in the room cursed him.", Line_Normal);
 	ClearMessage();
@@ -242,7 +242,7 @@ void main()
 	ModPlayVoiceLS(5, 0, "ps3/s20/00/keijib44009", 128, TRUE);
 	ModPlayVoiceLS(6, 19, "ps3/s20/19/443100038", 128, TRUE);
 	OutputLine(NULL, "「「「わっはっはっはっはっは…！！」」」",
-		   NULL, "\"\"\"Wa-ha-ha-ha-ha-ha...!!\"\"\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"Wa-ha-ha-ha-ha-ha...!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -295,7 +295,7 @@ void main()
 	ModPlayVoiceLS(5, 0, "ps3/s20/00/keijib44010", 128, TRUE);
 	ModPlayVoiceLS(6, 19, "ps3/s20/19/443100039", 128, TRUE);
 	OutputLine(NULL, "「「「わっはっはっはっはっは！！」」」",
-		   NULL, "\"\"\"Wa-ha-ha-ha-ha-ha-ha!!\"\"\"", Line_Normal);
+		   NULL, "\"Wa-ha-ha-ha-ha-ha-ha!!\"", Line_Normal);
 	ClearMessage();
 
 //「ゲストのエスコート役は私がやります＠きっと会場へ連れて行きますので皆さん、気長に待ってください。＠
