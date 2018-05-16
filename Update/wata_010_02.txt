@@ -205,7 +205,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100517", 128, TRUE);
 	OutputLine(NULL, "「詩音！……その、",
-		   NULL, "\"Shion! ...Umm,", Line_Continue);
+		   NULL, "\"Shion! ...Umm", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
@@ -644,7 +644,7 @@ void main()
 //　............あの日、綿流しの晩のことを詰問された以外では......そんなに変わった印象は受けない＠...俺が見る限りでは＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…………あの日、綿流しの晩のことを詰問された以外では……そんなに変わった印象は受けない。",
-		   NULL, ".........Asides from her asking me about the night of Watanagashi...... she hadn't seemed too out of the ordinary.", Line_WaitForInput);
+		   NULL, ".........Aside from her asking me about the night of Watanagashi...... she hadn't seemed too out of the ordinary.", Line_WaitForInput);
 	OutputLine(NULL, "…俺が見る限りでは。",
 		   NULL, " ...At least, from my point of view.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -1062,7 +1062,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600358", 128, TRUE);
 	OutputLine(NULL, "……園崎本家の暗躍があったのではないかと思ってるくらいですから。」",
-		   NULL, "...that the Sonozaki main house is doing some really shady things behind the scenes, even though I'm related to them.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "...That the Sonozaki main house is doing some really shady things behind the scenes, even though I'm related to them.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1236,7 +1236,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100572", 128, TRUE);
 	OutputLine(NULL, "「ぁ、…悪い、……そんなつもりじゃ…。」",
-		   NULL, "\"Ah, ...sorry. ...I didn't mean to...\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"Ah ...sorry. ...I didn't mean to...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1555,7 +1555,7 @@ void main()
 //　......大石さんの話以外にか＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……大石さんの話以外にか。",
-		   NULL, "...Asides from my discussion with Ooishi-san?", GetGlobalFlag(GLinemodeSp));
+		   NULL, "...Aside from my discussion with Ooishi-san?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1566,7 +1566,7 @@ void main()
 //　......あ、!w1000......梨花ちゃんに打ち明けた話は......するべきだろうか。!w1000
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……あ、",
-		   NULL, "...Oh,", Line_ContinueAfterTyping);
+		   NULL, "...Oh", Line_ContinueAfterTyping);
 
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
@@ -1645,7 +1645,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100583", 128, TRUE);
 	OutputLine(NULL, "「……あ、……えー…と……、」",
-		   NULL, "\"...Ah, ...ummm...\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"...Ah ...ummm...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1926,7 +1926,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100598", 128, TRUE);
 	OutputLine(NULL, "「……公由の爺さんってのは、…詩音にとって、相談できる心安い人なんだろ…？」",
-		   NULL, "\"......Old man Kimiyoshi... he's someone you feel comfortable confiding it, Shion...?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"......Old man Kimiyoshi... he's someone you feel comfortable confiding to, Shion...?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -2385,28 +2385,28 @@ void main()
 //　話シタカラ殺サレテシマッタ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　話シタカラ殺サレテシマッタ。",
-		   NULL, "He was killed because I told him.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"He was killed because I told him.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　知ッタカラ殺サレテシマッタ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　知ッタカラ殺サレテシマッタ。",
-		   NULL, "He was killed because he found out.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"He was killed because he found out.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　打チ明ケタカラ、!w1500......殺サレテシマッタ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　打チ明ケタカラ、",
-		   NULL, "I confessed everything...", Line_ContinueAfterTyping);
+		   NULL, "\"I confessed everything...", Line_ContinueAfterTyping);
 
 	SetValidityOfInput( FALSE );
 	Wait( 1500 );
 	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……殺サレテシマッタ。",
-		   NULL, " so he was killed.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " so he was killed.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　その祝詞のような呪文のような、...平坦な繰り返しが意味を持った時＠
@@ -2530,9 +2530,9 @@ void main()
 //　......猫さんの心配し過ぎなのです＠ボクがきっと、何とかしてあげますですよ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……猫さんの心配し過ぎなのです。",
-		   NULL, "...The cat is worrying too much.", Line_WaitForInput);
+		   NULL, "\"...The cat is worrying too much.", Line_WaitForInput);
 	OutputLine(NULL, "ボクがきっと、何とかしてあげますですよ。",
-		   NULL, " I'll do something about it for sure.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " I'll do something about it for sure.\"", GetGlobalFlag(GLinemodeSp));
 
 	DisableWindow();
 	ModDrawCharacter(2, 5, "sprite/normal/ri1_warai_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
@@ -2621,7 +2621,7 @@ void main()
 //　詩音の別れの言葉を待たずに受話器を置く￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　詩音の別れの言葉を待たずに受話器を置く。",
-		   NULL, "I put down the receiver without waiting for Shion to say good-bye.", Line_Normal);
+		   NULL, "I put down the receiver without waiting for Shion to say goodbye.", Line_Normal);
 	ClearMessage();
 
 //　......もう自分や詩音に迫っている危機なんか二の次だった＠
