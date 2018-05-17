@@ -27,6 +27,8 @@ void dialog002()
 	OutputLine(NULL, "左手の小指の先端の節に釘を打つ。",
 		   NULL, " I'll nail one of these into the joint on the end of your left pinky finger. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps2/03/130300676", 240, TRUE);
 	OutputLine(NULL, "順に親指まで打ったらまた小指に戻って、今度は真ん中の節に釘を打つ。",
 		   NULL, "Then, I'll nail each one in order until I get to your thumb, and then I'll go back to your pinky and nail one into the joint in the middle.", Line_WaitForInput);
@@ -34,6 +36,8 @@ void dialog002()
 	OutputLine(NULL, "…この調子で１５本の釘で左手を打ちつける。",
 		   NULL, " ...So on and so on, until I hammer fifteen nails into your left hand. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps2/03/130300678", 240, TRUE);
 	OutputLine(NULL, "それが終わったら次は右手。",
 		   NULL, "When that's over with, I'll do your right hand next.", Line_WaitForInput);
@@ -41,6 +45,8 @@ void dialog002()
 	OutputLine(NULL, "……それが終わったら次は、…………まだ意識があったら教えるね。",
 		   NULL, " ...After that......... if you're still conscious, I'll tell you. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps2/03/130300680", 240, TRUE);
 	OutputLine(NULL, "指先って、たくさんの神経が集まってるから、圭ちゃんが想像するよりもはるかに痛いよ。",
 		   NULL, "There are a lot of nerves bundled in your fingertips, so it hurts far more than you could imagine.", Line_WaitForInput);
