@@ -91,7 +91,7 @@ void main()
 		   NULL, "\"Be plenty careful, you hear?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700391", 128, TRUE);
 	OutputLine(NULL, "今さら信じないでしょうが、…できることならあなたたちに犠牲になって欲しくないんですから。」",
-		   NULL, " You probably don't believe it right now... but I don't want you two being sacrificed if at all possible.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " You probably don't believe it right now... but I don't want you two being sacrificed at all if possible.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -965,7 +965,7 @@ void main()
 		   NULL, "\"Ahahahaha, you don't know, Keiichi-kun?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200485", 128, TRUE);
 	OutputLine(NULL, "　雛見沢は豪雪地帯なんだよ。",
-		   NULL, " Hinamizawa is in an area that gets heavy snowfall.", Line_WaitForInput);
+		   NULL, " Hinamizawa is in an area that gets heavy snowfalls.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200486", 128, TRUE);
 	OutputLine(NULL, "大雪が降ると、みーんな埋まっちゃうの。",
 		   NULL, " When we get a lot, everyone gets buried.", Line_WaitForInput);
@@ -1074,7 +1074,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	FadeBustshotWithFiltering( 1, "right", 1, FALSE, 0, 0, 300, TRUE );
-	ModDrawCharacterWithFiltering(3, 2, "sprite/normal/re1b_def_b1_", "0", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	ModDrawCharacter(3, 2, "sprite/normal/re1b_def_b1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「でもね＠冬は冬で楽しいことがいっぱいあるんだよ＠　冬の部活もね、きっと楽しいんだよ！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -1249,7 +1249,7 @@ void main()
 //　............あ、...しまった...￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…………あ、…しまった…。",
-		   NULL, ".........Ah, ...she did it...", Line_Normal);
+		   NULL, ".........Ah ...she did it...", Line_Normal);
 	ClearMessage();
 
 //　...自分で言った不用意な一言が、...自分がせっかく忘れようとしていたことを思い出させる＠
@@ -1696,8 +1696,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300312", 128, TRUE);
 	OutputLine(NULL, "郷に入りては郷に従えって、…昔から言うもんね。」",
-		   NULL, "There's an old saying... when in Rome, do as the Romans do.\"", Line_Normal);
+		   NULL, "There's an old saying... when in Rome, do as the Romans do.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
 //「.........あれからもう......何日も経ってる＠...今さらだとは思うが、謝る＠......悪かった＠...許してくれ.........。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130101034", 128, TRUE);
 	OutputLine(NULL, "「………あれからもう……何日も経ってる。",
 		   NULL, " \"......It's been... days since then.", Line_WaitForInput);
@@ -1878,7 +1881,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200509", 128, TRUE);
 	OutputLine(NULL, "「夕方過ぎのお夕食前の時間。",
-		   NULL, "\"It was evening, before dinnertime.", Line_WaitForInput);
+		   NULL, "\"It was evening, before dinner time.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200510", 128, TRUE);
 	OutputLine(NULL, "…梨花ちゃんが来たはずだよ。",
 		   NULL, " ...Rika-chan should have come here.", Line_WaitForInput);
@@ -2088,7 +2091,7 @@ void main()
 		   NULL, "\"Then... Satoko-chan called.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200523", 128, TRUE);
 	OutputLine(NULL, "…うちの梨花がお邪魔してませんこと？",
-		   NULL, " ...Might Rika be imposing on you?", Line_WaitForInput);
+		   NULL, " ...'Might Rika be imposing on you?'", Line_WaitForInput);
 
 	DisableWindow();
 	ModDrawCharacter(3, 2, "sprite/normal/re1b_warai_b1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
@@ -2202,13 +2205,13 @@ void main()
 		   NULL, "\"It probably went like this.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200530", 128, TRUE);
 	OutputLine(NULL, "…沙都子。",
-		   NULL, " ...Satoko.", Line_WaitForInput);
+		   NULL, " ...'Satoko.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200531", 128, TRUE);
 	OutputLine(NULL, "実は今日、食事を作り過ぎちゃったんだけど、食べに来ない？",
 		   NULL, " I actually made too much dinner today, so why not come over and eat?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200532", 128, TRUE);
 	OutputLine(NULL, "　梨花ちゃんは先に来てもう食べてるよ。",
-		   NULL, " Rika-chan came earlier and already ate some.", Line_WaitForInput);
+		   NULL, " Rika-chan came earlier and already ate some.'", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200533", 128, TRUE);
 	OutputLine(NULL, "………こんな感じ。」",
 		   NULL, " ......Something like that.\"", GetGlobalFlag(GLinemodeSp));
@@ -2378,7 +2381,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300339", 128, TRUE);
 	OutputLine(NULL, "「はははははははははははははははは……はは、……は。",
-		   NULL, "\"Hahahahahahahahahahaha... haha, ...ha.", Line_WaitForInput);
+		   NULL, "\"Hahahahahahahahahahaha... haha ...ha.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300340", 128, TRUE);
 	OutputLine(NULL, "……はぁ。」",
 		   NULL, " ...Hah.\"", GetGlobalFlag(GLinemodeSp));
@@ -2807,7 +2810,7 @@ void main()
 //　......魅音がようやく口を開いた￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……魅音がようやく口を開いた。",
-		   NULL, "she finally opened her mouth to speak.", Line_Normal);
+		   NULL, "She finally opened her mouth to speak.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	FadeOutBGM( 1, 1000, TRUE );
@@ -2957,7 +2960,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300360", 128, TRUE);
 	OutputLine(NULL, "「…そういう時代の激変の中で、…滝つぼに落ちていく花びらのように。",
-		   NULL, "Our ancestors in Onigafuchi Village... were proud transcendents descended from the demons.", Line_WaitForInput);
+		   NULL, "\"Our ancestors in Onigafuchi Village... were proud transcendents descended from the demons.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300361", 128, TRUE);
 	OutputLine(NULL, "…あっという間に鬼ヶ淵村は消えてしまったのです…。」",
 		   NULL, " Onigafuchi Village disappeared in a flash...\"", Line_Normal);
@@ -3029,7 +3032,7 @@ void main()
 		   NULL, "Another... said that during a famine long ago, ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "河原に捨てられていた死体を集め、焼いて食べて生き延びたなどという何の根拠もない話を、大真面目に教えた。",
-		   NULL, "the people of Hinamizawa gathered up all the corpses they discarded into the dry riverbeds, then cooked and ate them in order to survive—groundless stories, but said in such seriousness.", Line_Normal);
+		   NULL, "The people of Hinamizawa gathered up all the corpses they discarded into the dry riverbeds, then cooked and ate them in order to survive—groundless stories, but said in such seriousness.", Line_Normal);
 	ClearMessage();
 
 //　根も葉もない中傷が次々と重ねられ、それに歴史的事実である鬼ヶ淵村の刺激の強い歴史が信憑性を煽った￥
@@ -3178,7 +3181,7 @@ void main()
 //　...とうとう終戦する￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…とうとう終戦する。",
-		   NULL, "finally ended in 1945.", Line_Normal);
+		   NULL, "Finally ended in 1945.", Line_Normal);
 	ClearMessage();
 
 //「...多数の男手を失った雛見沢にも、ようやく父や夫、息子たちが戻ってまいりました＠...もちろん、帰らぬ者も多かった＠それでも、男手がなく、村を維持することにすら限界を来たしていた雛見沢にとって、それはとても喜ばしいことでした...。＠
@@ -3654,7 +3657,7 @@ void main()
 	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……やがて禁忌の扉を叩くに至る。",
-		   NULL, " until finally they knocked down a door called 'taboo'.", Line_Normal);
+		   NULL, " until finally they knocked down a door called 'taboo.'", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask("background/heya1", "up", 0, 0, 300 );
@@ -3662,6 +3665,7 @@ void main()
 
 //「...戦場で一番入手しやすいタンパク源は何だと思います...？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300394", 128, TRUE);
 	OutputLine(NULL, "「…戦場で一番入手しやすいタンパク源は何だと思います…？」",
 		   NULL, "\"...What do you think the easiest source of protein on a battlefield is...?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -3721,8 +3725,10 @@ void main()
 
 //「......お腹を空かせた前線の兵隊さんにはどの試作品もとても好評だったそうです＠中でも醤油で煮たすき焼き風のものが一番好評だったそうで...。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300404", 128, TRUE);
 	OutputLine(NULL, "「……お腹を空かせた前線の兵隊さんにはどの試作品もとても好評だったそうです。",
 		   NULL, "\"...The starved soldiers on the front lines apparently loved all the prototypes they were sent.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300405", 128, TRUE);
 	OutputLine(NULL, "中でも醤油で煮たすき焼き風のものが一番好評だったそうで…。」",
 		   NULL, " Among them, those who cooked it in soy sauce, like it was sukiyaki, loved it the most...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -3842,7 +3848,7 @@ void main()
 //　一人に石を投げられたら、二人で石を投げ返しなさいと＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　一人に石を投げられたら、二人で石を投げ返しなさいと。",
-		   NULL, "If they throw a stone at one of you... then two of you you must throw stones back.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"If they throw a stone at one of you... then two of you must throw stones back.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　...子供が聞き返す＠
@@ -3855,7 +3861,7 @@ void main()
 //　二人に石を投げられたら、と＠もちろん答えは簡潔だった￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　二人に石を投げられたら、と。",
-		   NULL, "What if they threw stones at two of us?", Line_WaitForInput);
+		   NULL, "\"What if they threw stones at two of us?\"", Line_WaitForInput);
 	OutputLine(NULL, "もちろん答えは簡潔だった。",
 		   NULL, " Of course, the answer was simple.", Line_Normal);
 	ClearMessage();
@@ -3882,7 +3888,7 @@ void main()
 //　千人に襲われたら...＠　その答えすらも簡潔だった￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　千人に襲われたら…？",
-		   NULL, "What if we're attacked by a thousand people...?", Line_WaitForInput);
+		   NULL, "\"What if we're attacked by a thousand people...?\"", Line_WaitForInput);
 	OutputLine(NULL, "　その答えすらも簡潔だった。",
 		   NULL, " Even that answer was simple.", Line_Normal);
 	ClearMessage();
@@ -4091,7 +4097,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300427", 128, TRUE);
 	OutputLine(NULL, "…園崎本家の「鬼」を継ぐ者の宿命なのです。」",
-		   NULL, "and the mission of those who inherit the 'demon' in the Sonozaki main family.\"", Line_Normal);
+		   NULL, "And the mission of those who inherit the 'demon' in the Sonozaki main family.\"", Line_Normal);
 	ClearMessage();
 
 //「..................「鬼」を、...継ぐ者？＠
@@ -4231,7 +4237,7 @@ void main()
 	SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "重い、",
-		   NULL, " heavy,", Line_ContinueAfterTyping);
+		   NULL, " heavy", Line_ContinueAfterTyping);
 
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
@@ -4518,7 +4524,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 5, "ps3/s02/05/130500099", 128, TRUE);
 	OutputLine(NULL, "　…ボクがちゃんと番をしますですから、もっと軽いカギに替えてほしいなのです。",
-		   NULL, "...I will make sure to guard it, so I want to replace the lock with something lighter.", Line_Normal);
+		   NULL, "\"...I will make sure to guard it, so I want to replace the lock with something lighter.\"", Line_Normal);
 	ClearMessage();
 
 //　私は園崎家の当主代行として言った＠
@@ -4531,7 +4537,7 @@ void main()
 //　...連続怪死事件以降、オヤシロさまに不埒な関心を持つ者がいるようだから、カギを簡易にすべきではないと￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…連続怪死事件以降、オヤシロさまに不埒な関心を持つ者がいるようだから、カギを簡易にすべきではないと。",
-		   NULL, "...Ever since the string of freak death incidents, there seem to be people who are insolent towards Oyashiro-sama, so you shouldn't replace the lock with a simpler one.", Line_Normal);
+		   NULL, "\"...Ever since the string of freak death incidents, there seem to be people who are insolent towards Oyashiro-sama, so you shouldn't replace the lock with a simpler one.\"", Line_Normal);
 	ClearMessage();
 
 //　......でも、!w600...公由家の当主の、!w800......公由のおじいちゃんが......＠
@@ -4557,7 +4563,7 @@ void main()
 //　梨花ちゃんがそんなに大変なら、もっと軽いカギに替えてもいいんじゃないか、って＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　梨花ちゃんがそんなに大変なら、もっと軽いカギに替えてもいいんじゃないか、って。",
-		   NULL, "If it's that difficult for you, Rika-chan, then I think it's okay to replace the lock, he said.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"If it's that difficult for you, Rika-chan, then I think it's okay to replace the lock.\" he said.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　カギが掛かっているということは、入ってはいけないという意思表示＠
@@ -4570,7 +4576,7 @@ void main()
 //　...それをわざわざ破って中に入ろうとする悪い人なんて、そうそういるもんか、...って￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…それをわざわざ破って中に入ろうとする悪い人なんて、そうそういるもんか、…って。",
-		   NULL, "...There's nobody bad enough to break through it and go inside... he said.", Line_Normal);
+		   NULL, "\"...There's nobody bad enough to break through it and go inside...\" he said.", Line_Normal);
 	ClearMessage();
 
 //　......当主としての格は同じでも、...私にとっても大恩ある公由のおじいちゃんがそう言うのを、反対できるわけもない...＠
