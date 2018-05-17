@@ -204,7 +204,7 @@ void main()
 //室内を徹底的に捜索したが、被害者以外の人間がいたことを示す痕跡は発見することができなかった。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "室内を徹底的に捜索したが、被害者以外の人間がいたことを示す痕跡は発見することができなかった。",
-		   NULL, "and did a thorough search of the room, but we could not find any traces that would imply that anyone but the victim was present.", Line_ContinueAfterTyping);
+		   NULL, "And did a thorough search of the room, but we could not find any traces that would imply that anyone but the victim was present.", Line_ContinueAfterTyping);
 
 
 	FadeOutBGM( 2, 10, TRUE );
@@ -358,7 +358,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130101186", 128, TRUE);
 	OutputLine(NULL, "「……医者が言うには術後の回復は順調だそうですが、…あんたの顔を見たらまた傷が悪くなりそうです。」",
-		   NULL, "\"...The doctor says my postoperative recovery seems to be going smoothly... but I think I got worse when I saw your face.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"...The doctor says my post-operative recovery seems to be going smoothly... but I think I got worse when I saw your face.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -921,7 +921,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700438", 128, TRUE);
 	OutputLine(NULL, "　井戸状に掘られた垂直トンネルでして。",
-		   NULL, "It was vertical tunnel, dug out like a well.", Line_WaitForInput);
+		   NULL, "It was a vertical tunnel, dug out like a well.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700439", 128, TRUE);
 	OutputLine(NULL, "…ハシゴが設けてあって、下へずーーっと行ったところに今度は横へ抜けるトンネルが作られていました。",
 		   NULL, " ...There was a ladder set up there, and when we went aaaaall the way down, there was another tunnel built there going through it. ", GetGlobalFlag(GLinemodeSp));
@@ -965,7 +965,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130101210", 128, TRUE);
 	OutputLine(NULL, "「……………",
-		   NULL, ".........", Line_Continue);
+		   NULL, "\".........", Line_Continue);
 //!sd
 	SetSpeedOfMessage( FALSE, 0, );
 
@@ -1894,7 +1894,7 @@ void main()
 		   NULL, " ......but her foot slipped and she died.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700515", 128, TRUE);
 	OutputLine(NULL, "　…まるで、底に突き落とした他の犠牲者の死体に呼び寄せられるようにね。」",
-		   NULL, " ...As if beckoned by the corpses of the other sacrifices she dropped down there.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " ...As if beckoned by the corpses of the other sacrifices she dropped down there.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -2572,7 +2572,7 @@ void main()
 	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……アノ日ニ警告シタヨ…。",
-		   NULL, " warned you on that day...", GetGlobalFlag(GLinemodeSp));
+		   NULL, " warned you on that day...</i>", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -2581,7 +2581,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300748", 128, TRUE);
 	OutputLine(NULL, "　……今日以降、",
-		   NULL, "...After today...", Line_Continue);
+		   NULL, "<i>...After today...", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 900 );
@@ -2901,7 +2901,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130101269", 128, TRUE);
 	OutputLine(NULL, "　……何も終わってない。",
-		   NULL, "......Nothing was over.", Line_WaitForInput);
+		   NULL, "\"......Nothing was over.", Line_Continue);
+	Wait( 1000 );
 	OutputLine(NULL, "……何も終わってない。",
 		   NULL, " ......Nothing was over.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -2959,7 +2960,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130101275", 128, TRUE);
 	OutputLine(NULL, "「それだけが……",
-		   NULL, "\"That...", Line_Continue);
+		   NULL, "That...", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
