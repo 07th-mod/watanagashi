@@ -226,7 +226,7 @@ void main()
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200010", 128, TRUE);
 	ModPlayVoiceLS(5, 3, "ps3/s02/03/130300005", 128, TRUE);
 	OutputLine(NULL, "「「おお〜〜〜！！」」",
-		   NULL, "\"Yeeeaaahh~~~!!\"", Line_Normal);
+		   NULL, "\"\"Yeeeaaahh~~~!!\"\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 
@@ -650,7 +650,7 @@ void main()
 	ModPlayVoiceLS(6, 4, "ps3/s02/04/130400007", 128, TRUE);
 	ModPlayVoiceLS(7, 5, "ps3/s02/05/130500007", 128, TRUE);
 	OutputLine(NULL, "「「「おおーーーー！！！」」」",
-		   NULL, "\"Yeeaaahh!!!\"", Line_Normal);
+		   NULL, "\"\"\"Yeeaaahh!!!\"\"\"", Line_Normal);
 	ClearMessage();
 
 
@@ -1327,7 +1327,7 @@ void main()
 	ModPlayVoiceLS(7, 5, "ps3/s02/05/130500015", 128, TRUE);
 	ModPlayVoiceLS(8, 0, "ps3/s02/00/yataa03006", 128, TRUE);
 	OutputLine(NULL, "「「「えぇ…？！？！」」」",
-		   NULL, "\"Ehhh...?!?!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"\"\"Ehhh...?!?!\"\"\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -2676,7 +2676,7 @@ void main()
 	ModPlayVoiceLS(6, 4, "ps3/s02/04/130400031", 128, TRUE);
 	ModPlayVoiceLS(7, 5, "ps3/s02/05/130500023", 128, TRUE);
 	OutputLine(NULL, "「「「ファイト、おーー！！！」」」",
-		   NULL, "\"Go for it, yay!!!\"", Line_Normal);
+		   NULL, "\"\"\"Go for it, yay!!!\"\"\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask("background/je1", "right", 0, 0, 300 );
@@ -9046,9 +9046,9 @@ void main()
 //　...やってないよね＠　そう念を押されているように感じた＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…やってないよね？",
-		   NULL, "\"...You haven't yet, right?\"", Line_WaitForInput);
+		   NULL, "...You haven't yet, right?", Line_WaitForInput);
 	OutputLine(NULL, "　そう念を押されているように感じた。",
-		   NULL, " is what I could feel her saying.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Is what I could feel her saying.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
