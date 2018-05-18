@@ -341,7 +341,7 @@ void main()
 //　今の私に言われても困るよ＠...そう言ってるように感じられる笑顔だった＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　今の私に言われても困るよ。",
-		   NULL, "\"It would be a problem if you said something to me right now.\"", Line_WaitForInput);
+		   NULL, "It would be a problem if you said something to me right now.", Line_WaitForInput);
 	OutputLine(NULL, "…そう言ってるように感じられる笑顔だった。",
 		   NULL, " That smile seemed to be telling me as much.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -929,7 +929,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/otall50001", 128, TRUE);
 	OutputLine(NULL, "「「「そ、その４名様までのお供に…ぜひ俺たちをぉおぉおぉおお〜！！」」」",
-		   NULL, "\"Th-That ticket can admit up to four people... please bring us with yooouuuuuuuuuu~!!\"", Line_Normal);
+		   NULL, "\"\"\"Th-That ticket can admit up to four people... please bring us with yooouuuuuuuuuu~!!\"\"\"", Line_Normal);
 	ClearMessage();
 
 //　な、なんてムシのいい奴らだ...＠
@@ -1609,7 +1609,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/otall50002", 128, TRUE);
 	OutputLine(NULL, "「「「フキフキ！",
-		   NULL, "\"Wipey-wipey!", Line_Continue);
+		   NULL, "\"\"\"Wipey-wipey!", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
@@ -1623,7 +1623,7 @@ void main()
 	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "　フキフキ！！！」」」",
-		   NULL, " Wipey-wipey!!!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Wipey-wipey!!!\"\"\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -3300,7 +3300,7 @@ void main()
 	ModPlayVoiceLS(5, 4, "ps3/s19/04/500400086", 128, TRUE);
 	ModPlayVoiceLS(6, 1, "ps3/s19/01/hr_kei18480_01", 128, TRUE);
 	OutputLine(NULL, "「「「おぉぉーーーッ！！！」」」",
-		   NULL, "\"Yaaaay!!!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"\"\"Yaaaay!!!\"\"\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -4067,7 +4067,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/otall50003", 128, TRUE);
 	OutputLine(NULL, "「「「こここ、これは…何としたことでござるかぁあぁあぁあああッ！！！」」」",
-		   NULL, "\"W-W-W-What... what is thiiiiiiiiiiiis!!!\"", Line_Normal);
+		   NULL, "\"\"\"W-W-W-What... what is thiiiiiiiiiiiis!!!\"\"\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawScene("bg_226", 400 );
@@ -4250,7 +4250,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタクたち</color>", NULL, "<color=#f5e6d3>Otakus</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/hr_otk00000_abc", 128, TRUE);
 	OutputLine(NULL, "「「「のわぁあぁあああぁああぁあッ…？！？！」」」",
-		   NULL, "\"Nnnnwaaaaaaaaaaah!?!?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"\"\"Nnnnwaaaaaaaaaaah!?!?\"\"\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -4569,7 +4569,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/otall50004", 128, TRUE);
 	OutputLine(NULL, "「「「おお、覚えてろぉおおぉおぉおおおッ！！！」」」",
-		   NULL, "\"Y-Y-You'll remember this!!!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"\"\"Y-Y-You'll remember this!!!\"\"\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -4614,7 +4614,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/otall50005", 128, TRUE);
 	OutputLine(NULL, "「「「アイシャルリタぁああぁあぁあぁあぁンッ！！！！」」」",
-		   NULL, "\"We shall retuuuuuuuuuuurrrn!!!!\"", Line_Normal);
+		   NULL, "\"\"\"We shall retuuuuuuuuuuurrrn!!!!\"\"\"", Line_Normal);
 	ClearMessage();
 
 //　からんからん＠
@@ -7463,7 +7463,7 @@ void main()
 //　お姉じゃないんですから＠そう断った￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　お姉じゃないんですから。",
-		   NULL, "\"I'm not my sister.\"", Line_WaitForInput);
+		   NULL, "I'm not my sister.", Line_WaitForInput);
 	OutputLine(NULL, "そう断った。",
 		   NULL, " That was how she said it.", Line_Normal);
 	ClearMessage();
@@ -8297,7 +8297,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s19/03/500300217", 128, TRUE);
 	OutputLine(NULL, "「「えぇええぇえぇぇ〜〜…？！？！」」",
-		   NULL, "\"WhaaaaaaaaaaaaaaAAAAaaaa~~...!?!?\"", Line_Continue);
+		   NULL, "\"\"WhaaaaaaaaaaaaaaAAAAaaaa~~...!?!?\"\"", Line_Continue);
 
 	PlaySE( 3, "wa_006", 128, 64 );
 	ShakeScreen( 1, 50, 20, 5, 0, );
