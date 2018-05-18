@@ -91,7 +91,7 @@ void main()
 		   NULL, "\"Be plenty careful, you hear?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700391", 128, TRUE);
 	OutputLine(NULL, "今さら信じないでしょうが、…できることならあなたたちに犠牲になって欲しくないんですから。」",
-		   NULL, " You probably don't believe it right now... but I don't want you two being sacrificed at all if possible.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " You probably don't believe it right now... but I don't want you two being sacrificed if at all possible.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1696,8 +1696,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300312", 128, TRUE);
 	OutputLine(NULL, "郷に入りては郷に従えって、…昔から言うもんね。」",
-		   NULL, "There's an old saying... when in Rome, do as the Romans do.\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, "There's an old saying... when in Rome, do as the Romans do.\"", Line_Normal);
+	ClearMessage();
 
 //「.........あれからもう......何日も経ってる＠...今さらだとは思うが、謝る＠......悪かった＠...許してくれ.........。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -1881,7 +1881,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200509", 128, TRUE);
 	OutputLine(NULL, "「夕方過ぎのお夕食前の時間。",
-		   NULL, "\"It was evening, before dinner time.", Line_WaitForInput);
+		   NULL, "\"It was evening, before dinnertime.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200510", 128, TRUE);
 	OutputLine(NULL, "…梨花ちゃんが来たはずだよ。",
 		   NULL, " ...Rika-chan should have come here.", Line_WaitForInput);
@@ -3174,14 +3174,12 @@ void main()
 //　そんな辛く長い戦争の時代も...、昭和２０年＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そんな辛く長い戦争の時代も…、昭和２０年。",
-		   NULL, "Even that bitterly long war, however...", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
+		   NULL, "Even that bitterly long war, however...", Line_WaitForInput);
 
 //　...とうとう終戦する￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…とうとう終戦する。",
-		   NULL, "Finally ended in 1945.", Line_Normal);
+		   NULL, " finally ended in 1945.", Line_Normal);
 	ClearMessage();
 
 //「...多数の男手を失った雛見沢にも、ようやく父や夫、息子たちが戻ってまいりました＠...もちろん、帰らぬ者も多かった＠それでも、男手がなく、村を維持することにすら限界を来たしていた雛見沢にとって、それはとても喜ばしいことでした...。＠
