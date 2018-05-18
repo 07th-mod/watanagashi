@@ -18,7 +18,7 @@ void main()
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ざわざわざわざわ…。",
-		   NULL, "*Rabble* *rabble* *rabble*...", Line_Normal);
+		   NULL, "*rabble* *rabble* *rabble*...", Line_Normal);
 	ClearMessage();
 
 
@@ -176,7 +176,7 @@ void main()
 	ModPlayVoiceLS(5, 0, "ps3/s20/00/keijib44004", 128, TRUE);
 	ModPlayVoiceLS(6, 19, "ps3/s20/19/443100012", 128, TRUE);
 	OutputLine(NULL, "「「「お疲れさまです！！」」」",
-		   NULL, "\"Thank you, sir!!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"\"\"Thank you, sir!!\"\"\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　普段威張っている先輩たちも、大石さんには頭が上がらない＠
@@ -260,7 +260,7 @@ void main()
 	ModPlayVoiceLS(5, 0, "ps3/s20/00/keijib44005", 128, TRUE);
 	ModPlayVoiceLS(6, 19, "ps3/s20/19/443100013", 128, TRUE);
 	OutputLine(NULL, "「「「ぅおっす！」」」",
-		   NULL, "\"Yes, sir!\"", Line_Normal);
+		   NULL, "\"\"\"Yes, sir!\"\"\"", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -331,7 +331,7 @@ void main()
 	ModPlayVoiceLS(5, 0, "ps3/s20/00/keijib44006", 128, TRUE);
 	ModPlayVoiceLS(6, 19, "ps3/s20/19/443100014", 128, TRUE);
 	OutputLine(NULL, "「「「うおぉぉおおぉおぉすッッ！！！」」」",
-		   NULL, "\"Yeaaaaahhh!!!\"", Line_Normal);
+		   NULL, "\"\"\"Yeaaaaahhh!!!\"\"\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	SetValidityOfInput( FALSE );
