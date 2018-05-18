@@ -3846,7 +3846,7 @@ void main()
 //　一人に石を投げられたら、二人で石を投げ返しなさいと＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　一人に石を投げられたら、二人で石を投げ返しなさいと。",
-		   NULL, "\"If they throw a stone at one of you... then two of you must throw stones back.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "If they throw a stone at one of you... then two of you must throw stones back.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　...子供が聞き返す＠
@@ -3859,7 +3859,7 @@ void main()
 //　二人に石を投げられたら、と＠もちろん答えは簡潔だった￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　二人に石を投げられたら、と。",
-		   NULL, "\"What if they threw stones at two of us?\"", Line_WaitForInput);
+		   NULL, "What if they threw stones at two of us?", Line_WaitForInput);
 	OutputLine(NULL, "もちろん答えは簡潔だった。",
 		   NULL, " Of course, the answer was simple.", Line_Normal);
 	ClearMessage();
@@ -3886,7 +3886,7 @@ void main()
 //　千人に襲われたら...＠　その答えすらも簡潔だった￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　千人に襲われたら…？",
-		   NULL, "\"What if we're attacked by a thousand people...?\"", Line_WaitForInput);
+		   NULL, "What if we're attacked by a thousand people...?", Line_WaitForInput);
 	OutputLine(NULL, "　その答えすらも簡潔だった。",
 		   NULL, " Even that answer was simple.", Line_Normal);
 	ClearMessage();
@@ -4535,7 +4535,7 @@ void main()
 //　...連続怪死事件以降、オヤシロさまに不埒な関心を持つ者がいるようだから、カギを簡易にすべきではないと￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…連続怪死事件以降、オヤシロさまに不埒な関心を持つ者がいるようだから、カギを簡易にすべきではないと。",
-		   NULL, "\"...Ever since the string of freak death incidents, there seem to be people who are insolent towards Oyashiro-sama, so you shouldn't replace the lock with a simpler one.\"", Line_Normal);
+		   NULL, "...Ever since the string of freak death incidents, there seem to be people who are insolent towards Oyashiro-sama, so you shouldn't replace the lock with a simpler one.", Line_Normal);
 	ClearMessage();
 
 //　......でも、!w600...公由家の当主の、!w800......公由のおじいちゃんが......＠
@@ -4561,7 +4561,7 @@ void main()
 //　梨花ちゃんがそんなに大変なら、もっと軽いカギに替えてもいいんじゃないか、って＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　梨花ちゃんがそんなに大変なら、もっと軽いカギに替えてもいいんじゃないか、って。",
-		   NULL, "\"If it's that difficult for you, Rika-chan, then I think it's okay to replace the lock.\" he said.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "If it's that difficult for you, Rika-chan, then I think it's okay to replace the lock, he said.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　カギが掛かっているということは、入ってはいけないという意思表示＠
@@ -4574,7 +4574,7 @@ void main()
 //　...それをわざわざ破って中に入ろうとする悪い人なんて、そうそういるもんか、...って￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…それをわざわざ破って中に入ろうとする悪い人なんて、そうそういるもんか、…って。",
-		   NULL, "\"...There's nobody bad enough to break through it and go inside...\" he said.", Line_Normal);
+		   NULL, "...There's nobody bad enough to break through it and go inside... he said.", Line_Normal);
 	ClearMessage();
 
 //　......当主としての格は同じでも、...私にとっても大恩ある公由のおじいちゃんがそう言うのを、反対できるわけもない...＠
