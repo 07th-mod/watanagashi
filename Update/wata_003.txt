@@ -1823,7 +1823,7 @@ void main()
 	ModPlayVoiceLS(4, 24, "ps3/s19/24/502400009", 128, TRUE);
 	ModPlayVoiceLS(5, 25, "ps3/s19/25/502500008", 128, TRUE);
 	OutputLine(NULL, "「「お待ち申し上げておりまッす！！」」",
-		   NULL, "\"We shall be eagerly awaiting your victory!!\"", Line_Normal);
+		   NULL, "\"\"We shall be eagerly awaiting your victory!!\"\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawScene("black", 1000 );
@@ -3364,7 +3364,7 @@ void main()
 	ModPlayVoiceLS(5, 24, "ps3/s19/24/502400011", 128, TRUE);
 	ModPlayVoiceLS(6, 25, "ps3/s19/25/502500011", 128, TRUE);
 	OutputLine(NULL, "「「うぉっす！　了解です！！」」",
-		   NULL, "\"Okay! Gotcha!!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"\"Okay! Gotcha!!\"\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -4355,7 +4355,7 @@ void main()
 	ModPlayVoiceLS(4, 24, "ps3/s19/24/502400013", 128, TRUE);
 	ModPlayVoiceLS(5, 25, "ps3/s19/25/502500012", 128, TRUE);
 	OutputLine(NULL, "「「ま、前原さん！！　やったぁあぁあぁあああッ！！！」」",
-		   NULL, "\"Ma-Maebara-san!! We did iiiiiIIIIiiiiiiIIIiiit!!!\"", Line_Normal);
+		   NULL, "\"\"Ma-Maebara-san!! We did iiiiiIIIIiiiiiiIIIiiit!!!\"\"", Line_Normal);
 	ClearMessage();
 
 	PlayBGM( 1, "msys02", 128, 0 );
@@ -4459,14 +4459,14 @@ void main()
 //　ぅぅ...やりましたね前原さんッ！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ぅぅ…やりましたね前原さんッ！！",
-		   NULL, "\"We-We did it, Maebara-san!!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "We-We did it, Maebara-san!!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　あぁ、お前らのお陰だぜッ！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　あぁ、お前らのお陰だぜッ！！",
-		   NULL, "\"Aah, this is all thanks to you!!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Aah, this is all thanks to you!!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -5155,7 +5155,7 @@ void main()
 //　塩まみれの高血圧カレーなんか食えるかー＠　と言って拒否したのだが...＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　塩まみれの高血圧カレーなんか食えるかー！",
-		   NULL, "\"As if I could eat this curry with enough salt in it to make my blood pressure rise just by looking at it!\"", Line_WaitForInput);
+		   NULL, "As if I could eat this curry with enough salt in it to make my blood pressure rise just by looking at it!", Line_WaitForInput);
 	OutputLine(NULL, "　と言って拒否したのだが…。",
 		   NULL, " Is what I said as I initially refused...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
