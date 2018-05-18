@@ -1614,7 +1614,7 @@ void main()
 	ModPlayVoiceLS(5, 4, "ps3/s19/04/990400241", 128, TRUE);
 	ModPlayVoiceLS(6, 5, "ps3/s19/05/990500111", 128, TRUE);
 	OutputLine(NULL, "「「「おぉおおーー！！！」」」",
-		   NULL, "\"Yeaaaaaaaaah—!!!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"\"\"Yeaaaaaaaaah—!!!\"\"\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -4477,7 +4477,7 @@ void main()
 //　...ほら落ち着いて、「大変お待たせしました...」って￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…ほら落ち着いて、「大変お待たせしました…」って！",
-		   NULL, "\"...Just calm down, and say 'Sorry for the wait...!'\"", Line_Normal);
+		   NULL, "...Just calm down, and say \"Sorry for the wait...!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	ModDrawCharacter(2, 6, "sprite/normal/si2_hau_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
@@ -4493,9 +4493,9 @@ void main()
 //　そうそうその調子＠　がんばってね～＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そうそうその調子！",
-		   NULL, "\"Right, right, just like that!", Line_WaitForInput);
+		   NULL, "Right, right, just like that!", Line_WaitForInput);
 	OutputLine(NULL, "　がんばってね〜！",
-		   NULL, " Do your best!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Do your best!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
