@@ -451,7 +451,7 @@ void main()
 //　おはよぅございます＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　おはよぅございます！",
-		   NULL, "\"Good morning!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Good morning!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1993,7 +1993,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 5, "ps3/s02/05/130500028", 128, TRUE);
 	OutputLine(NULL, "「……ぅっく、",
-		   NULL, "\"......*Hic*", Line_Continue);
+		   NULL, "\"......*hic*", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
@@ -3837,7 +3837,7 @@ void main()
 //　...姉猫はとても機嫌が悪いのです＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…姉猫はとても機嫌が悪いのです。",
-		   NULL, "\"...The big sister cat is not in a good mood.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "...The big sister cat is not in a good mood.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
