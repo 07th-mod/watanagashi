@@ -828,7 +828,7 @@ void main()
 	ModPlayVoiceLS(4, 2, "ps3/s19/02/990200381", 128, TRUE);
 	ModPlayVoiceLS(5, 3, "ps3/s19/03/990300389", 128, TRUE);
 	OutputLine(NULL, "「「おおーーーーッ！！」」",
-		   NULL, "\"Yeaaaaah!!\"", Line_Normal);
+		   NULL, "\"\"Yeaaaaah!!\"\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawScene("black", 1000 );
@@ -1566,7 +1566,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>ギャラリー</color>", NULL, "<color=#f5e6d3>Gallery</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/gallary001", 128, TRUE);
 	OutputLine(NULL, "「「「ファイト、お〜〜〜♪」」」",
-		   NULL, "\"Go for it, yaaaaay♪\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"\"\"Go for it, yaaaaay♪\"\"\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -4439,7 +4439,7 @@ void main()
 	ModPlayVoiceLS(4, 24, "ps3/s19/24/992400013", 128, TRUE);
 	ModPlayVoiceLS(5, 25, "ps3/s19/25/992500010", 128, TRUE);
 	OutputLine(NULL, "「「そそ、そんなこと……そんな、あのあのあの…ッ！！！！」」",
-		   NULL, "\"Th-th-that... That... Uhhhhhhhhhh......!!!!!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"\"Th-th-that... That... Uhhhhhhhhhh......!!!!!\"\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -4525,7 +4525,7 @@ void main()
 	ModPlayVoiceLS(4, 24, "ps3/s19/24/992400014", 128, TRUE);
 	ModPlayVoiceLS(5, 25, "ps3/s19/25/992500011", 128, TRUE);
 	OutputLine(NULL, "「「ま、前原さぁあぁあぁあぁぁぁぁぁぁあああんッ！！！！！！」」",
-		   NULL, "\"Ma-Maebara-saaaaAAAaaaaaAAAaan!!!!!!\"", Line_Normal);
+		   NULL, "\"\"Ma-Maebara-saaaaAAAaaaaaAAAaan!!!!!!\"\"", Line_Normal);
 	ClearMessage();
 
 //　自分たちの胸中を...これまでこれほどに力強く代弁してくれた先輩がいただろうか＠　いない！＠　いるわけがないッ！！＠
@@ -4572,7 +4572,7 @@ void main()
 	ModPlayVoiceLS(5, 25, "ps3/s19/25/992500012", 128, TRUE);
 	ModPlayVoiceLS(6, 1, "ps3/s19/01/hr_kei09930_01", 128, TRUE);
 	OutputLine(NULL, "「「「ゲーム終了ぉぉおおぉおッ！」」」",
-		   NULL, "\"Game oveeeer!\"", Line_Continue);
+		   NULL, "\"\"\"Game oveeeer!\"\"\"", Line_Continue);
 
 	PlaySE( 3, "wa_007", 128, 64 );
 	ShakeScreen( 0, 50, 20, 3, 0, );
@@ -4649,7 +4649,7 @@ void main()
 	ModPlayVoiceLS(4, 24, "ps3/s19/24/992400016", 128, TRUE);
 	ModPlayVoiceLS(5, 25, "ps3/s19/25/992500013", 128, TRUE);
 	OutputLine(NULL, "「「ぅおおおぉーーすッ！！！！」」",
-		   NULL, "\"YESSIR!!!!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"\"YESSIR!!!!\"\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -5069,11 +5069,11 @@ void main()
 	ModPlayVoiceLS(4, 24, "ps3/s19/24/992400017", 128, TRUE);
 	ModPlayVoiceLS(5, 25, "ps3/s19/25/992500014", 128, TRUE);
 	OutputLine(NULL, "「「前原さぁああん！！！",
-		   NULL, "\"Maebara-saaaaaan!!!", Line_WaitForInput);
+		   NULL, "\"\"Maebara-saaaaaan!!!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 24, "ps3/s19/24/992400018", 128, TRUE);
 	ModPlayVoiceLS(5, 25, "ps3/s19/25/992500015", 128, TRUE);
 	OutputLine(NULL, "　絶対優勝して下さいよぉおぉおッ！！！」」",
-		   NULL, " You've got to win!!!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " You've got to win!!!\"\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -5097,39 +5097,39 @@ void main()
 //　でもどうせ魅音の勝ちだ！＠　無敗の帝王＠　俺は魅音に賭けるぞ！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　でもどうせ魅音の勝ちだ！！",
-		   NULL, "\"Mion's going to win anyways!!", Line_WaitForInput);
+		   NULL, "Mion's going to win anyways!!", Line_WaitForInput);
 	OutputLine(NULL, "　無敗の帝王！",
 		   NULL, " She's the Undefeated Empress!", Line_WaitForInput);
 	OutputLine(NULL, "　俺は魅音に賭けるぞ！！",
-		   NULL, " I'm betting on Mion!!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " I'm betting on Mion!!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　いいや神速のレナだ！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　いいや神速のレナだ！！",
-		   NULL, "\"No, it's going to be Rena with that ungodly speed!!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "No, it's going to be Rena with that ungodly speed!!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　トラップの沙都子！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　トラップの沙都子！！",
-		   NULL, "\"Satoko the Trap Artist!!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Satoko the Trap Artist!!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　萌え落としの梨花！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　萌え落としの梨花！！",
-		   NULL, "\"Rika the Siren!!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Rika the Siren!!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　大穴でダークホースの前原だ！！￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　大穴でダークホースの前原だ！！！",
-		   NULL, "\"It may be a long shot, but it'll be Maebara!!!\"", Line_Normal);
+		   NULL, "It may be a long shot, but it'll be Maebara!!!", Line_Normal);
 	ClearMessage();
 
 //　だが今の俺は、そんな黄色い歓声には興味ない＠
