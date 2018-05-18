@@ -715,7 +715,7 @@ void main()
 	OutputLine(NULL, "　…圭一くんが何を言っても、ちゃんと信じるよ。",
 		   NULL, "...Just from that tone, I could feel her saying...", Line_WaitForInput);
 	OutputLine(NULL, "そう言っているようにも聞こえた。",
-		   NULL, " \"No matter what you say, Keiichi-kun, I'll believe you.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " No matter what you say, Keiichi-kun, I'll believe you.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -3962,7 +3962,7 @@ void main()
 //「「「おぉうッ！！！」」＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>男性</color>", NULL, "<color=#f5e6d3>Men</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「「「おぉうッ！！！」」」",
-		   NULL, "\"Got it!!!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"\"\"Got it!!!\"\"\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
