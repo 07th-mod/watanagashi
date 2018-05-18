@@ -1308,7 +1308,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/otaa50001", 128, TRUE);
 	OutputLine(NULL, "「はぁはぁ…",
-		   NULL, "\"*Pant pant*", Line_Continue);
+		   NULL, "\"*pant pant*", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
@@ -4620,7 +4620,7 @@ void main()
 //　からんからん＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　からんからん。",
-		   NULL, "*Clang clang*", GetGlobalFlag(GLinemodeSp));
+		   NULL, "*clang clang*", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -4787,7 +4787,7 @@ void main()
 //　パチパチパチパチ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　パチパチパチパチ。",
-		   NULL, "*Clap clap clap clap*", GetGlobalFlag(GLinemodeSp));
+		   NULL, "*clap clap clap clap*", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
