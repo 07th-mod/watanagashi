@@ -554,14 +554,14 @@ void main()
 //　そんなはずないよ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そんなはずないよ。",
-		   NULL, "\"That can't be.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "That can't be.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　圭一くんは悪くないよ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　圭一くんは悪くないよ。",
-		   NULL, "\"Keiichi-kun, you're not at fault.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Keiichi-kun, you're not at fault.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　...そうレナが言ってくれるのは嬉しかったが...、それは事情を知らないからだ＠
@@ -804,7 +804,7 @@ void main()
 //　私たちを、一番最後に殺すつもりに違いないんです＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私たちを、一番最後に殺すつもりに違いないんです。",
-		   NULL, "\"They must be planning to kill us last of all.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "They must be planning to kill us last of all.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -812,9 +812,9 @@ void main()
 //　...ひと思いに殺さないで、親しい人たちから順々に殺していって...、散々悲しい思いをさせた後に殺す＠......そういう狙いに違いないんです￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…ひと思いに殺さないで、親しい人たちから順々に殺していって…、散々悲しい思いをさせた後に殺す。",
-		   NULL, "\"They're not killing the first people who come to mind... they start by killing those we're close to... and then after they've caused us so much pain, they'll kill us.", Line_WaitForInput);
+		   NULL, "They're not killing the first people who come to mind... they start by killing those we're close to... and then after they've caused us so much pain, they'll kill us.", Line_WaitForInput);
 	OutputLine(NULL, "……そういう狙いに違いないんです。",
-		   NULL, " That must be what they're doing.\"", Line_Normal);
+		   NULL, " That must be what they're doing.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawScene("background/jyt2", 400 );
