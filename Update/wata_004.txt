@@ -1286,7 +1286,7 @@ void main()
 //　ズボ＠ガチャン。/
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ズボ。",
-		   NULL, "*Click*", Line_WaitForInput);
+		   NULL, "*click*", Line_WaitForInput);
 	OutputLine(NULL, "ガチャン。",
 		   NULL, " *CLANK*", Line_ContinueAfterTyping);
 
@@ -2649,7 +2649,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ガシャ、ドガ、",
-		   NULL, "*Thunk, clack*", Line_Normal);
+		   NULL, "*thunk, clack*", Line_Normal);
 
 	ShakeScreen( 1, 50, 20, 5, 0, );
 
@@ -6050,7 +6050,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s19/06/500600173", 128, TRUE);
 	OutputLine(NULL, "「ぷ！",
-		   NULL, "\"*Snort*!", Line_WaitForInput);
+		   NULL, "\"*snort*!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s19/06/500600174", 128, TRUE);
 	OutputLine(NULL, "　くっくっく……。",
 		   NULL, " Hee hee hee hee...", Line_WaitForInput);
