@@ -318,7 +318,7 @@ void main()
 		   NULL, " There's a lot of building tents and setting up chairs.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s19/02/500200918", 128, TRUE);
 	OutputLine(NULL, "結構重労働って聞いてるよ。」",
-		   NULL, " I heard it was pretty hard physical labor!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " I hear it's pretty hard physical labor!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -822,14 +822,14 @@ void main()
 		   NULL, "\"That's why I told you to have someone help!!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/olda50016", 128, TRUE);
 	OutputLine(NULL, "　ほれほれ。」",
-		   NULL, " Come on.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Come on,\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　そう言って、俵でも担ぎ上げるようにひょい！と抱えて持っていってしまった＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そう言って、俵でも担ぎ上げるようにひょい！と抱えて持っていってしまった。",
-		   NULL, "Said the man, lifting it up with a grunt and taking it away under his arm.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " said the man, lifting it up with a grunt and taking it away under his arm.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -986,7 +986,7 @@ void main()
 //　と、その御姿をうやうやしく拝んでいた￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　と、その御姿をうやうやしく拝んでいた。",
-		   NULL, "And just like that, began to respectfully pray to her.", Line_Normal);
+		   NULL, "and just like that, began to respectfully pray to her.", Line_Normal);
 	ClearMessage();
 
 //　.........あれ＠
@@ -2469,14 +2469,14 @@ void main()
 		   NULL, "\"...Mm-hmm.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 9, "ps3/s19/09/500900023", 128, TRUE);
 	OutputLine(NULL, "それに、祟りを信じるかどうかは、話を最後まで聞いてからゆっくり考えればいいことなんだから。」",
-		   NULL, " Besides, you can take all the time you need to decide whether to believe in curses after you've heard us through.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Besides, you can take all the time you need to decide whether to believe in curses after you've heard us through,\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　そう言って鷹野さんはくすりと笑った＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そう言って鷹野さんはくすりと笑った。",
-		   NULL, "Said Takano-san, giving a little smile.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " said Takano-san, giving a little smile.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -2839,9 +2839,9 @@ void main()
 //　正解＠そう言って鷹野さんはくすりと微笑む＠......頭の悪い人は嫌いなタイプなんだろうなと思った￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　正解。",
-		   NULL, "\"Correct.\"", Line_WaitForInput);
+		   NULL, "\"Correct,\"", Line_WaitForInput);
 	OutputLine(NULL, "そう言って鷹野さんはくすりと微笑む。",
-		   NULL, " Smiled Takano, pleased.", Line_WaitForInput);
+		   NULL, " smiled Takano, pleased.", Line_WaitForInput);
 	OutputLine(NULL, "……頭の悪い人は嫌いなタイプなんだろうなと思った。",
 		   NULL, " ...She must dislike stupid people.", Line_Normal);
 	ClearMessage();
@@ -3366,7 +3366,7 @@ void main()
 //　そう鷹野さんに詰め寄られ、思わず苦笑してしまった￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そう鷹野さんに詰め寄られ、思わず苦笑してしまった。",
-		   NULL, "Pressed Takano-san. I smiled bitterly in spite of myself.", Line_Normal);
+		   NULL, " pressed Takano-san. I smiled bitterly in spite of myself.", Line_Normal);
 	ClearMessage();
 
 //　ついさっきまで祟りなんかあるはずがない、と思っていたのに＠人間の仕業だと詰め寄られると、人間のはずもあるわけがない...なんて思ってしまったからだ￥
@@ -4466,7 +4466,7 @@ void main()
 //　そう言って、ペロっと舌を出してはにかむ鷹野さんの様子には、先ほどまでの薄気味悪さはなかった￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そう言って、ペロっと舌を出してはにかむ鷹野さんの様子には、先ほどまでの薄気味悪さはなかった。",
-		   NULL, "Said Takano-san, sticking out her tongue bashfully. The strangeness in her expression was nowhere to be found.", Line_Normal);
+		   NULL, " said Takano-san, sticking out her tongue bashfully. The strangeness in her expression was nowhere to be found.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	ModDrawCharacter(3, 8, "sprite/sunset/tomi1_def_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
@@ -4767,7 +4767,7 @@ void main()
 //　鷹野さんや詩音に聞かされた、薄気味悪い話の印象の方が勝っていた￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　鷹野さんや詩音に聞かされた、薄気味悪い話の印象の方が勝っていた。",
-		   NULL, "...Wasn't enough to triumph over the impression Takano-san and Shion's uncanny story left on me.", Line_Normal);
+		   NULL, "...wasn't enough to triumph over the impression Takano-san and Shion's uncanny story left on me.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask("background/m_y7", "right", 0, 0, 300 );
