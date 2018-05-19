@@ -2884,7 +2884,7 @@ void main()
 //　諦めることなく、...電話は鳴り続けている￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　諦めることなく、…電話は鳴り続けている。",
-		   NULL, "The phone continued its incessant ringing.", Line_Normal);
+		   NULL, " the phone continued its incessant ringing.", Line_Normal);
 	ClearMessage();
 
 //　電話に...出なくて済むなら出たくはない＠
@@ -3217,7 +3217,7 @@ void main()
 //　......俺はこの、詩音の気遣ってくれる言葉に薄い涙を浮かべることもできたかもしれない＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……俺はこの、詩音の気遣ってくれる言葉に薄い涙を浮かべることもできたかもしれない。",
-		   NULL, "...Then I might have allowed myself to shed a tear or two at Shion's considerate words.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "...then I might have allowed myself to shed a tear or two at Shion's considerate words.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -3955,11 +3955,11 @@ void main()
 		   NULL, "...They were cunning.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600506", 128, TRUE);
 	OutputLine(NULL, "祟りを都合よく利用して、村の仇敵を毎年２人ずつ消し去るシステムを構築していったんです。",
-		   NULL, " They've been using the curse as a convenient tool, and made a system where they would get rid of two enemies in the village every year... ", GetGlobalFlag(GLinemodeSp));
+		   NULL, " They've been using the curse as a convenient tool, and made a system where they would get rid of two enemies in the village every year...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600507", 128, TRUE);
 	OutputLine(NULL, "…そしてこのシステムで、今年は鷹野さんたちが殺された！！」",
-		   NULL, "And this year, that system killed Takano-san and Tomitake-san!!\"", Line_Normal);
+		   NULL, " and this year, that system killed Takano-san and Tomitake-san!!\"", Line_Normal);
 	ClearMessage();
 
 //「じゃあ２人で充分じゃねぇかよ！＠　どうして村長や梨花ちゃんや沙都子まで殺されなくちゃならないんだよッ！＠　それに俺は過去のことは今さらどうでもいいんだ！＠
@@ -4966,7 +4966,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100941", 128, TRUE);
 	OutputLine(NULL, "「村長が会合を終えた後。",
-		   NULL, "\"...Then you saw him after the meeting.", Line_WaitForInput);
+		   NULL, "\"...then you saw him after the meeting.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100942", 128, TRUE);
 	OutputLine(NULL, "…すなわち！",
 		   NULL, " ...In other words!", Line_WaitForInput);
