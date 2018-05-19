@@ -1068,7 +1068,7 @@ void main()
 		   NULL, " ...Rena.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100974", 128, TRUE);
 	OutputLine(NULL, "…お前、ひょっとして……知ってたんじゃ…。」",
-		   NULL, " ...Did you... Did you knew all along...?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " ...Did you... Did you know all along...?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1227,7 +1227,7 @@ void main()
 //　...それをレナが制した￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…それをレナが制した。",
-		   NULL, "...When she stopped me.", Line_Normal);
+		   NULL, "...when she stopped me.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	ModDrawCharacter(2, 2, "sprite/normal/re1b_def_b1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
@@ -1338,7 +1338,7 @@ void main()
 //　...俺が犯した罪を＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…俺が犯した罪を。",
-		   NULL, "For the crimes I've committed.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " for the crimes I've committed.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1352,7 +1352,7 @@ void main()
 //　…この狂った日々を。@
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…この狂った日々を。",
-		   NULL, "To these twisted days.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " to these twisted days.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1368,7 +1368,7 @@ void main()
 //　...もう一度、...あの賑やかで楽しかった...あの日々に戻れることを￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…もう一度、…あの賑やかで楽しかった…あの日々に戻れることを。",
-		   NULL, "...That once more... we can return to those... fun, lively days.", Line_Normal);
+		   NULL, "...that once more... we can return to those... fun, lively days.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask("white", "m1", 0, 0, 300 );
