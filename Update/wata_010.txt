@@ -641,14 +641,14 @@ void main()
 //　...時間が経てば時間が経つほど＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…時間が経てば時間が経つほど。",
-		   NULL, "...And the more time passed...", GetGlobalFlag(GLinemodeSp));
+		   NULL, "...and the more time passed...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　......頭をもたげて来るのが...、!w1000......祟り＠「鬼隠し」の噂だ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……頭をもたげて来るのが…、",
-		   NULL, "...The only thing that came to mind was...", Line_ContinueAfterTyping);
+		   NULL, "...the only thing that came to mind was...", Line_ContinueAfterTyping);
 
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
@@ -1869,7 +1869,7 @@ void main()
 //　これで終わり＠　と思った瞬間に、先生のカレー菜園の水やりも思い出す￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　これで終わり！",
-		   NULL, "That should do it!", Line_WaitForInput);
+		   NULL, "That should about do it!", Line_WaitForInput);
 	OutputLine(NULL, "　と思った瞬間に、先生のカレー菜園の水やりも思い出す。",
 		   NULL, " No sooner had I thought that than I remembered that I had to water the teacher's curry vegetable garden too.", Line_Normal);
 	ClearMessage();
@@ -2003,14 +2003,14 @@ void main()
 		   NULL, " ...N-No.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 5, "ps3/s02/05/130500029", 128, TRUE);
 	OutputLine(NULL, "…違うのです。」",
-		   NULL, " ...That isn't it.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " ...That isn't it,\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　梨花ちゃんは目元を拭いながら、努めて明るそうな声で言った...＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　梨花ちゃんは目元を拭いながら、努めて明るそうな声で言った…。",
-		   NULL, "Rika-chan said in the brightest voice she could manage as she rubbed her eyes...", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Rika-chan said in the brightest voice she could manage as she rubbed her eyes...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -2206,14 +2206,14 @@ void main()
 //　詩音に聞かれ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　詩音に聞かれ、",
-		   NULL, "Shion asked me,", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Shion asked me", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　......そして今度は梨花ちゃんに聞かれる......＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……そして今度は梨花ちゃんに聞かれる……。",
-		   NULL, "...And now Rika-chan was asking me...", GetGlobalFlag(GLinemodeSp));
+		   NULL, " ...and now Rika-chan was asking me...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　あの晩の出来事は...誰にも知られていないどころか......、!w1000誰もが知っている...？￥
@@ -2342,7 +2342,7 @@ void main()
 //いつもの笑顔で、にっこりと笑いながら言った￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　いつもの笑顔で、にっこりと笑いながら言った。",
-		   NULL, "She said, smiling her usual smile.", Line_Normal);
+		   NULL, " she said, smiling her usual smile.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	FadeBustshotWithFiltering( 2, "left", 1, FALSE, 0, 0, 300, TRUE );
@@ -3358,7 +3358,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 5, "ps3/s02/05/130500080", 128, TRUE);
 	OutputLine(NULL, "「……どんな死に方をしても、それは圭一とは関係のないことなのです。」",
-		   NULL, "\"......No matter how they died, it has nothing to do with you, Keiichi.\"", Line_Normal);
+		   NULL, "\"......No matter how they died, it has nothing to do with you, Keiichi,\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawBustshotWithFiltering(5, "black", "down", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 1300, TRUE );
@@ -3368,7 +3368,7 @@ void main()
 //　ぴしゃりと言い切られた＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ぴしゃりと言い切られた。",
-		   NULL, "Rika declared this in a flat voice.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Rika declared this in a flat voice.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　...関係ない＠
