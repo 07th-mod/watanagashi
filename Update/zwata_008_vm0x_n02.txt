@@ -84,7 +84,7 @@ void dialog008()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "……さっきまでの、楽しかったひとときの記憶がノイズまじりに乱れ、ぼやけて、……砂嵐の中へと消え去ってゆく。",
-		   NULL, "...My fun memories from just a short while earlier swirled and blurred into noise ...as if vanishing into a sandstorm. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "...My fun memories from just a short while earlier swirled and blurred into noise, ...as if vanishing into a sandstorm. ", GetGlobalFlag(GLinemodeSp));
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「綿流し」の名前に隠されたどす黒く陰惨な響きが、全身にまるで痺れのような圧迫となって……",
@@ -206,7 +206,7 @@ void dialog021()
 
 //人肉缶詰事件、!w1200......あ、ごめんなさい＠この話はタブーだったわよね...？￥
 	OutputLine(NULL, "缶詰疑惑、",
-		   NULL, " canned flesh incident", Line_Continue);
+		   NULL, " canned flesh incident,", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1200 );
 	// (backup) SetValidityOfInput( TRUE );
