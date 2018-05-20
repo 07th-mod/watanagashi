@@ -4130,7 +4130,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei16600", 128, TRUE);
 	OutputLine(NULL, "「でも本当にさ、",
-		   NULL, "\"But really", Line_Continue);
+		   NULL, "\"But really,", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 900 );
@@ -4214,7 +4214,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei16630", 128, TRUE);
 	OutputLine(NULL, "「あ、…あぁ、もちろんだ。",
-		   NULL, "\"Ah ...yeah, of course.", Line_WaitForInput);
+		   NULL, "\"Ah, ...yeah, of course.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei16640", 128, TRUE);
 	OutputLine(NULL, "約束する。」",
 		   NULL, " It's a promise.\"", GetGlobalFlag(GLinemodeSp));
@@ -4733,7 +4733,7 @@ void main()
 		   NULL, " My sister is...", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s19/06/500600091", 128, TRUE);
 	OutputLine(NULL, "……あれ、",
-		   NULL, " ...huh", Line_Continue);
+		   NULL, " ...huh,", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
