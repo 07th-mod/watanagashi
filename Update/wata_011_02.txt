@@ -1123,7 +1123,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600460", 128, TRUE);
 	OutputLine(NULL, "「…………………………………圭ちゃん、……私、……………どうしよう……。」",
-		   NULL, "\"............Kei-chan ...What should............ I do...\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"............Kei-chan, ...What should............ I do...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1849,7 +1849,7 @@ void main()
 	OutputLine(NULL, "　富竹さんが死に、",
 		   NULL, "Tomitake-san died,", Line_WaitForInput);
 	OutputLine(NULL, "鷹野さんが死に、",
-		   NULL, " Takano-san died", Line_ContinueAfterTyping);
+		   NULL, " Takano-san died,", Line_ContinueAfterTyping);
 
 	PlaySE( 3, "wa_025", 128, 64 );
 	OutputLineAll(NULL, "", Line_WaitForInput);
@@ -2884,7 +2884,7 @@ void main()
 //　諦めることなく、...電話は鳴り続けている￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　諦めることなく、…電話は鳴り続けている。",
-		   NULL, " the phone continued its incessant ringing.", Line_Normal);
+		   NULL, "the phone continued its incessant ringing.", Line_Normal);
 	ClearMessage();
 
 //　電話に...出なくて済むなら出たくはない＠
@@ -3956,10 +3956,11 @@ void main()
 	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600506", 128, TRUE);
 	OutputLine(NULL, "祟りを都合よく利用して、村の仇敵を毎年２人ずつ消し去るシステムを構築していったんです。",
 		   NULL, " They've been using the curse as a convenient tool, and made a system where they would get rid of two enemies in the village every year...", GetGlobalFlag(GLinemodeSp));
+		   
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600507", 128, TRUE);
 	OutputLine(NULL, "…そしてこのシステムで、今年は鷹野さんたちが殺された！！」",
-		   NULL, " and this year, that system killed Takano-san and Tomitake-san!!\"", Line_Normal);
+		   NULL, "and this year, that system killed Takano-san and Tomitake-san!!\"", Line_Normal);
 	ClearMessage();
 
 //「じゃあ２人で充分じゃねぇかよ！＠　どうして村長や梨花ちゃんや沙都子まで殺されなくちゃならないんだよッ！＠　それに俺は過去のことは今さらどうでもいいんだ！＠
@@ -4015,7 +4016,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600508", 128, TRUE);
 	OutputLine(NULL, "「…………圭ちゃん、",
-		   NULL, "\".........Kei-chan", Line_Continue);
+		   NULL, "\".........Kei-chan,", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
