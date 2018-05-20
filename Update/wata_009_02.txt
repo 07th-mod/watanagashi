@@ -581,7 +581,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600214", 128, TRUE);
 	OutputLine(NULL, "「実は、",
-		   NULL, "\"Actually", Line_Continue);
+		   NULL, "\"Actually,", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
@@ -1307,7 +1307,7 @@ void main()
 		   NULL, "\"...I don't think anyone's been confirmed missing yet.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600263", 128, TRUE);
 	OutputLine(NULL, "…多分、２人が失踪するのは、",
-		   NULL, " ...I think that those two people", Line_Continue);
+		   NULL, " ...I think that those two people,", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
