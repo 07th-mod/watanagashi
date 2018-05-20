@@ -1236,7 +1236,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a17d6b>富田</color>", NULL, "<color=#a17d6b>Tomita</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 24, "ps3/s19/24/502400003", 128, TRUE);
 	OutputLine(NULL, "「ま、前原さん、",
-		   NULL, "\"Ma-Maebara-san", Line_Continue);
+		   NULL, "\"Ma-Maebara-san,", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
@@ -1289,7 +1289,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a17d6b>富田</color>", NULL, "<color=#a17d6b>Tomita</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 24, "ps3/s19/24/502400005", 128, TRUE);
 	OutputLine(NULL, "「え、",
-		   NULL, "\"Eh", Line_Continue);
+		   NULL, "\"Eh,", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 700 );
@@ -5528,7 +5528,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei14720", 128, TRUE);
 	OutputLine(NULL, "「えっと…まぁ、…ウソじゃないんだ。信じてやってくれ。」",
-		   NULL, "\"Ummm... well ...it's not a lie. Please believe me.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"Ummm... well, ...it's not a lie. Please believe me.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -6214,7 +6214,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei15020", 128, TRUE);
 	OutputLine(NULL, "「……詩音、",
-		   NULL, "\"...Shion", Line_Continue);
+		   NULL, "\"...Shion,", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 900 );
