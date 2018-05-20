@@ -5395,7 +5395,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100128", 128, TRUE);
 	OutputLine(NULL, "「じゃあ、…えっと…鷹野さんはどっちを信じてるんですか？」",
-		   NULL, "\"Then ...er... Takano-san, which one do you believe?\"", Line_Normal);
+		   NULL, "\"Then, ...er... Takano-san, which one do you believe?\"", Line_Normal);
 	ClearMessage();
 
 //「真相は別にして。夢のある方を信じたいわね＠その方が面白いでしょう？＠
@@ -6009,7 +6009,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600081", 128, TRUE);
 	OutputLine(NULL, "「この辺まで話を聞けば、",
-		   NULL, "\"After hearing all that", Line_Continue);
+		   NULL, "\"After hearing all that,", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
@@ -6181,7 +6181,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600083", 128, TRUE);
 	OutputLine(NULL, "「け、…圭ちゃん、",
-		   NULL, "\"Ke... Kei-chan", Line_WaitForInput);
+		   NULL, "\"Ke... Kei-chan,", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600084", 128, TRUE);
 	OutputLine(NULL, "……あれ。」",
 		   NULL, " ......Look at that.\"", Line_Normal);
@@ -6669,7 +6669,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600087", 128, TRUE);
 	OutputLine(NULL, "「け、……圭ちゃん、",
-		   NULL, "\"Ke...... Kei-chan", Line_WaitForInput);
+		   NULL, "\"Ke...... Kei-chan,", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600088", 128, TRUE);
 	OutputLine(NULL, "……上……。」",
 		   NULL, " ......look up......\"", GetGlobalFlag(GLinemodeSp));
@@ -6843,7 +6843,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100153", 128, TRUE);
 	OutputLine(NULL, "「……中世の暗黒時代とかがそうだったように、",
-		   NULL, "\"...Just as Europe had its Dark Age", Line_Continue);
+		   NULL, "\"...Just as Europe had its Dark Age,", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
@@ -6861,7 +6861,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100155", 128, TRUE);
 	OutputLine(NULL, "　…本当に雛見沢でこういう恐ろしいことがあったのだとしても、",
-		   NULL, "...Even if these things all really happened in Hinamizawa", Line_Continue);
+		   NULL, "...Even if these things all really happened in Hinamizawa,", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
@@ -8460,7 +8460,7 @@ void main()
 //　...互いに相手が信じられないという面持ちで＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…互いに相手が信じられないという面持ちで。",
-		   NULL, " and both of us were staring at the other in disbelief.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "and both of us were staring at the other in disbelief.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
