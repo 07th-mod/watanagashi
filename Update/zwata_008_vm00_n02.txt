@@ -472,7 +472,7 @@ void dialog018()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps2/06/130600089", 240, TRUE);
 	OutputLine(NULL, "「け、……圭ちゃん、",
-		   NULL, "\"Ke...... Kei-chan", Line_Continue);
+		   NULL, "\"Ke...... Kei-chan,", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
@@ -632,7 +632,7 @@ void dialog021()
 
 //人肉缶詰事件、!w1200......あ、ごめんなさい＠この話はタブーだったわよね...？￥
 	OutputLine(NULL, "人肉缶詰事件、",
-		   NULL, " canned flesh incident", Line_Continue);
+		   NULL, " canned flesh incident,", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1200 );
 	// (backup) SetValidityOfInput( TRUE );
