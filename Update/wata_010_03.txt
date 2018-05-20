@@ -677,7 +677,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100645", 128, TRUE);
 	OutputLine(NULL, "「…レナ、",
-		   NULL, "\"...Rena", Line_Continue);
+		   NULL, "\"...Rena,", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
@@ -1494,7 +1494,7 @@ void main()
 //　......何があっても、決して夢だと思わせない...そんな残酷さをすでに突きつけていた￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……何があっても、決して夢だと思わせない…そんな残酷さをすでに突きつけていた。",
-		   NULL, " so that no matter what, it would never seem to me like a dream—this cruel fact had already confronted me.", Line_Normal);
+		   NULL, "so that no matter what, it would never seem to me like a dream—this cruel fact had already confronted me.", Line_Normal);
 	ClearMessage();
 
 //　こんな...狂った夜に、普段からは想像もつかないくらいにしっかりしたレナが頼もしく＠
