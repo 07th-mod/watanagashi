@@ -486,7 +486,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200086", 128, TRUE);
 	OutputLine(NULL, "「……魅ぃちゃん、",
-		   NULL, "\"......Mii-chan", Line_Continue);
+		   NULL, "\"......Mii-chan,", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
@@ -863,7 +863,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100227", 128, TRUE);
 	OutputLine(NULL, "「あ、",
-		   NULL, "\"Uh", Line_Continue);
+		   NULL, "\"Uh,", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
@@ -1178,7 +1178,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300111", 128, TRUE);
 	OutputLine(NULL, "「あ、…そうそう、圭ちゃん。」",
-		   NULL, "\"Oh ...One more thing, Kei-chan.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"Oh, ...One more thing, Kei-chan.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -3550,7 +3550,7 @@ void main()
 //　...あっけらかんとした口調でそう答えた￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…あっけらかんとした口調でそう答えた。",
-		   NULL, " ...he answered in an absent tone of voice.", Line_Normal);
+		   NULL, "...he answered in an absent tone of voice.", Line_Normal);
 	ClearMessage();
 
 //「...何かの事件で魅音を疑っていて、その友人の俺に何か聞きに来た＠...そういうことですか？＠
