@@ -16,7 +16,7 @@ void main()
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　闘撮必勝ガイド４月号「征服徹底解析（ファミレス編）」より転載",
-		   NULL, "Reprinted from <i>The Victorious War Photographer's Guide</i>, April issue, \"Complete Conquest Analysis (Family Restaurant Chapter)\"", Line_Normal);
+		   NULL, "Reprinted from <i>The Victorious War Photographer's Guide</i>, April issue, \"Complete Conquest Analysis (Family Restaurant Chapter).\"", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 3, "wa_021", 128, 64 );
@@ -276,7 +276,7 @@ void main()
 //１　前日のア＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "※１　前日のアレ",
-		   NULL, "* \"That\" thing the day before", GetGlobalFlag(GLinemodeSp));
+		   NULL, "* 'That' thing the day before.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 

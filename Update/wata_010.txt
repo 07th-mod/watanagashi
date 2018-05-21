@@ -728,7 +728,7 @@ void main()
 //　富竹さんと鷹野さんが怪死した以上...、次は俺と詩音の番で当然のはずなのに......￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　富竹さんと鷹野さんが怪死した以上…、次は俺と詩音の番で当然のはずなのに……。",
-		   NULL, "If Tomitake-san and Takano-san had suffered mysterious deaths... then it should have been mine and Shion's turn next......", Line_Normal);
+		   NULL, "If Tomitake-san and Takano-san had suffered mysterious deaths... then it should have been my and Shion's turn next......", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawScene("background/gk1", 400 );
@@ -1023,7 +1023,7 @@ void main()
 
 
 	DisableWindow();
-	ModDrawCharacterWithFiltering(3, 2, "portrait/normal/re1a_warai_a1_", "2", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	ModDrawCharacter(3, 2, "portrait/normal/re1a_warai_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「あははは...、あれ、それ、カボチャのコロッケだよ＠　大丈夫？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -1043,7 +1043,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "ps3/s02/04/130400046", 128, TRUE);
 	OutputLine(NULL, "「……んぐぐ……、…え、…えぇ！",
-		   NULL, "\"......Nggh......, ...Y-Yes!", Line_WaitForInput);
+		   NULL, "\"......Nggh...... ...Y-Yes!", Line_WaitForInput);
 
 	DisableWindow();
 	ModDrawCharacter(1, 4, "portrait/normal/sa1a_warai_a1_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
@@ -1101,7 +1101,7 @@ void main()
 
 
 	DisableWindow();
-	ModDrawCharacterWithFiltering(3, 4, "portrait/normal/sa1b_odoroki_b1_", "1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	ModDrawCharacterWithFiltering(3, 4, "portrait/normal/sa1b_odoroki_b1_", "1", "right", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「あ、あんまりにもおいしいので、ぜひ圭一さんにも召し上がってほしいですわね...！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
@@ -1518,7 +1518,7 @@ void main()
 
 
 	DisableWindow();
-	ModDrawCharacterWithFiltering(1, 4, "portrait/normal/sa1a_akireru_a1_", "0", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	ModDrawCharacter(1, 4, "portrait/normal/sa1a_akireru_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「......そんなに可愛いものとは思いませんけど＠...ぐわぁーって、喉の奥まで覗けるくらいの大あくびでしてよ...？￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
@@ -2252,7 +2252,7 @@ void main()
 //　...だって、...富竹さんと鷹野さんが死んだのが何よりもの証拠じゃないか￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…だって、…富竹さんと鷹野さんが死んだのが何よりもの証拠じゃないか。",
-		   NULL, "...After all... don't Tomitake-san's and Takano-san's deaths prove it?", Line_Normal);
+		   NULL, "...After all... don't Tomitake-san and Takano-san's deaths prove it?", Line_Normal);
 	ClearMessage();
 
 //nega 0
@@ -3248,7 +3248,7 @@ void main()
 //　言葉に詰まる＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　言葉に詰まる。",
-		   NULL, "", GetGlobalFlag(GLinemodeSp));
+		   NULL, "...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -3823,7 +3823,7 @@ void main()
 //　その日、梨花ちゃんは何となく気乗りしないと言って、部活をやめようと言った＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その日、梨花ちゃんは何となく気乗りしないと言って、部活をやめようと言った。",
-		   NULL, "That day, Rika-chan said she wasn't feeling up for club activities that day, so she suggested we not bother.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "That day, Rika-chan said she wasn't feeling up for club activities, so she suggested we don't bother.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　気乗りしない時は拒否もある＠......レナたちはとても残念そうだった...￥

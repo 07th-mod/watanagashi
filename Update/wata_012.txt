@@ -191,7 +191,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100944", 128, TRUE);
 	OutputLine(NULL, "　…ここは入ってはいけないところなんだろ？！",
-		   NULL, "...This isn't somewhere we should be going, is it?!", Line_WaitForInput);
+		   NULL, "\"...This isn't somewhere we should be going, is it?!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100945", 128, TRUE);
 	OutputLine(NULL, "　やめようぜ！",
 		   NULL, " Let's not!", Line_Continue);
@@ -508,7 +508,7 @@ void main()
 		   NULL, "\"............The police are looking as best they can, too.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200401", 128, TRUE);
 	OutputLine(NULL, "…きっと見つかるから。",
-		   NULL, " find them for sure.", Line_WaitForInput);
+		   NULL, " They'll find them for sure.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200402", 128, TRUE);
 	OutputLine(NULL, "待ってよ。",
 		   NULL, " Just be patient.", Line_WaitForInput);
@@ -1595,7 +1595,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 19, "ps3/s02/19/133100003", 128, TRUE);
 	OutputLine(NULL, "「…ザ、ザ、熊谷です。",
-		   NULL, "\"...Bzz, bzz, this is Kumatani.", Line_WaitForInput);
+		   NULL, "\"...Bzz, bzz, this is Kumagai.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 19, "ps3/s02/19/133100004", 128, TRUE);
 	OutputLine(NULL, "大石さんどーぞー！」",
 		   NULL, " Ooishi-san? Over!\"", GetGlobalFlag(GLinemodeSp));
@@ -2015,7 +2015,7 @@ void main()
 //　この時点で、魅音に施せる唯一の情けが...これかもしれない￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この時点で、魅音に施せる唯一の情けが…これかもしれない。",
-		   NULL, "At this point, perhaps that was... the only pity I could find it in me to afford her.", Line_Normal);
+		   NULL, "At this point, perhaps that was... the only pity I could find in me to afford her.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	ModDrawCharacter(1, 11, "sprite/normal/oisi1_1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
@@ -2137,7 +2137,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 19, "ps3/s02/19/133100013", 128, TRUE);
 	OutputLine(NULL, "「ザザ、…ザ、熊谷です。",
-		   NULL, "\"Bzz, ...bz, this is Kumatani.", Line_WaitForInput);
+		   NULL, "\"Bzz ...bz, this is Kumagai.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 19, "ps3/s02/19/133100014", 128, TRUE);
 	OutputLine(NULL, "どうぞー。」",
 		   NULL, " Go ahead.\"", GetGlobalFlag(GLinemodeSp));

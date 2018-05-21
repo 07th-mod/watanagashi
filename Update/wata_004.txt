@@ -620,9 +620,6 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	DisableWindow();
-	ModDrawCharacter(1, 3, "sprite/normal/me3_def_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
-
 //「そういうこと＠巫女さんが布団をお祓いする一連のセレモニーを奉納演舞って呼ぶんだけどね＠それの練習なんだよ＠......結構、大変なんだなこれが。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s19/03/500300125", 128, TRUE);
@@ -1178,7 +1175,7 @@ void main()
 //　誰かの背中に避難することはあっても、決して懐くようなヤツじゃないと思うがなぁ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　誰かの背中に避難することはあっても、決して懐くようなヤツじゃないと思うがなぁ。",
-		   NULL, "Even if she was to hide behind someone, I wouldn't think it was because she was attatched to them.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Even if she was to hide behind someone, I wouldn't think it was because she was attached to them.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -1402,7 +1399,7 @@ void main()
 		   NULL, "\"That's a lie.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s19/02/500200112", 128, TRUE);
 	OutputLine(NULL, "トゲ付き鉄球に潰される〜ってカオしてたよ。」",
-		   NULL, " You've got the kind of look on your face that says: I'm gonna be crushed by a giant spiked metal ball~!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " You've got the kind of look on your face that says: 'I'm gonna be crushed by a giant spiked metal ball~!'\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　......俺の表情って、どうしてこう具体的に胸の内を語っちまうんだろうなぁ￥
@@ -1518,14 +1515,14 @@ void main()
 //　あー、そんなこと言っちゃいけないんだ～っと悪戯っぽい眼差しを向ける￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　あー、そんなこと言っちゃいけないんだ〜っと悪戯っぽい眼差しを向ける。",
-		   NULL, "She turned to me with an impish look in her eyes, like she was saying: Ahh, you shouldn't say something like that~", Line_Normal);
+		   NULL, "She turned to me with an impish look in her eyes, like she was saying: \"Ahh, you shouldn't say something like that~\"", Line_Normal);
 	ClearMessage();
 
 //「梨花ちゃんはきっと大きくなったらね、すっごい美人になって、男の人を振り回す、小悪魔のような女性になるんじゃないかなって思うんだ～＠そういうの、カッコよくない？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s19/02/500200114", 128, TRUE);
 	OutputLine(NULL, "「梨花ちゃんはきっと大きくなったらね、すっごい美人になって、男の人を振り回す、小悪魔のような女性になるんじゃないかなって思うんだ〜。",
-		   NULL, "\"When Rika-chan grows up, I'm sure she'll become an incredibly devilish beauty, with men wrapped all round her little finger.", Line_WaitForInput);
+		   NULL, "\"When Rika-chan grows up, I'm sure she'll become an incredibly devilish beauty, with men wrapped all around her little finger.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s19/02/500200115", 128, TRUE);
 	OutputLine(NULL, "そういうの、カッコよくない？」",
 		   NULL, " Don't you think that would be cool?\"", GetGlobalFlag(GLinemodeSp));
@@ -1608,7 +1605,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei15610", 128, TRUE);
 	OutputLine(NULL, "「じゃあ何だよ。あの魅音も見かけによらず、実はいいヤツだって言いたいのかよ。」",
-		   NULL, "\"Then what you're saying is: That Mion, despite her appearance, is actually a good person?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"Then what you're saying is: 'That Mion, despite her appearance, is actually a good person'?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1990,7 +1987,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei15830", 128, TRUE);
 	OutputLine(NULL, "「……逆なのだとしたら…？」",
-		   NULL, "\"...and if I were really the opposite...?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"...and if you were really the opposite...?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -2695,7 +2692,7 @@ void main()
 //　見るからに目つきの悪い、文字通りごろつきと形容するのが相応しかった＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　見るからに目つきの悪い、文字通りごろつきと形容するのが相応しかった。",
-		   NULL, "They looked exactly like what you'd call 'thugs up to no good'.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "They looked exactly like what you'd call 'thugs up to no good.'", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -3188,7 +3185,7 @@ void main()
 //　...しかし、あの魅音に限って虚勢などあるだろうか＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…しかし、あの魅音に限って虚勢などあるだろうか。",
-		   NULL, "...But, did Mion even know the meaning of the word 'bluff'?", GetGlobalFlag(GLinemodeSp));
+		   NULL, "...But, did Mion even know the meaning of the word \"bluff\"?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -3554,7 +3551,7 @@ void main()
 //　どんなに騒いでも警官にはかなわない＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　どんなに騒いでも警官にはかなわない。",
-		   NULL, "No matter how much of a ruckus they caused the officers paid no heed.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "No matter how much of a ruckus they caused, the officers paid no heed.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -4369,9 +4366,9 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei16680_01", 128, TRUE);
 	OutputLine(NULL, "　…おいおい、そう言えば詩音、今バイト中じゃないのか？",
-		   NULL, "...Hey, hey, speaking of that, wasn't Shion in the middle of a shift?", Line_Continue);
+		   NULL, "\"...Hey, hey, speaking of that, weren't you in the middle of a shift?", Line_Continue);
 	OutputLine(NULL, "　俺とずっと話をして油を売ってていいのかよ。",
-		   NULL, " She's just been slacking off while talking to me.", Line_Normal);
+		   NULL, " You've just been slacking off while talking to me.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	ModDrawCharacter(2, 6, "sprite/normal/si2_wink_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
@@ -4529,7 +4526,7 @@ void main()
 //　差別という言葉を聞いて、自分の胸を探る＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　差別という言葉を聞いて、自分の胸を探る。",
-		   NULL, "Hearing the word 'sexist' was cause for introspection.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Hearing the word \"sexist\" was cause for introspection.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 

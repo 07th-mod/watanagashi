@@ -901,7 +901,7 @@ void main()
 //　住まいのようになったものがあったり＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　住まいのようになったものがあったり、",
-		   NULL, "We passed placed that looked like someone had lived there.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "We passed places that looked like someone had lived there.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　...戦時中には防空壕や備蓄倉庫にも使われていたことをうかがわせる￥
@@ -3834,7 +3834,7 @@ void main()
 //　......ドォォ...ン...＠..................ドォォン...￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……ドォォ…ン…。",
-		   NULL, "...slaa...am...", Line_WaitForInput);
+		   NULL, "...Slaa...am...", Line_WaitForInput);
 	OutputLine(NULL, "………………ドォォン…。",
 		   NULL, " ............slaaaam...", Line_Normal);
 	ClearMessage();

@@ -244,7 +244,7 @@ void dialog015()
 //　まな板という言葉にぞくりとする......￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　まな板という言葉にぞくりとする……。",
-		   NULL, "The words 'chopping block' sent a jolt through my body......", Line_Normal);
+		   NULL, "The words \"chopping block\" sent a jolt through my body......", Line_Normal);
 	ClearMessage();
 }
 
@@ -556,7 +556,7 @@ void dialog019()
 		   NULL, " ......It is tonight, you know.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 9, "ps3/s02/09/130900186", 128, TRUE);
 	OutputLine(NULL, "オヤシロさまの祟りがある夜は。」",
-		   NULL, " The night of Oyashiro-sama's curse,\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " The night of Oyashiro-sama's curse.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 }
 

@@ -21,9 +21,9 @@ void dialog001()
 //「アキバの××××４Ｆでエンジェルモートの使用済み制服が売ってたらしいナリ！＠　でも２８万もしてたニョー...。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「アキバの××××４Ｆでエンジェルモートの使用済み制服が売ってたらしいナリ！！",
-		   NULL, "\"Theys sell used Angel Mort uniforms on the 4th floor of [redacted] in Akiba!!", Line_WaitForInput);
+		   NULL, "\"They sell used Angel Mort uniforms on the 4th floor of [redacted] in Akiba!!", Line_WaitForInput);
 	OutputLine(NULL, "　でも２８万もしてたニョー…。」",
-		   NULL, " But theys cost 280,000...\"", Line_Normal);
+		   NULL, " But they cost 280,000...\"", Line_Normal);
 	ClearMessage();
 
 //「凄まじいレートでござるな＠　アンミュラで８万、閉店後のブロバで１２万が相場でござるのに...！！（使用済みの場合でござるよ。コピー品は半額以下でござる！）＠
@@ -41,7 +41,7 @@ void dialog001()
 		   NULL, "\"A knock-off from [redacted] is fine with me, I wonder if they'll start selling them~☆", Line_WaitForInput);
 	OutputLine(NULL, "　そしたら我輩が××××××××でン十万で買った等身大フィギュアに着せ着せするです尿〜☆",
 		   NULL, " Then I'll put it on mine life-size figure I did buy off of [redacted] for several hundred thousand~☆ ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　毎朝毎朝、エンジェルの制服を見上げて目を覚ますでおじゃるよ〜！！！」",
 		   NULL, "If I can wake up every day to an angel from Angel, that'll really get my gears going~!!!\"", Line_Normal);
 }

@@ -111,7 +111,7 @@ void main()
 		   NULL, "\"It's rumored that Chie-sensei has devoted her life to curry.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 4, "ps3/s19/04/500400002", 128, TRUE);
 	OutputLine(NULL, "採点はきっと厳しいですわよ。」",
-		   NULL, " She'll probably be a pretty strict judge.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " She'll probably be a pretty strict judge.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -186,7 +186,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "ps3/s19/04/500400003", 128, TRUE);
 	OutputLine(NULL, "「……風の噂ですと…ご飯は３食カレーライスで、たまに他のものを食べる時でも必ずカレー味というこだわりぶりらしいですの。」",
-		   NULL, "\"...This is just a rumor, but... It seems that she eats curry rice three meals a day, and if she occasionally has something else, it's always has to be curry flavored.\"", Line_Normal);
+		   NULL, "\"...This is just a rumor, but... It seems that she eats curry rice three meals a day, and if she occasionally has something else, it always has to be curry flavored.\"", Line_Normal);
 	ClearMessage();
 
 //「...それ、偏執的というより変態的だぞ＠何か悪い宗教にでも入ってるんじゃないのか...＠
@@ -197,11 +197,11 @@ void main()
 		   NULL, "\"That's... not unyielding, that's unnatural.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei13340", 128, TRUE);
 	OutputLine(NULL, "何か悪い宗教にでも入ってるんじゃないのか…？",
-		   NULL, " Is she part of an evil cult or something...?", Line_WaitForInput);
+		   NULL, " Is she part of an evil cult or something...?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei13350", 128, TRUE);
 	OutputLine(NULL, "　大体、カレーなんてジャンクフードの筆頭じゃねーかよ。",
-		   NULL, " Besides, doesn't curry top the list when it comes to junk food? ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+		   NULL, " Besides, doesn't curry top the list when it comes to junk food? ", Line_Continue);
 	OutputLine(NULL, "３食カレーなんて栄養的にも偏って、」",
 		   NULL, "Curry three times a day is just weird nutritionally speaking and—\"", Line_Normal);
 	ClearMessage();
@@ -656,7 +656,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei13460", 128, TRUE);
 	OutputLine(NULL, "「……梨花の、ってトコが泣けるぞ。",
-		   NULL, "\"...You lost me at 'Rika's'.", Line_WaitForInput);
+		   NULL, "\"...You lost me at 'Rika's.'", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei13470", 128, TRUE);
 	OutputLine(NULL, "お前も何か料理を手伝えよ。」",
 		   NULL, " Why don't you help with the cooking too?\"", GetGlobalFlag(GLinemodeSp));
@@ -3994,7 +3994,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei14410", 128, TRUE);
 	OutputLine(NULL, "　カレーとおにぎりを異なって評価することにそもそも致命的な間違いがあります。」",
-		   NULL, "If you think that curry and onigiri are really that different, you're sorely mistaken.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "If you think that curry and onigiri are really that different, you're sorely mistaken.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -4040,7 +4040,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei14420", 128, TRUE);
 	OutputLine(NULL, "「本場インドのカレーはナンというパンで食べるそうですね。",
-		   NULL, "\"In its homeland of India, curry is usually eaten with a type of bread called 'naan', isn't it?", Line_WaitForInput);
+		   NULL, "\"In its homeland of India, curry is usually eaten with a type of bread called 'naan,' isn't it?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei14430", 128, TRUE);
 	OutputLine(NULL, "ですから、このカレーライスという料理は、それを取り入れアレンジした日本の食文化のひとつと言えるでしょう。",
 		   NULL, " Therefore, you could say that this cuisine we call curry rice, is something that we have adopted and modified.", GetGlobalFlag(GLinemodeSp));
@@ -4416,7 +4416,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "ps3/s19/04/500400055", 128, TRUE);
 	OutputLine(NULL, "「そそ、それじゃ私たちのお昼がなくなっちゃいますわ〜？　ぅぅ〜〜！！！」",
-		   NULL, "\"Bu-Bu-but that means we won't have any lunch~! Wahhh~~!!!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"Bu-Bu-But that means we won't have any lunch~! Wahhh~~!!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -4644,6 +4644,7 @@ void main()
 //!s0
 	SetSpeedOfMessage( TRUE, 120, );
 
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Chie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 22, "ps3/s19/22/501400051", 128, TRUE);
 	OutputLine(NULL, "カ",
 		   NULL, "Curry", Line_Continue);
@@ -5534,7 +5535,7 @@ void main()
 //　うん、信じるよ、と言ってレナは急にぱーっと笑顔になった￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　うん、信じるよ、と言ってレナは急にぱーっと笑顔になった。",
-		   NULL, "As she said \"Yeah, I believe you\", a smile suddenly blossomed on Rena's face.", Line_Normal);
+		   NULL, "As she said \"Yeah, I believe you,\" a smile suddenly blossomed on Rena's face.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	ModDrawCharacter(3, 2, "sprite/normal/re1a_warai_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
@@ -6096,7 +6097,7 @@ void main()
 		   NULL, "\"...Yes.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s19/06/500600023", 128, TRUE);
 	OutputLine(NULL, "…それ、",
-		   NULL, " ...I think,", Line_Continue);
+		   NULL, " ...I think", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );

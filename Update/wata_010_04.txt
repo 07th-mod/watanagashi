@@ -554,14 +554,14 @@ void main()
 //　そんなはずないよ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そんなはずないよ。",
-		   NULL, "'That can't be.'", GetGlobalFlag(GLinemodeSp));
+		   NULL, "That can't be.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　圭一くんは悪くないよ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　圭一くんは悪くないよ。",
-		   NULL, "'Keiichi-kun, you're not at fault.'", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Keiichi-kun, you're not at fault.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　...そうレナが言ってくれるのは嬉しかったが...、それは事情を知らないからだ＠
@@ -2077,7 +2077,7 @@ void main()
 //　...この問いかけに関してだけは、無言でいることが肯定の答えとなった￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…この問いかけに関してだけは、無言でいることが肯定の答えとなった。",
-		   NULL, "...Unfortunately, for this question in particular, remaining silent was equivalent to saying 'yes'.", Line_Normal);
+		   NULL, "...Unfortunately, for this question in particular, remaining silent was equivalent to saying \"yes.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	ModDrawCharacter(3, 11, "sprite/night/oisi1_1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
@@ -2526,7 +2526,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700182", 128, TRUE);
 	OutputLine(NULL, "「当主は園崎本家のお婆ちゃんなんですが、実質上の当主権限はもう孫娘の魅音さんに移行していると見て間違いないでしょうねぇ。」",
-		   NULL, "\"The current leader is the old lady at their main house, but it wouldn't be incorrect to say that practically all the rights of leadership been transferred to her granddaughter, Mion-san.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"The current leader is the old lady at their main house, but it wouldn't be incorrect to say that practically all the rights of leadership have been transferred to her granddaughter, Mion-san.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　昨夜、はきはきと大人たちに指示を下して梨花ちゃんを探させていた魅音の姿が蘇る...￥

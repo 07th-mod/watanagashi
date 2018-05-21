@@ -644,7 +644,7 @@ void main()
 //　............あの日、綿流しの晩のことを詰問された以外では......そんなに変わった印象は受けない＠...俺が見る限りでは＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…………あの日、綿流しの晩のことを詰問された以外では……そんなに変わった印象は受けない。",
-		   NULL, ".........Asides from her asking me about the night of Watanagashi...... she hadn't seemed too out of the ordinary.", Line_WaitForInput);
+		   NULL, ".........Aside from her asking me about the night of Watanagashi...... she hadn't seemed too out of the ordinary.", Line_WaitForInput);
 	OutputLine(NULL, "…俺が見る限りでは。",
 		   NULL, " ...At least, from my point of view.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -1555,7 +1555,7 @@ void main()
 //　......大石さんの話以外にか＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……大石さんの話以外にか。",
-		   NULL, "...Asides from my discussion with Ooishi-san?", GetGlobalFlag(GLinemodeSp));
+		   NULL, "...Aside from my discussion with Ooishi-san?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1926,7 +1926,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100598", 128, TRUE);
 	OutputLine(NULL, "「……公由の爺さんってのは、…詩音にとって、相談できる心安い人なんだろ…？」",
-		   NULL, "\"......Old man Kimiyoshi... he's someone you feel comfortable confiding it, Shion...?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"......Old man Kimiyoshi... he's someone you feel comfortable confiding to, Shion...?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -2621,7 +2621,7 @@ void main()
 //　詩音の別れの言葉を待たずに受話器を置く￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　詩音の別れの言葉を待たずに受話器を置く。",
-		   NULL, "I put down the receiver without waiting for Shion to say good-bye.", Line_Normal);
+		   NULL, "I put down the receiver without waiting for Shion to say goodbye.", Line_Normal);
 	ClearMessage();
 
 //　......もう自分や詩音に迫っている危機なんか二の次だった＠

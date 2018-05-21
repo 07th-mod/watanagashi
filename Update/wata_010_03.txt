@@ -431,14 +431,14 @@ void main()
 //　そうだった、竜宮礼奈が本名だったな＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そうだった、竜宮礼奈が本名だったな。",
-		   NULL, "Oh, right. 'Reina Ryuugu' was her real name, wasn't it?", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Oh, right. \"Reina Ryuugu\" was her real name, wasn't it?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　...レナですっかり馴染んでしまったので、本名の礼奈という方がむしろ違和感がある￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…レナですっかり馴染んでしまったので、本名の礼奈という方がむしろ違和感がある。",
-		   NULL, "...I'd gotten so used to calling her 'Rena' that hearing her real name caught me a little off-guard.", Line_Normal);
+		   NULL, "...I'd gotten so used to calling her \"Rena\" that hearing her real name caught me a little off-guard.", Line_Normal);
 	ClearMessage();
 
 //「もしもし＠お電話かわりました。＠
@@ -715,7 +715,7 @@ void main()
 	OutputLine(NULL, "　…圭一くんが何を言っても、ちゃんと信じるよ。",
 		   NULL, "...Just from that tone, I could feel her saying...", Line_WaitForInput);
 	OutputLine(NULL, "そう言っているようにも聞こえた。",
-		   NULL, " 'No matter what you say, Keiichi-kun, I'll believe you.'", GetGlobalFlag(GLinemodeSp));
+		   NULL, " No matter what you say, Keiichi-kun, I'll believe you.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1986,7 +1986,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100676", 128, TRUE);
 	OutputLine(NULL, "「他の場所に停めてる可能性もあるんじゃない？」",
-		   NULL, "\"Couldn't they have parked them somewhere else?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"Couldn't they have parked them somewhere else?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1994,7 +1994,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100677", 128, TRUE);
 	OutputLine(NULL, "「……例えば、担いで石段を上がったとか。」",
-		   NULL, "\"......Could they have brought them up the stairs?\"", Line_Normal);
+		   NULL, "......Could they have brought them up the stairs?\"", Line_Normal);
 	ClearMessage();
 //	DisableWindow();
 //	DrawBustshotWithFiltering( 3, "re_si_na_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
@@ -2227,7 +2227,7 @@ void main()
 //　...部屋の灯りをつけ、窓をガラリと開けて...今、何時だと思ってるんだー！って￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…部屋の灯りをつけ、窓をガラリと開けて…今、何時だと思ってるんだー！って。",
-		   NULL, "...They would turn on the light in their room, fling open the windows, and yell 'what time do you think it is?!'", Line_Normal);
+		   NULL, "...They would turn on the light in their room, fling open the windows, and yell \"what time do you think it is?!\"", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 3, "wa_023", 128, 64 );
@@ -2627,7 +2627,7 @@ void main()
 //　冗談が過ぎるぜ...と、苦笑いを交えながら軽く言うつもりだった＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　冗談が過ぎるぜ…と、苦笑いを交えながら軽く言うつもりだった。",
-		   NULL, "I intended to follow that up with 'you're going too far with this joke' and give her a forced smile.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "I intended to follow that up with \"you're going too far with this joke\" and give her a forced smile.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -3155,7 +3155,7 @@ void main()
 //　助けてくれ、とまで言いそうになった＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　助けてくれ、とまで言いそうになった。",
-		   NULL, "I very nearly said 'help me' outright.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "I very nearly said \"help me\" outright.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -3541,7 +3541,7 @@ void main()
 	OutputLine(NULL, "　…魅音の断言に、大人たちは顔を青ざめさせる…。",
 		   NULL, "...The adults' faces paled at Mion's declaration.", Line_WaitForInput);
 	OutputLine(NULL, "それは俺とレナも同じだ…。",
-		   NULL, " Mine and Rena's did as well...", Line_Normal);
+		   NULL, " My and Rena's did as well...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	ModDrawCharacter(2, 3, "sprite/normal/me2_majime_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
@@ -3960,7 +3960,7 @@ void main()
 	ModPlayVoiceLS(7, 0, "ps3/s02/00/all03001d", 128, TRUE);
 	ModPlayVoiceLS(8, 0, "ps3/s02/00/all03001e", 128, TRUE);
 //「「「おぉうッ！！！」」＠
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>男性</color>", NULL, "<color=#f5e6d3>Men</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「「「おぉうッ！！！」」」",
 		   NULL, "\"\"\"Got it!!!\"\"\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
