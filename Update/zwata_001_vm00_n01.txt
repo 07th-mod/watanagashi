@@ -78,3 +78,12 @@ void dialog005()
 
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
+
+void dialog006()
+{
+	OutputLine(NULL, "美少女！！",
+		   NULL, " Pretty girls!!", Line_Continue);
+
+	PlaySE( 3, "wa_011", 128, 64 );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+}
