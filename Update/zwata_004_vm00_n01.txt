@@ -93,6 +93,10 @@ void dialog005()
 		   NULL, " What's the history behind that?\"", GetGlobalFlag(GLinemodeSp));
 
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	
+	DisableWindow();
+	ModDrawCharacter(3, 2, "sprite/normal/re3a_warai_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	
 }
 
 void dialog006()

@@ -68,6 +68,9 @@ void dialog005()
 		   NULL, "It's very lively!\"", Line_Normal);
 //	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	DisableWindow();
+	ModDrawCharacter(3, 2, "sprite/normal/re3a_warai_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	
 //そう言って魅音とレナがちょっと感心したように、にっこりと笑いながらうなずき返す。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "そう言って魅音とレナがちょっと感心したように、にっこりと笑いながらうなずき返す。",
