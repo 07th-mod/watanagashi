@@ -67,6 +67,9 @@ void dialog005()
 	OutputLine(NULL, "「じゃあ私はわかるかしら…？」",
 		   NULL, "\"Then do you recognize me...?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	
+	DisableWindow();
+	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
 }
 
 void dialog006()
