@@ -272,6 +272,10 @@ void dialog016()
 
 void dialog017()
 {
+
+	DisableWindow();
+	ModDrawCharacter(1, 9, "sprite/night/ta1_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	
 //「ところがね＠ローマの時代の処刑方法にね、網焼きというものがあったの＠バーベキューと同じにね＠金網で挟みつけて、炭火でじっくりと焼いたんですって。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps2/09/130900148", 240, TRUE);
@@ -336,9 +340,8 @@ void dialog017()
 		   NULL, " there was one method where they would open the gut, pull out the intestines like sausages, pull them up with a winch, and put them on public display.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-
-//	DisableWindow();
-//	DrawBustshot( 3, "si_si_yw_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	DisableWindow();
+	ModDrawCharacter(3, 6, "sprite/night/si1a_yowaki_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //　詩音が俺の背中に、しがみ付くようにくっついてくる＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -360,6 +363,10 @@ void dialog017()
 	ModPlayVoiceLS(4, 9, "ps2/09/130900157", 240, TRUE);
 	OutputLine(NULL, "「臓物を引っ張り出すなんて、聞いただけでもすぐに死んじゃいそうでしょう？",
 		   NULL, "\"You would think someone with their intestines pulled out would die instantly, right?", Line_WaitForInput);
+		   
+	DisableWindow();
+	ModDrawCharacter(1, 9, "sprite/night/ta1_akuwarai_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	
 	ModPlayVoiceLS(4, 9, "ps2/09/130900158", 240, TRUE);
 	OutputLine(NULL, "　でもね。",
 		   NULL, " Actually...", Line_WaitForInput);
@@ -385,8 +392,9 @@ void dialog017()
 	OutputLine(NULL, "　まるで、鷹野さんが目線だけで…俺の内臓をこね回しているかのようだった…。",
 		   NULL, "It was like my organs were coiling up... just from Takano-san's stare...", Line_Normal);
 	ClearMessage();
-//	DisableWindow();
-//	DrawBustshot( 1, "ta_si_wa_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	
+	DisableWindow();
+	ModDrawCharacter(1, 9, "sprite/night/ta1_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「ウィンチで引っ張り出すっていうのは何だか大仰な方法だけど＠もっと野蛮に、裂いた腹から臓物を、千切っては投げ千切っては投げという...!w1000そんな恐ろしい刑もあったんじゃないかって充分に考えられない＠　でも処刑者には意識があるの＠...それは痛い以上に...恐ろしい体験なんでしょうね...。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
@@ -407,6 +415,10 @@ void dialog017()
 	ModPlayVoiceLS(4, 9, "ps2/09/130900163", 240, TRUE);
 	OutputLine(NULL, "　でも処刑者には意識があるの。",
 		   NULL, "However, those being put to death are conscious.", Line_WaitForInput);
+		   
+	DisableWindow();
+	ModDrawCharacter(1, 9, "sprite/night/ta1_warai_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	
 	ModPlayVoiceLS(4, 9, "ps2/09/130900164", 240, TRUE);
 	OutputLine(NULL, "…それは痛い以上に…恐ろしい体験なんでしょうね…。」",
 		   NULL, " ...It must be far more terrifying than painful...\"", GetGlobalFlag(GLinemodeSp));
@@ -420,8 +432,9 @@ void dialog017()
 	OutputLine(NULL, "…耳元で、詩音が何度も唾を飲み込む音がした……。",
 		   NULL, " ...I heard Shion gulping multiple times near my ears......", Line_Normal);
 	ClearMessage();
-//	DisableWindow();
-//	DrawBustshot( 1, "ta_si_de_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+
+	DisableWindow();
+	ModDrawCharacter(1, 9, "sprite/night/ta1_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「雛見沢の、いえ、鬼ヶ淵村の綿流しもそんな感じだったのかしらね＠......ほら＠耳を澄ませば......聞こえてくるような気がしない？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
@@ -466,7 +479,7 @@ void dialog018()
 
 
 	DisableWindow();
-	ModDrawCharacterWithFiltering(1, 6, "sprite/night/si1a_odoroki_a1_", "2", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	ModDrawCharacterWithFiltering(3, 6, "sprite/night/si1a_odoroki_a1_", "2", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「け、......圭ちゃん、!w800......あれ、中に入ってない？＠　人＠　ミイラ？！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -509,7 +522,7 @@ void dialog018()
 		   NULL, "...Being that dark, there wasn't any way you could tell if something was there in the first place.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(3, 9, "sprite/night/ta1_def_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, TRUE );
+	ModDrawCharacter(1, 9, "sprite/night/ta1_akuwarai_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「......私には何も見えないけど＠見間違いじゃないの？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
@@ -523,9 +536,8 @@ void dialog018()
 
 
 	DisableWindow();
-	FadeAllBustshots( 400, TRUE );
 //	DrawBustshot( 2, "si_si_yw_b1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
-	ModDrawCharacter(2, 6, "sprite/night/si1a_yowaki_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(3, 6, "sprite/night/si1a_yowaki_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 400, TRUE );
 
 //「...................................................。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -540,6 +552,10 @@ void dialog018()
 	OutputLine(NULL, "　詩音は納得できないようだったが…、確かめる術がなく、途方に暮れるしかなかった。",
 		   NULL, "Shion didn't seem convinced... but without a means to confirm for ourselves, we couldn't do much but wonder.", Line_Normal);
 	ClearMessage();
+	
+	DisableWindow();
+	FadeBustshot( 3, FALSE, 0, 0, 0, 0, 200, FALSE );
+	ModDrawCharacter(1, 9, "sprite/night/ta1_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 }
 
 void dialog019()
@@ -607,6 +623,10 @@ void dialog020()
 	OutputLine(NULL, "　…彼女がもっともっと残酷な想像を掻き立てるようなことを言ったが…。",
 		   NULL, "...She spoke in a way intended to make me imagine even more vicious things...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	
+	DisableWindow();
+	ModDrawCharacter(2, 9, "sprite/night/ta1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	
 }
 
 void dialog021()
@@ -660,7 +680,7 @@ void dialog023()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s02/09/130900207", 128, TRUE);
 	OutputLine(NULL, "「あら、ジロウさんも見たくて我慢できなくなったかしら？",
-		   NULL, "\"Oh, Jirou-san, could you not resist seeing inside?", Line_WaitForInput);
+		   NULL, "\"Oh, Jirou-san, could you not resist seeing inside?", Line_Continue);
 	OutputLine(NULL, "　……ここ、素敵な拷問道具の宝庫よ。」",
 		   NULL, " ...This is a splendid treasure trove of torture devices.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
