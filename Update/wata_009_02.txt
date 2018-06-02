@@ -10,7 +10,6 @@ void main()
 	FadeOutBGM( 2, 1000, TRUE );
 	DrawScene("black", 1000 );
 	PlayBGM( 2, "lsys11", 128, 0 );
-	DrawSceneWithMask("background/m_y2_02", "down", 0, 0, 300 );
 
 //　自宅への帰り道＠
 	ClearMessage();
@@ -45,7 +44,7 @@ void main()
 		   NULL, "Exhausted from the slow climb towards Hinamizawa... without even noticing, I'd gotten off my bicycle and was pushing it uphill.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawSceneWithMask("background/sora2", "left", 0, 0, 300 );
+	DrawSceneWithMask("background/m_y2_02", "down", 0, 0, 300 );
 	PlayBGM( 1, "msys17", 128, 0 );
 
 //「................。＠
@@ -237,6 +236,8 @@ void main()
 		   NULL, "\"............Hoo...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	DisableWindow();
+	DrawSceneWithMask("background/sora2", "left", 0, 0, 300 );
 
 //　そうと決まったら、こんなところをもたもたと歩いていても仕方がない＠自転車にまたがる￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -276,9 +277,8 @@ void main()
 //■詩音からの電話
 
 	DisableWindow();
-	DrawScene("black", 1000 );
 //setwindow 31,16,22,16,26,26,0,2,20,1,1,#ffffff,0,0,639,479
-	DrawScene("background/sora_01", 1000 );
+	DrawScene("background/sora_01", 3000 );
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
@@ -1000,7 +1000,6 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawScene("black", 400 );
-	DrawFilm( 2, 153, 153, 153, 255, 0, 1000, TRUE );
 	DrawScene("background/mo2", 400 );
 	FadeOutBGM( 1, 1000, TRUE );
 	FadeOutBGM( 2, 1000, TRUE );
@@ -1051,7 +1050,6 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawScene("black", 400 );
-	FadeFilm( 1000, TRUE );
 	DrawScene("background/ma_j3_01", 400 );
 	FadeOutBGM( 2, 1000, TRUE );
 	PlayBGM( 1, "msys08", 128, 0 );
@@ -2228,6 +2226,7 @@ void main()
 //gosub *Sub_Camp_Mode
 
 	DisableWindow();
+	DrawScene("background/ma2", 1000 );
 	SetValidityOfInput( FALSE );
 	Wait( 3000 );
 	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 3000, TRUE );

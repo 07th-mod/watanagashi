@@ -81,6 +81,9 @@ void main()
 		   NULL, "My emotions are a mix of regret and fear... and it colored the darkness of the night with an additional layer of terror.", Line_Normal);
 	ClearMessage();
 
+	DisableWindow();
+	ShakeScreen( 1, 20, 20, 5, 0, );
+	
 //　突然のノック！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　突然のノック！！",
@@ -112,6 +115,8 @@ void main()
 		   NULL, " ...It's from Sonozaki-san.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	DisableWindow();
+	DrawSceneWithMask("background/ma_j3", "right", 0, 0, 300 );
 
 //　親父だった＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -150,6 +155,8 @@ void main()
 		   NULL, " Ask her yourself.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	DisableWindow();
+	DrawSceneWithMask("background/ma_j3_01", "left", 0, 0, 300 );
 
 //　......受話器を受け取り...布団の中に潜り込む￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -901,7 +908,7 @@ void main()
 		   NULL, "\"......They were acting illegally...?\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene("background/y_damu2", 400 );
+	DrawScene("flashback/y_damu2", 400 );
 
 //「例えば、夜中に建設現場に忍び込み、機材を盗んだり、壊したり、建設重機のガソリンタンクに角砂糖を入れたりとか。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -1145,7 +1152,6 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask("black", "down", 0, 0, 300 );
-	DrawFilm( 2, 153, 153, 153, 255, 0, 1000, TRUE );
 	PlayBGM( 1, "msys16", 128, 0 );
 	ModDrawCharacter(2, 3, "sprite/normal/me1a_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
@@ -1217,7 +1223,6 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawScene("black", 400 );
-	FadeFilm( 1000, TRUE );
 	DrawScene("background/ma_j3_01", 400 );
 	PlayBGM( 1, "msys13", 128, 0 );
 
@@ -1741,6 +1746,7 @@ void main()
 	OutputLine(NULL, "「な、なんでそんな大事な話を先にしてくれなかったんですかッ！！！！！」",
 		   NULL, "\"Wh-Why didn't you tell me something that important right away???!!\"", Line_Continue);
 
+	DisableWindow();
 	PlaySE( 3, "wa_025", 128, 64 );
 	ShakeScreen( 1, 50, 20, 4, 0, );
 
@@ -2348,6 +2354,7 @@ void main()
 	PlayBGM( 2, "lsys25", 128, 0 );
 //nega 1
 //print 2
+	DisableWindow();
 	Negative( 1000, TRUE );
 
 //　その影の中から...触れられただけで、心臓までも凍らすような冷たい腕が突き出し、俺の足を掴む＠.........体の熱という熱が、...その腕に吸い取られていく......＠
@@ -2424,10 +2431,8 @@ void main()
 
 	FadeOutBGM( 1, 1000, TRUE );
 	DisableWindow();
-	DrawSprite( 5, "black", NULL, -320, -240, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 32, 100, TRUE );
+	DrawScene("black", 100 );
 	FadeFilm( 0, TRUE );
-	DrawBG("black", 0, TRUE );
-	FadeSprite( 5, 0, TRUE );
 
 
 //「...り、.........梨花ちゃんッ！＠　梨花ちゃんだッ！！！！＠
@@ -2524,7 +2529,6 @@ void main()
 
 
 	DisableWindow();
-	DrawFilm( 2, 153, 153, 153, 255, 0, 1000, TRUE );
 	ModDrawCharacter(2, 5, "sprite/normal/ri1_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //　......猫さんの心配し過ぎなのです＠ボクがきっと、何とかしてあげますですよ＠
@@ -2552,9 +2556,7 @@ void main()
 		   NULL, "...She smiled, just like the missing mayor had when he encouraged Shion...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene("black", 1000 );
 	FadeOutBGM( 2, 1000, TRUE );
-	FadeFilm( 1000, TRUE );
 	DrawScene("background/ma_j3_01", 400 );
 	PlayBGM( 1, "msys13", 128, 0 );
 
