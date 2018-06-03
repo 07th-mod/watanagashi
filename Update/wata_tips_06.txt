@@ -73,7 +73,6 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	DisableWindow();
 //	DrawBustshotWithFiltering( 3, "si_si_wi_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「さぁ＠試せばそうなるんじゃないですか＠　私たち、筋金入りの一卵性ですから＠昔は服を取替えっこしただけで、誰も見破れなかったものです＠お姉と一緒にことあるごとに入れ替わって、いろいろと騙したりしましたっけ。あははは！￥
@@ -100,7 +99,7 @@ void main()
 	OutputLine(NULL, "　運転していた初老で黒スーツという、まるで執事とでも言わんばかりの男が深くため息を吐く。",
 		   NULL, "The middle-aged driver wearing a black suit heaved a heavy sigh, like he were a butler.", Line_Normal);
 	ClearMessage();
-	DisableWindow();
+	
 //	DrawBustshot( 3, "si_si_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「なぁに、葛西＠そのふかーいため息は。＠
@@ -130,7 +129,7 @@ void main()
 	OutputLine(NULL, "　バックミラー越しに、運転手の男のふかーい積年の苦労が見て取れる。",
 		   NULL, "You could see many years of hardship on the man's face through the rear-view mirror.", Line_Normal);
 	ClearMessage();
-	DisableWindow();
+	
 //	DrawBustshot( 3, "si_si_de_b1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「それより、圭ちゃんの家ってこっちでいいんですか＠　葛西は園崎本家への道以外は雛見沢をよく知らないから＠任せておくと谷河内辺りまで走ってっちゃいますよ。＠
@@ -264,6 +263,7 @@ void main()
 		   NULL, " ...Hey, back me up here.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+	FadeBustshot( 2, FALSE, 0, 0, 0, 0, 500, TRUE );
 	ModDrawCharacter(2, 6, "sprite/night/si1a_wink_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「じゃあね圭ちゃん！　また会いましょうね＠姉にもよろしくお伝え下さい＠私も明日から雛見沢の学校に通おうかな。＠
