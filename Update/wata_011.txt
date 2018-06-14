@@ -1106,8 +1106,8 @@ void main()
 		   NULL, "......I had no basis for thinking that... just a gut feeling.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(2, 5, "sprite/normal/ri1_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawScene("background/gr3", 1000 );
+	ModDrawCharacter(2, 5, "sprite/flashback/ri1_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawScene("flashback/gr3", 1000 );
 
 //　俺はあの日、恐らくとても重要なことを梨花ちゃんに打ち明けた＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1843,7 +1843,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawScene("black", 1000 );
-	DrawScene("background/hu_r1", 1000 );
+	DrawScene("flashback/hu_r1", 1000 );
 
 //　...昨日の夜＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1903,8 +1903,8 @@ void main()
 
 	DisableWindow();
 	DrawScene("black", 1000 );
-	ModDrawCharacter(3, 5, "sprite/normal/ri1_warai_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
-	DrawScene("background/yhu2", 1000 );
+	ModDrawCharacter(3, 5, "sprite/flashback/ri1_warai_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	DrawScene("flashback/yhu2", 1000 );
 
 //　そして梨花ちゃんは、自転車に乗って醤油を分けてもらいに出掛けた＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1922,8 +1922,8 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask("black", "right", 0, 0, 300 );
-	ModDrawCharacter(1, 4, "sprite/normal/sa1a_def_a1_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
-	DrawSceneWithMask("background/hu_r1", "right", 0, 0, 300 );
+	ModDrawCharacter(1, 4, "sprite/flashback/sa1a_def_a1_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawSceneWithMask("flashback/hu_r1", "right", 0, 0, 300 );
 
 //　そこで沙都子は、梨花ちゃんが醤油を分けてもらいに行った家へ電話をかけた＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1965,7 +1965,7 @@ void main()
 		   NULL, " ...I think that's how they called her out there.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(1, 4, "sprite/normal/sa1a_akireru_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	ModDrawCharacter(1, 4, "sprite/flashback/sa1a_akireru_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //　沙都子は悪態をつきながら、自分の作った夕飯にラップをかけた＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1981,8 +1981,8 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask("black", "left", 0, 0, 300 );
-	ModDrawCharacter(3, 4, "sprite/normal/sa1a_def_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
-	DrawSceneWithMask("background/yhu2", "left", 0, 0, 300 );
+	ModDrawCharacter(3, 4, "sprite/flashback/sa1a_def_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	DrawSceneWithMask("flashback/yhu2", "left", 0, 0, 300 );
 
 //　そして沙都子も自転車に乗った＠梨花ちゃんのいる家に向かって￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
