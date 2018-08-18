@@ -4709,6 +4709,11 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Chie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 22, "ps3/s19/22/501400051", 128, TRUE);
+
+	if (GetGlobalFlag(GADVMode)) {
+		OutputLine(NULL, "", NULL, "<size=-6>", Line_Continue);
+	}
+
 	OutputLine(NULL, "カ",
 		   NULL, "Curry", Line_Continue);
 
