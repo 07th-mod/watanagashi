@@ -2719,14 +2719,10 @@ void main()
 
 
 //　３人が踵を踏み潰した浅い靴をべたべたと言わせながら迫ってくるのを、どこか遠い世界の出来事のように呆然と見てしまう...￥
-	if (GetGlobalFlag(GADVMode)) {
-		OutputLineAll("", NULL, Line_ContinueAfterTyping);
-		OutputLine(NULL, "　３人が踵を踏み潰した浅い靴をべたべたと言わせながら迫ってくるのを、どこか遠い世界の出来事のように呆然と見てしまう…。",
-			   NULL, "<size=-2>The three of them beelined towards me, the worn-down heels of their thin-soled shoes slapping noisily against the pavement. I could only stare listlessly, as if I were watching some far-off event that didn't concern me at all.", Line_Normal);
-	} else {
-		OutputLine(NULL, "　３人が踵を踏み潰した浅い靴をべたべたと言わせながら迫ってくるのを、どこか遠い世界の出来事のように呆然と見てしまう…。",
-			   NULL, "The three of them beelined towards me, the worn-down heels of their thin-soled shoes slapping noisily against the pavement. I could only stare listlessly, as if I were watching some far-off event that didn't concern me at all.", Line_Normal);
-	}
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	OutputLine(NULL, "　３人が踵を踏み潰した浅い靴をべたべたと言わせながら迫ってくるのを、どこか遠い世界の出来事のように呆然と見てしまう…。",
+		   NULL, "The three of them beelined towards me, the worn-down heels of their thin-soled shoes slapping noisily against the pavement. I could only stare listlessly, as if I were watching some far-off event that didn't concern me at all.", Line_Normal);
 	ClearMessage();
 
 //　気付いた時には、襟首を捻り上げられ、つま先立ちにされていた￥
@@ -5167,14 +5163,10 @@ void main()
 
 
 //　県議会、市議会にも強力に働きかけ、地域住民を無視したダム建設を容認した県知事の罷免を要求。徹底的に糾弾した￥
-	if (GetGlobalFlag(GADVMode)) {
-		OutputLineAll("", NULL, Line_ContinueAfterTyping);
-		OutputLine(NULL, "　県議会、市議会にも強力に働きかけ、地域住民を無視したダム建設を容認した県知事の罷免を要求。徹底的に糾弾した。",
-			   NULL, "<size=-2>They pressured the prefectural and municipal assemblies, saying that the prefectural governor ignored his constituents when he approved the project, and demanded his resignation. They completely and thoroughly denounced him.", Line_Normal);
-	} else {
-		OutputLine(NULL, "　県議会、市議会にも強力に働きかけ、地域住民を無視したダム建設を容認した県知事の罷免を要求。徹底的に糾弾した。",
-			   NULL, "They pressured the prefectural and municipal assemblies, saying that the prefectural governor ignored his constituents when he approved the project, and demanded his resignation. They completely and thoroughly denounced him.", Line_Normal);
-	}
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	OutputLine(NULL, "　県議会、市議会にも強力に働きかけ、地域住民を無視したダム建設を容認した県知事の罷免を要求。徹底的に糾弾した。",
+		   NULL, "They pressured the prefectural and municipal assemblies, saying that the prefectural governor ignored his constituents when he approved the project, and demanded his resignation. They completely and thoroughly denounced him.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	DrawScene("background/hi1", 1000 );

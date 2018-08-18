@@ -82,14 +82,10 @@ void main()
 
 
 //　ダム騒動中に報じられた不穏な事件の数々（有名な建設省幹部の子息誘拐事件他）も園崎家が行なったと、雛見沢ですら囁かれているくらいだ￥
-	if (GetGlobalFlag(GADVMode)) {
-		OutputLineAll("", NULL, Line_ContinueAfterTyping);
-		OutputLine(NULL, "　ダム騒動中に報じられた不穏な事件の数々（有名な建設省幹部の子息誘拐事件他）も園崎家が行なったと、雛見沢ですら囁かれているくらいだ。",
-			   NULL, "<size=-2>Even in Hinamizawa, they whisper that the multitude of unsettling incidents reported during the dam protests (such as the kidnapping of the famous Head of the Ministry of Construction's son) had been carried out by the Sonozakis.", Line_Normal);
-	} else {
-		OutputLine(NULL, "　ダム騒動中に報じられた不穏な事件の数々（有名な建設省幹部の子息誘拐事件他）も園崎家が行なったと、雛見沢ですら囁かれているくらいだ。",
-			   NULL, "Even in Hinamizawa, they whisper that the multitude of unsettling incidents reported during the dam protests (such as the kidnapping of the famous Head of the Ministry of Construction's son) had been carried out by the Sonozakis.", Line_Normal);
-	}
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	OutputLine(NULL, "　ダム騒動中に報じられた不穏な事件の数々（有名な建設省幹部の子息誘拐事件他）も園崎家が行なったと、雛見沢ですら囁かれているくらいだ。",
+		   NULL, "Even in Hinamizawa, they whisper that the multitude of unsettling incidents reported during the dam protests (such as the kidnapping of the famous Head of the Ministry of Construction's son) had been carried out by the Sonozakis.", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 3, "wa_021", 128, 64 );

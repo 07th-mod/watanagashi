@@ -63,14 +63,10 @@ void main()
 
 
 //　これらの恐ろしい神罰は、その他多くの宗教の終末（地獄）表現とほぼ同じで、これを回避するために教義に従わせようとする方便だと容易に想像できる￥
-	if (GetGlobalFlag(GADVMode)) {
-		OutputLineAll("", NULL, Line_ContinueAfterTyping);
-		OutputLine(NULL, "　これらの恐ろしい神罰は、その他多くの宗教の終末（地獄）表現とほぼ同じで、これを回避するために教義に従わせようとする方便だと容易に想像できる。",
-			   NULL, "<size=-2>These terrifying ideas of divine punishment are in alignment with many other religious beliefs regarding the apocalypse (Hell), and it's easy to imagine that they are just ways of convincing people to obey the teachings in order to prevent such an end.", Line_Normal);
-	} else {
-		OutputLine(NULL, "　これらの恐ろしい神罰は、その他多くの宗教の終末（地獄）表現とほぼ同じで、これを回避するために教義に従わせようとする方便だと容易に想像できる。",
-			   NULL, "These terrifying ideas of divine punishment are in alignment with many other religious beliefs regarding the apocalypse (Hell), and it's easy to imagine that they are just ways of convincing people to obey the teachings in order to prevent such an end.", Line_Normal);
-	}
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	OutputLine(NULL, "　これらの恐ろしい神罰は、その他多くの宗教の終末（地獄）表現とほぼ同じで、これを回避するために教義に従わせようとする方便だと容易に想像できる。",
+		   NULL, "These terrifying ideas of divine punishment are in alignment with many other religious beliefs regarding the apocalypse (Hell), and it's easy to imagine that they are just ways of convincing people to obey the teachings in order to prevent such an end.", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 3, "wa_021", 128, 64 );

@@ -1033,14 +1033,10 @@ void main()
 
 
 //　身元確認は困難かに思われたが、その直後に××県警興宮署から歯型照合の依頼があり、照合の結果、鷹野三四と確認された＠
-	if (GetGlobalFlag(GADVMode)) {
-		OutputLineAll("", NULL, Line_ContinueAfterTyping);
-		OutputLine(NULL, "　身元確認は困難かに思われたが、その直後に××県警興宮署から歯型照合の依頼があり、照合の結果、鷹野三四と確認された。",
-			   NULL, "<size=-2>They initially considered the body beyond recognition, but directly after, there was a request for a dental comparison from the ×× prefectural police station in Okinomiya, and the results concluded that it was Miyo Takano.", GetGlobalFlag(GLinemodeSp));
-	} else {
-		OutputLine(NULL, "　身元確認は困難かに思われたが、その直後に××県警興宮署から歯型照合の依頼があり、照合の結果、鷹野三四と確認された。",
-			   NULL, "They initially considered the body beyond recognition, but directly after, there was a request for a dental comparison from the ×× prefectural police station in Okinomiya, and the results concluded that it was Miyo Takano.", GetGlobalFlag(GLinemodeSp));
-	}
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	OutputLine(NULL, "　身元確認は困難かに思われたが、その直後に××県警興宮署から歯型照合の依頼があり、照合の結果、鷹野三四と確認された。",
+		   NULL, "They initially considered the body beyond recognition, but directly after, there was a request for a dental comparison from the ×× prefectural police station in Okinomiya, and the results concluded that it was Miyo Takano.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　死因はまだ特定されていないが、下着姿で、周囲に衣服がないことから、他殺の可能性が濃厚だという￥

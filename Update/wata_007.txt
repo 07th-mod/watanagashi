@@ -4337,14 +4337,10 @@ void main()
 
 //　だから一連の事件も、犯人は誰かってことよりも、事件の存在自体が、古い因習がまだ根深く残ってることの証拠だって思って面白がってるくらい...。＠
 	ModPlayVoiceLS(4, 9, "ps3/s19/09/500900070", 128, TRUE);
-	if (GetGlobalFlag(GADVMode)) {
-		OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_Continue);
-		OutputLine(NULL, "　だから一連の事件も、犯人は誰かってことよりも、事件の存在自体が、古い因習がまだ根深く残ってることの証拠だって思って面白がってるくらい…。」",
-			   NULL, "<size=-2>So even for this string of incidents, it's not so much finding out who the culprit is, but enjoying thinking about how the old traditions displayed by the incidents themselves still seems to have some pretty deep roots around here...\"", GetGlobalFlag(GLinemodeSp));
-	} else {
-		OutputLine(NULL, "　だから一連の事件も、犯人は誰かってことよりも、事件の存在自体が、古い因習がまだ根深く残ってることの証拠だって思って面白がってるくらい…。」",
-			   NULL, "So even for this string of incidents, it's not so much finding out who the culprit is, but enjoying thinking about how the old traditions displayed by the incidents themselves still seems to have some pretty deep roots around here...\"", GetGlobalFlag(GLinemodeSp));
-	}
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	OutputLine(NULL, "　だから一連の事件も、犯人は誰かってことよりも、事件の存在自体が、古い因習がまだ根深く残ってることの証拠だって思って面白がってるくらい…。」",
+		   NULL, "So even for this string of incidents, it's not so much finding out who the culprit is, but enjoying thinking about how the old traditions displayed by the incidents themselves still seems to have some pretty deep roots around here...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
