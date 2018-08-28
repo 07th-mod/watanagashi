@@ -19,3 +19,11 @@ void dialog001()
 	OutputLine(NULL, "　こんなところにいる間に梨花ちゃんの演舞が終わっちゃったらどうするんだよ？！」",
 		   NULL, " What if Rika-chan's dance ends while we're messing around here?!\"", Line_Normal);
 }
+void dialog002()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200409", 128, TRUE);
+	OutputLine(NULL, "「圭ちゃんは…、……自分から言い出して、謝らなくちゃいけなかったんじゃないかな。」",
+		   NULL, "\"Maybe, Keiichi-kun... Maybe you should have told her yourself and apologized.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
