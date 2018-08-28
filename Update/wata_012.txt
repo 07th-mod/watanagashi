@@ -647,11 +647,10 @@ void main()
 
 
 //「圭ちゃんは...、......自分から言い出して、謝らなくちゃいけなかったんじゃないかな。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200409", 128, TRUE);
-	OutputLine(NULL, "「圭ちゃんは…、……自分から言い出して、謝らなくちゃいけなかったんじゃないかな。」",
-		   NULL, "\"Maybe, Kei-chan... Maybe you should have told her yourself and apologized.\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_012_vm0x_n01","dialog002");}
+	if(GetGlobalFlag(GCensor) <= 0){ModCallScriptSection("zwata_012_vm00_n01","dialog002");}
+	//VoiceMatchingEnd
 
 
 //　......俺から言い出して、...謝らなくちゃいけなかった＠......心に引っ掛かった￥
