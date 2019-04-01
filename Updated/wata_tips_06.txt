@@ -1,0 +1,278 @@
+﻿void main()
+{
+
+//５■初めましてじゃないです
+
+//*Sub_Tips_026
+//gosub *tip_s
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+	DisableWindow();
+	DrawScene( "black", 1000 );
+	PlayBGM( 1, "msys02", 128, 0 );
+
+//「...だから初めましてじゃないですって＠　昨日まで毎日、お会いしてたじゃないですか。＠
+	OutputLine(NULL, "「…だから初めましてじゃないですって！",
+		   NULL, "\"...Stop saying 'it's been a while'!", Line_WaitForInput);
+	OutputLine(NULL, "　昨日まで毎日、お会いしてたじゃないですか。」",
+		   NULL, " We've seen each other every day up until yesterday, haven't we?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//「......もういい＠お前がそうだって言うならそういうことでいい。￥
+	OutputLine(NULL, "「……もういい。",
+		   NULL, "\"...Whatever.", Line_WaitForInput);
+	OutputLine(NULL, "お前がそうだって言うならそういうことでいい。」",
+		   NULL, " If you say so, we'll go with that.\"", Line_Normal);
+	ClearMessage();
+
+//　詩音の家の人がワゴン車で迎えに来てくれた＠
+	OutputLine(NULL, "　詩音の家の人がワゴン車で迎えに来てくれた。",
+		   NULL, "Someone from Shion's house came to get me in a station wagon.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+
+//　俺は一応は断ったのだが、詩音に押し切られる形で、自転車ごと押し込まれたのだった￥
+	OutputLine(NULL, "　俺は一応は断ったのだが、詩音に押し切られる形で、自転車ごと押し込まれたのだった。",
+		   NULL, "I had initially refused, but Shion insisted, and so both my bicycle and I ended up stuffed in the car.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawSceneWithMask( "bg_100", "up", 0, 0, 1300 );
+
+//　車は今、一路、雛見沢へのでこぼこした道を走っている最中だ＠
+	OutputLine(NULL, "　車は今、一路、雛見沢へのでこぼこした道を走っている最中だ。",
+		   NULL, "Said car was currently driving across the single bumpy road leading to Hinamizawa.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//　詩音ってヤツは...どうやら魅音と同じか、もしくはそれ以上の役者らしく、どう問い詰めてものらりくらりとかわす￥
+	OutputLine(NULL, "　詩音ってヤツは…どうやら魅音と同じか、もしくはそれ以上の役者らしく、どう問い詰めてものらりくらりとかわす。",
+		   NULL, "For goodness sake... Shion was at Mion's level at least, or maybe an even better actor—either way, no matter what questions I pressed her with, she'd slip out of them like an eel.", Line_Normal);
+	ClearMessage();
+
+//「しかし......そっくりだなぁ＠魅音みたいに髪を後ろで結んだら、やっぱり魅音そっくりになるのか？＠
+	OutputLine(NULL, "「しかし……そっくりだなぁ。",
+		   NULL, "\"Still... you two look so alike.", Line_WaitForInput);
+	OutputLine(NULL, "魅音みたいに髪を後ろで結んだら、やっぱり魅音そっくりになるのか？」",
+		   NULL, " If you tied your hair back like Mion does, would you look exactly like her?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 3, "si_si_wi_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「さぁ＠試せばそうなるんじゃないですか＠　私たち、筋金入りの一卵性ですから＠昔は服を取替えっこしただけで、誰も見破れなかったものです＠お姉と一緒にことあるごとに入れ替わって、いろいろと騙したりしましたっけ。あははは！￥
+	OutputLine(NULL, "「さぁ。",
+		   NULL, "\"Who knows?", Line_WaitForInput);
+	OutputLine(NULL, "試せばそうなるんじゃないですか？",
+		   NULL, " That's probably what would happen.", Line_WaitForInput);
+	OutputLine(NULL, "　私たち、筋金入りの一卵性ですから。",
+		   NULL, " We're identical twins, through and through.", Line_WaitForInput);
+	OutputLine(NULL, "昔は服を取替えっこしただけで、誰も見破れなかったものです。",
+		   NULL, " In the past, we could just change our clothes and no one would be the wiser.", Line_WaitForInput);
+	OutputLine(NULL, "お姉と一緒にことあるごとに入れ替わって、いろいろと騙したりしましたっけ。あははは！」",
+		   NULL, " I remember we'd swap places at every opportunity and fooled a whole lot of people. Ahahaha!\"", Line_Normal);
+	ClearMessage();
+
+//　運転していた初老で黒スーツという、まるで執事とでも言わんばかりの男が深くため息を吐く￥
+	OutputLine(NULL, "　運転していた初老で黒スーツという、まるで執事とでも言わんばかりの男が深くため息を吐く。",
+		   NULL, "The middle-aged driver wearing a black suit heaved a heavy sigh, like he were a butler.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawBustshot( 3, "si_si_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//「なぁに、葛西＠そのふかーいため息は。＠
+	OutputLine(NULL, "「なぁに、葛西。",
+		   NULL, "\"What's wrong, Kasai?", Line_WaitForInput);
+	OutputLine(NULL, "そのふかーいため息は。」",
+		   NULL, " That was a pretty deep sigh.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//「失礼しました＠......昔から変わられないなぁと思っただけですよ。＠
+	OutputLine(NULL, "「失礼しました。",
+		   NULL, "\"Excuse me.", Line_WaitForInput);
+	OutputLine(NULL, "……昔から変わられないなぁと思っただけですよ。」",
+		   NULL, " ...I was just thinking that you haven't changed.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//　バックミラー越しに、運転手の男のふかーい積年の苦労が見て取れる￥
+	OutputLine(NULL, "　バックミラー越しに、運転手の男のふかーい積年の苦労が見て取れる。",
+		   NULL, "You could see many years of hardship on the man's face through the rear-view mirror.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawBustshot( 3, "si_si_de_b1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//「それより、圭ちゃんの家ってこっちでいいんですか＠　葛西は園崎本家への道以外は雛見沢をよく知らないから＠任せておくと谷河内辺りまで走ってっちゃいますよ。＠
+	OutputLine(NULL, "「それより、圭ちゃんの家ってこっちでいいんですか？",
+		   NULL, "\"Anyway, Kei-chan, your house was around here, right?", Line_WaitForInput);
+	OutputLine(NULL, "　葛西は園崎本家への道以外は雛見沢をよく知らないから。",
+		   NULL, " Kasai doesn't know much about Hinamizawa aside from the road that goes to the Sonozaki main house.", Line_WaitForInput);
+	OutputLine(NULL, "任せておくと谷河内辺りまで走ってっちゃいますよ。」",
+		   NULL, " If you leave it to him, he'll take you all the way to Yagouchi.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//「そ、そりゃ困る＠　...すみません、次の右に入る細い道のところで停めてください＠そこまでで結構です。￥
+	OutputLine(NULL, "「そ、そりゃ困る！",
+		   NULL, "\"I-I don't want that!", Line_WaitForInput);
+	OutputLine(NULL, "　…すみません、次の右に入る細い道のところで停めてください。",
+		   NULL, " ...Excuse me, could you stop at the narrow road at the next right?", Line_WaitForInput);
+	OutputLine(NULL, "そこまでで結構です。」",
+		   NULL, " I'll walk from there.\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawSceneWithMask( "black", "down", 0, 0, 1300 );
+	DrawScene( "bg_249", 400 );
+
+//　望みどおりの場所で車を停まる＠
+	OutputLine(NULL, "　望みどおりの場所で車を停まる。",
+		   NULL, "He stopped the car at the desired place.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//　葛西さんと呼ばれた運転手が荷台から自転車を下ろしてくれた￥
+	OutputLine(NULL, "　葛西さんと呼ばれた運転手が荷台から自転車を下ろしてくれた。",
+		   NULL, "The driver, Kasai-san, got my bike out of the trunk for me.", Line_Normal);
+	ClearMessage();
+
+//「あ、...どうもすみません＠今日は送ってもらってありがとうございます...。＠
+	OutputLine(NULL, "「あ、…どうもすみません。",
+		   NULL, "\"Ah... Sorry about that.", Line_WaitForInput);
+	OutputLine(NULL, "今日は送ってもらってありがとうございます…。」",
+		   NULL, " Thank you very much for showing me home today...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//「圭一さんでしたか＠お名前。＠
+	OutputLine(NULL, "「圭一さんでしたか、",
+		   NULL, "\"Was it Kei-san?", Line_WaitForInput);
+	OutputLine(NULL, "お名前。」",
+		   NULL, " Your name, that is.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//「え、あ、はい。＠
+	OutputLine(NULL, "「え、あ、はい。」",
+		   NULL, "\"Eh? Ah, yes.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//「......いろいろと災難はあると思いますが、そのうち飽きると思いますので、どうかそれまでご辛抱下さい。￥
+	OutputLine(NULL, "「……いろいろと災難はあると思いますが、そのうち飽きると思いますので、どうかそれまでご辛抱下さい。」",
+		   NULL, "\"...You must be having various difficulties, but I believe she will grow tired soon, so please endure things until then.\"", Line_Normal);
+	ClearMessage();
+
+//　深いふかーい同情の顔＠
+	OutputLine(NULL, "　深いふかーい同情の顔。",
+		   NULL, "He gave me a deep, deep look of sympathy.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//　......このおっさん、きっと園崎姉妹が幼かった頃からいろいろと苦労してきたに違いない￥
+	OutputLine(NULL, "　……このおっさん、きっと園崎姉妹が幼かった頃からいろいろと苦労してきたに違いない。",
+		   NULL, "...This guy has definitely been dealing with the Sonozaki sisters ever since they were little kids.", Line_Normal);
+	ClearMessage();
+
+//「ですが、魅音さんと同じで、根はやさしい方なんですよ。＠
+	OutputLine(NULL, "「ですが、魅音さんと同じで、根はやさしい方なんですよ。」",
+		   NULL, "\"However, like Mion-san, she's a kind person at heart.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//「...それはつまり、魅音並に迷惑をかけるヤツだ、ということですか。＠
+	OutputLine(NULL, "「…それはつまり、魅音並に迷惑をかけるヤツだ、ということですか。」",
+		   NULL, "\"...So that means she'll be as much of a bother as Mion, right?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+
+//　おっさんは笑顔を凍りつかせたまま、二の句を失っている＠...おい、少しはフォローしろ￥
+	OutputLine(NULL, "　おっさんは笑顔を凍りつかせたまま、二の句を失っている。",
+		   NULL, "The man's face froze in a smile, his reply lost.", Line_WaitForInput);
+	OutputLine(NULL, "…おい、少しはフォローしろ。",
+		   NULL, " ...Hey, back me up here.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawBustshot( 2, "si_si_wi_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+
+//「じゃあね圭ちゃん！　また会いましょうね＠姉にもよろしくお伝え下さい＠私も明日から雛見沢の学校に通おうかな。＠
+	OutputLine(NULL, "「じゃあね圭ちゃん！　また会いましょうね。",
+		   NULL, "\"Bye, Kei-chan! We'll see each other again soon.", Line_WaitForInput);
+	OutputLine(NULL, "姉にもよろしくお伝え下さい。",
+		   NULL, " Say hi to my sister for me, too.", Line_WaitForInput);
+	OutputLine(NULL, "私も明日から雛見沢の学校に通おうかな。」",
+		   NULL, " Maybe I'll start going to Hinamizawa tomorrow?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//「絶対に来るな＠詩音が転校して来たら、俺が興宮の学校に転校するから。＠
+	OutputLine(NULL, "「絶対に来るな。",
+		   NULL, "\"Don't you dare.", Line_WaitForInput);
+	OutputLine(NULL, "詩音が転校して来たら、俺が興宮の学校に転校するから。」",
+		   NULL, " If you transferred in, I'll transfer out to a school in Okinomiya.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	DisableWindow();
+	DrawBustshot( 2, "si_si_wa_b1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+
+//「わ、それはすごくひどいことですよ、圭ちゃん...！￥
+	OutputLine(NULL, "「わ、それはすごくひどいことですよ、圭ちゃん…！」",
+		   NULL, "\"Wow, that was really mean, Kei-chan...!\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	FadeBustshotWithFiltering( 2, "left", 1, FALSE, 0, 0, 300, TRUE );
+
+//　短くクラクションが１回＠おっさんが運転席から小さく手を振る￥
+	OutputLine(NULL, "　短くクラクションが１回。",
+		   NULL, "A short beep of the horn.", Line_WaitForInput);
+	OutputLine(NULL, "おっさんが運転席から小さく手を振る。",
+		   NULL, " The man gave a little wave to me from the driver's seat.", Line_Normal);
+	ClearMessage();
+
+//　車は砂塵を残しながら、暗い夜道を引き返していった...＠
+	OutputLine(NULL, "　車は砂塵を残しながら、暗い夜道を引き返していった…。",
+		   NULL, "Then, the car withdrew into the dark night roads, leaving dust in its wake...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+
+//　............もう本当に、...わけのわからん一日だった＠
+	OutputLine(NULL, "　…………もう本当に、…わけのわからん一日だった。",
+		   NULL, ".........Man... this entire day made no sense.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//　...俺が詩音といるところにばったり出くわした魅音の、豆鉄砲を食らったハトのような顔が、今さらだが何だか印象深かった￥
+	OutputLine(NULL, "　…俺が詩音といるところにばったり出くわした魅音の、豆鉄砲を食らったハトのような顔が、今さらだが何だか印象深かった。",
+		   NULL, "...I ran into Mion while I was with Shion, and the former's expression, like a pigeon shot with a pellet gun, had finally begun to make a strong impression on me.", Line_Normal);
+	ClearMessage();
+
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	DisableWindow();
+	DrawScene( "black", 1000 );
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+//gosub *tip_e
+//return
+
+
+}

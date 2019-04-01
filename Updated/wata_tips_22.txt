@@ -1,0 +1,348 @@
+﻿void main()
+{
+
+//１０深■請求却下
+//（早朝のイメージで）
+//*Sub_Tips_042
+//gosub *tip_s
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+	DisableWindow();
+	DrawScene( "black", 1000 );
+	PlayBGM( 1, "msys12", 128, 0 );
+	DrawSceneWithMask( "bg_192", "left", 0, 0, 1300 );
+
+//「あ、お疲れさまです！！＠
+	OutputLine(NULL, "「あ、お疲れさまです！！」",
+		   NULL, "\"I'm back!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 3, "oi_si_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「どうです＠　何か手掛かりはありました？＠
+	OutputLine(NULL, "「どうです？",
+		   NULL, "\"How did it go?", Line_WaitForInput);
+	OutputLine(NULL, "　何か手掛かりはありました？」",
+		   NULL, " Did you find any clues?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+
+//　...署員たちが残念そうに首を振る＠
+	OutputLine(NULL, "　…署員たちが残念そうに首を振る。",
+		   NULL, "...The officers shook their heads in disappointment.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　皆、疲労が色濃く出ている＠
+	OutputLine(NULL, "　皆、疲労が色濃く出ている。",
+		   NULL, "Exhaustion was plainly showing on everyone's faces.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　無理もない＠綿流しの日から一睡もしていない者ばかりだ￥
+	OutputLine(NULL, "　無理もない。",
+		   NULL, "That was only natural.", Line_WaitForInput);
+	OutputLine(NULL, "綿流しの日から一睡もしていない者ばかりだ。",
+		   NULL, " None of them had gotten a wink of sleep since the day of Watanagashi.", Line_Normal);
+	ClearMessage();
+
+//「課長＠若い子から交替で仮眠取らせてあげて下さい＠ここからは長丁場になりますからねぇ＠無理せず、体を休めながらのんびり行きましょ。＠
+	OutputLine(NULL, "「課長。",
+		   NULL, "\"Chief.", Line_WaitForInput);
+	OutputLine(NULL, "若い子から交替で仮眠取らせてあげて下さい。",
+		   NULL, " Let the youngest of us take a nap, and then switch them out.", Line_WaitForInput);
+	OutputLine(NULL, "ここからは長丁場になりますからねぇ。",
+		   NULL, " We've got a long stretch ahead of us, after all.", Line_WaitForInput);
+	OutputLine(NULL, "無理せず、体を休めながらのんびり行きましょ。」",
+		   NULL, " Let's not push ourselves too hard—rest up so we can take it easy as we go.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「みんなには交代で休めって言ってるんだけどね＠みんな遠慮してなかなか休んでくれないんだよ＠...大石さんからも言ってくれないか。￥
+	OutputLine(NULL, "「みんなには交代で休めって言ってるんだけどね。",
+		   NULL, "\"I've been telling them to sleep in shifts.", Line_WaitForInput);
+	OutputLine(NULL, "みんな遠慮してなかなか休んでくれないんだよ。",
+		   NULL, " Nobody actually seems willing to sleep, though.", Line_WaitForInput);
+	OutputLine(NULL, "…大石さんからも言ってくれないか。」",
+		   NULL, " ...Could you tell them yourself, Ooishi-san?\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawBustshot( 3, "oi_si_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//「ありゃありゃ＠みんな、遠慮しないでいいんですよ＠　小宮山くん＠若い子から順に交代で休ませてあげて下さい。＠
+	OutputLine(NULL, "「ありゃありゃ。",
+		   NULL, "\"Oh my.", Line_WaitForInput);
+	OutputLine(NULL, "みんな、遠慮しないでいいんですよ？",
+		   NULL, " You don't need to force yourselves.", Line_WaitForInput);
+	OutputLine(NULL, "　小宮山くん。",
+		   NULL, " Komiyama-kun.", Line_WaitForInput);
+	OutputLine(NULL, "若い子から順に交代で休ませてあげて下さい。」",
+		   NULL, " Please let everyone sleep in shifts, starting with the youngest.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「小宮山さん＠そうしてあげてください。＠
+	OutputLine(NULL, "「小宮山さん。",
+		   NULL, "\"Komiyama-san.", Line_WaitForInput);
+	OutputLine(NULL, "そうしてあげてください。」",
+		   NULL, " Please do that.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　課長に重ねて言われ、小宮山くんは席を立った￥
+	OutputLine(NULL, "　課長に重ねて言われ、小宮山くんは席を立った。",
+		   NULL, "After the chief told him as well, Komiyama-san left his seat.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawBustshot( 3, "oi_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//「で、課長＠例の請求なんですけど、まだ駄目そうです？＠
+	OutputLine(NULL, "「で、課長。",
+		   NULL, "\"So, Chief.", Line_WaitForInput);
+	OutputLine(NULL, "例の請求なんですけど、まだ駄目そうです？」",
+		   NULL, " Still no good on our request?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「...第一、村人の噂だけなんでしょう＠　もっと具体的な証拠がなければ難しいよ。＠
+	OutputLine(NULL, "「…第一、村人の噂だけなんでしょう？",
+		   NULL, "\"...It's just a rumor among the villagers in the first place, you know?", Line_WaitForInput);
+	OutputLine(NULL, "　もっと具体的な証拠がなければ難しいよ。」",
+		   NULL, " It's going to be difficult without more concrete evidence.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「その証拠があの中に詰まってるかも知れないんですよ？＠
+	OutputLine(NULL, "「その証拠があの中に詰まってるかも知れないんですよ？」",
+		   NULL, "\"Even when that evidence might be tucked away in there?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「その証拠が中に詰まっているという証拠が必要なんだよ...！￥
+	OutputLine(NULL, "「その証拠が中に詰まっているという証拠が必要なんだよ…！」",
+		   NULL, "\"We need evidence that evidence is tucked away in there...!\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawBustshot( 3, "oi_si_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//「課長～＠ナゾナゾやってるんじゃないですよ＠　死んだ２人を含む４人が綿流しの晩に祭具殿と呼ばれる禁断の蔵に無断で入り込み、それを何者かが見ていた＠　ここまでは信頼できる情報なんです。＠
+	OutputLine(NULL, "「課長〜。",
+		   NULL, "\"Chief~", Line_WaitForInput);
+	OutputLine(NULL, "ナゾナゾやってるんじゃないですよ？",
+		   NULL, " Don't start speaking in riddles to me, now.", Line_WaitForInput);
+	OutputLine(NULL, "　死んだ２人を含む４人が綿流しの晩に祭具殿と呼ばれる禁断の蔵に無断で入り込み、それを何者かが見ていた！",
+		   NULL, " We have witnesses that say four people, including the two who died, went into the forbidden ritual storehouse without permission!", Line_WaitForInput);
+	OutputLine(NULL, "　ここまでは信頼できる情報なんです。」",
+		   NULL, " This is all reliable information.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「情報と言ったって、あくまでも噂だよ。証拠があるわけじゃない。￥
+	OutputLine(NULL, "「情報と言ったって、あくまでも噂だよ。証拠があるわけじゃない。」",
+		   NULL, "\"You might call it information, but they're really only rumors. They're not concrete evidence.\"", Line_Normal);
+	ClearMessage();
+
+//「そりゃまぁ、４人が頬かむりして忍び込む写真はありませんがねぇ＠/
+	OutputLine(NULL, "「そりゃまぁ、４人が頬かむりして忍び込む写真はありませんがねぇ。",
+		   NULL, "\"Well, it's true that we don't have any pictures of the four of them sneaking in with cloth tied around their heads.", Line_WaitForInput);
+
+	DisableWindow();
+	DrawBustshot( 3, "oi_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//とにかく、４人は祭具殿の中で何かを見たんです＠　消されるくらいの何かを！＠
+	OutputLine(NULL, "とにかく、４人は祭具殿の中で何かを見たんです！",
+		   NULL, " Anyway, those four saw something inside the storehouse!", Line_WaitForInput);
+	OutputLine(NULL, "　消されるくらいの何かを！」",
+		   NULL, " Something important enough that they'd be erased!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「消されるくらいの何か？　それは何だい。＠
+	OutputLine(NULL, "「消されるくらいの何か？　それは何だい。」",
+		   NULL, "\"Important enough that they'd be erased? What would that be, exactly?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+
+//　...だから～...それを調べるために令状を請求してるんじゃあないですか...￥
+	OutputLine(NULL, "　…だから〜…それを調べるために令状を請求してるんじゃあないですか…！",
+		   NULL, "...That's why I'm asking for a warrant to go looking for it in the first place...!", Line_Normal);
+	ClearMessage();
+
+//「園崎家絡みの暴力団関係が有力候補ですなぁ＠トカレフの山か、ケシの密造工場か＠園崎家の隠し資産ってのも捨てがたい辺りです。＠
+	OutputLine(NULL, "「園崎家絡みの暴力団関係が有力候補ですなぁ。",
+		   NULL, "\"Anything pointing out the Sonozaki family's connections to violent organizations would be a major contender.", Line_WaitForInput);
+	OutputLine(NULL, "トカレフの山か、ケシの密造工場か。",
+		   NULL, " Like a pile of Tokarevs, or a secret poppy production facility.", Line_WaitForInput);
+	OutputLine(NULL, "園崎家の隠し資産ってのも捨てがたい辺りです。」",
+		   NULL, " The secret Sonozaki family fortune would also be pretty difficult to discard.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//「...大石さん、気持ちはわかるけど＠　あの祭具殿ってのは古手神社にある神聖な建物で、地元の人間への相当の配慮が必要な建物なんだよ。＠
+	OutputLine(NULL, "「…大石さん、気持ちはわかるけど！",
+		   NULL, "\"...Look, Ooishi-san, I know how you feel!", Line_WaitForInput);
+	OutputLine(NULL, "　あの祭具殿ってのは古手神社にある神聖な建物で、地元の人間への相当の配慮が必要な建物なんだよ。」",
+		   NULL, " However, that storehouse is a sacred building belonging to the Furude Shrine, and we need to have proper consideration for the locals when dealing with it.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+
+//　園崎議員から署長に延々１時間に及ぶ電話があったって聞いたけど＠...課長、ひょっとして署長に釘を刺されたかな￥
+	OutputLine(NULL, "　園崎議員から署長に延々１時間に及ぶ電話があったって聞いたけど。",
+		   NULL, "I heard that there was an hour long call made from Congressman Sonozaki to the big man.", Line_WaitForInput);
+	OutputLine(NULL, "…課長、ひょっとして署長に釘を刺されたかな？",
+		   NULL, " ...Chief, could he have nailed you back down?", Line_Normal);
+	ClearMessage();
+
+//「とにかく＠　相当の証拠がない限り、祭具殿の捜査令状は取れないよ＠園崎本家への令状も同じだ＠　特に園崎本家への捜査は四課と県警の暴対が絡んでる＠入念な事前調整がいるんだ！＠
+	OutputLine(NULL, "「とにかく！",
+		   NULL, "\"Anyway!", Line_WaitForInput);
+	OutputLine(NULL, "　相当の証拠がない限り、祭具殿の捜査令状は取れないよ。",
+		   NULL, " As long as we don't have suitable evidence, we won't get a search warrant for the storehouse.", Line_WaitForInput);
+	OutputLine(NULL, "園崎本家への令状も同じだ！",
+		   NULL, " That goes for the Sonozaki main house, too!", Line_WaitForInput);
+	OutputLine(NULL, "　特に園崎本家への捜査は四課と県警の暴対が絡んでる。",
+		   NULL, " Especially considering that's the jurisdiction of both Section 4 and the prefectural police's crime prevention division.", Line_WaitForInput);
+	OutputLine(NULL, "入念な事前調整がいるんだ！」",
+		   NULL, " We need careful preparations first!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	DisableWindow();
+	DrawBustshot( 3, "oi_si_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//「......調整がいるってんなら、私、直接乗り込んで付けてきてもいいですよ＠　四課長はシゲちゃんでしょ＠　暴対は山海さん＠隣の雀荘で話した方が早そうな面子ですねぇ。￥
+	OutputLine(NULL, "「……調整がいるってんなら、私、直接乗り込んで付けてきてもいいですよ？",
+		   NULL, "\"...If you say you need preparations, then why don't you just let me talk with them directly?", Line_WaitForInput);
+	OutputLine(NULL, "　四課長はシゲちゃんでしょ？",
+		   NULL, " Shige-chan is the head of Section 4, right?", Line_WaitForInput);
+	OutputLine(NULL, "　暴対は山海さん。",
+		   NULL, " For crime prevention, it's Yamaumi-san.", Line_WaitForInput);
+	OutputLine(NULL, "隣の雀荘で話した方が早そうな面子ですねぇ。」",
+		   NULL, " They seem like they'd be quicker to talk if I sat them down at a mahjong table.\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+
+//「か、課長にお客様です...＠　えっと、...ぅわ！＠
+	OutputLine(NULL, "「か、課長にお客様です…！",
+		   NULL, "\"C-Chief, you have a visitor...!", Line_WaitForInput);
+	OutputLine(NULL, "　えっと、…ぅわ！」",
+		   NULL, " Um... yikes!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+
+//　案内してきた署員を弾き飛ばして、紋付袴でヤクザの親分みたいな格好のジジイが入ってきた＠......電話だけじゃ飽き足らなくなったかな￥
+	OutputLine(NULL, "　案内してきた署員を弾き飛ばして、紋付袴でヤクザの親分みたいな格好のジジイが入ってきた。",
+		   NULL, "Pushing the employee who guided him in right out of the way was an old man who looked like a yakuza member, given his crested kimono and hakama.", Line_WaitForInput);
+	OutputLine(NULL, "……電話だけじゃ飽き足らなくなったかな？",
+		   NULL, " ...Did he not get enough of this over the phone?", Line_Normal);
+	ClearMessage();
+
+
+	DisableWindow();
+	DrawScene( "black", 400 );
+
+//「わしは議員の園崎じゃ！＠　責任者を出さんかッ！！＠　早ぅせいッ！！＠
+	OutputLine(NULL, "「わしは議員の園崎じゃ！！",
+		   NULL, "\"I am Congressman Sonozaki!!", Line_WaitForInput);
+	OutputLine(NULL, "　責任者を出さんかッ！！！",
+		   NULL, " I demand to know who's responsible for this!!!", Line_WaitForInput);
+	OutputLine(NULL, "　早ぅせいッ！！」",
+		   NULL, " This instant!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//「ど、どうも...＠　私が課長の高杉でございます！！＠
+	OutputLine(NULL, "「ど、どうも…！",
+		   NULL, "\"H-Hello...!", Line_WaitForInput);
+	OutputLine(NULL, "　私が課長の高杉でございます！！」",
+		   NULL, " I am the division chief, Takasugi!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//「お前の名刺なぞ要らんわ！＠　お前なんぞ、いつだって閑職に飛ばせるんじゃぞ＠　それにお前だけでは足らん＠　大石とか言う男も呼ばんか！＠　神聖な古手神社に捜査令状なんぞを請求しおったバチ当たり者じゃッ！！！￥
+	OutputLine(NULL, "「お前の名刺なぞ要らんわ！！",
+		   NULL, "\"I don't need YOUR name!!", Line_WaitForInput);
+	OutputLine(NULL, "　お前なんぞ、いつだって閑職に飛ばせるんじゃぞ！",
+		   NULL, " I could have you demoted on a whim!", Line_WaitForInput);
+	OutputLine(NULL, "　それにお前だけでは足らん！",
+		   NULL, " You wouldn't even be enough!", Line_WaitForInput);
+	OutputLine(NULL, "　大石とか言う男も呼ばんか！！",
+		   NULL, " Bring out the one called Ooishi or whatever!!", Line_WaitForInput);
+	OutputLine(NULL, "　神聖な古手神社に捜査令状なんぞを請求しおったバチ当たり者じゃッ！！！」",
+		   NULL, " He deserves punishment for requesting a search warrant on the sacred Furude Shrine!!!\"", Line_Normal);
+	ClearMessage();
+
+//「も、申し訳ございません...＠　お、大石はただいま捜査に出ておりまして、なかなか連絡が付き難く...私が代わって承りますので...＠　ど、どうぞ、おかけください！＠
+	OutputLine(NULL, "「も、申し訳ございません…！",
+		   NULL, "\"I-I sincerely apologize...!", Line_WaitForInput);
+	OutputLine(NULL, "　お、大石はただいま捜査に出ておりまして、なかなか連絡が付き難く…私が代わって承りますので…！",
+		   NULL, " O-Ooishi is currently out on investigation, and he's been difficult to contact... I'll take his place and hear you out...!", Line_WaitForInput);
+	OutputLine(NULL, "　ど、どうぞ、おかけください！」",
+		   NULL, " S-So please, have a seat!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　課長が今のうちに消えろと目で合図する＠
+	OutputLine(NULL, "　課長が今のうちに消えろと目で合図する。",
+		   NULL, "The chief's eyes were telling me to get out of here.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　...ここはひとつ、厚意をありがたく頂戴しますかね...＠仮眠室でちょっと横になるかなぁ￥
+	OutputLine(NULL, "　…ここはひとつ、厚意をありがたく頂戴しますかね…。",
+		   NULL, "...Perhaps I'll gratefully accept this favor...", Line_WaitForInput);
+	OutputLine(NULL, "仮眠室でちょっと横になるかなぁ。",
+		   NULL, " Maybe I'll go lay down in the nap room.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawSceneWithMask( "bg_172", "left", 0, 0, 300 );
+
+//「良いかッ？！　古手神社はそもそも皇暦２６００年に継ぐ２５００年の歴史を有する、神聖にして侵すべからずの聖地なのじゃ！＠　八百万の神々とオヤシロさまと先祖の霊を祀り、日が昇りてから沈むまで＠月が昇りてから沈むまで雛見沢を見守る尊い神社なのじゃ＠それを土足で踏みにじろうという馬鹿がいるッッ！！＠
+	OutputLine(NULL, "「良いかッ？！　古手神社はそもそも皇暦２６００年に継ぐ２５００年の歴史を有する、神聖にして侵すべからずの聖地なのじゃ！！",
+		   NULL, "\"Listen here!! The Furude Shrine spent 2600 years under the imperial calendar and 2500 more beyond that! It is sacred! A sanctuary that must never be defiled!!", Line_WaitForInput);
+	OutputLine(NULL, "　八百万の神々とオヤシロさまと先祖の霊を祀り、日が昇りてから沈むまで。",
+		   NULL, " The eight hundred thousand gods, Oyashiro-sama, and the spirits of our ancestors are enshrined there.", Line_WaitForInput);
+	OutputLine(NULL, "月が昇りてから沈むまで雛見沢を見守る尊い神社なのじゃ。",
+		   NULL, " The holy shrine protects Hinamizawa from when the sun comes up to when it sets, and from when the moon rises to when it falls.", Line_WaitForInput);
+	OutputLine(NULL, "それを土足で踏みにじろうという馬鹿がいるッッ！！！",
+		   NULL, " Who is the idiot who wanted to set foot in there?!?!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　そもそも信仰の自由は憲法で定められた国民の最も尊い権利であろうが！！＠　それを自らの捜査の怠慢を口実に汚そうという魂胆ッ！！＠　こんなものは断じて許せんぞッ！！＠　聞いておるのか大虚けがッ！！＠　わしを怒らせてただで済むと思わん方がいいぞぉおおぉッ！！！￥
+	OutputLine(NULL, "　そもそも信仰の自由は憲法で定められた国民の最も尊い権利であろうが！！！",
+		   NULL, "Besides, the right to religion is the most revered right of the people of this country in the constitution!!!", Line_WaitForInput);
+	OutputLine(NULL, "　それを自らの捜査の怠慢を口実に汚そうという魂胆ッ！！！",
+		   NULL, " You dare to be so bold as to sully that using your own investigation's negligence as pretext!!?", Line_WaitForInput);
+	OutputLine(NULL, "　こんなものは断じて許せんぞッ！！！",
+		   NULL, " I cannot—I will not allow it!!!", Line_WaitForInput);
+	OutputLine(NULL, "　聞いておるのか大虚けがッ！！！",
+		   NULL, " Are you listening, you lying scum?!", Line_WaitForInput);
+	OutputLine(NULL, "　わしを怒らせてただで済むと思わん方がいいぞぉおおぉッ！！！」",
+		   NULL, " I'm angry now, so you're not getting off the hook that easily!!!\"", Line_Normal);
+	ClearMessage();
+
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	DrawScene( "black", 1000 );
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+//gosub *tip_e
+//return
+
+
+}

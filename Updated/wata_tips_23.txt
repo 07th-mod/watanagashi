@@ -1,0 +1,108 @@
+﻿void main()
+{
+
+//１１■スクラップ帳よりⅩⅠ
+//*Sub_Tips_043
+//gosub *tip_s
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+	DisableWindow();
+	DrawScene( "black", 1000 );
+	PlayBGM( 1, "msys11", 128, 0 );
+	PlaySE( 3, "wa_021", 128, 64 );
+	DrawScene( "bg_180", 1000 );
+
+//locate 4,6
+
+	SetDrawingPointOfMessage( 0, 6 );
+	SetStyleOfMessageSwinging( 1 );
+
+//＜双子の忌避について￥
+	OutputLine(NULL, "＜双子の忌避について＞",
+		   NULL, "<The Problem With Twins>", Line_Normal);
+	ClearMessage();
+
+	SetStyleOfMessageSwinging( 0 );
+	PlaySE( 3, "wa_021", 128, 64 );
+
+//　雛見沢に限ったことではないのだろうが、とりわけ、鬼ヶ淵村の御三家は当主跡継ぎに双子が生まれることを嫌った＠
+	OutputLine(NULL, "　雛見沢に限ったことではないのだろうが、とりわけ、鬼ヶ淵村の御三家は当主跡継ぎに双子が生まれることを嫌った。",
+		   NULL, "This is not limited to just Hinamizawa, but in Onigafuchi Village especially, the Three Families detested giving birth to twins as successors.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+
+//　御三家の微妙なバランスの上に成り立った長期独裁体制が、お家騒動などの内紛で瓦解することを恐れたのだろう￥
+	OutputLine(NULL, "　御三家の微妙なバランスの上に成り立った長期独裁体制が、お家騒動などの内紛で瓦解することを恐れたのだろう。",
+		   NULL, "The long-term dictatorship built on the precarious balance of the Three Families must have feared collapsing under the weight of internal strife from things like family quarrels.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 128, 64 );
+
+//　文献には、双子が生まれたなら直ちに間引くべしとまで記されている＠
+	OutputLine(NULL, "　文献には、双子が生まれたなら直ちに間引くべしとまで記されている。",
+		   NULL, "According to the literature, if twins were born, then they had to be culled.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　それを思うと、園崎家の当主跡継ぎである園崎魅音と詩音の双子がこの世に生を受けていること自体、興味深いと言わざるを得ない。（現当主お魎の情けだろうか？￥
+	OutputLine(NULL, "　それを思うと、園崎家の当主跡継ぎである園崎魅音と詩音の双子がこの世に生を受けていること自体、興味深いと言わざるを得ない。（現当主お魎の情けだろうか？）",
+		   NULL, "With that, the very fact that both the Sonozaki family successor, Mion Sonozaki, and her twin, Shion, are alive is in itself deeply interesting. (Perhaps the current leader, Oryou, is sympathetic?)", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 128, 64 );
+
+//　もっとも、この双子は公平には扱われず、跡継ぎの魅音は別格の扱いを受けているそうだ＠
+	OutputLine(NULL, "　もっとも、この双子は公平には扱われず、跡継ぎの魅音は別格の扱いを受けているそうだ。",
+		   NULL, "Of course, the twins were not cared for equally, and as the heir, Mion received special treatment.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//（聞くところでは、魅音と詩音は酷似した外見を持ちながらも、才能のほとんどは魅音が持つと聞く＠...私の知る両者のイメージではそんな偏りは感じられない。＠
+	OutputLine(NULL, "（聞くところでは、魅音と詩音は酷似した外見を持ちながらも、才能のほとんどは魅音が持つと聞く。",
+		   NULL, "(From what I've heard, despite the two of them looking exactly the same on the outside, the talent lies solely with Mion.", Line_WaitForInput);
+	OutputLine(NULL, "…私の知る両者のイメージではそんな偏りは感じられない。）",
+		   NULL, " ...My own observations of the two of them don't leave me with that impression).", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+
+//　伝承では、園崎家の当主は「鬼を継ぐ」と称して、背中に立派な鬼の刺青を彫るという＠しきたりに従い、魅音にはこの刺青が入れられている可能性が極めて高い￥
+	OutputLine(NULL, "　伝承では、園崎家の当主は「鬼を継ぐ」と称して、背中に立派な鬼の刺青を彫るという。",
+		   NULL, "Tradition dicates that the leader of the Sonozaki family is said to 'inherit a demon,' and they tattoo a magnificent one onto his or her back.", Line_WaitForInput);
+	OutputLine(NULL, "しきたりに従い、魅音にはこの刺青が入れられている可能性が極めて高い。",
+		   NULL, " In accordance with the tradition, there is an extremely high possibility that Mion has such a tattoo on her back.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 128, 64 );
+
+//　伝え聞く話では、現当主お魎の背中にも、それはそれは立派な鬼の刺青が入れられているそうである＠
+	OutputLine(NULL, "　伝え聞く話では、現当主お魎の背中にも、それはそれは立派な鬼の刺青が入れられているそうである。",
+		   NULL, "From what I've heard, there is apparently a magnificent demon tattooed on Oryou's back as well.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　では...跡継ぎの魅音には一体、どんな刺青が彫られているのだろう＠
+	OutputLine(NULL, "　では…跡継ぎの魅音には一体、どんな刺青が彫られているのだろう。",
+		   NULL, "Then... I wonder what sort of tattoo belongs to the heir, Mion.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+
+//　......魅音の背中に興味が湧く￥
+	OutputLine(NULL, "　……魅音の背中に興味が湧く。",
+		   NULL, "...I really want to see her back.", Line_Normal);
+	ClearMessage();
+
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	DisableWindow();
+	DrawScene( "black", 1000 );
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+//gosub *tip_e
+//return
+
+
+}

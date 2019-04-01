@@ -1,0 +1,91 @@
+﻿void main()
+{
+
+
+//７■スクラップ帳よりⅡ
+//*Sub_Tips_028
+//gosub *tip_s
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+	DisableWindow();
+	DrawScene( "black", 1000 );
+	PlaySE( 3, "wa_021", 128, 64 );
+	DrawScene( "bg_180", 400 );
+	PlayBGM( 1, "msys13", 128, 0 );
+
+//locate 4,6
+
+	SetDrawingPointOfMessage( 0, 6 );
+	SetStyleOfMessageSwinging( 1 );
+
+//＜生贄の儀式について￥
+	OutputLine(NULL, "＜生贄の儀式について＞",
+		   NULL, "<The Human Sacrifice Ritual>", Line_Normal);
+	ClearMessage();
+
+	SetStyleOfMessageSwinging( 0 );
+	PlaySE( 3, "wa_021", 128, 64 );
+
+//　生贄の儀式は、最もシンプルな溺死型で、神聖な沼である鬼ヶ淵沼に犠牲者を沈めることで成立した￥
+	OutputLine(NULL, "　生贄の儀式は、最もシンプルな溺死型で、神聖な沼である鬼ヶ淵沼に犠牲者を沈めることで成立した。",
+		   NULL, "The sacrificial ritual was a simple drowning, involving plunging sacrifices into Onigafuchi Swamp, which was considered hallowed.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 128, 64 );
+
+//　鬼ヶ淵村における儀式で特徴的なのは、犠牲者を三日三晩もの長い時間をかけてゆっくりと沈める点にある＠
+	OutputLine(NULL, "　鬼ヶ淵村における儀式で特徴的なのは、犠牲者を三日三晩もの長い時間をかけてゆっくりと沈める点にある。",
+		   NULL, "Of the rituals of Onigafuchi Village, this one was unique in that the sacrifice would sink slowly over the long course of three days and three nights.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//　犠牲者を沈めて「殺す」ことよりも＠「沈める（鎮める）」行為に重きが置かれていたと考えられる＠
+	OutputLine(NULL, "　犠牲者を沈めて「殺す」ことよりも、",
+		   NULL, "I believe that it wasn't so much the killing of this sacrifice that was important,", Line_WaitForInput);
+	OutputLine(NULL, "「沈める（鎮める）」行為に重きが置かれていたと考えられる。",
+		   NULL, " but rather the symbolism of them sinking as the 'submerging' of Oyashiro-sama's anger.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+
+//　その為、放って置けばあっという間に沈んでしまう犠牲者をいかに緩慢に沈めるかに、様々な工夫が凝らされたはずである＠
+	OutputLine(NULL, "　その為、放って置けばあっという間に沈んでしまう犠牲者をいかに緩慢に沈めるかに、様々な工夫が凝らされたはずである。",
+		   NULL, "For that purpose, they must have had a passion for learning various methods for keeping the sacrifice from sinking too quickly—to force them to sink more slowly.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　残念だが、その方法は知る限りの文献には載せられていない￥
+	OutputLine(NULL, "　残念だが、その方法は知る限りの文献には載せられていない。",
+		   NULL, "Unfortunately, as far as I can tell from the records, those methods were not recorded.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 128, 64 );
+
+//　私の想像では、丸太等で巨大なイカダを組み＠そこに処刑台を設え、縄で犠牲者を吊り上げ、時の刻みに合わせて少しずつ沼へ沈めていったのではないかと思う＠
+	OutputLine(NULL, "　私の想像では、丸太等で巨大なイカダを組み、",
+		   NULL, "My thoughts are that they may have used logs or some similar material to create a raft,", Line_WaitForInput);
+	OutputLine(NULL, "そこに処刑台を設え、縄で犠牲者を吊り上げ、時の刻みに合わせて少しずつ沼へ沈めていったのではないかと思う。",
+		   NULL, " then set up a scaffold on there, hung the sacrifice up with ropes, and let them sink little by little over time into the swamp.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　だがそうだとするのならば、その儀式に使った「祭具」は神聖なものとして崇められ、どこかに祀られていてもおかしくない￥
+	OutputLine(NULL, "　だがそうだとするのならば、その儀式に使った「祭具」は神聖なものとして崇められ、どこかに祀られていてもおかしくない。",
+		   NULL, "However, if that were the case, it would not be strange if the 'ritual implements' used for such a ceremony were honored as holy and enshrined somewhere.", Line_Normal);
+	ClearMessage();
+
+
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	DisableWindow();
+	DrawScene( "black", 1000 );
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+//gosub *tip_e
+//return
+
+
+}

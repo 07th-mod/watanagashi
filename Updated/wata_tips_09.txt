@@ -1,0 +1,132 @@
+﻿void main()
+{
+
+//７■スクラップ帳よりⅢ
+//*Sub_Tips_029
+//gosub *tip_s
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+	DisableWindow();
+	DrawScene( "black", 1000 );
+	PlaySE( 3, "wa_021", 128, 64 );
+	DrawScene( "bg_181", 400 );
+	PlayBGM( 1, "msys11", 128, 0 );
+
+//locate 4,6
+	SetDrawingPointOfMessage( 0, 6 );
+
+
+//＜儀式の祭具について￥
+	OutputLine(NULL, "＜儀式の祭具について＞",
+		   NULL, "<Implements Used For the Ritual>", Line_Normal);
+	ClearMessage();
+
+
+	PlaySE( 3, "wa_021", 128, 64 );
+
+//　古代の宗教儀式に用いられた儀式道具は「祭具」と呼ばれ、その一部が今日も古手神社や御三家の蔵に祀られている＠
+	OutputLine(NULL, "　古代の宗教儀式に用いられた儀式道具は「祭具」と呼ばれ、その一部が今日も古手神社や御三家の蔵に祀られている。",
+		   NULL, "Ritual tools utilized for ancient religious ceremonies are commonly referred to as 'implements' or 'ritual implements,' and even now, some of them are enshrined on the property of Furude Shrine and the Three Families.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+
+//　だが、それらの確認できる「祭具」はいずれも装飾的なものばかりで、鬼ヶ淵村の暗部を司る儀式に使用されたと思われるものは何一つない￥
+	OutputLine(NULL, "　だが、それらの確認できる「祭具」はいずれも装飾的なものばかりで、鬼ヶ淵村の暗部を司る儀式に使用されたと思われるものは何一つない。",
+		   NULL, "However, the identifiable tools are all decorative, and none appear to have been used in rituals governing the dark side of Onigafuchi Village.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 128, 64 );
+
+//　幕末から明治にかけ、数々の伝統儀式が喪失した際にそれらも紛失＠もしくは闇に葬られてしまったのだろうか＠
+	OutputLine(NULL, "　幕末から明治にかけ、数々の伝統儀式が喪失した際にそれらも紛失、",
+		   NULL, "As the Edo era came to a close and many traditional rituals were lost, were they lost as well,", Line_WaitForInput);
+	OutputLine(NULL, "もしくは闇に葬られてしまったのだろうか？",
+		   NULL, " or perhaps buried in the darkness?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+
+//　私はそうは思わない＠
+	OutputLine(NULL, "　私はそうは思わない。",
+		   NULL, "I don't believe so.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　鬼隠しの夜の宴に使った「祭具」も、生贄の儀式に使った「祭具」も、人知れずそれらは祀られ、現存しているに違いない＠
+	OutputLine(NULL, "　鬼隠しの夜の宴に使った「祭具」も、生贄の儀式に使った「祭具」も、人知れずそれらは祀られ、現存しているに違いない。",
+		   NULL, "Both the implements used on the night of the feast of Onikakushi and those used during the sacrificial ceremony must still exist, enshrined away from the eyes of the masses.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　それは紛れもなくこの雛見沢に、今日この瞬間にも実在しているのだ￥
+	OutputLine(NULL, "　それは紛れもなくこの雛見沢に、今日この瞬間にも実在しているのだ。",
+		   NULL, "Without a doubt, they exist here, today, at this very moment, in Hinamizawa.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 128, 64 );
+
+//　それがどこに祀られているか、九分見当はついている＠
+	OutputLine(NULL, "　それがどこに祀られているか、九分見当はついている。",
+		   NULL, "Also, I'm nearly certain where they've been enshrined.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　これまでは堅牢だった施錠が、今年からどういうわけか低廉な安っぽい南京錠に変わったのだ＠あの程度の錠前なら、彼なら何とかできるかもしれない＠
+	OutputLine(NULL, "　これまでは堅牢だった施錠が、今年からどういうわけか低廉な安っぽい南京錠に変わったのだ。",
+		   NULL, "What was once locked steadfastly has, for some reason, changed this year to a cheap-looking padlock.", Line_WaitForInput);
+	OutputLine(NULL, "あの程度の錠前なら、彼なら何とかできるかもしれない。",
+		   NULL, " He may be able to do something about such a lock.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+
+//　だが、集会所が遠くないということもあり、常に人の気配の絶えない場所でもある￥
+	OutputLine(NULL, "　だが、集会所が遠くないということもあり、常に人の気配の絶えない場所でもある。",
+		   NULL, "However, it is not far from the assembly hall, nor is it ever far from the presence of people.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 128, 64 );
+
+//　だが私は諦めない。/
+	OutputLine(NULL, "　だが私は諦めない。",
+		   NULL, "However, I will not give up.", Line_ContinueAfterTyping);
+
+	PlaySE( 3, "wa_024", 128, 64 );
+
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//　…雛見沢中の全ての村人の死角となる夜が、もうすぐやって来る＠
+	OutputLine(NULL, "　…雛見沢中の全ての村人の死角となる夜が、もうすぐやって来る。",
+		   NULL, "...The night when it becomes a blind spot to every villager in Hinamizawa is coming soon.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+
+//　もうすぐ、!w800綿流し￥
+	OutputLine(NULL, "　もうすぐ、",
+		   NULL, "Soon, it will be", Line_ContinueAfterTyping);
+
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "綿流し。",
+		   NULL, " Watanagashi.", Line_Normal);
+	ClearMessage();
+
+
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	DisableWindow();
+	DrawScene( "black", 1000 );
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+//gosub *tip_e
+//return
+
+
+}

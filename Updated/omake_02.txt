@@ -1,0 +1,1878 @@
+﻿void main()
+{
+
+//■お疲れさま会２
+//*UTage_Watanagasi
+//rmode on
+//gosub *Omake_s
+//csp -1
+
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, FALSE );
+	FadeOutBGM( 3, 1000, TRUE );
+	SetFontOfMessage( 2, 24, 1) ;
+	SetValidityOfSaving( TRUE );
+	SetValidityOfLoading( TRUE );
+	SetValidityOfInput( TRUE );
+	SetValidityOfSkipping( TRUE );
+	ActivateScreenEffectForcedly( TRUE );
+
+
+	DisableWindow();
+	DrawScene( "black", 1000 );
+////setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,639,479
+//!sd
+//gosub *data_tati
+
+	DisableWindow();
+	DrawScene( "bg_161", 1000 );
+	PlayBGM( 1, "msys01", 128, 0 );
+	DrawBustshotWithFiltering( 3, "re_se_wa_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「ひぐらしのなく頃に～綿流し編～を、最後までお楽しみいただき、誠にありがとうございました＠　この度のシナリオはいかがだったでしょうか＠　ちょっぴりでもお楽しみいただければ幸いです。￥
+	OutputLine(NULL, "「ひぐらしのなく頃に〜綿流し編〜を、最後までお楽しみいただき、誠にありがとうございました！",
+		   NULL, "\"Thank you very much for enjoying Higurashi When They Cry: Watanagashi!", Line_WaitForInput);
+	OutputLine(NULL, "　この度のシナリオはいかがだったでしょうか？",
+		   NULL, " How did you like the story this time?", Line_WaitForInput);
+	OutputLine(NULL, "　ちょっぴりでもお楽しみいただければ幸いです。」",
+		   NULL, " If you enjoyed it even a little, I'm happy.\"", Line_Normal);
+	ClearMessage();
+
+//＜レナ
+	DisableWindow();
+	DrawSceneWithMask( "bg_166", "right", 0, 0, 300 );
+	DrawBustshotWithFiltering( 1, "sa_se_bi_b1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「ちょっぴりも何もー＠　また＠　大々バッドエンドですわー？＠　ぷんぷんでございますのことよー？！＠
+	OutputLine(NULL, "「ちょっぴりも何もー！",
+		   NULL, "\"A little, nothing!", Line_WaitForInput);
+	OutputLine(NULL, "　また！",
+		   NULL, " Not again!", Line_WaitForInput);
+	OutputLine(NULL, "　大々バッドエンドですわー？！",
+		   NULL, " It was a huge bad ending again, was it not?!", Line_WaitForInput);
+	OutputLine(NULL, "　ぷんぷんでございますのことよー？！」",
+		   NULL, " It is enough to make me simply furious!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 3, "ri_se_ni_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「......ぷんぷんなのです。￥
+	OutputLine(NULL, "「……ぷんぷんなのです。」",
+		   NULL, "\"......I'm furious.\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawSceneWithMask( "bg_165", "left", 0, 0, 300 );
+	DrawBustshotWithFiltering( 3, "me_se_wi_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「いやぁ～、みんなお疲れ～！＠　まぁその、何＠　終わり方こそアレだったけど、今回のシナリオは事実上「魅音編」みたいなモンだったんじゃない＠　私、大活躍で大満足！　にゃっはっはっは！！￥
+	OutputLine(NULL, "「いやぁ〜、みんなお疲れ〜！！",
+		   NULL, "\"Well, err, good work, everyone~!!", Line_WaitForInput);
+	OutputLine(NULL, "　まぁその、何？",
+		   NULL, " Well, hmm?", Line_WaitForInput);
+	OutputLine(NULL, "　終わり方こそアレだったけど、今回のシナリオは事実上「魅音編」みたいなモンだったんじゃない？",
+		   NULL, " That's how it ended, but don't you think this story was kind of like a 'Mion Chapter'?", Line_WaitForInput);
+	OutputLine(NULL, "　私、大活躍で大満足！　にゃっはっはっは！！」",
+		   NULL, " I'm extremely satisfied with how big a role I played! Nya-ha-ha-ha!!\"", Line_Normal);
+	ClearMessage();
+
+//＜魅音
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "sa_se_bi_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「あ、あ、あんなの大活躍とは言いませんですわー！＠　私も梨花も殺されちゃったですのよーッ？！＠
+	OutputLine(NULL, "「あ、あ、あんなの大活躍とは言いませんですわー！！",
+		   NULL, "\"Y-Y-You cannot call such a thing a success!!", Line_WaitForInput);
+	OutputLine(NULL, "　私も梨花も殺されちゃったですのよーッ？！」",
+		   NULL, " Rika and I got killed too, didn't we?!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+	DisableWindow();
+	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "ri_se_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「......しかも沙都子はただのとばっちりなのですよ。＠
+	OutputLine(NULL, "「……しかも沙都子はただのとばっちりなのですよ。」",
+		   NULL, "\"......None of this concerned Satoko at all, either.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+	DisableWindow();
+	DrawBustshot( 1, "sa_se_na_b1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+
+//「わぁああぁあぁああああぁああぁあんッ！！＠　あんな死に方、嫌なのですの～！！＠
+	OutputLine(NULL, "「わぁああぁあぁああああぁああぁあんッ！！！",
+		   NULL, "\"Waaaaaaaaaaaaaaaaahhhhhhh!!!", Line_WaitForInput);
+	OutputLine(NULL, "　あんな死に方、嫌なのですの〜！！」",
+		   NULL, " I didn't want to die like that~!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+	DisableWindow();
+	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "re_se_bi_b1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「ほーら、泣かないで＠　魅ぃちゃんメインのお話だったように、きっと沙都子ちゃんメインのお話もあるよ＠今から楽しみだね！￥
+	OutputLine(NULL, "「ほーら、泣かないで！",
+		   NULL, "\"Now, now, don't cry!", Line_WaitForInput);
+	OutputLine(NULL, "　魅ぃちゃんメインのお話だったように、きっと沙都子ちゃんメインのお話もあるよ。",
+		   NULL, " There was a story centering around Mii-chan, so there will probably be one that centers around Satoko-chan, too.", Line_WaitForInput);
+	OutputLine(NULL, "今から楽しみだね！」",
+		   NULL, " Look forward to it!\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawBustshot( 2, "me_se_aw_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+
+//「きっと、沙都子がおかしな人たちによってたかって襲われて、虐め殺されちゃう話に違いないね～。＠
+	OutputLine(NULL, "「きっと、沙都子がおかしな人たちによってたかって襲われて、虐め殺されちゃう話に違いないね〜。」",
+		   NULL, "\"Satoko would definitely get attacked by a crowd of weirdo bullies and abused to death~\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+	DisableWindow();
+	DrawBustshot( 1, "sa_se_na_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+
+//「わぁああぁあぁあぁあぁあぁあん！＠　そんなの嫌ぁあぁあぁあ～！！＠　わあぁあぁああぁあぁぁあん！！」￥
+	OutputLine(NULL, "「わぁああぁあぁあぁあぁあぁあん！！",
+		   NULL, "\"Waaaaaahhhhh!!", Line_WaitForInput);
+	OutputLine(NULL, "　そんなの嫌ぁあぁあぁあ〜！！！",
+		   NULL, " I don't want thaaaaat~!!!", Line_WaitForInput);
+	OutputLine(NULL, "　わあぁあぁああぁあぁぁあん！！」」",
+		   NULL, " Waaaaaaaaahhhhhhhhhhh!!\"", Line_Normal);
+	ClearMessage();
+
+
+//＞＞＞ブォン、...ドグシャッ！！！の効果音
+	DisableWindow();
+////setwindow 31,16,22,16,26,26,0,2,20,1,1,#ffffff,0,0,639,479
+	PlaySE( 3, "wa_015", 128, 64 );
+	DrawScene( "white", 200 );
+	PlaySE( 3, "wa_005", 128, 64 );
+	DrawBustshot( 5, "Furiker_b", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 50, TRUE );
+	ShakeScreen( 1, 50, 20, 3, 0, );
+////setwindow 31,16,22,16,26,26,0,2,20,1,1,#999999,0,0,639,479
+
+
+	DisableWindow();
+	DrawBustshot( 3, "re_se_wa_b1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	DrawSceneWithMask( "bg_161", "up", 0, 0, 300 );
+//!sd
+
+//「魅ぃ～ちゃん＠悪ふざけが過ぎると私も怒るよ～？＠
+	OutputLine(NULL, "「魅ぃ〜ちゃん。",
+		   NULL, "\"Mii~chan.", Line_WaitForInput);
+	OutputLine(NULL, "悪ふざけが過ぎると私も怒るよ〜？」",
+		   NULL, " If you joke around too much, you'll make me angry, too~\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜レナ笑顔☆
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "ri_se_wa_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「......魅ぃがぺったんこなのです＠...なでなでしたくても頭がわからないのです。＠
+	OutputLine(NULL, "「……魅ぃがぺったんこなのです。",
+		   NULL, "\"......Mii has a flat chest.", Line_WaitForInput);
+	OutputLine(NULL, "…なでなでしたくても頭がわからないのです。」",
+		   NULL, " ...Your mind wouldn't understand even if it wanted to be petted.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	DisableWindow();
+	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "sa_se_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「あ、膨らんできましたわ＠/
+	OutputLine(NULL, "「あ、膨らんできましたわ。",
+		   NULL, "\"Oh, they expanded.", Line_WaitForInput);
+
+	DisableWindow();
+	DrawBustshot( 3, "sa_se_ak_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//...無節操な体ですのね...。￥
+	OutputLine(NULL, "…無節操な体ですのね…。」",
+		   NULL, " ...Your body is so unchaste...\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	PlaySE( 3, "wa_013", 128, 64 );
+	DrawScene( "white", 10 );
+	DrawScene( "black", 50 );
+	DrawBustshot( 3, "tm_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	DrawScene( "bg_165", 400 );
+
+
+	PlayBGM( 1, "msys02", 128, 0 );
+
+//「やぁ、みんな＠　お疲れさん！＠
+	OutputLine(NULL, "「やぁ、みんな！",
+		   NULL, "\"Hey, everyone!", Line_WaitForInput);
+	OutputLine(NULL, "　お疲れさん！」",
+		   NULL, " Great work!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 1,"oi_si_de_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「また遅れて申し訳ありませんね。んっふっふっふ！￥
+	OutputLine(NULL, "「また遅れて申し訳ありませんね。んっふっふっふ！」",
+		   NULL, "\"Sorry we're late again. Nfu-fu-fu!\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawBustshot( 3, "re_se_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	DrawSceneWithMask( "bg_166", "left", 0, 0, 300 );
+
+
+//「富竹さんに大石さん＠　どうもお疲れさまでした＠あれ＠　鷹野さんと詩音ちゃんはまだですか？＠
+	OutputLine(NULL, "「富竹さんに大石さん！",
+		   NULL, "\"Tomitake-san, Ooishi-san!", Line_WaitForInput);
+	OutputLine(NULL, "　どうもお疲れさまでした。",
+		   NULL, " Yes, you did a great job as well.", Line_WaitForInput);
+	OutputLine(NULL, "あれ？",
+		   NULL, " Hm?", Line_WaitForInput);
+	OutputLine(NULL, "　鷹野さんと詩音ちゃんはまだですか？」",
+		   NULL, " Where are Takano-san and Shion-chan?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜レナ
+	DisableWindow();
+	DrawBustshot( 1, "si_si_de_b1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 400, TRUE );
+
+//「もちろん来てますよ＠今日はお招きいただき、ありがとうございますね＠...ここ、座ってもいい？＠
+	OutputLine(NULL, "「もちろん来てますよ。",
+		   NULL, "\"They're coming, of course.", Line_WaitForInput);
+	OutputLine(NULL, "今日はお招きいただき、ありがとうございますね。",
+		   NULL, " Thank you for inviting us today.", Line_WaitForInput);
+	OutputLine(NULL, "…ここ、座ってもいい？」",
+		   NULL, " ...May I sit here?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜詩音
+	DisableWindow();
+	DrawBustshot( 2, "sa_se_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+
+//「えぇ、どうぞですわよー！￥
+	OutputLine(NULL, "「えぇ、どうぞですわよー！」",
+		   NULL, "\"Yes, go right ahead!\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawScene( "black", 1000 );
+	DrawScene( "bg_165", 1000 );
+	DrawBustshotWithFiltering( 3, "ta_si_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「これだけ一同に集まると圧巻ね＠どうかお手柔らかに。＠
+	OutputLine(NULL, "「これだけ一同に集まると圧巻ね。",
+		   NULL, "\"With all of us here, this is sure to be the best part.", Line_WaitForInput);
+	OutputLine(NULL, "どうかお手柔らかに。」",
+		   NULL, " Please, go easy on me.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+//＜鷹野
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "re_se_de_b1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「じゃ、始めても大丈夫かな＠　これで全員かな？＠
+	OutputLine(NULL, "「じゃ、始めても大丈夫かな？",
+		   NULL, "\"Then should we get started?", Line_WaitForInput);
+	OutputLine(NULL, "　これで全員かな？」",
+		   NULL, " Is this everyone?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜レナ
+	DisableWindow();
+	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "ri_se_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「......圭一を除けば全員なのです。＠
+	OutputLine(NULL, "「……圭一を除けば全員なのです。」",
+		   NULL, "\"...Everyone but Keiichi.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜梨花
+	DisableWindow();
+	FadeBustshotWithFiltering( 1, "right", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1,"oi_si_de_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「ってことは...前原くんは相変わらず立ち絵がなくて、早々に次回シナリオの台本読みなんですか...？￥
+	OutputLine(NULL, "「ってことは…前原くんは相変わらず立ち絵がなくて、早々に次回シナリオの台本読みなんですか…？」",
+		   NULL, "\"Which means... Maebara-kun still doesn't have a portrait. So, are we going to read the scripts for the next story immediately...?\"", Line_Normal);
+	ClearMessage();
+
+//＜大石
+	DisableWindow();
+	DrawScene( "bg_163", 400 );
+	DrawBustshotWithFiltering( 3, "ta_si_aw_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「気の毒な話ねぇ＠私たちだけで盛り上がっちゃ悪い気がするわ。＠
+	OutputLine(NULL, "「気の毒な話ねぇ。",
+		   NULL, "\"How unfortunate.", Line_WaitForInput);
+	OutputLine(NULL, "私たちだけで盛り上がっちゃ悪い気がするわ。」",
+		   NULL, " It doesn't feel right to leave him out.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜鷹野・悪笑
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "si_si_wi_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「三四さん、そんなの気にしなくていいんですよ＠こういう時は思いっきり盛り上がった方がかえって気を遣わせないもんなんです。＠
+	OutputLine(NULL, "「三四さん、そんなの気にしなくていいんですよ。",
+		   NULL, "\"Miyo-san, you don't have to worry about that.", Line_WaitForInput);
+	OutputLine(NULL, "こういう時は思いっきり盛り上がった方がかえって気を遣わせないもんなんです。」",
+		   NULL, " At times like these, going all-out is actually a way of showing consideration.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜詩音
+	DisableWindow();
+	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "sa_se_wa_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「それもそうですわね～！＠　せっかくこれだけ集まったのに、お通夜じゃつまらないですわ～！！＠
+	OutputLine(NULL, "「それもそうですわね〜！！",
+		   NULL, "\"That's true, isn't it~?!", Line_WaitForInput);
+	OutputLine(NULL, "　せっかくこれだけ集まったのに、お通夜じゃつまらないですわ〜！！」",
+		   NULL, " We're all here for once. Holding a wake would be boring~!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜沙都子
+	DisableWindow();
+	FadeBustshotWithFiltering( 1, "right", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "tm_si_ko_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「たははは...＠じゃあ...圭一くんには悪いけど、...僕たちでやらせてもらおうか！￥
+	OutputLine(NULL, "「たははは…。",
+		   NULL, "\"Tahahaha...", Line_WaitForInput);
+	OutputLine(NULL, "じゃあ…圭一くんには悪いけど、…僕たちでやらせてもらおうか！」",
+		   NULL, " Then... sorry, Keiichi-kun... but we'll take things from here!\"", Line_Normal);
+	ClearMessage();
+
+//＜富竹
+	DisableWindow();
+	DrawSceneWithMask( "bg_165", "left", 0, 0, 300 );
+	DrawBustshotWithFiltering( 3, "me_se_wa_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「と、なれば決まりだね！＠　じゃあみんな、コップコップ＠　炭酸が嫌いな人いる～？＠
+	OutputLine(NULL, "「と、なれば決まりだね！！",
+		   NULL, "\"It's decided!!", Line_WaitForInput);
+	OutputLine(NULL, "　じゃあみんな、コップコップ！",
+		   NULL, " Okay, everyone, get the cups!", Line_WaitForInput);
+	OutputLine(NULL, "　炭酸が嫌いな人いる〜？」",
+		   NULL, " Does anyone not like carbonated drinks~?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜魅音
+	DisableWindow();
+	DrawBustshotWithFiltering( 1,"oi_si_wa_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「アダルトな方々にはアルコールもありますよ。んっふっふっふ！＠
+	OutputLine(NULL, "「アダルトな方々にはアルコールもありますよ。んっふっふっふ！」",
+		   NULL, "\"There's alcohol for the adults, too. Nfu-fu-fu!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜大石
+	DisableWindow();
+	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "tm_si_wa_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「梨花ちゃんは何を飲むかい＠　コーラ＠　ジュース？＠
+	OutputLine(NULL, "「梨花ちゃんは何を飲むかい？",
+		   NULL, "\"Rika-chan, what will you have?", Line_WaitForInput);
+	OutputLine(NULL, "　コーラ？",
+		   NULL, " Cola?", Line_WaitForInput);
+	OutputLine(NULL, "　ジュース？」",
+		   NULL, " Juice?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜富竹
+	DisableWindow();
+	FadeBustshotWithFiltering( 1, "left", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "ri_se_ni_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「......みぃー＠富竹のと同じ泡麦茶がいいのです。＠
+	OutputLine(NULL, "「……みぃー。",
+		   NULL, "\"......Mii.", Line_WaitForInput);
+	OutputLine(NULL, "富竹のと同じ泡麦茶がいいのです。」",
+		   NULL, " I want what Tomitake's having.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+	DisableWindow();
+	DrawBustshot( 2, "re_se_ik_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+
+//「こぉら＠　梨花ちゃんはお酒は、だぁめ！￥
+	OutputLine(NULL, "「こぉら！",
+		   NULL, "\"Hey!", Line_WaitForInput);
+	OutputLine(NULL, "　梨花ちゃんはお酒は、だぁめ！」",
+		   NULL, " Rika-chan, you're not allowed to drink!\"", Line_Normal);
+	ClearMessage();
+
+//＜レナ
+	DisableWindow();
+	DrawScene( "bg_161", 400 );
+	DrawBustshotWithFiltering( 3, "sa_se_wa_b1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「みんなコップ持ちましたですの～＠　早く乾杯しないとジュースがぬるくなってしまいますわ～！＠
+	OutputLine(NULL, "「みんなコップ持ちましたですの〜？",
+		   NULL, "\"Has everyone got their cups~?", Line_WaitForInput);
+	OutputLine(NULL, "　早く乾杯しないとジュースがぬるくなってしまいますわ〜！」",
+		   NULL, " If we don't make a toast soon, my juice will get warm~!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜沙都子
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "si_si_de_b1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「お姉、音頭は誰が取るの？＠
+	OutputLine(NULL, "「お姉、音頭は誰が取るの？」",
+		   NULL, "\"Who will lead, Mion?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜詩音
+	DisableWindow();
+	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "me_se_wi_b2", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「レナでいいでしょ＠じゃあレナ、よろしく！￥
+	OutputLine(NULL, "「レナでいいでしょ。",
+		   NULL, "\"Rena should do it.", Line_WaitForInput);
+	OutputLine(NULL, "じゃあレナ、よろしく！」",
+		   NULL, " Okay, Rena, go ahead!\"", Line_Normal);
+	ClearMessage();
+
+//＜魅音
+	DisableWindow();
+	FadeAllBustshots( 400, TRUE );
+	DrawBustshot( 2, "re_se_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+
+//「では...こほん＠　みんな、『綿流し編』終了、お疲れさまでした～！！＠
+	OutputLine(NULL, "「では…こほん！",
+		   NULL, "\"Then... ahem!", Line_WaitForInput);
+	OutputLine(NULL, "　みんな、『綿流し編』終了、お疲れさまでした〜！！」",
+		   NULL, " Everyone, excellent work—the Watanagashi chapter is now over~!!\"", Line_WaitForInput);
+
+//＜レナ
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+
+	PlayBGM( 1, "msys01", 128, 0 );
+
+//「「「お疲れさまでした～～～ッ！！！！」」＠
+	OutputLine(NULL, "「「「お疲れさまでした〜〜〜ッ！！！！」」」",
+		   NULL, "\"Thank you~~~!!!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//　わ～～～～！！！　ぱちぱちぱちぱち！！！￥
+	OutputLine(NULL, "　わ〜〜〜〜！！！　ぱちぱちぱちぱち！！！！",
+		   NULL, "Wahhh~~~~!!! Clap clap clap clap!!!!", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawSceneWithMask( "bg_166", "left", 0, 0, 300 );
+	DrawBustshotWithFiltering( 3, "tm_si_wa_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「じゃあ、みんな揃ったんだしね＠　また、今回のシナリオを議論してみないかい？＠
+	OutputLine(NULL, "「じゃあ、みんな揃ったんだしね！",
+		   NULL, "\"Okay, everybody's here!", Line_WaitForInput);
+	OutputLine(NULL, "　また、今回のシナリオを議論してみないかい？」",
+		   NULL, " Shall we debate the story again?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜富竹
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "re_se_de_b1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「そうですね＠じゃあ自由意見で行きましょうか＠誰か意見のある人はいますか～？！￥
+	OutputLine(NULL, "「そうですね。",
+		   NULL, "\"I think so.", Line_WaitForInput);
+	OutputLine(NULL, "じゃあ自由意見で行きましょうか。",
+		   NULL, " Then, let's get some honest opinions.", Line_WaitForInput);
+	OutputLine(NULL, "誰か意見のある人はいますか〜？！」",
+		   NULL, " Does anyone here have something to say~?!\"", Line_Normal);
+	ClearMessage();
+
+//＜レナ
+	DisableWindow();
+	DrawSceneWithMask( "bg_163", "left", 0, 0, 300 );
+	PlayBGM( 1, "msys04", 128, 0 );
+	DrawBustshot( 3, "sa_se_aw_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 400, TRUE );
+
+//「意見も何も...、今回のシナリオで解明編なのではありませんことー＠　犯人は魅音さん＠　諸悪の根源はぜ～んぶ園崎家＠　それで決着でございませんの。＠
+	OutputLine(NULL, "「意見も何も…、今回のシナリオで解明編なのではありませんことー？",
+		   NULL, "\"An honest opinion... was the story this time not an answer chapter?", Line_WaitForInput);
+	OutputLine(NULL, "　犯人は魅音さん！",
+		   NULL, " The criminal was Mion-san!", Line_WaitForInput);
+	OutputLine(NULL, "　諸悪の根源はぜ〜んぶ園崎家！",
+		   NULL, " The root of aaaaall the evil was the Sonozaki family!", Line_WaitForInput);
+	OutputLine(NULL, "　それで決着でございませんの。」",
+		   NULL, " Was that not the conclusion?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜沙都子
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "re_se_na_b1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「う～ん...、そうだね＠魅ぃちゃんは犯人じゃないって...信じてたんだけどなぁ...。＠
+	OutputLine(NULL, "「う〜ん…、そうだね。",
+		   NULL, "\"Hmm... I see.", Line_WaitForInput);
+	OutputLine(NULL, "魅ぃちゃんは犯人じゃないって…信じてたんだけどなぁ…。」",
+		   NULL, " I was so sure... that Mii-chan wasn't the criminal...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜レナ
+	DisableWindow();
+	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "si_si_aw_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「大甘ですよー＠　こんなのは前回の「鬼隠し編」から充分、予想できたことじゃないですか＠むしろ、予想通り過ぎて呆れちゃうくらいですよ？￥
+	OutputLine(NULL, "「大甘ですよー！",
+		   NULL, "\"Too naive!", Line_WaitForInput);
+	OutputLine(NULL, "　こんなのは前回の「鬼隠し編」から充分、予想できたことじゃないですか。",
+		   NULL, " This was entirely predictable from the previous Onikakushi chapter, was it not?", Line_WaitForInput);
+	OutputLine(NULL, "むしろ、予想通り過ぎて呆れちゃうくらいですよ？」",
+		   NULL, " In fact, it's almost shocking how predictable it was.\"", Line_Normal);
+	ClearMessage();
+
+//＜詩音
+	DisableWindow();
+	FadeBustshotWithFiltering( 1, "right", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1,"oi_si_de_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「そうですねぇ＠前回のシナリオをプレイされた方の予想の、大多数と合致するんじゃないでしょうかねぇ。＠
+	OutputLine(NULL, "「そうですねぇ。",
+		   NULL, "\"You're right.", Line_WaitForInput);
+	OutputLine(NULL, "前回のシナリオをプレイされた方の予想の、大多数と合致するんじゃないでしょうかねぇ。」",
+		   NULL, " It probably did align with most of the predictions made by players of the previous scenario.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜大石
+	DisableWindow();
+	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "ri_se_ni_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「......みんなの期待通りの展開になったみたいなのです。￥
+	OutputLine(NULL, "「……みんなの期待通りの展開になったみたいなのです。」",
+		   NULL, "\"......It's like the story went exactly as everyone expected.\"", Line_Normal);
+	ClearMessage();
+
+//＜梨花
+	DisableWindow();
+	DrawSceneWithMask( "bg_161", "right", 0, 0, 300 );
+	DrawBustshotWithFiltering( 3, "re_se_na_b1", "right", 7, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「じゃあ...、...これで『ひぐらしのなく頃に』のメインシナリオはほとんど終わり...なのかな...＠　全ての元凶は魅ぃちゃんの園崎家で...決まり...？＠
+	OutputLine(NULL, "「じゃあ…、…これで『ひぐらしのなく頃に』のメインシナリオはほとんど終わり…なのかな…？",
+		   NULL, "\"Then... does that mean... the main Higurashi When They Cry scenario is pretty much over...?", Line_WaitForInput);
+	OutputLine(NULL, "　全ての元凶は魅ぃちゃんの園崎家で…決まり…？」",
+		   NULL, " So it's a sure thing... that the root of everything was Mii-chan's family...?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜レナ
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "ta_si_de_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「そうかしら＠　私はむしろ、...これで『園崎家犯人説』はなくなったと思ってるくらいだけれど？＠
+	OutputLine(NULL, "「そうかしら？",
+		   NULL, "\"I wonder?", Line_WaitForInput);
+	OutputLine(NULL, "　私はむしろ、…これで『園崎家犯人説』はなくなったと思ってるくらいだけれど？」",
+		   NULL, " In fact... I think that this all means the theory of the Sonozakis being the guilty party has been disproven.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜鷹野
+	DisableWindow();
+	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "me_se_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「あ、三四さんと意見が合いましたね＠私も同じ意見＠...私は祟りなんか信じないけど＠でも少なくとも、園崎家が真犯人である確率は薄くなったと思ってるね。￥
+	OutputLine(NULL, "「あ、三四さんと意見が合いましたね。",
+		   NULL, "\"Oh, you had the same opinion, Miyo-san.", Line_WaitForInput);
+	OutputLine(NULL, "私も同じ意見。",
+		   NULL, " I think the same way.", Line_WaitForInput);
+	OutputLine(NULL, "…私は祟りなんか信じないけど。",
+		   NULL, " ...Though I still don't believe in curses.", Line_WaitForInput);
+	OutputLine(NULL, "でも少なくとも、園崎家が真犯人である確率は薄くなったと思ってるね。」",
+		   NULL, " At the very least, however, I think the chances of the Sonozaki family being the true criminals has gone down.\"", Line_Normal);
+	ClearMessage();
+
+//＜魅音
+	DisableWindow();
+	FadeBustshotWithFiltering( 1, "right", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "re_se_bi_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「え＠　どうしてなの＠　...だって魅ぃちゃんがみんなを殺したって、自供したじゃない...？＠
+	OutputLine(NULL, "「え？",
+		   NULL, "\"Huh?", Line_WaitForInput);
+	OutputLine(NULL, "　どうしてなの？",
+		   NULL, " Why is that?", Line_WaitForInput);
+	OutputLine(NULL, "　…だって魅ぃちゃんがみんなを殺したって、自供したじゃない…？」",
+		   NULL, " ...Didn't Mii-chan confess that she killed everyone...?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜レナ
+	DisableWindow();
+	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "sa_se_bi_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「そうですわ＠私と梨花を殺しておいて、今さら犯人じゃないなんて、どういう意味なんですの？？￥
+	OutputLine(NULL, "「そうですわ。",
+		   NULL, "\"That's right.", Line_WaitForInput);
+	OutputLine(NULL, "私と梨花を殺しておいて、今さら犯人じゃないなんて、どういう意味なんですの？？」",
+		   NULL, " She killed Rika and me, so what do you mean that she isn't the criminal after all that??\"", Line_Normal);
+	ClearMessage();
+
+//＜沙都子
+	DisableWindow();
+	FadeBustshotWithFiltering( 1, "right", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "me_se_ma_b1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「別に煙に巻くつもりはないよ＠たださ、私、魅音が全ての犯人だとするにはいろいろと無理が多いんだよ＠ちょっと考えればすぐわかるよ。＠
+	OutputLine(NULL, "「別に煙に巻くつもりはないよ。",
+		   NULL, "\"I'm not trying to confuse you or anything.", Line_WaitForInput);
+	OutputLine(NULL, "たださ、私、魅音が全ての犯人だとするにはいろいろと無理が多いんだよ。",
+		   NULL, " It's just that I think there are a lot of things that don't go along with Mion being the one behind everything.", Line_WaitForInput);
+	OutputLine(NULL, "ちょっと考えればすぐわかるよ。」",
+		   NULL, " If you think about it a little, you'll get it.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜魅音
+	DisableWindow();
+	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "tm_si_wa_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「へぇ＠僕は園崎家犯人説の近からず遠からずに真相があると確信してるんだけど...＠...ぜひ魅音ちゃんの説が聞きたいね！￥
+	OutputLine(NULL, "「へぇ。",
+		   NULL, "\"Huh.", Line_WaitForInput);
+	OutputLine(NULL, "僕は園崎家犯人説の近からず遠からずに真相があると確信してるんだけど…。",
+		   NULL, " I had believed the truth to be more or less in line with the Sonozaki family theory...", Line_WaitForInput);
+	OutputLine(NULL, "…ぜひ魅音ちゃんの説が聞きたいね！」",
+		   NULL, " but I'd love to hear your theory, Mion-chan!\"", Line_Normal);
+	ClearMessage();
+
+//＜富竹
+	DisableWindow();
+	FadeAllBustshots( 400, TRUE );
+	DrawBustshot( 2, "me_se_to_a2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+
+//「ではご拝聴を＠
+	OutputLine(NULL, "「ではご拝聴を。",
+		   NULL, "\"Then hear me out.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//　...ラストで私がさ、過去の事件に自分は全て関与しているって白状するでしょ＠あそこで感じた大きな違和感が根拠かな＠だって考えてみなよ＠過去の事件が園崎家の起こしたものなら、すごいことだよ？＠　だってどれもほぼ完全犯罪でしょ＠　園崎家以外の犯人や事故で決着するという究極の犯罪だもの。￥
+	OutputLine(NULL, "　…ラストで私がさ、過去の事件に自分は全て関与しているって白状するでしょ。",
+		   NULL, "...Near the end, I confessed that I'd participated in the past incidents, right?", Line_WaitForInput);
+	OutputLine(NULL, "あそこで感じた大きな違和感が根拠かな。",
+		   NULL, " I thought something wasn't really right about that, so I guess that's my basis.", Line_WaitForInput);
+	OutputLine(NULL, "だって考えてみなよ。",
+		   NULL, " I mean, think about it.", Line_WaitForInput);
+	OutputLine(NULL, "過去の事件が園崎家の起こしたものなら、すごいことだよ？！",
+		   NULL, " If the incidents of the past were caused by the Sonozaki family, that would be crazy!", Line_WaitForInput);
+	OutputLine(NULL, "　だってどれもほぼ完全犯罪でしょ？",
+		   NULL, " I mean, wouldn't they all be perfect crimes?", Line_WaitForInput);
+	OutputLine(NULL, "　園崎家以外の犯人や事故で決着するという究極の犯罪だもの。」",
+		   NULL, " They were all attributed to other criminals or simple accidents, after all.\"", Line_Normal);
+	ClearMessage();
+
+//＜魅音
+	DisableWindow();
+	DrawSceneWithMask( "bg_165", "left", 0, 0, 300 );
+	DrawBustshotWithFiltering( 1, "si_si_wi_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「そりゃそうでしょ＠だって、大きな力を持つ園崎家が暗躍してるんだもの＠完全犯罪なんてお茶の子さいさいでしょ？＠
+	OutputLine(NULL, "「そりゃそうでしょ。",
+		   NULL, "\"Well, that's right.", Line_WaitForInput);
+	OutputLine(NULL, "だって、大きな力を持つ園崎家が暗躍してるんだもの。",
+		   NULL, " The Sonozaki family is very powerful, and they were acting behind the scenes.", Line_WaitForInput);
+	OutputLine(NULL, "完全犯罪なんてお茶の子さいさいでしょ？」",
+		   NULL, " Wouldn't pulling off perfect crimes be child's play for them?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜詩音
+	DisableWindow();
+	DrawBustshot( 3, "me_se_wi_b2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 400, TRUE );
+
+//「そこそこ。そこが違和感なんだよ＠　過去４年間、園崎本家の気配をまったく感じさせずに、あれだけ上手に人を殺したり消したりしてきたんだよ＠
+	OutputLine(NULL, "「そこそこ。そこが違和感なんだよ！",
+		   NULL, "\"That's just it. That's the weird thing!", Line_WaitForInput);
+	OutputLine(NULL, "　過去４年間、園崎本家の気配をまったく感じさせずに、あれだけ上手に人を殺したり消したりしてきたんだよ？",
+		   NULL, " The Sonozaki family had been killing and erasing people so well for the last four years they didn't even let out a hint that they were behind it, right?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+	DisableWindow();
+	DrawBustshot( 3, "me_se_aw_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//　そこへ行くと５年目の事件はすごくチープなんだよ＠手当たり次第に片っ端から消して、殺して＠しかも園崎家とのつながりは簡単に看破できちゃうしさ。￥
+	OutputLine(NULL, "　そこへ行くと５年目の事件はすごくチープなんだよ。",
+		   NULL, "But the incident in the fifth year, now that was really cheap.", Line_WaitForInput);
+	OutputLine(NULL, "手当たり次第に片っ端から消して、殺して。",
+		   NULL, " They were killing and erasing people at random.", Line_WaitForInput);
+	OutputLine(NULL, "しかも園崎家とのつながりは簡単に看破できちゃうしさ。」",
+		   NULL, " Any idiot could have seen the connection with the Sonozaki family.\"", Line_Normal);
+	ClearMessage();
+
+//＜魅音
+	DisableWindow();
+	FadeBustshotWithFiltering( 1, "left", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "re_se_na_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「そう言われてみればそうね＠過去の事件は祟りとも犯罪ともつかない、不思議な連続事件だったけど＠...今回の５年目の事件だけはすごく乱暴だったもんね。￥
+	OutputLine(NULL, "「そう言われてみればそうね。",
+		   NULL, "\"Now that I think about it, you're right.", Line_WaitForInput);
+	OutputLine(NULL, "過去の事件は祟りとも犯罪ともつかない、不思議な連続事件だったけど。",
+		   NULL, " The incidents in the past were all mysterious, and nobody could tell if they were because of the curse or just simple crimes.", Line_WaitForInput);
+	OutputLine(NULL, "…今回の５年目の事件だけはすごく乱暴だったもんね。」",
+		   NULL, " But then, on the fifth year, they suddenly got really violent.\"", Line_Normal);
+	ClearMessage();
+
+//＜レナ
+	DisableWindow();
+	DrawSceneWithMask( "bg_166", "left", 0, 0, 300 );
+	DrawBustshotWithFiltering( 3, "sa_se_bi_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「何を言ってるのかよくわかりませんわ＠...梨花にはわかります？＠
+	OutputLine(NULL, "「何を言ってるのかよくわかりませんわ。",
+		   NULL, "\"I do not understand what you are saying.", Line_WaitForInput);
+	OutputLine(NULL, "…梨花にはわかります？」",
+		   NULL, " ...Rika, do you?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜沙都子
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "ri_se_de_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「......つまり、園崎家が本当に犯人なら、５年目の事件ももっともっと上手にやったと言ってるのですよ。＠
+	OutputLine(NULL, "「……つまり、園崎家が本当に犯人なら、５年目の事件ももっともっと上手にやったと言ってるのですよ。」",
+		   NULL, "\"......She means that if the Sonozaki family were the real criminals, then they would have done a much, much better job with the incident on the fifth year.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜梨花
+	DisableWindow();
+	DrawBustshot( 3, "sa_se_ak_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//「じゃあ...つまり何ですの＠　私と梨花を殺したのは魅音さんではなく、魅音さんに取り憑いた鬼の仕業だったってことですの＠
+	OutputLine(NULL, "「じゃあ…つまり何ですの？",
+		   NULL, "\"So... what does that mean?", Line_WaitForInput);
+	OutputLine(NULL, "　私と梨花を殺したのは魅音さんではなく、魅音さんに取り憑いた鬼の仕業だったってことですの？",
+		   NULL, " Mion-san wasn't the one who killed Rika and me, but it was the work of the demon who possessed Mion-san?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+	DisableWindow();
+	DrawBustshot( 3, "sa_se_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//　ほらほら！＠　やっぱり前回の私の予想通り、魅音さんは悪い人じゃなかったのですわ～！！￥
+	OutputLine(NULL, "　ほらほら！！",
+		   NULL, "\"Come, now!!", Line_WaitForInput);
+	OutputLine(NULL, "　やっぱり前回の私の予想通り、魅音さんは悪い人じゃなかったのですわ〜！！」",
+		   NULL, " Just like I thought last time, Mion-san wasn't a bad person after all, was she~?!\"", Line_Normal);
+	ClearMessage();
+
+//＜沙都子
+	DisableWindow();
+	DrawSceneWithMask( "bg_163", "right", 0, 0, 300 );
+	DrawBustshotWithFiltering( 3, "re_se_de_b1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「そうそう＠私も沙都子ちゃんも、何かが取り憑いて悪いことをしてるって意見だったもんね＠じゃあ...やっぱり私たちの説は正しかったのかな？！＠
+	OutputLine(NULL, "「そうそう。",
+		   NULL, "\"That's right.", Line_WaitForInput);
+	OutputLine(NULL, "私も沙都子ちゃんも、何かが取り憑いて悪いことをしてるって意見だったもんね。",
+		   NULL, " Satoko-chan and I both thought that she was doing bad things because she was possessed by something.", Line_WaitForInput);
+	OutputLine(NULL, "じゃあ…やっぱり私たちの説は正しかったのかな？！」",
+		   NULL, " Then... does that mean our theory was right?!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜レナ
+	DisableWindow();
+	DrawBustshotWithFiltering( 1,"oi_si_de_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「私も前回から引き続き祟り説ですが、今回のシナリオでさらに確信を深めましたよ＠......ラストのラストで私が明かす＠目撃されていたにも関わらずその数日前に死んでいたという、鷹野さんや魅音さんの情報はまさにそれを裏付けると思います。￥
+	OutputLine(NULL, "「私も前回から引き続き祟り説ですが、今回のシナリオでさらに確信を深めましたよ。",
+		   NULL, "\"I've been supporting the curse theory since the last after party, and the story this time makes me all the more convinced it's true.", Line_WaitForInput);
+	OutputLine(NULL, "……ラストのラストで私が明かす、",
+		   NULL, " ...That fact revealed at the very end,", Line_WaitForInput);
+	OutputLine(NULL, "目撃されていたにも関わらずその数日前に死んでいたという、鷹野さんや魅音さんの情報はまさにそれを裏付けると思います。」",
+		   NULL, " the information regarding how Mion-san and Takano-san had died days before, despite being witnessed, seems to indeed support that theory.\"", Line_Normal);
+	ClearMessage();
+
+//＜大石
+	DisableWindow();
+	FadeBustshotWithFiltering( 1, "right", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "ta_si_de_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「あらあら...＠前回は弱かった祟り派が今回はずいぶん強気ね＠人間犯人説のみなさんには反論はないのかしら？＠
+	OutputLine(NULL, "「あらあら…。",
+		   NULL, "\"Oh, my...", Line_WaitForInput);
+	OutputLine(NULL, "前回は弱かった祟り派が今回はずいぶん強気ね。",
+		   NULL, " I see the curse believers, who seemed unconfident last time, have grown quite a bit more self-assured.", Line_WaitForInput);
+	OutputLine(NULL, "人間犯人説のみなさんには反論はないのかしら？」",
+		   NULL, " Do any of those who think it was a human have any objections?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜鷹野
+	DisableWindow();
+	DrawBustshot( 3, "re_se_wa_b1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//「前回、人間犯人説だったのは確か、魅ぃちゃんに梨花ちゃん＠それから富竹さんでしたよね＠でははりきって反論をお願いします！￥
+	OutputLine(NULL, "「前回、人間犯人説だったのは確か、魅ぃちゃんに梨花ちゃん。",
+		   NULL, "\"Last time, Mii-chan and Rika-chan were the ones who thought it was the work of a person.", Line_WaitForInput);
+	OutputLine(NULL, "それから富竹さんでしたよね。",
+		   NULL, " Tomitake-san did too, didn't he?", Line_WaitForInput);
+	OutputLine(NULL, "でははりきって反論をお願いします！」",
+		   NULL, " Okay, let's hear what you've got then!\"", Line_Normal);
+	ClearMessage();
+
+//＜レナ
+	DisableWindow();
+	DrawSceneWithMask( "bg_161", "left", 0, 0, 300 );
+	DrawBustshotWithFiltering( 3, "tm_si_ko_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「う～ん、まいったな＠うまい言葉が思いつかないなぁ...。＠
+	OutputLine(NULL, "「う〜ん、まいったな。",
+		   NULL, "\"Hmm... You've got me there.", Line_WaitForInput);
+	OutputLine(NULL, "うまい言葉が思いつかないなぁ…。」",
+		   NULL, " I can't quite find the right words...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜富竹
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "si_si_de_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「祟り派の根拠のひとつが、合わない死亡時刻なんですよね＠じゃあ、そのトリックを崩せれば人間犯人説は立証できるわけですね？＠
+	OutputLine(NULL, "「祟り派の根拠のひとつが、合わない死亡時刻なんですよね。",
+		   NULL, "\"One of the pieces of evidence for the curse theory is the mismatching times of death, right?", Line_WaitForInput);
+	OutputLine(NULL, "じゃあ、そのトリックを崩せれば人間犯人説は立証できるわけですね？」",
+		   NULL, " So if I could disprove that theory, it would prove that a human did it, wouldn't it?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜詩音
+	DisableWindow();
+	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "me_se_wi_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「お、詩音には何かいい反論があるの？￥
+	OutputLine(NULL, "「お、詩音には何かいい反論があるの？」",
+		   NULL, "\"Oh! Shion, do you have a good objection?\"", Line_Normal);
+	ClearMessage();
+
+//＜魅音
+
+//「まぁ一応＠でも私、人間犯人説ではお姉と同じ意見ですけど...、園崎家が主犯だと思ってる点ではお姉とは違いますよ＠それでもよければ反論してみせますけど？＠
+	OutputLine(NULL, "「まぁ一応。",
+		   NULL, "\"Well, I suppose.", Line_WaitForInput);
+	OutputLine(NULL, "でも私、人間犯人説ではお姉と同じ意見ですけど…、園崎家が主犯だと思ってる点ではお姉とは違いますよ。",
+		   NULL, " I have the same opinion as you, Mion, that it was a human... but I don't think the Sonozaki family were the main culprits either.", Line_WaitForInput);
+	OutputLine(NULL, "それでもよければ反論してみせますけど？」",
+		   NULL, " If it's okay with you, I'll offer my objections.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜詩音
+	DisableWindow();
+	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "sa_se_wa_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「をっほっほっほ＠　何でも結構ですわ＠　これが祟りじゃないと言うなら、その証拠を示してごらんなさいませ～！！￥
+	OutputLine(NULL, "「をっほっほっほ！",
+		   NULL, "\"Woh-ho-ho-ho!", Line_WaitForInput);
+	OutputLine(NULL, "　何でも結構ですわ！",
+		   NULL, " Show us what you've got!", Line_WaitForInput);
+	OutputLine(NULL, "　これが祟りじゃないと言うなら、その証拠を示してごらんなさいませ〜！！」",
+		   NULL, " If you say it wasn't the curse, then let's hear your evidence~!!\"", Line_Normal);
+	ClearMessage();
+
+//＜沙都子
+	DisableWindow();
+	DrawSceneWithMask( "bg_165", "right", 0, 0, 300 );
+	DrawBustshotWithFiltering( 3, "ta_si_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「じゃあ詩音ちゃん＠さっきから話題になってる、ラストのトリック＠魅音ちゃんは事件当日に井戸に落ちて死んでいたにも関わらず、数日後に現れて圭一くんとあなたを殺したのはどうやってなのかしら？￥
+	OutputLine(NULL, "「じゃあ詩音ちゃん。",
+		   NULL, "\"Okay, Shion-chan.", Line_WaitForInput);
+	OutputLine(NULL, "さっきから話題になってる、ラストのトリック。",
+		   NULL, " That last trick we've been talking about.", Line_WaitForInput);
+	OutputLine(NULL, "魅音ちゃんは事件当日に井戸に落ちて死んでいたにも関わらず、数日後に現れて圭一くんとあなたを殺したのはどうやってなのかしら？」",
+		   NULL, " Despite Mion-chan having died the day of the incident from falling into the well, how did she appear days later to kill you and Keiichi-kun?\"", Line_Normal);
+	ClearMessage();
+
+//＜鷹野
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "si_si_wa_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「ずばり、園崎姉妹共犯説です＠理由は簡単＠だってお姉はあの時点でもう死んでるんですから、圭ちゃんを刺せるのは私しかいないんです。私がお姉の変装をして圭ちゃんを刺す＠　そして自室へ戻り幽霊との取っ組み合いの狂言をして飛び降り自殺。＠
+	OutputLine(NULL, "「ずばり、園崎姉妹共犯説です。",
+		   NULL, "\"Here it is: my Sonozaki sisters conspiracy theory.", Line_WaitForInput);
+	OutputLine(NULL, "理由は簡単。",
+		   NULL, " My reason is simple.", Line_WaitForInput);
+	OutputLine(NULL, "だってお姉はあの時点でもう死んでるんですから、圭ちゃんを刺せるのは私しかいないんです。私がお姉の変装をして圭ちゃんを刺す！",
+		   NULL, " If Mion was dead by that time, then the only one who could have stabbed Kei-chan was me. I disguised myself as Mion and stabbed him!", Line_WaitForInput);
+	OutputLine(NULL, "　そして自室へ戻り幽霊との取っ組み合いの狂言をして飛び降り自殺。」",
+		   NULL, " Then I went back to my room, pretended to have a tussle with a ghost, then jumped right down and killed myself.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜詩音
+	DisableWindow();
+	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "tm_si_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「強いて言えば、この場合の魅音ちゃんは泥を被る役だね＠村長さんたちに直接手を下し、詩音ちゃんはただの被害者の形にする＠そして、井戸の中に姿を隠していれば、変装した詩音ちゃんが神出鬼没にいくらでも殺人を犯せるって寸法さ。￥
+	OutputLine(NULL, "「強いて言えば、この場合の魅音ちゃんは泥を被る役だね。",
+		   NULL, "\"So when you get down to it, Mion-chan, in this case, would be the one to take the blame.", Line_WaitForInput);
+	OutputLine(NULL, "村長さんたちに直接手を下し、詩音ちゃんはただの被害者の形にする。",
+		   NULL, " She would take care of the mayor in person, and Shion-chan would be made into merely a victim.", Line_WaitForInput);
+	OutputLine(NULL, "そして、井戸の中に姿を隠していれば、変装した詩音ちゃんが神出鬼没にいくらでも殺人を犯せるって寸法さ。」",
+		   NULL, " If she hid herself in the well, the disguised Shion-chan could show up where she pleased and murder whoever she wanted—all planned from the start.\"", Line_Normal);
+	ClearMessage();
+
+//＜富竹
+	DisableWindow();
+	FadeBustshotWithFiltering( 1, "right", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1,"oi_si_de_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「なるほどね＠...だとすると、魅音さんにとっての誤算は２つ＠
+	OutputLine(NULL, "「なるほどね。",
+		   NULL, "\"I get it.", Line_WaitForInput);
+	OutputLine(NULL, "…だとすると、魅音さんにとっての誤算は２つ。",
+		   NULL, " ...Then Mion-san made two mistakes.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//　自分（死体）が見つかってしまったことと、隠れているだけのつもりが死んでしまったこと＠ってことになるわけですね。＠
+	OutputLine(NULL, "　自分（死体）が見つかってしまったことと、隠れているだけのつもりが死んでしまったこと。",
+		   NULL, "First was that her corpse was found, and second was dying when she only planned to hide.", Line_WaitForInput);
+	OutputLine(NULL, "ってことになるわけですね。」",
+		   NULL, " That's what it would mean.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜大石
+	DisableWindow();
+	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "re_se_na_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「...あれれれ......＠......確かに...何となくつじつまが合うような...。￥
+	OutputLine(NULL, "「…あれれれ……。",
+		   NULL, "\"...Oh, well now...", Line_WaitForInput);
+	OutputLine(NULL, "……確かに…何となくつじつまが合うような…。」",
+		   NULL, " ...You're right... There is something logical about that...\"", Line_Normal);
+	ClearMessage();
+
+//＜レナ
+	DisableWindow();
+	FadeBustshotWithFiltering( 1, "right", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "me_se_th_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「でも...やっぱり納得できないでしょ＠　過去の完全犯罪の華麗さと違いすぎるもの＠...その計画、例えうまく行っても「魅音」は悪役でしょ＠　一生隠れて、あるいは詩音のフリをしたりして生きていかなきゃならないんでしょ＠　窮屈過ぎ＠　こんなの完全犯罪とは言わないって！＠
+	OutputLine(NULL, "「でも…やっぱり納得できないでしょ！",
+		   NULL, "\"However... I'm still not convinced!", Line_WaitForInput);
+	OutputLine(NULL, "　過去の完全犯罪の華麗さと違いすぎるもの。",
+		   NULL, " It was too different from the magnificent, perfect crimes in the past.", Line_WaitForInput);
+	OutputLine(NULL, "…その計画、例えうまく行っても「魅音」は悪役でしょ？",
+		   NULL, " ...Even if their plan went well, Mion would end up the bad guy, wouldn't she?", Line_WaitForInput);
+	OutputLine(NULL, "　一生隠れて、あるいは詩音のフリをしたりして生きていかなきゃならないんでしょ？",
+		   NULL, " She would either have to hide the rest of her life, or live pretending to be Shion, wouldn't she?", Line_WaitForInput);
+	OutputLine(NULL, "　窮屈過ぎ！",
+		   NULL, " That would be too constrained!", Line_WaitForInput);
+	OutputLine(NULL, "　こんなの完全犯罪とは言わないって！」",
+		   NULL, " You can't call that a perfect crime!\"", Line_WaitForInput);
+
+//＜魅音
+	DisableWindow();
+	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "ri_se_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+//「......つまり、死ぬにせよ消えるにせよ、魅ぃはいなくなってしまうわけなのです。￥
+	OutputLine(NULL, "「……つまり、死ぬにせよ消えるにせよ、魅ぃはいなくなってしまうわけなのです。」",
+		   NULL, "\"......In other words, whether by dying or disappearing, Mii would have to go away.\"", Line_Normal);
+	ClearMessage();
+
+//＜梨花
+	DisableWindow();
+	FadeBustshotWithFiltering( 1, "right", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "si_si_wi_b1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「梨花ちゃん、それいい意見＠つまり、園崎魅音が表舞台からいなくなるのは彼女らのシナリオの一部だと思うわけです＠だからラストで、魅音はポンポンと過去の事件の罪を被るんですよ＠全部の事件の責任を一身に引き受けて退場！￥
+	OutputLine(NULL, "「梨花ちゃん、それいい意見。",
+		   NULL, "\"Rika-chan, that's a good thought.", Line_WaitForInput);
+	OutputLine(NULL, "つまり、園崎魅音が表舞台からいなくなるのは彼女らのシナリオの一部だと思うわけです。",
+		   NULL, " That means we should consider that Mion Sonozaki leaving the stage was part of their plan.", Line_WaitForInput);
+	OutputLine(NULL, "だからラストで、魅音はポンポンと過去の事件の罪を被るんですよ。",
+		   NULL, " That's why, at the end, Mion took the blame for all the incidents in the past.", Line_WaitForInput);
+	OutputLine(NULL, "全部の事件の責任を一身に引き受けて退場！」",
+		   NULL, " She took responsibility for all of them herself, then left!\"", Line_Normal);
+	ClearMessage();
+
+//＜詩音
+	DisableWindow();
+	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "me_se_wi_b1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「そうすることで、過去の事件の真犯人を隠蔽できる＠...つまり、今年の事件は、チープなんじゃなく、...過去の事件を丸ごと「完全犯罪」にするための締めくくりの事件＠...そういう位置づけになるのかな...？＠
+	OutputLine(NULL, "「そうすることで、過去の事件の真犯人を隠蔽できる。",
+		   NULL, "\"By doing that, she could cover up the true culprit behind the past incidents.", Line_WaitForInput);
+	OutputLine(NULL, "…つまり、今年の事件は、チープなんじゃなく、…過去の事件を丸ごと「完全犯罪」にするための締めくくりの事件。",
+		   NULL, " ...Which means that this incident wasn't shabby... its purpose was to cement all the past incidents as perfect crimes.", Line_WaitForInput);
+	OutputLine(NULL, "…そういう位置づけになるのかな…？」",
+		   NULL, " ...I suppose that's what it comes down to...?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜魅音
+	DisableWindow();
+	DrawSceneWithMask( "bg_161", "left", 0, 0, 300 );
+	DrawBustshotWithFiltering( 3, "ta_si_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「一番疑われてる園崎家の若き当主が全てを自白して失踪＠......彼女、もしくは園崎家以外の真犯人にとってこれほどおいしい結末はないってことになるのかしらね。￥
+	OutputLine(NULL, "「一番疑われてる園崎家の若き当主が全てを自白して失踪。",
+		   NULL, "\"The young leader of the Sonozaki family, who was the biggest suspect, confessed to everything and disappeared.", Line_WaitForInput);
+	OutputLine(NULL, "……彼女、もしくは園崎家以外の真犯人にとってこれほどおいしい結末はないってことになるのかしらね。」",
+		   NULL, " ......For her, or perhaps for the non-Sonozaki true culprit, there likely was no more favorable outcome.\"", Line_Normal);
+	ClearMessage();
+
+//＜鷹野
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "sa_se_aw_b1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「...............話がぜーんぜん、わかりませんのよ＠魅音さんが罪を被るってどういう意味ですの＠　犯人なんじゃないんですの...？？￥
+	OutputLine(NULL, "「……………話がぜーんぜん、わかりませんのよ。",
+		   NULL, "\"............I don't understand even an inch of your conversation.", Line_WaitForInput);
+	OutputLine(NULL, "魅音さんが罪を被るってどういう意味ですの？",
+		   NULL, " What do you mean by Mion-san taking the blame?", Line_WaitForInput);
+	OutputLine(NULL, "　犯人なんじゃないんですの…？？」",
+		   NULL, " Is she not the culprit...??\"", Line_Normal);
+	ClearMessage();
+
+//＜沙都子
+	DisableWindow();
+	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "re_se_de_b1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「つまりね＠連続怪死事件の真犯人が別にいるの＠その人を守るために、魅ぃちゃんが「過去の事件も全て、自分が起こした」とウソの告白をした...ってみんなは言ってるの。＠
+	OutputLine(NULL, "「つまりね。",
+		   NULL, "\"Let me put it this way.", Line_WaitForInput);
+	OutputLine(NULL, "連続怪死事件の真犯人が別にいるの。",
+		   NULL, " The true culprit behind the serial freak death incidents was somebody else.", Line_WaitForInput);
+	OutputLine(NULL, "その人を守るために、魅ぃちゃんが「過去の事件も全て、自分が起こした」とウソの告白をした…ってみんなは言ってるの。」",
+		   NULL, " Mii-chan gave a fake confession that she caused all the previous incidents to protect that person... or so everyone's saying.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜レナ
+	DisableWindow();
+	FadeBustshotWithFiltering( 1, "right", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1,"oi_si_wa_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「これはこれは......、劇中のセリフになりますが...とんだ名探偵さんがいたもんです＠　確かに...ちょっと説得力を感じますよ！￥
+	OutputLine(NULL, "「これはこれは……、劇中のセリフになりますが…とんだ名探偵さんがいたもんです！",
+		   NULL, "\"My, my... I said this during the story... but it seems we have an incredible detective on our hands!", Line_WaitForInput);
+	OutputLine(NULL, "　確かに…ちょっと説得力を感じますよ！」",
+		   NULL, " Yes... it does seem a bit persuasive!\"", Line_Normal);
+	ClearMessage();
+
+//＜大石
+	DisableWindow();
+	DrawSceneWithMask( "bg_163", "right", 0, 0, 300 );
+	DrawBustshotWithFiltering( 3, "me_se_de_b2", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「真の犯人を誤魔化すために起こした事件＠それが私の推理＠さらに言えば、その真の犯人は園崎家以外の存在だと思ってるんだけどね。＠
+	OutputLine(NULL, "「真の犯人を誤魔化すために起こした事件。",
+		   NULL, "\"An incident started to throw the scent off the true criminal.", Line_WaitForInput);
+	OutputLine(NULL, "それが私の推理。",
+		   NULL, " That's my reasoning.", Line_WaitForInput);
+	OutputLine(NULL, "さらに言えば、その真の犯人は園崎家以外の存在だと思ってるんだけどね。」",
+		   NULL, " Though if I go further, I think the true culprit isn't part of the Sonozaki family.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜魅音
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "ta_si_wa_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「４年連続で完全犯罪に成功した謎の人物を、さらに守るために魅音ちゃんが起こした「捜査撹乱の事件」ということかしら？＠
+	OutputLine(NULL, "「４年連続で完全犯罪に成功した謎の人物を、さらに守るために魅音ちゃんが起こした「捜査撹乱の事件」ということかしら？」",
+		   NULL, "\"So it was Mion-chan disrupting the incident to further protect the mystery person who pulled off perfect crimes four years running, then?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜鷹野
+	DisableWindow();
+	DrawBustshot( 3, "me_se_wi_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//「そういうことです＠前回のシナリオに名前だけ登場した「監督」ってのがかなり怪しいかな！＠
+	OutputLine(NULL, "「そういうことです。",
+		   NULL, "\"That's right.", Line_WaitForInput);
+	OutputLine(NULL, "前回のシナリオに名前だけ登場した「監督」ってのがかなり怪しいかな！」",
+		   NULL, " The site foreman only appeared in name in the last story—pretty suspicious, if you ask me!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜魅音
+	DisableWindow();
+	FadeBustshotWithFiltering( 1, "right", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "ri_se_wa_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「......すごいです＠実につじつまが合いますですよ。＠ぱちぱちぱち￥
+	OutputLine(NULL, "「……すごいです。",
+		   NULL, "\"......Amazing.", Line_WaitForInput);
+	OutputLine(NULL, "実につじつまが合いますですよ。」",
+		   NULL, " It really does all add up.\"", Line_WaitForInput);
+	OutputLine(NULL, "ぱちぱちぱち。",
+		   NULL, " Clap clap clap.", Line_Normal);
+	ClearMessage();
+
+//＜梨花
+	DisableWindow();
+	DrawSceneWithMask( "bg_166", "left", 0, 0, 300 );
+	DrawBustshotWithFiltering( 3, "si_si_de_b1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「私はそれでも園崎家＋姉妹が犯人だと思ってますけどね＠御三家による古いしがらみを断ち切るために姉妹が起こした「過去の清算のための事件」＠それが私の推理です。￥
+	OutputLine(NULL, "「私はそれでも園崎家＋姉妹が犯人だと思ってますけどね。",
+		   NULL, "\"I still think the Sonozaki family and the sisters are the culprits, though.", Line_WaitForInput);
+	OutputLine(NULL, "御三家による古いしがらみを断ち切るために姉妹が起こした「過去の清算のための事件」。",
+		   NULL, " An incident caused by the sisters to sever their old fetters to the Three Families—to clear away the past...", Line_WaitForInput);
+	OutputLine(NULL, "それが私の推理です。」",
+		   NULL, " That's my theory.\"", Line_Normal);
+	ClearMessage();
+
+//＜詩音
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "tm_si_de_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「過去の清算ってのはつまり...＠暗躍の歴史に終止符を打つため、御三家の罪を最後の当主の魅音が全て被り、姉妹そろって退場したってことだね。＠
+	OutputLine(NULL, "「過去の清算ってのはつまり…、",
+		   NULL, "\"Clearing away the past...", Line_WaitForInput);
+	OutputLine(NULL, "暗躍の歴史に終止符を打つため、御三家の罪を最後の当主の魅音が全て被り、姉妹そろって退場したってことだね。」",
+		   NULL, " You mean that they placed the blame for the Three Families' crimes on their final leader, Mion, to put an end to a dark history—and then the two of them left.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+
+//＜富竹
+
+//「そういうことです＠私たち姉妹が悩みに悩みぬいた末に選んだ、悲しい物語だったというわけです＠/
+	OutputLine(NULL, "「そういうことです。",
+		   NULL, "\"That's right.", Line_WaitForInput);
+	OutputLine(NULL, "私たち姉妹が悩みに悩みぬいた末に選んだ、悲しい物語だったというわけです。",
+		   NULL, " It would make it a sad story, where we sisters finally choose to end it after a lot of worry.", Line_WaitForInput);
+
+	DisableWindow();
+	DrawBustshot( 3, "si_si_wi_b1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//あは、出来すぎですね！￥
+	OutputLine(NULL, "あは、出来すぎですね！」",
+		   NULL, " Aha, we went a little too far!\"", Line_Normal);
+	ClearMessage();
+
+//＜詩音
+	DisableWindow();
+	FadeBustshotWithFiltering( 1, "right", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "ri_se_wa_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「......すごいです＠実につじつまが合いますですよ。＠ぱちぱちぱち＠
+	OutputLine(NULL, "「……すごいです。",
+		   NULL, "\"......Amazing.", Line_WaitForInput);
+	OutputLine(NULL, "実につじつまが合いますですよ。」",
+		   NULL, " It really does all add up.\"", Line_WaitForInput);
+	OutputLine(NULL, "ぱちぱちぱち。",
+		   NULL, " Clap clap clap.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜梨花
+	DisableWindow();
+	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "re_se_wa_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「あれあれ＠　何だか梨花ちゃんにも意見がありそうね＠梨花ちゃんもどうぞ！￥
+	OutputLine(NULL, "「あれあれ？",
+		   NULL, "\"Wait, what?", Line_WaitForInput);
+	OutputLine(NULL, "　何だか梨花ちゃんにも意見がありそうね。",
+		   NULL, " It looks like Rika-chan has an opinion too.", Line_WaitForInput);
+	OutputLine(NULL, "梨花ちゃんもどうぞ！」",
+		   NULL, " Go ahead, Rika-chan!\"", Line_Normal);
+	ClearMessage();
+
+//＜レナ
+	DisableWindow();
+	DrawBustshot( 1, "ri_se_ni_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+
+//「......では皆さんに質問なのです＠...圭一はどうして刺されなければいけないなのですか？＠
+	OutputLine(NULL, "「……では皆さんに質問なのです。",
+		   NULL, "\"......I have a question for you all.", Line_WaitForInput);
+	OutputLine(NULL, "…圭一はどうして刺されなければいけないなのですか？」",
+		   NULL, " ...Why did Keiichi need to get stabbed?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+	DisableWindow();
+	FadeBustshotWithFiltering( 3, "right", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "sa_se_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「...梨花、そんなのは決まってますわよ＠入っちゃいけない祭具殿に勝手に入ったからに決まってますわ。＠
+	OutputLine(NULL, "「…梨花、そんなのは決まってますわよ。",
+		   NULL, "\"...We already know why that is, Rika.", Line_WaitForInput);
+	OutputLine(NULL, "入っちゃいけない祭具殿に勝手に入ったからに決まってますわ。」",
+		   NULL, " It's obviously because he went in the forbidden storehouse without asking.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜沙都子
+	DisableWindow();
+	FadeBustshotWithFiltering( 1, "left", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1,"oi_si_de_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「こうして思い返すと、前回のシナリオでも死んだ富竹くんと鷹野さんの死も、きっと祭具殿に忍び込んだせいなんでしょうなぁ＠.....................ありゃ？￥
+	OutputLine(NULL, "「こうして思い返すと、前回のシナリオでも死んだ富竹くんと鷹野さんの死も、きっと祭具殿に忍び込んだせいなんでしょうなぁ。",
+		   NULL, "\"Thinking back on it now, Tomitake-kun and Takano-san probably died in the previous story because they snuck into that storehouse, eh?", Line_WaitForInput);
+	OutputLine(NULL, "…………………ありゃ？」",
+		   NULL, " ............Hmm?\"", Line_Normal);
+	ClearMessage();
+
+//＜大石
+	DisableWindow();
+	DrawSceneWithMask( "bg_161", "right", 0, 0, 300 );
+	DrawBustshotWithFiltering( 3, "ta_si_wa_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「......くすくす＠おかしなことになってきたわねぇ。＠
+	OutputLine(NULL, "「……くすくす。",
+		   NULL, "\"......*giggle*", Line_WaitForInput);
+	OutputLine(NULL, "おかしなことになってきたわねぇ。」",
+		   NULL, " That is rather strange indeed.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜鷹野
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "re_se_bi_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「え＠　おかしなことって...何がですか？＠
+	OutputLine(NULL, "「え？",
+		   NULL, "\"Huh?", Line_WaitForInput);
+	OutputLine(NULL, "　おかしなことって…何がですか？」",
+		   NULL, " What is it that's strange...?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜レナ
+	DisableWindow();
+	DrawBustshot( 2, "sa_se_bi_b1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+
+//「...あッ！＠　レナさん、そうですわ＠　思い出して下さいませ？！￥
+	OutputLine(NULL, "「…あッ！！",
+		   NULL, "\"...Ah!!", Line_WaitForInput);
+	OutputLine(NULL, "　レナさん、そうですわ！",
+		   NULL, " Rena-san, that's right!", Line_WaitForInput);
+	OutputLine(NULL, "　思い出して下さいませ？！」",
+		   NULL, " Won't you think back, please?!\"", Line_Normal);
+	ClearMessage();
+
+//＜沙都子
+	DisableWindow();
+	DrawSceneWithMask( "bg_163", "left", 0, 0, 300 );
+	DrawBustshot( 2, "ri_se_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+
+//「......そうなのです＠...前回のシナリオでは、圭一は祭具殿には忍び込んでいないのに命を狙われているのです。￥
+	OutputLine(NULL, "「……そうなのです。",
+		   NULL, "\"...That's right.", Line_WaitForInput);
+	OutputLine(NULL, "…前回のシナリオでは、圭一は祭具殿には忍び込んでいないのに命を狙われているのです。」",
+		   NULL, " ...In the previous scenario, they were after Keiichi's life even though he didn't sneak into the ritual storehouse.\"", Line_Normal);
+	ClearMessage();
+
+//＜梨花
+	DisableWindow();
+	FadeBustshot( 2, FALSE, 0, 0, 0, 0, 200, TRUE );
+
+//　...ざわざわざわざわ￥
+	OutputLine(NULL, "　…ざわざわざわざわ！",
+		   NULL, "...Murmur murmur murmur!", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 3, "tm_si_ko_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「それはきっと......、!w1000ほら＠　雛見沢はよそ者を嫌うんだろ＠　だから圭一くんも命を狙われたんだよ...！＠
+	OutputLine(NULL, "「それはきっと……、",
+		   NULL, "\"Well, that's because...", Line_ContinueAfterTyping);
+
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "ほら！",
+		   NULL, " Yeah!", Line_WaitForInput);
+	OutputLine(NULL, "　雛見沢はよそ者を嫌うんだろ？",
+		   NULL, " Hinamizawa hates outsiders, right?", Line_WaitForInput);
+	OutputLine(NULL, "　だから圭一くんも命を狙われたんだよ…！」",
+		   NULL, " That's why they tried to kill Keiichi-kun...!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜富竹
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "me_se_th_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「それはおかしいでしょ＠...だったら圭ちゃんの両親だって襲われていいはず＠どう見ても、両親に危機が迫っていたようには見えないね＠今回も前回も。￥
+	OutputLine(NULL, "「それはおかしいでしょ。",
+		   NULL, "\"That would be strange, though.", Line_WaitForInput);
+	OutputLine(NULL, "…だったら圭ちゃんの両親だって襲われていいはず。",
+		   NULL, " ...They should have attacked Kei-chan's parents too, in that case.", Line_WaitForInput);
+	OutputLine(NULL, "どう見ても、両親に危機が迫っていたようには見えないね。",
+		   NULL, " No matter how you look at it, though, his parents never seemed to be in much danger.", Line_WaitForInput);
+	OutputLine(NULL, "今回も前回も。」",
+		   NULL, " Either this time or the last.\"", Line_Normal);
+	ClearMessage();
+
+//＜魅音
+	DisableWindow();
+	DrawSceneWithMask( "bg_166", "right", 0, 0, 300 );
+	DrawBustshotWithFiltering( 3, "sa_se_aw_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「さぁさぁ人間犯人説の皆さま方～？＠　圭一さんが狙われる理由がちゃんと説明できませんと、人間が犯人とは立証できませんでしてよ～？！？！＠
+	OutputLine(NULL, "「さぁさぁ人間犯人説の皆さま方〜？！",
+		   NULL, "\"Hear that, everyone who thinks it was a human's doing~?!", Line_WaitForInput);
+	OutputLine(NULL, "　圭一さんが狙われる理由がちゃんと説明できませんと、人間が犯人とは立証できませんでしてよ〜？！？！」",
+		   NULL, " Unless you can properly explain the reason Keiichi-san's life was threatened, you can't definitely prove the criminal was human, can you~?!?!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜沙都子
+	DisableWindow();
+	DrawBustshotWithFiltering( 1,"oi_si_wa_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「なっはっはっは＠でも、祟り説だとしても、やはり前原さんが前回も今回も襲われる理由がわかりませんけどねぇ。￥
+	OutputLine(NULL, "「なっはっはっは。",
+		   NULL, "\"Nah-ha-ha-ha.", Line_WaitForInput);
+	OutputLine(NULL, "でも、祟り説だとしても、やはり前原さんが前回も今回も襲われる理由がわかりませんけどねぇ。」",
+		   NULL, " Even with the curse theory, however, we don't know why Maebara-san was attacked this time or last time.\"", Line_Normal);
+	ClearMessage();
+
+//＜大石
+	DisableWindow();
+	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "re_se_de_b1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「もう一息で解明できそうだったけど...＠やっぱり謎はたくさん残ってるみたいね...。＠
+	OutputLine(NULL, "「もう一息で解明できそうだったけど…、",
+		   NULL, "\"With a little more, we would have had it...", Line_WaitForInput);
+	OutputLine(NULL, "やっぱり謎はたくさん残ってるみたいね…。」",
+		   NULL, " There are still a lot of mysteries remaining...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜レナ
+	DisableWindow();
+	FadeBustshotWithFiltering( 1, "right", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "ta_si_de_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「くすくす......＠圭一くん以外の人の死には何かしら理由が見つけられるんだけど、...圭一くんだけなぜかいつも曖昧＠...前回と今回＠祭具殿に踏み入るのとは無関係に狙われてる。＠
+	OutputLine(NULL, "「くすくす……。",
+		   NULL, "\"*giggle*......", Line_WaitForInput);
+	OutputLine(NULL, "圭一くん以外の人の死には何かしら理由が見つけられるんだけど、…圭一くんだけなぜかいつも曖昧。",
+		   NULL, " We can find some kind of reason for everyone but Keiichi-kun to die... but for some reason, Keiichi-kun's death is always vague.", Line_WaitForInput);
+	OutputLine(NULL, "…前回と今回。",
+		   NULL, " ...Both this time and last time.", Line_WaitForInput);
+	OutputLine(NULL, "祭具殿に踏み入るのとは無関係に狙われてる。」",
+		   NULL, " He was being targeted regardless of whether he went into the ritual storehouse.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜鷹野
+	DisableWindow();
+	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "sa_se_bi_b1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「......では、前回も今回も、殺されるようなことをしちゃってるんじゃありませんこと...？￥
+	OutputLine(NULL, "「……では、前回も今回も、殺されるようなことをしちゃってるんじゃありませんこと…？」",
+		   NULL, "\"...Then does that not mean he was doing something that got him killed both last time and this time...?\"", Line_Normal);
+	ClearMessage();
+
+//＜沙都子
+	DisableWindow();
+	DrawSceneWithMask( "bg_165", "right", 0, 0, 300 );
+//	PlayBGM( 1, "msys01", 128, 0 );
+	DrawBustshotWithFiltering( 3, "oi_si_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「...なるほど...＠前回と今回の前原くんの行動に共通項が見つけられれば...それが全体の事件の謎を解くカギになりそうですねぇ...。＠
+	OutputLine(NULL, "「…なるほど…。",
+		   NULL, "\"...I see...", Line_WaitForInput);
+	OutputLine(NULL, "前回と今回の前原くんの行動に共通項が見つけられれば…それが全体の事件の謎を解くカギになりそうですねぇ…。」",
+		   NULL, " If we can find something in common about Maebara-kun's actions between last time and this time... it seems like it would be the key to unraveling all the incidents...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜大石
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "tm_si_de_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「ざっとシナリオを読み比べたけど...、圭一くんなりに日々を送ってると思うよ＠...祭具殿の一件さえ除けば、圭一くんの日々の暮らしに不審な点は見当たらないけどなぁ！＠
+	OutputLine(NULL, "「ざっとシナリオを読み比べたけど…、圭一くんなりに日々を送ってると思うよ。",
+		   NULL, "\"I skimmed through the stories again... but I think he's going about his life in his own way.", Line_WaitForInput);
+	OutputLine(NULL, "…祭具殿の一件さえ除けば、圭一くんの日々の暮らしに不審な点は見当たらないけどなぁ！」",
+		   NULL, " ...Though aside from the part with the storehouse, I didn't spot anything suspicious about his daily lifestyle!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜富竹
+	DisableWindow();
+	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "re_se_ko_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「う～ん...＠...圭一くん、...前回や今回に何をやったのかな...＠　殺されるような悪いこと！＠
+	OutputLine(NULL, "「う〜ん…。",
+		   NULL, "\"Hmm...", Line_WaitForInput);
+	OutputLine(NULL, "…圭一くん、…前回や今回に何をやったのかな…？",
+		   NULL, " ...Keiichi-kun... What did you do both last time and this time...?", Line_WaitForInput);
+	OutputLine(NULL, "　殺されるような悪いこと！」",
+		   NULL, " Something bad that would cause you to be killed!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜レナ
+	DisableWindow();
+	FadeBustshotWithFiltering( 1, "left", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "ri_se_wa_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「......迷った時には本人に聞いてみるのが一番なのですよ。￥
+	OutputLine(NULL, "「……迷った時には本人に聞いてみるのが一番なのですよ。」",
+		   NULL, "\"...It's best to ask the person himself when you're unsure.\"", Line_Normal);
+	ClearMessage();
+
+//＜梨花
+	DisableWindow();
+	FadeOutBGM( 1, 1000, TRUE );
+	DrawScene( "black", 400 );
+	PlayBGM( 2, "lsys17", 128, 0 );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	FadeOutBGM( 2, 10, TRUE );
+	PlayBGM( 1, "msys03", 128, 0 );
+	DrawScene( "bg_011", 400 );
+
+//「......ほほぅ＠...俺がひとり寂しく次回の台本読みをしている間に、みんなはそーゆう話題で盛り上がっていたわけか＠ほー...。￥
+	OutputLine(NULL, "「……ほほぅ。",
+		   NULL, "\"......Hohoh.", Line_WaitForInput);
+	OutputLine(NULL, "…俺がひとり寂しく次回の台本読みをしている間に、みんなはそーゆう話題で盛り上がっていたわけか。",
+		   NULL, " ...So while I was reading the script for the next game all by myself, you were all talking about me behind my back, huh?", Line_WaitForInput);
+	OutputLine(NULL, "ほー…。」",
+		   NULL, " I see...\"", Line_Normal);
+	ClearMessage();
+
+//＜圭一
+	DisableWindow();
+	DrawBustshot( 3, "re_se_na_b1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	DrawSceneWithMask( "bg_165", "up", 0, 0, 1300 );
+
+//「と、言うわけなの＠だからね、圭一くんの自分の胸に聞いてみてほしいんだけど......。＠
+	OutputLine(NULL, "「と、言うわけなの。",
+		   NULL, "\"Well, that's that.", Line_WaitForInput);
+	OutputLine(NULL, "だからね、圭一くんの自分の胸に聞いてみてほしいんだけど……。」",
+		   NULL, " Anyway, Keiichi-kun, you should try asking your own heart...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜レナ
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "me_se_aw_a1", "right", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「圭ちゃん、殺されるような、どんな悪いことをやったわけぇ？＠
+	OutputLine(NULL, "「圭ちゃん、殺されるような、どんな悪いことをやったわけぇ？」",
+		   NULL, "\"Kei-chan, so what kind of bad thing did you to that would get you killed?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜魅音
+	DisableWindow();
+	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "sa_se_aw_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「私にいつも働いている狼藉のせいに違いないですわ～！！＠
+	OutputLine(NULL, "「私にいつも働いている狼藉のせいに違いないですわ〜！！」",
+		   NULL, "\"It must surely be all the violent things he does towards me~!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜沙都子
+	DisableWindow();
+	FadeBustshotWithFiltering( 1, "right", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "ri_se_wa_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「ボクのお胸をぎゅーっとやったのが犯罪に違いないのです。＠
+	OutputLine(NULL, "「ボクのお胸をぎゅーっとやったのが犯罪に違いないのです。」",
+		   NULL, "\"Squeezing my chest so tightly was surely a crime.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜梨花
+	DisableWindow();
+	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "tm_si_wa_a1", "left", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「そうそう＠　年頃の女の子たちに囲まれて毎日幸せってのが、そもそもの罪のような気がするなぁ。￥
+	OutputLine(NULL, "「そうそう！",
+		   NULL, "\"Yeah, yeah!", Line_WaitForInput);
+	OutputLine(NULL, "　年頃の女の子たちに囲まれて毎日幸せってのが、そもそもの罪のような気がするなぁ。」",
+		   NULL, " Being happy all day, surrounded by girls around his age, is kind of like a crime in the first place.\"", Line_Normal);
+	ClearMessage();
+
+//＜富竹
+	DisableWindow();
+	FadeBustshotWithFiltering( 1, "right", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1,"oi_si_wa_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「なっはっはっはっは！＠　それは確かに重罪ですねぇ＠　前原さん、実にうらやましい主人公役ですよぅ＠　たまには代わって下さい。＠
+	OutputLine(NULL, "「なっはっはっはっは！！",
+		   NULL, "\"Nah-ha-ha-ha-ha!!", Line_WaitForInput);
+	OutputLine(NULL, "　それは確かに重罪ですねぇ！",
+		   NULL, " A grave crime indeed!", Line_WaitForInput);
+	OutputLine(NULL, "　前原さん、実にうらやましい主人公役ですよぅ？",
+		   NULL, " Maebara-san is truly an envious main character, isn't he?", Line_WaitForInput);
+	OutputLine(NULL, "　たまには代わって下さい。」",
+		   NULL, " Switch out with me once in a while, would you?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜大石
+	DisableWindow();
+	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "ta_si_aw_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「くっくっく...＠　まぁ確かに、あれだけ役得がいろいろあれば、最後にちょっと刺されるくらい、お安い御用よねぇ。￥
+	OutputLine(NULL, "「くっくっく…！",
+		   NULL, "\"Ku-ku-ku...!", Line_WaitForInput);
+	OutputLine(NULL, "　まぁ確かに、あれだけ役得がいろいろあれば、最後にちょっと刺されるくらい、お安い御用よねぇ。」",
+		   NULL, " Well, with all those perks, getting stabbed at the end really isn't much of a price to pay.\"", Line_Normal);
+	ClearMessage();
+
+//＜鷹野
+	DisableWindow();
+	FadeAllBustshots( 400, TRUE );
+	DrawBustshot( 2, "sa_se_aw_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+
+//「というわけで圭一さん＠あなたの犯した罪を思い出しましてー？＠
+	OutputLine(NULL, "「というわけで圭一さん。",
+		   NULL, "\"Well, there you go, Keiichi-san.", Line_WaitForInput);
+	OutputLine(NULL, "あなたの犯した罪を思い出しましてー？」",
+		   NULL, " Have you remembered the crimes you've committed?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜沙都子
+
+	PlaySE( 3, "wa_006", 128, 64 );
+
+//「むがーーーーーッ！！！！/
+	OutputLine(NULL, "「むがーーーーーッ！！！！",
+		   NULL, "\"Mgaaahhhhhh!!!!", Line_ContinueAfterTyping);
+
+	ShakeScreen( 1, 50, 20, 4, 0, );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+
+//　今回も前回も！＠　清く正しく生きてる俺がいつもラストは酷い目にー！＠　その上さらに自分の胸に聞いてみろだとー？＠/
+	OutputLine(NULL, "　今回も前回も！！",
+		   NULL, "Both this time and last time...", Line_WaitForInput);
+	OutputLine(NULL, "　清く正しく生きてる俺がいつもラストは酷い目にー！！",
+		   NULL, " I live a proper and just life, and I always meet a terrible fate in the end!!", Line_WaitForInput);
+	OutputLine(NULL, "　その上さらに自分の胸に聞いてみろだとー？！",
+		   NULL, " What was that about 'ask my own heart'?!", Line_WaitForInput);
+
+	PlaySE( 3, "wa_006", 128, 64 );
+
+//　聞きたいのは俺の方だぞ、これはイジメだーーーーーーッ！！！！￥
+	OutputLine(NULL, "　聞きたいのは俺の方だぞ、これはイジメだーーーーーーッ！！！！」",
+		   NULL, " I'm the one who wants to know! This is bullying!!!!\"", Line_Normal);
+	ClearMessage();
+
+//＜圭一
+	DisableWindow();
+	DrawSceneWithMask( "bg_161", "left", 0, 0, 300 );
+	PlayBGM( 1, "msys02", 128, 0 );
+	DrawBustshotWithFiltering( 3, "ri_se_wa_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「.........かわいそかわいそです＠今度、頭をなでなでしてあげますですよ。＠
+	OutputLine(NULL, "「………かわいそかわいそです。",
+		   NULL, "\".........How sad, how sad.", Line_WaitForInput);
+	OutputLine(NULL, "今度、頭をなでなでしてあげますですよ。」",
+		   NULL, " I'll pet your head next time for you.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜梨花
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "si_si_de_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「今回のシナリオを読んだ上で、改めて「鬼隠し編」を読むべきかな...？＠
+	OutputLine(NULL, "「今回のシナリオを読んだ上で、改めて「鬼隠し編」を読むべきかな…？」",
+		   NULL, "\"I wonder if we should go back and read Onikakushi again after reading this one...?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜詩音
+	DisableWindow();
+	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "me_se_wi_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「私は、魅音の立場になって「綿流し編」を読み返してみるよ＠圭ちゃんの立場で読んだ時とは違う発見があるかもね。＠
+	OutputLine(NULL, "「私は、魅音の立場になって「綿流し編」を読み返してみるよ。",
+		   NULL, "\"I'm going to put myself in Mion's shoes and read back over Watanagashi.", Line_WaitForInput);
+	OutputLine(NULL, "圭ちゃんの立場で読んだ時とは違う発見があるかもね。」",
+		   NULL, " Maybe I'll find something different compared to when I read it from Kei-chan's point of view.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜魅音
+	DisableWindow();
+	FadeBustshotWithFiltering( 1, "right", 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sa_se_wa_b1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「私は『鬼』の仕業だとずーっと思ってますのよ！＠　全ての現象とトリックは、全て『鬼』で説明がつきますのよー！！！＠
+	OutputLine(NULL, "「私は『鬼』の仕業だとずーっと思ってますのよ！！",
+		   NULL, "\"I will always think it was the doing of a demon!!", Line_WaitForInput);
+	OutputLine(NULL, "　全ての現象とトリックは、全て『鬼』で説明がつきますのよー！！！」",
+		   NULL, " All of the events and tricks can be explained with a demon!!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜沙都子
+	DisableWindow();
+	DrawBustshot( 2, "ri_se_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+
+//「......何だかプラズマみたいなのです。￥
+	OutputLine(NULL, "「……何だかプラズマみたいなのです。」",
+		   NULL, "\"......It's kind of like plasma.\"", Line_Normal);
+	ClearMessage();
+
+//＜梨花
+	DisableWindow();
+	DrawSceneWithMask( "bg_165", "right", 0, 0, 300 );
+	DrawBustshotWithFiltering( 3, "re_se_de_a1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「プレイしてくださった皆さんはどうお感じになりましたか＠　ぜひ皆さんのご意見ご感想を聞かせてくださいね！＠
+	OutputLine(NULL, "「プレイしてくださった皆さんはどうお感じになりましたか？",
+		   NULL, "\"What did you, the readers, think about it?", Line_WaitForInput);
+	OutputLine(NULL, "　ぜひ皆さんのご意見ご感想を聞かせてくださいね！」",
+		   NULL, " We'd certainly like to hear your thoughts and opinions!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//	DisableWindow();
+//	DrawBustshotWithFiltering( 1, "me_se_wa_b2", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「ご感想はメールで？　アドレスとかはあるの？￥
+//.."Can they send us an e-mail? Is there an address?"
+	ClearMessage();
+
+//＜魅音
+//	DisableWindow();
+//	DrawBustshot( 3, "re_se_wa_b1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//「はい＠　竜騎士07のメールアドレスへ直接どうぞ＠
+//.."Yes!@
+//.. You can send it to Dragon Knight 07!@
+//..@
+//..\n<
+
+
+//　ｆｕｊｉｘ＠ａｃｎ．ｎｅ．ｊｐ　になります。＠
+//..The address is fujix@
+//.. acn.ne.jp ."@
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+
+//＜レナ
+//	DisableWindow();
+//	FadeBustshotWithFiltering( 1, "left", 1, FALSE, 0, 0, 300, TRUE );
+//	DrawBustshotWithFiltering( 1, "ri_se_wa_a1", "right", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//..\n\n<
+//「......サークル、０７ｔｈ　ＥｘｐａｎｓｉｏｎのＨＰへもどうぞなのです＠
+//.."You can also enjoy our homepage, 07th Expansion.@
+//..\n<
+
+
+//　ｈｔｔｐ：／／ｗｗｗ．ｔｋ３．ｓｐｅｅｄ．ｃｏ．ｊｐ／ｆｏｒｙｏｕ／　...なのですよ。＠
+//..http://www.tk3.speed.co.jp/foryou/  okay?"@
+//..\n<
+
+
+//＜梨花
+//	DisableWindow();
+//	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+//	DrawBustshotWithFiltering( 3, "sa_se_wa_b1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+//..\n\n<
+//「『ひぐらしのなく頃に』のジャケットの裏側にも書いてありますわね。￥
+//.."The address is also on the back of the cover for 'Higurashi when they cry'."
+//	ClearMessage();
+
+//＜沙都子
+//	DisableWindow();
+//	DrawBustshot( 2, "me_se_wa_b2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+
+//「皆さんのご意見、お待ちしてま～す！！！￥
+//.."We'll be waiting to hear from you!!"
+	ClearMessage();
+
+//＜魅音
+	DisableWindow();
+//	FadeAllBustshots( 400, TRUE );
+	DrawBustshot( 3, "re_se_wa_b1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//「それでは引き続き、『ひぐらしのなく頃に～祟殺し編～』をお楽しみ下さい。￥
+	OutputLine(NULL, "「ご感想はメールで？　アドレスとかはあるの？」",
+		   NULL, "\"Through the mail? Is there an address?\"", Line_Normal);
+	ClearMessage();
+
+//mov %CAMP_MUGIC,0
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+//	Wait( 3000 );
+	DrawBustshotWithFiltering( 6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1500, TRUE );
+	DrawBustshot( 7, "Title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot( 5, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	Wait( 1000 );
+	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
+	DrawScene( "black", 3000 );
+	SetValidityOfInput( TRUE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+
+//gosub *Omake_E
+//mov %Omake_Game,1
+//mov %SDB_In,1
+
+//setwindow 31,16,22,16,26,26,0,2,20,1,1,#ffffff,0,0,639,479
+
+	DrawScene( "black", 1000 );
+//	DrawSceneWithMask( "s_jump_back", "4", 0, 0, 1000 );
+//bg ":c;BMP\Efe\Omake_Haikei.bmp",18,1500,":c;BMP\Efe\4.bmp"
+//	PlaySE( 3, "wa_041", 128, 64 );
+//bg ":c;BMP\Efe\Omake_SFB.bmp",18,1500,":c;BMP\Efe\5.bmp"
+//	Wait( 10000 );
+//bg ":c;BMP\Efe\Omake_Haikei.bmp",18,1500,":c;BMP\Efe\4.bmp"
+//	PlaySE( 3, "wa_036", 128, 64 );
+//	DrawSceneWithMask( "Ex_tata", "5", 0, 0, 1000 );
+//bg ":c;BMP\Efe\Omake_Tatari.bmp",18,1500,":c;BMP\Efe\5.bmp"
+//	Wait( 10000 );
+
+	DrawScene( "black", 1000 );
+//gosub *Omake_E
+
+
+//goto *Omake_mode
+
+
+	GetAchievement("HIGURASHI_STORY_EP02_OMAKE");
+
+}
