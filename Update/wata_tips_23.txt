@@ -10,8 +10,8 @@ void main()
 	FadeOutBGM( 2, 1000, TRUE );
 	DisableWindow();
 	DrawScene("black", 1000 );
-	PlayBGM( 1, "msys11", 128, 0 );
-	PlaySE( 3, "wa_021", 128, 64 );
+	PlayBGM( 1, "msys11", 56, 0 );
+	PlaySE( 3, "wa_021", 56, 64 );
 	DrawScene("background/simen3", 1000 );
 
 //locate 4,6
@@ -27,7 +27,7 @@ void main()
 	ClearMessage();
 
 	SetStyleOfMessageSwinging( 0 );
-	PlaySE( 3, "wa_021", 128, 64 );
+	PlaySE( 3, "wa_021", 56, 64 );
 
 //　雛見沢に限ったことではないのだろうが、とりわけ、鬼ヶ淵村の御三家は当主跡継ぎに双子が生まれることを嫌った＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -42,7 +42,7 @@ void main()
 		   NULL, "The long-term dictatorship built on the precarious balance of the Three Families must have feared collapsing under the weight of internal strife from things like family quarrels.", Line_Normal);
 	ClearMessage();
 
-	PlaySE( 3, "wa_021", 128, 64 );
+	PlaySE( 3, "wa_021", 56, 64 );
 
 //　文献には、双子が生まれたなら直ちに間引くべしとまで記されている＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -57,7 +57,7 @@ void main()
 		   NULL, "With that, the very fact that both the Sonozaki family successor, Mion Sonozaki, and her twin, Shion, are alive is in itself deeply interesting. (Perhaps the current leader, Oryou, is sympathetic?)", Line_Normal);
 	ClearMessage();
 
-	PlaySE( 3, "wa_021", 128, 64 );
+	PlaySE( 3, "wa_021", 56, 64 );
 
 //　もっとも、この双子は公平には扱われず、跡継ぎの魅音は別格の扱いを受けているそうだ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -84,7 +84,7 @@ void main()
 		   NULL, "In accordance with the tradition, there is an extremely high possibility that Mion has such a tattoo on her back.", Line_Normal);
 	ClearMessage();
 
-	PlaySE( 3, "wa_021", 128, 64 );
+	PlaySE( 3, "wa_021", 56, 64 );
 
 //　伝え聞く話では、現当主お魎の背中にも、それはそれは立派な鬼の刺青が入れられているそうである＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

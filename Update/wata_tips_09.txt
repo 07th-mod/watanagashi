@@ -10,9 +10,9 @@ void main()
 	FadeOutBGM( 2, 1000, TRUE );
 	DisableWindow();
 	DrawScene("black", 1000 );
-	PlaySE( 3, "wa_021", 128, 64 );
+	PlaySE( 3, "wa_021", 56, 64 );
 	DrawScene("background/simen3", 400 );
-	PlayBGM( 1, "msys11", 128, 0 );
+	PlayBGM( 1, "msys11", 56, 0 );
 
 //locate 4,6
 	if (GetGlobalFlag(GADVMode) == 0) { SetDrawingPointOfMessage( 0, 6 ); }
@@ -26,7 +26,7 @@ void main()
 	ClearMessage();
 
 
-	PlaySE( 3, "wa_021", 128, 64 );
+	PlaySE( 3, "wa_021", 56, 64 );
 
 //　古代の宗教儀式に用いられた儀式道具は「祭具」と呼ばれ、その一部が今日も古手神社や御三家の蔵に祀られている＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -42,7 +42,7 @@ void main()
 		   NULL, "However, the identifiable tools are all decorative, and none appear to have been used in rituals governing the dark side of Onigafuchi Village.", Line_Normal);
 	ClearMessage();
 
-	PlaySE( 3, "wa_021", 128, 64 );
+	PlaySE( 3, "wa_021", 56, 64 );
 
 //　幕末から明治にかけ、数々の伝統儀式が喪失した際にそれらも紛失＠もしくは闇に葬られてしまったのだろうか＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -73,7 +73,7 @@ void main()
 		   NULL, "Without a doubt, they exist here, today, at this very moment, in Hinamizawa.", Line_Normal);
 	ClearMessage();
 
-	PlaySE( 3, "wa_021", 128, 64 );
+	PlaySE( 3, "wa_021", 56, 64 );
 
 //　それがどこに祀られているか、九分見当はついている＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -97,14 +97,14 @@ void main()
 		   NULL, "However, it is not far from the assembly hall, nor is it ever far from the presence of people.", Line_Normal);
 	ClearMessage();
 
-	PlaySE( 3, "wa_021", 128, 64 );
+	PlaySE( 3, "wa_021", 56, 64 );
 
 //　だが私は諦めない。/
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だが私は諦めない。",
 		   NULL, "However, I will not give up.", Line_ContinueAfterTyping);
 
-	PlaySE( 3, "wa_024", 128, 64 );
+	PlaySE( 3, "wa_024", 56, 64 );
 
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 

@@ -10,11 +10,11 @@ void dialog001()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 
-	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300509", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300509", 256, TRUE);
 	OutputLine(NULL, "「はーい！！　みんな傾注傾注〜！",
 		   NULL, "\"Alright! Everybody pay attention~!", Line_WaitForInput);
 
-	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300510", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300510", 256, TRUE);
 	OutputLine(NULL, "　ルールを説明するよ〜！！」",
 		   NULL, " I'm going to explain the rules~!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -24,18 +24,18 @@ void dialog001()
 void dialog002()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s19/01/vt0_keiichi0002", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/vt0_keiichi0002", 256, TRUE);
 	OutputLine(NULL, "　……小学校の頃…罰ゲームってのがあったら……うん。",
 		   NULL, "\"...When I was in elementary school... there was a penalty game... yeah.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s19/01/vt0_keiichi0003", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/vt0_keiichi0003", 256, TRUE);
 	OutputLine(NULL, "やっぱりアレだよな。",
 		   NULL, " It can only be 'that.'", Line_WaitForInput);
 
-	PlaySE( 3, "wa_010", 128, 64 );
+	PlaySE( 3, "wa_010", 56, 64 );
 
 //荷物持ち￥
 
-	ModPlayVoiceLS(4, 1, "ps3/s19/01/vt0_keiichi0004", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/vt0_keiichi0004", 256, TRUE);
 	OutputLine(NULL, "荷物持ち！",
 		   NULL, " Schlepping!\"", Line_Normal);
 }
@@ -44,7 +44,7 @@ void dialog003()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 
-	ModPlayVoiceLS(4, 5, "ps3/s19/05/990500121", 128, TRUE);
+	ModPlayVoiceLS(4, 5, "ps3/s19/05/990500121", 256, TRUE);
 	OutputLine(NULL, "「………「カードマスターさくら」って書いてありますです。」",
 		   NULL, "\"...'Card Master Sakura'  is written down here.\"", Line_Normal);
 
@@ -53,7 +53,7 @@ void dialog003()
 void dialog004()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11170", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11170", 256, TRUE);
 	OutputLine(NULL, "「さ、",
 		   NULL, "\"Sa--", Line_Continue);
 
@@ -73,8 +73,8 @@ void dialog004()
 		   NULL, " Sa-", Line_Continue);
 
 
-	PlaySE( 3, "wa_006", 128, 64 );
-	PlayBGM( 1, "msys03", 128, 0 );
+	PlaySE( 3, "wa_006", 56, 64 );
+	PlayBGM( 1, "msys03", 56, 0 );
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
 
@@ -100,14 +100,14 @@ void dialog005()
 void dialog006()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300596", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300596", 256, TRUE);
 	OutputLine(NULL, "「……いやそんな、力説しなくてもよく知ってるよ。",
 		   NULL, "\"...Um yeah, even without the forced explanation, I know about it.", Line_WaitForInput);
 
 	OutputLine(NULL, "あの毎週、違うコスチュームで戦うヤツでしょ？",
 		   NULL, " It's that thingy where she fights in a different costume every week, right?", Line_WaitForInput);
 
-	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300598", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300598", 256, TRUE);
 	OutputLine(NULL, "　うん。",
 		   NULL, " Yeah.", Line_Continue);
 
@@ -170,7 +170,7 @@ void dialog010()
 		   NULL, "I felt like I had inadvertently blurted out something unnecessary and had completely self-destructed but... that wasn't the main problem.", Line_Normal);
 	ClearMessage();
 
-	PlaySE( 3, "wa_006", 128, 64 );
+	PlaySE( 3, "wa_006", 56, 64 );
 	ShakeScreen( 1, 50, 20, 3, 0, );
 
 //「お、お前ら全員知ってるじゃねぇかぁあぁあ？！？＠　それを何で書かなねぇんだよぉおぉおお？！？＠
@@ -191,7 +191,7 @@ void dialog010()
 	OutputLine(NULL, "　カードマスターさくらって考えるのが正しいんだよぉおおおぉおぉおーー…ッ！！！」",
 		   NULL, " Card Master Sakura is the right answeeeeeeeeeeeer!!!\"", Line_ContinueAfterTyping);
 
-	PlaySE( 3, "wa_007", 128, 64 );
+	PlaySE( 3, "wa_007", 56, 64 );
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
 	ClearMessage();
@@ -202,7 +202,7 @@ void dialog010()
 void dialog011()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300641", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300641", 256, TRUE);
 	OutputLine(NULL, "　こ〜れで股間にでっかいのが付いてなきゃ本物の女の子なのにな〜〜！！」",
 		NULL, "If o~nly you didn't have this big thing dangling between your legs you'd be a real girl~~!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }

@@ -9,10 +9,10 @@ void dialog000()
 void dialog001()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700105", 128, TRUE);
+	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700105", 256, TRUE);
 	OutputLine(NULL, "「私たちだって税金払ってるんですけどねぇ。",
 		   NULL, "\"We're taxpayers too, you know.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700106", 128, TRUE);
+	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700106", 256, TRUE);
 	OutputLine(NULL, "…ソバ屋さんが自分のつくったソバ食ってるみたいな気分ですよ。なっはっはっは…！」",
 		   NULL, " ...I feel like a soba noodle chef eating my own soba. Na-ha-ha-ha-ha...!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -21,10 +21,10 @@ void dialog001()
 void dialog002()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700160", 128, TRUE);
+	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700160", 256, TRUE);
 	OutputLine(NULL, "「御三家ってご存知ですかな？",
 		   NULL, "\"Are you familiar with the Three Families?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700161", 128, TRUE);
+	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700161", 256, TRUE);
 	OutputLine(NULL, "　綿流しのお祭りの開会式典で、各家の代表がそれぞれ挨拶をなさっているでしょう。」",
 		   NULL, " Representatives from each of them gave short addresses at the Watanagashi festival's opening ceremony.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -32,10 +32,10 @@ void dialog002()
 
 //「......祭りには...途中から来たから...よくは...。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100732", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100732", 256, TRUE);
 	OutputLine(NULL, "「見ていません。",
 		   NULL, "\"I didn't see them.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100733", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100733", 256, TRUE);
 	OutputLine(NULL, "……祭りには…途中から来たから…よくは…。」",
 		   NULL, " ...I came... partway through the festival... so I don't really...\"", Line_Normal);
 }
@@ -43,7 +43,7 @@ void dialog002()
 void dialog003()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100737", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100737", 256, TRUE);
 	OutputLine(NULL, "「そんなの、俺にだってさっぱりです。」",
 		   NULL, "\"I don't know anything about it either.\"", Line_Normal);
 }

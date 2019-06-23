@@ -9,7 +9,7 @@ void dialog000()
 void dialog001()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500016", 128, TRUE);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500016", 256, TRUE);
 	OutputLine(NULL, "「……他にも、サラ金屋さんとか、地上げ屋さんとか、イメクラ屋さんとか、ソープランド屋さんとか。",
 		   NULL, "\"...There are others, like a loan shark, a land shark, a strip club, and a brothel.", Line_Continue);
 	OutputLine(NULL, "いろいろやってると言ってますです。」",
@@ -20,7 +20,7 @@ void dialog001()
 void dialog002()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100056", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100056", 256, TRUE);
 	OutputLine(NULL, "「あいつに小銭を借りると、妙に返却期限にうるさいのは、サラ金屋の血が流れてるからかー。",
 		   NULL, "\"So the reason she's so fussy about returning money she lent you is because the blood of loan sharks runs through her veins, huh?", Line_WaitForInput);
 	OutputLine(NULL, "納得納得！」",
@@ -31,7 +31,7 @@ void dialog002()
 void dialog003()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500017", 128, TRUE);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500017", 256, TRUE);
 	OutputLine(NULL, "「……魅ぃにお買い物代を借りたことをコロリと忘れてしまったら、",
 		   NULL, "\"......Once, I completely forgot to pay Mii back for money she gave me to go shopping, ", Line_Continue);
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -54,7 +54,7 @@ void dialog003()
 void dialog004()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400025", 128, TRUE);
+	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400025", 256, TRUE);
 	OutputLine(NULL, "「お風呂に沈められて溺れ死ぬなんて、おマヌケにもほどがありますわね〜！」",
 		   NULL, "\"Dying by being thrown on the ground must be the silliest form of death I've ever heard of~!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

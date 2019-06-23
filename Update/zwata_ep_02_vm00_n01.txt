@@ -9,26 +9,26 @@ void dialog000()
 void dialog001()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700414", 128, TRUE);
+	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700414", 256, TRUE);
 	OutputLine(NULL, "「前原さんの好みがわからなかったので、いろいろと持ってきましたよ〜。",
 		   NULL, "\"I didn't know what you were into, Maebara-san, so I brought all sorts of things~", Line_WaitForInput);
-	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700415", 128, TRUE);
+	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700415", 256, TRUE);
 	OutputLine(NULL, "ほぅら、洋物に劇画からかわいらしいのまで色々！",
 		   NULL, " See, all sorts of cute-looking ones, from Westerns to comic strips!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700416", 128, TRUE);
+	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700416", 256, TRUE);
 	OutputLine(NULL, "　最近はこんな女の子向けみたいなＨマンガもあるんですねぇ〜。」",
 		   NULL, " Lately they have this sort of H-manga aimed at girls, too~\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //「エエエエ、エロ本なんか持ってこないで下さい～！！＠　持って帰って持って帰って！＠　痛ててててて...！！￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s02/01/130101198", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s02/01/130101198", 256, TRUE);
 	OutputLine(NULL, "「エエエエ、エロ本なんか持ってこないで下さい〜！！！",
 		   NULL, "\"D-D-D-D-D-D-D-Don't bring porn in here~!!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s02/01/130101199", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s02/01/130101199", 256, TRUE);
 	OutputLine(NULL, "　持って帰って持って帰って！！",
 		   NULL, " Take them away, and go home!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s02/01/130101200", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s02/01/130101200", 256, TRUE);
 	OutputLine(NULL, "　痛ててててて…！！」",
 		   NULL, " Ow, ow ow ow ow...!!\"", Line_Normal);
 }
@@ -36,7 +36,7 @@ void dialog001()
 void dialog002()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps2/11/130700467", 240, TRUE);
+	ModPlayVoiceLS(4, 11, "ps2/11/130700467", 256, TRUE);
 	OutputLine(NULL, "「園崎家は本業の方、",
 		   NULL, "\"The Sonozaki family corporates...", Line_Continue);
 
@@ -46,17 +46,17 @@ void dialog002()
 
 	OutputLine(NULL, "…あぁ、ヤクザ屋さんのことです。",
 		   NULL, " er, the yakuza people.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 11, "ps2/11/130700468", 240, TRUE);
+	ModPlayVoiceLS(4, 11, "ps2/11/130700468", 256, TRUE);
 	OutputLine(NULL, "…で、覚醒剤を扱ってるとの噂がありましてね。",
 		   NULL, " ...Anyway, there's rumors that they deal in psychostimulants.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 11, "ps2/11/130700469", 240, TRUE);
+	ModPlayVoiceLS(4, 11, "ps2/11/130700469", 256, TRUE);
 	OutputLine(NULL, "…その可能性もあるかなんて思ってたのですが。」",
 		   NULL, " ...I was thinking that might have something to do with it, too.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //「.........梨花ちゃんが、...覚醒剤の常用者だって言うのか...？！￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps2/01/130101215", 240, TRUE);
+	ModPlayVoiceLS(4, 1, "ps2/01/130101215", 256, TRUE);
 	OutputLine(NULL, "「………梨花ちゃんが、…覚醒剤の常用者だって言うのか…？！」",
 		   NULL, "\".........Are you trying to tell me... that Rika-chan is a drug addict...?!\"", Line_Normal);
 }

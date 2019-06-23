@@ -10,11 +10,11 @@ void dialog001()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 
-	ModPlayVoiceLS(4, 4, "ps3/s19/04/990400171", 128, TRUE);
+	ModPlayVoiceLS(4, 4, "ps3/s19/04/990400171", 256, TRUE);
 	OutputLine(NULL, "「圭々がいじめたぁあぁあ！！！",
 		   NULL, "\"Kei-kei is bullying meeeeeEEeee!!!", Line_WaitForInput);
 
-	ModPlayVoiceLS(4, 4, "ps3/s19/04/990400172", 128, TRUE);
+	ModPlayVoiceLS(4, 4, "ps3/s19/04/990400172", 256, TRUE);
 	OutputLine(NULL, "　わぁああぁああぁあああぁあんッ！！！」",
 		   NULL, " WaaaaaaAAaaaAAAaaa!!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -23,11 +23,11 @@ void dialog001()
 void dialog002()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300411", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300411", 256, TRUE);
 	OutputLine(NULL, "「みんないいかな〜？！",
 		   NULL, "\"Is everybody ready~?!", Line_WaitForInput);
 
-	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300412", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300412", 256, TRUE);
 	OutputLine(NULL, "　傾注傾注〜！！」",
 		   NULL, " Listen close now~!!\"", GetGlobalFlag(GLinemodeSp));
 
@@ -37,7 +37,7 @@ void dialog002()
 void dialog003()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei09900_03", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei09900_03", 256, TRUE);
 	OutputLine(NULL, "　自分に素直になれッ！！！",
 		   NULL, "Be honest with yourselves!!!", Line_Continue);
 	OutputLine(NULL, "夢を追え！！",
@@ -50,7 +50,7 @@ void dialog003()
 	OutputLine(NULL, "俺がだぁああぁあぁあッ！！！！」",
 		   NULL, " I wiiiiilllllll!!!!\"", Line_ContinueAfterTyping);
 
-	PlaySE( 3, "wa_006", 128, 64 );
+	PlaySE( 3, "wa_006", 56, 64 );
 	ShakeScreen( 1, 50, 20, 4, 0, );
 
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
@@ -62,7 +62,7 @@ void dialog004()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 
-	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300473", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300473", 256, TRUE);
 	OutputLine(NULL, "「圭ちゃんが持ってたら、確実に明日から変態扱いだね。うん！」",
 		   NULL, "\"If you walked around with it, then you'd be treated like a weirdo starting tomorrow. Definitely!\"", Line_Normal);
 
@@ -84,6 +84,6 @@ void dialog006()
 	OutputLine(NULL, "美少女！！",
 		   NULL, " Pretty girls!!", Line_Continue);
 
-	PlaySE( 3, "wa_011", 128, 64 );
+	PlaySE( 3, "wa_011", 56, 64 );
 	OutputLineAll(NULL, "", Line_WaitForInput);
 }

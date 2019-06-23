@@ -4,7 +4,7 @@ void main()
 
 void dialog001()
 {
-	ModPlayVoiceLS(4, 3, "ps3/s19/03/500300003", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps3/s19/03/500300003", 256, TRUE);
 	OutputLine(NULL, "　偏執的なくらいに！！」",
 		NULL, " Unyieldingly so!!\"", GetGlobalFlag(GLinemodeSp));
 }
@@ -13,7 +13,7 @@ void dialog002()
 {
 //「かつてフランスからミシュランの三ツ星シェフが来日した時、ホテルの人たちが様々な材料をフランスから空輸したんだそうです＠でもそのシェフはそれらに見向きもしませんでした。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s19/03/500300064", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps3/s19/03/500300064", 256, TRUE);
 	OutputLine(NULL, "「かつてフランスからミシュランの三ツ星シェフが来日した時、ホテルの人たちが様々な材料をフランスから空輸したんだそうです。",
 		NULL, "\"There's a story about how when a Michelin 3-star chef from France came to Japan, the people from the hotel he was staying at had a whole bunch of ingredients imported from France.", GetGlobalFlag(GLinemodeSp));
 }

@@ -10,8 +10,8 @@ void main()
 	FadeOutBGM( 2, 1000, TRUE );
 	DisableWindow();
 	DrawScene("black", 1000 );
-	PlayBGM( 1, "msys15", 128, 0 );
-	PlaySE( 3, "wa_021", 128, 64 );
+	PlayBGM( 1, "msys15", 56, 0 );
+	PlaySE( 3, "wa_021", 56, 64 );
 	DrawScene("background/simen3", 1000 );
 
 //locate 4,6
@@ -27,7 +27,7 @@ void main()
 	ClearMessage();
 
 	SetStyleOfMessageSwinging( 0 );
-	PlaySE( 3, "wa_021", 128, 64 );
+	PlaySE( 3, "wa_021", 56, 64 );
 
 //　犠牲者を狩り、それを食す宴、綿流し＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -50,7 +50,7 @@ void main()
 	ClearMessage();
 
 
-	PlaySE( 3, "wa_021", 128, 64 );
+	PlaySE( 3, "wa_021", 56, 64 );
 
 //　だが、その説に一石を投じる興味深い文献を見つけた＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -78,7 +78,7 @@ void main()
 	OutputLine(NULL, "　女子供は蒼白になりながら震え、血に弱い者は嘔吐しながらも、それでもなお、宴（解体作業）を見ることを強要されたのだと言う。",
 		   NULL, "Women and children would grow pale and tremble, and those of weak constitution would vomit—but it said that the feast (the dissection) was an obligatory viewing.", Line_Normal);
 	ClearMessage();
-	PlaySE( 3, "wa_021", 128, 64 );
+	PlaySE( 3, "wa_021", 56, 64 );
 
 //　これは非常に面白い異聞だ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -103,7 +103,7 @@ void main()
 	ClearMessage();
 
 
-	PlaySE( 3, "wa_021", 128, 64 );
+	PlaySE( 3, "wa_021", 56, 64 );
 
 //　だが、この儀式によって村人が得ていたものが陶酔でなく恐怖だったとすると、儀式の意味するところは大きく変わってしまう＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -117,7 +117,7 @@ void main()
 	OutputLine(NULL, "　つまり、有力者たちが自分たちの都合のいいように組み上げた戒律を厳守させるために催した、見せしめ処刑だった可能性が出てくる。",
 		   NULL, "There's the possibility that the executions were meant as warnings, encouraging the villagers to strictly follow religious precepts created by those with power for their own convenience.", Line_Normal);
 	ClearMessage();
-	PlaySE( 3, "wa_021", 128, 64 );
+	PlaySE( 3, "wa_021", 56, 64 );
 
 //　鬼ヶ淵村を実効支配してきたのは御三家と呼ばれる３つの旧家だ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

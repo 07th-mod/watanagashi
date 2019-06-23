@@ -11,8 +11,8 @@ void main()
 	FadeOutBGM( 2, 1000, TRUE );
 	DisableWindow();
 	DrawScene("black", 1000 );
-	PlayBGM( 1, "msys13", 128, 0 );
-	PlaySE( 3, "wa_021", 128, 64 );
+	PlayBGM( 1, "msys13", 56, 0 );
+	PlaySE( 3, "wa_021", 56, 64 );
 	DrawScene("background/simen3", 1000 );
 
 //locate 5,6
@@ -27,7 +27,7 @@ void main()
 	ClearMessage();
 
 	SetStyleOfMessageSwinging( 0 );
-	PlaySE( 3, "wa_021", 128, 64 );
+	PlaySE( 3, "wa_021", 56, 64 );
 
 //　御三家は鬼ヶ淵村を実効支配してきた３つの旧家を指す＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -57,7 +57,7 @@ void main()
 		   NULL, "The Three Families are considered by legend to be those in whom the blood of the swamp demons runs the thickest.", Line_Normal);
 	ClearMessage();
 
-	PlaySE( 3, "wa_021", 128, 64 );
+	PlaySE( 3, "wa_021", 56, 64 );
 
 //＜公由（キミヨシ）家＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -93,7 +93,7 @@ void main()
 		   NULL, "Of course, as no rival candidates appear, it doesn't change the fact that the Kimiyoshi family holds the mayoral office even through popular elections in the post-war era.", Line_Normal);
 	ClearMessage();
 
-	PlaySE( 3, "wa_021", 128, 64 );
+	PlaySE( 3, "wa_021", 56, 64 );
 
 //＜古手（フルデ）家＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -115,7 +115,7 @@ void main()
 		   NULL, "They were worshipped as the only people to represent the voice of Oyashiro-sama for a long time, but the family branched off after the war and lost most of its power. It now consists of only the main house.", Line_Normal);
 	ClearMessage();
 
-	PlaySE( 3, "wa_021", 128, 64 );
+	PlaySE( 3, "wa_021", 56, 64 );
 
 //　その本家も、現在では一人娘（古手梨花）を残すのみなので、この代で潰えるかもしれない＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -131,7 +131,7 @@ void main()
 	ClearMessage();
 
 
-	PlaySE( 3, "wa_021", 128, 64 );
+	PlaySE( 3, "wa_021", 56, 64 );
 
 //＜園崎（ソノザキ）家＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -153,7 +153,7 @@ void main()
 		   NULL, "Of the three families, their relatively weak position can be seen from me putting them here last.", Line_Normal);
 	ClearMessage();
 
-	PlaySE( 3, "wa_021", 128, 64 );
+	PlaySE( 3, "wa_021", 56, 64 );
 
 //　もっとも、今日の園崎家は隆盛を極め、御三家内における立場は完全に逆転している＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

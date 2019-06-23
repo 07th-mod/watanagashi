@@ -11,9 +11,9 @@ void main()
 	FadeOutBGM( 2, 1000, TRUE );
 	DisableWindow();
 	DrawScene("black", 1000 );
-	PlaySE( 3, "wa_021", 128, 64 );
+	PlaySE( 3, "wa_021", 56, 64 );
 	DrawScene("background/simen3", 400 );
-	PlayBGM( 1, "msys09", 128, 0 );
+	PlayBGM( 1, "msys09", 56, 0 );
 
 //locate 4,6
 
@@ -28,7 +28,7 @@ void main()
 		   NULL, "<Oyashiro-sama's Curse>", Line_Normal);
 	ClearMessage();
 	SetStyleOfMessageSwinging( 0 );
-	PlaySE( 3, "wa_021", 128, 64 );
+	PlaySE( 3, "wa_021", 56, 64 );
 
 //　古代鬼ヶ淵村では、オヤシロさまの怒り（祟り）は何よりも恐れられていた＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -44,7 +44,7 @@ void main()
 		   NULL, "However, it is seldom stated anywhere what eventually happens, and what sort of divine judgement (curse) befalls them when Oyashiro-sama is angry.", Line_Normal);
 	ClearMessage();
 
-	PlaySE( 3, "wa_021", 128, 64 );
+	PlaySE( 3, "wa_021", 56, 64 );
 
 //　伝聞から調べる限りでは＠「地獄の釜が開く＠「鬼が溢れ出す＠「地獄の瘴気が溢れ出し、村人たちことごとく逃れることも叶わず、息絶えるなり＠といった、村の全滅を想起させる物騒なものが目立つ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -69,7 +69,7 @@ void main()
 		   NULL, "These terrifying ideas of divine punishment are in alignment with many other religious beliefs regarding the apocalypse (Hell), and it's easy to imagine that they are just ways of convincing people to obey the teachings in order to prevent such an end.", Line_Normal);
 	ClearMessage();
 
-	PlaySE( 3, "wa_021", 128, 64 );
+	PlaySE( 3, "wa_021", 56, 64 );
 
 //　オヤシロさまの怒りに触れる条件が、イコール鬼ヶ淵村における禁忌（タブー）と言えるだろう＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

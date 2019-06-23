@@ -13,10 +13,10 @@ void dialog001()
 
 //「梨花ちゃんは綿流しの巫女さんだから、奉納の演舞をすることになっててね＠その練習なの。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s19/02/500200081", 128, TRUE);
+	ModPlayVoiceLS(4, 2, "ps3/s19/02/500200081", 256, TRUE);
 	OutputLine(NULL, "「梨花ちゃんは綿流しの巫女さんだから、奉納の演舞をすることになっててね。",
 		   NULL, "\"Rika-chan is a shrine maiden for the Watanagashi, so she has to perform a ritual dance.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s19/02/500200082", 128, TRUE);
+	ModPlayVoiceLS(4, 2, "ps3/s19/02/500200082", 256, TRUE);
 	OutputLine(NULL, "その練習なの。」",
 		   NULL, " It's practice for that.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -75,7 +75,7 @@ void dialog004()
 		   NULL, "\"The cotton, you see, is from futons or jackets.", Line_WaitForInput);
 	OutputLine(NULL, "だから、お布団の供養になるのかな？",
 		   NULL, " So it'd be something like a futon memorial?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s19/02/500200087", 128, TRUE);
+	ModPlayVoiceLS(4, 2, "ps3/s19/02/500200087", 256, TRUE);
 	OutputLine(NULL, "　…祭壇にもお布団を積み上げているし。」",
 		   NULL, " ...They also pile futons up on the altar.\"", Line_Normal);
 	ClearMessage();
@@ -93,21 +93,21 @@ void dialog005()
 		   NULL, " What's the history behind that?\"", GetGlobalFlag(GLinemodeSp));
 
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-	
+
 	DisableWindow();
 	ModDrawCharacter(3, 2, "sprite/normal/re3a_warai_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
-	
+
 }
 
 void dialog006()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不良</color>", NULL, "<color=#f5e6d3>Delinquent</color>", NULL, Line_ContinueAfterTyping); }
 
-	ModPlayVoiceLS(4, 0, "ps3/s19/00/badb50006", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s19/00/badb50006", 256, TRUE);
 	OutputLine(NULL, "「クソ女がぁあぁぁあぁああ！！！",
 		   NULL, "\"Ye fookin biiiiitch!!", Line_WaitForInput);
 
-	ModPlayVoiceLS(4, 0, "ps3/s19/00/badb50007", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s19/00/badb50007", 256, TRUE);
 	OutputLine(NULL, "　ッくぞンにゃろぉおおおぉおお！！」",
 		   NULL, " I'll fookin bash yer ead in!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -116,7 +116,7 @@ void dialog006()
 void dialog007()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>女</color>", NULL, "<color=#f5e6d3>Woman</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s19/00/womb50004", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s19/00/womb50004", 256, TRUE);
 	OutputLine(NULL, "　ブツブツ！」",
 		   NULL, "*grumble*\"", GetGlobalFlag(GLinemodeSp));
 }
@@ -124,11 +124,11 @@ void dialog007()
 void dialog008()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s19/06/500600093", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps3/s19/06/500600093", 256, TRUE);
 	OutputLine(NULL, "「それよりもさっきのあれ。",
 		   NULL, "\"More importantly, just now...", Line_WaitForInput);
 
-	ModPlayVoiceLS(4, 6, "ps3/s19/06/500600094", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps3/s19/06/500600094", 256, TRUE);
 	OutputLine(NULL, "……驚きましたか？",
 		   NULL, " Were you surprised?", Line_WaitForInput);
 	OutputLine(NULL, "　みんながどんどん集まってきて。」",

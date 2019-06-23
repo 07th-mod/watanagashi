@@ -9,14 +9,14 @@ void main()
 	FadeOutBGM( 1, 1000, FALSE );
 	FadeOutBGM( 2, 1000, TRUE );
 	DisableWindow();
-	PlayBGM( 1, "msys02", 128, 0 );
+	PlayBGM( 1, "msys02", 56, 0 );
 	ModDrawCharacterWithFiltering(2, 4, "sprite/normal/sa1a_odoroki_a1_", "1", "right", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/gr1", 1000 );
 
 //「は＠　魅音さんの家族？＠
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400027", 128, TRUE);
+	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400027", 256, TRUE);
 	OutputLine(NULL, "「は？",
 		   NULL, "\"Huh?", Line_Continue);
 	OutputLine(NULL, "　魅音さんの家族？」",
@@ -27,7 +27,7 @@ void main()
 
 //「あぁ＠もっと平たく言えば、あいつに兄弟とかいないのかなーって思ってさ。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100057", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100057", 256, TRUE);
 	OutputLine(NULL, "「あぁ。",
 		   NULL, "\"Yeah.", Line_Continue);
 	OutputLine(NULL, "もっと平たく言えば、あいつに兄弟とかいないのかなーって思ってさ。」",
@@ -48,7 +48,7 @@ void main()
 
 //「...う～ん＠...どうなんでございましょうねぇ...＠いるやらいないやら...。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400028", 128, TRUE);
+	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400028", 256, TRUE);
 	OutputLine(NULL, "「…う〜ん。",
 		   NULL, "\"...Hmmm.", Line_Continue);
 
@@ -58,7 +58,7 @@ void main()
 
 	OutputLine(NULL, "…どうなんでございましょうねぇ…。",
 		   NULL, " ...I wonder...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400029", 128, TRUE);
+	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400029", 256, TRUE);
 	OutputLine(NULL, "いるやらいないやら…。」",
 		   NULL, " She might, she might not...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -81,7 +81,7 @@ void main()
 
 //「その反応からすると、...会ったことがないみたいだな。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100058", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100058", 256, TRUE);
 	OutputLine(NULL, "「その反応からすると、…会ったことがないみたいだな。」",
 		   NULL, "\"From your reaction... I guess you've never met any.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -92,7 +92,7 @@ void main()
 
 //「えぇ＠お婆さん以外にはありませんですわ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400030", 128, TRUE);
+	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400030", 256, TRUE);
 	OutputLine(NULL, "「えぇ。",
 		   NULL, "\"Yes.", Line_Continue);
 	OutputLine(NULL, "お婆さん以外にはありませんですわ。」",
@@ -110,7 +110,7 @@ void main()
 
 //「そういうのは梨花が詳しいですわよ＠梨花に聞いて御覧なさいですわ。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400031", 128, TRUE);
+	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400031", 256, TRUE);
 	OutputLine(NULL, "「そういうのは梨花が詳しいですわよ。",
 		   NULL, "\"Rika would know more than I.", Line_Continue);
 	OutputLine(NULL, "梨花に聞いて御覧なさいですわ。」",
@@ -130,7 +130,7 @@ void main()
 
 //「梨花ぁ＠魅音さんのご家族のことをご存知ですの？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400032", 128, TRUE);
+	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400032", 256, TRUE);
 	OutputLine(NULL, "「梨花ぁ。",
 		   NULL, "\"Rika!", Line_Continue);
 	OutputLine(NULL, "魅音さんのご家族のことをご存知ですの？」",
@@ -150,7 +150,7 @@ void main()
 
 //「......魅ぃには家族や親戚がいっぱいいますですから、全部はなかなかわからないのですよ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500019", 128, TRUE);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500019", 256, TRUE);
 	OutputLine(NULL, "「……魅ぃには家族や親戚がいっぱいいますですから、全部はなかなかわからないのですよ。」",
 		   NULL, "\"......Mii has a big family, so I don't really know everything about them.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -159,18 +159,18 @@ void main()
 
 //「そんなにたくさんいるのか...＠例えばさ＠...うーん＠園崎詩音ってヤツはいるのか＠　えーと、その、...聞き間違いかもしれないから、ひょっとすると実在しないかもしれないんだけど...。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100059", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100059", 256, TRUE);
 	OutputLine(NULL, "「そんなにたくさんいるのか…。",
 		   NULL, "\"That many, huh...?", Line_WaitForInput);
 	OutputLine(NULL, "例えばさ、",
 		   NULL, " For example...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100060", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100060", 256, TRUE);
 	OutputLine(NULL, "…うーん、",
 		   NULL, " ...Hmm.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100061", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100061", 256, TRUE);
 	OutputLine(NULL, "園崎詩音ってヤツはいるのか？",
 		   NULL, " Is there someone named Shion Sonozaki?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100062", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100062", 256, TRUE);
 	OutputLine(NULL, "　えーと、その、…聞き間違いかもしれないから、ひょっとすると実在しないかもしれないんだけど…。」",
 		   NULL, " Umm, well... I might have heard wrong, so she might not actually exist, but...\"", Line_Normal);
 	ClearMessage();
@@ -179,7 +179,7 @@ void main()
 
 //「......詩ぃですか＠　詩音はいますですよ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500020", 128, TRUE);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500020", 256, TRUE);
 	OutputLine(NULL, "「……詩ぃですか？",
 		   NULL, "\"......You mean Shii?", Line_Continue);
 	OutputLine(NULL, "　詩音はいますですよ。」",
@@ -208,12 +208,12 @@ void main()
 
 //「ふ～ん＠　よく似た名前ですのね＠間違えて舌を噛んじゃいそうですわ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400033", 128, TRUE);
+	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400033", 256, TRUE);
 	OutputLine(NULL, "「ふ〜ん？",
 		   NULL, "\"Hmm?", Line_Continue);
 	OutputLine(NULL, "　よく似た名前ですのね。",
 		   NULL, " Their names are quite similar, you know.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400034", 128, TRUE);
+	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400034", 256, TRUE);
 	OutputLine(NULL, "間違えて舌を噛んじゃいそうですわ。」",
 		   NULL, " I could get tongue-tied trying to tell the difference.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -222,7 +222,7 @@ void main()
 
 //「......魅ぃの双子の妹さんだと聞いたことがありますですが、あまり会ったことはないのです。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500021", 128, TRUE);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500021", 256, TRUE);
 	OutputLine(NULL, "「……魅ぃの双子の妹さんだと聞いたことがありますですが、あまり会ったことはないのです。」",
 		   NULL, "\"......I've heard she's Mii's younger twin sister, but I haven't met her too many times.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -236,7 +236,7 @@ void main()
 
 //「......何年か前に、法事の集まりがあった時に会ったような気がしますですよ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500022", 128, TRUE);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500022", 256, TRUE);
 	OutputLine(NULL, "「……何年か前に、法事の集まりがあった時に会ったような気がしますですよ。」",
 		   NULL, "\"......I think I met her once at a funeral a few years ago.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -245,7 +245,7 @@ void main()
 
 //「このクラスにいないってことは、学校は興宮の方に通っているってわけかな。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100063", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100063", 256, TRUE);
 	OutputLine(NULL, "「このクラスにいないってことは、学校は興宮の方に通っているってわけかな。」",
 		   NULL, "\"She's not in this class, so maybe she goes to school in Okinomiya.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -256,7 +256,7 @@ void main()
 
 //「お家も興宮なのかもしれませんわよ＠だって、魅音さん自身、家族とは別でお婆さんと暮らしてるわけですから。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400035", 128, TRUE);
+	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400035", 256, TRUE);
 	OutputLine(NULL, "「お家も興宮なのかもしれませんわよ。",
 		   NULL, "\"She may live there, too.", Line_Continue);
 	OutputLine(NULL, "だって、魅音さん自身、家族とは別でお婆さんと暮らしてるわけですから。」",
@@ -279,7 +279,7 @@ void main()
 
 //「......とてもややこしいお家なのです。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500023", 128, TRUE);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500023", 256, TRUE);
 	OutputLine(NULL, "「……とてもややこしいお家なのです。」",
 		   NULL, "\"......It's a very complicated family.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -290,7 +290,7 @@ void main()
 
 //「親類の数が多いらしいですから＠きっといろいろと都合があるに違いないのですわ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400036", 128, TRUE);
+	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400036", 256, TRUE);
 	OutputLine(NULL, "「親類の数が多いらしいですから。",
 		   NULL, "\"She seems to have many relatives.", Line_Continue);
 	OutputLine(NULL, "きっといろいろと都合があるに違いないのですわ。」",
@@ -310,7 +310,7 @@ void main()
 
 //「お、３人揃って何の話だい＠　おじさんも混ぜてよー。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300054", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300054", 256, TRUE);
 	OutputLine(NULL, "「お、３人揃って何の話だい？",
 		   NULL, "\"Oh, what are the three of you talking about?", Line_Continue);
 	OutputLine(NULL, "　おじさんも混ぜてよー。」",
@@ -324,7 +324,7 @@ void main()
 
 //「あら、魅音さん、いいところへ～＠　魅音さんに双子の妹さんがいるってのは本当でございますのー？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400037", 128, TRUE);
+	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400037", 256, TRUE);
 	OutputLine(NULL, "「あら、魅音さん、いいところへ〜！",
 		   NULL, "\"Oh, Mion-san, you've come at a good time~!", Line_Continue);
 	OutputLine(NULL, "　魅音さんに双子の妹さんがいるってのは本当でございますのー？」",
@@ -343,7 +343,7 @@ void main()
 
 //「...い、...妹...？＠/
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300055", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300055", 256, TRUE);
 	OutputLine(NULL, "「…い、…妹…？！",
 		   NULL, "\"...A... a younger sister...!?", Line_WaitForInput);
 
@@ -351,7 +351,7 @@ void main()
 	ModDrawCharacter(3, 3, "sprite/normal/me1a_hau_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //　え、と.........、う、うん＠いるよ...。＠
-	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300056", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300056", 256, TRUE);
 	OutputLine(NULL, "　え、と………、う、うん。",
 		   NULL, " Um, well...... y-yeah.", Line_Continue);
 
@@ -383,15 +383,15 @@ void main()
 
 //「あら～＠　それは知らなかったですわ～＠　どんな方なのかしら＠ぜひ一度お顔を見てみたいですわねー！！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400038", 128, TRUE);
+	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400038", 256, TRUE);
 	OutputLine(NULL, "「あら〜！",
 		   NULL, "\"Oh, my~!", Line_Continue);
 	OutputLine(NULL, "　それは知らなかったですわ〜！",
 		   NULL, " I had no idea~!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400039", 128, TRUE);
+	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400039", 256, TRUE);
 	OutputLine(NULL, "　どんな方なのかしら。",
 		   NULL, " What kind of person might she be?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400040", 128, TRUE);
+	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400040", 256, TRUE);
 	OutputLine(NULL, "ぜひ一度お顔を見てみたいですわねー！！」",
 		   NULL, " I would very much like to meet her sometime!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -402,15 +402,15 @@ void main()
 
 //「会わない方がいいよ＠　ぜ、全然可愛くないし＠　生意気だし＠　たまに電話で話すくらいで...私もしばらく会ってないし...！￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300057", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300057", 256, TRUE);
 	OutputLine(NULL, "「会わない方がいいよ！",
 		   NULL, "\"You shouldn't bother!", Line_Continue);
 	OutputLine(NULL, "　ぜ、全然可愛くないし！",
 		   NULL, " Sh-She's not cute at all!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300058", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300058", 256, TRUE);
 	OutputLine(NULL, "　生意気だし！",
 		   NULL, " She's really conceited!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300059", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300059", 256, TRUE);
 	OutputLine(NULL, "　たまに電話で話すくらいで…私もしばらく会ってないし…！」",
 		   NULL, " Besides, other than talking to her on the phone once in a while... I haven't seen her for a long time, either...!\"", Line_Normal);
 	ClearMessage();

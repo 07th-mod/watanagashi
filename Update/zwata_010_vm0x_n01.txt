@@ -9,10 +9,10 @@ void dialog000()
 void dialog001()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100430", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100430", 256, TRUE);
 	OutputLine(NULL, "「……うん。",
 		   NULL, "\"...Yeah.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100431", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100431", 256, TRUE);
 	OutputLine(NULL, "…学校に。」",
 		   NULL, " ...To school.\"", Line_Normal);
 }
@@ -29,13 +29,13 @@ void dialog002()
 void dialog003()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100434", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100434", 256, TRUE);
 	OutputLine(NULL, "「さ、３時ぃ？！　昨日に続いてか？！",
 		   NULL, "\"Th-Three?! Right after yesterday?!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100435", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100435", 256, TRUE);
 	OutputLine(NULL, "　おいおい、…夜更かしにも限度ってもんがあるぞ？！",
 		   NULL, " Hey, now... You can't keep staying up late!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100436", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100436", 256, TRUE);
 	OutputLine(NULL, "　大方、漫画の単行本が面白くなっちゃって、１巻から読破してしまったんだろう。",
 		   NULL, " You probably read the first volume of a manga, thought it was interesting, then read the entire series, didn't you? ", GetGlobalFlag(GLinemodeSp));
 }
@@ -43,7 +43,7 @@ void dialog003()
 void dialog004()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200129", 128, TRUE);
+	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200129", 256, TRUE);
 	OutputLine(NULL, "「りりりり、梨花ちゃんの、大あくび〜〜〜！！　はぅ〜〜〜〜！！！！」",
 		   NULL, "\"R-R-R-R-Rika-chan's giant yawn~~~! Hau~~~~!!!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -52,10 +52,10 @@ void dialog004()
 void dialog005()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200130", 128, TRUE);
+	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200130", 256, TRUE);
 	OutputLine(NULL, "「りりり梨花ちゃんのだけじゃなく、沙都子ちゃんのもかぁいいと思うぉ〜！！",
 		   NULL, "\"I-I-I-I think Satoko-chan is kyute, not only R-Rika-chan~!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200131", 128, TRUE);
+	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200131", 256, TRUE);
 	OutputLine(NULL, "　お〜お〜あ〜く〜び〜！！！」",
 		   NULL, " Giaaant~~yaaaawn~~!!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -64,13 +64,13 @@ void dialog005()
 void dialog006()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200132", 128, TRUE);
+	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200132", 256, TRUE);
 	OutputLine(NULL, "「は、はぅ〜〜！！",
 		   NULL, "\"H-Hau~~!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200133", 128, TRUE);
+	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200133", 256, TRUE);
 	OutputLine(NULL, "　ちらっと見えた、かぁいいの見えた！！",
 		   NULL, " I got a glimpse! It was so kyute!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200134", 128, TRUE);
+	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200134", 256, TRUE);
 	OutputLine(NULL, "　沙都子ちゃんのあくびもかぁいい、お持ち帰り〜〜！！！！」",
 		   NULL, " Satoko-chan's is kyute too! I'm gonna take you home~~!!!!\"", Line_Normal);
 	ClearMessage();

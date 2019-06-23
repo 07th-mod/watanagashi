@@ -11,8 +11,8 @@ void main()
 	FadeOutBGM( 2, 1000, TRUE );
 	DisableWindow();
 	DrawScene("black", 1000 );
-	PlayBGM( 1, "msys09", 128, 0 );
-	PlaySE( 3, "wa_021", 128, 64 );
+	PlayBGM( 1, "msys09", 56, 0 );
+	PlaySE( 3, "wa_021", 56, 64 );
 	DrawScene("background/simen3", 1000 );
 
 //locate 3,6
@@ -27,7 +27,7 @@ void main()
 	ClearMessage();
 
 	SetStyleOfMessageSwinging( 0 );
-	PlaySE( 3, "wa_021", 128, 64 );
+	PlaySE( 3, "wa_021", 56, 64 );
 
 //　綿流しの儀は今でこそ、毎年６月に行なわれる村祭りだが、その原点を紐解くと、実に血生臭い儀式にたどり着く￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -35,7 +35,7 @@ void main()
 		   NULL, "The rite of Watanagashi is performed during a village festival every June even now, but reading back to its origin turns up a seriously sanguine ceremony.", Line_Normal);
 	ClearMessage();
 
-	PlaySE( 3, "wa_021", 128, 64 );
+	PlaySE( 3, "wa_021", 56, 64 );
 
 //　本来、綿流しは、一定周期に基づき、オヤシロさまの信託を得て「犠牲者」を選び出し＠それを村ぐるみで誘拐（鬼隠し）し、儀式めいた方法で解体して食す人食いの宴であった＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -58,7 +58,7 @@ void main()
 		   NULL, "There's a theory that it was determined based on astrological fortune-telling, but it isn't too convincing.)", Line_Normal);
 	ClearMessage();
 
-	PlaySE( 3, "wa_021", 128, 64 );
+	PlaySE( 3, "wa_021", 56, 64 );
 
 //　古代の鬼ヶ淵村の住人たちは自分たちが半人半鬼の仙人で、人間よりも高貴な存在であると固く信じ、それを内外に認めさせていた＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

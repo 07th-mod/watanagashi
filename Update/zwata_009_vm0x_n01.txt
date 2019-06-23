@@ -9,10 +9,10 @@ void dialog000()
 void dialog001()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300099", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300099", 256, TRUE);
 	OutputLine(NULL, "「ん？",
 		   NULL, "\"Hm?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300100", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300100", 256, TRUE);
 	OutputLine(NULL, "　…あはははは、実は内緒なんだけど…、昨日はお祭りのあとで親族の宴会に巻き込まれちゃってさ。",
 		   NULL, " ...Ahahahaha. Actually, this is a secret, but... after the festival yesterday, I got wrapped up in the party my relatives were having.", Line_WaitForInput);
 
@@ -20,7 +20,7 @@ void dialog001()
 	ModDrawCharacter(2, 3, "sprite/normal/me1b_wink_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //それで...チョイっと。￥
-	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300101", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300101", 256, TRUE);
 	OutputLine(NULL, "それで…実はエンドレスに突入しちゃって。」",
 		   NULL, " And well... things dragged on a while.\"", Line_Normal);
 	ClearMessage();
@@ -42,10 +42,10 @@ void dialog001()
 
 //「ふ、二日酔いかよー？＠　お前、歳はいくつだー！！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100233", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100233", 256, TRUE);
 	OutputLine(NULL, "「つまりホントに、寝不足なのかよー？！",
 		   NULL, "\"So you really are just tired?!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100234", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100234", 256, TRUE);
 	OutputLine(NULL, "　徹夜明けならそうと言え、まぎらわしい……」",
 		   NULL, " If you were up all night, just say so! That was confusing...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -79,10 +79,10 @@ void dialog004()
 void dialog005()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100267", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100267", 256, TRUE);
 	OutputLine(NULL, "「詩音か。",
 		   NULL, "\"Shion?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100268", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100268", 256, TRUE);
 	OutputLine(NULL, "魅音と同じで、今日は徹夜明けで寝込んでるんじゃないかと思ったぜ。」",
 		   NULL, " I thought you'd be catching up on your sleep today, same as Mion.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -91,13 +91,13 @@ void dialog005()
 void dialog006()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600153", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600153", 256, TRUE);
 	OutputLine(NULL, "「え？",
 		   NULL, "\"What?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600154", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600154", 256, TRUE);
 	OutputLine(NULL, "　それじゃお姉、今日はズル休みですか？",
 		   NULL, " Is Mion playing truant today?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600155", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600155", 256, TRUE);
 	OutputLine(NULL, "　あっはははははは！　お姉らし〜〜！」",
 		   NULL, " Ah-hahahaha! That's so like her~~!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -115,10 +115,10 @@ void dialog007()
 void dialog008()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700020", 128, TRUE);
+	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700020", 256, TRUE);
 	OutputLine(NULL, "「園崎家はこの地域一帯を牛耳ってる暴力団です。",
 		   NULL, "\"The Sonozakis are a syndicate with this entire region under their thumb.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700021", 128, TRUE);
+	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700021", 256, TRUE);
 	OutputLine(NULL, "ちなみに彼女のお父さんは、関東でも有名な暴力団グループの大幹部さんです。",
 		   NULL, " Incidentally, her father is a high-ranked executive in a syndicate association that's well known even in the Kanto region. ", GetGlobalFlag(GLinemodeSp));
 }
@@ -126,10 +126,10 @@ void dialog008()
 void dialog009()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700024", 128, TRUE);
+	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700024", 256, TRUE);
 	OutputLine(NULL, "　高い塀に有刺鉄線と監視カメラで守られた、典型的な暴力団の組長宅ですよ。",
 		   NULL, "It's the very picture of a gang boss's house, protected by high walls, barbed-wire fence, and security cameras.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700025", 128, TRUE);
+	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700025", 256, TRUE);
 	OutputLine(NULL, "今度ぜひ遊びに行ってみてください。」",
 		   NULL, " If you have the chance, you should go and visit her.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -138,16 +138,16 @@ void dialog009()
 void dialog010()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700026", 128, TRUE);
+	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700026", 256, TRUE);
 	OutputLine(NULL, "「いえいえいえいえいえ。",
 		   NULL, "\"No, no, no, no, no.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700027", 128, TRUE);
+	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700027", 256, TRUE);
 	OutputLine(NULL, "まさかまさか。",
 		   NULL, " Not at all, not at all.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700028", 128, TRUE);
+	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700028", 256, TRUE);
 	OutputLine(NULL, "園崎魅音さんが継ぐのはそんなチンケな暴力団組織だけじゃありません。",
 		   NULL, " A boring old syndicate isn't the only thing Mion Sonozaki-san will inherit.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700029", 128, TRUE);
+	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700029", 256, TRUE);
 	OutputLine(NULL, "彼女が継ぐのは園崎家そのものですよ。",
 		   NULL, " She's inheriting the Sonozaki family itself. ", GetGlobalFlag(GLinemodeSp));
 }
@@ -162,7 +162,7 @@ void dialog011()
 void dialog012()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100231", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100231", 256, TRUE);
 	OutputLine(NULL, "「…魅音、具合の方はいいのかよ。",
 		NULL, "\"...Mion, how is your cold doing?", Line_WaitForInput);
 }

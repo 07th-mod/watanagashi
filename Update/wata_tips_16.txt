@@ -10,7 +10,7 @@ void main()
 	FadeOutBGM( 2, 1000, TRUE );
 	DisableWindow();
 	DrawScene("black", 1000 );
-	PlayBGM( 2, "lsys17", 128, 0 );
+	PlayBGM( 2, "lsys17", 56, 0 );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
@@ -19,47 +19,47 @@ void main()
 //「夜分遅くに失礼いたします...＠公由と申しますが、ご主人でいらっしゃいますか＠　......はい＠　いえいえ、その節は本当にありがとうございます＠えぇ＠............それでですね＠...こんな時間に大変恐縮なのですが＠...ウチのお爺ちゃんがお邪魔してないかと思いまして＠.........ですよねぇ＠　はい＠　こんな時間に申し訳ありませんでした＠それでは失礼いたします＠ごめんください......。￥
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f3cfb5>公由</color>", NULL, "<color=#f3cfb5>Kimiyoshi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44001", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44001", 256, TRUE);
 	OutputLine(NULL, "「夜分遅くに失礼いたします…。",
 		   NULL, "\"Excuse me for the late call...", Line_Continue);
 	OutputLine(NULL, "公由と申しますが、ご主人でいらっしゃいますか？",
 		   NULL, " I'm Kimiyoshi—is this the head of the household?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44002", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44002", 256, TRUE);
 	OutputLine(NULL, "　……はい！",
 		   NULL, " ......Yes!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44003", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44003", 256, TRUE);
 	OutputLine(NULL, "　いえいえ、その節は本当にありがとうございます。",
 		   NULL, " No, not at all. Thank you very much for that.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44004", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44004", 256, TRUE);
 	OutputLine(NULL, "えぇ。",
 		   NULL, " Yes.", Line_Continue);
 	OutputLine(NULL, "…………それでですね、",
 		   NULL, " .........Well, you see.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44005", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44005", 256, TRUE);
 	OutputLine(NULL, "…こんな時間に大変恐縮なのですが、",
 		   NULL, " ...I do apologize for calling at this hour, ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f3cfb5>公由</color>", NULL, "<color=#f3cfb5>Kimiyoshi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44006", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44006", 256, TRUE);
 	OutputLine(NULL, "…ウチのお爺ちゃんがお邪魔してないかと思いまして。",
 		   NULL, "but I was wondering if our old man was visiting you at the moment.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44007", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44007", 256, TRUE);
 	OutputLine(NULL, "………ですよねぇ！",
 		   NULL, " ......You've got that right!", Line_Continue);
 	OutputLine(NULL, "　はい！",
 		   NULL, " Yes!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44008", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44008", 256, TRUE);
 	OutputLine(NULL, "　こんな時間に申し訳ありませんでした。",
 		   NULL, " Once again,", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44009", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44009", 256, TRUE);
 	OutputLine(NULL, "それでは失礼いたします。",
 		   NULL, " I'm very sorry for calling so late.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44010", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44010", 256, TRUE);
 	OutputLine(NULL, "ごめんください……。」",
 		   NULL, " Goodbye.\"", Line_Normal);
 	ClearMessage();
 
 
-	PlayBGM( 1, "msys13", 128, 0 );
+	PlayBGM( 1, "msys13", 56, 0 );
 
 //　チン￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -70,7 +70,7 @@ void main()
 
 //「どうだい＠　ダメ？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>女性</color>", NULL, "<color=#f5e6d3>Woman</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimif44001", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimif44001", 256, TRUE);
 	OutputLine(NULL, "「どうだい？",
 		   NULL, "\"So?", Line_Continue);
 	OutputLine(NULL, "　ダメ？」",
@@ -82,7 +82,7 @@ void main()
 //「参ったなぁ...。...@
 // どんなに熱中しても、電話くらいはしてくれる人なんだけれどなぁ！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f3cfb5>公由</color>", NULL, "<color=#f3cfb5>Kimiyoshi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44011", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44011", 256, TRUE);
 	OutputLine(NULL, "「参ったなぁ…。…",
 		   NULL, "\"I'm not sure what to do...", Line_Continue);
 	OutputLine(NULL, "どんなに熱中しても、電話くらいはしてくれる人なんだけれどなぁ！」",
@@ -93,13 +93,13 @@ void main()
 
 //「囲碁の人の家は全部、電話したんでしょ？￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>女性</color>", NULL, "<color=#f5e6d3>Woman</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimif44002", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimif44002", 256, TRUE);
 	OutputLine(NULL, "「囲碁の人の家は全部、電話したんでしょ？」",
 		   NULL, "\"You called everyone he plays Go with, didn't you?\"", Line_Normal);
 	ClearMessage();
 
 	FadeOutBGM( 1, 1000, TRUE );
-	PlayBGM( 2, "lsys17", 128, 0 );
+	PlayBGM( 2, "lsys17", 56, 0 );
 
 //　ジリリリリリリ...ン！￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -109,11 +109,11 @@ void main()
 
 
 	FadeOutBGM( 2, 10, TRUE );
-	PlayBGM( 1, "msys13", 128, 0 );
+	PlayBGM( 1, "msys13", 56, 0 );
 
 //「はい＠　公由です。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f3cfb5>公由</color>", NULL, "<color=#f3cfb5>Kimiyoshi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44012", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44012", 256, TRUE);
 	OutputLine(NULL, "「はい！",
 		   NULL, "\"Hello!", Line_Continue);
 	OutputLine(NULL, "　公由です。」",
@@ -123,12 +123,12 @@ void main()
 
 //「園崎です＠どうです＠　村長さんは見つかりましたか？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300078", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300078", 256, TRUE);
 	OutputLine(NULL, "「園崎です。",
 		   NULL, "\"This is Sonozaki.", Line_Continue);
 	OutputLine(NULL, "どうです？",
 		   NULL, " How did it go?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300079", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300079", 256, TRUE);
 	OutputLine(NULL, "　村長さんは見つかりましたか？」",
 		   NULL, " Have you found the mayor?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -136,18 +136,18 @@ void main()
 
 //「あぁ、魅音ちゃんか＠...片っ端から電話をかけてみたけど、だめだよ＠見つからないんだ...＠参ったなぁ...＠　どこで油を売ってるのかなぁ...！￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f3cfb5>公由</color>", NULL, "<color=#f3cfb5>Kimiyoshi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44013", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44013", 256, TRUE);
 	OutputLine(NULL, "「あぁ、魅音ちゃんか。",
 		   NULL, "\"Oh, Mion-chan.", Line_Continue);
 	OutputLine(NULL, "…片っ端から電話をかけてみたけど、だめだよ。",
 		   NULL, " ...I called everyone I could think of, but I came up with nothing.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44014", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44014", 256, TRUE);
 	OutputLine(NULL, "見つからないんだ…。",
 		   NULL, " We can't find him...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44015", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44015", 256, TRUE);
 	OutputLine(NULL, "参ったなぁ…！",
 		   NULL, " What do I do...?!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44016", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44016", 256, TRUE);
 	OutputLine(NULL, "　どこで油を売ってるのかなぁ…！」",
 		   NULL, " Where could he be idling about...?\"", Line_Normal);
 	ClearMessage();
@@ -155,7 +155,7 @@ void main()
 
 //「こっちでも心当たりにいろいろと問い合わせましたけど、!w800...全然。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300080", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300080", 256, TRUE);
 	OutputLine(NULL, "「こっちでも心当たりにいろいろと問い合わせましたけど、",
 		   NULL, "\"I put a word in with a bunch of people who might have had an idea...", Line_Continue);
 
@@ -171,7 +171,7 @@ void main()
 
 //「.................................。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f3cfb5>公由</color>", NULL, "<color=#f3cfb5>Kimiyoshi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44017", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44017", 256, TRUE);
 	OutputLine(NULL, "「……………………………。」",
 		   NULL, "\"............\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -180,7 +180,7 @@ void main()
 
 //「婆っちゃにも相談したんですが、青年団を召集して探し回った方がいいだろうということです。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300081", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300081", 256, TRUE);
 	OutputLine(NULL, "「婆っちゃにも相談したんですが、青年団を召集して探し回った方がいいだろうということです。」",
 		   NULL, "\"I asked Nana about it, and she said we should get the men of the village together to search for him.\"", Line_Normal);
 	ClearMessage();
@@ -188,7 +188,7 @@ void main()
 
 //「こ、こんな時間にかい...＠　それに、別に行方不明になったと決まったわけでもないし...、＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f3cfb5>公由</color>", NULL, "<color=#f3cfb5>Kimiyoshi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44018", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44018", 256, TRUE);
 	OutputLine(NULL, "「こ、こんな時間にかい…？",
 		   NULL, "\"A-At this hour...?", Line_Continue);
 	OutputLine(NULL, "　それに、別に行方不明になったと決まったわけでもないし…、」",
@@ -196,27 +196,27 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	PlaySE( 3, "wa_026", 128, 64 );
+	PlaySE( 3, "wa_026", 56, 64 );
 
 //「綿流しの直後ですから＠少し慎重に扱った方がいいとのことです＠それでも見つからないなら、明朝、警察に通報しましょう＠見つかる見つからないは別にして、痛くない腹を探られない方がいいでしょうから。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300082", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300082", 256, TRUE);
 	OutputLine(NULL, "「綿流しの直後ですから。",
 		   NULL, "\"Watanagashi just happened.", Line_Continue);
 	OutputLine(NULL, "少し慎重に扱った方がいいとのことです。",
 		   NULL, " She thinks we should be a little more cautious.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300083", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300083", 256, TRUE);
 	OutputLine(NULL, "それでも見つからないなら、明朝、警察に通報しましょう。",
 		   NULL, " If we still can't find him, then we'll notify the police tomorrow morning. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300084", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300084", 256, TRUE);
 	OutputLine(NULL, "見つかる見つからないは別にして、痛くない腹を探られない方がいいでしょうから。」",
 		   NULL, "Whether or not we find him, though, we should refrain from making any false accusations.\"", Line_Normal);
 	ClearMessage();
 
 //「...お魎さんがそう言ったのかい？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f3cfb5>公由</color>", NULL, "<color=#f3cfb5>Kimiyoshi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44019", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44019", 256, TRUE);
 	OutputLine(NULL, "「…お魎さんがそう言ったのかい？」",
 		   NULL, "\"...Oryou-san said that?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -224,7 +224,7 @@ void main()
 
 //「はい＠直接、声を聞かないと信用できないなら、電話先に出させますよ？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300085", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300085", 256, TRUE);
 	OutputLine(NULL, "「はい。",
 		   NULL, "\"Yes.", Line_Continue);
 	OutputLine(NULL, "直接、声を聞かないと信用できないなら、電話先に出させますよ？」",
@@ -234,22 +234,22 @@ void main()
 
 //「い、いえ...＠　わかりました＠青年団を集めて探しましょう＠それで見つからなければ...翌朝に警察に通報します。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f3cfb5>公由</color>", NULL, "<color=#f3cfb5>Kimiyoshi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44020", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44020", 256, TRUE);
 	OutputLine(NULL, "「い、いえ…！",
 		   NULL, "\"N-No, that's fine...!", Line_Continue);
 	OutputLine(NULL, "　わかりました。",
 		   NULL, " I understand.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44021", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44021", 256, TRUE);
 	OutputLine(NULL, "青年団を集めて探しましょう。",
 		   NULL, " We'll get the men together and search.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44022", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44022", 256, TRUE);
 	OutputLine(NULL, "それで見つからなければ…翌朝に警察に通報します。」",
 		   NULL, " If we still can't find him... then we will notify the police in the morning.\"", Line_Normal);
 	ClearMessage();
 
 //「青年団の連絡網、よろしくお願いしますね＠私も婆っちゃの代行ということでそちらに参ります。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300086", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300086", 256, TRUE);
 	OutputLine(NULL, "「青年団の連絡網、よろしくお願いしますね。",
 		   NULL, "\"She'll leave it to you to organize the men.", Line_Continue);
 	OutputLine(NULL, "私も婆っちゃの代行ということでそちらに参ります。」",
@@ -259,7 +259,7 @@ void main()
 
 //「あ、ありがとう＠すぐにみんなを集めます...。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f3cfb5>公由</color>", NULL, "<color=#f3cfb5>Kimiyoshi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44023", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44023", 256, TRUE);
 	OutputLine(NULL, "「あ、ありがとう。",
 		   NULL, "\"Th-Thank you.", Line_Continue);
 	OutputLine(NULL, "すぐにみんなを集めます…。」",
@@ -269,7 +269,7 @@ void main()
 
 //「えぇ＠では。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300087", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300087", 256, TRUE);
 	OutputLine(NULL, "「えぇ。",
 		   NULL, "\"Thanks.", Line_Continue);
 	OutputLine(NULL, "では。」",

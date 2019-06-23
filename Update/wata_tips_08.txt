@@ -11,9 +11,9 @@ void main()
 	FadeOutBGM( 2, 1000, TRUE );
 	DisableWindow();
 	DrawScene("black", 1000 );
-	PlaySE( 3, "wa_021", 128, 64 );
+	PlaySE( 3, "wa_021", 56, 64 );
 	DrawScene("background/simen3", 400 );
-	PlayBGM( 1, "msys13", 128, 0 );
+	PlayBGM( 1, "msys13", 56, 0 );
 
 //locate 4,6
 
@@ -28,7 +28,7 @@ void main()
 	ClearMessage();
 
 	SetStyleOfMessageSwinging( 0 );
-	PlaySE( 3, "wa_021", 128, 64 );
+	PlaySE( 3, "wa_021", 56, 64 );
 
 //　生贄の儀式は、最もシンプルな溺死型で、神聖な沼である鬼ヶ淵沼に犠牲者を沈めることで成立した￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -36,7 +36,7 @@ void main()
 		   NULL, "The sacrificial ritual was a simple drowning, involving plunging sacrifices into Onigafuchi Swamp, which was considered hallowed.", Line_Normal);
 	ClearMessage();
 
-	PlaySE( 3, "wa_021", 128, 64 );
+	PlaySE( 3, "wa_021", 56, 64 );
 
 //　鬼ヶ淵村における儀式で特徴的なのは、犠牲者を三日三晩もの長い時間をかけてゆっくりと沈める点にある＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -68,7 +68,7 @@ void main()
 		   NULL, "Unfortunately, as far as I can tell from the records, those methods were not recorded.", Line_Normal);
 	ClearMessage();
 
-	PlaySE( 3, "wa_021", 128, 64 );
+	PlaySE( 3, "wa_021", 56, 64 );
 
 //　私の想像では、丸太等で巨大なイカダを組み＠そこに処刑台を設え、縄で犠牲者を吊り上げ、時の刻みに合わせて少しずつ沼へ沈めていったのではないかと思う＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

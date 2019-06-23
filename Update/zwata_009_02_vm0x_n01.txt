@@ -9,16 +9,16 @@ void dialog000()
 void dialog001()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 36, "ps3/s02/36/132900001", 128, TRUE);
+	ModPlayVoiceLS(4, 36, "ps3/s02/36/132900001", 256, TRUE);
 	OutputLine(NULL, "「前原さんの御宅でしょうか。",
 		   NULL, "\"Is this the Maebara residence?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 36, "ps3/s02/36/132900002", 128, TRUE);
+	ModPlayVoiceLS(4, 36, "ps3/s02/36/132900002", 256, TRUE);
 	OutputLine(NULL, "夜分遅くに失礼いたします…。",
 		   NULL, " Excuse me for the late call...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 36, "ps3/s02/36/132900003", 128, TRUE);
+	ModPlayVoiceLS(4, 36, "ps3/s02/36/132900003", 256, TRUE);
 	OutputLine(NULL, "公由と申します。",
 		   NULL, " I'm Kimiyoshi.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 36, "ps3/s02/36/132900004", 128, TRUE);
+	ModPlayVoiceLS(4, 36, "ps3/s02/36/132900004", 256, TRUE);
 	OutputLine(NULL, "ご主人でいらっしゃいますか？」",
 		   NULL, " Is this the head of the household?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -35,10 +35,10 @@ void dialog001()
 void dialog002()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f3cfb5>公由</color>", NULL, "<color=#f3cfb5>Kimiyoshi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 36, "ps3/s02/36/132900005", 128, TRUE);
+	ModPlayVoiceLS(4, 36, "ps3/s02/36/132900005", 256, TRUE);
 	OutputLine(NULL, "「あ、いえいえ、お忙しければ結構なんです。",
 		   NULL, "\"Oh, no no, if he's busy, then it's fine.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 36, "ps3/s02/36/132900006", 128, TRUE);
+	ModPlayVoiceLS(4, 36, "ps3/s02/36/132900006", 256, TRUE);
 	OutputLine(NULL, "…実は恐縮なんですが…ウチのお爺ちゃんがお邪魔してませんでしょうか。」",
 		   NULL, " ...This may be a strange question, but... is my old man paying you a visit?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -47,13 +47,13 @@ void dialog002()
 void dialog003()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f3cfb5>公由</color>", NULL, "<color=#f3cfb5>Kimiyoshi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 36, "ps3/s02/36/132900007", 128, TRUE);
+	ModPlayVoiceLS(4, 36, "ps3/s02/36/132900007", 256, TRUE);
 	OutputLine(NULL, "「そうですか！",
 		   NULL, "\"I see!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 36, "ps3/s02/36/132900008", 128, TRUE);
+	ModPlayVoiceLS(4, 36, "ps3/s02/36/132900008", 256, TRUE);
 	OutputLine(NULL, "　夜分遅くに申し訳ありませんでした。",
 		   NULL, " Again, I apologize for calling you so late at night.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 36, "ps3/s02/36/132900009", 128, TRUE);
+	ModPlayVoiceLS(4, 36, "ps3/s02/36/132900009", 256, TRUE);
 	OutputLine(NULL, "失礼いたします……。」",
 		   NULL, " Goodbye......\"", Line_Normal);
 }

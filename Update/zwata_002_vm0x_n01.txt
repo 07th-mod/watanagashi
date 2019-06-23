@@ -10,11 +10,11 @@ void dialog001()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 
-	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300509", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300509", 256, TRUE);
 	OutputLine(NULL, "「はーい！！　みんな傾聴傾聴〜！",
 		   NULL, "\"Alright! Everybody pay attention~!", Line_WaitForInput);
 
-	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300510", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300510", 256, TRUE);
 	OutputLine(NULL, "　ルールを説明するよ〜！！」",
 		   NULL, " I'm going to explain the rules~!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -24,18 +24,18 @@ void dialog001()
 void dialog002()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s19/01/vt0_keiichi0002", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/vt0_keiichi0002", 256, TRUE);
 	OutputLine(NULL, "　……小学校の頃…罰ゲームってのがあったら……うん。",
 		   NULL, "\"...When I was in elementary school... there was a penalty game... yeah.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s19/01/vt0_keiichi0003", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/vt0_keiichi0003", 256, TRUE);
 	OutputLine(NULL, "やっぱりアレだよな。",
 		   NULL, " It can only be 'that.'", Line_WaitForInput);
 
-	PlaySE( 3, "wa_010", 128, 64 );
+	PlaySE( 3, "wa_010", 56, 64 );
 
 //荷物持ち￥
 
-	ModPlayVoiceLS(4, 1, "ps3/s19/01/vt0_keiichi0004", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/vt0_keiichi0004", 256, TRUE);
 	OutputLine(NULL, "荷物持ちだ！",
 		   NULL, " Schlepping!\"", Line_Normal);
 }
@@ -45,7 +45,7 @@ void dialog003()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 
 	//VoiceMatching
-	ModPlayVoiceLS(4, 5, "ps3/s19/05/990500121", 128, TRUE);
+	ModPlayVoiceLS(4, 5, "ps3/s19/05/990500121", 256, TRUE);
 	OutputLine(NULL, "「………「口紅」って書いてありますです。」",
 		   NULL, "\"...It says 'lipstick.'\"", Line_Normal);
 	//VoiceMatchingEnd
@@ -55,7 +55,7 @@ void dialog003()
 void dialog004()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11170", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11170", 256, TRUE);
 	OutputLine(NULL, "「さ、",
 		   NULL, "\"Sa--", Line_Continue);
 
@@ -70,16 +70,16 @@ void dialog004()
 	Wait( 800 );
 	// (backup) SetValidityOfInput( TRUE );
 
-	PlaySE( 3, "wa_006", 128, 64 );
-	PlayBGM( 1, "msys03", 128, 0 );
+	PlaySE( 3, "wa_006", 56, 64 );
+	PlayBGM( 1, "msys03", 56, 0 );
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
 
-	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11180", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11180", 256, TRUE);
 	OutputLine(NULL, "さくらって言ったらあの有名な口紅の商品名「Ｓａｋｕｒａ」だろおおお！",
 		   NULL, "Sakura can only mean that famous lipstick brand 'Sakura,' right!?!? ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11190", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11190", 256, TRUE);
 	OutputLine(NULL, "　ほら、新色が出たってＴＶでも言ってたし、ワイドショーでも特集組んでたじゃん！",
 		   NULL, "You know, the one in a new color they've been talking about on TV, they even did a special on it!", Line_Continue);
 	OutputLine(NULL, "　女としてはチェック入れるんじゃないのか？",
@@ -95,15 +95,15 @@ void dialog005()
 void dialog006()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300596", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300596", 256, TRUE);
 	OutputLine(NULL, "「……いやそんな、力説しなくてもよく知ってるよ。",
 		   NULL, "\"...Um yeah, even without the forced explanation, I know about it.", Line_WaitForInput);
 
-	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300597", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300597", 256, TRUE);
 	OutputLine(NULL, "なんかコーヒー飲んでもカップに付かないってやつでしょ？",
 		   NULL, " It's the one that doesn't stick to the cup even if you're drinking coffee, right?", Line_WaitForInput);
 
-	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300598", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300598", 256, TRUE);
 	OutputLine(NULL, "　うん。",
 		   NULL, " Yeah.", Line_Continue);
 
@@ -120,15 +120,15 @@ void dialog007()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 
-	ModPlayVoiceLS(4, 2, "ps3/s19/02/990200496", 128, TRUE);
+	ModPlayVoiceLS(4, 2, "ps3/s19/02/990200496", 256, TRUE);
 	OutputLine(NULL, "「うんうん。",
 		   NULL, "\"Yup, yup.", Line_Continue);
 	OutputLine(NULL, "とってもかぁいい色してるんだよね！",
 		   NULL, " It's a really kyute color, isn't it!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s19/02/990200497", 128, TRUE);
+	ModPlayVoiceLS(4, 2, "ps3/s19/02/990200497", 256, TRUE);
 	OutputLine(NULL, "　レナも薬局の化粧品売り場で見たよ。",
 		   NULL, " I saw it in the makeup section at the drug store.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s19/02/990200498", 128, TRUE);
+	ModPlayVoiceLS(4, 2, "ps3/s19/02/990200498", 256, TRUE);
 	OutputLine(NULL, "　薄いピンク色で、お持ち帰りしようかと思っちゃった〜」",
 		   NULL, " That pink color made me want to take it home~\"", GetGlobalFlag(GLinemodeSp));
 
@@ -139,10 +139,10 @@ void dialog008()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 
-	ModPlayVoiceLS(4, 4, "ps3/s19/04/990400252", 128, TRUE);
+	ModPlayVoiceLS(4, 4, "ps3/s19/04/990400252", 256, TRUE);
 	OutputLine(NULL, "「そ、そうですわね。",
 		   NULL, "\"I-indeed.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 4, "ps3/s19/04/990400253", 128, TRUE);
+	ModPlayVoiceLS(4, 4, "ps3/s19/04/990400253", 256, TRUE);
 	OutputLine(NULL, "女性としては一通りチェックを入れるのは常識ですわよねぇ！」",
 		   NULL, " It's only common sense for a lady to keep up on these matters!\"", GetGlobalFlag(GLinemodeSp));
 
@@ -152,13 +152,13 @@ void dialog008()
 void dialog009()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 5, "ps3/s19/05/990500122", 128, TRUE);
+	ModPlayVoiceLS(4, 5, "ps3/s19/05/990500122", 256, TRUE);
 	OutputLine(NULL, "「沙都子はどちらかというと、特売のティッシュの方に興味があったみたいなのです。」",
 		   NULL, "\"I thought you were more interested in the bargain-sale tissues, Satoko.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 4, "ps3/s19/04/990400254", 128, TRUE);
+	ModPlayVoiceLS(4, 4, "ps3/s19/04/990400254", 256, TRUE);
 	OutputLine(NULL, "「し、失礼ですわね！　ちゃんと新製品のチェックぐらい入れてましてよっ！」",
 		   NULL, "\"How rude of you! I make sure to keep an eye on the newest products!\"", Line_Normal);
 }
@@ -168,28 +168,28 @@ void dialog010()
 
 //魅音「まあ、それはいいんだけどさ、“さくら”って聞いて発想がそっちに行っちゃうってのは……」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300599", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300599", 256, TRUE);
 	OutputLine(NULL, "「まあ、それはいいんだけどさ、“さくら”って聞いて発想がそっちに行っちゃうってのは……」",
 		   NULL, "\"That aside, it's just a bit surprising that's the first thing you think of when you hear 'Sakura'...", Line_Normal);
 
 //圭一rvS19/01/HR_KEI11200.「な、なんでだよおおお！kvS19/01/HR_KEI11210.　女の立場になって考えてみただけだろおおおお！」
-	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11200", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11200", 256, TRUE);
 	OutputLine(NULL, "「な、なんでだよおおお！",
 		   NULL, "\"Wh- whaaaat?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11210", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11210", 256, TRUE);
 	OutputLine(NULL, "　女の立場になって考えてみただけだろおおおお！」",
 		   NULL, " I was just thinking from a ladies perspective!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //圭一rvS19/01/HR_KEI11220.「女に生まれたからには当然美しく装うのがデフォ！kvS19/01/HR_KEI11230.　そう考えるのが正しいんだよぉおおおぉおぉおーー…ッ！！kvS19/01/HR_KEI11240.　そうじゃなきゃダメなんだよぉおおおぉおぉおーー…ッ！！！」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11220", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11220", 256, TRUE);
 	OutputLine(NULL, "「女に生まれたからには当然美しく装うのがデフォ！",
 		   NULL, "\"Being born as a lady, obviously it's normal to maintain a beautiful image!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11230", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11230", 256, TRUE);
 	OutputLine(NULL, "　そう考えるのが正しいんだよぉおおおぉおぉおーー…ッ！！",
 		   NULL, " It's right to think thaaaaaaat!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11240", 128, TRUE);
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11240", 256, TRUE);
 	OutputLine(NULL, "　そうじゃなきゃダメなんだよぉおおおぉおぉおーー…ッ！！！」",
 		   NULL, " That's how it has to beeeeeeeee!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -198,7 +198,7 @@ void dialog010()
 void dialog011()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300641", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300641", 256, TRUE);
 	OutputLine(NULL, "　こ〜れである一部分を除けば、本物の女の子なのにな〜〜！！」",
 	NULL, "If o~nly you didn't have that one body part, you'd be a real girl~~!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }

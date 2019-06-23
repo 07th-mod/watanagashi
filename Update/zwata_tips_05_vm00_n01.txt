@@ -9,7 +9,7 @@ void dialog000()
 void dialog001()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700099", 128, TRUE);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700099", 256, TRUE);
 	OutputLine(NULL, "「熊ちゃん。",
 		   NULL, "\"Kuma-chan.", Line_Continue);
 
@@ -19,17 +19,17 @@ void dialog001()
 
 	OutputLine(NULL, "ゲート車に同行してバイク持ってきてあげて。",
 		   NULL, " Go with the truck and bring the bikes back.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700100", 128, TRUE);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700100", 256, TRUE);
 	OutputLine(NULL, "ヤマハのごつい赤いヤツと、テールランプの右側が割れたヤツ。",
 		   NULL, " Get the tough-looking red YAMAHA, the one with the broken right tail light,", Line_WaitForInput);
-	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700101", 128, TRUE);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700101", 256, TRUE);
 	OutputLine(NULL, "あとシートにガムテ貼ってあった白いヤツ。",
 		   NULL, " and the white one that had the packing tape stuck to the seat.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700102", 128, TRUE);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700102", 256, TRUE);
 	OutputLine(NULL, "それだろ？",
 		   NULL, " It's those ones. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700103", 128, TRUE);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700103", 256, TRUE);
 	OutputLine(NULL, "　兄さんたちのバイク。」",
 		   NULL, "They belong to you, right?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
