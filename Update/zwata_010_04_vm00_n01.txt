@@ -27,7 +27,7 @@ void dialog002()
 	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700161", 256, TRUE);
 	OutputLine(NULL, "　綿流しのお祭りの開会式典で、各家の代表がそれぞれ挨拶をなさっているでしょう。",
 		   NULL, " Representatives from each of them gave short addresses at the Watanagashi festival's opening ceremony.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 11, "ps2/11/130700161-162(from130100732)", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "ps2/11/130700161-162(from130100732)", 540, TRUE);
 	OutputLine(NULL, "見ていません？」",
 		   NULL, " Did you see them?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

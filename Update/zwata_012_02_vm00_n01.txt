@@ -12,7 +12,7 @@ void dialog001()
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300361_1", 256, TRUE);
 	OutputLine(NULL, "「この頃には、…もう鬼ヶ淵村の不可侵性は失われていました。",
 		   NULL, "\"At the time... Onigafuchi Village had already lost its impenetrability.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "ps2/03/130300363", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "ps2/03/130300363", 540, TRUE);
 	OutputLine(NULL, "……かつて仙人と崇められた村人たちは、非人扱いを受け…。",
 		   NULL, " ...The villagers, once worshipped as transcendents, were now on the receiving end of inhuman treatment...", GetGlobalFlag(GLinemodeSp));
 
@@ -21,7 +21,7 @@ void dialog001()
 
 //　...神聖な鬼ヶ淵村は、いつの間にか、業病患者の隔離集落の成れの果てであるという根も葉もないレッテルを貼られ、...苦難の時代を迎えることになったのでした。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps2/03/130300364", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "ps2/03/130300364", 540, TRUE);
 	OutputLine(NULL, "　…神聖な鬼ヶ淵村は、いつの間にか、疫病患者の隔離集落の成れの果てであるという根も葉もないレッテルを貼られ、",
 		   NULL, "The sacred Onigafuchi Village had been groundlessly labeled an isolated village of those afflicted with incurable diseases, a mere shadow of its former self...", Line_Continue);
 	OutputLine(NULL, "…苦難の時代を迎えることになったのでした。」",
@@ -31,17 +31,17 @@ void dialog001()
 void dialog002()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps2/03/130300365", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "ps2/03/130300365", 540, TRUE);
 	OutputLine(NULL, "「……裁判も起こしました。",
 		   NULL, "\"......It even caused trials.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "ps2/03/130300366", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "ps2/03/130300366", 540, TRUE);
 	OutputLine(NULL, "…出身の問題は離婚する重要な理由にはなりえないと訴えて。",
 		   NULL, " ...They would appeal that where one came from wasn't an important enough reason to divorce.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "ps2/03/130300367", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "ps2/03/130300367", 540, TRUE);
 	OutputLine(NULL, "…でも敗訴しました。",
 		   NULL, " ...They would, however, lose their case. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps2/03/130300368", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "ps2/03/130300368", 540, TRUE);
 	OutputLine(NULL, "……出身の虚偽は、結婚の上での重大な詐称行為にあたるのだそうで……。」",
 		   NULL, "...Lying about one's birthplace apparently constitutes a heavy act of misrepresentation in marriage...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -50,7 +50,7 @@ void dialog002()
 void dialog003()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps2/03/130300372", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "ps2/03/130300372", 540, TRUE);
 	OutputLine(NULL, "「……太平洋戦争中は、国民一丸のスローガンが流れながらも、…雛見沢村の人々はさまざまな差別を受け続けました。",
 		   NULL, "\"...During the Pacific War, despite the slogans that all the country was acting as one... those from Hinamizawa continued to suffer all manner of discrimination.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300361_6", 256, TRUE);
@@ -61,7 +61,7 @@ void dialog003()
 void dialog004()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps2/03/130300381", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "ps2/03/130300381", 540, TRUE);
 	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
 	OutputLine(NULL, "「宗平は中国大陸に出兵し、ハルピンで食料倉庫の管理をしていたと言い、撤退時に上官や仲間たちと共謀して、軍の缶詰をごっそりと盗み出していたのでした。",
 		   NULL, "\"Sohei said that he managed food warehouses in Harbin after being dispatched to the Chinese mainland. When it was time to pull out, he conspired with his superiors and comrades and stole a great deal of the army's canned goods. ", GetGlobalFlag(GLinemodeSp));

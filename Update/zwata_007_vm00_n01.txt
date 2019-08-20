@@ -115,7 +115,7 @@ void dialog008()
 void dialog009()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps2/06/500600486", 256, TRUE);
+	ModPlayVoiceLS(4, 6, "ps2/06/500600486", 540, TRUE);
 	OutputLine(NULL, "「部下と喧嘩して、つるはしで滅多打ちにされて、両手両足、首をもいで捨てられたんだそうです。」",
 		   NULL, "\"He had a fight with a subordinate and was beaten to death with a pickaxe. His limbs and head were torn off, and the remains disposed of.\"", Line_Normal);
 	ClearMessage();
@@ -127,7 +127,7 @@ void dialog010()
 	ModPlayVoiceLS(4, 8, "ps3/s19/08/500800078", 256, TRUE);
 	OutputLine(NULL, "「バラバラ殺人だよ。",
 		   NULL, "\"One of those dismemberment homicides.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 8, "ps2/08/500800079", 256, TRUE);
+	ModPlayVoiceLS(4, 8, "ps2/08/500800079", 540, TRUE);
 	OutputLine(NULL, "ひところ流行ったろ。」",
 		   NULL, " They were all the rage at one point.\"", Line_Normal);
 }

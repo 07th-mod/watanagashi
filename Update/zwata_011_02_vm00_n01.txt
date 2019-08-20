@@ -17,7 +17,7 @@ void dialog001()
 void dialog002()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps2/11/130700241", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "ps2/11/130700241", 540, TRUE);
 	OutputLine(NULL, "……鷹野さんの方はちょっとあやふやですが、富竹さんとほぼ同じ時刻に殺害され、岐阜の山中に遺棄されたと考えるのが妥当でしょうなぁ。」",
 		   NULL, "...It's a bit uncertain in Takano-san's case, but the likely prospect is that she was murdered at about the same time as Tomitake-san, then dumped in the mountains in Gifu.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -29,13 +29,13 @@ void dialog003()
 	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700281", 256, TRUE);
 	OutputLine(NULL, "「口封じをされるような、とんでもない物が隠してあったんじゃないですか？",
 		   NULL, "\"There was nothing terrible in there that would make you keep silent?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 11, "ps2/11/130700282", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "ps2/11/130700282", 540, TRUE);
 	OutputLine(NULL, "　…例えば、覚醒剤の山とか。",
 		   NULL, " ...Like a pile of psychoactive drugs?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 11, "ps2/11/130700283", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "ps2/11/130700283", 540, TRUE);
 	OutputLine(NULL, "ケシの秘密工場があったとか。",
 		   NULL, " Maybe a secret poppy workshop?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 11, "ps2/11/130700284", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "ps2/11/130700284", 540, TRUE);
 	OutputLine(NULL, "あるいはソ連か中国辺りの拳銃が山ほど積まれていたと。",
 		   NULL, " Perhaps there were mountains of Soviet or Chinese handguns. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
