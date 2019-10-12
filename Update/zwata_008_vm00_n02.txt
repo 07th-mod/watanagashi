@@ -274,7 +274,8 @@ void dialog017()
 {
 
 	DisableWindow();
-	ModDrawCharacter(1, 9, "sprite/night/ta1_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	ModSetLayerFilter(1, 256, "night");
+	ModDrawCharacter(1, 9, "sprite/normal/ta1_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「ところがね＠ローマの時代の処刑方法にね、網焼きというものがあったの＠バーベキューと同じにね＠金網で挟みつけて、炭火でじっくりと焼いたんですって。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
@@ -341,7 +342,8 @@ void dialog017()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ModDrawCharacter(3, 6, "sprite/night/si1a_yowaki_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModSetLayerFilter(3, 256, "night");
+	ModDrawCharacter(3, 6, "sprite/normal/si1a_yowaki_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //　詩音が俺の背中に、しがみ付くようにくっついてくる＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -365,7 +367,7 @@ void dialog017()
 		   NULL, "\"You would think someone with their intestines pulled out would die instantly, right?", Line_WaitForInput);
 
 	DisableWindow();
-	ModDrawCharacter(1, 9, "sprite/night/ta1_akuwarai_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	ModDrawCharacter(1, 9, "sprite/normal/ta1_akuwarai_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	ModPlayVoiceLS(4, 9, "ps2/09/130900158", 540, TRUE);
 	OutputLine(NULL, "　でもね。",
@@ -394,7 +396,7 @@ void dialog017()
 	ClearMessage();
 
 	DisableWindow();
-	ModDrawCharacter(1, 9, "sprite/night/ta1_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	ModDrawCharacter(1, 9, "sprite/normal/ta1_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「ウィンチで引っ張り出すっていうのは何だか大仰な方法だけど＠もっと野蛮に、裂いた腹から臓物を、千切っては投げ千切っては投げという...!w1000そんな恐ろしい刑もあったんじゃないかって充分に考えられない＠　でも処刑者には意識があるの＠...それは痛い以上に...恐ろしい体験なんでしょうね...。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
@@ -417,7 +419,7 @@ void dialog017()
 		   NULL, "However, those being put to death are conscious.", Line_WaitForInput);
 
 	DisableWindow();
-	ModDrawCharacter(1, 9, "sprite/night/ta1_warai_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	ModDrawCharacter(1, 9, "sprite/normal/ta1_warai_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	ModPlayVoiceLS(4, 9, "ps2/09/130900164", 540, TRUE);
 	OutputLine(NULL, "…それは痛い以上に…恐ろしい体験なんでしょうね…。」",
@@ -434,7 +436,7 @@ void dialog017()
 	ClearMessage();
 
 	DisableWindow();
-	ModDrawCharacter(1, 9, "sprite/night/ta1_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	ModDrawCharacter(1, 9, "sprite/normal/ta1_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「雛見沢の、いえ、鬼ヶ淵村の綿流しもそんな感じだったのかしらね＠......ほら＠耳を澄ませば......聞こえてくるような気がしない？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
@@ -479,7 +481,7 @@ void dialog018()
 
 
 	DisableWindow();
-	ModDrawCharacterWithFiltering(3, 6, "sprite/night/si1a_odoroki_a1_", "2", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	ModDrawCharacterWithFiltering(3, 6, "sprite/normal/si1a_odoroki_a1_", "2", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「け、......圭ちゃん、!w800......あれ、中に入ってない？＠　人＠　ミイラ？！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -522,7 +524,7 @@ void dialog018()
 		   NULL, "...Being that dark, there wasn't any way you could tell if something was there in the first place.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(1, 9, "sprite/night/ta1_akuwarai_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	ModDrawCharacter(1, 9, "sprite/normal/ta1_akuwarai_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「......私には何も見えないけど＠見間違いじゃないの？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
@@ -537,7 +539,7 @@ void dialog018()
 
 	DisableWindow();
 //	DrawBustshot( 2, "si_si_yw_b1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
-	ModDrawCharacter(3, 6, "sprite/night/si1a_yowaki_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 400, TRUE );
+	ModDrawCharacter(3, 6, "sprite/normal/si1a_yowaki_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 400, TRUE );
 
 //「...................................................。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -555,7 +557,7 @@ void dialog018()
 
 	DisableWindow();
 	FadeBustshot( 3, FALSE, 0, 0, 0, 0, 200, FALSE );
-	ModDrawCharacter(1, 9, "sprite/night/ta1_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	ModDrawCharacter(1, 9, "sprite/normal/ta1_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 }
 
 void dialog019()
@@ -579,7 +581,8 @@ void dialog019()
 void dialog020()
 {
 	DisableWindow();
-	ModDrawCharacter(2, 9, "sprite/night/ta1_warai_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModSetLayerFilter(2, 256, "night");
+	ModDrawCharacter(2, 9, "sprite/normal/ta1_warai_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「被害者は生きながらにして全身の皮を剥がれ、あらゆる拷問を受けて虐め殺されたんですって＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
@@ -598,7 +601,7 @@ void dialog020()
 
 
 	DisableWindow();
-	ModDrawCharacter(2, 9, "sprite/night/ta1_akuwarai_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 9, "sprite/normal/ta1_akuwarai_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //　......私は、どの工程も『生きている』!w900内にやったんじゃないか、って思ってるんだけどね＠前原くんはどう思うかしら？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
@@ -625,7 +628,7 @@ void dialog020()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ModDrawCharacter(2, 9, "sprite/night/ta1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 9, "sprite/normal/ta1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 }
 

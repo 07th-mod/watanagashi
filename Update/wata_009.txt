@@ -118,6 +118,7 @@ void main()
 	DisableWindow();
 	DrawScene("white", 400 );
 	PlayBGM( 1, "msys01", 56, 0 );
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacterWithFiltering(2, 2, "sprite/normal/re1a_def_a1_", "0", "right", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask("background/m_hi1", "m1", 0, 0, 300 );
 
@@ -310,6 +311,7 @@ void main()
 	FadeOutBGM( 1, 1000, TRUE );
 	DrawScene("white", 1000 );
 	PlayBGM( 1, "msys01", 56, 0 );
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacter(3, 2, "sprite/normal/re1a_def_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawScene("background/ie1", 300 );
 
@@ -449,6 +451,7 @@ void main()
 
 	DisableWindow();
 	PlayBGM( 1, "msysMi", 56, 0 );
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacterWithFiltering(1, 3, "sprite/normal/me1b_odoroki_a1_", "2", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「はー＠　はー＠　...待っててくれたわけ＠　さ、先に行っちゃっても良かったのに...。＠
@@ -1003,6 +1006,7 @@ void main()
 
 
 	DisableWindow();
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 3, "sprite/normal/me1a_akuwarai_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 //「ん＠　...あはははは、実は内緒なんだけど...、昨日はお祭りのあとで親族の宴会に巻き込まれちゃってさ＠/
@@ -1013,6 +1017,7 @@ void main()
 	//VoiceMatchingEnd
 
 	DisableWindow();
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 3, "sprite/normal/me1a_warai_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「なはははは...＠　勘弁してよ＠体調が悪いのは本当なんだからさー。＠
@@ -1065,6 +1070,7 @@ void main()
 
 	ClearMessage();
 	DisableWindow();
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 3, "sprite/normal/me1a_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「あ、でも頭がガンガンするのは本当＠だからさ、さっき先生に早退していいって言われちゃった。＠
@@ -1701,6 +1707,7 @@ void main()
 	DisableWindow();
 	StopSE( 3 );
 	PlayBGM( 1, "msys12", 56, 0 );
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacter(1, 22, "sprite/normal/tie_2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene("background/gr1", 400 );
 
@@ -1791,6 +1798,7 @@ void main()
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
 	PlayBGM( 1, "msys06", 56, 0 );
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacterWithFiltering(3, 5, "sprite/normal/ri1_komaru_a1_", "0", "left", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawSceneWithMask("background/gk1", "right", 0, 0, 300 );
 
@@ -2355,6 +2363,7 @@ void main()
 //■園崎家について
 	DisableWindow();
 	PlayBGM( 1, "msys12", 56, 0 );
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacterWithFiltering(3, 6, "sprite/normal/si1a_def_a1_", "0", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawSceneWithMask("background/mati2", "up", 0, 0, 300 );
 
@@ -2419,6 +2428,7 @@ void main()
 
 
 	DisableWindow();
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacter(3, 6, "sprite/normal/si1a_akuwarai_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「残念でした＠私はそもそも、今日はズル休みしてますので＠私、お姉より要領いいですから。＠
@@ -2606,6 +2616,7 @@ void main()
 
 
 	DisableWindow();
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 6, "sprite/normal/si1a_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「図書館って、涼しくていいところですね～＠私、将来は図書館で働きたいです。＠
@@ -2904,6 +2915,7 @@ void main()
 
 
 	DisableWindow();
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacterWithFiltering(1, 11, "sprite/normal/oisi1_2_", "0", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「えぇ＠凄いんです＠んっふっふっふ！￥
@@ -3311,6 +3323,7 @@ void main()
 
 	ClearMessage();
 	DisableWindow();
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 11, "sprite/normal/oisi1_2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「いえいえいえいえいえ＠まさかまさか＠園崎魅音さんが継ぐのはそんなチンケなヤクザ組織だけじゃありません＠彼女が継ぐのは園崎家そのものですよ＠......その辺りの意味、ちょっと噛み締めていただけますかな？＠
@@ -3332,6 +3345,7 @@ void main()
 		   NULL, "Ooishi-san had spoken lightly about all this from start to finish, but what he was saying wasn't light in the least... it was abrupt and unbelievable.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 11, "sprite/normal/oisi1_1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「魅音さんがその気になれば、往来の真ん中で人殺しをしたって、もみ消せちゃうかもしれないんですよ＠証人は現れないだろうし、警察にだって圧力をかけられますし。＠
@@ -4148,6 +4162,7 @@ void main()
 	FadeOutBGM( 2, 1000, TRUE );
 	StopSE( 3 );
 	PlayBGM( 1, "msys11", 56, 0 );
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacter(1, 11, "sprite/normal/oisi1_5_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	ModDrawCharacterWithFiltering(2, 19, "sprite/normal/kuma_def_", "0", "left", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/ke_ky2", 400 );
@@ -4242,6 +4257,7 @@ void main()
 		   NULL, " ...However, he spun back around.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacter(3, 11, "sprite/normal/oisi1_1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「そうそう前原さん。＠

@@ -1153,6 +1153,7 @@ void main()
 	DisableWindow();
 	DrawSceneWithMask("black", "down", 0, 0, 300 );
 	PlayBGM( 1, "msys16", 56, 0 );
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 3, "sprite/normal/me1a_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「そういった、違法な抵抗運動の中心として、年少ながら活躍したのがお姉でした。＠
@@ -2529,6 +2530,7 @@ void main()
 
 
 	DisableWindow();
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 5, "sprite/normal/ri1_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //　......猫さんの心配し過ぎなのです＠ボクがきっと、何とかしてあげますですよ＠

@@ -15,6 +15,7 @@ void main()
 
 	PlayBGM( 1, "msys01", 56, 0 );
 
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 3, "sprite/normal/me1a_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask("background/gk3", "up", 0, 0, 300 );
 
@@ -120,6 +121,7 @@ void main()
 
 
 	DisableWindow();
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacterWithFiltering(3, 3, "sprite/normal/me1b_warai_a1_", "1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「あっはっはっは＠　う～ん、そうだねぇ＠素人は手を出さない方が無難かもしれない。くっくっく！＠
@@ -142,6 +144,7 @@ void main()
 		   NULL, "Mion gave a hearty laugh, implying that the only one who could do so was the club president.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacterWithFiltering(1, 5, "sprite/normal/ri1_def_a1_", "0", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 1300, TRUE );
 
 //「......魅ぃ＠先生が体育倉庫のカギを探してますですよ＠心当たりはありませんですか？＠
@@ -514,6 +517,7 @@ void main()
 	//VoiceMatchingEnd
 
 	DisableWindow();
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacter(1, 5, "sprite/normal/ri1_komaru_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「......魅ぃにお買い物代を借りたことをコロリと忘れてしまったら＠耳を揃えて返さんと身売りして風呂に沈めたるどーと凄まれましたのです。＠
@@ -525,6 +529,7 @@ void main()
 
 	ClearMessage();
 	DisableWindow();
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacter(3, 4, "sprite/normal/sa1a_warai_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 	//VoiceMatching
@@ -538,6 +543,7 @@ void main()
 		   NULL, "Rika-chan and I gave her a pat on the head.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacter(3, 4, "sprite/normal/sa1b_odoroki_b1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「...？＠　...な、なぜ撫でられるんですの？！　...？！＠
@@ -551,6 +557,7 @@ void main()
 
 
 
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacter(1, 5, "sprite/normal/ri1_warai_a1_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「......沙都子はいい子さんですから、なでなでなのです。＠

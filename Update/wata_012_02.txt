@@ -118,6 +118,7 @@ void main()
 		   NULL, "...I'd never have expected this would be happening today.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacterWithFiltering(2, 2, "sprite/normal/re1a_okoru_a1_", "0", "right", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 //「......行こ＠圭一くん。＠
@@ -266,6 +267,7 @@ void main()
 
 
 	DisableWindow();
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacterWithFiltering(3, 2, "sprite/normal/re1a_def_a1_", "0", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「庭というか...領地だね＠見ての通り、私有地ではあるけど、手入れも何もしてないから＠散策ができるような気持ちいい森というわけでもないし...。＠
@@ -450,6 +452,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	FadeOutBGM( 2, 1000, TRUE );
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacterWithFiltering(1, 3, "sprite/normal/me2_def_a1_", "0", "right", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「...こんな時間に珍しいね＠...２人とも学校は？＠
@@ -3061,7 +3064,9 @@ void main()
 		   NULL, "...As for the marriages where one partner had lied about it—as soon as the truth got out, they were made to divorce.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacter(1, 3, "sprite/normal/me2_majime_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacter(3, 2, "sprite/normal/re1a_nande_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawSceneWithMask("background/heya1", "up", 0, 0, 200 );
 
@@ -3109,6 +3114,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacter(1, 3, "sprite/normal/me2_sinmyou_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 400, TRUE );
 
 //「......まぁ...、...自業自得と言えないこともないのかもしれません...＠...私たちのご先祖さまは、自分たちに鬼の血が流れていることを誇りに思い、自慢し、麓の人々を蔑んで暮らしてきたのですからね...＠その神秘性で麓の村人たちを怖がらせ、畏怖と貢物の献上を要求してきたのですから...。＠
@@ -3247,6 +3253,7 @@ void main()
 		   NULL, "He entrusted the entire amount to his wife, the head of the Sonozaki house.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 3, "sprite/normal/me2_majime_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/heya1", 400 );
 
@@ -3305,6 +3312,7 @@ void main()
 		   NULL, "The Sonozaki family, the center of everything, would be extolled for a long time as the minds behind Hinamizawa's revitalization...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacterWithFiltering(3, 2, "sprite/normal/re1b_warai_b1_", "2", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「...その活躍の中心人物が、魅ぃちゃんのお婆ちゃんなんだね＠......すごいよね＠大活躍！＠
@@ -3472,6 +3480,7 @@ void main()
 
 
 	DisableWindow();
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacterWithFiltering(3, 2, "sprite/normal/re1b_bikkuri_b1_", "2", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「......圭一くん、知ってるの＠　何かな...？￥
@@ -3565,6 +3574,7 @@ void main()
 
 
 	DisableWindow();
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacter(1, 3, "sprite/normal/me2_sinmyou_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 400, TRUE );
 
 //「......本当に。＠
@@ -3802,6 +3812,7 @@ void main()
 		   NULL, " ...I didn't know.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 3, "sprite/normal/me2_majime_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「...当主である祖母は、ある時、村の子供たちにこう言いました...。￥
@@ -3861,6 +3872,7 @@ void main()
 		   NULL, " Even that answer was simple.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacter(3, 3, "sprite/normal/me2_majime_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawScene("background/heya1", 400 );
 
@@ -4134,6 +4146,7 @@ void main()
 
 
 	DisableWindow();
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacterWithFiltering(1, 3, "sprite/normal/me2_sinmyou_a1_", "0", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「............ありがとう。＠

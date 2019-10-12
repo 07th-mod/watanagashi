@@ -187,7 +187,8 @@ void main()
 
 
 	DisableWindow();
-	ModDrawCharacter(2, 15, "sprite/night/kasa_1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModSetLayerFilter(2, 256, "night");
+	ModDrawCharacter(2, 15, "sprite/normal/kasa_1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 
 //「圭一さんでしたか＠お名前。＠
@@ -209,7 +210,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ModDrawCharacter(2, 15, "sprite/night/kasa_2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 15, "sprite/normal/kasa_2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 
 
@@ -235,7 +236,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ModDrawCharacter(2, 15, "sprite/night/kasa_1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 15, "sprite/normal/kasa_1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 
 //「ですが、魅音さんと同じで、根はやさしい方なんですよ。＠
@@ -264,7 +265,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	FadeBustshot( 2, FALSE, 0, 0, 0, 0, 500, TRUE );
-	ModDrawCharacter(2, 6, "sprite/night/si1a_wink_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 6, "sprite/normal/si1a_wink_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「じゃあね圭ちゃん！　また会いましょうね＠姉にもよろしくお伝え下さい＠私も明日から雛見沢の学校に通おうかな。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -291,7 +292,7 @@ void main()
 
 
 	DisableWindow();
-	ModDrawCharacter(2, 6, "sprite/night/si1b_warai_b1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 6, "sprite/normal/si1b_warai_b1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「わ、それはすごくひどいことですよ、圭ちゃん...！￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }

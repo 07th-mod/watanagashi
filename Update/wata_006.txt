@@ -41,6 +41,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask("black", "left", 0, 0, 1300 );
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacter(3, 4, "sprite/normal/sa1a_akireru_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawSceneWithMask("background/gk3", "left", 0, 0, 1300 );
 
@@ -61,6 +62,7 @@ void main()
 
 
 	DisableWindow();
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacterWithFiltering(1, 5, "sprite/normal/ri1_def_a1_", "0", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「......女の子には不安定になる時もあるのです＠放っておいてあげるのが一番なのですよ。￥

@@ -514,7 +514,8 @@ void main()
 	DisableWindow();
 	DrawScene("black", 3000 );
 	PlayBGM( 1, "msys11", 56, 0 );
-	ModDrawCharacter(2, 2, "sprite/sunset/re1a_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModSetLayerFilter(2, 256, "sunset");
+	ModDrawCharacter(2, 2, "sprite/normal/re1a_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask("background/hi5_01", "left", 0, 0, 3000 );
 
 //「......そっか＠......引っ越しちゃうんだね＠......いつ？＠
@@ -543,7 +544,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ModDrawCharacter(2, 2, "sprite/sunset/re1a_komaru_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 2, "sprite/normal/re1a_komaru_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「!s200.............................................!sd寂しくなるね＠...私一人しか、!w1000...残らない。＠
 //!s200
@@ -1265,7 +1266,8 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ModDrawCharacter(2, 3, "sprite/night/me2_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModSetLayerFilter(2, 256, "night");
+	ModDrawCharacter(2, 3, "sprite/normal/me2_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //　み...見間違いなんかじゃない＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1442,7 +1444,7 @@ void main()
 
 
 	DisableWindow();
-	ModDrawCharacter(2, 3, "sprite/night/me2_wink_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 3, "sprite/normal/me2_wink_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「あはははは、お久しぶり～＠...どう＠　元気にしてた？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -1491,7 +1493,7 @@ void main()
 
 
 	DisableWindow();
-	ModDrawCharacter(2, 3, "sprite/night/me2_warai_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 3, "sprite/normal/me2_warai_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「............本当はいけないよ＠...えへへへ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -1540,7 +1542,7 @@ void main()
 
 
 	DisableWindow();
-	ModDrawCharacter(2, 3, "sprite/night/me2_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 3, "sprite/normal/me2_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「...最後にお話したかったから。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -2044,7 +2046,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ModDrawCharacter(2, 3, "sprite/night/me2_majime_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, TRUE );
+	ModDrawCharacter(2, 3, "sprite/normal/me2_majime_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, TRUE );
 
 //「......今日を境に魅音が戻ってくることはもうない。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -2086,7 +2088,7 @@ void main()
 		   NULL, " ......The demon.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(2, 3, "sprite/night/me2_hig_maji_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1300, FALSE );
+	ModDrawCharacter(2, 3, "sprite/normal/me2_hig_maji_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1300, FALSE );
 	DrawSceneWithMask("background/ma2", "up", 0, 0, 1300 );
 //print 6
 

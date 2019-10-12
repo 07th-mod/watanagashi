@@ -338,6 +338,7 @@ void main()
 		   NULL, "The door opened... and as I expected, Ooishi-san came in.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 11, "sprite/normal/oisi1_2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	PlayBGM( 1, "msys06", 56, 0 );
 
@@ -701,6 +702,7 @@ void main()
 
 	DisableWindow();
 	PlayBGM( 1, "msys12", 56, 0 );
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 11, "sprite/normal/oisi1_1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「...............詩音さんの件は本当にお気の毒でした。＠
@@ -1178,6 +1180,7 @@ void main()
 
 	DisableWindow();
 	DrawSceneWithMask("black", "down", 0, 0, 300 );
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacterWithFiltering(1, 5, "sprite/normal/ri1_def_a1_", "0", "m1", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「実は、彼女のスカートのポッケからですね＠/
@@ -1250,6 +1253,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawScene("black", 1000 );
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacterWithFiltering(2, 11, "sprite/normal/oisi1_1_", "0", "left", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/byo_01", 1000 );
 
@@ -2054,6 +2058,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacterWithFiltering(3, 9, "sprite/normal/ta1_def_", "0", "right", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「あれは絞殺された後に焼かれたことがわかってます＠......検死したのは岐阜県警さんなんですけどね＠これがちょっとおかしいんですよ＠

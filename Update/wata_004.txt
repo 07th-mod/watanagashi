@@ -58,6 +58,7 @@ void main()
 
 
 	DisableWindow();
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacterWithFiltering(1, 4, "sprite/normal/sa3_akireru_a1_", "0", "left", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「圭一さんが何を言ってるのか、難しくてさっぱりですわよ。￥
@@ -67,6 +68,7 @@ void main()
 		   NULL, "\"I have no idea what you're saying, Keiichi-san; it's rather difficult to understand.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacterWithFiltering(3, 2, "sprite/normal/re3a_def_a1_", "0", "right", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「えーっとね＠先生の授業の進め方のルールみたいなものなの。＠
@@ -81,6 +83,7 @@ void main()
 
 
 	DisableWindow();
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 3, "sprite/normal/me3_warai_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「あっはっはっは＠　都会の軟弱な連中にはそういうのは必要だろうけどさ＠田舎育ちのうちらが身体能力で劣ると思うー？＠
@@ -444,6 +447,7 @@ void main()
 	//VoiceMatchingEnd
 
 	DisableWindow();
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacterWithFiltering(1, 3, "sprite/normal/me3_tohoho_a1_", "0", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「あれ＠　圭ちゃん家には回覧板とか行ってない＠　書いてなかった＠　今度の日曜に綿流しのお祭りがあるって。＠
@@ -486,6 +490,7 @@ void main()
 
 	ClearMessage();
 	DisableWindow();
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacter(1, 3, "sprite/normal/me3_wink_a1_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「お、さすがは圭ちゃん、察しがいいねぇ＠　綿流しはね、名前の通り、綿を流すんだよ。＠
@@ -498,6 +503,7 @@ void main()
 		   NULL, " The Watanagashi --or Cotton Drift-- Festival is, as the name implies, where we set cotton adrift down the river.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacter(3, 2, "sprite/normal/re3a_hau_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //レナrvS19/02/500200087.「…祭壇にもお布団を積み上げているし
@@ -521,6 +527,7 @@ void main()
 		   NULL, "Mion tilted her head pensively.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacter(1, 3, "sprite/normal/me3_def_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「...謂れなんてほど難しいのはないと思うなぁ＠この辺って冬の寒さはかなり厳しいからね、布団とか半纏とかの防寒具を特に大切にしたからじゃないかな。￥
@@ -591,6 +598,7 @@ void main()
 		   NULL, " Rika-chan in a shrine maiden outfit... hau~!", Line_WaitForInput);
 
 	DisableWindow();
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacter(3, 2, "sprite/normal/re3b_kaii_b1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //　かぁいいんだよ～ぅ！＠
@@ -1020,6 +1028,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 22, "sprite/normal/tie_2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 //「こらッ＠　園崎さん、前原くん、授業中ですよ...！＠　園崎さんはどこまで進みましたか？　ノートを持ってきてください。￥
@@ -3469,6 +3478,7 @@ void main()
 		   NULL, "Several burly officers appeared from inside the 2nd vehicle.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacterWithFiltering(1, 6, "sprite/normal/si1a_def_a1_", "0", "right", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「...あ、お巡りさん、いいところに来ました＠　恐喝の現行犯です＠捕まえてください。＠
@@ -3576,6 +3586,7 @@ void main()
 		   NULL, "They could still be heard yelling while inside the police cars, but what they were saying was no longer intelligible.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacter(3, 11, "sprite/normal/oisi1_1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawScene("background/mati2", 300 );
 
@@ -3895,6 +3906,7 @@ void main()
 		   NULL, "As Shion finished applauding the dispersing group for their efforts, she strode over to me.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 6, "sprite/normal/si1a_warai_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「いやいや...圭ちゃんもやるじゃない＠　でも私も相手を選んだ方がいいと思いますけどねー。＠
@@ -4879,6 +4891,7 @@ void main()
 		   NULL, "\"Everybody really is close-knit, aren't they?\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacterWithFiltering(3, 6, "sprite/normal/si2_wink_a1_", "2", "right", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「...昔からの伝統かな＠　雛見沢って昔っからいろいろと廃村の危機に遭うんですよね＠その度に結束して戦って存続を勝ち取ってきたっていう歴史があるんですよ＠/
@@ -5033,6 +5046,7 @@ void main()
 		   NULL, "Owners of yet unacquired land split their properties, increasing the number of landowners in order to stifle the project.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 6, "sprite/normal/si2_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/res5", 200 );
 

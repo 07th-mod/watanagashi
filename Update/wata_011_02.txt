@@ -55,6 +55,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask("black", "left", 0, 0, 300 );
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 2, "sprite/normal/re1a_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask("background/m_hi1", "left", 0, 0, 300 );
 
@@ -154,6 +155,7 @@ void main()
 
 
 	DisableWindow();
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacterWithFiltering(1, 11, "sprite/normal/oisi1_2_", "0", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //　そこから降りてきたのは大石さんだった＠......俺の帰宅を待ち伏せていたに違いない＠
@@ -170,6 +172,7 @@ void main()
 		   NULL, "Ooishi-san started walking over wearing that annoying grin.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacter(3, 2, "sprite/normal/re1a_nande_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawSceneWithMask("background/m_hi1", "right", 0, 0, 300 );
 //「...レナはもう行きな＠あいつに絡まれると長い。＠

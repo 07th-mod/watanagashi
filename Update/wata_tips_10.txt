@@ -156,6 +156,7 @@ void main()
 
 	DisableWindow();
 	FadeOutBGM( 1, 1000, TRUE );
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacter(3, 11, "sprite/normal/oisi1_2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawSceneWithMask("background/ke_s2", "right", 0, 0, 300 );
 

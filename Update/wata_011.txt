@@ -136,6 +136,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask("white", "left", 0, 0, 300 );
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 2, "sprite/normal/re1a_nande_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask("background/ma_g1", "left", 0, 0, 300 );
 
@@ -275,6 +276,7 @@ void main()
 		   NULL, "...We were a little bit late today, so we thought she'd be waiting for us...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacterWithFiltering(3, 2, "sprite/normal/re1a_komaru_a2_", "0", "right", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「......魅ぃちゃん、さすがに今日は起きられないかもね。＠
@@ -515,6 +517,7 @@ void main()
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
 	PlaySE( 3, "wa_020", 56, 64 );
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacter(1, 22, "sprite/normal/tie_1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawSceneWithMask("background/gk3", "left", 0, 0, 200 );
 	PlayBGM( 1, "msys12", 56, 0 );
@@ -1106,7 +1109,8 @@ void main()
 		   NULL, "......I had no basis for thinking that... just a gut feeling.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(2, 5, "sprite/flashback/ri1_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModSetLayerFilter(2, 256, "flashback");
+	ModDrawCharacter(2, 5, "sprite/normal/ri1_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("flashback/gr3", 1000 );
 
 //　俺はあの日、恐らくとても重要なことを梨花ちゃんに打ち明けた＠
@@ -1181,6 +1185,7 @@ void main()
 		   NULL, " It was just a hunch.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 2, "sprite/normal/re1a_komaru_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask("background/gk1", "up", 0, 0, 300 );
 
@@ -1903,7 +1908,8 @@ void main()
 
 	DisableWindow();
 	DrawScene("black", 1000 );
-	ModDrawCharacter(3, 5, "sprite/flashback/ri1_warai_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	ModSetLayerFilter(3, 256, "flashback");
+	ModDrawCharacter(3, 5, "sprite/normal/ri1_warai_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawScene("flashback/yhu2", 1000 );
 
 //　そして梨花ちゃんは、自転車に乗って醤油を分けてもらいに出掛けた＠
@@ -1922,7 +1928,8 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask("black", "right", 0, 0, 300 );
-	ModDrawCharacter(1, 4, "sprite/flashback/sa1a_def_a1_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	ModSetLayerFilter(1, 256, "flashback");
+	ModDrawCharacter(1, 4, "sprite/normal/sa1a_def_a1_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawSceneWithMask("flashback/hu_r1", "right", 0, 0, 300 );
 
 //　そこで沙都子は、梨花ちゃんが醤油を分けてもらいに行った家へ電話をかけた＠
@@ -1965,7 +1972,7 @@ void main()
 		   NULL, " ...I think that's how they called her out there.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(1, 4, "sprite/flashback/sa1a_akireru_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	ModDrawCharacter(1, 4, "sprite/normal/sa1a_akireru_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //　沙都子は悪態をつきながら、自分の作った夕飯にラップをかけた＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1981,7 +1988,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawSceneWithMask("black", "left", 0, 0, 300 );
-	ModDrawCharacter(3, 4, "sprite/flashback/sa1a_def_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	ModDrawCharacter(3, 4, "sprite/normal/sa1a_def_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawSceneWithMask("flashback/yhu2", "left", 0, 0, 300 );
 
 //　そして沙都子も自転車に乗った＠梨花ちゃんのいる家に向かって￥
@@ -2251,8 +2258,10 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawScene("black", 1000 );
-	ModDrawCharacter(1, 8, "sprite/night/tomi1_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 400, FALSE );
-	ModDrawCharacter(3, 9, "sprite/night/ta1_def_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 400, TRUE );
+	ModSetLayerFilter(1, 256, "night");
+	ModDrawCharacter(1, 8, "sprite/normal/tomi1_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 400, FALSE );
+	ModSetLayerFilter(3, 256, "night");
+	ModDrawCharacter(3, 9, "sprite/normal/ta1_def_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 400, TRUE );
 
 //　......そしてその晩の内に、富竹さんと鷹野さんは犠牲になった￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2267,7 +2276,8 @@ void main()
 		   NULL, "There were two left.", Line_WaitForInput);
 
 	DisableWindow();
-	ModDrawCharacter(2, 6, "sprite/night/si1a_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModSetLayerFilter(2, 256, "night");
+	ModDrawCharacter(2, 6, "sprite/normal/si1a_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //...俺と詩音＠
 	OutputLine(NULL, "…俺と詩音。",

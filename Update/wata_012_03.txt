@@ -9,6 +9,7 @@ void main()
 	FadeOutBGM( 2, 1000, TRUE );
 	DisableWindow();
 	PlayBGM( 2, "lsys12", 56, 0 );
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 3, "sprite/normal/me2_hau_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/so_g1", 1000 );
 
@@ -165,6 +166,7 @@ void main()
 
 
 	DisableWindow();
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacterWithFiltering(3, 3, "portrait/normal/me2_sinmyou_a1_", "0", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //「さぁ、............どうかな＠...圭ちゃんは、自分の右手と左手は仲が良いと思う？＠
@@ -1018,7 +1020,8 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	PlayBGM( 1, "msys21", 56, 0 );
-	ModDrawCharacter(2, 3, "sprite/night/me2_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModSetLayerFilter(2, 256, "night");
+	ModDrawCharacter(2, 3, "sprite/normal/me2_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask("background/saiguden_02", "up", 0, 0, 1300 );
 
 //「...いろいろ、......あるでしょ＠一部のものは実際に祭具殿から運び込まれたものなんだよ。＠
@@ -1069,6 +1072,7 @@ void main()
 		   NULL, "There was also a coiled rubber hose along the wall attached to a faucet, perhaps for cleaning up the splattered blood.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacterWithFiltering(2, 3, "sprite/normal/me2_def_a1_", "0", "left", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/saiguden_02", 500 );
 
@@ -1512,7 +1516,8 @@ void main()
 		   NULL, "...However, it didn't seem like it was getting through her screams...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(3, 3, "sprite/night/me2_def_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	ModSetLayerFilter(3, 256, "night");
+	ModDrawCharacter(3, 3, "sprite/normal/me2_def_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawScene("background/so_chikafuroa", 300 );
 
 //「詩音＠...ご機嫌はいかがだった...？＠
@@ -1596,7 +1601,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	FadeOutBGM( 1, 1000, TRUE );
-	ModDrawCharacter(3, 3, "sprite/night/me2_huteki_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 3, "sprite/normal/me2_huteki_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「安心しなよ＠あんたは殺さない＠...まだまだ殺さないんだから＠......くっくっくっくっくっくっくっくっくっくっくっく...！！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -1648,7 +1653,7 @@ void main()
 		   NULL, " I don't want anyone else... to dieeeeeeeee!!!!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(3, 3, "sprite/night/me2_warai_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 3, "sprite/normal/me2_warai_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「あっはははははははははははははははははははははッ！！＠/
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -1657,7 +1662,7 @@ void main()
 		   NULL, "\"Ah-hahahahahahahahahahahahahahahahahahah!!!", Line_WaitForInput);
 
 	DisableWindow();
-	ModDrawCharacter(3, 3, "sprite/night/me2_huteki_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 3, "sprite/normal/me2_huteki_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //　そんなに死にたければ、この男を殺した後に、ゆっくりとひき肉にしてやるよ＠...古式に則り、四肢の先端から少しずつ＠ガリゴリと削ってミンチにしてやる＠...あの肉挽き機はあんたのためにとっておいてあるんだからね＠/
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300569", 256, TRUE);
@@ -1675,7 +1680,7 @@ void main()
 		   NULL, " I had that mincing machine set up specifically for you, after all. ", GetGlobalFlag(GLinemodeSp));
 
 	DisableWindow();
-	ModDrawCharacter(3, 3, "sprite/night/me2_akuwarai_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 3, "sprite/normal/me2_akuwarai_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //...それとも、それで圭ちゃんをミンチにして見せた方が、あんたには面白いかなぁ？￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -2537,6 +2542,7 @@ void main()
 		   NULL, "The feeling in my body returned, and the first action I took was to tell off that thing that looked like Mion.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 3, "sprite/normal/me2_huteki_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask("background/saiguden_02", "up", 0, 0, 1000 );
 
@@ -3423,6 +3429,7 @@ void main()
 		   NULL, "If it will sate the demon, then do to me what you will...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 3, "sprite/normal/me2_odoroki_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/saiguden_02", 1000 );
 
@@ -3662,7 +3669,8 @@ void main()
 		   NULL, "Mion put down the hammer... and gently stroked my cheek.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(3, 3, "portrait/night/me2_sinmyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	ModSetLayerFilter(3, 256, "night");
+	ModDrawCharacter(3, 3, "portrait/normal/me2_sinmyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawScene("background/saiguden_02", 1000 );
 
 //「......圭ちゃん＠今の、......三つ目の願いだけは、聞いてもいいよ。＠
@@ -3698,7 +3706,7 @@ void main()
 		   NULL, " ........She'll agree to it...?", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(3, 3, "portrait/night/me2_majime_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 3, "portrait/normal/me2_majime_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「一つ目の願い＠詩音を救うこと＠...これはもう無理＠......詩音は鬼が殺してしまう＠...それはもう決められたことだから止められない＠だから諦めて。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -3766,7 +3774,7 @@ void main()
 		   NULL, " Don't say such sad things... like that she won't ever come back...!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(3, 3, "portrait/night/me2_sinmyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 3, "portrait/normal/me2_sinmyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「!s300..................................................................!sd聞こえる＠　あの音。＠
 //!s300
@@ -3826,7 +3834,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ModDrawCharacter(3, 3, "portrait/night/me2_sinmyou_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	ModDrawCharacter(3, 3, "portrait/normal/me2_sinmyou_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawScene("background/saiguden_02", 300 );
 
 //「帰りが遅いから、レナが大石を呼んだんでしょ＠.........あのぼやーっとした感じの子が、こんなに頭が回るのだけは計算外だったな。＠
@@ -3879,7 +3887,8 @@ void main()
 
 
 	DisableWindow();
-	ModDrawCharacter(3, 3, "portrait/night/me2_warai_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModSetLayerFilter(3, 256, "night");
+	ModDrawCharacter(3, 3, "portrait/normal/me2_warai_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「くっくっく＠...そうだね。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -3924,7 +3933,7 @@ void main()
 		   NULL, "The halls were a bit complex... but aside from the door to this very torture chamber, there was nothing in their way.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(3, 3, "portrait/night/me2_sinmyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 3, "portrait/normal/me2_sinmyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「......殺さないけど、しばらく圭ちゃんにはお休みしててもらうね＠すぐに大石が来てくれるから＠ちょっとの我慢。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -3968,7 +3977,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ModDrawCharacter(3, 3, "portrait/night/me2_yowaki_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	ModDrawCharacter(3, 3, "portrait/normal/me2_yowaki_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawSceneWithMask("background/saiguden_02", "up", 0, 0, 200 );
 
 //「..........................................ごめんね＠......魅音を汚して。＠

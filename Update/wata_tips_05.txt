@@ -39,6 +39,7 @@ void main()
 
 
 	DisableWindow();
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacterWithFiltering(2, 11, "sprite/normal/oisi1_1_", "0", "right", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 //「熊ちゃん、腕を放してあげていいですよ＠さささ、どうぞおかけになって。＠
@@ -148,6 +149,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	DrawScene("black", 1000 );
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacterWithFiltering(3, 11, "sprite/normal/oisi1_1_", "0", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawScene("background/ke_ky1", 1000 );
 
@@ -698,6 +700,7 @@ void main()
 		   NULL, "...They made themselves very easy to understand.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 11, "sprite/normal/oisi1_2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「バイク戻ってくるまでのんびりしてましょうよ＠ビールもっとありますよ＠　乾き物だってありますし＠テレビ見ます＠　ろくなのやってませんけどね。＠

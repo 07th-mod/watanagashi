@@ -56,7 +56,8 @@ void dialog004()
 
 	DisableWindow();
 	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
-	ModDrawCharacterWithFiltering(3, 3, "sprite/sunset/me2_tohoho_a1_", "1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	ModSetLayerFilter(3, 256, "sunset");
+	ModDrawCharacterWithFiltering(3, 3, "sprite/normal/me2_tohoho_a1_", "1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 //魅音「一緒にしないでください、こんなやつと」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
