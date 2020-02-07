@@ -158,7 +158,7 @@ void dialog010()
 //「小さい女の子だけじゃなくて、その道の割と大きな男の子にも人気があるんだって＠...圭ちゃんもその一人だったとはねぇ～。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「小さい女の子だけじゃなくて、その道の割と大きな男の子にも人気があるんだって？",
-		   NULL, "\"It's not just popular with little girls, it's also surpringly well-received by older boys, isn't it?", Line_WaitForInput);
+		   NULL, "\"It's not just popular with little girls, it's also surprisingly well-received by older boys, isn't it?", Line_WaitForInput);
 	OutputLine(NULL, "…圭ちゃんもその一人だったとはねぇ〜。」",
 		   NULL, " ...To think that Kei-chan was one of those~.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
