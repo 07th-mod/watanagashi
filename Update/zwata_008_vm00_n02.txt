@@ -402,13 +402,14 @@ void dialog017()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps2/09/130900161", 540, TRUE);
 	OutputLine(NULL, "「ウィンチで引っ張り出すっていうのは何だか大仰な方法だけど。",
-		   NULL, "\"Though pulling them out with a winch was a rather... exaggerated method.", Line_WaitForInput);
+		   NULL, "\"Though pulling them out with a winch was a rather... exaggerated method.", GetGlobalFlag(GLinemodeSp));
 
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-	
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps2/09/130900162", 540, TRUE);
 	OutputLine(NULL, "もっと野蛮に、裂いた腹から臓物を、千切っては投げ千切っては投げという…",
-		   NULL, " In a more barbaric way, they might slice open the gut, then cut the intestines out and throw them everywhere...", Line_Continue);
+		   NULL, "In a more barbaric way, they might slice open the gut, then cut the intestines out and throw them everywhere...", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
