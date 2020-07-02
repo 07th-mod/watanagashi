@@ -52,17 +52,17 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100065", 256, TRUE);
 	OutputLine(NULL, "「昨日、差し入れてもらった弁当箱だよ。",
-		   NULL, "\"It had the food you gave me in it.", Line_Continue);
+		   NULL, "\"It's the bento box you gave me yesterday.", Line_Continue);
 
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "ごちそうさま。",
-		   NULL, " Thanks.", Line_WaitForInput);
+		   NULL, " Thank you.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100066", 256, TRUE);
 	OutputLine(NULL, "うまかったぜ。」",
-		   NULL, " It was great.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " It was delicious.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -126,7 +126,7 @@ void main()
 		   NULL, " This is that box.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s20/01/440100070", 256, TRUE);
 	OutputLine(NULL, "ちゃんと洗ってあるからな！」",
-		   NULL, " Make sure you wash it out!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " I made sure to wash it clean!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
