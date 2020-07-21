@@ -1653,14 +1653,14 @@ void main()
 		   NULL, "\"Roger that.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 19, "ps3/s02/19/133100009", 256, TRUE);
 	OutputLine(NULL, "３号、７号は先ほど応援が到着、帰投しました。",
-		   NULL, " Cars three and seven just arrived for support, and we've returned to base.", Line_WaitForInput);
+		   NULL, " The relief for three and seven just arrived, and they've returned to base.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 19, "ps3/s02/19/133100010", 256, TRUE);
 	OutputLine(NULL, "…あと、課長が大石さん探してるみたいっす。",
-		   NULL, " ...Also, I think the division chief is looking for you, Ooishi-san. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, " ...Also, it looks like the division chief is looking for you, Ooishi-san. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 19, "ps3/s02/19/133100011", 256, TRUE);
 	OutputLine(NULL, "私のとこにも、連絡がつき次第ってさっきから何回もうるさいんすけど…どうします？」",
-		   NULL, "He keeps annoying me, too, even though I keep telling him I'm trying to get in touch with you... What should I do?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "He keeps bugging me, too, to tell him as soon as I get in touch with you... What do you want me to do?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
