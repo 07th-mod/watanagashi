@@ -4,8 +4,19 @@ void main()
 
 void dialog000()
 {
+}
+
+void dialog001()
+{
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400179", 256, TRUE);
 	OutputLine(NULL, "「意見も何も…、今回のシナリオで謎は全て解けたのではありませんことー？",
 		   NULL, "\"What is there to say?... weren't all of the mysteries solved in this chapter?", Line_WaitForInput);
+}
+
+void dialog002()
+{	   
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900118", 256, TRUE);
+	OutputLine(NULL, "…「鬼隠し」でも「たらいまわし」でも、そして今回の「綿流し」でも。",
+		   NULL, " ...Last time in Onikakushi and Taraimawashi. And now in Watanagashi. ", GetGlobalFlag(GLinemodeSp));	
 }
