@@ -1197,7 +1197,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300286", 256, TRUE);
 	OutputLine(NULL, "「お茶請けはゴマ煎でいい？",
-		   NULL, "\"Do you want sesame seeds on your rice?", Line_WaitForInput);
+		   NULL, "\"Do you want some sesame senbei to go with that?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300287", 256, TRUE);
 	OutputLine(NULL, "　ようかんとか、気の利いたものがなくて申し訳ないね。」",
 		   NULL, " Sorry we don't have much in the way of bean paste or other good stuff.\"", GetGlobalFlag(GLinemodeSp));
@@ -5282,7 +5282,7 @@ void main()
 	OutputLine(NULL, "　魅音が、…重い、抗うことのできない因習に飲まれ、",
 		   NULL, "Mion had been engulfed... by heavy, unopposable tradition...", Line_WaitForInput);
 	OutputLine(NULL, "…仲間をその手にかけなければならなくしてしまったのは………他でもない、俺自身なのだ。",
-		   NULL, " ...Right now, the duty of handling this had fallen...... to me, and me alone.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " ...The one who had forced her to kill her friends with her own hands...... That was me, and me alone.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　むしろ魅音は、......追い込んだ俺を責めてもいいくらいなのだ￥
@@ -5536,14 +5536,14 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s02/02/130200581", 256, TRUE);
 	OutputLine(NULL, "「…………魅ぃちゃんが短気を起こさないように、…見張ってね。」",
-		   NULL, "\".........Watch out... so that you don't make her lose her temper, okay?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\".........Watch out... that she doesn't do anything rash, okay?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　魅音は司法なんかに身を委ねずに、...自らの手で幕を下ろすかもしれない＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　魅音は司法なんかに身を委ねずに、…自らの手で幕を下ろすかもしれない。",
-		   NULL, "Mion might not surrender herself to justice... so I might have to put an end to it myself.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mion might not surrender herself to justice... but instead choose to put an end to things herself.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
