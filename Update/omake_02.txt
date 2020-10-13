@@ -676,8 +676,8 @@ void main()
 
 //「意見も何も...、今回のシナリオで解明編なのではありませんことー＠　犯人は魅音さん＠　諸悪の根源はぜ～んぶ園崎家＠　それで決着でございませんの。＠
 	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zomake_02_vm0x_n01","dialog000");}
-	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zomake_02_vm00_n01","dialog000");}
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zomake_02_vm0x_n01","dialog001");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zomake_02_vm00_n01","dialog001");}
 	//VoiceMatchingEnd
 
 	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400180", 256, TRUE);
@@ -1510,7 +1510,7 @@ void main()
 		   NULL, "\"That's right.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300348", 256, TRUE);
 	OutputLine(NULL, "「鬼隠し」のシナリオで名前だけ登場した「監督」ってのがかなり怪しいかな！」",
-		   NULL, " The manager who only appeared by name in the last story is pretty suspicious, if you ask me!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " The director who only appeared by name in the last story is pretty suspicious, if you ask me!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1853,15 +1853,17 @@ void main()
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900117", 256, TRUE);
 	OutputLine(NULL, "圭一くん以外の人の死には何かしら理由が見つけられるんだけど、…圭一くんだけなぜかいつも曖昧。",
 		   NULL, " We can find some kind of reason for everyone but Keiichi-kun to die... but for some reason, Keiichi-kun's death is always vague.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900118", 256, TRUE);
-	OutputLine(NULL, "…「鬼隠し」でも「たらいまわし」でも、そして今回の「綿流し」でも。",
-		   NULL, " ...Last time in Onikakushi and Taraimawashi. And now in Watanagashi. ", GetGlobalFlag(GLinemodeSp));
+		   
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 3){ModCallScriptSection("zomake_02_vm0x_n01","dialog002");}
+	if(GetGlobalFlag(GCensor) <= 2){ModCallScriptSection("zomake_02_vm00_n01","dialog002");}
+	//VoiceMatchingEnd
+	
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900119", 256, TRUE);
 	OutputLine(NULL, "祭具殿に踏み入るのとは無関係に狙われてる。」",
 		   NULL, "He was being targeted regardless of whether he went into the ritual storehouse.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
 
 
 //＜鷹野
