@@ -4,8 +4,19 @@ void main()
 
 void dialog000()
 {
+}
+
+void dialog001()
+{
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "ps3/s20/04/440400179", 256, TRUE);
 	OutputLine(NULL, "「意見も何も…、今回のシナリオで解明編なのではありませんことー？",
 		   NULL, "\"An honest opinion... was the story this time not an answer chapter?", Line_WaitForInput);
+}
+
+void dialog002()
+{
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900118", 256, TRUE);
+	OutputLine(NULL, "…前回と今回。",
+		   NULL, " ...Both this time and last time. ", GetGlobalFlag(GLinemodeSp));
 }

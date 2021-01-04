@@ -21,7 +21,7 @@ void main()
 		SetGlobalFlag(GAltBGMflow , 0);
 		SetGlobalFlag(GAltSEflow , 0);
 		SetGlobalFlag(GAltVoicePriority , 0);
-		SetGlobalFlag(GWindowOpacity , 100);
+		SetGlobalFlag(GWindowOpacity , 50);
 		SetGlobalFlag(GHideButtons , 0);
 		SetGlobalFlag(GArtStyle , 0);
 		SetGlobalFlag(GMOD_SETTING_LOADER , 3);
@@ -128,7 +128,7 @@ void main()
 
 	ModAddArtset("Console", "ゲーム機", "CG");
 	ModAddArtset("Remake", "リメーク", "CGAlt:CG");
-	ModAddArtset("Original", "オリジナル", "OGSprites:CG");
+	ModAddArtset("Original", "オリジナル", "OGBackgrounds:OGSprites:CG");
 
 	CallScript( "flow" );
 }
