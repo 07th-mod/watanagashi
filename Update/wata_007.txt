@@ -3396,9 +3396,9 @@ void main()
 
 
 //　そう鷹野さんに詰め寄られ、思わず苦笑してしまった￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そう鷹野さんに詰め寄られ、思わず苦笑してしまった。",
-		   NULL, "pressed Takano-san. I smiled bitterly in spite of myself.", Line_Normal);
+		   NULL, "Takano-san pressed on. I smiled bitterly in spite of myself.", Line_Normal);
 	ClearMessage();
 
 //　ついさっきまで祟りなんかあるはずがない、と思っていたのに＠人間の仕業だと詰め寄られると、人間のはずもあるわけがない...なんて思ってしまったからだ￥
