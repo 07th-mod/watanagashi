@@ -133,7 +133,8 @@ void main()
 	// GAltBGM controls which of these are selected
 	ModAddBGMset("New BGM", "Placeholder", "BGM");
 	ModAddBGMset("Original BGM", "Placeholder", "OGBGM:BGM");
-	ModAddBGMset("Italo BGM", "Placeholder", "ItaloBGM:OGBGM:BGM");
+	ModAddBGMset("Remake + New BGM", "Placeholder", "RemakeBGM:BGM");
+	ModAddBGMset("Remake + Original BGM", "Placeholder", "RemakeBGM:OGBGM:BGM");
 
 	// GAltSE controls which of these are selected
 	ModAddSEset("New SE", "Placeholder", "SE");
@@ -167,14 +168,97 @@ void main()
 	);
 
 	ModAddAudioset(
-		"OST Remake",
-		"Handmade remakes of several music tracks from the original release (pre-2019), using the Console timings",
-		"JP: OST Remake",
-		"JP: Handmade remakes of several music tracks from the original release (pre-2019), using the Console timings",
+		"OST Remake + New",
+		"This option adds handmade remakes of nine tracks from the original release (pre-2019).
+
+		All other tracks will use the New BGM/SE with the Console timings.
+
+		The following tracks are replaced:
+			- Tell a thing (piano solo ver.)
+			- Snow #3 'First snow'
+			- Days of Children #3
+			- Rainy Days
+			- Fascism
+			- Sunrise
+			- Gear
+			- Theme of Owner
+			- Dawn
+
+		Search online for 'radiataalice hinamizawa' to listen to audio samples and to get more details.
+
+		This option is not available for Onikakushi Ch.1, as the chapter does not use any of these tracks.
+		This option is not available for Chapters 5-8 as an OST remake for those chapters hasn't been created.",
+		"JP: OST Remake + New",
+		"JP: This option adds handmade remakes of nine tracks from the original release (pre-2019).
+
+		All other tracks will use the New BGM/SE with the Console timings.
+
+		The following tracks are replaced:
+			- Tell a thing (piano solo ver.)
+			- Snow #3 'First snow'
+			- Days of Children #3
+			- Rainy Days
+			- Fascism
+			- Sunrise
+			- Gear
+			- Theme of Owner
+			- Dawn
+
+		Search online for 'radiataalice hinamizawa' to listen to audio samples and to get more details.
+
+		This option is not available for Onikakushi Ch.1, as the chapter does not use any of these tracks.
+		This option is not available for Chapters 5-8 as an OST remake for those chapters hasn't been created.",
 		2, // GAltBGM
 		0, // GAltBGMFlow
 		0, // GAltSE
 		0  // GAltSEFlow
+	);
+
+	ModAddAudioset(
+		"OST Remake + Original",
+		"This option adds handmade remakes of nine tracks from the original release (pre-2019).
+
+		All other tracks will use the Original BGM/SE with the original game's timings.
+
+		The following tracks are replaced:
+			- Tell a thing (piano solo ver.)
+			- Snow #3 'First snow'
+			- Days of Children #3
+			- Rainy Days
+			- Fascism
+			- Sunrise
+			- Gear
+			- Theme of Owner
+			- Dawn
+
+		Search online for 'radiataalice hinamizawa' to listen to audio samples and to get more details.
+
+		This option is not available for Onikakushi Ch.1, as the chapter does not use any of these tracks.
+		This option is not available for Chapters 5-8 as an OST remake for those chapters hasn't been created.",
+		"JP: OST Remake + Original",
+		"JP: This option adds handmade remakes of nine tracks from the original release (pre-2019).
+
+		All other tracks will use the Original BGM/SE with the original game's timings.
+
+		The following tracks are replaced:
+			- Tell a thing (piano solo ver.)
+			- Snow #3 'First snow'
+			- Days of Children #3
+			- Rainy Days
+			- Fascism
+			- Sunrise
+			- Gear
+			- Theme of Owner
+			- Dawn
+
+		Search online for 'radiataalice hinamizawa' to listen to audio samples and to get more details.
+
+		This option is not available for Onikakushi Ch.1, as the chapter does not use any of these tracks.
+		This option is not available for Chapters 5-8 as an OST remake for those chapters hasn't been created.",
+		3, // GAltBGM
+		1, // GAltBGMFlow
+		1, // GAltSE
+		1  // GAltSEFlow
 	);
 
 	CallScript( "flow" );
