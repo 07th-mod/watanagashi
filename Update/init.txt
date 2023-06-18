@@ -131,10 +131,11 @@ void main()
 	ModAddArtset("Original", "オリジナル", "OGBackgrounds:OGSprites:CG");
 
 	// GAltBGM controls which of these are selected
-	ModAddBGMset("New BGM", "Placeholder", "BGM");
+	ModAddBGMset("New Mangagamer BGM", "Placeholder", "BGM");
 	ModAddBGMset("GIN's BGM", "Placeholder", "OGBGM:BGM");
-	ModAddBGMset("Remake + New BGM", "Placeholder", "RemakeBGM:BGM");
+	ModAddBGMset("Remake + New Mangagamer BGM", "Placeholder", "RemakeBGM:BGM");
 	ModAddBGMset("Remake + Original BGM", "Placeholder", "RemakeBGM:OGBGM:BGM");
+	ModAddBGMset("Hou+", "Placeholder", "HouPlusBGM:BGM");
 
 	// GAltSE controls which of these are selected
 	ModAddSEset("New SE", "Placeholder", "SE");
@@ -142,10 +143,10 @@ void main()
 
 	// Audio presets the user can select, consisting of a combination of the BGM and SE flags
 	ModAddAudioset(
-		"New BGM/SE",
-		"Use the new Background Music (BGM) and Sound Effects (SE) introduced by MangaGamer in the April 2019 update, played with the Console timings.",
-		"JP: New BGM/SE",
-		"JP: Use the new Background Music (BGM) and Sound Effects (SE) introduced by MangaGamer in the April 2019 update, played with the Console timings.",
+		"New Mangagamer BGM/SE",
+		"Use the new Background Music (BGM) and Sound Effects (SE) introduced by MangaGamer in the April 2019 update",
+		"JP: New Mangagamer BGM/SE",
+		"JP: Use the new Background Music (BGM) and Sound Effects (SE) introduced by MangaGamer in the April 2019 update",
 		0, // GAltBGM
 		0, // GAltBGMFlow
 		0, // GAltSE
@@ -172,10 +173,10 @@ void main()
 	);
 
 	ModAddAudioset(
-		"OST Remake + New",
-		"This option adds handmade remakes of nine tracks from the original release (pre-2019).
+		"OST Remake (+New Mangagamer BGM)",
+		"This option replaces nine BGM with handmade remakes of nine tracks from the original release (pre-2019).
 
-		All other tracks will use the New BGM/SE with the Console timings.
+		All other tracks will use the New Mangagamer BGM/SE.
 
 		The following tracks are replaced:
 			- Tell a thing (piano solo ver.)
@@ -192,10 +193,10 @@ void main()
 
 		This option is not available for Onikakushi Ch.1, as the chapter does not use any of these tracks.
 		This option is not available for Chapters 5-8 as an OST remake for those chapters hasn't been created.",
-		"JP: OST Remake + New",
-		"JP: This option adds handmade remakes of nine tracks from the original release (pre-2019).
+		"JP: OST Remake (+New Mangagamer BGM)",
+		"JP: This option replaces nine BGM with handmade remakes of nine tracks from the original release (pre-2019).
 
-		All other tracks will use the New BGM/SE with the Console timings.
+		All other tracks will use the New Mangagamer BGM/SE.
 
 		The following tracks are replaced:
 			- Tell a thing (piano solo ver.)
@@ -219,10 +220,10 @@ void main()
 	);
 
 	ModAddAudioset(
-		"OST Remake + Original",
-		"This option adds handmade remakes of nine tracks from the original release (pre-2019).
+		"OST Remake (+GIN's BGM)",
+		"This option replaces nine BGM with handmade remakes of nine tracks from the original release (pre-2019).
 
-		All other tracks will use the Original BGM/SE with the original game's timings.
+		All other tracks will use the GIN's/OG BGM BGM/SE.
 
 		The following tracks are replaced:
 			- Tell a thing (piano solo ver.)
@@ -239,10 +240,10 @@ void main()
 
 		This option is not available for Onikakushi Ch.1, as the chapter does not use any of these tracks.
 		This option is not available for Chapters 5-8 as an OST remake for those chapters hasn't been created.",
-		"JP: OST Remake + Original",
-		"JP: This option adds handmade remakes of nine tracks from the original release (pre-2019).
+		"JP: OST Remake (+GIN's BGM)",
+		"JP: This option replaces nine BGM with handmade remakes of nine tracks from the original release (pre-2019).
 
-		All other tracks will use the Original BGM/SE with the original game's timings.
+		All other tracks will use the GIN's/OG BGM BGM/SE.
 
 		The following tracks are replaced:
 			- Tell a thing (piano solo ver.)
@@ -260,6 +261,29 @@ void main()
 		This option is not available for Onikakushi Ch.1, as the chapter does not use any of these tracks.
 		This option is not available for Chapters 5-8 as an OST remake for those chapters hasn't been created.",
 		3, // GAltBGM
+		1, // GAltBGMFlow
+		1, // GAltSE
+		1  // GAltSEFlow
+	);
+
+	ModAddAudioset(
+		"Hou+ Demo BGM",
+		"This option replaces 16 BGM with BGM from the Higurashi Hou+ Demo. It uses the same tracks from nerve as the New MangaGamer BGM, but the AI-D-IA tracks are different.
+
+		Some are remastered versions of MangaGamer's replacements, while others were newly composed by xaki.
+
+		This option is not available for Chapters 5-8 and Rei because most of their music isn't in the Hou+ demo.
+
+		All other tracks will use the New Mangagamer BGM and GIN's/Original SE.",
+		"JP: Hou+ Demo BGM",
+		"JP: This option replaces 16 BGM with BGM from the Higurashi Hou+ Demo. It uses the same tracks from nerve as the New MangaGamer BGM, but the AI-D-IA tracks are different.
+
+		Some are remastered versions of MangaGamer's replacements, while others were newly composed by xaki.
+
+		This option is not available for Chapters 5-8 and Rei because most of their music isn't in the Hou+ demo.
+
+		All other tracks will use the New Mangagamer BGM and GIN's/Original SE.",
+		4, // GAltBGM
 		1, // GAltBGMFlow
 		1, // GAltSE
 		1  // GAltSEFlow
