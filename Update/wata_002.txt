@@ -1370,10 +1370,10 @@ void main()
 
 //「そこは抜かりないよ～＠　圭ちゃん用にちゃんとＸＬサイズも用意してあるもんねー！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300548", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "org/mion1004", 256, TRUE);
 	OutputLine(NULL, "「そこは抜かりないよ〜！",
 		   NULL, "\"Oh I didn't let that little detail get by~!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300549", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "org/mion1005", 256, TRUE);
 	OutputLine(NULL, "　圭ちゃん用にちゃんとＸＬサイズも用意してあるもんねー！！",
 		   NULL, " I have a nice XL size one prepared juuust for Kei-chan!!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1383,10 +1383,10 @@ void main()
 
 //　さぁ圭ちゃん、覚悟はいい？＠　メイドコスさせて外をねり歩かせてあげるよ～！！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300550", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "org/mion1006", 256, TRUE);
 	OutputLine(NULL, "　さぁ圭ちゃん、覚悟はいい？！",
 		   NULL, "So, Kei-chan, are you ready!?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300551", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "org/mion1007", 256, TRUE);
 	OutputLine(NULL, "　メイドコスさせて外をねり歩かせてあげるよ〜！！！",
 		   NULL, " I'm going to have you walk around outside dressed up as a maid~!!!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1396,10 +1396,13 @@ void main()
 
 //　カチューシャからガーターベルトにショーツまで...ぜ～んぶ揃ってるんだからねぇ！！＠
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_002_vm0x_n02","dialog001");}
-	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_002_vm00_n02","dialog001");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+
+	ModPlayVoiceLS(4, 3, "org/mion1008", 256, TRUE);
+	OutputLine(NULL, "　カチューシャからガーターベルトにショーツまで…ぜ〜んぶ揃ってるんだからねぇ！！」",
+		   NULL, "From the headband to the garter belt, even the underwear... I've got it aaaaall prepared for you!!\"", GetGlobalFlag(GLinemodeSp));
+
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 //「ぜぜ、絶対ヘンだ！！　なんでそんなものがサイズ毎に全部ロッカーに入ってるんだよ！！￥
@@ -2816,11 +2819,33 @@ void main()
 	PlayBGM( 1, "msys03", 56, 0 );
 
 //「さ、!w500ささッ、!w800さ/
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s19/02/990200506", 256, TRUE);
+	OutputLine(NULL, "「そ、そうだよ…。",
+		   NULL, "\"Sh-She's right...", Line_WaitForInput);
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_002_vm0x_n01","dialog004");}
-	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_002_vm00_n01","dialog004");}
-	//VoiceMatchingEnd
+	ModPlayVoiceLS(4, 2, "ps3/s19/02/990200507", 256, TRUE);
+	OutputLine(NULL, "大騒ぎしたら……",
+		   NULL, " If you cause a scene here...", Line_Continue);
+
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 800 );
+	// (backup) SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "そ、その",
+		   NULL, " Th-They'll...", Line_Continue);
+
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	// (backup) SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "……ぱ、ぱんつまで女の子のだって…バ、バレちゃうよ？」",
+		   NULL, " find out that you're wearing women's clothing right down to the unmentionables.\"", GetGlobalFlag(GLinemodeSp));
+
+
+
+//　!s200ぅごあぁあぁあああああぁああぁあぁああぁッ！！!sd@
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	ClearMessage();
 	DisableWindow();
@@ -2994,10 +3019,13 @@ void main()
 
 //「......メイドさん衣装、カチューシャ、ガーターベルト付きで１位の人の荷物を運ぶのですよ。＠
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_002_vm0x_n02","dialog002");}
-	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_002_vm00_n02","dialog002");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
+
+	ModPlayVoiceLS(4, 5, "org/rika1000", 256, TRUE);
+	OutputLine(NULL, "「……メイドさん衣装、カチューシャ、ガーターベルト付きで１位の人の荷物を運ぶのですよ。」",
+		   NULL, "\"Dressing up as a maid, complete with hairband and garter belt, while carrying around the winner's stuff.\"", GetGlobalFlag(GLinemodeSp));
+
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「のわあああぁあぁあぁああぁああッ！！！」/
@@ -3215,11 +3243,13 @@ void main()
 	PlayBGM( 1, "msys03", 56, 0 );
 
 //「男がガーターベルトのつけ方を習って、人生のどこで役に立つってーんだよぉおおぉ！！！＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_002_vm0x_n02","dialog003");}
-	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_002_vm00_n02","dialog003");}
-	//VoiceMatchingEnd
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11480", 256, TRUE);
+	OutputLine(NULL, "「男がガーターベルトのつけ方を習って、人生のどこで役に立つってーんだよぉおおぉ！！！」",
+		   NULL, "\"How the bloody hell will a man knowing how to put on a garter belt be usefuuuuuUUul!!!\"", GetGlobalFlag(GLinemodeSp));
+
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	DisableWindow();
@@ -3345,11 +3375,19 @@ void main()
 	ModDrawCharacter(1, 3, "sprite/me1b_akuwarai_a1_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「そうそう＠男の人ってガーターベルトとかって好きなんだよねぇ～＠どうよ、それを自分で身に付けてみた感想は☆＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300622", 256, TRUE);
+	OutputLine(NULL, "「そうそう。",
+		   NULL, "\"That's right.", Line_WaitForInput);
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_002_vm0x_n02","dialog005");}
-	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_002_vm00_n02","dialog005");}
-	//VoiceMatchingEnd
+	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300623", 256, TRUE);
+	OutputLine(NULL, "男の人ってガーターベルトとかって好きなんだよねぇ〜。",
+		   NULL, " Men like things like garter belts, right~?", Line_WaitForInput);
+
+	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300624", 256, TRUE);
+	OutputLine(NULL, "どうよ、それを自分で身に付けてみた感想は☆」",
+		   NULL, " So, how does it feel wearing one yourself☆?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「かか、感想なんて別に、そ、そんな......ッ＠　バカやめろ＠　めくるなー！！＠
@@ -3367,11 +3405,16 @@ void main()
 
 
 //「きゅっとするでしょ＠歩く度に肌を擦るの...ちゃんと感じてる～？＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_002_vm0x_n02","dialog006");}
-	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_002_vm00_n02","dialog006");}
-	//VoiceMatchingEnd
+	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300625", 256, TRUE);
+	OutputLine(NULL, "「きゅっとするでしょ。",
+		   NULL, "\"It's tight, isn't it?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300626", 256, TRUE);
+	OutputLine(NULL, "歩く度に肌を擦るの…ちゃんと感じてる〜？」",
+		   NULL, " Can you feel it rub against your skin as you walk?\"", GetGlobalFlag(GLinemodeSp));
+
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 //　や、やめろ～...＠　そんなヘンなことを耳元で言わないでくれ～！＠

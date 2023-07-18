@@ -3268,14 +3268,16 @@ void main()
 	ClearMessage();
 
 //「園崎家はこの地域一帯を牛耳ってるヤクザ屋さんです＠ちなみに彼女のお父さんは、××組系のヤクザの大幹部さんです＠ご存知でした？＠
-
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_009_vm0x_n01","dialog008");}
-	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_009_vm00_n01","dialog008");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "org/ooishi1000", 256, TRUE);
+	OutputLine(NULL, "「園崎家はこの地域一帯を牛耳ってるヤクザ屋さんです。",
+		   NULL, "\"The Sonozakis are a yakuza group with this entire region under their thumb.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "org/ooishi1001", 256, TRUE);
+	OutputLine(NULL, "ちなみに彼女のお父さんは、××組系のヤクザの大幹部さんです。",
+		   NULL, " Plus, her father is a high-ranked executive in the ×× yakuza association.", GetGlobalFlag(GLinemodeSp));
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700022", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi1002", 256, TRUE);
 	OutputLine(NULL, "ご存知でした？」",
 		   NULL, "Did you know that?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -3293,18 +3295,21 @@ void main()
 
 //「詩音さんの自宅をご存知ないんですか＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700023", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi1003", 256, TRUE);
 	OutputLine(NULL, "「詩音さんの自宅をご存知ないんですか？",
 		   NULL, "\"Have you ever seen where Shion-san lives?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　高い塀に有刺鉄線と監視カメラで守られた、典型的なヤクザの組長宅ですよ＠今度ぜひ遊びに行ってみてください。＠
-
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_009_vm0x_n01","dialog009");}
-	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_009_vm00_n01","dialog009");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "org/ooishi1004", 256, TRUE);
+	OutputLine(NULL, "　高い塀に有刺鉄線と監視カメラで守られた、典型的なヤクザの組長宅ですよ。",
+		   NULL, "It's the very picture of a gang boss's house, protected by high walls, barbed-wire fence, and security cameras.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "org/ooishi1005", 256, TRUE);
+	OutputLine(NULL, "今度ぜひ遊びに行ってみてください。」",
+		   NULL, " If you have the chance, you should go and visit her.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「..............................。＠
@@ -3315,11 +3320,9 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　魅音は跡継ぎだとか言ってたけど......まさか...そのヤクザの...￥
-
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_009_vm0x_n01","dialog011");}
-	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_009_vm00_n01","dialog011");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　魅音は跡継ぎだとか言ってたけど……まさか…そのヤクザの…？",
+		   NULL, "She'd mentioned Mion being a successor...... but... to a yakuza group...?", Line_Normal);
 
 	ClearMessage();
 	DisableWindow();
@@ -3327,14 +3330,22 @@ void main()
 	ModDrawCharacter(2, 11, "sprite/oisi1_2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //「いえいえいえいえいえ＠まさかまさか＠園崎魅音さんが継ぐのはそんなチンケなヤクザ組織だけじゃありません＠彼女が継ぐのは園崎家そのものですよ＠......その辺りの意味、ちょっと噛み締めていただけますかな？＠
-
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_009_vm0x_n01","dialog010");}
-	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_009_vm00_n01","dialog010");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "org/ooishi1006", 256, TRUE);
+	OutputLine(NULL, "「いえいえいえいえいえ。",
+		   NULL, "\"No, no, no, no, no.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "org/ooishi1007", 256, TRUE);
+	OutputLine(NULL, "まさかまさか。",
+		   NULL, " Not at all, not at all.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "org/ooishi1008", 256, TRUE);
+	OutputLine(NULL, "園崎魅音さんが継ぐのはそんなチンケなヤクザ組織だけじゃありません。",
+		   NULL, " A boring old yakuza group isn't the only thing Mion Sonozaki-san will inherit.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "org/ooishi1009", 256, TRUE);
+	OutputLine(NULL, "彼女が継ぐのは園崎家そのものですよ。",
+		   NULL, " She's inheriting the Sonozaki family itself. ", GetGlobalFlag(GLinemodeSp));
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700030", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi1010", 256, TRUE);
 	OutputLine(NULL, "……その辺りの意味、ちょっと噛み締めていただけますかな？」",
 		   NULL, "...I'll leave it to you to mull over what exactly that means.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }

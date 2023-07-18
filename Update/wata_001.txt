@@ -4576,7 +4576,7 @@ void main()
 	PlaySE( 3, "wa_007", 56, 64 );
 
 //そんな時間を過ごして欲しくないんだよッ！！！！＠
-	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei09900_02", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi1003", 256, TRUE);
 	OutputLine(NULL, "そんな時間を過ごして欲しくないんだよッ！！！！！",
 		   NULL, " I don't want you to live your lives like that!!!!!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -4584,10 +4584,29 @@ void main()
 
 //　自分に素直になれッ！！＠夢を追え！＠そしてかなえろ！！＠俺がかなえてやるッ！！＠俺がだぁああぁあぁあッ！！！！」/
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_001_vm0x_n01","dialog003");}
-	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_001_vm00_n01","dialog003");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "org/keiichi1004", 256, TRUE);
+	OutputLine(NULL, "　自分に素直になれッ！！！",
+		   NULL, "Be honest with yourselves!!!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "org/keiichi1005", 256, TRUE);
+	OutputLine(NULL, "夢を追え！！",
+		   NULL, " Chase your dreams!!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "org/keiichi1006", 256, TRUE);
+	OutputLine(NULL, "そしてかなえろ！！！",
+		   NULL, " Fulfill them!!!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "org/keiichi1007", 256, TRUE);
+	OutputLine(NULL, "俺がかなえてやるッ！！！",
+		   NULL, " I'll fulfill them for you!!!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "org/keiichi1008", 256, TRUE);
+	OutputLine(NULL, "俺がだぁああぁあぁあッ！！！！」",
+		   NULL, " I wiiiiilllllll!!!!\"", Line_ContinueAfterTyping);
+
+	PlaySE( 3, "wa_006", 56, 64 );
+	ShakeScreen( 1, 50, 20, 4, 0, );
+
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
+
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　......男たちが世代を超えて価値観を共有した...瞬間だった￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

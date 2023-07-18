@@ -971,10 +971,10 @@ void main()
 
 //「......そりゃそうだな＠...この現代日本で、犠牲者をのんびりと沢でバラして殺せるなんて思えない。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s02/01/130101095", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi1054", 256, TRUE);
 	OutputLine(NULL, "「……そりゃそうだな。",
 		   NULL, "\"...I can imagine why.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s02/01/130101096", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi1055", 256, TRUE);
 	OutputLine(NULL, "…この現代日本で、犠牲者をのんびりと沢でバラして殺せるなんて思えない。」",
 		   NULL, " ...You'd never think people could be okay with drowning people in a swamp and killing them in modern Japan.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -2275,21 +2275,16 @@ void main()
 	ClearMessage();
 
 //「......園崎詩音は.........魅音姉さまの足元にも及ばない、下賤で卑しい雌豚でございます...＠...身の程をわきまえず...お姉さまに働いた...か、数々の無礼を、お、思えば......、!w800ぅっく......、＠
-
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_012_03_vm0x_n01","dialog001");}
-	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_012_03_vm00_n01","dialog001");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "org/shion1023", 256, TRUE);
+	OutputLine(NULL, "「……園崎詩音は………魅音姉さまの足元にも及ばない、下賤で卑しい雌豚でございます…。",
+		   NULL, "\"...Shion Sonozaki...... is a lowly, worthless sow not fit to even lick her big sister Mion's feet... ", GetGlobalFlag(GLinemodeSp));
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600586", 256, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion1024", 256, TRUE);
 	OutputLine(NULL, "…身の程をわきまえず…お姉さまに働いた…か、数々の無礼を、お、思えば……、",
-		   NULL, "...and when I think of... th-the countless times I've been rude... to my big sister... w-without knowing my place...", Line_Continue);
-
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 1000 );
-	// (backup) SetValidityOfInput( TRUE );
-
+		   NULL, "...and when I think of... th-the countless times I've been rude... to my big sister... w-without knowing my place...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "org/shion1025", 256, TRUE);
 	OutputLine(NULL, "ぅっく……、」",
 		   NULL, " uhk......\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -3387,11 +3382,43 @@ void main()
 
 
 //「......じゃあそろそろいい＠　この拷問はね、とてもシンプル＠左手の小指の先端の節に釘を打つ＠順に親指まで打ったらまた小指に戻って、今度は真ん中の節に釘を打つ＠...この調子で１５本の釘で左手を打ちつける＠それが終わったら次は右手＠......それが終わったら次は、............まだ意識があったら教えるね＠指先って、たくさんの神経が集まってるから、圭ちゃんが想像するよりもはるかに痛いよ＠...両手３０本を打ち終える前に、失神しちゃう人もいるそうだから...。￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "org/mion1052", 256, TRUE);
+	OutputLine(NULL, "「……じゃあそろそろいい？",
+		   NULL, "\"...Can I start now, then?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "org/mion1053", 256, TRUE);
+	OutputLine(NULL, "　この拷問はね、とてもシンプル。",
+		   NULL, " This method of torture is very simple.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "org/mion1054", 256, TRUE);
+	OutputLine(NULL, "左手の小指の先端の節に釘を打つ。",
+		   NULL, " I'll nail one of these into the joint on the end of your left pinky finger. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zwata_012_03_vm0x_n01","dialog002");}
-	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("zwata_012_03_vm00_n01","dialog002");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "org/mion1055", 256, TRUE);
+	OutputLine(NULL, "順に親指まで打ったらまた小指に戻って、今度は真ん中の節に釘を打つ。",
+		   NULL, "Then, I'll nail each one in order until I get to your thumb, and then I'll go back to your pinky and nail one into the joint in the middle.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "org/mion1056", 256, TRUE);
+	OutputLine(NULL, "…この調子で１５本の釘で左手を打ちつける。",
+		   NULL, " ...So on and so on, until I hammer fifteen nails into your left hand. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "org/mion1057", 256, TRUE);
+	OutputLine(NULL, "それが終わったら次は右手。",
+		   NULL, "When that's over with, I'll do your right hand next.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "org/mion1058", 256, TRUE);
+	OutputLine(NULL, "……それが終わったら次は、…………まだ意識があったら教えるね。",
+		   NULL, " ...After that......... if you're still conscious, I'll tell you. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "org/mion1059", 256, TRUE);
+	OutputLine(NULL, "指先って、たくさんの神経が集まってるから、圭ちゃんが想像するよりもはるかに痛いよ。",
+		   NULL, "There are a lot of nerves bundled in your fingertips, so it hurts far more than you could imagine.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "org/mion1060", 256, TRUE);
+	OutputLine(NULL, "…両手３０本を打ち終える前に、失神しちゃう人もいるそうだから…。」",
+		   NULL, " ...Some people apparently pass out before you finish hammering thirty nails into their hands, so...\"", Line_Normal);
 
 	ClearMessage();
 
@@ -3409,11 +3436,14 @@ void main()
 	ClearMessage();
 
 //「............他の人を拷問する時にはなんのためらいもなかったけど＠......なぜかあんたにはためらいがあるよ。＠
-
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zwata_012_03_vm0x_n01","dialog003");}
-	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("zwata_012_03_vm00_n01","dialog003");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "org/mion1061", 256, TRUE);
+	OutputLine(NULL, "「…………他の人を拷問する時にはなんのためらいもなかったけど。",
+		   NULL, "\"............I didn't hesitate at all when I was torturing the others.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "org/mion1062", 256, TRUE);
+	OutputLine(NULL, "……なぜかあんたにはためらいがあるよ。」",
+		   NULL, " ...Why do I hesitate now?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //「....................................それで魅音の鬼が治まるなら...、＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }

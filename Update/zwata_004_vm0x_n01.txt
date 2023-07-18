@@ -12,93 +12,18 @@ void dialog001()
 
 void dialog002()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei15130_01", 256, TRUE);
-	OutputLine(NULL, "「いや、お祭りの話は前に魅音たちからも聞いたけどさ。……確か梨花ちゃん、お祭りの実行委員なんだよな。それと関係あるのか？」",
-		   NULL, "\"You guys did tell me about the festival before. That's right, Rika-chan is on the festival committee, isn't she? Does it have something to do with that?\"", Line_Normal);
-
-
-	DisableWindow();
-	ModSetLayerFilter(3, 256, "none");
-	ModDrawCharacterWithFiltering(3, 2, "sprite/re3a_def_a1_", "0", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
-
-//「梨花ちゃんは綿流しの巫女さんだから、奉納の演舞をすることになっててね＠その練習なの。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s19/02/500200081", 256, TRUE);
-	OutputLine(NULL, "「梨花ちゃんは綿流しの巫女さんだから、奉納の演舞をすることになっててね。",
-		   NULL, "\"Rika-chan is a shrine maiden for the Watanagashi, so she has to perform a ritual dance. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s19/02/500200082", 256, TRUE);
-	OutputLine(NULL, "その練習なの。」",
-		   NULL, "It's practice for that.\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog003()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　そう言えば…お袋が夕飯の時、そんな話をしていたような気がする。",
-		   NULL, "Come to think of it, I have a feeling Mom did say something about it during dinner the other day.", Line_Normal);
-	ClearMessage();
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "つまり梨花ちゃんがその巫女役をつとめるってことか。",
-		   NULL, " So, Rika-chan plays the part of a shrine maiden?", Line_Normal);
-
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei15130_02", 256, TRUE);
-	OutputLine(NULL, "「なるほどな。確か、布団とかどてらの供養だって言ってたよな。…じゃあ、あれか？　演舞か何かで、中に入ってる綿を取り出したりするのか？」",
-		   NULL, "\"I see, Mom did say that futons, padded cloaks and stuff are made as offerings. ...So, does that mean the cotton stuffing gets pulled out during a dance or something?\"", Line_Normal);
 }
 
 void dialog004()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s19/02/500200087", 256, TRUE);
-	OutputLine(NULL, "「祭壇にもお布団を積み上げているし。",
-		   NULL, "\"They also pile futons up on the altar.", Line_WaitForInput);
 }
 
 void dialog005()
 {
-	ModPlayVoiceLS(4, 2, "ps3/s19/02/500200083", 256, TRUE);
-	OutputLine(NULL, "綿流しはね、毎年６月の日曜日に神社でやるお祭りなの。",
-		   NULL, " The Watanagashi is a festival that happens at the shrine on a Sunday every June.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s19/02/500200084", 256, TRUE);
-	OutputLine(NULL, "とってもにぎわうんだよ！」",
-		   NULL, " It's very lively!\"", Line_Normal);
-//	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	DisableWindow();
-	ModDrawCharacter(3, 2, "sprite/re3a_warai_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
-
-//そう言って魅音とレナがちょっと感心したように、にっこりと笑いながらうなずき返す。
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "そう言って魅音とレナがちょっと感心したように、にっこりと笑いながらうなずき返す。",
-		   NULL, "Mion and Rena nodded back at me, looking a bit impressed.", Line_WaitForInput);
-
-//どうやら今度の想像は当たっていたようだ。kまぁ、はじめに聞いたときは布団を沢に積み上げるイメージが真っ先に思い浮かんだけど、k……それだと流れも堰き止められるし、なにより後始末が大変だしな。
-	OutputLine(NULL, "どうやら今度の想像は当たっていたようだ。",
-		   NULL, " It seemed that my observations were on mark.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "まぁ、はじめに聞いたときは布団を沢に積み上げるイメージが真っ先に思い浮かんだけど、",
-		   NULL, " Although, when I first heard about it, I imagined piling futons up in the swamp.", Line_WaitForInput);
-	OutputLine(NULL, "……それだと流れも堰き止められるし、なにより後始末が大変だしな。",
-		   NULL, " ...but that'd block the river, and be a real pain to clear up after.", Line_Normal);
-
-//圭一「……それにしてもご先祖様とか戦没者とか、針とか包丁とかの供養ってのは聞いたことあるけど。布団の供養っては初耳だな。どんな謂れがあるんだ？」
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei15130_03", 256, TRUE);
-	OutputLine(NULL, "「……それにしてもご先祖様とか戦没者とか、針とか包丁とかの供養ってのは聞いたことあるけど。",
-		   NULL, "\"I've heard of people leaving offerings of things like needles or kitchen knives to their ancestors or to casualties of war...", Line_Continue);
-	OutputLine(NULL, "布団の供養っては初耳だな。",
-		   NULL, " But an offering of futons is a first for me.", Line_Continue);
-	OutputLine(NULL, "どんな謂れがあるんだ？」",
-		   NULL, " What's the history behind that?\"", GetGlobalFlag(GLinemodeSp));
-
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog006()
@@ -127,14 +52,4 @@ void dialog007()
 
 void dialog008()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s19/06/500600093", 256, TRUE);
-	OutputLine(NULL, "「それよりもさっきのあれ。",
-		   NULL, "\"More importantly, just now...", Line_WaitForInput);
-
-	ModPlayVoiceLS(4, 6, "ps3/s19/06/500600094", 256, TRUE);
-	OutputLine(NULL, "……驚きましたか？」",
-		   NULL, " Were you surprised?\"", GetGlobalFlag(GLinemodeSp));
-
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }

@@ -21,9 +21,4 @@ void dialog001()
 
 void dialog002()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700183", 256, TRUE);
-	OutputLine(NULL, "　近日中に鷹野殺しはお隣の県警さんに譲り、村長たちの失踪は行方不明扱いで生活課に委ねるようです。」",
-		   NULL, "In the coming days, we'll hand off Takano's murder to the neighbouring prefecture, and give the missing persons case of the disappearance of the mayor and the others to the community division.\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 }

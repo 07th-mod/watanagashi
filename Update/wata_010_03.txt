@@ -2710,15 +2710,12 @@ void main()
 
 //　あの子を虐めていなかったのに消されてしまった￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300175", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "org/s02/03/130300175a_org", 256, TRUE);
 	OutputLine(NULL, "　あの子を虐めていなかったのに消されてしまった。",
-		   NULL, "Someone made him disappear, even though he wasn't abusing her.", Line_Continue);
-
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	// (backup) SetValidityOfInput( TRUE );
+		   NULL, "Someone made him disappear, even though he wasn't abusing her.", Line_WaitForInput);
 
 //　...警察は家出したんだって決め付けたけど、悟史くんは逃げ出すような人じゃなかった＠いつも一生懸命＠誰の力も借りずにこつこつと、一人懸命に努力する人だった＠たった１人の妹のために身を粉にして頑張ってたのに、消されてしまった＠
+	ModPlayVoiceLS(4, 3, "org/s02/03/130300175b_org", 256, TRUE);
 	OutputLine(NULL, "　…警察は家出したんだって決め付けたけど、悟史くんは逃げ出すような人じゃなかった。",
 		   NULL, " ...The police judged him to have run away from home, but Satoshi-kun wasn't the kind of person who would do that.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300176", 256, TRUE);
@@ -2746,11 +2743,12 @@ void main()
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300181", 256, TRUE);
 	OutputLine(NULL, "なんて報われない悟史くん。",
 		   NULL, " He was never rewarded, that Satoshi-kun.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300182", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "org/s02/03/130300182a_org", 256, TRUE);
 	OutputLine(NULL, "なんて恩知らずなあの子なの。",
-		   NULL, " How ungrateful that child is.", Line_Continue);
+		   NULL, " How ungrateful that child is.", Line_WaitForInput);
 
 //　......あの子は呪われた子＠あの子に近付けば、それが誰でも末路は同じ＠祟りで死ぬか、!w800祟りで消えるか＠あの子に安らぎなんてあるものか、!w1000あの子に安らぎなんてあるものか＠......梨花ちゃんが消えたのもきっと沙都子のせいだよ!s0違!w100い!w100な!w100い!w100違!w100い!w100な!w100い!w100違!w100い!w100な!w100い!w100違!w100い!w100な!w100い!w100違!w100い!w100な!w100い!w100違!w100い!w100な!w100い!w100違!w100い!w100な!w100い!w100違!w100い!w100な!w100違!w100違!w100違!w100違!w100違!w100違!sd...￥
+	ModPlayVoiceLS(4, 3, "org/s02/03/130300182b_org", 256, TRUE);
 	OutputLine(NULL, "　……あの子は呪われた子。",
 		   NULL, " ......She is cursed.", Line_Normal);
 

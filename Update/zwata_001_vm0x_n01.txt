@@ -36,24 +36,6 @@ void dialog002()
 
 void dialog003()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei09900_03", 256, TRUE);
-	OutputLine(NULL, "　自分に素直になれッ！！！",
-		   NULL, "Be honest with yourselves!!!", Line_Continue);
-	OutputLine(NULL, "夢を追え！！",
-		   NULL, " Chase your dreams!!", Line_Continue);
-	OutputLine(NULL, "そしてかなえろ！！！",
-		   NULL, " Fulfill them!!!", Line_Continue);
-
-	OutputLine(NULL, "俺がかなえてやるッ！！！",
-		   NULL, " I'll fulfill them for you!!!\"", Line_WaitForInput);
-
-	PlaySE( 3, "wa_006", 56, 64 );
-	ShakeScreen( 1, 50, 20, 4, 0, );
-
-	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
-
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 }
 
 void dialog004()

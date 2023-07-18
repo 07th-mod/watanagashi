@@ -8,97 +8,26 @@ void dialog000()
 
 void dialog001()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-
-	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300552", 256, TRUE);
-	OutputLine(NULL, "　カチューシャからガーターベルトにショーツまで…ぜ〜んぶ揃ってるんだからねぇ！！」",
-		   NULL, "From the headband to the garter belt, even the underwear... I've got it aaaaall prepared for you!!\"", GetGlobalFlag(GLinemodeSp));
-
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 }
 
 void dialog002()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-
-	ModPlayVoiceLS(4, 5, "ps3/s19/05/990500123", 256, TRUE);
-	OutputLine(NULL, "「……メイドさん衣装、カチューシャ、ガーターベルト付きで１位の人の荷物を運ぶのですよ。」",
-		   NULL, "\"Dressing up as a maid, complete with hairband and garter belt, while carrying around the winner's stuff.\"", GetGlobalFlag(GLinemodeSp));
-
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog003()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-
-	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11480", 256, TRUE);
-	OutputLine(NULL, "「男がガーターベルトのつけ方を習って、人生のどこで役に立つってーんだよぉおおぉ！！！」",
-		   NULL, "\"How the bloody hell will a man knowing how to put on a garter belt be usefuuuuuUUul!!!\"", GetGlobalFlag(GLinemodeSp));
-
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog004()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s19/02/990200506", 256, TRUE);
-	OutputLine(NULL, "「そ、そうだよ…。",
-		   NULL, "\"Sh-She's right...", Line_WaitForInput);
-
-	ModPlayVoiceLS(4, 2, "ps3/s19/02/990200507", 256, TRUE);
-	OutputLine(NULL, "大騒ぎしたら……",
-		   NULL, " If you cause a scene here...", Line_Continue);
-
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
-	// (backup) SetValidityOfInput( TRUE );
-
-	OutputLine(NULL, "そ、その",
-		   NULL, " Th-They'll...", Line_Continue);
-
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 1000 );
-	// (backup) SetValidityOfInput( TRUE );
-
-	OutputLine(NULL, "……ぱ、ぱんつまで女の子のだって…バ、バレちゃうよ？」",
-		   NULL, " find out that you're wearing women's clothing right down to the unmentionables.\"", GetGlobalFlag(GLinemodeSp));
-
-
-
-//　!s200ぅごあぁあぁあああああぁああぁあぁああぁッ！！!sd@
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog005()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300622", 256, TRUE);
-	OutputLine(NULL, "「そうそう。",
-		   NULL, "\"That's right.", Line_WaitForInput);
-
-	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300623", 256, TRUE);
-	OutputLine(NULL, "男の人ってガーターベルトとかって好きなんだよねぇ〜。",
-		   NULL, " Men like things like garter belts, right~?", Line_WaitForInput);
-
-	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300624", 256, TRUE);
-	OutputLine(NULL, "どうよ、それを自分で身に付けてみた感想は☆」",
-		   NULL, " So, how does it feel wearing one yourself☆?\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog006()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-
-	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300625", 256, TRUE);
-	OutputLine(NULL, "「きゅっとするでしょ。",
-		   NULL, "\"It's tight, isn't it?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300626", 256, TRUE);
-	OutputLine(NULL, "歩く度に肌を擦るの…ちゃんと感じてる〜？」",
-		   NULL, " Can you feel it rub against your skin as you walk?\"", GetGlobalFlag(GLinemodeSp));
-
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 }
 
 void dialog007()

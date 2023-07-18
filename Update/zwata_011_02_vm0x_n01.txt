@@ -16,11 +16,6 @@ void dialog001()
 
 void dialog002()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700241", 256, TRUE);
-	OutputLine(NULL, "……鷹野さんの方はちょっとあやふやですが、富竹さんとほぼ同じ時刻に殺害され、山中に遺棄されたと考えるのが妥当でしょうなぁ。」",
-		   NULL, "...It's a bit uncertain in Takano-san's case, but the likely prospect is that she was murdered at about the same time as Tomitake-san, then dumped in the mountains.\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog003()
@@ -37,8 +32,4 @@ void dialog003()
 
 void dialog004()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700237", 256, TRUE);
-	OutputLine(NULL, "　…管轄がお隣の県警さんでね。",
-		NULL, "...That one falls under the neighbouring Prefecture's police department.", Line_WaitForInput);
 }

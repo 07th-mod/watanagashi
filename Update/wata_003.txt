@@ -155,16 +155,15 @@ void main()
 
 //「普段は温厚ないい先生なんだけどねぇ＠...どういうわけかカレーにだけはうるさいんだよ＠　偏執的なくらいに！！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s19/03/500300001", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "org/mion1009", 256, TRUE);
 	OutputLine(NULL, "「普段は温厚ないい先生なんだけどねぇ。",
 		   NULL, "\"You see, our normally mild-mannered teacher...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "ps3/s19/03/500300002", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "org/mion1010", 256, TRUE);
 	OutputLine(NULL, "…どういうわけかカレーにだけはうるさいんだよ！",
 		   NULL, " ...for some unfathomable reason is a stickler for curry!", Line_WaitForInput);
-		//VoiceMatching
-		if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_003_vm0x_n01","dialog001");}
-		if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_003_vm00_n01","dialog001");}
-		//VoiceMatchingEnd
+	ModPlayVoiceLS(4, 3, "org/mion1011", 256, TRUE);
+	OutputLine(NULL, "　偏執的なくらいに！！」",
+		NULL, " Unyieldingly so!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 

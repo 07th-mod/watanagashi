@@ -2063,13 +2063,13 @@ void main()
 
 //「あれは絞殺された後に焼かれたことがわかってます＠......検死したのは岐阜県警さんなんですけどね＠これがちょっとおかしいんですよ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700521", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi1031", 256, TRUE);
 	OutputLine(NULL, "「あれは絞殺された後に焼かれたことがわかってます。",
 		   NULL, "\"We learned that she was burned after being strangled to death.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700522", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi1032", 256, TRUE);
 	OutputLine(NULL, "……検死したのは岐阜県警さんなんですけどね。",
 		   NULL, " ...The Gifu station did the autopsy.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700523", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi1033", 256, TRUE);
 	OutputLine(NULL, "これがちょっとおかしいんですよ。",
 		   NULL, " It's a little bit strange.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

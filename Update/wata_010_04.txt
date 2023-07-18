@@ -2309,11 +2309,21 @@ void main()
 	ClearMessage();
 
 //「御三家ってご存知ですかな＠　綿流しのお祭りの開会式典で、各家の代表がそれぞれ挨拶をなさっているでしょう＠見ていません？＠
-
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_010_04_vm0x_n01","dialog002");}
-	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_010_04_vm00_n01","dialog002");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "org/ooishi1011", 256, TRUE);
+	OutputLine(NULL, "「御三家ってご存知ですかな？",
+		   NULL, "\"Are you familiar with the Three Families?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "org/ooishi1012", 256, TRUE);
+	OutputLine(NULL, "　綿流しのお祭りの開会式典で、各家の代表がそれぞれ挨拶をなさっているでしょう。",
+		   NULL, " Representatives from each of them gave short addresses at the Watanagashi festival's opening ceremony.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "org/ooishi1013)", 256, TRUE);
+	OutputLine(NULL, "見ていません？」",
+		   NULL, " Did you see them?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100733", 256, TRUE);
+	OutputLine(NULL, "「……祭りには…途中から来たから…よくは…。」",
+		   NULL, "\"...I came... partway through the festival... so I don't really...\"", Line_Normal);
 
 	ClearMessage();
 

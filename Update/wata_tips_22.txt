@@ -221,11 +221,18 @@ void main()
 	ClearMessage();
 
 //大石「園崎家絡みの闇市場関係が有力候補ですなぁ。拳銃とか、ご禁制の品とか。園崎家の隠し資産ってのも捨てがたいあたりです」
-
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zwata_tips_22_vm0x_n01","dialog001");}
-	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("zwata_tips_22_vm00_n01","dialog001");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "org/ooishi1903", 256, TRUE);
+	OutputLine(NULL, "「園崎家絡みの暴力団関係が有力候補ですなぁ。",
+		   NULL, "\"Anything pointing out the Sonozaki family's connections to violent organizations would be a major contender.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "org/ooishi1904", 256, TRUE);
+	OutputLine(NULL, "トカレフの山か、ケシの密造工場か。",
+		   NULL, " Like a pile of Tokarevs, or a secret poppy production facility. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "org/ooishi1905", 256, TRUE);
+	OutputLine(NULL, "園崎家の隠し資産ってのも捨てがたい辺りです。」",
+		   NULL, " The secret Sonozaki family fortune would also be pretty difficult to discard.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //「...大石さん、気持ちはわかるけど＠　あの祭具殿ってのは古手神社にある神聖な建物で、地元の人間への相当の配慮が必要な建物なんだよ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>高杉</color>", NULL, "<color=#f5e6d3>Takasugi</color>", NULL, Line_ContinueAfterTyping); }

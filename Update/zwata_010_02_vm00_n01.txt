@@ -8,31 +8,8 @@ void dialog000()
 
 void dialog001()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600367", 256, TRUE);
-	OutputLine(NULL, "「うちのお父さん、ヤクザの大物ですから。",
-		   NULL, "\"Well, our dad is a big-shot yakuza.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps2/06/130600368", 540, TRUE);
-	OutputLine(NULL, "…年少のお姉でも、若いガラの悪いのを何人も従えることができました。",
-		   NULL, " ...Even when she was little, my sister managed to subjugate a bunch of young street rats.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps2/06/130600369", 540, TRUE);
-	OutputLine(NULL, "で、様々な嫌がらせや妨害をやってのけたんです。」",
-		   NULL, " Then she played all sorts of tricks on them and just generally got in their way.\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog002()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps2/06/130600370", 540, TRUE);
-	OutputLine(NULL, "「…今は何だかのんびりした雰囲気だから想像も付かないでしょうが。",
-		   NULL, "\"...Now she's pretty laid-back, so it might be hard to imagine.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps2/06/130600371", 540, TRUE);
-	OutputLine(NULL, "器物破損から脅迫、暴行まで一通りこなして、何度も補導されたんですよ。",
-		   NULL, " She did everything, from property damage to threats and even acts of violence, and she was picked up for it countless times.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600372", 256, TRUE);
-	OutputLine(NULL, "…子供ですから、すぐに釈放してもらえたみたいですけどね。",
-		   NULL, " ...Though since she was a kid, they could get her released pretty easily. ", GetGlobalFlag(GLinemodeSp));
 }

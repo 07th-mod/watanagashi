@@ -3564,10 +3564,28 @@ void main()
 
 //「ぎゃッ？！」/
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_005_vm0x_n01","dialog012");}
-	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_005_vm00_n01","dialog012");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s19/00/otaa50004", 256, TRUE);
+	OutputLine(NULL, "「ぎゃッ？！」",
+		   NULL, "\"Gya!?\"", Line_Continue);
+
+	PlaySE( 3, "wa_002", 56, 64 );
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 800 );
+	// (backup) SetValidityOfInput( TRUE );
+	ModPlayVoiceLS(5, 0, "org/mob2a1000", 256, TRUE);
+	OutputLine(NULL, "「ぅごッ！！」",
+		   NULL, " \"Unf!!\"", Line_Continue);
+	PlaySE( 3, "wa_003", 56, 64 );
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 800 );
+	// (backup) SetValidityOfInput( TRUE );
+	ModPlayVoiceLS(6, 0, "org/mob2b1000", 256, TRUE);
+	OutputLine(NULL, "「ぬわんとぉッ？！？！」",
+		   NULL, " \"Hwaaa!?!?\"", Line_Continue);
+	PlaySE( 3, "wa_004", 56, 64 );
+
+	OutputLineAll(NULL, "", Line_Normal);
 
 	ClearMessage();
 
@@ -3906,10 +3924,27 @@ void main()
 
 //「む...。」/
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_005_vm0x_n01","dialog014");}
-	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_005_vm00_n01","dialog014");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s19/00/otac50006", 256, TRUE);
+	OutputLine(NULL, "「む…。」",
+		   NULL, "\"Hrngh...\"", Line_Continue);
+	PlaySE( 3, "wa_011", 56, 64 );
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	// (backup) SetValidityOfInput( TRUE );
+	ModPlayVoiceLS(5, 0, "org/mob2a1001", 256, TRUE);
+	OutputLine(NULL, "「……これは。」",
+		   NULL, " \"...This is...\"", Line_Continue);
+	PlaySE( 3, "wa_011", 56, 64 );
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	// (backup) SetValidityOfInput( TRUE );
+	ModPlayVoiceLS(6, 0, "org/mob2b1001", 256, TRUE);
+	OutputLine(NULL, "「……ぅごぉ、」",
+		   NULL, " \"...Urk...\"", Line_Continue);
+	PlaySE( 3, "wa_011", 56, 64 );
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　...異変は数瞬を置かずに起こり始める￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -4947,10 +4982,11 @@ void main()
 	ModDrawCharacter(1, 2, "sprite/re2a_hau_a1_", "1", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //「け、圭一くん......Ｈなんだぁ...。＠
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_005_vm0x_n01","dialog010");}
-	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_005_vm00_n01","dialog010");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "org/rena1003", 256, TRUE);
+	OutputLine(NULL, "「け、圭一くん……Ｈなんだぁ…。」",
+		   NULL, "\"Ke-Keiichi-kun... was a pervert...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 
@@ -8348,8 +8384,9 @@ void main()
 	ModDrawCharacter(3, 3, "sprite/me2_odoroki_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「「えぇええぇえぇぇ～～...？！？！」」/
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color> & <color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s19/03/500300217", 256, TRUE);
+	ModPlayVoiceLS(5, 1, "org/s19/01/hr_kei20891_org", 256, TRUE);
 	OutputLine(NULL, "「「えぇええぇえぇぇ〜〜…？！？！」」",
 		   NULL, "\"\"WhaaaaaaaaaaaaaaAAAAaaaa~~...!?!?\"\"", Line_Continue);
 

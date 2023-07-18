@@ -8,21 +8,6 @@ void dialog000()
 
 void dialog001()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s02/09/130900016", 256, TRUE);
-	OutputLine(NULL, "　もちろん、古手家の人間以外は",
-		   NULL, "Of course, if anyone but the Furude family enters...", Line_Continue);
-
-	PlaySE( 3, "wa_024", 56, 64 );
-
-//「穢れ（ケガレ）」を持ち込むから立入禁止の不可侵領域＠......聖域なの。＠
-
-	OutputLine(NULL, "「不浄」を持ち込むから立入禁止の不可侵領域。",
-		   NULL, " ...they bring 'impurity' into it, so absolutely no one is allowed a single step inside it.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 9, "ps3/s02/09/130900017", 256, TRUE);
-	OutputLine(NULL, "……聖域なの。」",
-		   NULL, " ......It's a sanctuary.\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 }
 
 void dialog002()
@@ -37,20 +22,10 @@ void dialog002()
 
 void dialog003()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "……鷹野さんが言うには、鬼の血を引く者たちは周期的に「狩猟者」としての本能が目覚め、獲物を求めて人里に姿を現すのだという。",
-		   NULL, "...As Takano-san explained it, those with demon blood in them periodically awaken to their instincts as 'hunters.' ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "そして、その際に行われるのが「鬼隠し」だそうだ。",
-		   NULL, "So when this happens, it's said that they descended on the human villages looking for prey and conducted Onikakushi.", Line_Normal);
 }
 
 void dialog004()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s02/09/130900109", 256, TRUE);
-	OutputLine(NULL, "「平たく言えば、鬼たちによる誘拐行為よ。」",
-		   NULL, "\"Broadly speaking, it's when a demon kidnaps someone; when a person is 'demoned away.'\"", Line_WaitForInput);
 }
 
 void dialog005()
@@ -60,59 +35,18 @@ void dialog005()
 
 void dialog006()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s02/09/130900114", 256, TRUE);
-	OutputLine(NULL, "「そうして生贄をさらってきた夜にはね。",
-		   NULL, "\"So on the nights when they stole away villagers...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 9, "ps3/s02/09/130900115", 256, TRUE);
-	OutputLine(NULL, "「綿流し」の儀式が開かれたというわ。」",
-		   NULL, " this ritual became known as the 'Watanagashi.'\"", Line_Normal);
 }
 
 void dialog007()
 {
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　それは、……決して露店や祭囃子でにぎわうものなどではなく、",
-		   NULL, " It... certainly wasn't the sort of event lively with street stands and festive chanting.", Line_WaitForInput);
-	OutputLine(NULL, "　……もっと違う、背筋が震えて身が凍るような……凄惨な宴だったのだ……！！",
-		   NULL, "...It was more of a ghastly feast... the sort which would send a shiver down your spine and chill you to the bones...!!", GetGlobalFlag(GLinemodeSp));
 }
 
 void dialog008()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "……さっきまでの、楽しかったひとときの記憶がノイズまじりに乱れ、ぼやけて、……砂嵐の中へと消え去ってゆく。",
-		   NULL, "...My fun memories from just a short while earlier swirled and blurred into noise, ...as if vanishing into a sandstorm. ", GetGlobalFlag(GLinemodeSp));
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "「綿流し」の名前に隠されたどす黒く陰惨な響きが、全身にまるで痺れのような圧迫となって……",
-		   NULL, "It felt like the name of the 'Watanagashi' had taken on a sticky dark, shadowy aura and was pressing down on my whole being, numbing my senses.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　目の前のもののいろが灰色に反転して、ぐるぐると渦巻きながら揺れ動いて見えた。",
-		   NULL, " My vision had turned gray, sapped of color, and everything looked like it was spinning dizzily.", Line_Normal);
 }
 
 void dialog009()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s02/09/130900124", 256, TRUE);
-	OutputLine(NULL, "「梨花ちゃんが持っていた祭事用の鍬。",
-		   NULL, "\"Rika-chan was carrying a festival hoe.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 9, "ps3/s02/09/130900125", 256, TRUE);
-	OutputLine(NULL, "…もう薄々は気付いてると思うけど、あれは田畑を耕す鍬ではなくて。」",
-		   NULL, " ...You've probably realized it already, but that's not a hoe for plowing fields.\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
-
-	PlaySE( 3, "wa_023", 56, 64 );
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "鷹野さんはそこで言葉を区切って、にやりと笑う。……つまり、「鍬」といっても鋭利な「刃物」としての道具とでもいいたいのだろうか……。",
-		   NULL, " Takano-san cut off with a smirk... Did she mean to say that despite being a hoe, it actually serves as a sharp bladed tool...?", GetGlobalFlag(GLinemodeSp));
-
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 }
 
 void dialog010()
@@ -153,80 +87,18 @@ void dialog018()
 
 void dialog019()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s02/09/130900183", 256, TRUE);
-	OutputLine(NULL, "　祟りなら、今年はどんな死に方をさせられちゃうのかしら。",
-		   NULL, "If it's the curse, then I wonder what kind of death it'll be this year?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 9, "ps3/s02/09/130900185", 256, TRUE);
-	OutputLine(NULL, "……そう言えば今夜よね。",
-		   NULL, " ......It is tonight, you know.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 9, "ps3/s02/09/130900186", 256, TRUE);
-	OutputLine(NULL, "オヤシロさまの祟りがある夜は。」",
-		   NULL, " The night of Oyashiro-sama's curse.\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 }
 
 void dialog020()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　被害者は、すぐには殺されなかったのだろう。",
-		   NULL, " The victim surely wasn't allowed to go peacefully.", Line_WaitForInput);
-	OutputLine(NULL, "　むしろ、……自分が殺される過程すら目の当たりにしながら、……命を絶たれたのかもしれない。",
-		   NULL, " On the contrary, they most likely had to watch the whole process... before finally being extinguished.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "もし、……それが自分だったら……？",
-		   NULL, " What... what if that was me...?", Line_WaitForInput);
-	OutputLine(NULL, "　そんなこと、考えもつかないし、……考えたくもない。",
-		   NULL, " I couldn't even imagine it... and didn't want to, either.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog021()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s02/09/130900201", 256, TRUE);
-	OutputLine(NULL, "「たったよ。",
-		   NULL, "\"That's all.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 9, "ps3/s02/09/130900202", 256, TRUE);
-	OutputLine(NULL, "…たった百年前のことよ。",
-		   NULL, " ...Only a hundred years ago.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 9, "ps3/s02/09/130900203", 256, TRUE);
-	OutputLine(NULL, "それにね。",
-		   NULL, " Besides.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 9, "ps3/s02/09/130900204", 256, TRUE);
-	OutputLine(NULL, "昭和に入ってからだって、あるんだから。",
-		   NULL, " It kept happening even after the beginning of the Showa period.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 9, "ps3/s02/09/130900205", 256, TRUE);
-	OutputLine(NULL, "…終戦直後に騒ぎになった",
-		   NULL, " ...Like with the uproar around the post-war", Line_Continue);
-
-	FadeOutBGM( 1, 1000, TRUE );
-
-//人肉缶詰事件、!w1200......あ、ごめんなさい＠この話はタブーだったわよね...？￥
-	OutputLine(NULL, "缶詰疑惑、",
-		   NULL, " canned flesh incident,", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 1200 );
-	// (backup) SetValidityOfInput( TRUE );
-
-	OutputLine(NULL, "……あ、ごめんなさい。",
-		   NULL, " ......Oh, I apologize. ", GetGlobalFlag(GLinemodeSp));
 }
 
 void dialog022()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100160", 256, TRUE);
-	OutputLine(NULL, "「……え？",
-		   NULL, "\"......Huh?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100161", 256, TRUE);
-	OutputLine(NULL, "　今、鷹野さん、何て言いました？",
-		   NULL, " Takano-san, what did you just say?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s02/01/130100162", 256, TRUE);
-	OutputLine(NULL, "　缶詰疑惑って…、」",
-		   NULL, " Canned flesh...?\"", Line_Normal);
 }
 
 void dialog023()

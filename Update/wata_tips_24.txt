@@ -112,19 +112,21 @@ void main()
 
 //「状況は芳しくありません＠署長が園崎系議員の恫喝に屈したそうです＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700182", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi1906", 256, TRUE);
 	OutputLine(NULL, "「状況は芳しくありません。",
-		   NULL, "\"The situation is not looking good.", Line_Continue);
+		   NULL, "\"The situation is not looking good.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "org/ooishi1907", 256, TRUE);
 	OutputLine(NULL, "署長が園崎系議員の恫喝に屈したそうです。",
 		   NULL, " The chief appears to have backed down due to Congressman Sonozaki's threats.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //　近日中に鷹野殺しは岐阜県警に譲り、村長たちの失踪は行方不明扱いで生活課に委ねるようです。＠
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_tips_24_vm0x_n01","dialog002");}
-	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_tips_24_vm00_n01","dialog002");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "org/ooishi1908", 256, TRUE);
+	OutputLine(NULL, "　近日中に鷹野殺しは岐阜県警に譲り、村長たちの失踪は行方不明扱いで生活課に委ねるようです。」",
+		   NULL, "In the coming days, we'll hand off Takano's murder to the Gifu Police, and give the missing persons case of the disappearance of the mayor and the others to the community division.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 //　...あの若造署長が＠ベテランたちが吐き捨てる￥

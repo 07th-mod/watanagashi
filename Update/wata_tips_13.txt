@@ -111,13 +111,18 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-
 //「ばっちり黒焦げだそうで＠あぁ言う臭いってこもるんですよねぇ＠岐阜さん、可哀想だなぁ。＠
-
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zwata_tips_13_vm0x_n01","dialog002");}
-	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("zwata_tips_13_vm00_n01","dialog002");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "org/ooishi1900", 256, TRUE);
+	OutputLine(NULL, "「ばっちり黒焦げだそうで。",
+		   NULL, "\"Completely blackened, it seems.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "org/ooishi1901", 256, TRUE);
+	OutputLine(NULL, "あぁ言う臭いってこもるんですよねぇ。",
+		   NULL, " Probably smells terrible, too.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "org/ooishi1902", 256, TRUE);
+	OutputLine(NULL, "岐阜さん、可哀想だなぁ。」",
+		   NULL, " What a shame it is to be Gifu-san.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //　所持品ゼロでこんがり＠しかも県外に捨てるとは...＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

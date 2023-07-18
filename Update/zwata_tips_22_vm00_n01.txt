@@ -8,15 +8,4 @@ void dialog000()
 
 void dialog001()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700174", 256, TRUE);
-	OutputLine(NULL, "「園崎家絡みの暴力団関係が有力候補ですなぁ。",
-		   NULL, "\"Anything pointing out the Sonozaki family's connections to violent organizations would be a major contender.", Line_Continue);
-	OutputLine(NULL, "トカレフの山か、ケシの密造工場か。",
-		   NULL, " Like a pile of Tokarevs, or a secret poppy production facility. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700175", 256, TRUE);
-	OutputLine(NULL, "園崎家の隠し資産ってのも捨てがたい辺りです。」",
-		   NULL, " The secret Sonozaki family fortune would also be pretty difficult to discard.\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }

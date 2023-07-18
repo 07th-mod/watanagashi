@@ -639,17 +639,17 @@ void main()
 
 
 //　...管轄が岐阜県さんでね＠あちらさん、自分たちの縄張りの事件だからって、あんまり協力的じゃないんですよ
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_011_02_vm0x_n01","dialog004");}
-	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_011_02_vm00_n01","dialog004");}
-	//VoiceMatchingEnd
-	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700238", 256, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "org/ooishi1017", 256, TRUE);
+	OutputLine(NULL, "　…管轄が岐阜県さんでね。",
+		NULL, "...That one falls under the Gifu Prefecture's police department.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "org/ooishi1018", 256, TRUE);
 	OutputLine(NULL, "あちらさん、自分たちの縄張りの事件だからって、あんまり協力的じゃないんですよ。",
 		   NULL, " They haven't been very cooperative, even though it happened in our territory.", Line_WaitForInput);
 
 
 //...おっと、これは関係ない話ですね。＠
-	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700239", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi1019", 256, TRUE);
 	OutputLine(NULL, "…おっと、これは関係ない話ですね。」",
 		   NULL, " ...Oh, that's not really relevant, though.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -663,14 +663,15 @@ void main()
 
 //「ですが、犯行時間は概ね、お祭りが終わった直後だろうと見ています＠......鷹野さんの方はちょっとあやふやですが、富竹さんとほぼ同じ時刻に殺害され、岐阜の山中に遺棄されたと考えるのが妥当でしょうなぁ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700240", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi1020", 256, TRUE);
 	OutputLine(NULL, "「ですが、犯行時間は概ね、お祭りが終わった直後だろうと見ています。",
 		   NULL, "\"Nonetheless, the times when the incidents occurred have been generally placed right after the festival ended. ", GetGlobalFlag(GLinemodeSp));
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("zwata_011_02_vm0x_n01","dialog002");}
-	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("zwata_011_02_vm00_n01","dialog002");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "org/ooishi1021", 256, TRUE);
+	OutputLine(NULL, "……鷹野さんの方はちょっとあやふやですが、富竹さんとほぼ同じ時刻に殺害され、岐阜の山中に遺棄されたと考えるのが妥当でしょうなぁ。」",
+		   NULL, "...It's a bit uncertain in Takano-san's case, but the likely prospect is that she was murdered at about the same time as Tomitake-san, then dumped in the mountains in Gifu.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //「......どうして、わざわざ遠くの山まで死体を運んだんでしょう＠...富竹さんも同じように遠くへ運べばよかったのに...。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }

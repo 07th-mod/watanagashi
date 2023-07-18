@@ -8,13 +8,6 @@ void dialog000()
 
 void dialog001()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300008", 256, TRUE);
-	OutputLine(NULL, "　ありゃ、公由分家の寝たきり爺さんまで来てるじゃない！",
-		   NULL, "Huh? The bedridden old man from the Kimiyoshi branch family is here too!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300009", 256, TRUE);
-	OutputLine(NULL, "　あの爺さん、去年の綿流し以降、ずーっと布団の中で過ごしてたんじゃないかなぁ。」",
-		   NULL, " I think that old guy went home from Watanagashi last year and stayed in bed ever since.\"", Line_Normal);
 }
 
 void dialog002()
@@ -54,40 +47,14 @@ void dialog005()
 
 void dialog006()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 5, "ps3/s02/05/130500018", 256, TRUE);
-	OutputLine(NULL, "「……ボクの平らなお胸ではどうなのです？」",
-		   NULL, "\"......What about my flat chest?\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog007()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600033", 256, TRUE);
-	OutputLine(NULL, "（逢引の生現場に決まってるじゃないですか〜。",
-		   NULL, "(We're right at the scene of a rendezvous, of course~.", Line_Continue);
-	Wait ( 3000 );
-	OutputLine(NULL, "ほらほら、よく見て下さい。",
-		   NULL, " See, look closely.", Line_Continue);
-	Wait ( 2000 );
-	OutputLine(NULL, "あれ、誰だかわかります？）",
-		   NULL, " Can you tell who they are?)", Line_Normal);
 }
 
 void dialog008()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 8, "ps3/s02/08/130800001", 256, TRUE);
-	OutputLine(NULL, "「おやおや……、圭一くんも隅に置けないねぇ！",
-		   NULL, "\"What's this...? Keiichi-kun, you sure are smart, you know that?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 8, "ps3/s02/08/130800002", 256, TRUE);
-	OutputLine(NULL, "　こんな所で逢引かい？",
-		   NULL, " Having a secret date in a place like this?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 8, "ps3/s02/08/130800003", 256, TRUE);
-	OutputLine(NULL, "　だとしたら、僕たち、とんでもないお邪魔をしちゃったかな。あっはっはっは！！」",
-		   NULL, " Then I guess we accidentally interrupted something important. A-ha-ha-ha!!\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 }
 
 void dialog009()
@@ -100,37 +67,12 @@ void dialog009()
 
 void dialog010()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600038", 256, TRUE);
-	OutputLine(NULL, "「ってことは富竹さんたちは、逢引してたってわけじゃないみたいですね。」",
-		   NULL, "\"Wait, so you two weren't having a little rendezvous, then?\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog011()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s02/09/130900005", 256, TRUE);
-	OutputLine(NULL, "「くすくす…。",
-		   NULL, "\"Heehee...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 9, "ps3/s02/09/130900006", 256, TRUE);
-	OutputLine(NULL, "残念だけど、貴方たちが覗き見したくなるような逢引現場じゃないのよ。",
-		   NULL, " Unfortunately, this wasn't the location of a rendezvous either of you would want to see.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 9, "ps3/s02/09/130900007", 256, TRUE);
-	OutputLine(NULL, "期待に添えなくて申し訳ないわね。」",
-		   NULL, " Sorry for not living up to your expectations.\"", Line_Normal);
 }
 
 void dialog012()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600039", 256, TRUE);
-	OutputLine(NULL, "「ふーん。",
-		   NULL, "\"Hmm.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600040", 256, TRUE);
-	OutputLine(NULL, "逢引現場じゃなかったら、何してるんですか？",
-		   NULL, " If this wasn't a rendezvous, then what were you doing?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600041", 256, TRUE);
-	OutputLine(NULL, "　富竹さん、今、扉の南京錠をいじってませんでした？」",
-		   NULL, " Tomitake-san, were you messing around with the padlock on the door just now?\"", Line_Normal);
 }

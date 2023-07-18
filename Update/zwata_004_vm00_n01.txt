@@ -8,96 +8,22 @@ void dialog000()
 
 void dialog001()
 {
-	DisableWindow();
-	ModSetLayerFilter(3, 256, "none");
-	ModDrawCharacterWithFiltering(3, 2, "sprite/re3a_def_a1_", "0", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
-
-//「梨花ちゃんは綿流しの巫女さんだから、奉納の演舞をすることになっててね＠その練習なの。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s19/02/500200081", 256, TRUE);
-	OutputLine(NULL, "「梨花ちゃんは綿流しの巫女さんだから、奉納の演舞をすることになっててね。",
-		   NULL, "\"Rika-chan is a shrine maiden for the Watanagashi, so she has to perform a ritual dance.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s19/02/500200082", 256, TRUE);
-	OutputLine(NULL, "その練習なの。」",
-		   NULL, " It's practice for that.\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-
-//「...順を追って説明してくれ＠まず綿流しって何だ＠次に巫女さんって何だ＠最後に奉納演舞って何だ。￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "「…順を追って説明してくれ。",
-		   NULL, "\"...Why don't you explain things in order?", Line_WaitForInput);
-	OutputLine(NULL, "まず綿流しって何だ。",
-		   NULL, " First of all, what is this Watanagashi?", Line_WaitForInput);
-	OutputLine(NULL, "次に巫女さんって何だ。",
-		   NULL, " Next, what do you mean by shrine maiden?", Line_WaitForInput);
-	OutputLine(NULL, "最後に奉納演舞って何だ。」",
-		   NULL, " Last, what do you mean by ritual dance?\"", Line_Normal);
-	ClearMessage();
 }
 
 void dialog002()
 {
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog003()
 {
-//　そう言えば...お袋が夕飯の時、そんな話をしていたような気がする￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　そう言えば…お袋が夕飯の時、そんな話をしていたような気がする。",
-		   NULL, "Come to think of it, I have a feeling Mom did say something about it during dinner the other day.", Line_Normal);
-	ClearMessage();
-
-//「綿流しはね、毎年６月の日曜日に神社でやるお祭りなの＠とってもにぎわうんだよ！＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "「綿流しはね、毎年６月の日曜日に神社でやるお祭りなの。",
-		   NULL, "\"The Watanagashi is a festival that happens at the shrine on a Sunday every June.", Line_WaitForInput);
-	OutputLine(NULL, "とってもにぎわうんだよ！」",
-		   NULL, " It's very lively!\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-//「なるほどな＠しかし綿流しってのは変わった名称だな＠...あれか＠　灯篭流しみたいに、何かを供養して川に流すのか？￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "「なるほどな。",
-		   NULL, "\"I see.", Line_WaitForInput);
-	OutputLine(NULL, "しかし綿流しってのは変わった名称だな。",
-		   NULL, " But 'Watanagashi' sounds like a pretty strange name for it.", Line_WaitForInput);
-	OutputLine(NULL, "…あれか？",
-		   NULL, " ...Is it something like...", Line_WaitForInput);
-	OutputLine(NULL, "　灯篭流しみたいに、何かを供養して川に流すのか？」",
-		   NULL, " the lantern festival, where they have a memorial for the dead by floating things down the river?\"", Line_Normal);
 }
 
 void dialog004()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "「綿ってのはね、お布団や半纏なんかの綿のことなの。",
-		   NULL, "\"The cotton, you see, is from futons or jackets.", Line_WaitForInput);
-	OutputLine(NULL, "だから、お布団の供養になるのかな？",
-		   NULL, " So it'd be something like a futon memorial?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s19/02/500200087", 256, TRUE);
-	OutputLine(NULL, "　…祭壇にもお布団を積み上げているし。」",
-		   NULL, " ...They also pile futons up on the altar.\"", Line_Normal);
-	ClearMessage();
 }
 
 void dialog005()
 {
-//「ご先祖様とか戦没者とか、針とか包丁とかの供養ってのは聞いたことあるけど＠布団の供養っては初耳だな＠どんな謂れがあるんだ？＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "「ご先祖様とか戦没者とか、針とか包丁とかの供養ってのは聞いたことあるけど。",
-		   NULL, "\"I've heard of people leaving offerings of things like needles or kitchen knives to their ancestors or to casualties of war...", Line_WaitForInput);
-	OutputLine(NULL, "布団の供養っては初耳だな。",
-		   NULL, " But an offering of futons is a first for me.", Line_WaitForInput);
-	OutputLine(NULL, "どんな謂れがあるんだ？」",
-		   NULL, " What's the history behind that?\"", GetGlobalFlag(GLinemodeSp));
-
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	DisableWindow();
-	ModDrawCharacter(3, 2, "sprite/re3a_warai_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
-
 }
 
 void dialog006()
@@ -124,16 +50,4 @@ void dialog007()
 
 void dialog008()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s19/06/500600093", 256, TRUE);
-	OutputLine(NULL, "「それよりもさっきのあれ。",
-		   NULL, "\"More importantly, just now...", Line_WaitForInput);
-
-	ModPlayVoiceLS(4, 6, "ps3/s19/06/500600094", 256, TRUE);
-	OutputLine(NULL, "……驚きましたか？",
-		   NULL, " Were you surprised?", Line_WaitForInput);
-	OutputLine(NULL, "　みんながどんどん集まってきて。」",
-		   NULL, " When everybody kept on showing up.\"", GetGlobalFlag(GLinemodeSp));
-
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }

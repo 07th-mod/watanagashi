@@ -149,11 +149,6 @@ void dialog009()
 
 void dialog010()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s19/02/500200241", 256, TRUE);
-	OutputLine(NULL, "「け、圭一くん……はぅ。」",
-		   NULL, "\"Ke-Keiichi-kun... Hau...\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog011()
@@ -167,22 +162,6 @@ void dialog011()
 
 void dialog012()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s19/00/otaa50004", 256, TRUE);
-	OutputLine(NULL, "「ぎゃッ？！」",
-		   NULL, "\"Gya!?\"", Line_Continue);
-
-	PlaySE( 3, "wa_002", 56, 64 );
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
-	// (backup) SetValidityOfInput( TRUE );
-	PlaySE( 3, "wa_003", 56, 64 );
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
-	// (backup) SetValidityOfInput( TRUE );
-	PlaySE( 3, "wa_004", 56, 64 );
-
-	OutputLineAll(NULL, "", Line_Normal);
 }
 
 void dialog013()
@@ -191,21 +170,6 @@ void dialog013()
 
 void dialog014()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s19/00/otac50006", 256, TRUE);
-	OutputLine(NULL, "「む…。」",
-		   NULL, "\"Hrngh...\"", Line_Continue);
-	PlaySE( 3, "wa_011", 56, 64 );
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
-	// (backup) SetValidityOfInput( TRUE );
-	PlaySE( 3, "wa_011", 56, 64 );
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
-	// (backup) SetValidityOfInput( TRUE );
-	PlaySE( 3, "wa_011", 56, 64 );
-	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 }
 
 void dialog015()

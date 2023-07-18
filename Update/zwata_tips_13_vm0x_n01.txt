@@ -17,14 +17,6 @@ void dialog001()
 
 void dialog002()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700124", 256, TRUE);
-	OutputLine(NULL, "「ばっちり黒焦げだそうで。",
-		   NULL, "\"Completely blackened, it seems.", Line_Continue);
-	OutputLine(NULL, "あっちの現場、可哀想だなぁ。」",
-		   NULL, " I feel sorry for the guys on the scene.\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
 }
 
 void dialog003()

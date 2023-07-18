@@ -2975,11 +2975,24 @@ void main()
 	ModDrawCharacter(3, 3, "sprite/me2_sinmyou_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //「この頃には、...もう鬼ヶ淵村の不可侵性は失われていました＠......かつて仙人と崇められた村人たちは、非人扱いを受け...＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "org/mion1015", 256, TRUE);
+	OutputLine(NULL, "「この頃には、…もう鬼ヶ淵村の不可侵性は失われていました。",
+		   NULL, "\"At the time... Onigafuchi Village had already lost its impenetrability.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "org/mion1016", 256, TRUE);
+	OutputLine(NULL, "……かつて仙人と崇められた村人たちは、非人扱いを受け…。",
+		   NULL, " ...The villagers, once worshipped as transcendents, were now on the receiving end of inhuman treatment...", GetGlobalFlag(GLinemodeSp));
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_012_02_vm0x_n01","dialog001");}
-	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_012_02_vm00_n01","dialog001");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　...神聖な鬼ヶ淵村は、いつの間にか、業病患者の隔離集落の成れの果てであるという根も葉もないレッテルを貼られ、...苦難の時代を迎えることになったのでした。￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "org/mion1017", 256, TRUE);
+	OutputLine(NULL, "　…神聖な鬼ヶ淵村は、いつの間にか、疫病患者の隔離集落の成れの果てであるという根も葉もないレッテルを貼られ、",
+		   NULL, "The sacred Onigafuchi Village had been groundlessly labeled an isolated village of those afflicted with incurable diseases, a mere shadow of its former self...", Line_Continue);
+	OutputLine(NULL, "…苦難の時代を迎えることになったのでした。」",
+		   NULL, " and stood on the precipice of an era of hardship.\"", Line_Normal);
 
 	ClearMessage();
 	DisableWindow();
@@ -3071,10 +3084,21 @@ void main()
 	DrawSceneWithMask("background/heya1", "up", 0, 0, 200 );
 
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_012_02_vm0x_n01","dialog002");}
-	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_012_02_vm00_n01","dialog002");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "org/mion1018", 256, TRUE);
+	OutputLine(NULL, "「……裁判も起こしました。",
+		   NULL, "\"......It even caused trials.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "org/mion1019", 256, TRUE);
+	OutputLine(NULL, "…出身の問題は離婚する重要な理由にはなりえないと訴えて。",
+		   NULL, " ...They would appeal that where one came from wasn't an important enough reason to divorce.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "org/mion1020", 256, TRUE);
+	OutputLine(NULL, "…でも敗訴しました。",
+		   NULL, " ...They would, however, lose their case. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "org/mion1021", 256, TRUE);
+	OutputLine(NULL, "……出身の虚偽は、結婚の上での重大な詐称行為にあたるのだそうで……。」",
+		   NULL, "...Lying about one's birthplace apparently constitutes a heavy act of misrepresentation in marriage...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「..................ひどいね＠...そんなの。￥
@@ -3143,14 +3167,16 @@ void main()
 	DrawScene("background/m_hi8", 400 );
 
 //「......太平洋戦争中は、国民一丸のスローガンが流れながらも、...雛見沢村の人々はさまざまな差別を受け続けました＠......数えだしたらキリがないくらい＠......夫や息子を戦場に送り出し、...銃後の女たちも心が荒んでいたのでしょうね...＠
-
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_012_02_vm0x_n01","dialog003");}
-	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_012_02_vm00_n01","dialog003");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "org/mion1022", 256, TRUE);
+	OutputLine(NULL, "「……太平洋戦争中は、国民一丸のスローガンが流れながらも、…雛見沢村の人々はさまざまな差別を受け続けました。",
+		   NULL, "\"...During the Pacific War, despite the slogans that all the country was acting as one... those from Hinamizawa continued to suffer all manner of discrimination.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "org/mion1023", 256, TRUE);
+	OutputLine(NULL, "……数えだしたらキリがないくらい。",
+		   NULL, " ...There were too many ways to count. ", GetGlobalFlag(GLinemodeSp));
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300361_7", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "org/mion1024", 256, TRUE);
 	OutputLine(NULL, "……夫や息子を戦場に送り出し、…銃後の女たちも心が荒んでいたのでしょうね…。",
 		   NULL, "...They would send their husbands and sons to war... and the women on the home front would suffer greatly, too...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -3158,7 +3184,7 @@ void main()
 
 //　......当時をよく覚えている祖母は、......それは苦しい時代だったと回想しています...。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300375", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "org/mion1025", 256, TRUE);
 	OutputLine(NULL, "　……当時をよく覚えている祖母は、……それは苦しい時代だったと回想しています…。」",
 		   NULL, "...My grandmother remembers it well... She remembers it being a difficult time...\"", Line_Normal);
 	ClearMessage();
@@ -3228,14 +3254,14 @@ void main()
 	ClearMessage();
 
 //「宗平は中国大陸に出兵し、ハルピンで食料倉庫の管理をしていたと言い、撤退時に上官や仲間たちと共謀して、軍の缶詰をごっそりと盗み出していたのでした＠......それを瀬戸内海某所に隠し、闇市で高値で売りさばいて大きな富を得たのです。＠
-
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_012_02_vm0x_n01","dialog004");}
-	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_012_02_vm00_n01","dialog004");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "org/mion1026", 256, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	OutputLine(NULL, "「宗平は中国大陸に出兵し、ハルピンで食料倉庫の管理をしていたと言い、撤退時に上官や仲間たちと共謀して、軍の缶詰をごっそりと盗み出していたのでした。",
+		   NULL, "\"Sohei said that he managed food warehouses in Harbin after being dispatched to the Chinese mainland. When it was time to pull out, he conspired with his superiors and comrades and stole a great deal of the army's canned goods. ", GetGlobalFlag(GLinemodeSp));
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300361_9", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "org/mion1027", 256, TRUE);
 	OutputLine(NULL, "……それを瀬戸内海某所に隠し、闇市で高値で売りさばいて大きな富を得たのです。」",
 		   NULL, "...He hid them somewhere in the Seto Inland Sea and sold them widely at a high price on the black market, thus earning a fortune.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -3340,11 +3366,21 @@ void main()
 	DrawSceneWithMask("black", "down", 0, 0, 300 );
 
 //「...ですが、...昭和３０年頃に、またしても逆風が吹き始めます＠...それが「人肉缶詰疑惑」でした。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "org/mion1028", 256, TRUE);
+	OutputLine(NULL, "「…ですが、…昭和３０年頃に、またしても逆風が吹き始めます。",
+		   NULL, "\"...However... around 1955, the wind started blowing in the other direction again...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "org/mion1029", 256, TRUE);
+	OutputLine(NULL, "…それが「人肉缶詰疑惑」でした。」",
+		   NULL, " ...because of the 'Canned Flesh Incident.'\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zwata_012_02_vm0x_n01","dialog005");}
-	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("zwata_012_02_vm00_n01","dialog005");}
-	//VoiceMatchingEnd
+
+//　人肉缶詰......＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　人肉缶詰……。",
+		   NULL, "Canned flesh......", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //　...聞いただけでもおぞましくなる、...嫌な響きがあった￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -3353,11 +3389,14 @@ void main()
 	ClearMessage();
 
 //「祖父、園崎宗平の上官だったと名乗る男が告白したのです＠...あの缶詰は人肉の缶詰だったと。＠
-
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zwata_012_02_vm0x_n01","dialog006");}
-	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("zwata_012_02_vm00_n01","dialog006");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "org/mion1030", 256, TRUE);
+	OutputLine(NULL, "「祖父、園崎宗平の上官だったと名乗る男が告白したのです。",
+		   NULL, "\"Someone naming himself as my grandfather Sohei Sonozaki's superior confessed...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "org/mion1031", 256, TRUE);
+	OutputLine(NULL, "…あの缶詰は人肉の缶詰だったと。」",
+		   NULL, " that those canned goods had been human flesh.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　人肉を食らう鬼の住む村、雛見沢＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -3417,6 +3456,7 @@ void main()
 
 //「...実は宗平は戦時中、ハルピンでペスト鼠の駆除や、伝染病患者の死体運搬の仕事をさせられていたのでした...。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "org/mion1032", 256, TRUE);
 	OutputLine(NULL, "「…実は宗平は戦時中、ハルピンでペスト鼠の駆除や、伝染病患者の死体運搬の仕事をさせられていたのでした…。」",
 		   NULL, "\"...In reality, Sohei's job during the war had been to exterminate pestilent mice and to transport the corpses of those with infectious diseases...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -3566,8 +3606,10 @@ void main()
 
 //「.........胸くそが悪くなるぜ＠......それでも、雛見沢の人間を蔑むのかよな...。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "org/keiichi1051", 256, TRUE);
 	OutputLine(NULL, "「………胸くそが悪くなるぜ。",
 		   NULL, "\"......That makes me sick...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "org/keiichi1052", 256, TRUE);
 	OutputLine(NULL, "……それでも、雛見沢の人間を蔑むのかよな…。」",
 		   NULL, " ...and they still hate Hinamizawa, huh...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -3579,6 +3621,7 @@ void main()
 
 //「......本当に。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "org/mion1033", 256, TRUE);
 	OutputLine(NULL, "「……本当に。」",
 		   NULL, "\"......You said it.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -3598,11 +3641,13 @@ void main()
 	ClearMessage();
 
 //「宗平がいた部隊は、それよりはもっと温情的な研究をしていました＠...それは、戦地での困難な食料調達に関する具体的な手法の研究でした。￥
-
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zwata_012_02_vm0x_n01","dialog007");}
-	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("zwata_012_02_vm00_n01","dialog007");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "org/mion1034", 256, TRUE);
+	OutputLine(NULL, "「宗平がいた部隊は、それよりはもっと温情的な研究をしていました。",
+		   NULL, "\"The unit Sohei was in did way kinder research than that.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "org/mion1035", 256, TRUE);
+	OutputLine(NULL, "…それは、戦地での困難な食料調達に関する具体的な手法の研究でした。」",
+		   NULL, " ...They were researching concrete methods for reducing the difficulty of delivering food on the battlefield.\"", Line_Normal);
 
 	ClearMessage();
 	DisableWindow();
@@ -3656,7 +3701,7 @@ void main()
 
 //「...戦場で一番入手しやすいタンパク源は何だと思います...？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps2/03/130300394", 540, TRUE);
+	ModPlayVoiceLS(4, 3, "org/mion1036", 256, TRUE);
 	OutputLine(NULL, "「…戦場で一番入手しやすいタンパク源は何だと思います…？」",
 		   NULL, "\"...What do you think the easiest source of protein on a battlefield is...?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -3681,11 +3726,37 @@ void main()
 	ClearMessage();
 
 //「......そう＠...彼らは、人間を食材として扱う方法を研究していたのです＠...彼らは、時には敵の、時には戦友の血肉を食んででも戦い抜くことが、国に報いる究極の奉仕になる＠...そういう教義を大真面目に組み上げて行ったのです＠......滑稽な話ですね＠祖父を人肉食いと蔑んでおきながら、自分たちはさらにその上を行っていたのですから＠祖父はいつも思っていたそうです＠例え自分が卑しい食人鬼だとしても、彼らはそれよりも遥かに醜い鬼なんだと＠だからいくら蔑まれたって、ちっとも堪えないと。￥
-
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zwata_012_02_vm0x_n01","dialog008");}
-	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("zwata_012_02_vm00_n01","dialog008");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "org/mion1037", 256, TRUE);
+	OutputLine(NULL, "「……そう。",
+		   NULL, "\"...That's right.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "org/mion1038", 256, TRUE);
+	OutputLine(NULL, "…彼らは、人間を食材として扱う方法を研究していたのです。",
+		   NULL, " ...They were researching ways to handle using humans as food. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "org/mion1039", 256, TRUE);
+	OutputLine(NULL, "…彼らは、時には敵の、時には戦友の血肉を食んででも戦い抜くことが、国に報いる究極の奉仕になる。",
+		   NULL, "...Fighting onwards, sometimes eating the flesh of enemies and sometimes that of allies, became the ultimate service paid to their country.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "org/mion1040", 256, TRUE);
+	OutputLine(NULL, "…そういう教義を大真面目に組み上げて行ったのです。",
+		   NULL, " ...They were deathly serious about this doctrine.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "org/mion1041", 256, TRUE);
+	OutputLine(NULL, "……滑稽な話ですね。",
+		   NULL, " ...It really is a riot. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "org/mion1042", 256, TRUE);
+	OutputLine(NULL, "祖父を人肉食いと蔑んでおきながら、自分たちはさらにその上を行っていたのですから。",
+		   NULL, "My grandfather was despised as someone who ate human flesh, and yet they had gone above and beyond that.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "org/mion1043", 256, TRUE);
+	OutputLine(NULL, "祖父はいつも思っていたそうです。",
+		   NULL, " Apparently he always thought about it, too. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "org/mion1044", 256, TRUE);
+	OutputLine(NULL, "例え自分が卑しい食人鬼だとしても、彼らはそれよりも遥かに醜い鬼なんだと。",
+		   NULL, "Even if he was a vulgar, man-eating demon, they were far more ugly demons than he.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "org/mion1045", 256, TRUE);
+	OutputLine(NULL, "だからいくら蔑まれたって、ちっとも堪えないと。」",
+		   NULL, " So no matter how much he was scorned, he wouldn't put up with it.\"", Line_Normal);
 
 	ClearMessage();
 
@@ -3712,10 +3783,10 @@ void main()
 
 //「......お腹を空かせた前線の兵隊さんにはどの試作品もとても好評だったそうです＠中でも醤油で煮たすき焼き風のものが一番好評だったそうで...。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps2/03/130300404", 540, TRUE);
+	ModPlayVoiceLS(4, 3, "org/mion1046", 256, TRUE);
 	OutputLine(NULL, "「……お腹を空かせた前線の兵隊さんにはどの試作品もとても好評だったそうです。",
 		   NULL, "\"...The starved soldiers on the front lines apparently loved all the prototypes they were sent.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "ps2/03/130300405", 540, TRUE);
+	ModPlayVoiceLS(4, 3, "org/mion1047", 256, TRUE);
 	OutputLine(NULL, "中でも醤油で煮たすき焼き風のものが一番好評だったそうで…。」",
 		   NULL, " Among them, those who cooked it in soy sauce, like it was sukiyaki, loved it the most...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -3754,11 +3825,25 @@ void main()
 
 
 //「......真偽はわかりません＠晩年まで宗平は人肉であることを否定し続けました＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "org/mion1048", 256, TRUE);
+	OutputLine(NULL, "「……真偽はわかりません。",
+		   NULL, "\"...I don't know if it's true.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "org/mion1049", 256, TRUE);
+	OutputLine(NULL, "晩年まで宗平は人肉であることを否定し続けました。",
+		   NULL, " Sohei denied it was human flesh up until the day he died.", GetGlobalFlag(GLinemodeSp));
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("zwata_012_02_vm0x_n01","dialog011");}
-	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("zwata_012_02_vm00_n01","dialog011");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+//　ですが、雛見沢の急激な復興を妬む人々は、人肉を売って財を成した鬼畜と呼び、...村人をまたしても蔑み始めたのです＠......また、子供たちがはやし立てられ、石を投げつけられる時代に戻ってしまったのです。￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "org/mion1050", 256, TRUE);
+	OutputLine(NULL, "　ですが、雛見沢の急激な復興を妬む人々は、人肉を売って財を成した鬼畜と呼び、…村人をまたしても蔑み始めたのです。",
+		   NULL, "However, those who begrudged Hinamizawa's sudden revival called him a savage for making a fortune from selling human flesh... and the villagers began to be scorned again. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "org/mion1051", 256, TRUE);
+	OutputLine(NULL, "……また、子供たちがはやし立てられ、石を投げつけられる時代に戻ってしまったのです。」",
+		   NULL, "...They returned to a time where children would be jeered at and have rocks thrown at them.\"", Line_Normal);
 
 	ClearMessage();
 	DisableWindow();

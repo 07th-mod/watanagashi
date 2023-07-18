@@ -8,63 +8,14 @@ void dialog000()
 
 void dialog001()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600585", 256, TRUE);
-	OutputLine(NULL, "「……園崎詩音は………魅音姉さまの足元にも及ばない、下賤で卑しい雌豚でございます…。",
-		   NULL, "\"...Shion Sonozaki...... is a lowly, worthless sow not fit to even lick her big sister Mion's feet... ", GetGlobalFlag(GLinemodeSp));
 }
 
 void dialog002()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300673", 256, TRUE);
-	OutputLine(NULL, "「……じゃあそろそろいい？",
-		   NULL, "\"...Can I start now, then?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300674", 256, TRUE);
-	OutputLine(NULL, "　この拷問はね、とてもシンプル。",
-		   NULL, " This method of torture is very simple.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "ps2/03/130300675", 540, TRUE);
-	OutputLine(NULL, "左手の小指の先端の節に釘を打つ。",
-		   NULL, " I'll nail one of these into the joint on the end of your left pinky finger. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps2/03/130300676", 540, TRUE);
-	OutputLine(NULL, "順に親指まで打ったらまた小指に戻って、今度は真ん中の節に釘を打つ。",
-		   NULL, "Then, I'll nail each one in order until I get to your thumb, and then I'll go back to your pinky and nail one into the joint in the middle.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "ps2/03/130300677", 540, TRUE);
-	OutputLine(NULL, "…この調子で１５本の釘で左手を打ちつける。",
-		   NULL, " ...So on and so on, until I hammer fifteen nails into your left hand. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps2/03/130300678", 540, TRUE);
-	OutputLine(NULL, "それが終わったら次は右手。",
-		   NULL, "When that's over with, I'll do your right hand next.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "ps2/03/130300679", 540, TRUE);
-	OutputLine(NULL, "……それが終わったら次は、…………まだ意識があったら教えるね。",
-		   NULL, " ...After that......... if you're still conscious, I'll tell you. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps2/03/130300680", 540, TRUE);
-	OutputLine(NULL, "指先って、たくさんの神経が集まってるから、圭ちゃんが想像するよりもはるかに痛いよ。",
-		   NULL, "There are a lot of nerves bundled in your fingertips, so it hurts far more than you could imagine.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "ps2/03/130300681", 540, TRUE);
-	OutputLine(NULL, "…両手３０本を打ち終える前に、失神しちゃう人もいるそうだから…。」",
-		   NULL, " ...Some people apparently pass out before you finish hammering thirty nails into their hands, so...\"", Line_Normal);
 }
 
 void dialog003()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps2/03/130300682", 540, TRUE);
-	OutputLine(NULL, "「…………他の人を拷問する時にはなんのためらいもなかったけど。",
-		   NULL, "\"............I didn't hesitate at all when I was torturing the others.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300683", 256, TRUE);
-	OutputLine(NULL, "……なぜかあんたにはためらいがあるよ。」",
-		   NULL, " ...Why do I hesitate now?\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog004()

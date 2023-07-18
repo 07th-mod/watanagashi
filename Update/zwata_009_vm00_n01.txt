@@ -115,49 +115,18 @@ void dialog007()
 
 void dialog008()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700020", 256, TRUE);
-	OutputLine(NULL, "「園崎家はこの地域一帯を牛耳ってるヤクザ屋さんです。",
-		   NULL, "\"The Sonozakis are a yakuza group with this entire region under their thumb.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700021", 256, TRUE);
-	OutputLine(NULL, "ちなみに彼女のお父さんは、××組系のヤクザの大幹部さんです。",
-		   NULL, " Plus, her father is a high-ranked executive in the ×× yakuza association.", GetGlobalFlag(GLinemodeSp));
 }
 
 void dialog009()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700024", 256, TRUE);
-	OutputLine(NULL, "　高い塀に有刺鉄線と監視カメラで守られた、典型的なヤクザの組長宅ですよ。",
-		   NULL, "It's the very picture of a gang boss's house, protected by high walls, barbed-wire fence, and security cameras.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700025", 256, TRUE);
-	OutputLine(NULL, "今度ぜひ遊びに行ってみてください。」",
-		   NULL, " If you have the chance, you should go and visit her.\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog010()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700026", 256, TRUE);
-	OutputLine(NULL, "「いえいえいえいえいえ。",
-		   NULL, "\"No, no, no, no, no.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700027", 256, TRUE);
-	OutputLine(NULL, "まさかまさか。",
-		   NULL, " Not at all, not at all.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700028", 256, TRUE);
-	OutputLine(NULL, "園崎魅音さんが継ぐのはそんなチンケなヤクザ組織だけじゃありません。",
-		   NULL, " A boring old yakuza group isn't the only thing Mion Sonozaki-san will inherit.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700029", 256, TRUE);
-	OutputLine(NULL, "彼女が継ぐのは園崎家そのものですよ。",
-		   NULL, " She's inheriting the Sonozaki family itself. ", GetGlobalFlag(GLinemodeSp));
 }
 
 void dialog011()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　魅音は跡継ぎだとか言ってたけど……まさか…そのヤクザの…？",
-		   NULL, "She'd mentioned Mion being a successor...... but... to a yakuza group...?", Line_Normal);
 }
 
 void dialog012()
