@@ -2819,33 +2819,10 @@ void main()
 	PlayBGM( 1, "msys03", 56, 0 );
 
 //「さ、!w500ささッ、!w800さ/
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s19/02/990200506", 256, TRUE);
-	OutputLine(NULL, "「そ、そうだよ…。",
-		   NULL, "\"Sh-She's right...", Line_WaitForInput);
-
-	ModPlayVoiceLS(4, 2, "ps3/s19/02/990200507", 256, TRUE);
-	OutputLine(NULL, "大騒ぎしたら……",
-		   NULL, " If you cause a scene here...", Line_Continue);
-
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
-	// (backup) SetValidityOfInput( TRUE );
-
-	OutputLine(NULL, "そ、その",
-		   NULL, " Th-They'll...", Line_Continue);
-
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 1000 );
-	// (backup) SetValidityOfInput( TRUE );
-
-	OutputLine(NULL, "……ぱ、ぱんつまで女の子のだって…バ、バレちゃうよ？」",
-		   NULL, " find out that you're wearing women's clothing right down to the unmentionables.\"", GetGlobalFlag(GLinemodeSp));
-
-
-
-//　!s200ぅごあぁあぁあああああぁああぁあぁああぁッ！！!sd@
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_002_vm0x_n01","dialog004");}
+	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_002_vm00_n01","dialog004");}
+	//VoiceMatchingEnd
 
 	ClearMessage();
 	DisableWindow();
@@ -3275,11 +3252,33 @@ void main()
 	ModDrawCharacterWithFiltering(1, 2, "sprite/re1a_hau_a1_", "1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 //「そ、そうだよ...＠大騒ぎしたら......!w800そ、その!w1000......ぱ、ぱんつまで女の子のだって...バ、バレちゃうよ？＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s19/02/990200506", 256, TRUE);
+	OutputLine(NULL, "「そ、そうだよ…。",
+		   NULL, "\"Sh-She's right...", Line_WaitForInput);
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("zwata_002_vm0x_n02","dialog004");}
-	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("zwata_002_vm00_n02","dialog004");}
-	//VoiceMatchingEnd
+	ModPlayVoiceLS(4, 2, "ps3/s19/02/990200507", 256, TRUE);
+	OutputLine(NULL, "大騒ぎしたら……",
+		   NULL, " If you cause a scene here...", Line_Continue);
+
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 800 );
+	// (backup) SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "そ、その",
+		   NULL, " Th-They'll...", Line_Continue);
+
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	// (backup) SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "……ぱ、ぱんつまで女の子のだって…バ、バレちゃうよ？」",
+		   NULL, " find out that you're wearing women's clothing right down to the unmentionables.\"", GetGlobalFlag(GLinemodeSp));
+
+
+
+//　!s200ぅごあぁあぁあああああぁああぁあぁああぁッ！！!sd@
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //!s200
 	SetSpeedOfMessage( TRUE, 100, );
