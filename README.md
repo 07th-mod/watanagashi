@@ -30,6 +30,10 @@ This repository is in constant change. Sometimes new releases might get on hold 
 
 > Some voiced lines might end early if you are a slow header or playing with auto mode. There are too many cases of split lines (PS3 and PC version share the same script, but the reading is different) to fix manually. Some extreme cases may be fixed if you take your time to open an Issue.
 
+# Legacy Voice Only scripts
+
+Legacy voice only scripts can be found on the `voice-only` branch at [voice-only/dev/Update (voice only)](https://github.com/07th-mod/watanagashi/tree/voice-only/dev/Update%20(voice%20only))
+
 # Developing with us
 
 Usually, older contributors are welcome to join the repository and push their own changes without supervision. However, you can also aid the development just by forking the repository and working on your own changes. After you are done, commit the changes, make a pull request and if it's good enough, the changes will be merged. Both approaches are more than welcome!
