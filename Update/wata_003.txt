@@ -4190,10 +4190,10 @@ void main()
 		   NULL, " Rice Culture!!!!!\"", Line_Continue);
 	DisableWindow();
 	DrawScene("white", 10 );
-	DrawBustshot(5, "background/furiker_b", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 50, TRUE );
+	DrawBustshot(5, "background/furiker_b", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 50, TRUE ); //ERROR_EXISTING: Priority 10 on layer 5 used here. Conflict is 3 lines away (line 4196)
 	PlaySE( 3, "wa_007", 56, 64 );
 	ShakeScreen( 1, 50, 20, 3, 0, );
-	ModDrawCharacter(2, 22, "sprite/tie_2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModDrawCharacter(2, 22, "sprite/tie_2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 11, 0, FALSE ); //ERROR: Priority 10 already in use 3 lines ago (line 4193). Existing Layer: 5 Conflicting Layer: 2 Suggested Priority: 11
 	DrawSceneWithMask("background/gr1", "up", 0, 0, 800 );
 
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));

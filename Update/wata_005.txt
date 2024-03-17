@@ -3620,7 +3620,7 @@ void main()
 
 	DisableWindow();
 	ModSetLayerFilter(3, 256, "none");
-	ModDrawCharacterWithFiltering(3, 2, "sprite/re2b_kaii_b1_", "2", "right", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	ModDrawCharacterWithFiltering(3, 2, "sprite/re2b_kaii_b1_", "2", "right", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE ); //ERROR_EXISTING: Priority 10 on layer 3 used here. Conflict is 37 lines away (line 3660)
 
 //　レナがふらふらと現れ、彼らに注意（？）する￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -3657,7 +3657,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	ModSetLayerFilter(2, 256, "none");
-	ModDrawCharacter(2, 4, "sprite/sa2a_akuwarai_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 100, FALSE );
+	ModDrawCharacter(2, 4, "sprite/sa2a_akuwarai_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 11, 100, FALSE ); //ERROR: Priority 10 already in use 37 lines ago (line 3623). Existing Layer: 3 Conflicting Layer: 2 Suggested Priority: 11
 	DrawScene("background/res1", 300 );
 
 //「さすがはレナさん...＠...いつ見ても恐ろしいキレですわね。＠
