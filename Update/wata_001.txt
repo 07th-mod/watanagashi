@@ -366,7 +366,7 @@ void main()
 	OutputLine(NULL, "「おー！",
 		   NULL, "\"Oooh!", Line_Continue);
 	OutputLine(NULL, "　圭ちゃんも我が部のことがわかってきたねぇ！",
-		   NULL, " It looks like Kei-chan has come to understand our club!", Line_WaitForInput);
+		   NULL, " It looks like you've come to understand our club!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300374", 256, TRUE);
 	OutputLine(NULL, "　で、どう？　来れそう？」",
 		   NULL, " So, how about it? Can you come?\"", Line_Normal);
@@ -3074,10 +3074,10 @@ void main()
 		   NULL, "\"Then, I'll read it out~.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/mas99002", 256, TRUE);
 	OutputLine(NULL, "…「犬も歩けばくたびれる」〜。」",
-		   NULL, " ...'The dog gets tired on a walk'~.\"", Line_Continue);
+		   NULL, " ...'The dog gets tired on a walk'~.\"", Line_ContinueAfterTyping);
 
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 1500 );
+	Wait( 500 );
 	// (backup) SetValidityOfInput( TRUE );
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_Continue); }
 
@@ -3194,7 +3194,7 @@ void main()
 		   NULL, "\"Sho kyute sho kyute!!!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s19/02/990200406", 256, TRUE);
 	OutputLine(NULL, "　レナ、勝ってもこのカルタ、ちゃんと買うよ〜〜！！！",
-		   NULL, " Even if Rena wins, I'll still buy these cards~~!!!", Line_WaitForInput);
+		   NULL, " Even if I win, I'll still buy these cards~~!!!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s19/02/990200407", 256, TRUE);
 	OutputLine(NULL, "　お〜持ち帰り〜〜〜はぅ〜！！！！」",
 		   NULL, " I~'m ta~king them ho~me~~~ hau~!!!!\"", Line_Normal);
@@ -3965,7 +3965,7 @@ void main()
 		   NULL, "\"...I'm disappointed.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300432", 256, TRUE);
 	OutputLine(NULL, "みんな本気なのに、圭ちゃんだけは本気になってくれなかったね。」",
-		   NULL, " Everybody was serious about this, but Kei-chan was the only one who wasn't.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Everybody was serious about this, but you're the only one who wasn't.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -5529,7 +5529,7 @@ void main()
 	OutputLine(NULL, "　…綿流し？",
 		   NULL, "...Watanagashi Festival?", Line_WaitForInput);
 	OutputLine(NULL, "　綿流祭五凶……何だって？？",
-		   NULL, " Cotton Drifting Five Demon... what??", Line_Normal);
+		   NULL, " Cotton Drifting Five-Demon... what??", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	ModDrawCharacter(3, 3, "sprite/me2_warai_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
