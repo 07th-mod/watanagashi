@@ -4985,7 +4985,14 @@ void main()
 
 
 	DisableWindow();
-	DrawScene("scene/003", 100 );
+
+	// OG game displays special image here of eyes
+	// Make sure it displays, even if user has CGs turned off
+	if (GetGlobalFlag(GArtStyle) == 2) {
+		DrawScene("bg_018", 100 );
+	} else {
+		DrawScene("scene/003", 100 );
+	}
 
 	PlaySE( 3, "wa_027", 56, 64 );
 	ShakeScreen( 1, 20, 20, 5, 0, );
