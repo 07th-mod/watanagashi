@@ -4900,7 +4900,7 @@ void main()
 		   NULL, " But then, one day...\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-//	DrawSceneWithMask( "bg_160", "left", 0, 0, 300 );
+	if (GetGlobalFlag(GHideCG)) {DrawSceneWithMask( "background/aka2", "left", 0, 0, 300 );}
 	DrawSceneWithMask("scene/sil1a", "left", 0, 0, 300 );
 	ShakeScreen( 1, 20, 20, 5, 0, );
 
@@ -6109,6 +6109,9 @@ void main()
 		   NULL, " ......That's the kind of ritual it was.", Line_Normal);
 	ClearMessage();
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 9, "sprite/ta1_warai_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );}
+
 //「平たく言えば、魚のワタを取り出して三角コーナーに捨てるのを、仰々しく儀式仕立にしたってことね＠...それで儀式はおしまい＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "org/takano1035", 256, TRUE);
@@ -6170,6 +6173,9 @@ void main()
 		   NULL, "...Even though she worked so hard to practice for today......", Line_Normal);
 	ClearMessage();
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModSetLayerFilter(3, 256, "night");}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 6, "sprite/si1a_majime_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );}
 
 //「...鷹野さんももう少し、言葉を選んでほしいです＠圭ちゃん、ナイーブなんですから、あまりからかわないでください。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -6212,6 +6218,9 @@ void main()
 		   NULL, "Takano-san spoke without a hint of malice as she smiled gracefully.", Line_Normal);
 	ClearMessage();
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 6, "sprite/si1a_akuwarai_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );}
+
 //「この辺まで話を聞けば、!w1000...圭ちゃんにも、この祭具殿の中にどういうものがあるのか、理解できるようになってきませんか＠　ほら。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s02/06/130600081", 256, TRUE);
@@ -6229,6 +6238,8 @@ void main()
 		   NULL, " See, look.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/saiguden_01", 400 );}
 
 //　詩音はそう言い、ランタンの灯りにぼんやりと照らし出された壁を指差した￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

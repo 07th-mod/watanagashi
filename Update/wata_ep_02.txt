@@ -2433,6 +2433,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
+	if (GetGlobalFlag(GHideCG)) {DrawScene("black", 1000 );}
 	DrawScene("scene/107a", 1000 );
 
 //　俺にとっての事件を終わらせようと思って...＠

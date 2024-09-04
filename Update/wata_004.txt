@@ -3130,8 +3130,8 @@ void main()
 		   NULL, "Still holding me by the collar, the three thugs spun around to look behind them.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-//	DrawBustshot( 2, "si_si_ik_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-//	DrawScene( "bg_123", 1000 );
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 6, "sprite/si1a_ikari_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/mati3", 1000 );}
 
 	DrawScene("scene/009b", 1000 );
 	PlayBGM( 1, "msys12", 56, 0 );
@@ -3181,7 +3181,8 @@ void main()
 	OutputLine(NULL, "同時にこれ以上ないくらいに頼もしかった。",
 		   NULL, " At the same time, they were the most reassuring things in the world.", Line_Normal);
 	ClearMessage();
-//	DrawBustshot( 2, "si_si_ma_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 6, "sprite/si1a_majime_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );}
 
 //「もう一度だけ言うよ＠...圭ちゃん離してとっとと失せな。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -3287,7 +3288,6 @@ void main()
 		   NULL, "...They were slowly increasing in number. Little by little.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-//	FadeBustshot( 2, FALSE, 0, 0, 0, 0, 200, TRUE );
 	DrawScene("background/mati3", 1000 );
 
 	FadeOutBGM( 1, 1000, TRUE );

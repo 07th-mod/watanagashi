@@ -7210,10 +7210,8 @@ void main()
 
 	ClearMessage();
 	DisableWindow();
-//	FadeBustshotWithFiltering( 2, "right", 1, FALSE, 0, 0, 1300, TRUE );
-//	DrawBustshotWithFiltering( 1, "re_si_wa_a1", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
-	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
-	DisableWindow();
+	if (GetGlobalFlag(GHideCG)) {ModSetLayerFilter(1, 256, "flashback");}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 2, "sprite/re2a_warai_a1_", "2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, TRUE );}
 	DrawSceneWithMask("flashback/scene/006", "m1", 0, 0, 300 );
 
 

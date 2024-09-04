@@ -5893,7 +5893,7 @@ void main()
 
 
 	DisableWindow();
-//	DrawBustshot( 2, "si_si_wa_b1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 6, "sprite/si1b_warai_b1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );}
 	DrawScene("scene/105a", 1000 );
 
 //「ありゃ...、!w800......図星を突かれちゃって何だかがっかりですけど、これ。＠

@@ -196,10 +196,12 @@ void main()
 	DrawScene("white", 200 );
 
 	DrawBustshot(5, "scene/001a", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 50, TRUE );
+	if (GetGlobalFlag(GHideCG)) {DrawBustshot(5, "background/furiker_a", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 50, TRUE );}
 	ShakeScreen( 1, 50, 20, 3, 0, );
 	PlaySE( 3, "wa_005", 56, 64 );
 	Wait( 100 );
 	DrawBustshot(5, "scene/001b", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 50, TRUE );
+	if (GetGlobalFlag(GHideCG)) {DrawBustshot(5, "background/furiker_b", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 50, TRUE );}
 	PlaySE( 3, "wa_005", 56, 64 );
 	Wait( 100 );
 	PlaySE( 3, "wa_005", 56, 64 );
@@ -1853,12 +1855,12 @@ void main()
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900117", 256, TRUE);
 	OutputLine(NULL, "圭一くん以外の人の死には何かしら理由が見つけられるんだけど、…圭一くんだけなぜかいつも曖昧。",
 		   NULL, " We can find some kind of reason for everyone but Keiichi-kun to die... but for some reason, Keiichi-kun's death is always vague.", Line_WaitForInput);
-		   
+
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 3){ModCallScriptSection("zomake_02_vm0x_n01","dialog002");}
 	if(GetGlobalFlag(GCensor) <= 2){ModCallScriptSection("zomake_02_vm00_n01","dialog002");}
 	//VoiceMatchingEnd
-	
+
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900119", 256, TRUE);
 	OutputLine(NULL, "祭具殿に踏み入るのとは無関係に狙われてる。」",
