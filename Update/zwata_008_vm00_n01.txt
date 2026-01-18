@@ -15,7 +15,7 @@ void dialog002()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s02/03/130300025", 256, TRUE);
 	OutputLine(NULL, "「さー、ミシュラン雛見沢の北条沙都子審査員のご感想をどうぞー！」",
-		   NULL, "\"Now, it's time for the Hinamizawa Michelin, Judge Satoko Houjou, to give her impressions!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"Now, it's time for the Hinamizawa Michelin Judge, Satoko Houjou, to give her impressions!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 

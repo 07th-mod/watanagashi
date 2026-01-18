@@ -25,14 +25,14 @@ void dialog001()
 		   NULL, "\"Speaking of which, that major figure maker decided to bring out the line!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/otaf50002", 256, TRUE);
 	OutputLine(NULL, "　発売日は要チェックなのであります…！」",
-		   NULL, " We must confirm the release date ...!\"", Line_Normal);
+		   NULL, " We must confirm the release date...!\"", Line_Normal);
 	ClearMessage();
 
 //オタク「しかし大人買いするには種類が多すぎるのでごわすな……。普通のファミレス制服のフィギュアなら１０種類程度でごわすのに……今度のはシークレットポーズ差分込みでざっと１００種類！！」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/otag50001", 256, TRUE);
 	OutputLine(NULL, "「しかし大人買いするには種類が多すぎるのでごわすな……。",
-		   NULL, "\"'The problem is, there's too many variations to bulk buy them ... ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"The problem is, there's too many variations to bulk buy them... ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/otag50002", 256, TRUE);
 	OutputLine(NULL, "　普通のファミレス制服のフィギュアなら１０種類程度でごわすのに……今度のはシークレットポーズ差分込みでざっと１００種類！！",
@@ -69,7 +69,7 @@ void dialog003()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Otaku</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s19/00/otae50008", 256, TRUE);
 	OutputLine(NULL, "そのスタッフが余のおズボンに粗相をしたのでござるよ？",
-		   NULL, " Yonder waitress was the one who wet mine pants!", Line_WaitForInput);
+		   NULL, "\"Yonder waitress was the one who wet mine pants!\"", Line_WaitForInput);
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
